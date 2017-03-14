@@ -22,13 +22,25 @@ get_header(); ?>
 
         <div class="video"></div>
 
-        <div class="stories">
+        <div>
             <h2>Links to other stories</h2>
-            <ul>
-                <li></li>
+            <div class="stories">
+            <ul class="twitter">
+                <li class="twitter-list"></li>
+                <li class="twitter-list"></li>
+                <li class="twitter-list"></li>
             </ul>
+            <ul class="article">
+                <li class="article-list"></li>
+                <li class="article-list"></li>
+                <li class="article-list"></li>
+            </ul>
+            </div>
         </div>
-		</main> <!--#main -->
+        <div class="load-more">
+        <a href="">load more</a>
+		<div>
+        </main> <!--#main -->
 	</div> <!--#primary -->
 
 <?php get_footer(); ?>

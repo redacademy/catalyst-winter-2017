@@ -460,7 +460,7 @@ a {
   width: 50%; }
 
 .site-header {
-  height: 60px; }
+  height: 80px; }
 
 .container {
   display: -ms-flexbox;
@@ -716,23 +716,58 @@ object {
 .page-template-news {
   margin: 0 auto; }
   .page-template-news .header {
-    background: url("../../images/project-hero-sample.png") no-repeat;
-    background-size: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/project-hero-sample.png") no-repeat;
+    background-size: 110%;
     height: 320px; }
   .page-template-news h1 {
     text-align: center;
+    padding-top: 50px;
     text-transform: uppercase;
     color: white; }
   .page-template-news .video {
-    margin: 0 auto;
-    width: 800px;
+    margin: 20px auto;
+    width: 1100px;
     height: 400px;
     background-color: grey; }
+  .page-template-news h2 {
+    text-transform: uppercase;
+    background-color: #D9F1FF;
+    padding: 20px 0;
+    text-align: center; }
   .page-template-news .stories {
-    text-align: center;
-    background-color: #D9F1FF; }
-    .page-template-news .stories h2 {
-      text-transform: uppercase; }
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    .page-template-news .stories li {
+      margin-bottom: 20px; }
+    .page-template-news .stories .twitter {
+      width: 30%;
+      margin: 0; }
+    .page-template-news .stories .article {
+      width: 65%;
+      margin: 0 auto; }
+    .page-template-news .stories .twitter-list {
+      list-style-type: none;
+      padding: 180px 150px;
+      background-color: pink; }
+    .page-template-news .stories .article-list {
+      list-style-type: none;
+      padding: 180px 100px;
+      background-color: grey; }
+  .page-template-news .load-more {
+    margin-bottom: 80px;
+    margin-top: 40px;
+    text-align: center; }
+    .page-template-news .load-more a {
+      padding: 30px 80px;
+      text-transform: uppercase;
+      border: 3px solid black;
+      text-decoration: none;
+      color: black; }
 
 .page-template-default {
   text-align: center; }

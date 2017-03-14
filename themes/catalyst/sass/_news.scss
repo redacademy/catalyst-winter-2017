@@ -1,28 +1,66 @@
 .page-template-news {
     margin: 0 auto;
     .header {
-
-        background: url('../../images/project-hero-sample.png')no-repeat;
-        background-size: 100%;
+        background: linear-gradient( to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('../../images/project-hero-sample.png')no-repeat;
+        background-size: 110%;
         height: 320px;
     }
     h1 {
         text-align: center;
+        padding-top: 50px;
         text-transform: uppercase;
         color: white;
     }
-    .video{
-        margin: 0 auto;
-        width: 800px;
+    .video {
+        margin: 20px auto;
+        width: 1100px;
         height: 400px;
         background-color: grey;
     }
-    .stories{
-        // margin: 0 auto;
-        text-align: center;
+    h2 {
+        text-transform: uppercase;
         background-color: $color__brand-blue;
-        h2{
+        padding: 20px 0;
+        text-align: center;
+    }
+    .stories {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+        li {
+            margin-bottom: 20px;
+        }
+        .twitter {
+            width: 30%;
+            margin: 0;
+        }
+        .article {
+            width: 65%;
+            margin: 0 auto;
+        }
+        .twitter-list {
+            list-style-type: none;
+            padding: 180px 150px;
+            background-color: pink;
+        }
+        .article-list {
+            list-style-type: none;
+            padding: 180px 100px;
+            background-color: grey;
+            // margin: 0;
+        }
+    }
+    .load-more {
+        margin-bottom: 80px;
+        margin-top: 40px;
+        text-align: center;
+        a {
+            padding: 30px 80px;
             text-transform: uppercase;
+            border: 3px solid black;
+            text-decoration: none;
+            color: black;
         }
     }
 }
