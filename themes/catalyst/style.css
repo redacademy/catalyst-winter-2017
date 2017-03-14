@@ -1,6 +1,6 @@
 /*!
 Theme Name: Catalyst Starter Theme
-Theme URI: 
+Theme URI:
 Author: Evan Gray, Jisu Lee, Kevin Hashimoto
 Author URI: http://www.redacademy.com
 Description: A theme for catalyst community development corporation.
@@ -483,6 +483,34 @@ a {
   float: right;
   text-align: right;
   width: 50%; }
+
+.container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 1120px; }
+  .container .logo {
+    width: 20%; }
+  .container .menu {
+    width: 80%; }
+
+.footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 1120px;
+  background-color: #d8f1fe;
+  height: 100px; }
+  .footer .page-link {
+    width: 25%; }
+  .footer .company-info {
+    width: 50%; }
+  .footer .sns-icon {
+    width: 25%; }
+  .footer span {
+    color: black; }
 
 /*--------------------------------------------------------------
 # Accessibility
