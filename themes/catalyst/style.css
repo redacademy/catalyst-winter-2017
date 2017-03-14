@@ -712,3 +712,48 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.page-template-default {
+  text-align: center; }
+  .page-template-default .contact-title {
+    background-color: #D9F1FF;
+    font-size: 1.4rem;
+    text-transform: uppercase; }
+    .page-template-default .contact-title h3 {
+      width: 350px;
+      margin: 0 auto; }
+  .page-template-default form {
+    margin: 2%;
+    background-color: #D9F1FF;
+    padding: 2%; }
+    .page-template-default form p:nth-child(6) {
+      position: relative; }
+      .page-template-default form p:nth-child(6) .other {
+        position: absolute;
+        bottom: 0;
+        left: 3.5rem;
+        width: 90%; }
+    .page-template-default form input {
+      width: 100%;
+      height: 50px;
+      padding-left: 1rem; }
+    .page-template-default form .radio {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+      .page-template-default form .radio input {
+        width: 1rem; }
+      .page-template-default form .radio .wpcf7-list-item {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+            align-items: center; }
+    .page-template-default form textarea {
+      padding-left: 3px;
+      width: 100%;
+      height: 70vh; }
+    .page-template-default form .wpcf7-submit {
+      width: 80%;
+      background-color: #fff;
+      border: 1px solid #000;
+      font-size: 1rem; }
