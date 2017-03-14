@@ -47,29 +47,29 @@ add_action( 'init', 'project_taxonomy', 0 );
 
 
 // Register Custom Taxonomy
-function teammember_taxonomy() {
+function team_member_taxonomy() {
 
 	$labels = array(
-		'name'                       => 'Teammember Types',
-		'singular_name'              => 'Teammember Type',
-		'menu_name'                  => 'Teammember Type',
-		'all_items'                  => 'All Teammember Types',
+		'name'                       => 'Team member Types',
+		'singular_name'              => 'Team member Type',
+		'menu_name'                  => 'Team member Type',
+		'all_items'                  => 'All Team member Types',
 		'parent_item'                => 'Parent',
-		'parent_item_colon'          => 'Parent Teammember Type:',
-		'new_item_name'              => 'New Teammember Type',
-		'add_new_item'               => 'Add New Teammember Type',
-		'edit_item'                  => 'Edit Teammember Type',
-		'update_item'                => 'Update Teammember Type',
-		'view_item'                  => 'View Teammember Type',
+		'parent_item_colon'          => 'Parent Team member Type:',
+		'new_item_name'              => 'New Team member Type',
+		'add_new_item'               => 'Add New Team member Type',
+		'edit_item'                  => 'Edit Team member Type',
+		'update_item'                => 'Update Team member Type',
+		'view_item'                  => 'View Team member Type',
 		'separate_items_with_commas' => 'Separate items with commas',
 		'add_or_remove_items'        => 'Add or remove items',
 		'choose_from_most_used'      => 'Choose from the most used',
 		'popular_items'              => 'Popular Project Types',
-		'search_items'               => 'Search Teammember Types',
+		'search_items'               => 'Search Team member Types',
 		'not_found'                  => 'Not Found',
 		'no_terms'                   => 'No items',
-		'items_list'                 => 'Teammember Type list',
-		'items_list_navigation'      => 'Teammember Type list navigation',
+		'items_list'                 => 'Team member Type list',
+		'items_list_navigation'      => 'Team member Type list navigation',
 	);
 	$args = array(
 		'labels'                     => $labels,
@@ -80,7 +80,7 @@ function teammember_taxonomy() {
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
 	);
-	register_taxonomy( 'Teammember_type', array( 'post' ), $args );
+	register_taxonomy( 'team_member_type', array( 'post' ), $args );
 
 }
-add_action( 'init', 'Teammember_taxonomy', 0 );
+add_action( 'init', 'team_member_taxonomy', 0 );

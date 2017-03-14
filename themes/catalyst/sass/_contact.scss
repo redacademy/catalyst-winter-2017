@@ -1,0 +1,53 @@
+.page-template-default {
+    text-align: center;
+    .contact-title {
+        background-color: $color__brand-blue;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        h3 {
+            width: 350px;
+            margin: 0 auto;
+        }
+    }
+    form {
+        margin: 2%;
+        background-color: $color__brand-blue;
+        padding: 2%;
+        p:nth-child(6) {
+            position: relative;
+            .other {
+                position: absolute;
+                bottom: 0;
+                left: 3.5rem;
+                width: 90%;
+            }
+        }
+        input {
+            width: 100%;
+            height: 50px;
+            padding-left: 1rem;
+        }
+        .radio {
+            display: flex;
+            flex-direction: column;
+            input {
+                width: 1rem;
+            }
+            .wpcf7-list-item {
+                display: flex;
+                align-items: center;
+            }
+        }
+        textarea {
+            padding-left: 3px;
+            width: 100%;
+            height: 70vh;
+        }
+        .wpcf7-submit {
+            width: 80%;
+            background-color: #fff;
+            border: 1px solid #000;
+            font-size: 1rem;
+        }
+    }
+}
