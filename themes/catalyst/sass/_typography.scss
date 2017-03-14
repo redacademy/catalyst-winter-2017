@@ -10,7 +10,7 @@ textarea {
 	color: $color__text-main;
 	font-family: $font__main;
 	@include font-size(1);
-	line-height: $font__line-height-body;
+	line-height: $line-height-body;
 }
 
 /* Headings */
@@ -35,32 +35,6 @@ blockquote {
 
 address {
 	margin: 0 0 $base__space-unit;
-}
-
-pre {
-	background: $color__background-pre;
-	font-family: $font__pre;
-	@include font-size(0.9375);
-	line-height: $font__line-height-pre;
-	margin-bottom: 1.6rem;
-	max-width: 100%;
-	overflow: auto;
-	padding: 1.6rem;
-}
-
-code, kbd, tt, var {
-	font-family: $font__code;
-	@include font-size(0.9375);
-}
-
-abbr, acronym {
-	border-bottom: 1px dotted $color__border-abbr;
-	cursor: help;
-}
-
-mark, ins {
-	background: $color__background-ins;
-	text-decoration: none;
 }
 
 big {
