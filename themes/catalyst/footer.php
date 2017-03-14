@@ -18,7 +18,6 @@
 
 					<div class="company-info">
 						<div class="footerLogo">
-						<img src="images/catalyst-footer-logo-sample.png" alt="catalyst Logo">
 						</div>
 						<h3>catalyst community development society</h3>
 						<p>(the amp) 90-425 Carrall Street, Vancouver, BC, V6B 6E3</p>

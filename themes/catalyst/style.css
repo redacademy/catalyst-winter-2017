@@ -483,9 +483,22 @@ a {
   margin: 0 auto;
   background-color: #D9F1FF;
   height: 100px; }
+  .footer h3 {
+    margin: 0; }
+  .footer p {
+    margin: 0; }
+  .footer .footerLogo {
+    background: url("../../images/footersample.png") no-repeat;
+    background-size: 100%;
+    width: 20px;
+    height: 20px; }
   .footer .page-link {
     width: 25%; }
   .footer .company-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 50%; }
   .footer .sns-icon {
     width: 25%; }

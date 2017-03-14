@@ -26,9 +26,6 @@ access_log
 # ========================================================== #
 plugins/*
 !plugins/catalyst-functionality/
-!plugins/contact-form-7/
-!plugins/akismet/
-!plugins/custom-field-suite/
 # Ignore everything in "themes" except the active theme. #
 # ====================================================== #
 themes/*

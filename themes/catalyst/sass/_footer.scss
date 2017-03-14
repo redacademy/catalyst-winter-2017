@@ -5,10 +5,24 @@
     margin: 0 auto;
     background-color: $color__brand-blue;
     height: 100px;
+    h3 {
+        margin: 0;
+    }
+    p {
+        margin: 0;
+    }
+    .footerLogo {
+        background: url('../../images/footersample.png')no-repeat;
+        background-size: 100%;
+        width: 20px;
+        height: 20px;
+    }
     .page-link {
         width: 25%;
     }
     .company-info {
+        display: flex;
+        flex-wrap: wrap;
         width: 50%;
     }
     .sns-icon {
