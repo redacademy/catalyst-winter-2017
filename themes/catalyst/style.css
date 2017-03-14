@@ -472,7 +472,7 @@ a {
   .container .logo {
     width: 20%; }
   .container .header-logo {
-    background: url("../../images/catalyst-logo-sample.png") no-repeat;
+    background: url("../../images/catalyst-logo.png") no-repeat;
     background-size: 100%;
     margin: 0 auto;
     display: -ms-flexbox;
