@@ -4,28 +4,34 @@
         background-color: $color__brand-blue;
         font-size: 1.4rem;
         text-transform: uppercase;
+        margin-bottom: 1.5rem;
         h3 {
             width: 350px;
             margin: 0 auto;
+            height: 100px;
+            display: flex;
+            align-items: center;
         }
     }
     form {
-        margin: 2%;
+        margin: 3%;
         background-color: $color__brand-blue;
-        padding: 2%;
+        padding: 0.5rem 3.5%;
         p:nth-child(6) {
             position: relative;
             .other {
                 position: absolute;
                 bottom: 0;
-                left: 3.5rem;
-                width: 90%;
+                left: 3rem;
+                width: 86%;
             }
         }
         input {
             width: 100%;
             height: 50px;
             padding-left: 1rem;
+            border: none;
+            font-style: italic;
         }
         .radio {
             display: flex;
@@ -37,17 +43,27 @@
                 display: flex;
                 align-items: center;
             }
+            .wpcf7-list-item-label {
+                font-size: 1.1rem;
+                text-transform: uppercase;
+                margin-left: 1rem;
+            }
         }
         textarea {
-            padding-left: 3px;
+            padding-left: 1rem;
+            padding-top: 1rem;
             width: 100%;
             height: 70vh;
+            border: none;
+            font-style: italic;
         }
         .wpcf7-submit {
-            width: 80%;
+            width: 70%;
             background-color: #fff;
             border: 1px solid #000;
             font-size: 1rem;
+            height: 60px;
+            font-style: normal;
         }
     }
 }
