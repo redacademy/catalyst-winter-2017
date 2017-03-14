@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1120px;
+    background-color: #d8f1fe;
+    height: 100px;
+    .page-link {
+        width: 25%;
+    }
+    .company-info {
+        width: 50%;
+    }
+    .sns-icon {
+        width: 25%;
+    }
+    span {
+        color: black;
+    }
+}
