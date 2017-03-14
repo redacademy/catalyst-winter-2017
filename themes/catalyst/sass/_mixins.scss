@@ -27,3 +27,11 @@
 @mixin greyscale-image {
 	filter: grayscale(100%);
 }
+
+// Media Queries 
+
+@mixin media($width) {
+  @media all and (min-width: $width) {
+    @content;
+  }
+}
