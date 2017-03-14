@@ -29,7 +29,7 @@
 
 					<div class="sns-icon">
 					<span><i class="fa fa-twitter-square" aria-hidden="true"></i></span>
-					<span><i class="fa fa-facebook-square" aria-hidden="true"></i></span>
+					<span><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
 					</div>
 
 				</div><!-- .site-info -->
