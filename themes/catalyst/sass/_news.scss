@@ -1,3 +1,28 @@
-.page-template-news{
+.page-template-news {
+    margin: 0 auto;
+    .header {
 
+        background: url('../../images/project-hero-sample.png')no-repeat;
+        background-size: 100%;
+        height: 320px;
+    }
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+    }
+    .video{
+        margin: 0 auto;
+        width: 800px;
+        height: 400px;
+        background-color: grey;
+    }
+    .stories{
+        // margin: 0 auto;
+        text-align: center;
+        background-color: $color__brand-blue;
+        h2{
+            text-transform: uppercase;
+        }
+    }
 }

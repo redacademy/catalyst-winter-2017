@@ -460,7 +460,7 @@ a {
   width: 50%; }
 
 .site-header {
-  height: 100px; }
+  height: 60px; }
 
 .container {
   display: -ms-flexbox;
@@ -713,6 +713,27 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.page-template-news {
+  margin: 0 auto; }
+  .page-template-news .header {
+    background: url("../../images/project-hero-sample.png") no-repeat;
+    background-size: 100%;
+    height: 320px; }
+  .page-template-news h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: white; }
+  .page-template-news .video {
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    background-color: grey; }
+  .page-template-news .stories {
+    text-align: center;
+    background-color: #D9F1FF; }
+    .page-template-news .stories h2 {
+      text-transform: uppercase; }
+
 .page-template-default {
   text-align: center; }
   .page-template-default .contact-title {
