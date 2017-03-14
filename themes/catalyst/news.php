@@ -1,9 +1,14 @@
+<?php /* Template Name: news-template */ ?>
+<!-- this name is to setup the custom page template -->
+
+
 <?php
 /**
- * The template for displaying all single posts.
+ * The template for displaying all pages.
  *
  * @package RED_Starter_Theme
  */
+
 
 get_header(); ?>
 

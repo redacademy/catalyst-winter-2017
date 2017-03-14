@@ -467,7 +467,7 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 1120px;
+  width: 100%;
   margin: auto; }
   .container .logo {
     width: 20%; }
@@ -493,7 +493,8 @@ a {
 .footer {
   margin: 0 auto;
   background-color: #D9F1FF;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
   @media all and (min-width: 600px) {
     .footer {
       display: -ms-flexbox;

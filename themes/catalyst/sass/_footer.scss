@@ -2,6 +2,7 @@
     margin: 0 auto;
     background-color: $color__brand-blue;
     text-align: center;
+    width: 100%;
     @media all and (min-width: $width) {
         display: flex;
         flex-wrap: wrap;
@@ -24,8 +25,6 @@
         height: 10px;
         text-transform: uppercase;
         font-size: 12px;
-        // min-width: 25%;
-
         a{
             text-decoration: none;
             color: $color__text-main;
@@ -33,13 +32,10 @@
         }
         @media all and (min-width: $width) {
             visibility: visible;
-
-            // min-width: 25%;
         }
     }
     .sns-icon {
         @media all and (min-width: $width) {
-            // width: 25%;
             margin-left: 30px;
         }
     }
@@ -55,8 +51,6 @@
             height: 20px;
             margin: 0;
         }
-        @media all and (min-width: $width) {
-            // max-width: 50%;
-        }
+
     }
 }
