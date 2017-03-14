@@ -40,7 +40,7 @@ function projects_cpt() {
 	);
 	$args = array(
 		'label'                 => 'Project',
-		'description'           => 'porjects list',
+		'description'           => 'projects list',
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions', 'custom-fields', ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
@@ -65,25 +65,25 @@ add_action( 'init', 'projects_cpt', 0 );
 
 
 // Register Custom Post Type
-function teammember_cpt() {
+function team_member_cpt() {
 
 	$labels = array(
-		'name'                  => 'Teammembers',
-		'singular_name'         => 'Teammember',
-		'menu_name'             => 'Teammembers',
-		'name_admin_bar'        => 'Teammembers',
-		'archives'              => 'Teammember Archives',
-		'attributes'            => 'Teammember Attributes',
+		'name'                  => 'Team members',
+		'singular_name'         => 'Team member',
+		'menu_name'             => 'Team members',
+		'name_admin_bar'        => 'Team members',
+		'archives'              => 'Team member Archives',
+		'attributes'            => 'Team member Attributes',
 		'parent_item_colon'     => 'Parent Item:',
-		'all_items'             => 'All Teammembers',
+		'all_items'             => 'All Team members',
 		'add_new_item'          => 'Add New Item',
-		'add_new'               => 'Add New Teammember',
-		'new_item'              => 'New Teammember',
-		'edit_item'             => 'Edit Teammember',
-		'update_item'           => 'Update Teammember',
-		'view_item'             => 'View Teammember',
-		'view_items'            => 'View Teammembers',
-		'search_items'          => 'Search Teammember',
+		'add_new'               => 'Add New Team member',
+		'new_item'              => 'New Team member',
+		'edit_item'             => 'Edit Team member',
+		'update_item'           => 'Update Team member',
+		'view_item'             => 'View Team member',
+		'view_items'            => 'View Team members',
+		'search_items'          => 'Search Team member',
 		'not_found'             => 'Not found',
 		'not_found_in_trash'    => 'Not found in Trash',
 		'featured_image'        => 'Featured Image',
@@ -92,13 +92,13 @@ function teammember_cpt() {
 		'use_featured_image'    => 'Use as featured image',
 		'insert_into_item'      => 'Insert into item',
 		'uploaded_to_this_item' => 'Uploaded to this item',
-		'items_list'            => 'Teammembers list',
-		'items_list_navigation' => 'Teammembers list navigation',
-		'filter_items_list'     => 'Filter Teammembers list',
+		'items_list'            => 'Team members list',
+		'items_list_navigation' => 'Team members list navigation',
+		'filter_items_list'     => 'Filter Team members list',
 	);
 	$args = array(
-		'label'                 => 'Teammember',
-		'description'           => 'teammember list',
+		'label'                 => 'Team member',
+		'description'           => 'team member list',
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions', 'custom-fields', ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
@@ -115,7 +115,7 @@ function teammember_cpt() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
 	);
-	register_post_type( 'teammember', $args );
+	register_post_type( 'team_member', $args );
 
 }
-add_action( 'init', 'teammember_cpt', 0 );
+add_action( 'init', 'team_member_cpt', 0 );
