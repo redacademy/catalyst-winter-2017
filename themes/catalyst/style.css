@@ -459,6 +459,9 @@ a {
   text-align: right;
   width: 50%; }
 
+.site-header {
+  height: 100px; }
+
 .container {
   display: -ms-flexbox;
   display: flex;
@@ -470,40 +473,72 @@ a {
     width: 20%; }
   .container .header-logo {
     background: url("../../images/catalyst-logo-sample.png") no-repeat;
-    background-size: 100%; }
+    background-size: 100%;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    width: 200px;
+    text-align: center;
+    overflow: hidden;
+    text-indent: 193%; }
   .container .menu {
     width: 80%; }
+    .container .menu #primary-menu {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+      margin-top: 10px; }
 
 .footer {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 1120px;
   margin: 0 auto;
   background-color: #D9F1FF;
-  height: 100px; }
-  .footer h3 {
-    margin: 0; }
-  .footer p {
-    margin: 0; }
-  .footer .footerLogo {
-    background: url("../../images/footersample.png") no-repeat;
-    background-size: 100%;
-    width: 20px;
-    height: 20px; }
-  .footer .page-link {
-    width: 25%; }
-  .footer .company-info {
+  text-align: center; }
+  @media all and (min-width: 600px) {
+    .footer {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      height: 100px;
+      -ms-flex-pack: center;
+          justify-content: center; } }
+  .footer .footer-title {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 50%; }
-  .footer .sns-icon {
-    width: 25%; }
-  .footer span {
-    color: black; }
+    -ms-flex-pack: center;
+        justify-content: center;
+    min-width: 400px; }
+  .footer .footerLogo {
+    background: url("../../images/footersample.png") no-repeat;
+    background-size: 100%;
+    width: 20px; }
+  .footer .page-link {
+    visibility: hidden;
+    height: 10px;
+    text-transform: uppercase;
+    font-size: 12px; }
+    .footer .page-link a {
+      text-decoration: none;
+      color: #4A4A4A;
+      margin-right: 20px; }
+    @media all and (min-width: 600px) {
+      .footer .page-link {
+        visibility: visible; } }
+  @media all and (min-width: 600px) {
+    .footer .sns-icon {
+      margin-left: 30px; } }
+  .footer .company-info h3 {
+    font-size: 16px;
+    margin: 0;
+    height: 25px;
+    text-transform: uppercase; }
+  .footer .company-info p {
+    font-size: 12px;
+    height: 20px;
+    margin: 0; }
 
 /*--------------------------------------------------------------
 # Accessibility
