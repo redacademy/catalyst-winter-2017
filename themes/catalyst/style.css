@@ -551,7 +551,7 @@ a {
   margin-bottom: 50px; }
 
 .home .header-text {
-  margin-top: 140px;
+  margin-top: 200px;
   position: absolute;
   color: white;
   text-align: center;
@@ -562,9 +562,12 @@ a {
     font-size: 70px;
     line-height: 75px;
     padding: 0 80px;
-    text-shadow: 2px 2px 5px black; }
+    text-shadow: 2px 2px 5px black;
+    margin-bottom: 2px; }
   .home .header-text p {
-    font-size: 30px; }
+    font-size: 25px;
+    font-weight: lighter;
+    margin: 0; }
 
 .home .home-hero {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 100%, rgba(0, 0, 0, 0.5) 100%), url("../../images/front-hero-sample.png") no-repeat center 100%;
