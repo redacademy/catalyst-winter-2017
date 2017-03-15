@@ -716,48 +716,52 @@ object {
 .page-template-news {
   margin: 0 auto; }
   .page-template-news .header {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/project-hero-sample.png") no-repeat;
-    background-size: 110%;
-    height: 320px; }
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 100%), url("../../images/project-hero-sample.png") no-repeat center top;
+    background-size: cover, cover;
+    height: 400px;
+    margin-top: 10; }
   .page-template-news h1 {
     text-align: center;
     padding-top: 50px;
     text-transform: uppercase;
     color: white; }
-  .page-template-news .video {
-    margin: 20px auto;
-    width: 1100px;
-    height: 400px;
-    background-color: grey; }
+  @media all and (min-width: 600px) {
+    .page-template-news .video {
+      margin: 20px auto;
+      width: 1100px;
+      height: 400px;
+      background-color: grey; } }
   .page-template-news h2 {
     text-transform: uppercase;
     background-color: #D9F1FF;
     padding: 20px 0;
     text-align: center; }
-  .page-template-news .stories {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 100%;
-    -ms-flex-pack: justify;
-        justify-content: space-between; }
-    .page-template-news .stories li {
-      margin-bottom: 20px; }
-    .page-template-news .stories .twitter {
-      width: 30%;
-      margin: 0; }
-    .page-template-news .stories .article {
-      width: 65%;
-      margin: 0 auto; }
-    .page-template-news .stories .twitter-list {
-      list-style-type: none;
-      padding: 180px 150px;
-      background-color: pink; }
-    .page-template-news .stories .article-list {
-      list-style-type: none;
-      padding: 180px 100px;
-      background-color: grey; }
+  @media all and (min-width: 600px) {
+    .page-template-news .stories {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      width: 100%;
+      -ms-flex-pack: justify;
+          justify-content: space-between; } }
+  .page-template-news .stories li {
+    margin-bottom: 20px; }
+  .page-template-news .stories ul {
+    margin: 0 auto;
+    padding-left: 0; }
+  .page-template-news .stories .twitter-list {
+    list-style-type: none;
+    padding: 180px 150px;
+    background-color: pink;
+    margin-left: 10px;
+    margin-right: 10px; }
+  .page-template-news .stories .article-list {
+    list-style-type: none;
+    padding: 180px 100px;
+    background-color: grey;
+    margin-left: 10px;
+    margin-right: 10px; }
   .page-template-news .load-more {
     margin-bottom: 80px;
     margin-top: 40px;

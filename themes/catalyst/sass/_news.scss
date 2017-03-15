@@ -1,9 +1,11 @@
+
 .page-template-news {
     margin: 0 auto;
     .header {
-        background: linear-gradient( to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('../../images/project-hero-sample.png')no-repeat;
-        background-size: 110%;
-        height: 320px;
+        background: linear-gradient( to bottom, rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 100%), url('../../images/project-hero-sample.png') no-repeat center top;
+        background-size: cover, cover;
+        height: 400px;
+        margin-top: 10;
     }
     h1 {
         text-align: center;
@@ -12,10 +14,12 @@
         color: white;
     }
     .video {
-        margin: 20px auto;
-        width: 1100px;
-        height: 400px;
-        background-color: grey;
+        @media all and (min-width: $width) {
+            margin: 20px auto;
+            width: 1100px;
+            height: 400px;
+            background-color: grey;
+        }
     }
     h2 {
         text-transform: uppercase;
@@ -24,31 +28,33 @@
         text-align: center;
     }
     .stories {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        justify-content: space-between;
+        @media all and (min-width: $width) {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-between;
+        }
         li {
             margin-bottom: 20px;
         }
-        .twitter {
-            width: 30%;
-            margin: 0;
-        }
-        .article {
-            width: 65%;
+
+        ul {
             margin: 0 auto;
+            padding-left: 0;
         }
         .twitter-list {
             list-style-type: none;
             padding: 180px 150px;
             background-color: pink;
+            margin-left: 10px;
+            margin-right: 10px;
         }
         .article-list {
             list-style-type: none;
             padding: 180px 100px;
             background-color: grey;
-            // margin: 0;
+            margin-left: 10px;
+            margin-right: 10px;
         }
     }
     .load-more {
