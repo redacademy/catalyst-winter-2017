@@ -11,19 +11,38 @@
             height: 100px;
             display: flex;
             align-items: center;
+            justify-content: center;
+            @include media($desktop-width) {
+                width: 100%;
+            }
         }
     }
-    form {
-        margin: 3%;
-        background-color: $color__brand-blue;
-        padding: 0.5rem 3.5%;
-        p:nth-child(6) {
-            position: relative;
-            .other {
-                position: absolute;
-                bottom: 0;
-                left: 3rem;
-                width: 86%;
+    .wpcf7 {
+        padding: 3%;
+        form {
+            margin: 0 auto;
+            background-color: $color__brand-blue;
+            padding: 0.5rem 1rem;
+            @include media($desktop-width) {
+                max-width: 1000px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 0.5rem 2rem;
+                p {
+                    flex-basis: 48%;
+                }
+            }
+            p:nth-child(6),
+            p:nth-child(7),
+            p:nth-child(8) {
+                @include media($desktop-width) {
+                    flex-basis: 100%;
+                }
+            }
+            p:nth-child(9) {
+                flex-basis: 100%;
+                margin: 0 auto;
             }
         }
         input {
@@ -36,6 +55,10 @@
         .radio {
             display: flex;
             flex-direction: column;
+            @include media($desktop-width) {
+                flex-direction: row;
+                justify-content: center;
+            }
             input {
                 width: 1rem;
             }
@@ -58,12 +81,13 @@
             font-style: italic;
         }
         .wpcf7-submit {
-            width: 70%;
+            width: 200px;
             background-color: #fff;
             border: 1px solid #000;
             font-size: 1rem;
             height: 60px;
             font-style: normal;
+            margin: 0 auto 1.5rem;
         }
     }
 }
