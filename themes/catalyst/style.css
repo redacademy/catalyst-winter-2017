@@ -234,7 +234,7 @@ textarea {
   font-family: sans-serif;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 2rem; }
+  line-height: 1.4rem; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -547,6 +547,52 @@ a {
     height: 20px;
     margin: 0; }
 
+.home .front-content {
+  margin-bottom: 50px; }
+
+.home .header-text {
+  margin-top: 250px;
+  position: absolute;
+  color: white;
+  text-align: center;
+  width: 100%; }
+  .home .header-text h1 {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 50px;
+    line-height: 75px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-shadow: 2px 2px 5px black;
+    line-height: 70px; }
+  .home .header-text p {
+    font-size: 25px;
+    font-weight: lighter;
+    margin: 0; }
+
+.home .home-hero {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 100%, rgba(0, 0, 0, 0.5) 100%), url("../../images/front-hero-sample.png") no-repeat center 100%;
+  background-size: contain, cover;
+  height: 700px; }
+
+.home h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  background-color: #D9F1FF;
+  padding: 20px 0;
+  text-align: center; }
+
+.home .readmore {
+  text-align: center;
+  margin: 20px 0; }
+  .home .readmore a {
+    padding: 20px 50px;
+    text-transform: uppercase;
+    border: 3px solid black;
+    text-decoration: none;
+    color: black;
+    text-decoration: none; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -714,6 +760,114 @@ object {
 
 .gallery-caption {
   display: block; }
+
+.page-template-collaborate {
+  height: 100%;
+  width: 100%; }
+  .page-template-collaborate .intro-copy {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 0.85rem;
+    font-weight: 100;
+    text-align: center; }
+  .page-template-collaborate .main-copy {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.55rem 0;
+    font-weight: 100;
+    text-align: center; }
+  .page-template-collaborate .navigation-button {
+    height: 60px;
+    width: 250px;
+    margin: 2rem auto;
+    border: 1px solid #323232;
+    font-size: 1.05rem;
+    color: #323232;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    .page-template-collaborate .navigation-button:hover {
+      background: #D9F1FF;
+      cursor: pointer; }
+  .page-template-collaborate .blue-background {
+    height: auto;
+    width: 100%;
+    margin: 0.75rem auto;
+    padding: 0.75rem 0.5rem;
+    background-color: #D9F1FF;
+    text-align: center; }
+    .page-template-collaborate .blue-background h2 {
+      max-width: 400px;
+      margin: 0 auto;
+      font-size: 2rem;
+      font-weight: 400;
+      color: #323232;
+      line-height: 2.4rem;
+      text-transform: uppercase; }
+    .page-template-collaborate .blue-background .supporters-header {
+      font-size: 1.55rem; }
+  .page-template-collaborate .content-container {
+    padding: 0 1rem; }
+    .page-template-collaborate .content-container .partners-information {
+      margin: 0 0 6rem; }
+      .page-template-collaborate .content-container .partners-information .small-header {
+        margin-top: 4rem;
+        margin-bottom: 1.25rem;
+        font-size: 1.75rem;
+        font-weight: 400;
+        color: #4A4A4A;
+        text-align: center;
+        text-transform: uppercase; }
+      .page-template-collaborate .content-container .partners-information .small-subheader {
+        margin: 0.5rem 0 1.5rem;
+        font-size: 1.1rem;
+        font-weight: 400;
+        text-transform: uppercase; }
+      .page-template-collaborate .content-container .partners-information .collaborate-dashed-list {
+        margin: 0 0 2rem;
+        padding-left: 0.75rem;
+        list-style-type: none; }
+        .page-template-collaborate .content-container .partners-information .collaborate-dashed-list li {
+          margin: 1.5rem 0;
+          font-weight: 100; }
+      .page-template-collaborate .content-container .partners-information .partners-text {
+        height: auto;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 1rem;
+        font-weight: 100;
+        text-align: center; }
+    .page-template-collaborate .content-container .infographic-container {
+      height: 200px;
+      width: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      background-color: blue; }
+  .page-template-collaborate .supporters-logo-container {
+    height: 200px;
+    width: 100%;
+    background-color: blue;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-align: center;
+        align-items: center; }
 
 /*--------------------------------------------------------------
 # Page Templates

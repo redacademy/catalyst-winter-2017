@@ -1,0 +1,124 @@
+.page-template-collaborate {
+    height: 100%;
+    width: 100%;
+
+    .intro-copy {
+        height: auto;
+        width: 100%;
+        margin: 0 auto;
+        padding: 1rem 0.85rem;
+        font-weight: 100;
+        text-align: center;
+    }
+
+    .main-copy {
+        height: auto;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0.55rem 0;
+        font-weight: 100;
+        text-align: center;
+
+    }
+
+    .navigation-button {
+        height: 60px;
+        width: 250px;
+        margin: 2rem auto;
+        border: 1px solid $color__header-main;
+        font-size: 1.05rem;
+        color: $color__header-main;
+        text-transform: uppercase;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            background: $color__brand-blue;
+            cursor: pointer;
+        }
+    }
+
+    .blue-background {
+        height: auto;
+        width: 100%;
+        margin: 0.75rem auto;
+        padding: 0.75rem 0.5rem;
+        background-color: $color__brand-blue;
+        text-align: center;
+
+        h2 {
+            max-width: 400px;
+            margin: 0 auto;
+            font-size: 2rem;
+            font-weight: 400;
+            color: $color__header-main;
+            line-height: 2.4rem;
+            text-transform: uppercase;
+        }
+
+        .supporters-header {
+            font-size: 1.55rem;
+        }
+    }
+
+   .content-container {
+       padding: 0 1rem;
+
+        .partners-information {
+            margin: 0 0 6rem;
+
+            .small-header {
+                margin-top: 4rem;
+                margin-bottom: 1.25rem;
+                font-size: 1.75rem;
+                font-weight: 400;
+                color: $color__text-main;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            .small-subheader {
+                margin: 0.5rem 0 1.5rem;
+                font-size: 1.1rem;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+
+            .collaborate-dashed-list {
+                margin: 0 0 2rem;
+                padding-left: 0.75rem;
+                list-style-type: none;
+
+                li {
+                    margin: 1.5rem 0;
+                    font-weight: 100;
+                }
+            }
+
+            .partners-text {
+                height: auto;
+                width: 100%;
+                margin: 0 auto;
+                padding: 0 1rem;
+                font-weight: 100;
+                text-align: center;
+            }
+        }
+
+        .infographic-container {
+            height: 200px;
+            width: 100%;
+            @include flex-column(nowrap, center, center);
+            background-color: blue;
+        }
+    }
+
+    .supporters-logo-container {
+        height: 200px;
+        width: 100%;
+        background-color: blue;
+        @include flex-row(wrap, flex-start, center);
+    }
+}
