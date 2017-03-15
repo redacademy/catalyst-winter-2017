@@ -39,4 +39,4 @@ themes/catalyst/gulpfile.js
 themes/catalyst/build/*
 # Ignore .vscode configuration folder#
 # ================== #
-/.vscode
+themes/catalyst/.vscode
