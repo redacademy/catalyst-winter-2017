@@ -12,8 +12,8 @@ get_header(); ?>
     <header>
         <div class="header-text">
             <h1>we improve the quality of peoples lives</h1>
-            <p>We build communities,</p>
-            <p>We use real estate to affect social change</p>
+            <p>We build communities.</p>
+            <p>We use real estate to affect social change.</p>
         </div>
         <div class ="home-hero"></div>
     </header>

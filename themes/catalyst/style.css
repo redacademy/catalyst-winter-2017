@@ -551,7 +551,7 @@ a {
   margin-bottom: 50px; }
 
 .home .header-text {
-  margin-top: 200px;
+  margin-top: 250px;
   position: absolute;
   color: white;
   text-align: center;
@@ -559,11 +559,12 @@ a {
   .home .header-text h1 {
     text-transform: uppercase;
     font-weight: lighter;
-    font-size: 70px;
+    font-size: 50px;
     line-height: 75px;
-    padding: 0 80px;
+    max-width: 700px;
+    margin: 0 auto;
     text-shadow: 2px 2px 5px black;
-    margin-bottom: 2px; }
+    line-height: 70px; }
   .home .header-text p {
     font-size: 25px;
     font-weight: lighter;
