@@ -3,11 +3,7 @@
     background-color: $color__brand-blue;
     text-align: center;
     width: 100%;
-<<<<<<< HEAD
-    @media all and (min-width: $width) {
-=======
     @include media($desktop-width) {
->>>>>>> 34779e15a6fe7d5d82175d165d64b9053e420db9
         display: flex;
         flex-wrap: wrap;
         height: 100px;
@@ -20,11 +16,7 @@
         min-width: 400px;
     }
     .footerLogo {
-<<<<<<< HEAD
-        background: url('../../images/footersample.png')no-repeat;
-=======
         background: url('../../images/catalyst-footer-logo.png')no-repeat;
->>>>>>> 34779e15a6fe7d5d82175d165d64b9053e420db9
         background-size: 100%;
         width: 20px;
     }
@@ -38,20 +30,12 @@
             color: $color__text-main;
             margin-right: 20px;
         }
-<<<<<<< HEAD
-        @media all and (min-width: $width) {
-=======
         @include media($desktop-width) {
->>>>>>> 34779e15a6fe7d5d82175d165d64b9053e420db9
             visibility: visible;
         }
     }
     .sns-icon {
-<<<<<<< HEAD
-        @media all and (min-width: $width) {
-=======
        @include media($desktop-width) {
->>>>>>> 34779e15a6fe7d5d82175d165d64b9053e420db9
             margin-left: 30px;
         }
     }
