@@ -3,7 +3,7 @@
     background-color: $color__brand-blue;
     text-align: center;
     width: 100%;
-    @media all and (min-width: $width) {
+    @include media($desktop-width) {
         display: flex;
         flex-wrap: wrap;
         height: 100px;
@@ -30,12 +30,12 @@
             color: $color__text-main;
             margin-right: 20px;
         }
-        @media all and (min-width: $width) {
+        @include media($desktop-width) {
             visibility: visible;
         }
     }
     .sns-icon {
-        @media all and (min-width: $width) {
+       @include media($desktop-width) {
             margin-left: 30px;
         }
     }

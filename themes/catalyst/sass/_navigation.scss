@@ -127,7 +127,10 @@ a {
 	width: 100%;
 	margin: auto;
 	.logo {
-		width: 20%;
+		width: 50%;
+		@include media($desktop-width) {
+			width: 20%;
+		}
 	}
 	.header-logo {
 		background: url('../../images/catalyst-logo.png')no-repeat;
@@ -140,8 +143,11 @@ a {
 		text-indent: 193%;
 	}
 	.menu {
-		width: 80%;
-		#primary-menu{
+		width: 50%;
+		@include media($desktop-width) {
+			width: 80%;
+		}
+		#primary-menu {
 			display: flex;
 			justify-content: flex-end;
 			margin-top: 10px;

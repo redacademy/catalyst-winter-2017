@@ -14,7 +14,7 @@
         color: white;
     }
     .video {
-        @media all and (min-width: $width) {
+        @include media($desktop-width) {
             margin: 20px auto;
             width: 1100px;
             height: 400px;
@@ -28,7 +28,7 @@
         text-align: center;
     }
     .stories {
-        @media all and (min-width: $width) {
+        @include media($desktop-width){
             display: flex;
             flex-wrap: wrap;
             width: 100%;
