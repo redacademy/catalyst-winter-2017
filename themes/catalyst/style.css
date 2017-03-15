@@ -811,3 +811,77 @@ object {
       height: 60px;
       font-style: normal;
       margin: 0 auto 1.5rem; }
+
+.post-type-archive-careers #content {
+  width: 1120px;
+  margin: 0 auto; }
+
+.post-type-archive-careers .page-header-container {
+  background-color: #D9F1FF;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  height: 75px;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.post-type-archive-careers .page-title {
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin: 0; }
+
+.post-type-archive-careers .job-container {
+  width: 900px;
+  margin: 0 auto; }
+
+.post-type-archive-careers .job-post {
+  margin-bottom: 8rem;
+  border-bottom: 1px solid black;
+  padding-bottom: 8rem; }
+
+.post-type-archive-careers .job-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  font-weight: 100; }
+
+.post-type-archive-careers .role-container {
+  font-size: 1.3rem; }
+
+.post-type-archive-careers .role {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 0; }
+
+.post-type-archive-careers .resp-container {
+  width: 750px;
+  margin: 0 auto;
+  font-size: 1.3rem; }
+  .post-type-archive-careers .resp-container ul {
+    margin-left: 0; }
+
+.post-type-archive-careers .responsibilities {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 0; }
+
+.post-type-archive-careers .contact-link {
+  text-decoration: none;
+  color: black; }
+
+.post-type-archive-careers .contact-button {
+  border: 2px solid black;
+  height: 50px;
+  width: 200px;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.post-type-archive-careers .contact {
+  margin: 0;
+  text-transform: uppercase; }

@@ -1,0 +1,71 @@
+.post-type-archive-careers {
+    #content {
+        width: 1120px;
+        margin: 0 auto;
+    }
+    .page-header-container {
+        background-color: #D9F1FF;
+        display: flex;
+        justify-content: center;
+        height: 75px;
+        align-items: center;
+    }
+    .page-title {
+        text-transform: uppercase;
+        font-size: 3rem;
+        margin: 0;
+    }
+    .job-container {
+        width: 900px;
+        margin: 0 auto;
+    }
+    .job-post {
+        margin-bottom: 8rem;
+        border-bottom: 1px solid black;
+        padding-bottom: 8rem;
+    }
+    .job-title {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        font-weight: 100;
+    }
+    .role-container {
+        font-size: 1.3rem;
+    }
+    .role {
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+    .resp-container {
+        width: 750px;
+        margin: 0 auto;
+        font-size: 1.3rem;
+        ul {
+            margin-left: 0;
+        }
+    }
+    .responsibilities {
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+    .contact-link {
+        text-decoration: none;
+        color: black;
+    }
+    .contact-button {
+        border: 2px solid black;
+        height: 50px;
+        width: 200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact {
+        margin: 0;
+        text-transform: uppercase;
+    }
+}
