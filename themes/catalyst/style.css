@@ -561,7 +561,8 @@ a {
     font-weight: lighter;
     font-size: 70px;
     line-height: 75px;
-    padding: 0 80px; }
+    padding: 0 80px;
+    text-shadow: 2px 2px 5px black; }
   .home .header-text p {
     font-size: 30px; }
 
