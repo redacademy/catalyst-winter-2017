@@ -460,11 +460,7 @@ a {
   width: 50%; }
 
 .site-header {
-<<<<<<< HEAD
-  height: 100px; }
-=======
   height: 80px; }
->>>>>>> 34779e15a6fe7d5d82175d165d64b9053e420db9
 
 .container {
   display: -ms-flexbox;
@@ -474,18 +470,12 @@ a {
   width: 100%;
   margin: auto; }
   .container .logo {
-<<<<<<< HEAD
-    width: 20%; }
-  .container .header-logo {
-    background: url("../../images/catalyst-logo-sample.png") no-repeat;
-=======
     width: 50%; }
     @media all and (min-width: 600px) {
       .container .logo {
         width: 20%; } }
   .container .header-logo {
     background: url("../../images/catalyst-logo.png") no-repeat;
->>>>>>> 34779e15a6fe7d5d82175d165d64b9053e420db9
     background-size: 100%;
     margin: 0 auto;
     display: -ms-flexbox;
@@ -495,14 +485,10 @@ a {
     overflow: hidden;
     text-indent: 193%; }
   .container .menu {
-<<<<<<< HEAD
-    width: 80%; }
-=======
     width: 50%; }
     @media all and (min-width: 600px) {
       .container .menu {
         width: 80%; } }
->>>>>>> 34779e15a6fe7d5d82175d165d64b9053e420db9
     .container .menu #primary-menu {
       display: -ms-flexbox;
       display: flex;
@@ -533,11 +519,7 @@ a {
         justify-content: center;
     min-width: 400px; }
   .footer .footerLogo {
-<<<<<<< HEAD
-    background: url("../../images/footersample.png") no-repeat;
-=======
     background: url("../../images/catalyst-footer-logo.png") no-repeat;
->>>>>>> 34779e15a6fe7d5d82175d165d64b9053e420db9
     background-size: 100%;
     width: 20px; }
   .footer .page-link {
@@ -564,8 +546,6 @@ a {
     font-size: 12px;
     height: 20px;
     margin: 0; }
-<<<<<<< HEAD
-=======
 
 .home .front-content {
   margin-bottom: 50px; }
@@ -612,7 +592,6 @@ a {
     text-decoration: none;
     color: black;
     text-decoration: none; }
->>>>>>> 34779e15a6fe7d5d82175d165d64b9053e420db9
 
 /*--------------------------------------------------------------
 # Accessibility

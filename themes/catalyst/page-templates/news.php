@@ -42,5 +42,6 @@ get_header(); ?>
 		<div>
         </main> <!--#main -->
 	</div> <!--#primary -->
+>>>>>>> 34779e15a6fe7d5d82175d165d64b9053e420db9
 
 <?php get_footer(); ?>
