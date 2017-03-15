@@ -1,4 +1,7 @@
 .home {
+    .front-content {
+        margin-bottom: 50px;
+    }
     .header-text {
         margin-top: 140px;
         position: absolute;
@@ -28,7 +31,16 @@
         padding: 20px 0;
         text-align: center;
     }
-    .readmore{
-
+    .readmore {
+        text-align: center;
+        margin: 20px 0;
+        a {
+            padding: 20px 50px;
+            text-transform: uppercase;
+            border: 3px solid black;
+            text-decoration: none;
+            color: black;
+            text-decoration: none;
+        }
     }
 }

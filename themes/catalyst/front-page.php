@@ -17,23 +17,23 @@ get_header(); ?>
         </div>
         <div class ="home-hero"></div>
     </header>
-    <div>
+    <div class="front-content">
         <div class="formula">
             <h2>the catalyst formula</h2>
             <div></div>
-            <a href="" class="readmore">learn more</a>
+             <div class="readmore"><a href="">learn more</a></div>
         </div>
 
         <div class="projects">
             <h2>our project</h2>
             <div></div>
-            <a class="readmore">view more projects</a>
+             <div class="readmore"><a>view more projects</a></div>
         </div>
 
         <div class="team">
             <h2>team catalyst</h2>
             <div></div>
-            <a class="readmore">collaborate with us</a>
+            <div class="readmore"><a>collaborate with us</a></div>
         </div>
     </div>
 </section>
