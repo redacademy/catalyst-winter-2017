@@ -234,7 +234,7 @@ textarea {
   font-family: sans-serif;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 2rem; }
+  line-height: 1.4rem; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -460,7 +460,11 @@ a {
   width: 50%; }
 
 .site-header {
+<<<<<<< HEAD
   height: 100px; }
+=======
+  height: 80px; }
+>>>>>>> 34779e15a6fe7d5d82175d165d64b9053e420db9
 
 .container {
   display: -ms-flexbox;
@@ -470,9 +474,18 @@ a {
   width: 100%;
   margin: auto; }
   .container .logo {
+<<<<<<< HEAD
     width: 20%; }
   .container .header-logo {
     background: url("../../images/catalyst-logo-sample.png") no-repeat;
+=======
+    width: 50%; }
+    @media all and (min-width: 600px) {
+      .container .logo {
+        width: 20%; } }
+  .container .header-logo {
+    background: url("../../images/catalyst-logo.png") no-repeat;
+>>>>>>> 34779e15a6fe7d5d82175d165d64b9053e420db9
     background-size: 100%;
     margin: 0 auto;
     display: -ms-flexbox;
@@ -482,7 +495,14 @@ a {
     overflow: hidden;
     text-indent: 193%; }
   .container .menu {
+<<<<<<< HEAD
     width: 80%; }
+=======
+    width: 50%; }
+    @media all and (min-width: 600px) {
+      .container .menu {
+        width: 80%; } }
+>>>>>>> 34779e15a6fe7d5d82175d165d64b9053e420db9
     .container .menu #primary-menu {
       display: -ms-flexbox;
       display: flex;
@@ -513,7 +533,11 @@ a {
         justify-content: center;
     min-width: 400px; }
   .footer .footerLogo {
+<<<<<<< HEAD
     background: url("../../images/footersample.png") no-repeat;
+=======
+    background: url("../../images/catalyst-footer-logo.png") no-repeat;
+>>>>>>> 34779e15a6fe7d5d82175d165d64b9053e420db9
     background-size: 100%;
     width: 20px; }
   .footer .page-link {
@@ -540,6 +564,55 @@ a {
     font-size: 12px;
     height: 20px;
     margin: 0; }
+<<<<<<< HEAD
+=======
+
+.home .front-content {
+  margin-bottom: 50px; }
+
+.home .header-text {
+  margin-top: 250px;
+  position: absolute;
+  color: white;
+  text-align: center;
+  width: 100%; }
+  .home .header-text h1 {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 50px;
+    line-height: 75px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-shadow: 2px 2px 5px black;
+    line-height: 70px; }
+  .home .header-text p {
+    font-size: 25px;
+    font-weight: lighter;
+    margin: 0; }
+
+.home .home-hero {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 100%, rgba(0, 0, 0, 0.5) 100%), url("../../images/front-hero-sample.png") no-repeat center 100%;
+  background-size: contain, cover;
+  height: 700px; }
+
+.home h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  background-color: #D9F1FF;
+  padding: 20px 0;
+  text-align: center; }
+
+.home .readmore {
+  text-align: center;
+  margin: 20px 0; }
+  .home .readmore a {
+    padding: 20px 50px;
+    text-transform: uppercase;
+    border: 3px solid black;
+    text-decoration: none;
+    color: black;
+    text-decoration: none; }
+>>>>>>> 34779e15a6fe7d5d82175d165d64b9053e420db9
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -709,52 +782,267 @@ object {
 .gallery-caption {
   display: block; }
 
+.page-template-collaborate {
+  height: 100%;
+  width: 100%; }
+  .page-template-collaborate .intro-copy {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 0.85rem;
+    font-weight: 100;
+    text-align: center; }
+  .page-template-collaborate .main-copy {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.55rem 0;
+    font-weight: 100;
+    text-align: center; }
+  .page-template-collaborate .navigation-button {
+    height: 60px;
+    width: 250px;
+    margin: 2rem auto;
+    border: 1px solid #323232;
+    font-size: 1.05rem;
+    color: #323232;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    .page-template-collaborate .navigation-button:hover {
+      background: #D9F1FF;
+      cursor: pointer; }
+  .page-template-collaborate .blue-background {
+    height: auto;
+    width: 100%;
+    margin: 0.75rem auto;
+    padding: 0.75rem 0.5rem;
+    background-color: #D9F1FF;
+    text-align: center; }
+    .page-template-collaborate .blue-background h2 {
+      max-width: 400px;
+      margin: 0 auto;
+      font-size: 2rem;
+      font-weight: 400;
+      color: #323232;
+      line-height: 2.4rem;
+      text-transform: uppercase; }
+    .page-template-collaborate .blue-background .supporters-header {
+      font-size: 1.55rem; }
+  .page-template-collaborate .content-container {
+    padding: 0 1rem; }
+    .page-template-collaborate .content-container .partners-information {
+      margin: 0 0 6rem; }
+      .page-template-collaborate .content-container .partners-information .small-header {
+        margin-top: 4rem;
+        margin-bottom: 1.25rem;
+        font-size: 1.75rem;
+        font-weight: 400;
+        color: #4A4A4A;
+        text-align: center;
+        text-transform: uppercase; }
+      .page-template-collaborate .content-container .partners-information .small-subheader {
+        margin: 0.5rem 0 1.5rem;
+        font-size: 1.1rem;
+        font-weight: 400;
+        text-transform: uppercase; }
+      .page-template-collaborate .content-container .partners-information .collaborate-dashed-list {
+        margin: 0 0 2rem;
+        padding-left: 0.75rem;
+        list-style-type: none; }
+        .page-template-collaborate .content-container .partners-information .collaborate-dashed-list li {
+          margin: 1.5rem 0;
+          font-weight: 100; }
+      .page-template-collaborate .content-container .partners-information .partners-text {
+        height: auto;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 1rem;
+        font-weight: 100;
+        text-align: center; }
+    .page-template-collaborate .content-container .infographic-container {
+      height: 200px;
+      width: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      background-color: blue; }
+  .page-template-collaborate .supporters-logo-container {
+    height: 200px;
+    width: 100%;
+    background-color: blue;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-align: center;
+        align-items: center; }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.page-template-news {
+  margin: 0 auto; }
+  .page-template-news .header {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 100%), url("../../images/project-hero-sample.png") no-repeat center top;
+    background-size: cover, cover;
+    height: 400px;
+    margin-top: 10; }
+  .page-template-news h1 {
+    text-align: center;
+    padding-top: 50px;
+    text-transform: uppercase;
+    color: white; }
+  @media all and (min-width: 600px) {
+    .page-template-news .video {
+      margin: 20px auto;
+      width: 1100px;
+      height: 400px;
+      background-color: grey; } }
+  .page-template-news h2 {
+    text-transform: uppercase;
+    background-color: #D9F1FF;
+    padding: 20px 0;
+    text-align: center; }
+  @media all and (min-width: 600px) {
+    .page-template-news .stories {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      width: 100%;
+      -ms-flex-pack: justify;
+          justify-content: space-between; } }
+  .page-template-news .stories li {
+    margin-bottom: 20px; }
+  .page-template-news .stories ul {
+    margin: 0 auto;
+    padding-left: 0; }
+  .page-template-news .stories .twitter-list {
+    list-style-type: none;
+    padding: 180px 150px;
+    background-color: pink;
+    margin-left: 10px;
+    margin-right: 10px; }
+  .page-template-news .stories .article-list {
+    list-style-type: none;
+    padding: 180px 100px;
+    background-color: grey;
+    margin-left: 10px;
+    margin-right: 10px; }
+  .page-template-news .load-more {
+    margin-bottom: 80px;
+    margin-top: 40px;
+    text-align: center; }
+    .page-template-news .load-more a {
+      padding: 30px 80px;
+      text-transform: uppercase;
+      border: 3px solid black;
+      text-decoration: none;
+      color: black; }
+
 .page-template-default {
   text-align: center; }
   .page-template-default .contact-title {
     background-color: #D9F1FF;
     font-size: 1.4rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-bottom: 1.5rem; }
     .page-template-default .contact-title h3 {
       width: 350px;
-      margin: 0 auto; }
-  .page-template-default form {
-    margin: 2%;
-    background-color: #D9F1FF;
-    padding: 2%; }
-    .page-template-default form p:nth-child(6) {
-      position: relative; }
-      .page-template-default form p:nth-child(6) .other {
-        position: absolute;
-        bottom: 0;
-        left: 3.5rem;
-        width: 90%; }
-    .page-template-default form input {
+      margin: 0 auto;
+      height: 100px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+      @media all and (min-width: 600px) {
+        .page-template-default .contact-title h3 {
+          width: 100%; } }
+  .page-template-default .wpcf7 {
+    padding: 3%; }
+    .page-template-default .wpcf7 form {
+      margin: 0 auto;
+      background-color: #D9F1FF;
+      padding: 0.5rem 1rem; }
+      @media all and (min-width: 600px) {
+        .page-template-default .wpcf7 form {
+          max-width: 1000px;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+          padding: 0.5rem 2rem; }
+          .page-template-default .wpcf7 form p {
+            -ms-flex-preferred-size: 48%;
+                flex-basis: 48%; } }
+      @media all and (min-width: 600px) {
+        .page-template-default .wpcf7 form p:nth-child(6),
+        .page-template-default .wpcf7 form p:nth-child(7),
+        .page-template-default .wpcf7 form p:nth-child(8) {
+          -ms-flex-preferred-size: 100%;
+              flex-basis: 100%; } }
+      .page-template-default .wpcf7 form p:nth-child(9) {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        margin: 0 auto; }
+    .page-template-default .wpcf7 input {
       width: 100%;
       height: 50px;
-      padding-left: 1rem; }
-    .page-template-default form .radio {
+      padding-left: 1rem;
+      border: none;
+      font-style: italic; }
+    .page-template-default .wpcf7 .radio {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: column;
           flex-direction: column; }
-      .page-template-default form .radio input {
+      @media all and (min-width: 600px) {
+        .page-template-default .wpcf7 .radio {
+          -ms-flex-direction: row;
+              flex-direction: row;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+      .page-template-default .wpcf7 .radio input {
         width: 1rem; }
-      .page-template-default form .radio .wpcf7-list-item {
+      .page-template-default .wpcf7 .radio .wpcf7-list-item {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-align: center;
             align-items: center; }
-    .page-template-default form textarea {
-      padding-left: 3px;
+      .page-template-default .wpcf7 .radio .wpcf7-list-item-label {
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        margin-left: 1rem; }
+    .page-template-default .wpcf7 textarea {
+      padding-left: 1rem;
+      padding-top: 1rem;
       width: 100%;
-      height: 70vh; }
-    .page-template-default form .wpcf7-submit {
-      width: 80%;
+      height: 70vh;
+      border: none;
+      font-style: italic; }
+    .page-template-default .wpcf7 .wpcf7-submit {
+      width: 200px;
       background-color: #fff;
       border: 1px solid #000;
-      font-size: 1rem; }
+      font-size: 1rem;
+      height: 60px;
+      font-style: normal;
+      margin: 0 auto 1.5rem; }

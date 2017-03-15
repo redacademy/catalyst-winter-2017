@@ -118,7 +118,11 @@ a {
 }
 
 .site-header {
+<<<<<<< HEAD
 	height: 100px;
+=======
+	height: 80px;
+>>>>>>> 34779e15a6fe7d5d82175d165d64b9053e420db9
 }
 
 .container {
@@ -127,7 +131,20 @@ a {
 	width: 100%;
 	margin: auto;
 	.logo {
-		width: 20%;
+		width: 50%;
+		@include media($desktop-width) {
+			width: 20%;
+		}
+	}
+	.header-logo {
+		background: url('../../images/catalyst-logo.png')no-repeat;
+		background-size: 100%;
+		margin: 0 auto;
+		display: flex;
+		width: 200px;
+		text-align: center;
+		overflow: hidden;
+		text-indent: 193%;
 	}
 	.header-logo {
 		background: url('../../images/catalyst-logo-sample.png')no-repeat;
@@ -140,8 +157,16 @@ a {
 		text-indent: 193%;
 	}
 	.menu {
+<<<<<<< HEAD
 		width: 80%;
 		#primary-menu{
+=======
+		width: 50%;
+		@include media($desktop-width) {
+			width: 80%;
+		}
+		#primary-menu {
+>>>>>>> 34779e15a6fe7d5d82175d165d64b9053e420db9
 			display: flex;
 			justify-content: flex-end;
 			margin-top: 10px;
