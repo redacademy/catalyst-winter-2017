@@ -1031,7 +1031,7 @@ object {
         font-size: 1.1rem;
         text-transform: uppercase;
         margin-left: 1rem; }
-    .page-template-default .wpcf7 textarea {
+    .page-template-default .wpcf7 .wpcf7-text textarea {
       padding-left: 1rem;
       padding-top: 1rem;
       width: 100%;
