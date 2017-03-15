@@ -122,7 +122,7 @@ add_action( 'init', 'team_member_cpt', 0 );
 
 
 // Register Custom Post Type
-function career_cpt() {
+function careers_cpt() {
 
 	$labels = array(
 		'name'                  => 'Careers',
@@ -172,7 +172,7 @@ function career_cpt() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
 	);
-	register_post_type( 'career', $args );
+	register_post_type( 'careers', $args );
 
 }
-add_action( 'init', 'career_cpt', 0 );
+add_action( 'init', 'careers_cpt', 0 );

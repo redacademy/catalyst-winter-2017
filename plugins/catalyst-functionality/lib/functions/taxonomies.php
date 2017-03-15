@@ -87,7 +87,7 @@ add_action( 'init', 'team_member_taxonomy', 0 );
 
 
 // Register Custom Taxonomy
-function career_taxonomy() {
+function careers_taxonomy() {
 
 	$labels = array(
 		'name'                       => 'Career Types',
@@ -120,7 +120,7 @@ function career_taxonomy() {
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
 	);
-	register_taxonomy( 'career_type', array( 'post' ), $args );
+	register_taxonomy( 'careers_type', array( 'post' ), $args );
 
 }
-add_action( 'init', 'career_taxonomy', 0 );
+add_action( 'init', 'careers_taxonomy', 0 );
