@@ -460,7 +460,7 @@ a {
   width: 50%; }
 
 .site-header {
-  height: 100px; }
+  height: 80px; }
 
 .container {
   display: -ms-flexbox;
@@ -470,7 +470,10 @@ a {
   width: 100%;
   margin: auto; }
   .container .logo {
-    width: 20%; }
+    width: 50%; }
+    @media all and (min-width: 600px) {
+      .container .logo {
+        width: 20%; } }
   .container .header-logo {
     background: url("../../images/catalyst-logo.png") no-repeat;
     background-size: 100%;
@@ -482,7 +485,10 @@ a {
     overflow: hidden;
     text-indent: 193%; }
   .container .menu {
-    width: 80%; }
+    width: 50%; }
+    @media all and (min-width: 600px) {
+      .container .menu {
+        width: 80%; } }
     .container .menu #primary-menu {
       display: -ms-flexbox;
       display: flex;
