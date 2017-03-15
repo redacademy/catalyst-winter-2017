@@ -35,11 +35,12 @@ function hero_banner_css() {
 			return;
 		}
 		echo $image;
-	$hero_css = ".page-template-default .herobanner {
+	$hero_css = ".page-template-page-our-story .herobanner {
         background:
             linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
             url({$image}) no-repeat center bottom;
-        background-size: 100px 100px;
+        background-size: cover, contain;
+		height: 500px;
 }";
 	wp_add_inline_style( 'red-starter-style', $hero_css );
 

@@ -1,10 +1,11 @@
-<?php
-/**
- * The template for displaying all pages.
- *
- * @package RED_Starter_Theme
- */
 
+<?php
+
+/**
+	* Template Name: ourStory
+	*
+	* @package Catalyst Theme
+	*/
 get_header(); ?>
 
 	<div id="primary" class="content-area">
