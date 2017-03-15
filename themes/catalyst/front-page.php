@@ -9,9 +9,14 @@ get_header(); ?>
 
 
 <section class="front-page">
-
-  <div class ="home-hero"></div>
-
+    <header>
+        <div class="header-text">
+            <h1>we improve the quality of peoples lives</h1>
+            <p>We build communities,</p>
+            <p>We use real estate to affect social change</p>
+        </div>
+        <div class ="home-hero"></div>
+    </header>
     <div>
         <div class="formula">
             <h2>the catalyst formula</h2>
@@ -31,9 +36,6 @@ get_header(); ?>
             <a>collaborate with us</a>
         </div>
     </div>
-
-        <p><a href="<?php echo get_post_type_archive_link('adventure'); ?>">learn more</a></p>
-
 </section>
 
 

@@ -1,0 +1,28 @@
+.home {
+    .header-text {
+        margin-top: 140px;
+        position: absolute;
+        color: white;
+        text-align: center;
+        width: 100%;
+        h1 {
+            text-transform: uppercase;
+            font-weight: lighter;
+            font-size: 70px;
+            line-height: 75px;
+            padding: 0 80px;
+        }
+        p {
+            font-size: 30px;
+        }
+    }
+    .home-hero {
+        background: linear-gradient( to bottom, rgba(0, 0, 0, 0.8) 100%, rgba(0, 0, 0, 0.5) 100%), url('../../images/front-hero-sample.png') no-repeat center 100%;
+        background-size: contain, cover;
+        height: 700px;
+    }
+    h2 {
+        text-transform: uppercase;
+    }
+    .formula {}
+}
