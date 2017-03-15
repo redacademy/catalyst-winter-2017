@@ -547,6 +547,52 @@ a {
     height: 20px;
     margin: 0; }
 
+.home .front-content {
+  margin-bottom: 50px; }
+
+.home .header-text {
+  margin-top: 250px;
+  position: absolute;
+  color: white;
+  text-align: center;
+  width: 100%; }
+  .home .header-text h1 {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 50px;
+    line-height: 75px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-shadow: 2px 2px 5px black;
+    line-height: 70px; }
+  .home .header-text p {
+    font-size: 25px;
+    font-weight: lighter;
+    margin: 0; }
+
+.home .home-hero {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 100%, rgba(0, 0, 0, 0.5) 100%), url("../../images/front-hero-sample.png") no-repeat center 100%;
+  background-size: contain, cover;
+  height: 700px; }
+
+.home h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  background-color: #D9F1FF;
+  padding: 20px 0;
+  text-align: center; }
+
+.home .readmore {
+  text-align: center;
+  margin: 20px 0; }
+  .home .readmore a {
+    padding: 20px 50px;
+    text-transform: uppercase;
+    border: 3px solid black;
+    text-decoration: none;
+    color: black;
+    text-decoration: none; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
