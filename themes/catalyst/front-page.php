@@ -21,19 +21,19 @@ get_header(); ?>
         <div class="formula">
             <h2>the catalyst formula</h2>
             <div></div>
-            <a>learn more</a>
+            <a href="" class="readmore">learn more</a>
         </div>
 
         <div class="projects">
             <h2>our project</h2>
             <div></div>
-            <a>view more projects</a>
+            <a class="readmore">view more projects</a>
         </div>
 
         <div class="team">
             <h2>team catalyst</h2>
             <div></div>
-            <a>collaborate with us</a>
+            <a class="readmore">collaborate with us</a>
         </div>
     </div>
 </section>

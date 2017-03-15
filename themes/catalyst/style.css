@@ -568,7 +568,11 @@ a {
   height: 700px; }
 
 .home h2 {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 30px;
+  background-color: #D9F1FF;
+  padding: 20px 0;
+  text-align: center; }
 
 /*--------------------------------------------------------------
 # Accessibility
