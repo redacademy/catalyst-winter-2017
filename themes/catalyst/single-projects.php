@@ -16,6 +16,10 @@
             <p class='banner-status'>Status: <span class='project-status'><?php echo CFS()->get('project_status'); ?></span></p>
         </div>
 
+        <div class="project-post-head">
+            <h2 class="post-text">Project details</h2>
+        </div>
+
         <div class="proj-content">
             <h3>Structure: </h3>
             <?php echo CFS()->get('structure'); ?>

@@ -1164,3 +1164,22 @@ object {
     font-size: 1.3rem; }
     .single-projects .banner .banner-status .project-status {
       text-transform: uppercase; }
+
+.single-projects .project-post-head {
+  background-color: #d9f1ff;
+  height: 70px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 2rem 0;
+  text-transform: uppercase; }
+
+.single-projects .proj-content {
+  margin: 0 1.5rem; }
+  .single-projects .proj-content h3 {
+    margin-bottom: 0; }
+  .single-projects .proj-content p {
+    margin-top: 0; }
