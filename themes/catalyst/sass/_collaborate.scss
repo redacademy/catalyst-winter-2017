@@ -124,9 +124,9 @@
                 padding-left: 0.75rem;
                 list-style-type: none;
                 @include media($desktop-width) {
-                    height: 1000px;
+                    height: auto;
                     margin: 0;
-                    padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+                    padding: 0.5rem 0.5rem 2.5rem 2rem;
                     border: 5px solid $color__brand-blue;
                     display: inline-block;
                 }
@@ -150,6 +150,10 @@
                 }
             }
 
+            li + .partners-text {
+                margin-top: 3.75rem;
+            }
+
             .partners-text {
                 height: auto;
                 width: 100%;
@@ -157,6 +161,11 @@
                 padding: 0 1rem;
                 font-weight: 100;
                 text-align: center;
+                @include media ($desktop-width) {
+                    width: 330px;
+                    padding: 2rem 0 0;
+                    transform: translateX(-1rem);
+                }
             }
         }
 
@@ -168,10 +177,54 @@
         }
     }
 
+    .key-graphic-1 {
+        width: 80px;
+        position: relative;
+        z-index: -99999;
+        bottom: 27.15rem;
+        left: 18%;
+        transform: rotate(25deg);
+    }
+
+    .key-graphic-2 {
+        width: 50px;
+        position: relative;
+        z-index: -99999;
+        bottom: 16rem;
+        left: 37.65%;
+        transform: rotate(-25deg);
+    }
+
+    .dollar-sign-graphic-1 {
+        width: 100px;
+        position: relative;
+        z-index: -99999;
+        bottom: 30rem;
+        left: 44%;
+    }
+
+    .dollar-sign-graphic-2 {
+        width: 70px;
+        position: relative;
+        z-index: -99999;
+        bottom: 10rem;
+        left: 63%;
+    }
+
     .supporters-logo-container {
         height: 200px;
         width: 100%;
         background-color: blue;
         @include flex-row(wrap, flex-start, center);
+    }
+
+    .infographic-container {
+        height: auto;
+        padding: 0.5rem 0 1.5rem;
+        text-align: center;
+
+        img {
+            height: 530px;
+        }
     }
 }
