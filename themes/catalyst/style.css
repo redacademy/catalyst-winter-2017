@@ -813,7 +813,8 @@ object {
       margin: 0 auto 1.5rem; }
 
 .post-type-archive-careers #content {
-  width: 1120px;
+  width: 100%;
+  max-width: 1120px;
   margin: 0 auto; }
 
 .post-type-archive-careers .page-header-container {
@@ -832,7 +833,8 @@ object {
   margin: 0; }
 
 .post-type-archive-careers .job-container {
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
   margin: 0 auto; }
 
 .post-type-archive-careers .job-post {
@@ -855,7 +857,8 @@ object {
   margin-bottom: 0; }
 
 .post-type-archive-careers .resp-container {
-  width: 750px;
+  width: 100%;
+  max-width: 750px;
   margin: 0 auto;
   font-size: 1.3rem; }
   .post-type-archive-careers .resp-container ul {

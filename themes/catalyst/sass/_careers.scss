@@ -1,6 +1,7 @@
 .post-type-archive-careers {
     #content {
-        width: 1120px;
+        width: 100%;
+        max-width: 1120px;
         margin: 0 auto;
     }
     .page-header-container {
@@ -16,7 +17,8 @@
         margin: 0;
     }
     .job-container {
-        width: 900px;
+        width: 100%;
+        max-width: 900px;
         margin: 0 auto;
     }
     .job-post {
@@ -39,7 +41,8 @@
         margin-bottom: 0;
     }
     .resp-container {
-        width: 750px;
+        width: 100%;
+        max-width: 750px;
         margin: 0 auto;
         font-size: 1.3rem;
         ul {
