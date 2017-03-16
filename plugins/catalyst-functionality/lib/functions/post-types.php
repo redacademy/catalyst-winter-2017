@@ -126,7 +126,7 @@ add_action( 'init', 'team_member_cpt', 0 );
 
 // Register Careers Custom Post Type
 
-function career_cpt() {
+function careers_cpt() {
 
 	$labels = array(
 		'name'                  => 'Careers',
