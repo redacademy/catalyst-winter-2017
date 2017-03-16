@@ -1102,3 +1102,52 @@ object {
 .post-type-archive-careers .contact {
   margin: 0;
   text-transform: uppercase; }
+
+.post-type-archive-projects .project-content {
+  text-align: center; }
+
+.post-type-archive-projects .project-post {
+  margin-bottom: 3rem; }
+
+.post-type-archive-projects .proj-head {
+  background-color: #d9f1ff;
+  height: 90px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .post-type-archive-projects .proj-head p {
+    margin: 0; }
+  .post-type-archive-projects .proj-head .name {
+    font-size: 1.5rem;
+    font-weight: bold; }
+  .post-type-archive-projects .proj-head .status {
+    text-transform: uppercase; }
+
+.post-type-archive-projects .img-container {
+  margin: 2rem; }
+
+.post-type-archive-projects .project-image {
+  width: 100%; }
+
+.post-type-archive-projects .project-link {
+  text-decoration: none;
+  color: black; }
+
+.post-type-archive-projects .project-button {
+  border: 2px solid black;
+  height: 50px;
+  width: 200px;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.post-type-archive-projects .learn-more {
+  margin: 0;
+  text-transform: uppercase; }

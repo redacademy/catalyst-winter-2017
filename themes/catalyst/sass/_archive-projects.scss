@@ -1,0 +1,48 @@
+.post-type-archive-projects {
+    .project-content {
+        text-align: center;
+    }
+    .project-post {
+        margin-bottom: 3rem;
+    }
+    .proj-head {
+        background-color: #d9f1ff;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p {
+            margin: 0;
+        }
+        .name {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .status {
+            text-transform: uppercase;
+        }
+    }
+    .img-container {
+        margin: 2rem;
+    }
+    .project-image {
+        width: 100%;
+    }
+    .project-link {
+        text-decoration: none;
+        color: black;
+    }
+    .project-button {
+        border: 2px solid black;
+        height: 50px;
+        width: 200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .learn-more {
+        margin: 0;
+        text-transform: uppercase;
+    }
+}
