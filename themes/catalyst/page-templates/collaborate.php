@@ -29,6 +29,12 @@ get_header(); ?>
 			<img class="dollar-sign-graphic-1" src="<?php echo get_template_directory_uri(); ?>/images/graphics/dollar-sign.svg">
 			<img class="dollar-sign-graphic-2" src="<?php echo get_template_directory_uri(); ?>/images/graphics/dollar-sign.svg">
 			<div class="infographic-container">
+				<img class="key-graphic-1" src="<?php echo get_template_directory_uri(); ?>/images/graphics/key.svg">
+				<img class="key-graphic-2" src="<?php echo get_template_directory_uri(); ?>/images/graphics/key.svg">
+				<img class="green-line-graphic-1" src="<?php echo get_template_directory_uri(); ?>/images/graphics/lines.svg">
+				<img class="dollar-sign-graphic-1" src="<?php echo get_template_directory_uri(); ?>/images/graphics/dollar-sign.svg">
+				<img class="dollar-sign-graphic-2" src="<?php echo get_template_directory_uri(); ?>/images/graphics/dollar-sign.svg">
+				<img class="green-line-graphic-2" src="<?php echo get_template_directory_uri(); ?>/images/graphics/lines.svg">
 				<img class="business-model-diagram" src="<?php echo get_the_post_thumbnail_url(); ?>">
 			</div>
 			<a class="navigation-button" href="#">Contact Us</a>
