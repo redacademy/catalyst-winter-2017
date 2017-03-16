@@ -475,7 +475,7 @@ a {
       .container .logo {
         width: 20%; } }
   .container .header-logo {
-    background: url("../../images/catalyst-logo.png") no-repeat;
+    background: url("../../images/full-logo.png") no-repeat;
     background-size: 100%;
     margin: 0 auto;
     display: -ms-flexbox;
@@ -519,7 +519,7 @@ a {
         justify-content: center;
     min-width: 400px; }
   .footer .footerLogo {
-    background: url("../../images/catalyst-footer-logo.png") no-repeat;
+    background: url("../../images/logo.png") no-repeat;
     background-size: 100%;
     width: 20px; }
   .footer .page-link {
@@ -764,10 +764,13 @@ object {
 .page-template-news {
   margin: 0 auto; }
   .page-template-news h1 {
+    position: absolute;
     text-align: center;
     padding-top: 50px;
     text-transform: uppercase;
     color: white; }
+  .page-template-news .entry-header {
+    display: none; }
   @media all and (min-width: 600px) {
     .page-template-news .video {
       margin: 20px auto;

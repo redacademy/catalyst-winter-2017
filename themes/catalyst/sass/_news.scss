@@ -1,12 +1,15 @@
 
 .page-template-news {
     margin: 0 auto;
-
     h1 {
+        position: absolute;
         text-align: center;
         padding-top: 50px;
         text-transform: uppercase;
         color: white;
+    }
+    .entry-header{
+        display: none;
     }
     .video {
         @include media($desktop-width) {
