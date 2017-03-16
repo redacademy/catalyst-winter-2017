@@ -1,6 +1,10 @@
 .post-type-archive-projects {
     .project-content {
         text-align: center;
+        @include media($desktop-width) {
+            max-width: 1120px;
+            margin: 0 auto;
+        }
     }
     .project-post {
         margin-bottom: 3rem;
@@ -11,19 +15,39 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        @include media($desktop-width) {
+            flex-direction: row;
+            align-items: center;
+        }
         p {
             margin: 0;
         }
         .name {
             font-size: 1.5rem;
             font-weight: bold;
+            @include media($desktop-width) {
+                font-size: 1rem;
+            }
         }
         .status {
             text-transform: uppercase;
         }
+        .break {
+            display: none;
+            @include media($desktop-width) {
+                display: initial;
+                font-size: 1.5rem;
+                font-weight: 500;
+                margin: 0 0.5rem;
+            }
+        }
     }
     .img-container {
-        margin: 2rem;
+        margin: 2rem 2rem 3rem;
+        @include media($desktop-width) {
+            max-width: 750px;
+            margin: 2rem auto 3rem auto;
+        }
     }
     .project-image {
         width: 100%;
