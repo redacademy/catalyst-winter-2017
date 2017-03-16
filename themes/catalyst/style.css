@@ -1134,20 +1134,7 @@ object {
 
 .post-type-archive-projects .project-link {
   text-decoration: none;
-  color: black; }
-
-.post-type-archive-projects .project-button {
+  color: black;
   border: 2px solid black;
-  height: 50px;
-  width: 200px;
-  margin: 0 auto;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center; }
-
-.post-type-archive-projects .learn-more {
-  margin: 0;
+  padding: 1rem 3.5rem;
   text-transform: uppercase; }

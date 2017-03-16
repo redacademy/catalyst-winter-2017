@@ -20,7 +20,7 @@
         </div>
     
 
-        <a href="#" class="project-link"><div class="project-button"><p class="learn-more">Learn More</p></div></a>
+        <a href="<?php get_post_permalink(); ?>" class="project-link">Learn More</a>
 
     </div>
 

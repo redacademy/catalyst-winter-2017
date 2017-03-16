@@ -31,18 +31,8 @@
     .project-link {
         text-decoration: none;
         color: black;
-    }
-    .project-button {
         border: 2px solid black;
-        height: 50px;
-        width: 200px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .learn-more {
-        margin: 0;
+        padding: 1rem 3.5rem;
         text-transform: uppercase;
     }
 }

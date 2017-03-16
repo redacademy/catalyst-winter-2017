@@ -1,32 +1,29 @@
 <?php
 /**
- * The template for displaying project single posts.
+ * The template for displaying single posts for projects(projects page).
  *
  * @package RED_Starter_Theme
  */
 
-get_header(); ?>
-<?php echo CFS()->get( 'banner_image' ); ?>
-	<div id="primary" class="content-areaaaaaaa">
-		<main id="main" class="site-main" role="main">
+ get_header(); ?>
 
-		<?php while ( have_posts() ) : the_post(); ?>
+<div class="project-content">
+    <?php while ( have_posts() ) : the_post(); ?>
+    <div class="project-post">
+        <div class="proj-head">
+            <p class='name'><?php echo CFS()->get('project_name'); ?></p>
+            <p>Location: <span><?php echo CFS()->get('project_location'); ?></span></p>
+            <p>Status: <span class='status'><?php echo CFS()->get('project_status'); ?></span></p>
+        </div>
+        <div class="img-container">
+            <img class='project-image' src='<?php echo CFS()->get('banner_image'); ?>'>
+        </div>
+    
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+        <a href="#" class="project-link"><div class="project-button"><p class="learn-more">Learn More</p></div></a>
 
-			<?php the_post_navigation(); ?>
+    </div>
 
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
-
-		<?php endwhile; // End of the loop. ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+    <?php endwhile; ?>
+</div>
+ <?php get_footer(); ?>
