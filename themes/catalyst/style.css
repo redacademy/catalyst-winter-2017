@@ -460,6 +460,7 @@ a {
   width: 50%; }
 
 .site-header {
+  height: 100px;
   height: 80px; }
 
 .container {
@@ -484,68 +485,85 @@ a {
     text-align: center;
     overflow: hidden;
     text-indent: 193%; }
+  .container .header-logo {
+    background: url("../../images/catalyst-logo-sample.png") no-repeat;
+    background-size: 100%;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    width: 200px;
+    text-align: center;
+    overflow: hidden;
+    text-indent: 193%; }
   .container .menu {
-    width: 50%; }
-    @media all and (min-width: 600px) {
-      .container .menu {
-        width: 80%; } }
+    width: 80%; }
     .container .menu #primary-menu {
+      width: 50%;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: end;
           justify-content: flex-end;
       margin-top: 10px; }
+      @media all and (min-width: 600px) {
+        .container .menu #primary-menu {
+          width: 80%; } }
 
 .footer {
   margin: 0 auto;
   background-color: #D9F1FF;
   text-align: center;
   width: 100%; }
-  @media all and (min-width: 600px) {
-    .footer {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      height: 100px;
-      -ms-flex-pack: center;
-          justify-content: center; } }
-  .footer .footer-title {
+
+@media all and (min-width: 600px) and (min-width: 600px) {
+  .footer {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    height: 100px;
     -ms-flex-pack: center;
-        justify-content: center;
-    min-width: 400px; }
-  .footer .footerLogo {
-    background: url("../../images/catalyst-footer-logo.png") no-repeat;
-    background-size: 100%;
-    width: 20px; }
-  .footer .page-link {
-    visibility: hidden;
-    height: 10px;
-    text-transform: uppercase;
-    font-size: 12px; }
-    .footer .page-link a {
-      text-decoration: none;
-      color: #4A4A4A;
-      margin-right: 20px; }
-    @media all and (min-width: 600px) {
-      .footer .page-link {
-        visibility: visible; } }
+        justify-content: center; } }
   @media all and (min-width: 600px) {
-    .footer .sns-icon {
-      margin-left: 30px; } }
-  .footer .company-info h3 {
-    font-size: 16px;
-    margin: 0;
-    height: 25px;
-    text-transform: uppercase; }
-  .footer .company-info p {
-    font-size: 12px;
-    height: 20px;
-    margin: 0; }
+    .footer .footer-title {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-pack: center;
+          justify-content: center;
+      min-width: 400px; }
+    .footer .footerLogo {
+      background: url("../../images/footersample.png") no-repeat;
+      background: url("../../images/catalyst-footer-logo.png") no-repeat;
+      background-size: 100%;
+      width: 20px; }
+    .footer .page-link {
+      visibility: hidden;
+      height: 10px;
+      text-transform: uppercase;
+      font-size: 12px; }
+      .footer .page-link a {
+        text-decoration: none;
+        color: #4A4A4A;
+        margin-right: 20px; } }
+
+@media all and (min-width: 600px) and (min-width: 600px) and (min-width: 600px) {
+  .footer .page-link {
+    visibility: visible; } }
+
+@media all and (min-width: 600px) and (min-width: 600px) and (min-width: 600px) {
+  .footer .page-link .sns-icon {
+    margin-left: 30px; } }
+  @media all and (min-width: 600px) {
+      .footer .page-link .sns-icon .company-info h3 {
+        font-size: 16px;
+        margin: 0;
+        height: 25px;
+        text-transform: uppercase; }
+      .footer .page-link .sns-icon .company-info p {
+        font-size: 12px;
+        height: 20px;
+        margin: 0; } }
 
 .home .front-content {
   margin-bottom: 50px; }

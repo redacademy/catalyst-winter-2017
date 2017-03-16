@@ -3,54 +3,60 @@
     background-color: $color__brand-blue;
     text-align: center;
     width: 100%;
-    @include media($desktop-width) {
-        display: flex;
-        flex-wrap: wrap;
-        height: 100px;
-        justify-content: center;
-    }
-    .footer-title {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        min-width: 400px;
-    }
-    .footerLogo {
-        background: url('../../images/catalyst-footer-logo.png')no-repeat;
-        background-size: 100%;
-        width: 20px;
-    }
-    .page-link {
-        visibility: hidden;
-        height: 10px;
-        text-transform: uppercase;
-        font-size: 12px;
-        a{
-            text-decoration: none;
-            color: $color__text-main;
-            margin-right: 20px;
-        }
+    @media all and (min-width: $width) {
         @include media($desktop-width) {
-            visibility: visible;
+            display: flex;
+            flex-wrap: wrap;
+            height: 100px;
+            justify-content: center;
         }
-    }
-    .sns-icon {
-       @include media($desktop-width) {
-            margin-left: 30px;
+        .footer-title {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            min-width: 400px;
         }
-    }
-    .company-info {
-        h3 {
-            font-size: 16px;
-            margin: 0;
-            height: 25px;
+        .footerLogo {
+            background: url('../../images/footersample.png')no-repeat;
+            background: url('../../images/catalyst-footer-logo.png')no-repeat;
+            background-size: 100%;
+            width: 20px;
+        }
+        .page-link {
+            visibility: hidden;
+            height: 10px;
             text-transform: uppercase;
-        }
-        p {
             font-size: 12px;
-            height: 20px;
-            margin: 0;
+            a {
+                text-decoration: none;
+                color: $color__text-main;
+                margin-right: 20px;
+            }
+            @media all and (min-width: $width) {
+                @include media($desktop-width) {
+                    visibility: visible;
+                }
+            }
+            .sns-icon {
+                @media all and (min-width: $width) {
+                    @include media($desktop-width) {
+                        margin-left: 30px;
+                    }
+                }
+                .company-info {
+                    h3 {
+                        font-size: 16px;
+                        margin: 0;
+                        height: 25px;
+                        text-transform: uppercase;
+                    }
+                    p {
+                        font-size: 12px;
+                        height: 20px;
+                        margin: 0;
+                    }
+                }
+            }
         }
-
     }
 }
