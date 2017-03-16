@@ -186,16 +186,64 @@
                 }
             }
         }
+    }
 
-        .infographic-container {
-            height: 200px;
-            width: 100%;
-            @include flex-column(nowrap, center, center);
-            background-color: blue;
+    .infographic-container {
+        height: auto;
+        width: 100%;
+        margin-top: -34.5rem;
+        padding: 0.5rem 0 1.5rem;
+        text-align: center;
+        @include flex-column(nowrap, center, center);
+        position: relative;
+
+        .business-model-diagram {
+            height: 530px;
+        }
+
+        .green-line-graphic-1 {
+            height: auto;
+            width: 150px;
+            position: absolute;
+            top: 35.5rem;
+            left: 24.35%;
+            transform: rotate(-117deg);
+        }
+
+        .green-line-graphic-2 {
+            height: auto;
+            width: 150px;
+            position: absolute;
+            top: 35.25rem;
+            left: 65.5%;
+            transform: rotate(-3deg);
+        }
+
+        .key-graphic-1 {
+            top: 30rem;
+            left: -31%;
+            opacity: 0.5;
+        }
+
+        .key-graphic-2 {
+            top: 22.75rem;
+            left: -29%;
+        }
+
+        .dollar-sign-graphic-1 {
+            top: 15.5rem;
+            left: 31%;
+            opacity: 0.5;
+        }
+
+        .dollar-sign-graphic-2 {
+            top: 12.35rem;
+            left: 29.25%;
         }
     }
 
     .key-graphic-1 {
+        height: auto;
         width: 80px;
         position: relative;
         z-index: -99999;
@@ -205,6 +253,7 @@
     }
 
     .key-graphic-2 {
+        height: auto;
         width: 50px;
         position: relative;
         z-index: -99999;
@@ -214,6 +263,7 @@
     }
 
     .dollar-sign-graphic-1 {
+        height: auto;
         width: 100px;
         position: relative;
         z-index: -99999;
@@ -222,6 +272,7 @@
     }
 
     .dollar-sign-graphic-2 {
+        height: auto;
         width: 70px;
         position: relative;
         z-index: -99999;
@@ -234,16 +285,5 @@
         width: 100%;
         background-color: blue;
         @include flex-row(wrap, flex-start, center);
-    }
-
-    .infographic-container {
-        height: auto;
-        margin-top: -9rem;
-        padding: 0.5rem 0 1.5rem;
-        text-align: center;
-
-        img {
-            height: 530px;
-        }
     }
 }

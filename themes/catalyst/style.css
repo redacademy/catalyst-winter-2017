@@ -1011,19 +1011,53 @@ object {
             width: 330px;
             padding: 2rem 0 0;
             transform: translateX(-1rem); } }
-    .page-template-collaborate .content-container .infographic-container {
-      height: 200px;
-      width: 100%;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-      -ms-flex-pack: center;
-          justify-content: center;
-      -ms-flex-align: center;
-          align-items: center;
-      background-color: blue; }
+  .page-template-collaborate .infographic-container {
+    height: auto;
+    width: 100%;
+    margin-top: -34.5rem;
+    padding: 0.5rem 0 1.5rem;
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    position: relative; }
+    .page-template-collaborate .infographic-container .business-model-diagram {
+      height: 530px; }
+    .page-template-collaborate .infographic-container .green-line-graphic-1 {
+      height: auto;
+      width: 150px;
+      position: absolute;
+      top: 35.5rem;
+      left: 24.35%;
+      transform: rotate(-117deg); }
+    .page-template-collaborate .infographic-container .green-line-graphic-2 {
+      height: auto;
+      width: 150px;
+      position: absolute;
+      top: 35.25rem;
+      left: 65.5%;
+      transform: rotate(-3deg); }
+    .page-template-collaborate .infographic-container .key-graphic-1 {
+      top: 30rem;
+      left: -31%;
+      opacity: 0.5; }
+    .page-template-collaborate .infographic-container .key-graphic-2 {
+      top: 22.75rem;
+      left: -29%; }
+    .page-template-collaborate .infographic-container .dollar-sign-graphic-1 {
+      top: 15.5rem;
+      left: 31%;
+      opacity: 0.5; }
+    .page-template-collaborate .infographic-container .dollar-sign-graphic-2 {
+      top: 12.35rem;
+      left: 29.25%; }
   .page-template-collaborate .key-graphic-1 {
+    height: auto;
     width: 80px;
     position: relative;
     z-index: -99999;
@@ -1031,6 +1065,7 @@ object {
     left: 17%;
     transform: rotate(25deg); }
   .page-template-collaborate .key-graphic-2 {
+    height: auto;
     width: 50px;
     position: relative;
     z-index: -99999;
@@ -1038,12 +1073,14 @@ object {
     left: 36.55%;
     transform: rotate(-25deg); }
   .page-template-collaborate .dollar-sign-graphic-1 {
+    height: auto;
     width: 100px;
     position: relative;
     z-index: -99999;
     bottom: 30rem;
     left: 44.5%; }
   .page-template-collaborate .dollar-sign-graphic-2 {
+    height: auto;
     width: 70px;
     position: relative;
     z-index: -99999;
@@ -1061,13 +1098,6 @@ object {
         justify-content: flex-start;
     -ms-flex-align: center;
         align-items: center; }
-  .page-template-collaborate .infographic-container {
-    height: auto;
-    margin-top: -9rem;
-    padding: 0.5rem 0 1.5rem;
-    text-align: center; }
-    .page-template-collaborate .infographic-container img {
-      height: 530px; }
 
 /*--------------------------------------------------------------
 # Page Templates
