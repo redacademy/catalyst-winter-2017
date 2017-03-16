@@ -49,7 +49,7 @@
                 $gallery_images = CFS()->get('gallery_images');
                 foreach ($gallery_images as $image) {
                     echo '<img src="'.$image['images'].'"/>';
-                    echo '<p> '.$image['quotes'].'</p>';
+                    echo '<p class="quote"> '.$image['quotes'].'</p>';
             ?>
                 <div class="quote-person">
             <?php

@@ -1191,6 +1191,9 @@ object {
 .single-projects .gallery {
   text-align: center; }
 
+.single-projects .quote {
+  font-style: italic; }
+
 .single-projects .quote-person {
   text-align: center; }
   .single-projects .quote-person p {
@@ -1204,7 +1207,8 @@ object {
   font-style: italic; }
 
 .single-projects .collab-link-container {
-  text-align: center; }
+  text-align: center;
+  margin: 3rem 0; }
 
 .single-projects .collab-link {
   text-decoration: none;
