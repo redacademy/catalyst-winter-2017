@@ -658,6 +658,12 @@ object {
 .page-template-collaborate {
   height: 100%;
   width: 100%; }
+  @media all and (min-width: 600px) {
+    .page-template-collaborate {
+      font-size: 1.4rem;
+      line-height: 1.75rem; } }
+  .page-template-collaborate .entry-title {
+    text-align: center; }
   .page-template-collaborate .intro-copy {
     height: auto;
     width: 100%;
@@ -665,6 +671,9 @@ object {
     padding: 1rem 0.85rem;
     font-weight: 100;
     text-align: center; }
+    @media all and (min-width: 600px) {
+      .page-template-collaborate .intro-copy {
+        width: 60%; } }
   .page-template-collaborate .main-copy {
     height: auto;
     width: 100%;
@@ -672,11 +681,15 @@ object {
     padding: 0.55rem 0;
     font-weight: 100;
     text-align: center; }
+    @media all and (min-width: 600px) {
+      .page-template-collaborate .main-copy {
+        width: 75%;
+        padding: 0.75rem auto; } }
   .page-template-collaborate .navigation-button {
-    height: 60px;
+    height: 70px;
     width: 250px;
     margin: 2rem auto;
-    border: 1px solid #323232;
+    border: 3px solid #323232;
     font-size: 1.05rem;
     color: #323232;
     text-transform: uppercase;
@@ -687,6 +700,9 @@ object {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center; }
+    @media all and (min-width: 600px) {
+      .page-template-collaborate .navigation-button {
+        font-size: 1.25rem; } }
     .page-template-collaborate .navigation-button:hover {
       background: #D9F1FF;
       cursor: pointer; }
@@ -697,6 +713,10 @@ object {
     padding: 0.75rem 0.5rem;
     background-color: #D9F1FF;
     text-align: center; }
+    @media all and (min-width: 600px) {
+      .page-template-collaborate .blue-background {
+        margin: 1.5rem auto;
+        padding: 1.5rem 0.5rem; } }
     .page-template-collaborate .blue-background h2 {
       max-width: 400px;
       margin: 0 auto;
@@ -705,13 +725,35 @@ object {
       color: #323232;
       line-height: 2.4rem;
       text-transform: uppercase; }
+      @media all and (min-width: 600px) {
+        .page-template-collaborate .blue-background h2 {
+          max-width: none;
+          font-size: 3rem; } }
     .page-template-collaborate .blue-background .supporters-header {
       font-size: 1.55rem; }
   .page-template-collaborate .content-container {
     padding: 0 1rem; }
-    .page-template-collaborate .content-container .partners-information {
-      margin: 0 0 6rem; }
-      .page-template-collaborate .content-container .partners-information .small-header {
+    .page-template-collaborate .content-container .partners-information-container {
+      padding: 0 10rem 0 12rem; }
+      @media all and (min-width: 600px) {
+        .page-template-collaborate .content-container .partners-information-container {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+          -ms-flex-align: baseline;
+              align-items: baseline; } }
+      .page-template-collaborate .content-container .partners-information-container .partners-information {
+        height: auto;
+        margin: 0 0 6rem; }
+        @media all and (min-width: 600px) {
+          .page-template-collaborate .content-container .partners-information-container .partners-information {
+            width: 490px;
+            margin: 0;
+            display: inline-block; } }
+      .page-template-collaborate .content-container .partners-information-container .small-header {
         margin-top: 4rem;
         margin-bottom: 1.25rem;
         font-size: 1.75rem;
@@ -719,19 +761,56 @@ object {
         color: #4A4A4A;
         text-align: center;
         text-transform: uppercase; }
-      .page-template-collaborate .content-container .partners-information .small-subheader {
+        @media all and (min-width: 600px) {
+          .page-template-collaborate .content-container .partners-information-container .small-header {
+            margin: 1.9rem 0 0.5rem;
+            font-size: 2rem;
+            padding-left: 7%;
+            text-align: left; } }
+      .page-template-collaborate .content-container .partners-information-container li + .small-subheader {
+        margin-top: 3rem; }
+      .page-template-collaborate .content-container .partners-information-container .small-subheader {
         margin: 0.5rem 0 1.5rem;
         font-size: 1.1rem;
         font-weight: 400;
         text-transform: uppercase; }
-      .page-template-collaborate .content-container .partners-information .collaborate-dashed-list {
+        @media all and (min-width: 600px) {
+          .page-template-collaborate .content-container .partners-information-container .small-subheader {
+            font-size: 1.45rem;
+            margin-bottom: 2rem; } }
+      .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list {
         margin: 0 0 2rem;
         padding-left: 0.75rem;
         list-style-type: none; }
-        .page-template-collaborate .content-container .partners-information .collaborate-dashed-list li {
+        @media all and (min-width: 600px) {
+          .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list {
+            height: 1000px;
+            margin: 0;
+            padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+            border: 5px solid #D9F1FF;
+            display: inline-block; } }
+        .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list li {
           margin: 1.5rem 0;
-          font-weight: 100; }
-      .page-template-collaborate .content-container .partners-information .partners-text {
+          font-weight: 100;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+          -ms-flex-align: baseline;
+              align-items: baseline; }
+          .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list li .hyphen {
+            height: 100%;
+            padding-right: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: bold;
+            position: relative;
+            bottom: 0.2rem; }
+          @media all and (min-width: 600px) {
+            .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list li {
+              font-size: 1.4rem; } }
+      .page-template-collaborate .content-container .partners-information-container .partners-text {
         height: auto;
         width: 100%;
         margin: 0 auto;
