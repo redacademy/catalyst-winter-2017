@@ -57,6 +57,10 @@
         @include navigation-button();
     }
 
+    .infographic-container + .navigation-button {
+        margin: 3rem auto 6rem;
+    }
+
     .blue-background {
         height: auto;
         width: 100%;

@@ -37,7 +37,7 @@ get_header(); ?>
 				<img class="green-line-graphic-2" src="<?php echo get_template_directory_uri(); ?>/images/graphics/lines.svg">
 				<img class="business-model-diagram" src="<?php echo get_the_post_thumbnail_url(); ?>">
 			</div>
-			<a class="navigation-button" href="#">Contact Us</a>
+			<a class="navigation-button" href="<?php echo get_home_url() ; ?>/contact">Contact Us</a>
 				<div class="blue-background">
 					<h2 class="subheader supporters-header">Our Supporters</h2>
 				</div>
