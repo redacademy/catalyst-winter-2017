@@ -38,23 +38,10 @@ function hero_banner_css() {
 	$hero_css = ".page-template-page-our-story .herobanner {
         background:
             linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
-            url({$image}) no-repeat center bottom;
+            url({$image}) no-repeat center 100%;
         background-size: cover, contain;
-		height: 500px;
+		height: 300px;
 }";
 	wp_add_inline_style( 'red-starter-style', $hero_css );
 
 } add_action('wp_enqueue_scripts', 'hero_banner_css' );
-
-// // first version
-// function hero_banner() {
-// 	wp_enqueue_style(
-// 		'custom-style', get_template_directory_uri().'/build/css/style.css'
-// 	);
-// 	$url = CFS()->get( 'heroimage' );
-// 	$custom_css = ".about_header{ background:
-// 	linear-gradient( to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100% ), url($url), no-repeat center 0px;
-// 	background-size: cover}";
-// 	wp_add_inline_style( 'custom-style', $custom_css );
-// }
-// add_action( 'wp_enqueue_scripts', 'hero_banner' );

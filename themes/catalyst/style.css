@@ -761,6 +761,94 @@ object {
 .gallery-caption {
   display: block; }
 
+.page-id-21 .site-content .herobanner {
+  color: white;
+  text-align: center; }
+
+.page-id-21 .site-content .entry-content {
+  margin-top: 0; }
+
+.page-id-21 .site-content .entry-header {
+  visibility: hidden;
+  height: 1px; }
+
+.page-id-21 .site-content article {
+  text-align: center; }
+
+.page-id-21 .site-content a {
+  padding: 20px 50px;
+  text-transform: uppercase;
+  border: 3px solid black;
+  text-decoration: none;
+  color: black; }
+
+.page-id-21 .site-content h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: medium;
+  background-color: #D9F1FF;
+  padding: 20px 0;
+  text-align: center; }
+
+.page-id-21 .site-content h3 {
+  font-size: 50px;
+  line-height: 55px;
+  font-weight: lighter;
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 50px; }
+
+.page-id-21 .site-content .formula p {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: lighter;
+  width: 900px;
+  margin: 20px auto; }
+
+.page-id-21 .site-content .image {
+  height: 300px; }
+
+.page-id-21 .site-content .robert h4 {
+  margin-bottom: 0;
+  font-size: 28px; }
+
+.page-id-21 .site-content .robert p {
+  margin-top: 0;
+  font-size: 26px;
+  padding-top: 10px;
+  margin-bottom: 60px; }
+
+.page-id-21 .site-content .mission .mission-quote {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: lighter;
+  width: 900px;
+  margin: 20px auto; }
+
+.page-id-21 .site-content .mission-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .page-id-21 .site-content .mission-content .income {
+    width: 30%; }
+  .page-id-21 .site-content .mission-content .rent {
+    width: 30%; }
+  .page-id-21 .site-content .mission-content .life {
+    width: 30%; }
+  .page-id-21 .site-content .mission-content h5 {
+    text-transform: uppercase;
+    margin-bottom: 0; }
+
+.page-id-21 .site-content .end-content {
+  margin: 100px 0; }
+  .page-id-21 .site-content .end-content .end-content-quote {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: lighter;
+    width: 900px;
+    margin: 20px auto; }
+
 .page-template-collaborate {
   height: 100%;
   width: 100%; }
