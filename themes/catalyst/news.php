@@ -20,26 +20,13 @@ get_header(); ?>
             <div class="hero banner"></div>
         </div>
 
-        <div class="video"></div>
+        <?php while ( have_posts() ) : the_post(); ?>
 
-        <div>
-            <h2>Links to other stories</h2>
-            <div class="stories">
-            <ul class="twitter">
-                <li class="twitter-list"></li>
-                <li class="twitter-list"></li>
-                <li class="twitter-list"></li>
-            </ul>
-            <ul class="article">
-                <li class="article-list"></li>
-                <li class="article-list"></li>
-                <li class="article-list"></li>
-            </ul>
-            </div>
-        </div>
-        <div class="load-more">
-        <a href="">load more</a>
-		<div>
+				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+
+			<?php endwhile; // End of the loop. ?>
+
+
         </main> <!--#main -->
 	</div> <!--#primary -->
 
