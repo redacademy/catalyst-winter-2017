@@ -20,3 +20,28 @@ function red_starter_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
+
+// Add header image for collaborate page 
+
+function catalyst_collaborate_image_css() {
+
+    if ( ! is_page_template('page-templates/collaborate.php') ) {
+        return;
+    } 
+
+    $image = CFS()->get('heroimage');
+
+    if ( ! $image ) {
+        return;
+    }
+
+    $hero_css = ".hero-image-banner{
+        background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
+		url({$image}) no-repeat center bottom;
+        background-size: cover, cover;
+    }";
+
+    wp_add_inline_style( 'red-starter-style', $hero_css );
+}
+
+add_action('wp_enqueue_scripts', 'catalyst_collaborate_image_css');
