@@ -150,7 +150,16 @@ a {
 		#primary-menu {
 			display: flex;
 			justify-content: flex-end;
-			margin-top: 10px;
+			margin: 0 auto;
+			li {
+				margin-right: 25px;
+				text-transform: uppercase;
+				a {
+					color: $color__text-main;
+					padding-top: 20px;
+				}
+				&:hover {}
+			}
 		}
 	}
 }

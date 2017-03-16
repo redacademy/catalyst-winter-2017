@@ -494,7 +494,13 @@ a {
       display: flex;
       -ms-flex-pack: end;
           justify-content: flex-end;
-      margin-top: 10px; }
+      margin: 0 auto; }
+      .container .menu #primary-menu li {
+        margin-right: 25px;
+        text-transform: uppercase; }
+        .container .menu #primary-menu li a {
+          color: #4A4A4A;
+          padding-top: 20px; }
 
 .footer {
   margin: 0 auto;
