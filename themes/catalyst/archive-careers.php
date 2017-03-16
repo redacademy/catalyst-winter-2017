@@ -24,25 +24,7 @@
 		</div>
 		<a href="#" class="contact-link">Contact us</a>
 	</div>
-
 	<?php endwhile; ?>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <?php get_footer(); ?>
