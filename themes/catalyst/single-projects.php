@@ -7,23 +7,29 @@
 
  get_header(); ?>
 
-<div class="project-content">
+<div class="single-content">
     <?php while ( have_posts() ) : the_post(); ?>
-    <div class="project-post">
-        <div class="proj-head">
-            <p class='name'><?php echo CFS()->get('project_name'); ?></p>
-            <p>Location: <span><?php echo CFS()->get('project_location'); ?></span></p>
-            <p>Status: <span class='status'><?php echo CFS()->get('project_status'); ?></span></p>
-        </div>
-        <div class="img-container">
-            <img class='project-image' src='<?php echo CFS()->get('banner_image'); ?>'>
-        </div>
-    
+            
+        <img src='<?php echo CFS()->get('banner_image'); ?>'/>
+        <p><?php echo CFS()->get('project_name'); ?></p>
+        <p><?php echo CFS()->get('project_location'); ?></p>
+        <p><?php echo CFS()->get('project_status'); ?></p>
 
-        <a href="#" class="project-link"><div class="project-button"><p class="learn-more">Learn More</p></div></a>
-
-    </div>
+        <h3>Structure: </h3>
+        <?php echo CFS()->get('structure'); ?>
+        <h3>Status: </h3>
+        <p><?php echo CFS()->get('status'); ?></p>
+        <h3>Partners: </h3>
+        <?php echo CFS()->get('partners'); ?>
+        <h3>Financing/Grants: </h3>
+        <?php echo CFS()->get('financing_grants'); ?>
+        <h3>Affordability: </h3>
+        <?php echo CFS()->get('affordability'); ?>
+        <h3>Total Project Cost: </h3>
+        <p><?php echo CFS()->get('cost'); ?></p>
+        <p><?php echo CFS()->get('description'); ?></p>
 
     <?php endwhile; ?>
 </div>
+
  <?php get_footer(); ?>
