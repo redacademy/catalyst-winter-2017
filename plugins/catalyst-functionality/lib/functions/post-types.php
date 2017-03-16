@@ -6,7 +6,9 @@
  */
 
 // Add your custom post types here...
-// Register Custom Post Type
+
+// Register Projects Custom Post Type
+
 function projects_cpt() {
 
 	$labels = array(
@@ -64,7 +66,8 @@ add_action( 'init', 'projects_cpt', 0 );
 
 
 
-// Register Custom Post Type
+// Register Team Member Custom Post Type
+
 function team_member_cpt() {
 
 	$labels = array(
@@ -121,8 +124,9 @@ function team_member_cpt() {
 add_action( 'init', 'team_member_cpt', 0 );
 
 
-// Register Custom Post Type
-function career_cpt() {
+// Register Careers Custom Post Type
+
+function careers_cpt() {
 
 	$labels = array(
 		'name'                  => 'Careers',
@@ -172,7 +176,65 @@ function career_cpt() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
 	);
-	register_post_type( 'career', $args );
+	register_post_type( 'careers', $args );
 
 }
-add_action( 'init', 'career_cpt', 0 );
+
+add_action( 'init', 'careers_cpt', 0 );
+
+// Register Sponsors Custom Post Type
+
+function sponsor_cpt() {
+
+	$labels = array(
+		'name'                  => _x( 'sponsors', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'sponsor', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Sponsors', 'text_domain' ),
+		'name_admin_bar'        => __( 'Sponsors', 'text_domain' ),
+		'archives'              => __( 'Sponsor Archives', 'text_domain' ),
+		'attributes'            => __( 'Sponsor Attributes', 'text_domain' ),
+		'parent_item_colon'     => __( 'Parent Item:', 'text_domain' ),
+		'all_items'             => __( 'All Sponsors', 'text_domain' ),
+		'add_new_item'          => __( 'Add New Sponsor', 'text_domain' ),
+		'add_new'               => __( 'Add New Sponsor', 'text_domain' ),
+		'new_item'              => __( 'New Sponsor', 'text_domain' ),
+		'edit_item'             => __( 'Edit Sponsor', 'text_domain' ),
+		'update_item'           => __( 'Update Sponsor', 'text_domain' ),
+		'view_item'             => __( 'View Sponsor', 'text_domain' ),
+		'view_items'            => __( 'View Sponsors', 'text_domain' ),
+		'search_items'          => __( 'Search Sponsors', 'text_domain' ),
+		'not_found'             => __( 'Sponsor Not found', 'text_domain' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
+		'featured_image'        => __( 'Featured Image', 'text_domain' ),
+		'set_featured_image'    => __( 'Set featured image', 'text_domain' ),
+		'remove_featured_image' => __( 'Remove featured image', 'text_domain' ),
+		'use_featured_image'    => __( 'Use as featured image', 'text_domain' ),
+		'insert_into_item'      => __( 'Insert into item', 'text_domain' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this item', 'text_domain' ),
+		'items_list'            => __( 'Sponsors list', 'text_domain' ),
+		'items_list_navigation' => __( 'Sponsors list navigation', 'text_domain' ),
+		'filter_items_list'     => __( 'Filter Sponsors list', 'text_domain' ),
+	);
+	$args = array(
+		'label'                 => __( 'sponsor', 'text_domain' ),
+		'description'           => __( 'Catalyst\'s sponsors', 'text_domain' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'thumbnail', 'custom-fields', ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'menu_icon'             => 'dashicons-groups',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => false,
+		'has_archive'           => false,		
+		'exclude_from_search'   => true,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'sponsor', $args );
+
+}
+add_action( 'init', 'sponsor_cpt', 0 );

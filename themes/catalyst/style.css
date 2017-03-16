@@ -1197,3 +1197,141 @@ object {
       height: 60px;
       font-style: normal;
       margin: 0 auto 1.5rem; }
+
+.post-type-archive-careers #content {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto; }
+
+.post-type-archive-careers .page-header-container {
+  background-color: #D9F1FF;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  height: 75px;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.post-type-archive-careers .page-title {
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin: 0; }
+
+.post-type-archive-careers .job-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto; }
+
+.post-type-archive-careers .job-post {
+  margin-bottom: 8rem;
+  border-bottom: 1px solid black;
+  padding-bottom: 8rem; }
+
+.post-type-archive-careers .job-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  font-weight: 100; }
+
+.post-type-archive-careers .role-container {
+  font-size: 1.3rem; }
+
+.post-type-archive-careers .role {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 0; }
+
+.post-type-archive-careers .resp-container {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 1.3rem; }
+  .post-type-archive-careers .resp-container ul {
+    margin-left: 0; }
+
+.post-type-archive-careers .responsibilities {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 0; }
+
+.post-type-archive-careers .contact-link {
+  text-decoration: none;
+  color: black; }
+
+.post-type-archive-careers .contact-button {
+  border: 2px solid black;
+  height: 50px;
+  width: 200px;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.post-type-archive-careers .contact {
+  margin: 0;
+  text-transform: uppercase; }
+
+.post-type-archive-projects .project-content {
+  text-align: center; }
+  @media all and (min-width: 600px) {
+    .post-type-archive-projects .project-content {
+      max-width: 1120px;
+      margin: 0 auto; } }
+
+.post-type-archive-projects .project-post {
+  margin-bottom: 3rem; }
+
+.post-type-archive-projects .proj-head {
+  background-color: #d9f1ff;
+  height: 90px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  @media all and (min-width: 600px) {
+    .post-type-archive-projects .proj-head {
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-align: center;
+          align-items: center; } }
+  .post-type-archive-projects .proj-head p {
+    margin: 0; }
+  .post-type-archive-projects .proj-head .name {
+    font-size: 1.5rem;
+    font-weight: bold; }
+    @media all and (min-width: 600px) {
+      .post-type-archive-projects .proj-head .name {
+        font-size: 1rem; } }
+  .post-type-archive-projects .proj-head .status {
+    text-transform: uppercase; }
+  .post-type-archive-projects .proj-head .break {
+    display: none; }
+    @media all and (min-width: 600px) {
+      .post-type-archive-projects .proj-head .break {
+        display: initial;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: 0 0.5rem; } }
+
+.post-type-archive-projects .img-container {
+  margin: 2rem 2rem 3rem; }
+  @media all and (min-width: 600px) {
+    .post-type-archive-projects .img-container {
+      max-width: 750px;
+      margin: 2rem auto 3rem auto; } }
+
+.post-type-archive-projects .project-image {
+  width: 100%; }
+
+.post-type-archive-projects .project-link {
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  padding: 1rem 3.5rem;
+  text-transform: uppercase; }
