@@ -1,4 +1,4 @@
-<?php /* Template Name: news-template */ ?>
+<?php /* Template Name: news */ ?>
 <!-- this name is to setup the custom page template -->
 
 
@@ -17,7 +17,7 @@ get_header(); ?>
 
         <div class="header">
             <h1>news & media</h1>
-            <div class="hero banner"></div>
+            <div class="herobanner"></div>
         </div>
 
         <?php while ( have_posts() ) : the_post(); ?>

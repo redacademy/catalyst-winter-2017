@@ -20,3 +20,25 @@ function red_starter_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
+
+
+function news_hero_banner_css() {
+	if(!is_page_template('news.php')){
+		return;
+	}
+
+	$image = CFS()->get( 'newsheroimage' );
+		if(!$image){
+			return;
+		}
+		echo $image;
+	$hero_css = ".page-template-news .herobanner {
+        background:
+            linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
+            url({$image}) no-repeat center 100%;
+        background-size: cover, contain;
+		height: 300px;
+}";
+	wp_add_inline_style( 'red-starter-style', $hero_css );
+
+} add_action('wp_enqueue_scripts', 'news_hero_banner_css' );
