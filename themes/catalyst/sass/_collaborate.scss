@@ -1,6 +1,14 @@
 .page-template-collaborate {
     height: 100%;
     width: 100%;
+    @include media($desktop-width) {
+        font-size: $font__desktop-size;
+        line-height: $line-height-desktop;
+    }
+
+    .entry-title {
+        text-align: center;
+    }
 
     .intro-copy {
         height: auto;
@@ -9,6 +17,9 @@
         padding: 1rem 0.85rem;
         font-weight: 100;
         text-align: center;
+        @include media($desktop-width) {
+            width: 60%;
+        }
     }
 
     .main-copy {
@@ -18,26 +29,14 @@
         padding: 0.55rem 0;
         font-weight: 100;
         text-align: center;
-
+        @include media($desktop-width) {
+            width: 75%;
+            padding: 0.75rem auto;
+        }
     }
 
     .navigation-button {
-        height: 60px;
-        width: 250px;
-        margin: 2rem auto;
-        border: 1px solid $color__header-main;
-        font-size: 1.05rem;
-        color: $color__header-main;
-        text-transform: uppercase;
-        text-decoration: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        &:hover {
-            background: $color__brand-blue;
-            cursor: pointer;
-        }
+        @include navigation-button();
     }
 
     .blue-background {
@@ -47,6 +46,10 @@
         padding: 0.75rem 0.5rem;
         background-color: $color__brand-blue;
         text-align: center;
+        @include media($desktop-width) {
+            margin: 1.5rem auto;
+            padding: 1.5rem 0.5rem;
+        }
 
         h2 {
             max-width: 400px;
@@ -56,6 +59,10 @@
             color: $color__header-main;
             line-height: 2.4rem;
             text-transform: uppercase;
+            @include media($desktop-width) {
+                max-width: none;
+                font-size: 3rem;
+            }
         }
 
         .supporters-header {
@@ -66,8 +73,20 @@
    .content-container {
        padding: 0 1rem;
 
-        .partners-information {
+        .partners-information-container {
+            padding: 0 10rem 0 12rem;
+            @include media($desktop-width) {
+                @include flex-row(wrap, space-between, baseline);
+            }
+            .partners-information {
+            height: auto;
             margin: 0 0 6rem;
+            @include media($desktop-width) {
+                width: 490px;
+                margin: 0;
+                display: inline-block;
+            }
+        }
 
             .small-header {
                 margin-top: 4rem;
@@ -77,6 +96,16 @@
                 color: $color__text-main;
                 text-align: center;
                 text-transform: uppercase;
+                @include media($desktop-width) {
+                    margin: 1.9rem 0 0.5rem;
+                    font-size: 2rem;                   
+                    padding-left: 7%;
+                    text-align: left;
+                }
+            }
+
+            li + .small-subheader {
+                margin-top: 3rem;
             }
 
             .small-subheader {
@@ -84,17 +113,45 @@
                 font-size: 1.1rem;
                 font-weight: 400;
                 text-transform: uppercase;
+                @include media($desktop-width) {
+                    font-size: 1.45rem;
+                    margin-bottom: 2rem;
+                }
             }
 
             .collaborate-dashed-list {
                 margin: 0 0 2rem;
                 padding-left: 0.75rem;
                 list-style-type: none;
+                @include media($desktop-width) {
+                    height: auto;
+                    margin: 0;
+                    padding: 0.5rem 0.5rem 2.5rem 2rem;
+                    border: 5px solid $color__brand-blue;
+                    display: inline-block;
+                }
 
                 li {
                     margin: 1.5rem 0;
                     font-weight: 100;
+                    @include flex-row(nowrap, flex-start, baseline);
+
+                    .hyphen {
+                        height: 100%;
+                        padding-right: 0.5rem;
+                        font-size: 0.85rem;
+                        font-weight: bold;
+                        position: relative;
+                        bottom: 0.2rem;
+                    }
+                    @include media($desktop-width) {
+                        font-size: $font__desktop-size;
+                    }
                 }
+            }
+
+            li + .partners-text {
+                margin-top: 3.75rem;
             }
 
             .partners-text {
@@ -104,6 +161,11 @@
                 padding: 0 1rem;
                 font-weight: 100;
                 text-align: center;
+                @include media ($desktop-width) {
+                    width: 330px;
+                    padding: 2rem 0 0;
+                    transform: translateX(-1rem);
+                }
             }
         }
 
@@ -115,10 +177,54 @@
         }
     }
 
+    .key-graphic-1 {
+        width: 80px;
+        position: relative;
+        z-index: -99999;
+        bottom: 27.15rem;
+        left: 18%;
+        transform: rotate(25deg);
+    }
+
+    .key-graphic-2 {
+        width: 50px;
+        position: relative;
+        z-index: -99999;
+        bottom: 16rem;
+        left: 37.65%;
+        transform: rotate(-25deg);
+    }
+
+    .dollar-sign-graphic-1 {
+        width: 100px;
+        position: relative;
+        z-index: -99999;
+        bottom: 30rem;
+        left: 44%;
+    }
+
+    .dollar-sign-graphic-2 {
+        width: 70px;
+        position: relative;
+        z-index: -99999;
+        bottom: 10rem;
+        left: 63%;
+    }
+
     .supporters-logo-container {
         height: 200px;
         width: 100%;
         background-color: blue;
         @include flex-row(wrap, flex-start, center);
+    }
+
+    .infographic-container {
+        height: auto;
+        padding: 0.5rem 0 1.5rem;
+        text-align: center;
+
+        img {
+            height: 530px;
+        }
     }
 }

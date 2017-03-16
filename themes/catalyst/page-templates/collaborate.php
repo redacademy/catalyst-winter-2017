@@ -16,7 +16,20 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/content', 'collaborate' ); ?>
 
 			<?php endwhile; // End of the loop. ?>
+			<img class="key-graphic-1" src="<?php echo get_template_directory_uri(); ?>/images/graphics/key.svg">
+			<img class="key-graphic-2" src="<?php echo get_template_directory_uri(); ?>/images/graphics/key.svg">
+			<img class="dollar-sign-graphic-1" src="<?php echo get_template_directory_uri(); ?>/images/graphics/dollar-sign.svg">
+			<img class="dollar-sign-graphic-2" src="<?php echo get_template_directory_uri(); ?>/images/graphics/dollar-sign.svg">
+			<div class="infographic-container">
+				<img class="business-model-diagram" src="<?php echo get_the_post_thumbnail_url(); ?>">
+			</div>
+			<a class="navigation-button" href="#">Contact Us</a>
+				<div class="blue-background">
+					<h2 class="subheader supporters-header">Our Supporters</h2>
+				</div>
+			<div class="supporters-logo-container">
 
+			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
