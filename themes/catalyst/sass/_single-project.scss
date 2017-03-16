@@ -1,0 +1,29 @@
+.single-projects {
+    .banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        p {
+            color: #fff;
+            margin: 0;
+            text-shadow: -2px 2px 5px #000;
+        }
+        .banner-name {
+            font-size: 4rem;
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+        .banner-location {
+            font-size: 1.3rem;
+            margin-bottom: 0.3rem;
+        }
+        .banner-status {
+            font-size: 1.3rem;
+            .project-status {
+                text-transform: uppercase;
+            }
+        }
+    }
+}

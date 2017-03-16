@@ -9,25 +9,28 @@
 
 <div class="single-content">
     <?php while ( have_posts() ) : the_post(); ?>
-            
-        <img src='<?php echo CFS()->get('banner_image'); ?>'/>
-        <p><?php echo CFS()->get('project_name'); ?></p>
-        <p><?php echo CFS()->get('project_location'); ?></p>
-        <p><?php echo CFS()->get('project_status'); ?></p>
 
-        <h3>Structure: </h3>
-        <?php echo CFS()->get('structure'); ?>
-        <h3>Status: </h3>
-        <p><?php echo CFS()->get('status'); ?></p>
-        <h3>Partners: </h3>
-        <?php echo CFS()->get('partners'); ?>
-        <h3>Financing/Grants: </h3>
-        <?php echo CFS()->get('financing_grants'); ?>
-        <h3>Affordability: </h3>
-        <?php echo CFS()->get('affordability'); ?>
-        <h3>Total Project Cost: </h3>
-        <p><?php echo CFS()->get('cost'); ?></p>
-        <p><?php echo CFS()->get('description'); ?></p>
+        <div class="banner">
+            <p class='banner-name'><?php echo CFS()->get('project_name'); ?></p>
+            <p class='banner-location'>Location: <?php echo CFS()->get('project_location'); ?></p>
+            <p class='banner-status'>Status: <span class='project-status'><?php echo CFS()->get('project_status'); ?></span></p>
+        </div>
+
+        <div class="proj-content">
+            <h3>Structure: </h3>
+            <?php echo CFS()->get('structure'); ?>
+            <h3>Status: </h3>
+            <p><?php echo CFS()->get('status'); ?></p>
+            <h3>Partners: </h3>
+            <?php echo CFS()->get('partners'); ?>
+            <h3>Financing/Grants: </h3>
+            <?php echo CFS()->get('financing_grants'); ?>
+            <h3>Affordability: </h3>
+            <?php echo CFS()->get('affordability'); ?>
+            <h3>Total Project Cost: </h3>
+            <p><?php echo CFS()->get('cost'); ?></p>
+            <p><?php echo CFS()->get('description'); ?></p>
+        </div>
 
     <?php endwhile; ?>
 </div>

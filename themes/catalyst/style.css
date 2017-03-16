@@ -1138,3 +1138,29 @@ object {
   border: 2px solid black;
   padding: 1rem 3.5rem;
   text-transform: uppercase; }
+
+.single-projects .banner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center; }
+  .single-projects .banner p {
+    color: #fff;
+    margin: 0;
+    text-shadow: -2px 2px 5px #000; }
+  .single-projects .banner .banner-name {
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 1rem; }
+  .single-projects .banner .banner-location {
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem; }
+  .single-projects .banner .banner-status {
+    font-size: 1.3rem; }
+    .single-projects .banner .banner-status .project-status {
+      text-transform: uppercase; }
