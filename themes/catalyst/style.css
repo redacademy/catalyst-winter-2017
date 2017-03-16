@@ -893,6 +893,8 @@ object {
     .page-template-collaborate .navigation-button:hover {
       background: #D9F1FF;
       cursor: pointer; }
+  .page-template-collaborate .infographic-container + .navigation-button {
+    margin: 3rem auto 6rem; }
   .page-template-collaborate .blue-background {
     height: auto;
     width: 100%;
