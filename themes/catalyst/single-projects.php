@@ -67,5 +67,20 @@
         </div>
     <?php endwhile; ?>
 </div>
+    <div class="other-proj">
+        <h2>Other Projects</h2>
+    </div>
+
+<?php
+    $posts = get_posts( array( 
+        'post_type' => 'projects', 
+        'order' => 'ASC', 
+    ));
+    foreach ( $posts as $post ) :
+?>
+<div class="adventure-wrapper">
+    <a href="<?php echo get_permalink() ?>"><?php the_post_thumbnail();  ?></a>
+</div>
+    <?php endforeach; ?>
 
  <?php get_footer(); ?>

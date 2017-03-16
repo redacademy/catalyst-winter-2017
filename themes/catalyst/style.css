@@ -1216,3 +1216,15 @@ object {
   border: 2px solid black;
   padding: 1rem 3.5rem;
   text-transform: uppercase; }
+
+.single-projects .other-proj {
+  background-color: #d9f1ff;
+  height: 70px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 2rem 0;
+  text-transform: uppercase; }
