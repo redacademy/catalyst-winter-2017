@@ -805,6 +805,18 @@ object {
   width: 900px;
   margin: 20px auto; }
 
+.page-id-21 .site-content .text-under-image {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 50px; }
+  .page-id-21 .site-content .text-under-image p {
+    font-size: 14px;
+    line-height: 16px;
+    width: 20%;
+    margin: 0; }
+
 .page-id-21 .site-content .image {
   height: 300px; }
 

@@ -46,6 +46,17 @@
                 margin: 20px auto;
             }
         }
+        .text-under-image {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+            p {
+                font-size: 14px;
+                line-height: 16px;
+                width: 20%;
+                margin: 0;
+            }
+        }
         .image {
             height: 300px;
         }
@@ -62,7 +73,7 @@
             }
         }
         .mission {
-        .mission-quote{
+            .mission-quote {
                 font-size: 24px;
                 line-height: 28px;
                 font-weight: lighter;
