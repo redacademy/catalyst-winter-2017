@@ -20,7 +20,7 @@
         </div>
     
 
-        <a href="<?php get_post_permalink(); ?>" class="project-link">Learn More</a>
+        <a href="<?php the_permalink(); ?>" class="project-link">Learn More</a>
 
     </div>
 
