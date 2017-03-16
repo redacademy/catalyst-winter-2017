@@ -1165,7 +1165,7 @@ object {
     .single-projects .banner .banner-status .project-status {
       text-transform: uppercase; }
 
-.single-projects .project-post-head {
+.single-projects .content-head {
   background-color: #d9f1ff;
   height: 70px;
   display: -ms-flexbox;
@@ -1183,3 +1183,32 @@ object {
     margin-bottom: 0; }
   .single-projects .proj-content p {
     margin-top: 0; }
+
+.single-projects .arch-text {
+  margin: 0 1.5rem;
+  text-align: center; }
+
+.single-projects .gallery {
+  text-align: center; }
+
+.single-projects .quote-person {
+  text-align: center; }
+  .single-projects .quote-person p {
+    margin: 0; }
+
+.single-projects .person {
+  font-weight: bold;
+  font-size: 1.3rem; }
+
+.single-projects .line {
+  font-style: italic; }
+
+.single-projects .collab-link-container {
+  text-align: center; }
+
+.single-projects .collab-link {
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  padding: 1rem 3.5rem;
+  text-transform: uppercase; }

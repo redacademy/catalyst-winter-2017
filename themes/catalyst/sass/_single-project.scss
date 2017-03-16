@@ -26,7 +26,7 @@
             }
         }
     }
-    .project-post-head {
+    .content-head {
         background-color: #d9f1ff;
         height: 70px;
         display: flex;
@@ -43,5 +43,35 @@
         p {
             margin-top: 0;
         }
+    }
+    .arch-text {
+        margin: 0 1.5rem;
+        text-align: center;
+    }
+    .gallery {
+        text-align: center;
+    }
+    .quote-person {
+        text-align: center;
+        p {
+            margin: 0;
+        }
+    }
+    .person {
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+    .line {
+        font-style: italic;
+    }
+    .collab-link-container {
+        text-align: center;
+    }
+    .collab-link {
+        text-decoration: none;
+        color: black;
+        border: 2px solid black;
+        padding: 1rem 3.5rem;
+        text-transform: uppercase;
     }
 }

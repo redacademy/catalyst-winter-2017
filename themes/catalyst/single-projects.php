@@ -16,8 +16,8 @@
             <p class='banner-status'>Status: <span class='project-status'><?php echo CFS()->get('project_status'); ?></span></p>
         </div>
 
-        <div class="project-post-head">
-            <h2 class="post-text">Project details</h2>
+        <div class="content-head">
+            <h2>Project details</h2>
         </div>
 
         <div class="proj-content">
@@ -36,6 +36,35 @@
             <p><?php echo CFS()->get('description'); ?></p>
         </div>
 
+        <div>
+            <div class="content-head">
+                <h2>Architectural design</h2>
+            </div>
+            <div class="arch-text">
+                <p>Disclosed floor plans, site map, draft design, and construction photos during the development stage of the project.</p>
+            </div>
+        </div>
+        <div class="gallery">
+            <?php
+                $gallery_images = CFS()->get('gallery_images');
+                foreach ($gallery_images as $image) {
+                    echo '<img src="'.$image['images'].'"/>';
+                    echo '<p> '.$image['quotes'].'</p>';
+            ?>
+                <div class="quote-person">
+            <?php
+                    echo '<p class="person"> '.$image['person'].'</p>';
+                    echo '<p class="line"> '.$image['line1'].'</p>';
+                    echo '<p class="line"> '.$image['line2'].'</p>';
+            ?>
+                </div>
+            <?php
+                }
+            ?>
+        </div>
+        <div class="collab-link-container">
+            <a href="#" class="collab-link">Collaborate with us</a>
+        </div>
     <?php endwhile; ?>
 </div>
 
