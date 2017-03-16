@@ -1,16 +1,25 @@
-.page-id-21 {
+.page-template-page-our-story {
+    .herobanner {
+        color: white;
+        text-align: center;
+    }
     .site-content {
-        .herobanner {
+        header{
+            position: relative;
+            p{
+                position: absolute;
+                color: white;
+            }
+        }
+        h1 {
+            position: absolute;
             color: white;
-            text-align: center;
+            text-transform: uppercase;
         }
         .entry-content {
             margin-top: 0;
         }
-        .entry-header {
-            visibility: hidden;
-            height: 1px;
-        }
+
         article {
             text-align: center;
         }
@@ -61,6 +70,7 @@
             height: 300px;
         }
         .robert {
+                margin-bottom: 50px;
             h4 {
                 margin-bottom: 0;
                 font-size: 28px;
@@ -74,6 +84,11 @@
         }
         .mission {
             .mission-quote {
+                display: flex;
+                width: 989px;
+                margin: 0 auto;
+            }
+            .quote {
                 font-size: 24px;
                 line-height: 28px;
                 font-weight: lighter;
@@ -101,6 +116,11 @@
         .end-content {
             margin: 100px 0;
             .end-content-quote {
+                  display: flex;
+                width: 989px;
+                margin: 0 auto;
+            }
+            .quote {
                 font-size: 24px;
                 line-height: 28px;
                 font-weight: lighter;

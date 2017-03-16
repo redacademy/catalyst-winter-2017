@@ -26,8 +26,8 @@
 					</div>
 
 					<div class="sns-icon">
-					<span><i class="fa fa-twitter-square" aria-hidden="true"></i></span>
-					<span><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
+					<p class="twitter"></p>
+					<p class="linkedin"></p>
 					</div>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->

@@ -3,10 +3,10 @@
     background-color: $color__brand-blue;
     text-align: center;
     width: 100%;
+    padding-top: 20px;
     @include media($desktop-width) {
         display: flex;
         flex-wrap: wrap;
-        height: 100px;
         justify-content: center;
     }
     .footer-title {
@@ -16,16 +16,28 @@
         min-width: 400px;
     }
     .footerLogo {
-        background: url('../../images/catalyst-footer-logo.png')no-repeat;
+        background: url('../../images/logo.svg')no-repeat;
         background-size: 100%;
         width: 20px;
+    }
+    .twitter {
+        background: url('../../images/twitter.svg')no-repeat;
+        background-size: 100%;
+        height: 50px;
+        width: 50px;
+    }
+    .linkedin {
+        background: url('../../images/linkedin.svg')no-repeat;
+        background-size: 100%;
+        height: 50px;
+        width: 50px;
     }
     .page-link {
         visibility: hidden;
         height: 10px;
         text-transform: uppercase;
         font-size: 12px;
-        a{
+        a {
             text-decoration: none;
             color: $color__text-main;
             margin-right: 20px;
@@ -35,7 +47,13 @@
         }
     }
     .sns-icon {
-       @include media($desktop-width) {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        p {
+            margin-right: 10px;
+        }
+        @include media($desktop-width) {
             margin-left: 30px;
         }
     }
@@ -51,6 +69,5 @@
             height: 20px;
             margin: 0;
         }
-
     }
 }
