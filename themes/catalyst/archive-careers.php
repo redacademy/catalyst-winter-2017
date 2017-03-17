@@ -22,7 +22,7 @@
 			<p class="responsibilities">responsibilities:</p>
 			<?php echo CFS()->get( 'responsibilities' ); ?>   
 		</div>
-		<a href="#" class="contact-link"><div class="contact-button"><p class="contact">Contact us</p></div></a>
+		<a href="#" class="contact-link">Contact us</a>
 	</div>
 	<?php endwhile; ?>
 </div>

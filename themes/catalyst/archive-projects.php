@@ -11,8 +11,8 @@
     <?php while ( have_posts() ) : the_post(); ?>
     <div class="project-post">
         <div class="proj-head">
-            <p class='name'><?php echo CFS()->get('project_name'); ?></p>
-            <p>Location: <span><?php echo CFS()->get('project_location'); ?></span></p>
+            <p class='name'><?php echo CFS()->get('project_name'); ?></p><span class='break'>|</span>
+            <p>Location: <span><?php echo CFS()->get('project_location'); ?></span></p><span class='break'>|</span>
             <p>Status: <span class='status'><?php echo CFS()->get('project_status'); ?></span></p>
         </div>
         <div class="img-container">
@@ -23,6 +23,7 @@
         <a href="<?php the_permalink(); ?>" class="project-link">Learn More</a>
 
     </div>
+
 
     <?php endwhile; ?>
 </div>
