@@ -7,8 +7,6 @@
 .Spotlight-V100
 .Trashes
 ehthumbs.db
-.vscode
-themes/catalyst/.vscode
 *[Tt]humbs.db
 *.Trashes
 # Ignore logs and databases #
@@ -39,3 +37,6 @@ themes/catalyst/node_modules/*
 # ================== #
 themes/catalyst/gulpfile.js
 themes/catalyst/build/*
+# Ignore .vscode configuration folder#
+# ================== #
+themes/catalyst/.vscode
