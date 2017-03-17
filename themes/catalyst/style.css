@@ -475,8 +475,7 @@ a {
       .container .logo {
         width: 20%; } }
   .container .header-logo {
-
-    background: url("../../images/full-logo.png") no-repeat;
+    background: url("../../images/full-logo.svg") no-repeat;
     background-size: 100%;
     margin: 15px auto;
     display: -ms-flexbox;
