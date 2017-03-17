@@ -528,11 +528,7 @@ a {
         justify-content: center;
     min-width: 400px; }
   .footer .footerLogo {
-<<<<<<< HEAD
-    background: url("../../images/logo.png") no-repeat;
-=======
     background: url("../../images/logo.svg") no-repeat;
->>>>>>> master
     background-size: 100%;
     width: 20px; }
   .footer .twitter {
@@ -935,16 +931,8 @@ object {
 
 .page-template-news {
   margin: 0 auto; }
-<<<<<<< HEAD
   .page-template-news .entry-content {
     text-align: center; }
-=======
-  .page-template-news .header {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 100%), url("../../images/project-hero-sample.png") no-repeat center 100%;
-    background-size: cover, cover;
-    height: 400px;
-    margin-top: 10; }
->>>>>>> master
   .page-template-news h1 {
     text-align: center;
     padding-top: 100px;
