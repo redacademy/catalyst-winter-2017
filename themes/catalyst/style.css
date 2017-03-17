@@ -1558,3 +1558,97 @@ object {
   border: 2px solid black;
   padding: 1rem 3.5rem;
   text-transform: uppercase; }
+
+.single-projects .banner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center; }
+  .single-projects .banner p {
+    color: #fff;
+    margin: 0;
+    text-shadow: -2px 2px 5px #000; }
+  .single-projects .banner .banner-name {
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 1rem; }
+  .single-projects .banner .banner-location {
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem; }
+  .single-projects .banner .banner-status {
+    font-size: 1.3rem; }
+    .single-projects .banner .banner-status .project-status {
+      text-transform: uppercase; }
+
+.single-projects .content-head {
+  background-color: #d9f1ff;
+  height: 70px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 2rem 0;
+  text-transform: uppercase; }
+
+.single-projects .proj-content {
+  margin: 0 1.5rem; }
+  @media all and (min-width: 600px) {
+    .single-projects .proj-content {
+      max-width: 700px;
+      margin: 0 auto; } }
+  .single-projects .proj-content h3 {
+    margin-bottom: 0; }
+  .single-projects .proj-content p {
+    margin-top: 0; }
+
+.single-projects .arch-text {
+  margin: 0 1.5rem;
+  text-align: center; }
+
+.single-projects .gallery {
+  text-align: center; }
+
+.single-projects .quote {
+  font-style: italic; }
+
+.single-projects .quote-person {
+  text-align: center; }
+  .single-projects .quote-person p {
+    margin: 0; }
+
+.single-projects .person {
+  font-weight: bold;
+  font-size: 1.3rem; }
+
+.single-projects .line {
+  font-style: italic; }
+
+.single-projects .collab-link-container {
+  text-align: center;
+  margin: 3rem 0; }
+
+.single-projects .collab-link {
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  padding: 1rem 3.5rem;
+  text-transform: uppercase; }
+
+.single-projects .other-proj {
+  background-color: #d9f1ff;
+  height: 70px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 2rem 0;
+  text-transform: uppercase; }

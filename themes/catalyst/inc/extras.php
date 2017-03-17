@@ -21,6 +21,21 @@ function red_starter_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
 
+function catalyst_project_css() {
+    
+		$url = CFS()->get ( 'banner_image'); 
+
+        $single_project_css = "
+        .single-projects .single-content .banner{ 
+            background:url($url) no-repeat center bottom;
+			background-size: cover;
+			height: 375px;
+        }";
+
+        wp_add_inline_style( 'red-starter-style', $single_project_css );
+    }
+    add_action( 'wp_enqueue_scripts', 'catalyst_project_css' );
+
 // second version
 function our_story_hero_banner_css() {
 	if(!is_page_template('page-our-story.php')){
@@ -68,4 +83,3 @@ function catalyst_collaborate_image_css() {
 }
 
 add_action('wp_enqueue_scripts', 'catalyst_collaborate_image_css');
-
