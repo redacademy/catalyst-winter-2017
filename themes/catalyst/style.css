@@ -554,11 +554,9 @@ a {
   .footer .footer-title {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -ms-flex-pack: center;
         justify-content: center;
-    min-width: 400px; }
+    min-width: 320px; }
   .footer .footerLogo {
     background: url("../../images/logo.svg") no-repeat;
     background-size: 100%;
@@ -605,7 +603,7 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between; } }
   .footer .company-info h3 {
-    font-size: 16px;
+    font-size: 12px;
     margin: 0;
     height: 25px;
     text-transform: uppercase; }
