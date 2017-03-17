@@ -469,7 +469,11 @@ a {
   width: 100%;
   margin: auto; }
   .container .logo {
-    width: 50%; }
+    width: 50%;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 20px;
+    height: 100px; }
     @media all and (min-width: 600px) {
       .container .logo {
         width: 20%; } }
@@ -480,28 +484,48 @@ a {
     display: -ms-flexbox;
     display: flex;
     width: 145px;
-    height: 100px;
+    height: 60px;
     text-align: center;
     overflow: hidden;
     text-indent: 193%; }
-  .container .menu {
+    @media all and (min-width: 600px) {
+      .container .header-logo {
+        height: 100px; } }
+  .container .top-menu {
     width: 50%; }
     @media all and (min-width: 600px) {
-      .container .menu {
+      .container .top-menu {
         width: 80%; } }
-    .container .menu #primary-menu {
+  .container .desktop-menu {
+    visibility: hidden;
+    height: 0; }
+    @media all and (min-width: 600px) {
+      .container .desktop-menu {
+        visibility: visible;
+        height: 100px; } }
+    .container .desktop-menu #primary-menu {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: end;
           justify-content: flex-end;
       margin: 0 auto; }
-      .container .menu #primary-menu ul {
+      .container .desktop-menu #primary-menu ul {
         padding-top: 45px; }
-      .container .menu #primary-menu li {
+      .container .desktop-menu #primary-menu li {
         margin-right: 25px;
         text-transform: uppercase; }
-        .container .menu #primary-menu li a {
+        .container .desktop-menu #primary-menu li a {
           color: #4A4A4A; }
+  .container .hamburger-menu {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    padding-top: 35px;
+    padding-right: 20px; }
+    @media all and (min-width: 600px) {
+      .container .hamburger-menu {
+        display: none; } }
 
 .footer {
   margin: 0 auto;
@@ -876,8 +900,11 @@ object {
     width: 500px;
     margin: 30px auto;
     font-weight: lighter; }
-    .page-template-page-our-story .site-content .mission-quote .quotation {
+    .page-template-page-our-story .site-content .mission-quote .quotation-left {
       width: 25%; }
+    .page-template-page-our-story .site-content .mission-quote .quotation-right {
+      width: 25%;
+      transform: rotate(180deg); }
     @media all and (min-width: 600px) {
       .page-template-page-our-story .site-content .mission-quote {
         width: 1050px;
@@ -933,8 +960,11 @@ object {
     width: 500px;
     margin: 30px auto;
     font-weight: lighter; }
-    .page-template-page-our-story .site-content .end-content-quote .quotation {
+    .page-template-page-our-story .site-content .end-content-quote .quotation-left {
       width: 25%; }
+    .page-template-page-our-story .site-content .end-content-quote .quotation-right {
+      width: 25%;
+      transform: rotate(180deg); }
     @media all and (min-width: 600px) {
       .page-template-page-our-story .site-content .end-content-quote {
         width: 989px; } }

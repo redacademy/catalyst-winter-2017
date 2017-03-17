@@ -82,8 +82,12 @@
             width: 500px;
             margin: 30px auto;
             font-weight: lighter;
-            .quotation {
+            .quotation-left {
                 width: 25%;
+            }
+            .quotation-right {
+                width: 25%;
+                transform: rotate(180deg);
             }
             @include media($desktop-width) {
                 width: 1050px;
@@ -151,8 +155,12 @@
             width: 500px;
             margin: 30px auto;
             font-weight: lighter;
-            .quotation {
+            .quotation-left {
                 width: 25%;
+            }
+            .quotation-right {
+                width: 25%;
+                transform: rotate(180deg);
             }
             @include media($desktop-width) {
                 width: 989px;

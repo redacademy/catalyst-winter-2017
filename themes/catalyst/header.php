@@ -26,16 +26,18 @@
 						<div class="logo">
 							<a href="<?php  echo esc_url( home_url( '/' ) ); ?>"><h1 class="header-logo">Catalyst Logo</h1></a>
 						</div>
-						<!--<div class="menu">
-							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', ) ); ?>
-						</div>-->
+							<div class="top-menu">
+							<div class="desktop-menu">
+								<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', ) ); ?>
+							</div>
 
-<div class="hamburger-menu">
-<button class="hamburger">&#9776;</button>
-<button class="cross">&#735;</button>
-<div class="menu">
-  <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', ) ); ?>
-</div>
+							<div class="hamburger-menu">
+							<button class="hamburger">&#9776;</button>
+							<button class="cross">&#735;</button>
+							<div class="mobile-menu">
+							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', ) ); ?>
+							</div>
+						</div>
 					</div>
 				</nav><!-- #site-navigation -->
 
