@@ -1,0 +1,165 @@
+.page-template-page-our-story {
+    .herobanner {
+        color: white;
+        text-align: center;
+    }
+    .entry-title {
+        margin: 0;
+        padding-top: 150px;
+        font-size: 60px;
+        text-transform: uppercase;
+        font-weight: lighter;
+        text-shadow: 1px 2px black;
+    }
+    .bannertext {
+        font-size: 20px;
+        font-weight: lighter;
+    }
+    .site-content {
+        text-align: center;
+        .entry-header {
+            visibility: hidden;
+            height: 1px;
+        }
+        .top-text {
+            text-align: center;
+            font-size: 18px;
+            width: 500px;
+            margin: auto;
+            @include media($desktop-width) {
+                width: 100%;
+                font-size: 22px;
+                font-weight: lighter;
+            }
+        }
+        a {
+            padding: 20px 50px;
+            text-transform: uppercase;
+            border: 1px solid black;
+            text-decoration: none;
+            color: black;
+            @include media($desktop-width) {
+                border: 3px solid black;
+            }
+        }
+        h2 {
+            font-size: 45px;
+            text-transform: uppercase;
+            font-weight: lighter;
+            background-color: $color__brand-blue;
+            padding: 20px 0;
+            text-align: center;
+            line-height: 50px;
+        }
+        h3 {
+            text-align: center;
+            font-size: 35px;
+            font-weight: lighter;
+            width: 487px;
+            margin: auto;
+            line-height: 35px;
+            @include media($desktop-width) {
+                font-size: 50px;
+                line-height: 55px;
+                width: 700px;
+                margin-bottom: 50px;
+            }
+        }
+        .mission-quote {
+            display: flex;
+            width: 500px;
+            margin: 30px auto;
+            font-weight: lighter;
+            .quotation {
+                width: 25%;
+            }
+            @include media($desktop-width) {
+                width: 989px;
+                margin: 0 auto;
+                font-size: 20px;
+            }
+        }
+        .quote {
+            width: 100%;
+            text-align: center;
+        }
+        .robert {
+            margin-bottom: 60px;
+            text-align: center;
+            h4 {
+                margin: 0;
+            }
+            .position {
+                margin: 0;
+            }
+        }
+        .arrow {
+            transform: rotate(90deg);
+        }
+        .mission-content {
+            text-align: center;
+            @include media($desktop-width) {
+                display: flex;
+                justify-content: center;
+                .arrow {
+                    margin-top: 50px;
+                    height: 50px;
+                    transform: rotate(0deg);
+                }
+                .alignnone {
+                    height: 150px;
+                }
+            }
+        }
+        @include media($desktop-width) {
+            .text-under-image {
+                display: flex;
+                margin-bottom: 40px;
+                p {
+                    width: 20%;
+                }
+            }
+        }
+        h5 {
+            font-size: 20px;
+            text-transform: uppercase;
+            margin-bottom: 0;
+        }
+        .mission-text {
+            margin: 0 auto;
+            width: 310px;
+            font-size: 16px;
+            font-weight: lighter;
+        }
+        .end-content {
+            margin-bottom: 50px;
+        }
+        .end-content-quote {
+            display: flex;
+            width: 500px;
+            margin: 30px auto;
+            font-weight: lighter;
+            .quotation {
+                width: 25%;
+            }
+            @include media($desktop-width) {
+                width: 989px;
+            }
+        }
+        //   .end-content {
+        //             margin: 100px 0;
+        //             .end-content-quote {
+        //                 display: flex;
+        //                 width: 989px;
+        //                 margin: 0 auto;
+        //             }
+        //             .quote {
+        //                 font-size: 24px;
+        //                 line-height: 28px;
+        //                 font-weight: lighter;
+        //                 width: 900px;
+        //                 margin: 20px auto;
+        //             }
+        //         }
+    }
+}

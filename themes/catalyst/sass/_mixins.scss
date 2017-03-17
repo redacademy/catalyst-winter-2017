@@ -28,6 +28,30 @@
 	filter: grayscale(100%);
 }
 
+// Buttons
+
+@mixin navigation-button($font-color: $color__header-main) {
+	height: 70px;
+	width: 250px;
+	margin: 2rem auto;
+	border: 3px solid $font-color;
+	font-size: 1.05rem;
+	color: $font-color;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	@include media($desktop-width) {
+			font-size: 1.25rem;
+	}
+
+	&:hover {
+			background: $color__brand-blue;
+			cursor: pointer;
+	}
+}
+
 // Media Queries 
 
 @mixin media($width) {
