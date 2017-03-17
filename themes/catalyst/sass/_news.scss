@@ -1,18 +1,28 @@
 
 .page-template-news {
     margin: 0 auto;
+<<<<<<< HEAD
+    .entry-content{
+        text-align: center;
+=======
 
     .header {
         background: linear-gradient( to bottom, rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 100%), url('../../images/project-hero-sample.png') no-repeat center 100%;
         background-size: cover, cover;
         height: 400px;
         margin-top: 10;
+>>>>>>> master
     }
     h1 {
         text-align: center;
-        padding-top: 50px;
+        padding-top: 100px;
+        font-size: 60px;
+            font-weight: 500;
         text-transform: uppercase;
         color: white;
+    }
+    .entry-header{
+        display: none;
     }
     .video {
         @include media($desktop-width) {

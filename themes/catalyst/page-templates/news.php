@@ -1,5 +1,13 @@
 
 <?php
+<<<<<<< HEAD:themes/catalyst/news.php
+/**
+ * Template Name: news
+ *
+ * @package RED_Starter_Theme
+ */
+=======
+>>>>>>> master:themes/catalyst/page-templates/news.php
 
 /**
 	* Template Name: news
@@ -12,33 +20,26 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-        <div class="header">
-            <h1>news & media</h1>
-            <div class="hero banner"></div>
-        </div>
-
-        <div class="video"></div>
-
-        <div>
-            <h2>Links to other stories</h2>
-            <div class="stories">
-            <ul class="twitter">
-                <li class="twitter-list"></li>
-                <li class="twitter-list"></li>
-                <li class="twitter-list"></li>
-            </ul>
-            <ul class="article">
-                <li class="article-list"></li>
-                <li class="article-list"></li>
-                <li class="article-list"></li>
-            </ul>
+        <header class="header">
+            <div class="herobanner">
+                <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
             </div>
-        </div>
-        <div class="load-more">
-        <a href="">load more</a>
-		<div>
+        </header>
+
+        <?php while ( have_posts() ) : the_post(); ?>
+
+				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+
+			<?php endwhile; // End of the loop. ?>
+
+	<?php get_sidebar(); ?>
         </main> <!--#main -->
+<<<<<<< HEAD:themes/catalyst/news.php
+
+    </div> <!--#primary -->
+=======
 	</div> <!--#primary -->
 >>>>>>> 34779e15a6fe7d5d82175d165d64b9053e420db9
+>>>>>>> master:themes/catalyst/page-templates/news.php
 
 <?php get_footer(); ?>
