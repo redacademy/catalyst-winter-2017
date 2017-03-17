@@ -2,7 +2,7 @@
 <?php
 
 /**
-	* Template Name: news-template
+	* Template Name: news
 	*
 	* @package Catalyst Theme
 	*/
