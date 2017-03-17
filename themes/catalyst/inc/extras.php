@@ -21,6 +21,47 @@ function red_starter_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
 
+function catalyst_project_css() {
+    
+		$url = CFS()->get ( 'banner_image'); 
+
+        $single_project_css = "
+        .single-projects .single-content .banner{ 
+            background:url($url) no-repeat center bottom;
+			background-size: cover;
+			height: 375px;
+        }";
+
+        wp_add_inline_style( 'red-starter-style', $single_project_css );
+    }
+    add_action( 'wp_enqueue_scripts', 'catalyst_project_css' );
+
+// second version
+function our_story_hero_banner_css() {
+	if(!is_page_template('page-our-story.php')){
+		return;
+	}
+
+	$image = CFS()->get( 'heroimage' );
+	
+    if(!$image){
+		return;
+	}
+
+	$hero_css = ".page-template-page-our-story .herobanner {
+        background:
+            linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
+            url({$image}) no-repeat center 100%;
+        background-size: cover, cover;
+		height: 65vh;
+    }";
+
+wp_add_inline_style( 'red-starter-style', $hero_css );
+
+} 
+
+add_action('wp_enqueue_scripts', 'our_story_hero_banner_css' );
+
 // Add header image for collaborate page 
 
 function catalyst_collaborate_image_css() {
@@ -45,3 +86,4 @@ function catalyst_collaborate_image_css() {
 }
 
 add_action('wp_enqueue_scripts', 'catalyst_collaborate_image_css');
+

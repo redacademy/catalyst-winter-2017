@@ -37,8 +37,8 @@ get_header(); ?>
 				$sponsors = get_posts( $args ); // returns an array of posts
 				?>
 
-				<?php foreach ( $sponsors as $post ) : setup_postdata( $post ); ?>
-					<img class="sponsor-logo" src="<?php echo get_the_post_thumbnail_url($post, 'full') ; ?>" alt="sponsor logo"/>
+				<?php foreach ( $sponsors as $sponsor ) : setup_postdata( $sponsor ); ?>
+		  			<img src="<?php echo get_the_post_thumbnail_url('sponsor','large') ; ?>" alt="sponsor-logo">
 				<?php endforeach; wp_reset_postdata(); ?>
 			</div>
 		</main><!-- #main -->
