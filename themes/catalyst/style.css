@@ -492,13 +492,15 @@ a {
       .container .header-logo {
         height: 100px; } }
   .container .top-menu {
+    z-index: 1;
     width: 50%; }
     @media all and (min-width: 600px) {
       .container .top-menu {
-        width: 80%; } }
+        width: 76%; } }
   .container .desktop-menu {
     visibility: hidden;
-    height: 0; }
+    height: 0;
+    min-width: 600px; }
     @media all and (min-width: 600px) {
       .container .desktop-menu {
         visibility: visible;
@@ -523,6 +525,14 @@ a {
         justify-content: flex-end;
     padding-top: 35px;
     padding-right: 20px; }
+    .container .hamburger-menu ul {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+    .container .hamburger-menu li {
+      padding: 30px 0;
+      background-color: white; }
     @media all and (min-width: 600px) {
       .container .hamburger-menu {
         display: none; } }
@@ -823,7 +833,8 @@ object {
 
 .page-template-page-our-story .herobanner {
   color: white;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
 
 .page-template-page-our-story .entry-title {
   margin: 0;
@@ -832,6 +843,10 @@ object {
   text-transform: uppercase;
   font-weight: lighter;
   text-shadow: 1px 2px black; }
+
+.page-template-page-our-story .header-text {
+  position: absolute;
+  padding: 50px 50px; }
 
 .page-template-page-our-story .bannertext {
   font-size: 20px;
