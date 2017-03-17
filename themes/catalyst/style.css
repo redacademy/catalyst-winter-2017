@@ -829,28 +829,46 @@ object {
       font-size: 1.4rem;
       line-height: 1.75rem; } }
   .page-template-collaborate .hero-image-banner {
-    height: 65vh;
+    height: 50vh;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: column nowrap;
         flex-flow: column nowrap;
-    -ms-flex-pack: center;
-        justify-content: center;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
     -ms-flex-align: center;
         align-items: center; }
+    @media all and (min-width: 600px) {
+      .page-template-collaborate .hero-image-banner {
+        height: 60vh;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center; } }
     .page-template-collaborate .hero-image-banner .entry-title {
-      margin: 0 0 1.5rem;
-      font-size: 3.85rem;
+      font-size: 3rem;
       color: white;
       text-align: center;
       text-transform: uppercase; }
+      @media all and (min-width: 600px) {
+        .page-template-collaborate .hero-image-banner .entry-title {
+          margin: 0 0 1.5rem;
+          font-size: 3.85rem; } }
     .page-template-collaborate .hero-image-banner .banner-text {
       color: white;
-      width: 750px;
+      width: 400px;
+      margin: 20% auto;
       text-align: center;
       font-size: 1.55rem;
       line-height: 2rem;
       letter-spacing: 2px; }
+      @media all and (min-width: 600px) {
+        .page-template-collaborate .hero-image-banner .banner-text {
+          width: 750px; } }
   .page-template-collaborate .intro-copy {
     height: auto;
     width: 100%;
@@ -909,7 +927,7 @@ object {
     .page-template-collaborate .blue-background h2 {
       max-width: 400px;
       margin: 0 auto;
-      font-size: 3.35rem;
+      font-size: 2rem;
       font-weight: 400;
       color: #323232;
       line-height: 2.4rem;
@@ -917,142 +935,155 @@ object {
       @media all and (min-width: 600px) {
         .page-template-collaborate .blue-background h2 {
           max-width: none;
-          font-size: 3rem; } }
+          font-size: 3.2rem; } }
     .page-template-collaborate .blue-background .supporters-header {
       font-size: 1.55rem; }
   .page-template-collaborate .content-container {
     padding: 0 1rem; }
-    .page-template-collaborate .content-container .partners-information-container {
-      padding: 0 10rem 0 12rem; }
+    @media all and (min-width: 600px) {
+      .page-template-collaborate .content-container .partners-information-container {
+        padding: 0 10rem 0 12rem;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        -ms-flex-align: baseline;
+            align-items: baseline; } }
+    .page-template-collaborate .content-container .partners-information-container .partners-information {
+      height: auto;
+      margin: 0 0 4rem; }
       @media all and (min-width: 600px) {
-        .page-template-collaborate .content-container .partners-information-container {
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-flow: row wrap;
-              flex-flow: row wrap;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-          -ms-flex-align: baseline;
-              align-items: baseline; } }
-      .page-template-collaborate .content-container .partners-information-container .partners-information {
-        height: auto;
-        margin: 0 0 6rem; }
-        @media all and (min-width: 600px) {
-          .page-template-collaborate .content-container .partners-information-container .partners-information {
-            width: 490px;
-            margin: 0;
-            display: inline-block; } }
-      .page-template-collaborate .content-container .partners-information-container .small-header {
-        margin-top: 4rem;
-        margin-bottom: 1.25rem;
-        font-size: 1.75rem;
-        font-weight: 400;
-        color: #4A4A4A;
-        text-align: center;
-        text-transform: uppercase; }
-        @media all and (min-width: 600px) {
-          .page-template-collaborate .content-container .partners-information-container .small-header {
-            margin: 1.9rem 0 0.5rem;
-            font-size: 2rem;
-            padding-left: 7%;
-            text-align: left; } }
-      .page-template-collaborate .content-container .partners-information-container li + .small-subheader {
-        margin-top: 3rem; }
-      .page-template-collaborate .content-container .partners-information-container .small-subheader {
-        margin: 0.5rem 0 1.5rem;
-        font-size: 1.1rem;
-        font-weight: 400;
-        text-transform: uppercase; }
-        @media all and (min-width: 600px) {
-          .page-template-collaborate .content-container .partners-information-container .small-subheader {
-            font-size: 1.45rem;
-            margin-bottom: 2rem; } }
-      .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list {
-        margin: 0 0 2rem;
-        padding-left: 0.75rem;
-        list-style-type: none; }
-        @media all and (min-width: 600px) {
-          .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list {
-            height: 1050px;
-            margin: 0;
-            padding: 0.5rem 0.5rem 2.5rem 2rem;
-            border: 5px solid #D9F1FF;
-            display: inline-block;
-            position: relative; } }
-        .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list li {
-          margin: 1.5rem 0;
-          font-weight: 100;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-flow: row nowrap;
-              flex-flow: row nowrap;
-          -ms-flex-pack: start;
-              justify-content: flex-start;
-          -ms-flex-align: baseline;
-              align-items: baseline; }
-          .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list li .hyphen {
-            height: 100%;
-            padding-right: 0.5rem;
-            font-size: 0.85rem;
-            font-weight: bold;
-            position: relative;
-            bottom: 0.2rem; }
-          @media all and (min-width: 600px) {
-            .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list li {
-              font-size: 1.4rem; } }
-        .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list .key-graphic-1 {
-          height: 150px;
-          width: 84px;
-          background: url("../../images/graphics/key.svg") no-repeat 50%;
-          background-size: 100%;
-          position: absolute;
-          bottom: 27.25%;
-          left: 4.5%;
-          z-index: -99999;
-          transform: rotate(25deg); }
-        .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list .key-graphic-2 {
-          height: 95px;
-          width: 50px;
-          background: url("../../images/graphics/key.svg") no-repeat;
-          background-size: 100%;
-          position: absolute;
-          bottom: 9%;
-          left: 83.75%;
-          z-index: -99999;
-          transform: rotate(-25deg); }
-        .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list .dollar-sign-graphic-1 {
-          height: 105px;
-          width: 100px;
-          background: url("../../images/graphics/dollar-sign.svg") no-repeat;
-          background-size: 100%;
-          position: absolute;
-          bottom: 32%;
-          left: 2%;
-          z-index: -99999; }
-        .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list .dollar-sign-graphic-2 {
-          height: 67px;
-          width: 62px;
-          background: url("../../images/graphics/dollar-sign.svg") no-repeat;
-          background-size: 100%;
-          position: absolute;
-          bottom: 2%;
-          left: 81%;
-          z-index: -99999;
-          display: inline-block; }
-      .page-template-collaborate .content-container .partners-information-container li + .partners-text {
-        margin-top: 3.75rem; }
-      .page-template-collaborate .content-container .partners-information-container .partners-text {
-        height: auto;
-        width: 100%;
-        margin: 0 auto;
-        padding: 0 1rem;
+        .page-template-collaborate .content-container .partners-information-container .partners-information {
+          width: 490px;
+          margin: 0;
+          display: inline-block; } }
+    .page-template-collaborate .content-container .partners-information-container .small-header {
+      margin-top: 4rem;
+      margin-bottom: 1.25rem;
+      font-size: 1.75rem;
+      font-weight: 400;
+      color: #4A4A4A;
+      text-align: center;
+      text-transform: uppercase; }
+      @media all and (min-width: 600px) {
+        .page-template-collaborate .content-container .partners-information-container .small-header {
+          margin: 1.9rem 0 0.5rem;
+          font-size: 2rem;
+          padding-left: 7%;
+          text-align: left; } }
+    .page-template-collaborate .content-container .partners-information-container li + .small-subheader {
+      margin-top: 3rem; }
+    .page-template-collaborate .content-container .partners-information-container .small-subheader {
+      margin: 0.5rem 0 1.5rem;
+      font-size: 1.1rem;
+      font-weight: 400;
+      text-transform: uppercase; }
+      @media all and (min-width: 600px) {
+        .page-template-collaborate .content-container .partners-information-container .small-subheader {
+          font-size: 1.45rem;
+          margin-bottom: 2rem; } }
+    .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list {
+      margin: 0 0 2rem;
+      padding-left: 0.75rem;
+      list-style-type: none;
+      position: relative; }
+      @media all and (min-width: 600px) {
+        .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list {
+          height: 1050px;
+          margin: 0;
+          padding: 0.5rem 0.5rem 2.5rem 2rem;
+          border: 5px solid #D9F1FF;
+          display: inline-block; } }
+      .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list li {
+        margin: 1.5rem 0;
         font-weight: 100;
-        text-align: center; }
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+        -ms-flex-align: baseline;
+            align-items: baseline; }
+        .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list li .hyphen {
+          height: 100%;
+          padding-right: 0.5rem;
+          font-size: 0.85rem;
+          font-weight: bold;
+          position: relative;
+          bottom: 0.2rem; }
         @media all and (min-width: 600px) {
-          .page-template-collaborate .content-container .partners-information-container .partners-text {
-            width: 330px;
-            padding: 2rem 0 0;
-            transform: translateX(-1rem); } }
+          .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list li {
+            font-size: 1.4rem; } }
+      .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list .key-graphic-1 {
+        height: 150px;
+        width: 84px;
+        background: url("../../images/graphics/key.svg") no-repeat 50%;
+        background-size: 100%;
+        position: absolute;
+        bottom: 1.25%;
+        left: -4%;
+        z-index: -99999;
+        transform: rotate(25deg); }
+        @media all and (min-width: 600px) {
+          .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list .key-graphic-1 {
+            bottom: 27.25%;
+            left: 4.5%; } }
+      .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list .key-graphic-2 {
+        height: 95px;
+        width: 50px;
+        background: url("../../images/graphics/key.svg") no-repeat;
+        background-size: 100%;
+        position: absolute;
+        bottom: -3%;
+        right: -1.25%;
+        z-index: -99999;
+        transform: rotate(-25deg); }
+        @media all and (min-width: 600px) {
+          .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list .key-graphic-2 {
+            bottom: 9%;
+            left: 83.75%; } }
+      .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list .dollar-sign-graphic-1 {
+        height: 105px;
+        width: 100px;
+        background: url("../../images/graphics/dollar-sign.svg") no-repeat;
+        background-size: 100%;
+        position: absolute;
+        bottom: 13%;
+        z-index: -99999; }
+        @media all and (min-width: 600px) {
+          .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list .dollar-sign-graphic-1 {
+            bottom: 32%;
+            left: 2%; } }
+      .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list .dollar-sign-graphic-2 {
+        height: 67px;
+        width: 62px;
+        background: url("../../images/graphics/dollar-sign.svg") no-repeat;
+        background-size: 100%;
+        position: absolute;
+        bottom: -1%;
+        right: -2%;
+        z-index: -99999;
+        display: inline-block; }
+        @media all and (min-width: 600px) {
+          .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list .dollar-sign-graphic-2 {
+            bottom: 2%;
+            left: 81%; } }
+    .page-template-collaborate .content-container .partners-information-container li + .partners-text {
+      margin-top: 3.75rem; }
+    .page-template-collaborate .content-container .partners-information-container .partners-text {
+      height: auto;
+      width: 100%;
+      margin: 0 auto;
+      font-weight: 100;
+      text-align: center; }
+      @media all and (min-width: 600px) {
+        .page-template-collaborate .content-container .partners-information-container .partners-text {
+          width: 330px;
+          padding: 2rem 0 0;
+          transform: translateX(-1rem); } }
   .page-template-collaborate .infographic-container {
     height: auto;
     width: 100%;
@@ -1068,44 +1099,66 @@ object {
         align-items: center;
     position: relative; }
     .page-template-collaborate .infographic-container .business-model-diagram {
-      height: 530px; }
+      height: auto;
+      width: 95%; }
+      @media all and (min-width: 600px) {
+        .page-template-collaborate .infographic-container .business-model-diagram {
+          height: 530px; } }
     .page-template-collaborate .infographic-container .key-graphic-1 {
-      width: 85px;
-      position: absolute;
-      top: 15%;
-      left: 16%;
-      opacity: .5;
-      transform: rotate(25deg); }
+      display: none; }
+      @media all and (min-width: 600px) {
+        .page-template-collaborate .infographic-container .key-graphic-1 {
+          width: 85px;
+          position: absolute;
+          top: 15%;
+          left: 16%;
+          opacity: .5;
+          transform: rotate(25deg); } }
     .page-template-collaborate .infographic-container .key-graphic-2 {
-      width: 55px;
-      position: absolute;
-      top: 19.5%;
-      left: 18.75%;
-      transform: rotate(-25deg); }
+      display: none; }
+      @media all and (min-width: 600px) {
+        .page-template-collaborate .infographic-container .key-graphic-2 {
+          width: 55px;
+          position: absolute;
+          top: 19.5%;
+          left: 18.75%;
+          transform: rotate(-25deg); } }
     .page-template-collaborate .infographic-container .dollar-sign-graphic-1 {
-      position: absolute;
-      top: 14%;
-      right: 16%;
-      opacity: 0.5; }
+      display: none; }
+      @media all and (min-width: 600px) {
+        .page-template-collaborate .infographic-container .dollar-sign-graphic-1 {
+          position: absolute;
+          top: 14%;
+          right: 16%;
+          opacity: 0.5; } }
     .page-template-collaborate .infographic-container .dollar-sign-graphic-2 {
-      width: 65px;
-      position: absolute;
-      top: 25%;
-      right: 19%; }
+      display: none; }
+      @media all and (min-width: 600px) {
+        .page-template-collaborate .infographic-container .dollar-sign-graphic-2 {
+          width: 65px;
+          position: absolute;
+          top: 25%;
+          right: 19%; } }
     .page-template-collaborate .infographic-container .green-line-graphic-1 {
-      height: auto;
-      width: 150px;
-      position: absolute;
-      top: 9.75rem;
-      left: 24.35%;
-      transform: rotate(-117deg); }
+      display: none; }
+      @media all and (min-width: 600px) {
+        .page-template-collaborate .infographic-container .green-line-graphic-1 {
+          height: auto;
+          width: 150px;
+          position: absolute;
+          top: 9.75rem;
+          left: 24.35%;
+          transform: rotate(-117deg); } }
     .page-template-collaborate .infographic-container .green-line-graphic-2 {
-      height: auto;
-      width: 150px;
-      position: absolute;
-      top: 9.55rem;
-      left: 65.5%;
-      transform: rotate(-3deg); }
+      display: none; }
+      @media all and (min-width: 600px) {
+        .page-template-collaborate .infographic-container .green-line-graphic-2 {
+          height: auto;
+          width: 150px;
+          position: absolute;
+          top: 9.55rem;
+          left: 65.5%;
+          transform: rotate(-3deg); } }
   .page-template-collaborate .supporters-logo-container {
     height: 200px;
     width: 100%;
