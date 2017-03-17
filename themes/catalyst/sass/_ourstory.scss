@@ -13,9 +13,13 @@
         text-shadow: 1px 2px black;
     }
     .header-text {
-		position: absolute;
-		padding: 50px 50px;
-	}
+        position: absolute;
+        top: 10%;
+        left: 15%;
+         @include media($desktop-width) {
+            position: initial;
+        }
+    }
     .bannertext {
         font-size: 20px;
         font-weight: lighter;
@@ -101,7 +105,7 @@
             }
         }
         .quote {
-            width: 100%;
+            // width: 100%;
             text-align: center;
         }
         .robert {
@@ -132,14 +136,36 @@
                 }
             }
         }
-        @include media($desktop-width) {
-            .text-under-image {
-                display: flex;
-                margin-bottom: 40px;
-                p {
-                    width: 20%;
-                }
+        .formula {
+            p {
+                font-size: 24px;
+                font-weight: lighter;
+                max-width: 900px;
+                padding-bottom: 50px;
+                margin: auto;
             }
+        }
+        .formula-image {
+            display: flex;
+            padding-bottom: 50px;
+            min-width: 1200px;
+            margin: auto;
+            img {
+                max-width: 100%;
+            }
+        }
+        .plus {
+            padding-bottom: 100px;
+        }
+        .equal {
+            padding-bottom: 100px;
+        }
+        .imagetext {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .market{
+            width: 500px;
         }
         h5 {
             font-size: 20px;
@@ -171,20 +197,5 @@
                 width: 989px;
             }
         }
-        //   .end-content {
-        //             margin: 100px 0;
-        //             .end-content-quote {
-        //                 display: flex;
-        //                 width: 989px;
-        //                 margin: 0 auto;
-        //             }
-        //             .quote {
-        //                 font-size: 24px;
-        //                 line-height: 28px;
-        //                 font-weight: lighter;
-        //                 width: 900px;
-        //                 margin: 20px auto;
-        //             }
-        //         }
     }
 }

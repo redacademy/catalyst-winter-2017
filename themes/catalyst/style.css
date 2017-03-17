@@ -846,7 +846,11 @@ object {
 
 .page-template-page-our-story .header-text {
   position: absolute;
-  padding: 50px 50px; }
+  top: 10%;
+  left: 15%; }
+  @media all and (min-width: 600px) {
+    .page-template-page-our-story .header-text {
+      position: initial; } }
 
 .page-template-page-our-story .bannertext {
   font-size: 20px;
@@ -926,7 +930,6 @@ object {
         margin: 0 auto;
         font-size: 20px; } }
   .page-template-page-our-story .site-content .quote {
-    width: 100%;
     text-align: center; }
   .page-template-page-our-story .site-content .robert {
     margin-bottom: 60px;
@@ -951,13 +954,29 @@ object {
           transform: rotate(0deg); }
         .page-template-page-our-story .site-content .mission-content .alignnone {
           height: 150px; } }
-  @media all and (min-width: 600px) {
-    .page-template-page-our-story .site-content .text-under-image {
-      display: -ms-flexbox;
-      display: flex;
-      margin-bottom: 40px; }
-      .page-template-page-our-story .site-content .text-under-image p {
-        width: 20%; } }
+  .page-template-page-our-story .site-content .formula p {
+    font-size: 24px;
+    font-weight: lighter;
+    max-width: 900px;
+    padding-bottom: 50px;
+    margin: auto; }
+  .page-template-page-our-story .site-content .formula-image {
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 50px;
+    min-width: 1200px;
+    margin: auto; }
+    .page-template-page-our-story .site-content .formula-image img {
+      max-width: 100%; }
+  .page-template-page-our-story .site-content .plus {
+    padding-bottom: 100px; }
+  .page-template-page-our-story .site-content .equal {
+    padding-bottom: 100px; }
+  .page-template-page-our-story .site-content .imagetext {
+    font-size: 14px;
+    line-height: 14px; }
+  .page-template-page-our-story .site-content .market {
+    width: 500px; }
   .page-template-page-our-story .site-content h5 {
     font-size: 20px;
     text-transform: uppercase;
