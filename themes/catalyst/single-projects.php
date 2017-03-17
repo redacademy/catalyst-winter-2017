@@ -46,10 +46,12 @@
                 <p>Disclosed floor plans, site map, draft design, and construction photos during the development stage of the project.</p>
             </div>
         </div>
-        <div class="gallery">
+        <div class="gallery" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true }'>
             <?php
                 $gallery_images = CFS()->get('gallery_images');
-                foreach ($gallery_images as $image) {
+                foreach ($gallery_images as $image) { ?>
+                    <div class="gallery-img">
+                        <?php
                     echo '<img src="'.$image['images'].'"/>';
                     echo '<p class="quote"> '.$image['quotes'].'</p>';
             ?>
@@ -60,7 +62,9 @@
                     echo '<p class="line"> '.$image['line2'].'</p>';
             ?>
                 </div>
+                </div>
             <?php
+            
                 }
             ?>
         </div>
@@ -73,7 +77,7 @@
             <div class="other-proj">
                 <h2>Other Projects</h2>
             </div>
-
+<div class="other-post-gallery" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true }'>
         <?php
             $posts = get_posts( array( 
                 'post_type' => 'projects', 
@@ -81,10 +85,13 @@
             ));
             foreach ( $posts as $post ) :
         ?>
-        <div class="other-proj-wrapper">
-            <a href="<?php echo get_permalink() ?>"><?php the_post_thumbnail();  ?></a>
-        </div>
+        
+            <div class="other-proj-wrapper">
+                <a href="<?php echo get_permalink() ?>"><?php the_post_thumbnail();  ?></a>
+            </div>
+        
             <?php endforeach; ?>
+            </div>
     </section>
 </div>
  <?php get_footer(); ?>
