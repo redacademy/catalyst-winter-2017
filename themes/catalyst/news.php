@@ -16,7 +16,9 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
         <header class="header">
-            <div class="herobanner"></div>
+            <div class="herobanner">
+                <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+            </div>
         </header>
 
         <?php while ( have_posts() ) : the_post(); ?>

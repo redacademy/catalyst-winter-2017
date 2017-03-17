@@ -766,9 +766,10 @@ object {
   .page-template-news .entry-content {
     text-align: center; }
   .page-template-news h1 {
-    position: absolute;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 100px;
+    font-size: 60px;
+    font-weight: 500;
     text-transform: uppercase;
     color: white; }
   .page-template-news .entry-header {
