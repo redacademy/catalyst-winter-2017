@@ -1,10 +1,7 @@
-<?php /* Template Name: news */ ?>
-<!-- this name is to setup the custom page template -->
-
 
 <?php
 /**
- * The template for displaying all pages.
+ * Template Name: news
  *
  * @package RED_Starter_Theme
  */

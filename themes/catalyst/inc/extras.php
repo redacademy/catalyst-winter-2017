@@ -27,7 +27,7 @@ function news_hero_banner_css() {
 		return;
 	}
 
-	$image = CFS()->get( 'newsheroimage' );
+	$image = CFS()->get( 'heroimage' );
 		if(!$image){
 			return;
 		}

@@ -7,6 +7,7 @@
 .Spotlight-V100
 .Trashes
 ehthumbs.db
+.vscode
 *[Tt]humbs.db
 *.Trashes
 # Ignore logs and databases #
