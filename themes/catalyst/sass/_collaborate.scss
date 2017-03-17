@@ -6,8 +6,26 @@
         line-height: $line-height-desktop;
     }
 
-    .entry-title {
-        text-align: center;
+    .hero-image-banner {
+        height: 65vh;
+        @include flex-column(nowrap, center, center);
+
+        .entry-title {
+            margin: 0 0 1.5rem;
+            font-size: 3.85rem;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .banner-text {
+            color: white;
+            width: 750px;
+            text-align: center;
+            font-size: 1.55rem;
+            line-height: 2rem;
+            letter-spacing: 2px;
+        }
     }
 
     .intro-copy {
@@ -39,6 +57,10 @@
         @include navigation-button();
     }
 
+    .infographic-container + .navigation-button {
+        margin: 3rem auto 6rem;
+    }
+
     .blue-background {
         height: auto;
         width: 100%;
@@ -54,7 +76,7 @@
         h2 {
             max-width: 400px;
             margin: 0 auto;
-            font-size: 2rem;
+            font-size: 3.35rem;
             font-weight: 400;
             color: $color__header-main;
             line-height: 2.4rem;
@@ -168,47 +190,98 @@
                 }
             }
         }
+    }
 
-        .infographic-container {
-            height: 200px;
-            width: 100%;
-            @include flex-column(nowrap, center, center);
-            background-color: blue;
+    .infographic-container {
+        height: auto;
+        width: 100%;
+        margin-top: -34.5rem;
+        padding: 0.5rem 0 1.5rem;
+        text-align: center;
+        @include flex-column(nowrap, center, center);
+        position: relative;
+
+        .business-model-diagram {
+            height: 530px;
+        }
+
+        .green-line-graphic-1 {
+            height: auto;
+            width: 150px;
+            position: absolute;
+            top: 35.5rem;
+            left: 24.35%;
+            transform: rotate(-117deg);
+        }
+
+        .green-line-graphic-2 {
+            height: auto;
+            width: 150px;
+            position: absolute;
+            top: 35.25rem;
+            left: 65.5%;
+            transform: rotate(-3deg);
+        }
+
+        .key-graphic-1 {
+            top: 30rem;
+            left: -31%;
+            opacity: 0.5;
+        }
+
+        .key-graphic-2 {
+            top: 22.75rem;
+            left: -29%;
+        }
+
+        .dollar-sign-graphic-1 {
+            top: 15.5rem;
+            left: 31%;
+            opacity: 0.5;
+        }
+
+        .dollar-sign-graphic-2 {
+            top: 12.35rem;
+            left: 29.25%;
         }
     }
 
     .key-graphic-1 {
+        height: auto;
         width: 80px;
         position: relative;
         z-index: -99999;
         bottom: 27.15rem;
-        left: 18%;
+        left: 17%;
         transform: rotate(25deg);
     }
 
     .key-graphic-2 {
+        height: auto;
         width: 50px;
         position: relative;
         z-index: -99999;
-        bottom: 16rem;
-        left: 37.65%;
+        bottom: 15rem;
+        left: 36.55%;
         transform: rotate(-25deg);
     }
 
     .dollar-sign-graphic-1 {
+        height: auto;
         width: 100px;
         position: relative;
         z-index: -99999;
         bottom: 30rem;
-        left: 44%;
+        left: 44.5%;
     }
 
     .dollar-sign-graphic-2 {
+        height: auto;
         width: 70px;
         position: relative;
         z-index: -99999;
         bottom: 10rem;
-        left: 63%;
+        left: 64%;
     }
 
     .supporters-logo-container {
@@ -216,15 +289,5 @@
         width: 100%;
         background-color: blue;
         @include flex-row(wrap, flex-start, center);
-    }
-
-    .infographic-container {
-        height: auto;
-        padding: 0.5rem 0 1.5rem;
-        text-align: center;
-
-        img {
-            height: 530px;
-        }
     }
 }
