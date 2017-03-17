@@ -868,7 +868,8 @@ object {
       letter-spacing: 2px; }
       @media all and (min-width: 600px) {
         .page-template-collaborate .hero-image-banner .banner-text {
-          width: 750px; } }
+          width: 750px;
+          margin: 2% auto; } }
   .page-template-collaborate .intro-copy {
     height: auto;
     width: 100%;
@@ -1114,7 +1115,8 @@ object {
           top: 15%;
           left: 16%;
           opacity: .5;
-          transform: rotate(25deg); } }
+          transform: rotate(25deg);
+          display: inline; } }
     .page-template-collaborate .infographic-container .key-graphic-2 {
       display: none; }
       @media all and (min-width: 600px) {
@@ -1123,7 +1125,8 @@ object {
           position: absolute;
           top: 19.5%;
           left: 18.75%;
-          transform: rotate(-25deg); } }
+          transform: rotate(-25deg);
+          display: inline; } }
     .page-template-collaborate .infographic-container .dollar-sign-graphic-1 {
       display: none; }
       @media all and (min-width: 600px) {
@@ -1131,7 +1134,8 @@ object {
           position: absolute;
           top: 14%;
           right: 16%;
-          opacity: 0.5; } }
+          opacity: 0.5;
+          display: inline; } }
     .page-template-collaborate .infographic-container .dollar-sign-graphic-2 {
       display: none; }
       @media all and (min-width: 600px) {
@@ -1139,7 +1143,8 @@ object {
           width: 65px;
           position: absolute;
           top: 25%;
-          right: 19%; } }
+          right: 19%;
+          display: inline; } }
     .page-template-collaborate .infographic-container .green-line-graphic-1 {
       display: none; }
       @media all and (min-width: 600px) {
@@ -1149,7 +1154,8 @@ object {
           position: absolute;
           top: 9.75rem;
           left: 24.35%;
-          transform: rotate(-117deg); } }
+          transform: rotate(-117deg);
+          display: inline; } }
     .page-template-collaborate .infographic-container .green-line-graphic-2 {
       display: none; }
       @media all and (min-width: 600px) {
@@ -1159,7 +1165,8 @@ object {
           position: absolute;
           top: 9.55rem;
           left: 65.5%;
-          transform: rotate(-3deg); } }
+          transform: rotate(-3deg);
+          display: inline; } }
   .page-template-collaborate .supporters-logo-container {
     height: 200px;
     width: 100%;

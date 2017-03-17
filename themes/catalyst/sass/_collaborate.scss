@@ -35,6 +35,7 @@
             letter-spacing: 2px;
             @include media($desktop-width) {
                 width: 750px;
+                margin: 2% auto;
             }
         }
     }
@@ -290,6 +291,7 @@
                 left: 16%;
                 opacity: .5;
                 transform: rotate(25deg);
+                display: inline;
             }
         }
 
@@ -301,6 +303,7 @@
                 top: 19.5%;
                 left: 18.75%;
                 transform: rotate(-25deg);
+                display: inline;
             }
         }
 
@@ -311,6 +314,7 @@
                 top: 14%;
                 right: 16%;
                 opacity: 0.5;
+                display: inline;
             }
         }
 
@@ -321,6 +325,7 @@
                 position: absolute;
                 top: 25%;
                 right: 19%;
+                display: inline;
             }
         }
 
@@ -333,6 +338,7 @@
                 top: 9.75rem;
                 left: 24.35%;
                 transform: rotate(-117deg);
+                display: inline;
             }
         }
 
@@ -345,6 +351,7 @@
                 top: 9.55rem;
                 left: 65.5%;
                 transform: rotate(-3deg);
+                display: inline;
             }
         }
     }
