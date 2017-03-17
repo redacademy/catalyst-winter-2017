@@ -1,14 +1,11 @@
-<?php /* Template Name: news-template */ ?>
-<!-- this name is to setup the custom page template -->
-
 
 <?php
-/**
- * The template for displaying all pages.
- *
- * @package RED_Starter_Theme
- */
 
+/**
+	* Template Name: news-template
+	*
+	* @package Catalyst Theme
+	*/
 
 get_header(); ?>
 
