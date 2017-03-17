@@ -1,13 +1,11 @@
 
 <?php
-<<<<<<< HEAD:themes/catalyst/news.php
 /**
  * Template Name: news
  *
  * @package RED_Starter_Theme
  */
-=======
->>>>>>> master:themes/catalyst/page-templates/news.php
+
 
 /**
 	* Template Name: news
@@ -34,12 +32,7 @@ get_header(); ?>
 
 	<?php get_sidebar(); ?>
         </main> <!--#main -->
-<<<<<<< HEAD:themes/catalyst/news.php
-
-    </div> <!--#primary -->
-=======
 	</div> <!--#primary -->
->>>>>>> 34779e15a6fe7d5d82175d165d64b9053e420db9
->>>>>>> master:themes/catalyst/page-templates/news.php
+
 
 <?php get_footer(); ?>
