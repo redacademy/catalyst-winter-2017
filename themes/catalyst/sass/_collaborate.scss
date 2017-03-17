@@ -146,11 +146,12 @@
                 padding-left: 0.75rem;
                 list-style-type: none;
                 @include media($desktop-width) {
-                    height: auto;
+                    height: 1050px;
                     margin: 0;
                     padding: 0.5rem 0.5rem 2.5rem 2rem;
                     border: 5px solid $color__brand-blue;
                     display: inline-block;
+                    position: relative;
                 }
 
                 li {
@@ -169,6 +170,52 @@
                     @include media($desktop-width) {
                         font-size: $font__desktop-size;
                     }
+                }
+                .key-graphic-1 {
+                    height: 150px;
+                    width: 84px;
+                    background: url("../../images/graphics/key.svg") no-repeat 50%;
+                    background-size: 100%;
+                    position: absolute;
+                    bottom: 27.25%;
+                    left: 4.5%;
+                    z-index: -99999;
+                    transform: rotate(25deg);
+                }
+
+                .key-graphic-2 {
+                    height: 95px;
+                    width: 50px;
+                    background: url("../../images/graphics/key.svg") no-repeat;
+                    background-size: 100%;
+                    position: absolute;
+                    bottom: 9%;
+                    left: 83.75%;
+                    z-index: -99999;
+                    transform: rotate(-25deg);
+                }
+
+                .dollar-sign-graphic-1 {
+                    height: 105px;
+                    width: 100px;
+                    background: url("../../images/graphics/dollar-sign.svg") no-repeat;
+                    background-size: 100%;
+                    position: absolute;
+                    bottom: 32%;
+                    left: 2%;
+                    z-index: -99999;
+                }
+
+                .dollar-sign-graphic-2 {
+                    height: 67px;
+                    width: 62px;
+                    background: url("../../images/graphics/dollar-sign.svg") no-repeat;
+                    background-size: 100%;
+                    position: absolute;
+                    bottom: 2%;
+                    left: 81%;
+                    z-index: -99999;
+                    display: inline-block;
                 }
             }
 
@@ -195,7 +242,6 @@
     .infographic-container {
         height: auto;
         width: 100%;
-        margin-top: -34.5rem;
         padding: 0.5rem 0 1.5rem;
         text-align: center;
         @include flex-column(nowrap, center, center);
@@ -205,11 +251,42 @@
             height: 530px;
         }
 
+        .key-graphic-1 {
+            width: 85px;
+            position: absolute;
+            top: 15%;
+            left: 16%;
+            opacity: .5;
+            transform: rotate(25deg);
+        }
+
+        .key-graphic-2 {
+            width: 55px;
+            position: absolute;
+            top: 19.5%;
+            left: 18.75%;
+            transform: rotate(-25deg);
+        }
+
+        .dollar-sign-graphic-1 {
+            position: absolute;
+            top: 14%;
+            right: 16%;
+            opacity: 0.5;
+        }
+
+        .dollar-sign-graphic-2 {
+            width: 65px;
+            position: absolute;
+            top: 25%;
+            right: 19%;
+        }
+
         .green-line-graphic-1 {
             height: auto;
             width: 150px;
             position: absolute;
-            top: 35.5rem;
+            top: 9.75rem;
             left: 24.35%;
             transform: rotate(-117deg);
         }
@@ -218,76 +295,20 @@
             height: auto;
             width: 150px;
             position: absolute;
-            top: 35.25rem;
+            top: 9.55rem;
             left: 65.5%;
             transform: rotate(-3deg);
         }
-
-        .key-graphic-1 {
-            top: 30rem;
-            left: -31%;
-            opacity: 0.5;
-        }
-
-        .key-graphic-2 {
-            top: 22.75rem;
-            left: -29%;
-        }
-
-        .dollar-sign-graphic-1 {
-            top: 15.5rem;
-            left: 31%;
-            opacity: 0.5;
-        }
-
-        .dollar-sign-graphic-2 {
-            top: 12.35rem;
-            left: 29.25%;
-        }
-    }
-
-    .key-graphic-1 {
-        height: auto;
-        width: 80px;
-        position: relative;
-        z-index: -99999;
-        bottom: 27.15rem;
-        left: 17%;
-        transform: rotate(25deg);
-    }
-
-    .key-graphic-2 {
-        height: auto;
-        width: 50px;
-        position: relative;
-        z-index: -99999;
-        bottom: 15rem;
-        left: 36.55%;
-        transform: rotate(-25deg);
-    }
-
-    .dollar-sign-graphic-1 {
-        height: auto;
-        width: 100px;
-        position: relative;
-        z-index: -99999;
-        bottom: 30rem;
-        left: 44.5%;
-    }
-
-    .dollar-sign-graphic-2 {
-        height: auto;
-        width: 70px;
-        position: relative;
-        z-index: -99999;
-        bottom: 10rem;
-        left: 64%;
     }
 
     .supporters-logo-container {
         height: 200px;
         width: 100%;
-        background-color: blue;
         @include flex-row(wrap, flex-start, center);
+
+        .sponsor-logo {
+            height: auto;
+            width: 100px;
+        }
     }
 }

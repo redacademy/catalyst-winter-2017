@@ -188,7 +188,7 @@ function sponsor_cpt() {
 
 	$labels = array(
 		'name'                  => 'Sponsors',
-		'singular_name'         => 'Sponsor' 
+		'singular_name'         => 'Sponsor', 
 		'menu_name'             => 'Sponsors',
 		'name_admin_bar'        => 'Sponsors',
 		'archives'              => 'Sponsor Archives',

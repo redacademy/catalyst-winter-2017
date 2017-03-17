@@ -973,11 +973,12 @@ object {
         list-style-type: none; }
         @media all and (min-width: 600px) {
           .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list {
-            height: auto;
+            height: 1050px;
             margin: 0;
             padding: 0.5rem 0.5rem 2.5rem 2rem;
             border: 5px solid #D9F1FF;
-            display: inline-block; } }
+            display: inline-block;
+            position: relative; } }
         .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list li {
           margin: 1.5rem 0;
           font-weight: 100;
@@ -999,6 +1000,45 @@ object {
           @media all and (min-width: 600px) {
             .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list li {
               font-size: 1.4rem; } }
+        .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list .key-graphic-1 {
+          height: 150px;
+          width: 84px;
+          background: url("../../images/graphics/key.svg") no-repeat 50%;
+          background-size: 100%;
+          position: absolute;
+          bottom: 27.25%;
+          left: 4.5%;
+          z-index: -99999;
+          transform: rotate(25deg); }
+        .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list .key-graphic-2 {
+          height: 95px;
+          width: 50px;
+          background: url("../../images/graphics/key.svg") no-repeat;
+          background-size: 100%;
+          position: absolute;
+          bottom: 9%;
+          left: 83.75%;
+          z-index: -99999;
+          transform: rotate(-25deg); }
+        .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list .dollar-sign-graphic-1 {
+          height: 105px;
+          width: 100px;
+          background: url("../../images/graphics/dollar-sign.svg") no-repeat;
+          background-size: 100%;
+          position: absolute;
+          bottom: 32%;
+          left: 2%;
+          z-index: -99999; }
+        .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list .dollar-sign-graphic-2 {
+          height: 67px;
+          width: 62px;
+          background: url("../../images/graphics/dollar-sign.svg") no-repeat;
+          background-size: 100%;
+          position: absolute;
+          bottom: 2%;
+          left: 81%;
+          z-index: -99999;
+          display: inline-block; }
       .page-template-collaborate .content-container .partners-information-container li + .partners-text {
         margin-top: 3.75rem; }
       .page-template-collaborate .content-container .partners-information-container .partners-text {
@@ -1016,7 +1056,6 @@ object {
   .page-template-collaborate .infographic-container {
     height: auto;
     width: 100%;
-    margin-top: -34.5rem;
     padding: 0.5rem 0 1.5rem;
     text-align: center;
     display: -ms-flexbox;
@@ -1030,68 +1069,46 @@ object {
     position: relative; }
     .page-template-collaborate .infographic-container .business-model-diagram {
       height: 530px; }
+    .page-template-collaborate .infographic-container .key-graphic-1 {
+      width: 85px;
+      position: absolute;
+      top: 15%;
+      left: 16%;
+      opacity: .5;
+      transform: rotate(25deg); }
+    .page-template-collaborate .infographic-container .key-graphic-2 {
+      width: 55px;
+      position: absolute;
+      top: 19.5%;
+      left: 18.75%;
+      transform: rotate(-25deg); }
+    .page-template-collaborate .infographic-container .dollar-sign-graphic-1 {
+      position: absolute;
+      top: 14%;
+      right: 16%;
+      opacity: 0.5; }
+    .page-template-collaborate .infographic-container .dollar-sign-graphic-2 {
+      width: 65px;
+      position: absolute;
+      top: 25%;
+      right: 19%; }
     .page-template-collaborate .infographic-container .green-line-graphic-1 {
       height: auto;
       width: 150px;
       position: absolute;
-      top: 35.5rem;
+      top: 9.75rem;
       left: 24.35%;
       transform: rotate(-117deg); }
     .page-template-collaborate .infographic-container .green-line-graphic-2 {
       height: auto;
       width: 150px;
       position: absolute;
-      top: 35.25rem;
+      top: 9.55rem;
       left: 65.5%;
       transform: rotate(-3deg); }
-    .page-template-collaborate .infographic-container .key-graphic-1 {
-      top: 30rem;
-      left: -31%;
-      opacity: 0.5; }
-    .page-template-collaborate .infographic-container .key-graphic-2 {
-      top: 22.75rem;
-      left: -29%; }
-    .page-template-collaborate .infographic-container .dollar-sign-graphic-1 {
-      top: 15.5rem;
-      left: 31%;
-      opacity: 0.5; }
-    .page-template-collaborate .infographic-container .dollar-sign-graphic-2 {
-      top: 12.35rem;
-      left: 29.25%; }
-  .page-template-collaborate .key-graphic-1 {
-    height: auto;
-    width: 80px;
-    position: relative;
-    z-index: -99999;
-    bottom: 27.15rem;
-    left: 17%;
-    transform: rotate(25deg); }
-  .page-template-collaborate .key-graphic-2 {
-    height: auto;
-    width: 50px;
-    position: relative;
-    z-index: -99999;
-    bottom: 15rem;
-    left: 36.55%;
-    transform: rotate(-25deg); }
-  .page-template-collaborate .dollar-sign-graphic-1 {
-    height: auto;
-    width: 100px;
-    position: relative;
-    z-index: -99999;
-    bottom: 30rem;
-    left: 44.5%; }
-  .page-template-collaborate .dollar-sign-graphic-2 {
-    height: auto;
-    width: 70px;
-    position: relative;
-    z-index: -99999;
-    bottom: 10rem;
-    left: 64%; }
   .page-template-collaborate .supporters-logo-container {
     height: 200px;
     width: 100%;
-    background-color: blue;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row wrap;
@@ -1100,6 +1117,9 @@ object {
         justify-content: flex-start;
     -ms-flex-align: center;
         align-items: center; }
+    .page-template-collaborate .supporters-logo-container .sponsor-logo {
+      height: auto;
+      width: 100px; }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -1257,22 +1277,9 @@ object {
 
 .post-type-archive-careers .contact-link {
   text-decoration: none;
-  color: black; }
-
-.post-type-archive-careers .contact-button {
-  border: 2px solid black;
-  height: 50px;
-  width: 200px;
-  margin: 0 auto;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center; }
-
-.post-type-archive-careers .contact {
-  margin: 0;
+  color: #000;
+  border: 2px solid #000;
+  padding: 1rem 3.5rem;
   text-transform: uppercase; }
 
 .post-type-archive-projects .project-content {
