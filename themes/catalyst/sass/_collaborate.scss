@@ -8,6 +8,7 @@
 
     .hero-image-banner {
         height: 50vh;
+        min-width: 100%;
         @include header-text-shadow;
         @include flex-column(nowrap, flex-start, center);
         @include media($desktop-width) {
@@ -28,7 +29,7 @@
 
         .banner-text {
             color: white;
-            width: 400px;
+            width: 380px;
             margin: 10% auto;
             text-align: center;
             font-size: 1.55rem;
@@ -49,6 +50,7 @@
         font-weight: 100;
         text-align: center;
         @include media($desktop-width) {
+            padding: 2.75rem 0.85rem;
             width: 60%;
         }
     }
