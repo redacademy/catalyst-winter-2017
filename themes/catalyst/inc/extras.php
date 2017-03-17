@@ -25,7 +25,7 @@ add_filter( 'body_class', 'red_starter_body_classes' );
 
 
 // second version
-function hero_banner_css() {
+function our_story_hero_banner_css() {
 	if(!is_page_template('page-our-story.php')){
 		return;
 	}
@@ -45,4 +45,6 @@ function hero_banner_css() {
 }";
 	wp_add_inline_style( 'red-starter-style', $hero_css );
 
-} add_action('wp_enqueue_scripts', 'hero_banner_css' );
+} add_action('wp_enqueue_scripts', 'our_story_hero_banner_css' );
+
+

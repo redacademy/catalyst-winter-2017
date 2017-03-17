@@ -12,7 +12,12 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<header>
-		<div class="herobanner"></div>
+		<div class="herobanner">
+		<div class="header-text">
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<p class="bannertext"><?php echo CFS()->get( 'bannertext' ); ?></p>
+		</div>
+		</div>
 		</header>
 			<?php while ( have_posts() ) : the_post(); ?>
 

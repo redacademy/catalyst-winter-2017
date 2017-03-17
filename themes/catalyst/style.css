@@ -545,8 +545,13 @@ a {
     height: 10px;
     text-transform: uppercase;
     font-size: 12px; }
+    @media all and (min-width: 600px) {
+      .footer .page-link {
+        padding-top: 20px;
+        margin-right: 10px; } }
     .footer .page-link a {
       text-decoration: none;
+      font-weight: bold;
       color: #4A4A4A;
       margin-right: 20px; }
     @media all and (min-width: 600px) {
@@ -555,17 +560,19 @@ a {
   .footer .sns-icon {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
+    -ms-flex-pack: center;
+        justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
     .footer .sns-icon p {
       margin-right: 10px; }
     @media all and (min-width: 600px) {
       .footer .sns-icon {
-        margin-left: 30px; } }
+        margin-left: 30px;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
   .footer .company-info h3 {
-    font-size: 16px;
+    font-size: 20px;
     margin: 0;
     height: 25px;
     text-transform: uppercase; }
@@ -792,120 +799,128 @@ object {
   color: white;
   text-align: center; }
 
-.page-template-page-our-story .site-content header {
-  position: relative; }
-  .page-template-page-our-story .site-content header p {
-    position: absolute;
-    color: white; }
-
-.page-template-page-our-story .site-content h1 {
-  position: absolute;
-  color: white;
-  text-transform: uppercase; }
-
-.page-template-page-our-story .site-content .entry-content {
-  margin-top: 0; }
-
-.page-template-page-our-story .site-content article {
-  text-align: center; }
-
-.page-template-page-our-story .site-content a {
-  padding: 20px 50px;
+.page-template-page-our-story .entry-title {
+  margin: 0;
+  padding-top: 150px;
+  font-size: 60px;
   text-transform: uppercase;
-  border: 3px solid black;
-  text-decoration: none;
-  color: black; }
+  font-weight: lighter;
+  text-shadow: 1px 2px black; }
 
-.page-template-page-our-story .site-content h2 {
-  font-size: 40px;
-  text-transform: uppercase;
-  font-weight: medium;
-  background-color: #D9F1FF;
-  padding: 20px 0;
+.page-template-page-our-story .bannertext {
+  font-size: 20px;
+  font-weight: lighter; }
+
+.page-template-page-our-story .site-content {
   text-align: center; }
-
-.page-template-page-our-story .site-content h3 {
-  font-size: 50px;
-  line-height: 55px;
-  font-weight: lighter;
-  width: 700px;
-  margin: 0 auto;
-  margin-bottom: 50px; }
-
-.page-template-page-our-story .site-content .formula p {
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: lighter;
-  width: 900px;
-  margin: 20px auto; }
-
-.page-template-page-our-story .site-content .text-under-image {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-bottom: 50px; }
-  .page-template-page-our-story .site-content .text-under-image p {
-    font-size: 14px;
-    line-height: 16px;
-    width: 20%;
-    margin: 0; }
-
-.page-template-page-our-story .site-content .image {
-  height: 300px; }
-
-.page-template-page-our-story .site-content .robert {
-  margin-bottom: 50px; }
-  .page-template-page-our-story .site-content .robert h4 {
-    margin-bottom: 0;
-    font-size: 28px; }
-  .page-template-page-our-story .site-content .robert p {
-    margin-top: 0;
-    font-size: 26px;
-    padding-top: 10px;
-    margin-bottom: 60px; }
-
-.page-template-page-our-story .site-content .mission .mission-quote {
-  display: -ms-flexbox;
-  display: flex;
-  width: 989px;
-  margin: 0 auto; }
-
-.page-template-page-our-story .site-content .mission .quote {
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: lighter;
-  width: 900px;
-  margin: 20px auto; }
-
-.page-template-page-our-story .site-content .mission-content {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
-  .page-template-page-our-story .site-content .mission-content .income {
-    width: 30%; }
-  .page-template-page-our-story .site-content .mission-content .rent {
-    width: 30%; }
-  .page-template-page-our-story .site-content .mission-content .life {
-    width: 30%; }
-  .page-template-page-our-story .site-content .mission-content h5 {
+  .page-template-page-our-story .site-content .entry-header {
+    visibility: hidden;
+    height: 1px; }
+  .page-template-page-our-story .site-content .top-text {
+    text-align: center;
+    font-size: 18px;
+    width: 500px;
+    margin: auto; }
+    @media all and (min-width: 600px) {
+      .page-template-page-our-story .site-content .top-text {
+        width: 100%;
+        font-size: 22px;
+        font-weight: lighter; } }
+  .page-template-page-our-story .site-content a {
+    padding: 20px 50px;
     text-transform: uppercase;
-    margin-bottom: 0; }
-
-.page-template-page-our-story .site-content .end-content {
-  margin: 100px 0; }
-  .page-template-page-our-story .site-content .end-content .end-content-quote {
+    border: 1px solid black;
+    text-decoration: none;
+    color: black; }
+    @media all and (min-width: 600px) {
+      .page-template-page-our-story .site-content a {
+        border: 3px solid black; } }
+  .page-template-page-our-story .site-content h2 {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    background-color: #D9F1FF;
+    padding: 20px 0;
+    text-align: center;
+    line-height: 50px; }
+  .page-template-page-our-story .site-content h3 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: lighter;
+    width: 487px;
+    margin: auto;
+    line-height: 35px; }
+    @media all and (min-width: 600px) {
+      .page-template-page-our-story .site-content h3 {
+        font-size: 50px;
+        line-height: 55px;
+        width: 700px;
+        margin-bottom: 50px; } }
+  .page-template-page-our-story .site-content .mission-quote {
     display: -ms-flexbox;
     display: flex;
-    width: 989px;
-    margin: 0 auto; }
-  .page-template-page-our-story .site-content .end-content .quote {
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: lighter;
-    width: 900px;
-    margin: 20px auto; }
+    width: 500px;
+    margin: 30px auto;
+    font-weight: lighter; }
+    .page-template-page-our-story .site-content .mission-quote img {
+      width: 25%; }
+    @media all and (min-width: 600px) {
+      .page-template-page-our-story .site-content .mission-quote {
+        width: 989px;
+        margin: 0 auto;
+        font-size: 20px; } }
+  .page-template-page-our-story .site-content .quote {
+    width: 100%;
+    text-align: center; }
+  .page-template-page-our-story .site-content .robert {
+    margin-bottom: 60px;
+    text-align: center; }
+    .page-template-page-our-story .site-content .robert h4 {
+      margin: 0; }
+    .page-template-page-our-story .site-content .robert .position {
+      margin: 0; }
+  .page-template-page-our-story .site-content .mission-content {
+    text-align: center; }
+    @media all and (min-width: 600px) {
+      .page-template-page-our-story .site-content .mission-content {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center; }
+        .page-template-page-our-story .site-content .mission-content .arrow {
+          margin-top: 50px;
+          height: 50px; }
+        .page-template-page-our-story .site-content .mission-content .alignnone {
+          height: 150px; } }
+  @media all and (min-width: 600px) {
+    .page-template-page-our-story .site-content .text-under-image {
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 40px; }
+      .page-template-page-our-story .site-content .text-under-image p {
+        width: 20%; } }
+  .page-template-page-our-story .site-content h5 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 0; }
+  .page-template-page-our-story .site-content .mission-text {
+    margin: 0 auto;
+    width: 310px;
+    font-size: 16px;
+    font-weight: lighter; }
+  .page-template-page-our-story .site-content .end-content {
+    margin-bottom: 50px; }
+  .page-template-page-our-story .site-content .end-content-quote {
+    display: -ms-flexbox;
+    display: flex;
+    width: 500px;
+    margin: 30px auto;
+    font-weight: lighter; }
+    .page-template-page-our-story .site-content .end-content-quote img {
+      width: 25%; }
+    @media all and (min-width: 600px) {
+      .page-template-page-our-story .site-content .end-content-quote {
+        width: 989px; } }
 
 .page-template-collaborate {
   height: 100%;
