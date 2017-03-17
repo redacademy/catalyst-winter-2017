@@ -763,6 +763,8 @@ object {
 
 .page-template-news {
   margin: 0 auto; }
+  .page-template-news .entry-content {
+    text-align: center; }
   .page-template-news h1 {
     position: absolute;
     text-align: center;
