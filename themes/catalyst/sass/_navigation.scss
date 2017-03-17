@@ -33,7 +33,7 @@ a {
 	float: left;
 	width: 100%;
 	ul {
-		display: none;
+		// display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
@@ -164,5 +164,10 @@ a {
 				&:hover {}
 			}
 		}
+	}
+	.hamburger-menu{
+		// 	@include media($desktop-width) {
+		// 	display: none;
+		// }
 	}
 }

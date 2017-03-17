@@ -400,7 +400,6 @@ a {
   float: left;
   width: 100%; }
   .main-navigation ul {
-    display: none;
     list-style: none;
     margin: 0;
     padding-left: 0; }
@@ -812,7 +811,19 @@ object {
 
 .page-template-page-our-story .bannertext {
   font-size: 20px;
-  font-weight: lighter; }
+  font-weight: lighter;
+  width: 400px;
+  margin: auto;
+  padding-top: 29px;
+  font-size: 26px;
+  line-height: 27px;
+  text-shadow: 1px 2px black; }
+  @media all and (min-width: 600px) {
+    .page-template-page-our-story .bannertext {
+      width: 900px;
+      padding-top: 29px;
+      font-size: 26px;
+      line-height: 27px; } }
 
 .page-template-page-our-story .site-content {
   text-align: center; }
@@ -869,7 +880,7 @@ object {
       width: 25%; }
     @media all and (min-width: 600px) {
       .page-template-page-our-story .site-content .mission-quote {
-        width: 989px;
+        width: 1050px;
         margin: 0 auto;
         font-size: 20px; } }
   .page-template-page-our-story .site-content .quote {
