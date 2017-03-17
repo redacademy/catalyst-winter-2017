@@ -1490,6 +1490,9 @@ object {
   padding: 1rem 3.5rem;
   text-transform: uppercase; }
 
+.single-projects h2 {
+  font-weight: 500; }
+
 .single-projects .banner {
   display: -ms-flexbox;
   display: flex;
@@ -1544,7 +1547,13 @@ object {
   text-align: center; }
 
 .single-projects .gallery {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 2rem; }
+
+.single-projects .gallery-img {
+  width: 85%;
+  margin: 0 0.5rem;
+  opacity: 0.5; }
 
 .single-projects .quote {
   font-style: italic; }
@@ -1563,13 +1572,14 @@ object {
 
 .single-projects .collab-link-container {
   text-align: center;
-  margin: 3rem 0; }
+  margin: 3rem 0;
+  padding-top: 1rem; }
 
 .single-projects .collab-link {
   text-decoration: none;
   color: black;
   border: 2px solid black;
-  padding: 1rem 3.5rem;
+  padding: 1rem;
   text-transform: uppercase; }
 
 .single-projects .other-proj {
@@ -1583,3 +1593,14 @@ object {
       align-items: center;
   margin: 2rem 0;
   text-transform: uppercase; }
+
+.single-projects .other-post-gallery {
+  margin-bottom: 3rem; }
+
+.single-projects .other-proj-wrapper {
+  width: 85%;
+  margin: 0 0.5rem;
+  opacity: 0.5; }
+
+.single-projects .is-selected {
+  opacity: 1; }

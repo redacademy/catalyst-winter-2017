@@ -1,4 +1,7 @@
 .single-projects {
+    h2 {
+        font-weight: 500;
+    }
     .banner {
         display: flex;
         flex-direction: column;
@@ -54,6 +57,12 @@
     }
     .gallery {
         text-align: center;
+        margin-bottom: 2rem;
+    }
+    .gallery-img {
+        width: 85%;
+        margin: 0 0.5rem;
+        opacity: 0.5;
     }
     .quote {
         font-style: italic;
@@ -74,12 +83,13 @@
     .collab-link-container {
         text-align: center;
         margin: 3rem 0;
+        padding-top: 1rem;
     }
     .collab-link {
         text-decoration: none;
         color: black;
         border: 2px solid black;
-        padding: 1rem 3.5rem;
+        padding: 1rem;
         text-transform: uppercase;
     }
     .other-proj {
@@ -90,5 +100,16 @@
         align-items: center;
         margin: 2rem 0;
         text-transform: uppercase;
+    }
+    .other-post-gallery {
+        margin-bottom: 3rem;
+    }
+    .other-proj-wrapper {
+        width: 85%;
+        margin: 0 0.5rem;
+        opacity: 0.5;
+    }
+    .is-selected {
+        opacity: 1;
     }
 }

@@ -40,13 +40,13 @@
     <section>
         <div>
             <div class="content-head">
-                <h2>Architectural design</h2>
+                <h2>Images</h2>
             </div>
             <div class="arch-text">
                 <p>Disclosed floor plans, site map, draft design, and construction photos during the development stage of the project.</p>
             </div>
         </div>
-        <div class="gallery" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true }'>
+        <div class="gallery" data-flickity='{ "contain": true, "wrapAround": true, "prevNextButtons": false, "initialIndex": 0, "imagesLoaded": true}'>
             <?php
                 $gallery_images = CFS()->get('gallery_images');
                 foreach ($gallery_images as $image) { ?>
@@ -77,7 +77,7 @@
             <div class="other-proj">
                 <h2>Other Projects</h2>
             </div>
-<div class="other-post-gallery" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true }'>
+<div class="other-post-gallery" data-flickity='{ "contain": true, "wrapAround": true, "prevNextButtons": false, "initialIndex": 0, "imagesLoaded": true}'>
         <?php
             $posts = get_posts( array( 
                 'post_type' => 'projects', 
