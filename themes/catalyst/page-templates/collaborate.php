@@ -38,7 +38,7 @@ get_header(); ?>
 				?>
 
 				<?php foreach ( $sponsors as $post ) : setup_postdata( $post ); ?>
-					<img style="height: 100px; width: auto;" class="sponsor-logo" src="<?php echo get_the_post_thumbnail_url($post, 'full') ; ?>" alt="sponsor logo"/>
+					<img class="sponsor-logo" src="<?php echo get_the_post_thumbnail_url($post, 'full') ; ?>" alt="sponsor logo"/>
 				<?php endforeach; wp_reset_postdata(); ?>
 			</div>
 		</main><!-- #main -->

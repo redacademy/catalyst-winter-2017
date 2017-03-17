@@ -8,6 +8,7 @@
 
     .hero-image-banner {
         height: 50vh;
+        @include header-text-shadow;
         @include flex-column(nowrap, flex-start, center);
         @include media($desktop-width) {
             height: 60vh;
@@ -102,6 +103,9 @@
 
         .supporters-header {
             font-size: 1.55rem;
+            @include media($desktop-width) {
+                font-size: 1.85rem;
+            }
         }
     }
 
@@ -160,7 +164,7 @@
                 list-style-type: none;
                 position: relative;
                 @include media($desktop-width) {
-                    height: 1050px;
+                    height: auto;
                     margin: 0;
                     padding: 0.5rem 0.5rem 2.5rem 2rem;
                     border: 5px solid $color__brand-blue;
@@ -357,13 +361,41 @@
     }
 
     .supporters-logo-container {
-        height: 200px;
-        width: 100%;
-        @include flex-row(wrap, flex-start, center);
+        height: auto;
+        width: 85%;
+        margin: 0 auto;
+        padding: 4% 0 9%;
+        @include flex-row(wrap, center, center);
+        @include media($desktop-width) {
+            padding: 0 0 3rem;
+            width: 70%;
+        }
 
         .sponsor-logo {
-            height: auto;
-            width: 100px;
+            height: 35px;
+            width: auto;
+            margin: 4%;
+            @include grayscale-image;
+            @include media($desktop-width) {
+                margin: $base__space-unit 2.5rem;
+            }
+
+            &:nth-child(2) {
+                height: 60px;
+            }
+
+            &:nth-child(3) {
+                padding: 0.15rem;
+                background: linear-gradient(lightgray 0%, lightgray 100%);
+            }
+
+            &:nth-child(4) {
+                height: 45px;
+            }
+
+            &:nth-child(6) {
+                height: 85px;
+            }
         }
     }
 }

@@ -830,6 +830,7 @@ object {
       line-height: 1.75rem; } }
   .page-template-collaborate .hero-image-banner {
     height: 50vh;
+    text-shadow: 1px 2px 5px #323232;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: column nowrap;
@@ -940,6 +941,9 @@ object {
           line-height: 3.4rem; } }
     .page-template-collaborate .blue-background .supporters-header {
       font-size: 1.55rem; }
+      @media all and (min-width: 600px) {
+        .page-template-collaborate .blue-background .supporters-header {
+          font-size: 1.85rem; } }
   .page-template-collaborate .content-container {
     padding: 0 1rem; }
     @media all and (min-width: 600px) {
@@ -993,7 +997,7 @@ object {
       position: relative; }
       @media all and (min-width: 600px) {
         .page-template-collaborate .content-container .partners-information-container .collaborate-dashed-list {
-          height: 1050px;
+          height: auto;
           margin: 0;
           padding: 0.5rem 0.5rem 2.5rem 2rem;
           border: 5px solid #D9F1FF;
@@ -1168,19 +1172,39 @@ object {
           transform: rotate(-3deg);
           display: inline; } }
   .page-template-collaborate .supporters-logo-container {
-    height: 200px;
-    width: 100%;
+    height: auto;
+    width: 85%;
+    margin: 0 auto;
+    padding: 4% 0 9%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row wrap;
         flex-flow: row wrap;
-    -ms-flex-pack: start;
-        justify-content: flex-start;
+    -ms-flex-pack: center;
+        justify-content: center;
     -ms-flex-align: center;
         align-items: center; }
+    @media all and (min-width: 600px) {
+      .page-template-collaborate .supporters-logo-container {
+        padding: 0 0 3rem;
+        width: 70%; } }
     .page-template-collaborate .supporters-logo-container .sponsor-logo {
-      height: auto;
-      width: 100px; }
+      height: 35px;
+      width: auto;
+      margin: 4%;
+      filter: grayscale(100%); }
+      @media all and (min-width: 600px) {
+        .page-template-collaborate .supporters-logo-container .sponsor-logo {
+          margin: 1.5rem 2.5rem; } }
+      .page-template-collaborate .supporters-logo-container .sponsor-logo:nth-child(2) {
+        height: 60px; }
+      .page-template-collaborate .supporters-logo-container .sponsor-logo:nth-child(3) {
+        padding: 0.15rem;
+        background: linear-gradient(lightgray 0%, lightgray 100%); }
+      .page-template-collaborate .supporters-logo-container .sponsor-logo:nth-child(4) {
+        height: 45px; }
+      .page-template-collaborate .supporters-logo-container .sponsor-logo:nth-child(6) {
+        height: 85px; }
 
 /*--------------------------------------------------------------
 # Page Templates

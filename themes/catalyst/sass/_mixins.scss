@@ -4,7 +4,14 @@
 	font-size: $sizeValue * 1rem;
 }
 
-// Center block
+// Text decoration 
+
+@mixin header-text-shadow {
+	text-shadow: 1px 2px 5px $color__header-main;
+}
+
+// Layouts
+
 @mixin center-block {
 	display: block;
 	margin-left: auto;
@@ -24,7 +31,7 @@
 	justify-content: $justify-content;
 	align-items: $align-items;
 }
-@mixin greyscale-image {
+@mixin grayscale-image {
 	filter: grayscale(100%);
 }
 
