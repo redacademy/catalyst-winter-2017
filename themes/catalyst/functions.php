@@ -90,20 +90,14 @@ function red_starter_scripts() {
 	wp_enqueue_style( 'fontAwesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.4.0');
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
+	wp_enqueue_script( 'jquery');
+	wp_enqueue_script( 'red_comments', get_template_directory_uri() . '/js/main.js', array('jquery'), false, true);
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
-
-
-
-
-
-
-
-
 
 remove_filter ('the_content', 'wpautop');
 
@@ -116,3 +110,5 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+

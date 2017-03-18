@@ -46,6 +46,7 @@
                 <p>Disclosed floor plans, site map, draft design, and construction photos during the development stage of the project.</p>
             </div>
         </div>
+<<<<<<< HEAD
         <div class="gallery" data-flickity='{ "contain": true, "wrapAround": true, "prevNextButtons": false, "initialIndex": 0, "imagesLoaded": true}'>
             <?php
                 $gallery_images = CFS()->get('gallery_images');
@@ -61,12 +62,26 @@
                     echo '<p class="line"> '.$image['line1'].'</p>';
                     echo '<p class="line"> '.$image['line2'].'</p>';
             ?>
+=======
+        <div class="img-carousel" data-flickity='{"contain": true, "wrapAround": true, "pageDots": false, "imagesLoaded": true }'>
+            <?php $gallery_images = CFS()->get('gallery_images');
+            foreach ($gallery_images as $image) : ?>
+                <div class="images">
+                    <?php echo '<img src="'.$image['images'].'"/>'; ?>
+>>>>>>> 7a1cf8c290f8e26d38fdc2447255c31c20d20608
                 </div>
+            <?php endforeach ?>
+        </div>
+        <div class="quote-carousel" data-flickity='{"contain": true, "wrapAround": true, "imagesLoaded": true, "autoPlay": 2000, "prevNextButtons": false, "pageDots": false }'>
+            <?php $quotes_gallery = CFS()->get('quotes_gallery');
+            foreach ($quotes_gallery as $quotes) : ?>
+                <div class="quotes">
+                    <?php echo '<p class="quote-text"> '.$quotes['quotes'].'</p>';
+                    echo '<p class="person"> '.$quotes['person'].'</p>';
+                    echo '<p class="line"> '.$quotes['line1'].'</p>';
+                    echo '<p class="line"> '.$quotes['line2'].'</p>'; ?>
                 </div>
-            <?php
-            
-                }
-            ?>
+                <?php endforeach ?>
         </div>
         <div class="collab-link-container">
             <a href="#" class="collab-link">Collaborate with us</a>
@@ -74,24 +89,29 @@
         <?php endwhile; ?>
     </section>
     <section>
+<<<<<<< HEAD
             <div class="other-proj">
                 <h2>Other Projects</h2>
             </div>
 <div class="other-post-gallery" data-flickity='{ "contain": true, "wrapAround": true, "prevNextButtons": false, "initialIndex": 0, "imagesLoaded": true}'>
         <?php
             $posts = get_posts( array( 
+=======
+        <div class="other-proj">
+            <h2>Other Projects</h2>
+        </div>
+        <div class="other-post-gallery" data-flickity='{"contain": true, "wrapAround": true, "imagesLoaded": true, "pageDots": false  }'>
+            <?php $posts = get_posts( array( 
+>>>>>>> 7a1cf8c290f8e26d38fdc2447255c31c20d20608
                 'post_type' => 'projects', 
                 'order' => 'ASC', 
             ));
-            foreach ( $posts as $post ) :
-        ?>
-        
-            <div class="other-proj-wrapper">
-                <a href="<?php echo get_permalink() ?>"><?php the_post_thumbnail();  ?></a>
-            </div>
-        
+            foreach ( $posts as $post ) : ?>
+                <div class="other-proj-wrapper">
+                    <a href="<?php echo get_permalink() ?>"><?php the_post_thumbnail();  ?></a>
+                </div>
             <?php endforeach; ?>
-            </div>
+        </div>
     </section>
 </div>
  <?php get_footer(); ?>

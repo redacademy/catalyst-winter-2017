@@ -55,6 +55,7 @@
         margin: 0 1.5rem;
         text-align: center;
     }
+
     .gallery {
         text-align: center;
         margin-bottom: 2rem;
@@ -64,21 +65,34 @@
         margin: 0 0.5rem;
         opacity: 0.5;
     }
-    .quote {
-        font-style: italic;
-    }
-    .quote-person {
-        text-align: center;
-        p {
-            margin: 0;
+    .images {
+        width: 85%;
+        margin: 0 0.5rem;
+        opacity: 0.5;
+        img {
+            width: 100%;
         }
+
+    }
+    .quote-carousel {
+        margin: 2rem 0;
+    }
+    .quotes {
+        text-align: center;
+        margin: 0 1rem;
+        width: 85%;
+    }
+    .quote-text {
+        margin-bottom: 2rem;
     }
     .person {
         font-weight: bold;
         font-size: 1.3rem;
+        margin: 0;
     }
     .line {
         font-style: italic;
+        margin: 0;
     }
     .collab-link-container {
         text-align: center;
@@ -92,6 +106,14 @@
         padding: 1rem;
         text-transform: uppercase;
     }
+    .other-post-gallery {
+        margin: 2rem 0;
+    }
+    .other-proj-wrapper {
+        opacity: 0.5;
+        width: 85%;
+        margin: 0 0.5rem;
+    }
     .other-proj {
         background-color: #d9f1ff;
         height: 70px;
@@ -101,6 +123,7 @@
         margin: 2rem 0;
         text-transform: uppercase;
     }
+
     .other-post-gallery {
         margin-bottom: 3rem;
     }
@@ -109,6 +132,7 @@
         margin: 0 0.5rem;
         opacity: 0.5;
     }
+
     .is-selected {
         opacity: 1;
     }

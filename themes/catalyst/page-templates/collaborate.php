@@ -24,17 +24,7 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/content', 'collaborate' ); ?>
 
 			<?php endwhile; // End of the loop. ?>
-			<img class="key-graphic-1" src="<?php echo get_template_directory_uri(); ?>/images/graphics/key.svg">
-			<img class="key-graphic-2" src="<?php echo get_template_directory_uri(); ?>/images/graphics/key.svg">
-			<img class="dollar-sign-graphic-1" src="<?php echo get_template_directory_uri(); ?>/images/graphics/dollar-sign.svg">
-			<img class="dollar-sign-graphic-2" src="<?php echo get_template_directory_uri(); ?>/images/graphics/dollar-sign.svg">
 			<div class="infographic-container">
-				<img class="key-graphic-1" src="<?php echo get_template_directory_uri(); ?>/images/graphics/key.svg">
-				<img class="key-graphic-2" src="<?php echo get_template_directory_uri(); ?>/images/graphics/key.svg">
-				<img class="green-line-graphic-1" src="<?php echo get_template_directory_uri(); ?>/images/graphics/lines.svg">
-				<img class="dollar-sign-graphic-1" src="<?php echo get_template_directory_uri(); ?>/images/graphics/dollar-sign.svg">
-				<img class="dollar-sign-graphic-2" src="<?php echo get_template_directory_uri(); ?>/images/graphics/dollar-sign.svg">
-				<img class="green-line-graphic-2" src="<?php echo get_template_directory_uri(); ?>/images/graphics/lines.svg">
 				<img class="business-model-diagram" src="<?php echo get_the_post_thumbnail_url(); ?>">
 			</div>
 			<a class="navigation-button" href="<?php echo get_home_url() ; ?>/contact">Contact Us</a>
@@ -43,12 +33,13 @@ get_header(); ?>
 				</div>
 			<div class="supporters-logo-container">
 				<?php
-				$args = array( 'post_type' => 'sponsor', 'order' => 'DSC' );
+
+				$args = array( 'post_type' => 'sponsor', 'order' => 'ASC', 'numberposts' => '-1' );
 				$sponsors = get_posts( $args ); // returns an array of posts
 				?>
 
-				<?php foreach ( $sponsors as $sponsor ) : setup_postdata( $sponsor ); ?>
-		  			<img src="<?php echo get_the_post_thumbnail_url('sponsor','large') ; ?>" alt="sponsor-logo">
+				<?php foreach ( $sponsors as $post ) : setup_postdata( $post ); ?>
+					<img class="sponsor-logo" src="<?php echo get_the_post_thumbnail_url($post, 'full') ; ?>" alt="sponsor logo"/>
 				<?php endforeach; wp_reset_postdata(); ?>
 			</div>
 		</main><!-- #main -->
