@@ -1,6 +1,46 @@
 .page-template-collaborate {
     height: 100%;
     width: 100%;
+    @include media($desktop-width) {
+        font-size: $font__desktop-size;
+        line-height: $line-height-desktop;
+    }
+
+    .hero-image-banner {
+        height: 50vh;
+        min-width: 100%;
+        @include header-text-shadow;
+        @include flex-column(nowrap, flex-start, center);
+        @include media($desktop-width) {
+            height: 60vh;
+            @include flex-column(nowrap, center, center);
+        }
+
+        .entry-title {
+            font-size: 3rem;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+            @include media($desktop-width) {
+                margin: 0 0 1.5rem;
+                font-size: 3.85rem;
+            }
+        }
+
+        .banner-text {
+            color: white;
+            width: 380px;
+            margin: 10% auto;
+            text-align: center;
+            font-size: 1.55rem;
+            line-height: 2rem;
+            letter-spacing: 2px;
+            @include media($desktop-width) {
+                width: 750px;
+                margin: 2% auto;
+            }
+        }
+    }
 
     .intro-copy {
         height: auto;
@@ -9,6 +49,10 @@
         padding: 1rem 0.85rem;
         font-weight: 100;
         text-align: center;
+        @include media($desktop-width) {
+            padding: 2.75rem 0.85rem;
+            width: 60%;
+        }
     }
 
     .main-copy {
@@ -18,35 +62,31 @@
         padding: 0.55rem 0;
         font-weight: 100;
         text-align: center;
-
+        @include media($desktop-width) {
+            width: 75%;
+            padding: 0.75rem auto;
+        }
     }
 
     .navigation-button {
-        height: 60px;
-        width: 250px;
-        margin: 2rem auto;
-        border: 1px solid $color__header-main;
-        font-size: 1.05rem;
-        color: $color__header-main;
-        text-transform: uppercase;
-        text-decoration: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include navigation-button();
+    }
 
-        &:hover {
-            background: $color__brand-blue;
-            cursor: pointer;
-        }
+    .infographic-container + .navigation-button {
+        margin: 3rem auto 6rem;
     }
 
     .blue-background {
         height: auto;
         width: 100%;
-        margin: 0.75rem auto;
+        margin: 0 auto 0.75rem;
         padding: 0.75rem 0.5rem;
         background-color: $color__brand-blue;
         text-align: center;
+        @include media($desktop-width) {
+            margin: 0 auto 1.5rem;
+            padding: 1rem 0.5rem;
+        }
 
         h2 {
             max-width: 400px;
@@ -56,18 +96,38 @@
             color: $color__header-main;
             line-height: 2.4rem;
             text-transform: uppercase;
+            @include media($desktop-width) {
+                max-width: none;
+                font-size: 3.2rem;
+                line-height: 3.4rem;
+            }
         }
 
         .supporters-header {
             font-size: 1.55rem;
+            @include media($desktop-width) {
+                font-size: 1.85rem;
+            }
         }
     }
 
    .content-container {
        padding: 0 1rem;
 
-        .partners-information {
-            margin: 0 0 6rem;
+        .partners-information-container {
+            @include media($desktop-width) {
+                @include flex-row(wrap, space-between, baseline);              
+                padding: 0 7rem 0 9rem;
+            }
+            .partners-information {
+                height: auto;
+                margin: 0 0 4rem;
+                @include media($desktop-width) {
+                    width: 490px;
+                    margin: 0 auto;
+                    display: inline-block;
+                }
+             }
 
             .small-header {
                 margin-top: 4rem;
@@ -77,6 +137,16 @@
                 color: $color__text-main;
                 text-align: center;
                 text-transform: uppercase;
+                @include media($desktop-width) {
+                    margin: 1.9rem 0 0.5rem;
+                    font-size: 2rem;                   
+                    padding-left: 7%;
+                    text-align: left;
+                }
+            }
+
+            li + .small-subheader {
+                margin-top: 3rem;
             }
 
             .small-subheader {
@@ -84,41 +154,250 @@
                 font-size: 1.1rem;
                 font-weight: 400;
                 text-transform: uppercase;
+                @include media($desktop-width) {
+                    font-size: 1.45rem;
+                    margin-bottom: 2rem;
+                }
             }
 
             .collaborate-dashed-list {
                 margin: 0 0 2rem;
                 padding-left: 0.75rem;
                 list-style-type: none;
+                position: relative;
+                @include media($desktop-width) {
+                    height: auto;
+                    margin: 0;
+                    padding: 0.5rem 0.5rem 2.5rem 2rem;
+                    border: 5px solid $color__brand-blue;
+                    display: inline-block;
+                }
 
                 li {
                     margin: 1.5rem 0;
                     font-weight: 100;
+                    @include flex-row(nowrap, flex-start, baseline);
+
+                    .hyphen {
+                        height: 100%;
+                        padding-right: 0.5rem;
+                        font-size: 0.85rem;
+                        font-weight: bold;
+                        position: relative;
+                        bottom: 0.2rem;
+                    }
+                    @include media($desktop-width) {
+                        font-size: $font__desktop-size;
+                    }
                 }
+                .key-graphic-1 {
+                    height: 150px;
+                    width: 84px;
+                    background: url("../../images/graphics/key.svg") no-repeat 50%;
+                    background-size: 100%;
+                    position: absolute;
+                    bottom: 1.25%;
+                    left: -4%;
+                    z-index: -99999;
+                    transform: rotate(25deg);
+                    @include media($desktop-width) {
+                        bottom: 27.25%;
+                        left: 4.5%;
+                    }
+                }
+
+                .key-graphic-2 {
+                    height: 95px;
+                    width: 50px;
+                    background: url("../../images/graphics/key.svg") no-repeat;
+                    background-size: 100%;
+                    position: absolute;
+                    bottom: -3%;
+                    right: -1.25%;
+                    z-index: -99999;
+                    transform: rotate(-25deg);
+                    @include media($desktop-width) {
+                        bottom: 9%;
+                        left: 83.75%;
+                    }
+                }
+
+                .dollar-sign-graphic-1 {
+                    height: 105px;
+                    width: 100px;
+                    background: url("../../images/graphics/dollar-sign.svg") no-repeat;
+                    background-size: 100%;
+                    position: absolute;
+                    bottom: 13%;
+                    z-index: -99999;
+                    @include media($desktop-width) {
+                        bottom: 32%;
+                        left: 2%;
+                    }
+                }
+
+                .dollar-sign-graphic-2 {
+                    height: 67px;
+                    width: 62px;
+                    background: url("../../images/graphics/dollar-sign.svg") no-repeat;
+                    background-size: 100%;
+                    position: absolute;
+                    bottom: -1%;
+                    right: -2%;
+                    z-index: -99999;
+                    display: inline-block;
+                    @include media($desktop-width) {
+                        bottom: 2%;
+                        left: 81%;
+                    }
+                }
+            }
+
+            li + .partners-text {
+                margin-top: 3.75rem;
             }
 
             .partners-text {
                 height: auto;
                 width: 100%;
                 margin: 0 auto;
-                padding: 0 1rem;
                 font-weight: 100;
                 text-align: center;
+                @include media ($desktop-width) {
+                    width: 330px;
+                    padding: 2rem 0 0;
+                    transform: translateX(-1rem);
+                }
+            }
+        }
+    }
+
+    .infographic-container {
+        height: auto;
+        width: 100%;
+        padding: 0.5rem 0 1.5rem;
+        text-align: center;
+        @include flex-column(nowrap, center, center);
+        position: relative;
+
+        .business-model-diagram {
+            height: auto;
+            width: 95%;
+            @include media ($desktop-width) {
+                height: 530px;
             }
         }
 
-        .infographic-container {
-            height: 200px;
-            width: 100%;
-            @include flex-column(nowrap, center, center);
-            background-color: blue;
+        .key-graphic-1 {
+            display: none;
+            @include media($desktop-width) {
+                width: 85px;
+                position: absolute;
+                top: 15%;
+                left: 16%;
+                opacity: .5;
+                transform: rotate(25deg);
+                display: inline;
+            }
+        }
+
+        .key-graphic-2 {
+            display: none;
+            @include media($desktop-width) {
+                width: 55px;
+                position: absolute;
+                top: 19.5%;
+                left: 18.75%;
+                transform: rotate(-25deg);
+                display: inline;
+            }
+        }
+
+        .dollar-sign-graphic-1 {
+            display: none;
+            @include media($desktop-width) {
+                position: absolute;
+                top: 14%;
+                right: 16%;
+                opacity: 0.5;
+                display: inline;
+            }
+        }
+
+        .dollar-sign-graphic-2 {
+            display: none;
+            @include media($desktop-width) {
+                width: 65px;
+                position: absolute;
+                top: 25%;
+                right: 19%;
+                display: inline;
+            }
+        }
+
+        .green-line-graphic-1 {
+            display: none;
+            @include media($desktop-width) {
+                height: auto;
+                width: 150px;
+                position: absolute;
+                top: 9.75rem;
+                left: 24.35%;
+                transform: rotate(-117deg);
+                display: inline;
+            }
+        }
+
+        .green-line-graphic-2 {
+            display: none;
+            @include media($desktop-width) {
+                height: auto;
+                width: 150px;
+                position: absolute;
+                top: 9.55rem;
+                left: 65.5%;
+                transform: rotate(-3deg);
+                display: inline;
+            }
         }
     }
 
     .supporters-logo-container {
-        height: 200px;
-        width: 100%;
-        background-color: blue;
-        @include flex-row(wrap, flex-start, center);
+        height: auto;
+        width: 85%;
+        margin: 0 auto;
+        padding: 4% 0 9%;
+        @include flex-row(wrap, center, center);
+        @include media($desktop-width) {
+            padding: 0 0 3rem;
+            width: 70%;
+        }
+
+        .sponsor-logo {
+            height: 35px;
+            width: auto;
+            margin: 4%;
+            @include grayscale-image;
+            @include media($desktop-width) {
+                margin: $base__space-unit 2.5rem;
+            }
+
+            &:nth-child(2) {
+                height: 60px;
+            }
+
+            &:nth-child(3) {
+                padding: 0.15rem;
+                background: linear-gradient(lightgray 0%, lightgray 100%);
+            }
+
+            &:nth-child(4) {
+                height: 45px;
+            }
+
+            &:nth-child(6) {
+                height: 85px;
+            }
+        }
     }
 }

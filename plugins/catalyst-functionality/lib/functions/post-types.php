@@ -6,7 +6,9 @@
  */
 
 // Add your custom post types here...
-// Register Custom Post Type
+
+// Register Projects Custom Post Type
+
 function projects_cpt() {
 
 	$labels = array(
@@ -64,7 +66,8 @@ add_action( 'init', 'projects_cpt', 0 );
 
 
 
-// Register Custom Post Type
+// Register Team Member Custom Post Type
+
 function team_member_cpt() {
 
 	$labels = array(
@@ -121,8 +124,9 @@ function team_member_cpt() {
 add_action( 'init', 'team_member_cpt', 0 );
 
 
-// Register Custom Post Type
-function career_cpt() {
+// Register Careers Custom Post Type
+
+function careers_cpt() {
 
 	$labels = array(
 		'name'                  => 'Careers',
@@ -172,7 +176,65 @@ function career_cpt() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
 	);
-	register_post_type( 'career', $args );
+	register_post_type( 'careers', $args );
 
 }
-add_action( 'init', 'career_cpt', 0 );
+
+add_action( 'init', 'careers_cpt', 0 );
+
+// Register Sponsors Custom Post Type
+
+function sponsor_cpt() {
+
+	$labels = array(
+		'name'                  => 'Sponsors',
+		'singular_name'         => 'Sponsor',
+		'menu_name'             => 'Sponsors',
+		'name_admin_bar'        => 'Sponsors',
+		'archives'              => 'Sponsor Archives',
+		'attributes'            => 'Sponsor Attributes',
+		'parent_item_colon'     => 'Parent Item:',
+		'all_items'             => 'All Sponsors',
+		'add_new_item'          => 'Add New Sponsor',
+		'add_new'               => 'Add New Sponsor',
+		'new_item'              => 'New Sponsor',
+		'edit_item'             => 'Edit Sponsor',
+		'update_item'           => 'Update Sponsor',
+		'view_item'             => 'View Sponsor',
+		'view_items'            => 'View Sponsors',
+		'search_items'          => 'Search Sponsors',
+		'not_found'             => 'Sponsor Not found',
+		'not_found_in_trash'    => 'Not found in Trash',
+		'featured_image'        => 'Featured Image',
+		'set_featured_image'    => 'Set featured image',
+		'remove_featured_image' => 'Remove featured image',
+		'use_featured_image'    => 'Use as featured image',
+		'insert_into_item'      => 'Insert into item',
+		'uploaded_to_this_item' => 'Uploaded to this item',
+		'items_list'            => 'Sponsors list',
+		'items_list_navigation' => 'Sponsors list navigation',
+		'filter_items_list'     => 'Filter Sponsors list',
+	);
+	$args = array(
+		'label'                 => 'sponsor',
+		'description'           => 'Catalyst\'s sponsors',
+		'labels'                => $labels,
+		'supports'              => array(  'title', 'editor', 'thumbnail', 'revisions', 'custom-fields',  ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'menu_icon'             => 'dashicons-groups',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => false,
+		'has_archive'           => false,		
+		'exclude_from_search'   => true,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'sponsor', $args );
+
+}
+add_action( 'init', 'sponsor_cpt', 0 );
