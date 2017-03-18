@@ -16,7 +16,7 @@
         position: absolute;
         top: 10%;
         left: 15%;
-         @include media($desktop-width) {
+        @include media($desktop-width) {
             position: initial;
         }
     }
@@ -30,7 +30,7 @@
         line-height: 27px;
         text-shadow: 1px 2px black;
         @include media($desktop-width) {
-            width: 900px;
+            width: 100%;
             padding-top: 29px;
             font-size: 26px;
             line-height: 27px;
@@ -45,7 +45,7 @@
         .top-text {
             text-align: center;
             font-size: 18px;
-            width: 500px;
+            // width: 500px;
             margin: auto;
             @include media($desktop-width) {
                 width: 100%;
@@ -76,19 +76,19 @@
             text-align: center;
             font-size: 35px;
             font-weight: lighter;
-            width: 487px;
+            // width: 487px;
             margin: auto;
             line-height: 35px;
             @include media($desktop-width) {
                 font-size: 50px;
                 line-height: 55px;
-                width: 700px;
+                // width: 700px;
                 margin-bottom: 50px;
             }
         }
         .mission-quote {
             display: flex;
-            width: 500px;
+            // width: 500px;
             margin: 30px auto;
             font-weight: lighter;
             .quotation-left {
@@ -99,13 +99,11 @@
                 transform: rotate(180deg);
             }
             @include media($desktop-width) {
-                width: 1050px;
                 margin: 0 auto;
                 font-size: 20px;
             }
         }
         .quote {
-            // width: 100%;
             text-align: center;
         }
         .robert {
@@ -126,6 +124,8 @@
             @include media($desktop-width) {
                 display: flex;
                 justify-content: center;
+                width: 100%;
+                flex-wrap: wrap;
                 .arrow {
                     margin-top: 50px;
                     height: 50px;
@@ -135,21 +135,34 @@
                     height: 150px;
                 }
             }
+            .mission-image {
+                width: 25%;
+                display: flex;
+                flex-wrap: wrap;
+                    margin: auto;
+                img {
+                    width: 100%;
+                }
+                h5 {
+                    width: 100%;
+                }
+            }
         }
         .formula {
             p {
                 font-size: 24px;
                 font-weight: lighter;
-                max-width: 900px;
+                // max-width: 900px;
                 padding-bottom: 50px;
                 margin: auto;
             }
         }
-        .formula-image {
+        .formula-content {
             display: flex;
             padding-bottom: 50px;
-            min-width: 1200px;
+            width: 100%;
             margin: auto;
+            justify-content: center;
             img {
                 max-width: 100%;
             }
@@ -164,8 +177,8 @@
             font-size: 14px;
             line-height: 14px;
         }
-        .market{
-            width: 500px;
+        .formula-image {
+            width: 15%;
         }
         h5 {
             font-size: 20px;
@@ -194,7 +207,7 @@
                 transform: rotate(180deg);
             }
             @include media($desktop-width) {
-                width: 989px;
+                // width: 989px;
             }
         }
     }

@@ -159,7 +159,7 @@ a {
 	.desktop-menu {
 		visibility: hidden;
 		height: 0;
-		min-width: 600px;
+		// min-width: 600px;
 		@include media($desktop-width) {
 			visibility: visible;
 			height: 100px;

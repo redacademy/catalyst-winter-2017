@@ -499,8 +499,7 @@ a {
         width: 76%; } }
   .container .desktop-menu {
     visibility: hidden;
-    height: 0;
-    min-width: 600px; }
+    height: 0; }
     @media all and (min-width: 600px) {
       .container .desktop-menu {
         visibility: visible;
@@ -861,7 +860,7 @@ object {
   text-shadow: 1px 2px black; }
   @media all and (min-width: 600px) {
     .page-template-page-our-story .bannertext {
-      width: 900px;
+      width: 100%;
       padding-top: 29px;
       font-size: 26px;
       line-height: 27px; } }
@@ -874,7 +873,6 @@ object {
   .page-template-page-our-story .site-content .top-text {
     text-align: center;
     font-size: 18px;
-    width: 500px;
     margin: auto; }
     @media all and (min-width: 600px) {
       .page-template-page-our-story .site-content .top-text {
@@ -902,19 +900,16 @@ object {
     text-align: center;
     font-size: 35px;
     font-weight: lighter;
-    width: 487px;
     margin: auto;
     line-height: 35px; }
     @media all and (min-width: 600px) {
       .page-template-page-our-story .site-content h3 {
         font-size: 50px;
         line-height: 55px;
-        width: 700px;
         margin-bottom: 50px; } }
   .page-template-page-our-story .site-content .mission-quote {
     display: -ms-flexbox;
     display: flex;
-    width: 500px;
     margin: 30px auto;
     font-weight: lighter; }
     .page-template-page-our-story .site-content .mission-quote .quotation-left {
@@ -924,7 +919,6 @@ object {
       transform: rotate(180deg); }
     @media all and (min-width: 600px) {
       .page-template-page-our-story .site-content .mission-quote {
-        width: 1050px;
         margin: 0 auto;
         font-size: 20px; } }
   .page-template-page-our-story .site-content .quote {
@@ -945,26 +939,41 @@ object {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+        width: 100%;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
         .page-template-page-our-story .site-content .mission-content .arrow {
           margin-top: 50px;
           height: 50px;
           transform: rotate(0deg); }
         .page-template-page-our-story .site-content .mission-content .alignnone {
           height: 150px; } }
+    .page-template-page-our-story .site-content .mission-content .mission-image {
+      width: 25%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      margin: auto; }
+      .page-template-page-our-story .site-content .mission-content .mission-image img {
+        width: 100%; }
+      .page-template-page-our-story .site-content .mission-content .mission-image h5 {
+        width: 100%; }
   .page-template-page-our-story .site-content .formula p {
     font-size: 24px;
     font-weight: lighter;
-    max-width: 900px;
     padding-bottom: 50px;
     margin: auto; }
-  .page-template-page-our-story .site-content .formula-image {
+  .page-template-page-our-story .site-content .formula-content {
     display: -ms-flexbox;
     display: flex;
     padding-bottom: 50px;
-    min-width: 1200px;
-    margin: auto; }
-    .page-template-page-our-story .site-content .formula-image img {
+    width: 100%;
+    margin: auto;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .page-template-page-our-story .site-content .formula-content img {
       max-width: 100%; }
   .page-template-page-our-story .site-content .plus {
     padding-bottom: 100px; }
@@ -973,8 +982,8 @@ object {
   .page-template-page-our-story .site-content .imagetext {
     font-size: 14px;
     line-height: 14px; }
-  .page-template-page-our-story .site-content .market {
-    width: 500px; }
+  .page-template-page-our-story .site-content .formula-image {
+    width: 15%; }
   .page-template-page-our-story .site-content h5 {
     font-size: 20px;
     text-transform: uppercase;
@@ -997,9 +1006,6 @@ object {
     .page-template-page-our-story .site-content .end-content-quote .quotation-right {
       width: 25%;
       transform: rotate(180deg); }
-    @media all and (min-width: 600px) {
-      .page-template-page-our-story .site-content .end-content-quote {
-        width: 989px; } }
 
 .page-template-collaborate {
   height: 100%;
