@@ -13,16 +13,16 @@
             margin: 0;
             text-shadow: -2px 2px 5px #000;
         }
-        .banner-name {
+        .project-name {
             font-size: 4rem;
             line-height: 1;
             margin-bottom: 1rem;
         }
-        .banner-location {
+        .project-location {
             font-size: 1.3rem;
             margin-bottom: 0.3rem;
         }
-        .banner-status {
+        .project-status {
             font-size: 1.3rem;
             .project-status {
                 text-transform: uppercase;
@@ -107,12 +107,7 @@
         text-transform: uppercase;
     }
     .other-post-gallery {
-        margin: 2rem 0;
-    }
-    .other-proj-wrapper {
-        opacity: 0.5;
-        width: 85%;
-        margin: 0 0.5rem;
+        margin: 2rem 0 3rem;
     }
     .other-proj {
         background-color: #d9f1ff;
@@ -123,17 +118,15 @@
         margin: 2rem 0;
         text-transform: uppercase;
     }
-
-    .other-post-gallery {
-        margin-bottom: 3rem;
-    }
     .other-proj-wrapper {
         width: 85%;
         margin: 0 0.5rem;
         opacity: 0.5;
     }
-
     .is-selected {
         opacity: 1;
+    }
+    .quotes-wrapper{
+        display: none;
     }
 }

@@ -74,17 +74,7 @@
         <div class="other-proj">
             <h2>Other Projects</h2>
         </div>
-        <div class="other-post-gallery" data-flickity='{"contain": true, "wrapAround": true, "imagesLoaded": true, "pageDots": false  }'>
-            <?php $posts = get_posts( array( 
-                'post_type' => 'projects', 
-                'order' => 'ASC', 
-            ));
-            foreach ( $posts as $post ) : ?>
-                <div class="other-proj-wrapper">
-                    <a href="<?php echo get_permalink() ?>"><?php the_post_thumbnail();  ?></a>
-                </div>
-            <?php endforeach; ?>
-        </div>
+        <?php get_template_part( 'template-parts/projects-carousel', 'projects carousel' ); ?>
     </section>
 </div>
  <?php get_footer(); ?>
