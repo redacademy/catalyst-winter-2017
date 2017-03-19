@@ -3,15 +3,17 @@
     background-color: $color__brand-blue;
     text-align: center;
     width: 100%;
+    height: 180px;
     padding-top: 20px;
     @include media($desktop-width) {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        width: 100%;
+        height: 120px;
     }
     .footer-title {
         display: flex;
-        // flex-wrap: wrap;
         justify-content: center;
         min-width: 320px;
     }
@@ -20,17 +22,50 @@
         background-size: 100%;
         width: 20px;
     }
+    .sns-icon {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        div {
+            margin: 0 5px;
+        }
+        @include media($desktop-width) {
+            width: 20%;
+            a {
+                padding-right: 10px;
+            }
+        }
+        @include media($footer__desktop-width) {
+            width: 25%;
+        }
+    }
     .twitter {
         background: url('../../images/twitter.svg')no-repeat;
         background-size: 100%;
-        height: 50px;
-        width: 50px;
+        height: 40px;
+        width: 40px;
+        @include media($desktop-width) {
+            height: 40px;
+            width: 40px;
+        }
+        @include media($footer__desktop-width) {
+            height: 50px;
+            width: 50px;
+        }
     }
     .linkedin {
         background: url('../../images/linkedin.svg')no-repeat;
         background-size: 100%;
-        height: 50px;
-        width: 50px;
+        height: 40px;
+        width: 40px;
+        @include media($desktop-width) {
+            height: 40px;
+            width: 40px;
+        }
+        @include media($footer__desktop-width) {
+            height: 50px;
+            width: 50px;
+        }
     }
     .page-link {
         visibility: hidden;
@@ -38,46 +73,74 @@
         text-transform: uppercase;
         font-size: 12px;
         @include media($desktop-width) {
+            font-size: 15px;
+            width: 20%;
+            visibility: visible;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        @include media($footer__desktop-width) {
             padding-top: 20px;
-            margin-right: 10px;
+            width: 25%;
         }
         a {
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 500;
             color: $color__text-main;
-            margin-right: 20px;
-        }
-        @include media($desktop-width) {
-            visibility: visible;
-        }
-    }
-    .sns-icon {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        p {
-            margin-right: 10px;
-        }
-        @include media($desktop-width) {
-            margin-left: 30px;
-            justify-content: space-between;
+            padding: 0 20px;
+            &:hover {
+                color: $color__menu-hoever;
+            }
         }
     }
     .company-info {
+        margin-bottom: 20px;
+        @include media($desktop-width) {
+            width: 55%;
+        }
+        @include media($footer__desktop-width) {
+            width: 50%;
+        }
+        span {
+            font-style: italic;
+        }
         h3 {
-            font-size: 12px;
+            font-size: 10px;
+            padding-left: 10px;
             margin: 0;
             height: 25px;
             text-transform: uppercase;
-         @include media($desktop-width) {
-             font-size: 20px;
-         }
+            @include media($desktop-width) {
+                font-size: 14px;
+                padding-left: 5px;
+            }
+            @include media($footer__desktop-width) {
+                font-size: 16px;
+                padding-left: 10px;
+            }
+            @include media(1120pxh) {
+                font-size: 20px;
+                padding-left: 20px;
+            }
         }
-
         p {
-            font-size: 12px;
-            height: 20px;
+            font-size: 10px;
+            font-weight: 100;
+            line-height: 12px;
             margin: 0;
+            @include media($desktop-width) {
+                font-size: 14px;
+                line-height: 15px;
+            }
+            @include media($footer__desktop-width) {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            @include media(1120px) {
+                font-size: 20px;
+                line-height: 30px;
+            }
         }
     }
 }
