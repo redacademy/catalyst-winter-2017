@@ -181,23 +181,69 @@ a {
 			}
 		}
 	}
-  
 	.hamburger-menu {
 		display: flex;
 		justify-content: flex-end;
-		padding-top: 35px;
-		padding-right: 20px;
+		.hamburger {
+			margin-top: 27px;
+			margin-right: 20px;
+		}
+		.list {
+			position: relative;
+			background-color: rgba(255, 255, 255, .8);
+		}
 		ul {
 			display: flex;
 			flex-direction: column;
+			margin-top: 40px;
 		}
 		li {
-			padding: 30px 0;
-			background-color: white;
+			padding: 20px 0;
+			border-bottom: 1px solid white;
+			a {
+				display: block;
+				text-decoration: none;
+				padding-left: 20px;
+				color: #323232;
+				text-transform: uppercase;
+				&:hover {
+					color: #00A4FF;
+				}
+			}
+		}
+		.hamburger {
+			border: 1px solid #333345;
+			border-radius: 0;
+			background: #333345;
+			box-shadow: none;
+			font-size: 30px;
+			line-height: 22px;
+			color: white;
+			padding: 15px;
+			text-shadow: none;
+		}
+		.cross {
+			border: 1px solid #333345;
+			border-radius: 0;
+			background: #333345;
+			box-shadow: none;
+			font-size: 66px;
+			line-height: 20px;
+			color: white;
+			padding: 25px 20px;
+			text-shadow: none;
+		}
+		.mobile-menu {
+			padding-top: 60px;
 		}
 		@include media($desktop-width) {
 			display: none;
 		}
+		.cross {
+			height: 30px;
+			position: absolute;
+			right: 73%;
+			top: 10%;
+		}
 	}
-}
 }
