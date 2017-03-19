@@ -16,7 +16,7 @@
             <p>Status: <span class='status'><?php echo CFS()->get('project_status'); ?></span></p>
         </div>
         <div class="img-container">
-            <img class='project-image' src='<?php echo CFS()->get('banner_image'); ?>'>
+            <img class='project-image' src='<?php echo CFS()->get('heroimage'); ?>'>
         </div>
     
 

@@ -1692,13 +1692,9 @@ object {
 
 .post-type-archive-projects .project-content {
   text-align: center; }
-  @media all and (min-width: 600px) {
-    .post-type-archive-projects .project-content {
-      max-width: 1120px;
-      margin: 0 auto; } }
 
 .post-type-archive-projects .project-post {
-  margin-bottom: 3rem; }
+  margin-bottom: 6rem; }
 
 .post-type-archive-projects .proj-head {
   background-color: #d9f1ff;
@@ -1717,12 +1713,12 @@ object {
           align-items: center; } }
   .post-type-archive-projects .proj-head p {
     margin: 0; }
+    @media all and (min-width: 600px) {
+      .post-type-archive-projects .proj-head p {
+        font-size: 1.5rem; } }
   .post-type-archive-projects .proj-head .name {
     font-size: 1.5rem;
     font-weight: bold; }
-    @media all and (min-width: 600px) {
-      .post-type-archive-projects .proj-head .name {
-        font-size: 1rem; } }
   .post-type-archive-projects .proj-head .status {
     text-transform: uppercase; }
   .post-type-archive-projects .proj-head .break {
@@ -1742,13 +1738,14 @@ object {
       margin: 2rem auto 3rem auto; } }
 
 .post-type-archive-projects .project-image {
-  width: 100%; }
+  width: 100%;
+  max-width: 1000px; }
 
 .post-type-archive-projects .project-link {
   text-decoration: none;
   color: black;
   border: 2px solid black;
-  padding: 1rem 3.5rem;
+  padding: 1rem 4rem;
   text-transform: uppercase; }
 
 .single-projects h2 {
