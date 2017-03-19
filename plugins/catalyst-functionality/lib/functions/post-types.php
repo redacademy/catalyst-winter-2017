@@ -5,7 +5,12 @@
  * @link  http://codex.wordpress.org/Function_Reference/register_post_type
  */
 
-// Add your custom post types here...
+// Disable editor for custom post types
+
+function init_remove_editor(){
+    $post_type = 'team_member';
+    remove_post_type_support( $post_type, 'editor');
+}
 
 // Register Projects Custom Post Type
 
@@ -119,6 +124,7 @@ function team_member_cpt() {
 		'capability_type'       => 'post',
 	);
 	register_post_type( 'team_member', $args );
+	add_action('init', 'init_remove_editor',100);
 
 }
 add_action( 'init', 'team_member_cpt', 0 );
