@@ -11,7 +11,7 @@
     <section>
         <?php while ( have_posts() ) : the_post(); ?>
 
-            <div class="banner">
+            <div class="hero-image-banner">
                 <p class='banner-name'><?php echo CFS()->get('project_name'); ?></p>
                 <p class='banner-location'>Location: <?php echo CFS()->get('project_location'); ?></p>
                 <p class='banner-status'>Status: <span class='project-status'><?php echo CFS()->get('project_status'); ?></span></p>

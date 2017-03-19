@@ -6,7 +6,7 @@
  */
 
  get_header(); ?>
-
+<div class="hero-image-banner"> </div>
 <div class="page-header-container">
 	<h2 class="page-title">Job Opportunities</h2>
 </div>

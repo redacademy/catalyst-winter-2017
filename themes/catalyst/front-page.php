@@ -15,7 +15,7 @@ get_header(); ?>
             <p>We build communities.</p>
             <p>We use real estate to affect social change.</p>
         </div>
-        <div class ="home-hero"></div>
+        <div class="hero-image-banner"></div>
     </header>
     <div class="front-content">
         <div class="formula">
