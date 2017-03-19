@@ -5,13 +5,6 @@
  * @link  http://codex.wordpress.org/Function_Reference/register_post_type
  */
 
-// Disable editor for custom post types
-
-function init_remove_editor(){
-    $post_type = 'team_member';
-    remove_post_type_support( $post_type, 'editor');
-}
-
 // Register Projects Custom Post Type
 
 function projects_cpt() {
@@ -108,7 +101,7 @@ function team_member_cpt() {
 		'label'                 => 'Team member',
 		'description'           => 'team member list',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions', 'custom-fields', ),
+		'supports'              => array( 'title', 'revisions', 'custom-fields', ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
@@ -123,11 +116,124 @@ function team_member_cpt() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
 	);
-	register_post_type( 'team_member', $args );
-	add_action('init', 'init_remove_editor',100);
+	register_post_type( 'team_members', $args );
 
 }
 add_action( 'init', 'team_member_cpt', 0 );
+
+// Register Board Member Custom Post Type
+
+function board_member_cpt() {
+
+	$labels = array(
+		'name'                  => 'Board members',
+		'singular_name'         => 'Board member',
+		'menu_name'             => 'Board members',
+		'name_admin_bar'        => 'Board members',
+		'archives'              => 'Board member Archives',
+		'attributes'            => 'Board member Attributes',
+		'parent_item_colon'     => 'Parent Item:',
+		'all_items'             => 'All Board members',
+		'add_new_item'          => 'Add New Item',
+		'add_new'               => 'Add New Board Member',
+		'new_item'              => 'New Board Member',
+		'edit_item'             => 'Edit Board Member',
+		'update_item'           => 'Update Board Member',
+		'view_item'             => 'View Board Member',
+		'view_items'            => 'View Board Members',
+		'search_items'          => 'Search Board Member',
+		'not_found'             => 'Not found',
+		'not_found_in_trash'    => 'Not found in Trash',
+		'featured_image'        => 'Featured Image',
+		'set_featured_image'    => 'Set featured image',
+		'remove_featured_image' => 'Remove featured image',
+		'use_featured_image'    => 'Use as featured image',
+		'insert_into_item'      => 'Insert into item',
+		'uploaded_to_this_item' => 'Uploaded to this item',
+		'items_list'            => 'Board members list',
+		'items_list_navigation' => 'Board members list navigation',
+		'filter_items_list'     => 'Filter Board members list',
+	);
+	$args = array(
+		'label'                 => 'Board member',
+		'description'           => 'Board member list',
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'revisions', 'custom-fields', ),
+		'taxonomies'            => array( 'category', 'post_tag' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'post',
+	);
+	register_post_type( 'board_members', $args );
+
+}
+add_action( 'init', 'board_member_cpt', 0 );
+
+// Register Advisors Custom Post Type
+
+function advisors_cpt() {
+
+	$labels = array(
+		'name'                  => 'Advisors',
+		'singular_name'         => 'Advisors',
+		'menu_name'             => 'Advisors',
+		'name_admin_bar'        => 'Advisors',
+		'archives'              => 'Advisor Archives',
+		'attributes'            => 'Advisor Attributes',
+		'parent_item_colon'     => 'Parent Item:',
+		'all_items'             => 'All Advisors',
+		'add_new_item'          => 'Add New Item',
+		'add_new'               => 'Add New Advisor',
+		'new_item'              => 'New Advisor',
+		'edit_item'             => 'Edit Advisor',
+		'update_item'           => 'Update Advisor',
+		'view_item'             => 'View Advisor',
+		'view_items'            => 'View Advisors',
+		'search_items'          => 'Search Advisors',
+		'not_found'             => 'Not found',
+		'not_found_in_trash'    => 'Not found in Trash',
+		'featured_image'        => 'Featured Image',
+		'set_featured_image'    => 'Set featured image',
+		'remove_featured_image' => 'Remove featured image',
+		'use_featured_image'    => 'Use as featured image',
+		'insert_into_item'      => 'Insert into item',
+		'uploaded_to_this_item' => 'Uploaded to this item',
+		'items_list'            => 'Advisors list',
+		'items_list_navigation' => 'Advisors list navigation',
+		'filter_items_list'     => 'Filter Advisors list',
+	);
+	$args = array(
+		'label'                 => 'Advisor',
+		'description'           => 'Advisor list',
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'revisions', 'custom-fields', ),
+		'taxonomies'            => array( 'category', 'post_tag' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'post',
+	);
+	register_post_type( 'advisors', $args );
+
+}
+add_action( 'init', 'advisors_cpt', 0 );
 
 
 // Register Careers Custom Post Type
