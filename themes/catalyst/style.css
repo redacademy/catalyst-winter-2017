@@ -1033,6 +1033,31 @@ object {
         width: 100%; }
       .page-template-page-our-story .site-content .mission-content .mission-image h5 {
         width: 100%; }
+  .page-template-page-our-story .site-content .formula-content {
+    display: none; }
+    @media all and (min-width: 600px) {
+      .page-template-page-our-story .site-content .formula-content {
+        visibility: visible;
+        margin-bottom: 30px;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        font-size: 12px; }
+        .page-template-page-our-story .site-content .formula-content .formula-image {
+          width: 18%; }
+        .page-template-page-our-story .site-content .formula-content .plus {
+          padding-bottom: 80px;
+          padding-left: 5px;
+          padding-right: 5px; }
+        .page-template-page-our-story .site-content .formula-content .equal {
+          padding-bottom: 80px;
+          padding-left: 5px;
+          padding-right: 5px; } }
+  .page-template-page-our-story .site-content .owl-carousel {
+    margin-bottom: 30px; }
+    @media all and (min-width: 600px) {
+      .page-template-page-our-story .site-content .owl-carousel {
+        display: none; } }
   .page-template-page-our-story .site-content .formula-carousel {
     margin-bottom: 2rem; }
     .page-template-page-our-story .site-content .formula-carousel .formulas {

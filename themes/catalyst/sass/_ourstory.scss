@@ -139,7 +139,7 @@
                 width: 25%;
                 display: flex;
                 flex-wrap: wrap;
-                    margin: auto;
+                margin: auto;
                 img {
                     width: 100%;
                 }
@@ -148,7 +148,36 @@
                 }
             }
         }
-        .formula-carousel{
+        .formula-content {
+            display: none;
+            @include media($desktop-width) {
+                visibility: visible;
+                margin-bottom: 30px;
+                display: flex;
+                width: 100%;
+                font-size: 12px;
+                .formula-image {
+                    width: 18%;
+                }
+                .plus {
+                    padding-bottom: 80px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+                .equal {
+                    padding-bottom: 80px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+            }
+        }
+        .owl-carousel {
+            margin-bottom: 30px;
+            @include media($desktop-width) {
+                display: none;
+            }
+        }
+        .formula-carousel {
             margin-bottom: 2rem;
             .formulas {
                 width: 100%;
