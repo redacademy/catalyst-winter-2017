@@ -25,8 +25,9 @@ get_header(); ?>
         </div>
 
         <div class="projects">
-            <h2>our project</h2>
-            <div></div>
+            <h2>our projects</h2>
+            <p class="proj-desc">Our Goal is to serve people better by offering our real estate development expertise and a share of ownership</p>
+            <?php get_template_part( 'template-parts/projects-carousel', 'projects carousel' ); ?>
              <div class="readmore"><a>view more projects</a></div>
         </div>
 

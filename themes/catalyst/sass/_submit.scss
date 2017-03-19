@@ -1,0 +1,34 @@
+.page-template-submit{
+    .content-area {
+        margin: 0 2rem;
+    }
+    .site-main {
+        text-align: center;
+    }
+    .top-message {
+        line-height: 1;
+    }
+    .thanks {
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    .text {
+            font-size: 1.8rem;
+            margin: 0;
+        }
+    .logo {
+        margin: 1rem 0.5rem;
+    }
+    .bottom-message {
+        margin: 5rem 0.5rem;
+    }
+    .bottom-text {
+        font-size: 1.3rem;
+        line-height: 1;
+        font-weight: 100;
+        span{
+            text-transform: uppercase;
+        }
+    }
+}
