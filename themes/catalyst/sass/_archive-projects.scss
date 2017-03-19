@@ -1,4 +1,17 @@
 .post-type-archive-projects {
+    .banner-text {
+        color: white;
+        width: 380px;
+        margin: 10% auto;
+        text-align: center;
+        font-size: 1.55rem;
+        line-height: 2rem;
+        letter-spacing: 2px;
+        @include media($desktop-width) {
+            width: 750px;
+            margin: 2% auto;
+        }
+    }
     .project-content {
         text-align: center;
     }
