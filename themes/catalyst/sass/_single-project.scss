@@ -71,6 +71,9 @@
         width: 85%;
         margin: 0 0.5rem;
         opacity: 0.5;
+        @include media ($desktop-width){
+            width: 50%;
+        }
         img {
             width: 100%;
         }
@@ -124,6 +127,14 @@
         width: 85%;
         margin: 0 0.5rem;
         opacity: 0.5;
+        @include media ($desktop-width){
+            width: 50%;
+        }
+        .project-name,
+        .project-location,
+        .project-status {
+            display: none;
+        }
     }
     .is-selected {
         opacity: 1;

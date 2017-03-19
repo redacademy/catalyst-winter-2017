@@ -1820,6 +1820,9 @@ object {
   width: 85%;
   margin: 0 0.5rem;
   opacity: 0.5; }
+  @media all and (min-width: 600px) {
+    .single-projects .images {
+      width: 50%; } }
   .single-projects .images img {
     width: 100%; }
 
@@ -1874,6 +1877,13 @@ object {
   width: 85%;
   margin: 0 0.5rem;
   opacity: 0.5; }
+  @media all and (min-width: 600px) {
+    .single-projects .other-proj-wrapper {
+      width: 50%; } }
+  .single-projects .other-proj-wrapper .project-name,
+  .single-projects .other-proj-wrapper .project-location,
+  .single-projects .other-proj-wrapper .project-status {
+    display: none; }
 
 .single-projects .is-selected {
   opacity: 1; }
