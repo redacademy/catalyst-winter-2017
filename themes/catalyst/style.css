@@ -550,10 +550,8 @@ a {
         padding-left: 20px;
         color: #323232;
         text-transform: uppercase; }
-        .container .hamburger-menu li a:hover {
-          color: #00A4FF; }
-        .container .hamburger-menu li a:active {
-          color: #935E32; }
+      .container .hamburger-menu li:hover {
+        background-color: #D9F1FF; }
     .container .hamburger-menu .hamburger {
       border: 1px solid #333345;
       border-radius: 0;
