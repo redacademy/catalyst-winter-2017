@@ -1852,3 +1852,34 @@ object {
 
 .single-projects .quotes-wrapper {
   display: none; }
+
+.page-template-submit .content-area {
+  margin: 0 2rem; }
+
+.page-template-submit .site-main {
+  text-align: center; }
+
+.page-template-submit .top-message {
+  line-height: 1; }
+
+.page-template-submit .thanks {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 0; }
+
+.page-template-submit .text {
+  font-size: 1.8rem;
+  margin: 0; }
+
+.page-template-submit .logo {
+  margin: 1rem 0.5rem; }
+
+.page-template-submit .bottom-message {
+  margin: 5rem 0.5rem; }
+
+.page-template-submit .bottom-text {
+  font-size: 1.3rem;
+  line-height: 1;
+  font-weight: 100; }
+  .page-template-submit .bottom-text span {
+    text-transform: uppercase; }
