@@ -30,6 +30,7 @@ function catalyst_project_css() {
             background:url($url) no-repeat center bottom;
 			background-size: cover;
 			height: 375px;
+            width: 100%;
         }";
 
         wp_add_inline_style( 'red-starter-style', $single_project_css );
