@@ -12,9 +12,9 @@
         <?php while ( have_posts() ) : the_post(); ?>
 
             <div class="banner">
-                <p class='banner-name'><?php echo CFS()->get('project_name'); ?></p>
-                <p class='banner-location'>Location: <?php echo CFS()->get('project_location'); ?></p>
-                <p class='banner-status'>Status: <span class='project-status'><?php echo CFS()->get('project_status'); ?></span></p>
+                <p class='project-name'><?php echo CFS()->get('project_name'); ?></p>
+                <p class='project-location'>Location: <?php echo CFS()->get('project_location'); ?></p>
+                <p class='project-status'>Status: <span class='project-status'><?php echo CFS()->get('project_status'); ?></span></p>
             </div>
 
             <div class="content-head">
@@ -74,17 +74,7 @@
         <div class="other-proj">
             <h2>Other Projects</h2>
         </div>
-        <div class="other-post-gallery" data-flickity='{"contain": true, "wrapAround": true, "imagesLoaded": true, "pageDots": false  }'>
-            <?php $posts = get_posts( array( 
-                'post_type' => 'projects', 
-                'order' => 'ASC', 
-            ));
-            foreach ( $posts as $post ) : ?>
-                <div class="other-proj-wrapper">
-                    <a href="<?php echo get_permalink() ?>"><?php the_post_thumbnail();  ?></a>
-                </div>
-            <?php endforeach; ?>
-        </div>
+        <?php get_template_part( 'template-parts/projects-carousel', 'projects carousel' ); ?>
     </section>
 </div>
  <?php get_footer(); ?>

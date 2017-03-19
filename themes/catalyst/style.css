@@ -660,6 +660,37 @@ a {
     color: black;
     text-decoration: none; }
 
+.home .projects {
+  padding-top: 3rem;
+  text-align: center; }
+  .home .projects .quotes-wrapper {
+    margin: 0 1rem;
+    width: 85%; }
+  .home .projects .quote-text {
+    margin-bottom: 2rem; }
+  .home .projects .person {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 0; }
+  .home .projects .line {
+    font-style: italic;
+    margin: 0; }
+  .home .projects .other-proj-wrapper {
+    width: 85%;
+    margin: 0 0.5rem;
+    opacity: 0.5; }
+    .home .projects .other-proj-wrapper .project-name,
+    .home .projects .other-proj-wrapper .project-location,
+    .home .projects .other-proj-wrapper .project-status,
+    .home .projects .other-proj-wrapper .person,
+    .home .projects .other-proj-wrapper .line {
+      margin: 0; }
+  .home .projects .is-selected {
+    opacity: 1; }
+
+.home .team {
+  padding-top: 3rem; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -960,30 +991,16 @@ object {
         width: 100%; }
       .page-template-page-our-story .site-content .mission-content .mission-image h5 {
         width: 100%; }
-  .page-template-page-our-story .site-content .formula p {
-    font-size: 24px;
-    font-weight: lighter;
-    padding-bottom: 50px;
-    margin: auto; }
-  .page-template-page-our-story .site-content .formula-content {
-    display: -ms-flexbox;
-    display: flex;
-    padding-bottom: 50px;
-    width: 100%;
-    margin: auto;
-    -ms-flex-pack: center;
-        justify-content: center; }
-    .page-template-page-our-story .site-content .formula-content img {
-      max-width: 100%; }
-  .page-template-page-our-story .site-content .plus {
-    padding-bottom: 100px; }
-  .page-template-page-our-story .site-content .equal {
-    padding-bottom: 100px; }
-  .page-template-page-our-story .site-content .imagetext {
-    font-size: 14px;
-    line-height: 14px; }
-  .page-template-page-our-story .site-content .formula-image {
-    width: 15%; }
+  .page-template-page-our-story .site-content .formula-carousel {
+    margin-bottom: 2rem; }
+    .page-template-page-our-story .site-content .formula-carousel .formulas {
+      width: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center; }
+    .page-template-page-our-story .site-content .formula-carousel .formula-textimg {
+      width: 200px; }
   .page-template-page-our-story .site-content h5 {
     font-size: 20px;
     text-transform: uppercase;
@@ -1692,6 +1709,9 @@ object {
   padding: 1rem 3.5rem;
   text-transform: uppercase; }
 
+.single-projects h2 {
+  font-weight: 500; }
+
 .single-projects .banner {
   display: -ms-flexbox;
   display: flex;
@@ -1706,16 +1726,16 @@ object {
     color: #fff;
     margin: 0;
     text-shadow: -2px 2px 5px #000; }
-  .single-projects .banner .banner-name {
+  .single-projects .banner .project-name {
     font-size: 4rem;
     line-height: 1;
     margin-bottom: 1rem; }
-  .single-projects .banner .banner-location {
+  .single-projects .banner .project-location {
     font-size: 1.3rem;
     margin-bottom: 0.3rem; }
-  .single-projects .banner .banner-status {
+  .single-projects .banner .project-status {
     font-size: 1.3rem; }
-    .single-projects .banner .banner-status .project-status {
+    .single-projects .banner .project-status .project-status {
       text-transform: uppercase; }
 
 .single-projects .content-head {
@@ -1744,6 +1764,15 @@ object {
 .single-projects .arch-text {
   margin: 0 1.5rem;
   text-align: center; }
+
+.single-projects .gallery {
+  text-align: center;
+  margin-bottom: 2rem; }
+
+.single-projects .gallery-img {
+  width: 85%;
+  margin: 0 0.5rem;
+  opacity: 0.5; }
 
 .single-projects .images {
   width: 85%;
@@ -1774,7 +1803,8 @@ object {
 
 .single-projects .collab-link-container {
   text-align: center;
-  margin: 3rem 0; }
+  margin: 3rem 0;
+  padding-top: 1rem; }
 
 .single-projects .collab-link {
   text-decoration: none;
@@ -1784,12 +1814,7 @@ object {
   text-transform: uppercase; }
 
 .single-projects .other-post-gallery {
-  margin: 2rem 0; }
-
-.single-projects .other-proj-wrapper {
-  opacity: 0.5;
-  width: 85%;
-  margin: 0 0.5rem; }
+  margin: 2rem 0 3rem; }
 
 .single-projects .other-proj {
   background-color: #d9f1ff;
@@ -1803,5 +1828,44 @@ object {
   margin: 2rem 0;
   text-transform: uppercase; }
 
+.single-projects .other-proj-wrapper {
+  width: 85%;
+  margin: 0 0.5rem;
+  opacity: 0.5; }
+
 .single-projects .is-selected {
   opacity: 1; }
+
+.single-projects .quotes-wrapper {
+  display: none; }
+
+.page-template-submit .content-area {
+  margin: 0 2rem; }
+
+.page-template-submit .site-main {
+  text-align: center; }
+
+.page-template-submit .top-message {
+  line-height: 1; }
+
+.page-template-submit .thanks {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 0; }
+
+.page-template-submit .text {
+  font-size: 1.8rem;
+  margin: 0; }
+
+.page-template-submit .logo {
+  margin: 1rem 0.5rem; }
+
+.page-template-submit .bottom-message {
+  margin: 5rem 0.5rem; }
+
+.page-template-submit .bottom-text {
+  font-size: 1.3rem;
+  line-height: 1;
+  font-weight: 100; }
+  .page-template-submit .bottom-text span {
+    text-transform: uppercase; }

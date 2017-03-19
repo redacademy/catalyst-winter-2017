@@ -48,4 +48,42 @@
             text-decoration: none;
         }
     }
+    .projects {
+        padding-top: 3rem;
+        text-align: center;
+        .quotes-wrapper {
+            margin: 0 1rem;
+            width: 85%;
+        }
+        .quote-text {
+            margin-bottom: 2rem;
+        }
+        .person {
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin: 0;
+        }
+        .line {
+            font-style: italic;
+            margin: 0;
+        }
+        .other-proj-wrapper {
+            width: 85%;
+            margin: 0 0.5rem;
+            opacity: 0.5;
+            .project-name,
+            .project-location,
+            .project-status,
+            .person,
+            .line {
+                margin: 0;
+            }
+        }
+        .is-selected {
+            opacity: 1;
+        }
+    }
+    .team{
+        padding-top: 3rem;
+    }
 }
