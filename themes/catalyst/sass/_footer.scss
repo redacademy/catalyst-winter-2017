@@ -88,8 +88,8 @@
             text-decoration: none;
             font-weight: 500;
             color: $color__text-main;
-            padding-right: 20px;
-            &:hover{
+            padding: 0 20px;
+            &:hover {
                 color: $color__menu-hoever;
             }
         }
@@ -97,7 +97,7 @@
     .company-info {
         margin-bottom: 20px;
         @include media($desktop-width) {
-            width: 60%;
+            width: 55%;
         }
         @include media($footer__desktop-width) {
             width: 50%;

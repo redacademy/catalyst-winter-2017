@@ -679,14 +679,14 @@ a {
       text-decoration: none;
       font-weight: 500;
       color: #4A4A4A;
-      padding-right: 20px; }
+      padding: 0 20px; }
       .footer .page-link a:hover {
         color: #00A4FF; }
   .footer .company-info {
     margin-bottom: 20px; }
     @media all and (min-width: 600px) {
       .footer .company-info {
-        width: 60%; } }
+        width: 55%; } }
     @media all and (min-width: 900px) {
       .footer .company-info {
         width: 50%; } }
