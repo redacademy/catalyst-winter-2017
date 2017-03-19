@@ -7,65 +7,27 @@
     }
 
     .hero-image-banner {
-        height: 50vh;
         min-width: 100%;
-        @include header-text-shadow;
-        @include flex-column(nowrap, flex-start, center);
+        @include flex-column(nowrap, center, center);
         @include media($desktop-width) {
-            height: 60vh;
-            @include flex-column(nowrap, center, center);
+            height: 70vh;
         }
 
         .entry-title {
-            font-size: 3rem;
-            color: white;
-            text-align: center;
-            text-transform: uppercase;
-            @include media($desktop-width) {
-                margin: 0 0 1.5rem;
-                font-size: 3.85rem;
-            }
+            @include page-title;
         }
 
         .banner-text {
-            color: white;
-            width: 380px;
-            margin: 10% auto;
-            text-align: center;
-            font-size: 1.55rem;
-            line-height: 2rem;
-            letter-spacing: 2px;
-            @include media($desktop-width) {
-                width: 750px;
-                margin: 2% auto;
-            }
+            @include banner-text;
         }
     }
 
     .intro-copy {
-        height: auto;
-        width: 100%;
-        margin: 0 auto;
-        padding: 1rem 0.85rem;
-        font-weight: 100;
-        text-align: center;
-        @include media($desktop-width) {
-            padding: 2.75rem 0.85rem;
-            width: 60%;
-        }
+        @include intro-copy;
     }
 
     .main-copy {
-        height: auto;
-        width: 100%;
-        margin: 0 auto;
-        padding: 0.55rem 0;
-        font-weight: 100;
-        text-align: center;
-        @include media($desktop-width) {
-            width: 75%;
-            padding: 0.75rem auto;
-        }
+        @include main-copy;
     }
 
     .navigation-button {
@@ -77,16 +39,7 @@
     }
 
     .blue-background {
-        height: auto;
-        width: 100%;
-        margin: 0 auto 0.75rem;
-        padding: 0.75rem 0.5rem;
-        background-color: $color__brand-blue;
-        text-align: center;
-        @include media($desktop-width) {
-            margin: 0 auto 1.5rem;
-            padding: 1rem 0.5rem;
-        }
+        @include blue-background-header;
 
         h2 {
             max-width: 400px;

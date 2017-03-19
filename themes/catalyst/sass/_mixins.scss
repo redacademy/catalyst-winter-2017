@@ -10,6 +10,74 @@
 	text-shadow: 1px 2px 5px $color__header-main;
 }
 
+// Headings and boilerplate copy
+
+@mixin page-title {
+	font-size: 3.5rem;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	@include header-text-shadow;
+	@include media($desktop-width) {
+		margin: 0 0 1.5rem;
+		font-size: 3.85rem;
+	}
+}
+
+@mixin banner-text {
+	font-size: 1.5rem;
+	color: white;
+	width: 380px;
+	margin: 10% auto;
+	text-align: center;
+	line-height: 2rem;
+	letter-spacing: 2px;
+	@include header-text-shadow;
+	@include media($desktop-width) {
+		width: 750px;
+		margin: 2% auto;
+	}
+}
+
+@mixin blue-background-header {
+	height: auto;
+	width: 100%;
+	margin: 0 auto 0.75rem;
+	padding: 0.75rem 0.5rem;
+	background-color: $color__brand-blue;
+	text-align: center;
+	@include media($desktop-width) {
+		margin: 0 auto 1.5rem;
+		padding: 1rem 0.5rem;
+	}
+}
+
+@mixin intro-copy {
+	height: auto;
+	width: 100%;
+	margin: 0 auto;
+	padding: 1rem 0.85rem;
+	font-weight: 100;
+	text-align: center;
+	@include media($desktop-width) {
+		padding: 2.75rem 0.85rem;
+		width: 60%;
+	}
+}
+
+@mixin main-copy {
+	height: auto;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0.55rem 0;
+	font-weight: 100;
+	text-align: center;
+	@include media($desktop-width) {
+		width: 75%;
+		padding: 0.75rem auto;
+	}
+}
+
 // Layouts
 
 @mixin center-block {

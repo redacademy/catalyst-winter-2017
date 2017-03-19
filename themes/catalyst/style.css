@@ -901,7 +901,7 @@ object {
 .gallery-caption {
   display: block; }
 
-.page-template-page-our-story .herobanner {
+.page-template-page-our-story .hero-image-banner {
   color: white;
   text-align: center;
   position: relative; }
@@ -1150,45 +1150,37 @@ object {
       font-size: 1.4rem;
       line-height: 1.75rem; } }
   .page-template-collaborate .hero-image-banner {
-    height: 50vh;
     min-width: 100%;
-    text-shadow: 1px 2px 5px #323232;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: column nowrap;
         flex-flow: column nowrap;
-    -ms-flex-pack: start;
-        justify-content: flex-start;
+    -ms-flex-pack: center;
+        justify-content: center;
     -ms-flex-align: center;
         align-items: center; }
     @media all and (min-width: 600px) {
       .page-template-collaborate .hero-image-banner {
-        height: 60vh;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-        -ms-flex-pack: center;
-            justify-content: center;
-        -ms-flex-align: center;
-            align-items: center; } }
+        height: 70vh; } }
     .page-template-collaborate .hero-image-banner .entry-title {
-      font-size: 3rem;
+      font-size: 3.5rem;
       color: white;
       text-align: center;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      text-shadow: 1px 2px 5px #323232; }
       @media all and (min-width: 600px) {
         .page-template-collaborate .hero-image-banner .entry-title {
           margin: 0 0 1.5rem;
           font-size: 3.85rem; } }
     .page-template-collaborate .hero-image-banner .banner-text {
+      font-size: 1.5rem;
       color: white;
       width: 380px;
       margin: 10% auto;
       text-align: center;
-      font-size: 1.55rem;
       line-height: 2rem;
-      letter-spacing: 2px; }
+      letter-spacing: 2px;
+      text-shadow: 1px 2px 5px #323232; }
       @media all and (min-width: 600px) {
         .page-template-collaborate .hero-image-banner .banner-text {
           width: 750px;
@@ -1754,7 +1746,7 @@ object {
 .single-projects h2 {
   font-weight: 500; }
 
-.single-projects .banner {
+.single-projects .hero-image-banner {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -1764,20 +1756,20 @@ object {
   -ms-flex-align: center;
       align-items: center;
   text-align: center; }
-  .single-projects .banner p {
+  .single-projects .hero-image-banner p {
     color: #fff;
     margin: 0;
     text-shadow: -2px 2px 5px #000; }
-  .single-projects .banner .project-name {
+  .single-projects .hero-image-banner .project-name {
     font-size: 4rem;
     line-height: 1;
     margin-bottom: 1rem; }
-  .single-projects .banner .project-location {
+  .single-projects .hero-image-banner .project-location {
     font-size: 1.3rem;
     margin-bottom: 0.3rem; }
-  .single-projects .banner .project-status {
+  .single-projects .hero-image-banner .project-status {
     font-size: 1.3rem; }
-    .single-projects .banner .project-status .project-status {
+    .single-projects .hero-image-banner .project-status .project-status {
       text-transform: uppercase; }
 
 .single-projects .content-head {
