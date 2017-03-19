@@ -61,7 +61,6 @@ a {
 			.focus>a {}
 			a:hover,
 			a.focus {}
-
 		}
 		li:hover>ul,
 		li.focus>ul {
@@ -173,27 +172,19 @@ a {
 				overflow: hidden;
 				height: 70px;
 			}
-		.page_item {
+			.page_item {
 				margin-right: 25px;
 				text-transform: uppercase;
-
-				 a {
+				a {
 					color: $color__header-main;
 					font-size: 15px;
-				&:active {
+					&:active {
 						color: $color__menu-active;
 					}
-					// &:visited {
-					// 	color: $color__header-main;
-					// }
 					&:hover {
 						color: $color__menu-hoever;
 					}
-
 				}
-
-
-
 			}
 		}
 	}
@@ -220,15 +211,13 @@ a {
 				display: block;
 				text-decoration: none;
 				padding-left: 20px;
-				color: #323232;
+				color: $color__header-main;
 				text-transform: uppercase;
-				&:hover {
-					color: #00A4FF;
-				}
-				&:active {
-						color: $color__menu-active;
-					}
 			}
+			&:hover {
+				background-color: $color__brand-blue;
+			}
+
 		}
 		.hamburger {
 			border: 1px solid #333345;
