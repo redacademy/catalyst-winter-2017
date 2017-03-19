@@ -66,25 +66,25 @@ add_action( 'init', 'projects_cpt', 0 );
 
 // Register Team Member Custom Post Type
 
-function team_member_cpt() {
+function staff_cpt() {
 
 	$labels = array(
-		'name'                  => 'Team members',
-		'singular_name'         => 'Team member',
-		'menu_name'             => 'Team members',
-		'name_admin_bar'        => 'Team members',
-		'archives'              => 'Team member Archives',
-		'attributes'            => 'Team member Attributes',
+		'name'                  => 'Staff',
+		'singular_name'         => 'Staf',
+		'menu_name'             => 'Staff',
+		'name_admin_bar'        => 'Staff',
+		'archives'              => 'Staff Archives',
+		'attributes'            => 'Staff Attributes',
 		'parent_item_colon'     => 'Parent Item:',
-		'all_items'             => 'All Team members',
+		'all_items'             => 'All Staff Members',
 		'add_new_item'          => 'Add New Item',
-		'add_new'               => 'Add New Team member',
-		'new_item'              => 'New Team member',
-		'edit_item'             => 'Edit Team member',
-		'update_item'           => 'Update Team member',
-		'view_item'             => 'View Team member',
-		'view_items'            => 'View Team members',
-		'search_items'          => 'Search Team member',
+		'add_new'               => 'Add New Staff Member',
+		'new_item'              => 'New Staff Member',
+		'edit_item'             => 'Edit Staff Member',
+		'update_item'           => 'Update Staff Member',
+		'view_item'             => 'View Staff Member',
+		'view_items'            => 'View Staff Members',
+		'search_items'          => 'Search Staff Member',
 		'not_found'             => 'Not found',
 		'not_found_in_trash'    => 'Not found in Trash',
 		'featured_image'        => 'Featured Image',
@@ -93,13 +93,13 @@ function team_member_cpt() {
 		'use_featured_image'    => 'Use as featured image',
 		'insert_into_item'      => 'Insert into item',
 		'uploaded_to_this_item' => 'Uploaded to this item',
-		'items_list'            => 'Team members list',
-		'items_list_navigation' => 'Team members list navigation',
-		'filter_items_list'     => 'Filter Team members list',
+		'items_list'            => 'Staff List',
+		'items_list_navigation' => 'Staff list navigation',
+		'filter_items_list'     => 'Filter Staff list',
 	);
 	$args = array(
-		'label'                 => 'Team member',
-		'description'           => 'team member list',
+		'label'                 => 'Staff',
+		'description'           => 'Staff list',
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'revisions', 'custom-fields', ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
@@ -116,24 +116,24 @@ function team_member_cpt() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
 	);
-	register_post_type( 'team_members', $args );
+	register_post_type( 'staff', $args );
 
 }
-add_action( 'init', 'team_member_cpt', 0 );
+add_action( 'init', 'staff_cpt', 0 );
 
 // Register Board Member Custom Post Type
 
-function board_member_cpt() {
+function board_cpt() {
 
 	$labels = array(
-		'name'                  => 'Board members',
-		'singular_name'         => 'Board member',
-		'menu_name'             => 'Board members',
-		'name_admin_bar'        => 'Board members',
-		'archives'              => 'Board member Archives',
-		'attributes'            => 'Board member Attributes',
+		'name'                  => 'Board',
+		'singular_name'         => 'Board',
+		'menu_name'             => 'Board Members',
+		'name_admin_bar'        => 'Board Members',
+		'archives'              => 'Board Member Archives',
+		'attributes'            => 'Board Member Attributes',
 		'parent_item_colon'     => 'Parent Item:',
-		'all_items'             => 'All Board members',
+		'all_items'             => 'All Board Members',
 		'add_new_item'          => 'Add New Item',
 		'add_new'               => 'Add New Board Member',
 		'new_item'              => 'New Board Member',
@@ -152,10 +152,10 @@ function board_member_cpt() {
 		'uploaded_to_this_item' => 'Uploaded to this item',
 		'items_list'            => 'Board members list',
 		'items_list_navigation' => 'Board members list navigation',
-		'filter_items_list'     => 'Filter Board members list',
+		'filter_items_list'     => 'Filter board members list',
 	);
 	$args = array(
-		'label'                 => 'Board member',
+		'label'                 => 'Board',
 		'description'           => 'Board member list',
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'revisions', 'custom-fields', ),
@@ -173,10 +173,10 @@ function board_member_cpt() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
 	);
-	register_post_type( 'board_members', $args );
+	register_post_type( 'board', $args );
 
 }
-add_action( 'init', 'board_member_cpt', 0 );
+add_action( 'init', 'board_cpt', 0 );
 
 // Register Advisors Custom Post Type
 
