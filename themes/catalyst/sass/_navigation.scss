@@ -13,7 +13,7 @@ a {
 	&:hover,
 	&:focus,
 	&:active {
-		color: $color__link-hover;
+		color: $color__link-visited;
 	}
 	&:focus {
 		outline: thin dotted;
@@ -61,6 +61,7 @@ a {
 			.focus>a {}
 			a:hover,
 			a.focus {}
+
 		}
 		li:hover>ul,
 		li.focus>ul {
@@ -170,15 +171,29 @@ a {
 			ul {
 				padding-top: 45px;
 				overflow: hidden;
-			height: 70px;
+				height: 70px;
 			}
-			li {
+		.page_item {
 				margin-right: 25px;
 				text-transform: uppercase;
-				a {
-					color: $color__text-main;
+
+				 a {
+					color: $color__header-main;
+					font-size: 15px;
+				&:active {
+						color: $color__menu-active;
+					}
+					// &:visited {
+					// 	color: $color__header-main;
+					// }
+					&:hover {
+						color: $color__menu-hoever;
+					}
+
 				}
-				&:hover {}
+
+
+
 			}
 		}
 	}
@@ -197,7 +212,6 @@ a {
 			display: flex;
 			flex-direction: column;
 			margin-top: 40px;
-
 		}
 		li {
 			padding: 20px 0;
@@ -211,6 +225,9 @@ a {
 				&:hover {
 					color: #00A4FF;
 				}
+				&:active {
+						color: $color__menu-active;
+					}
 			}
 		}
 		.hamburger {
