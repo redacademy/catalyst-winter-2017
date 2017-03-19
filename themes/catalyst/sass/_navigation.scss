@@ -132,7 +132,7 @@ a {
 		padding-left: 20px;
 		height: 100px;
 		@include media($desktop-width) {
-			width: 20%;
+			width: 30%;
 		}
 	}
 	.header-logo {
@@ -153,13 +153,12 @@ a {
 		z-index: 1;
 		width: 50%;
 		@include media($desktop-width) {
-			width: 76%;
+			width: 70%;
 		}
 	}
 	.desktop-menu {
 		visibility: hidden;
 		height: 0;
-		// min-width: 600px;
 		@include media($desktop-width) {
 			visibility: visible;
 			height: 100px;
@@ -170,6 +169,8 @@ a {
 			margin: 0 auto;
 			ul {
 				padding-top: 45px;
+				overflow: hidden;
+			height: 70px;
 			}
 			li {
 				margin-right: 25px;
@@ -196,6 +197,7 @@ a {
 			display: flex;
 			flex-direction: column;
 			margin-top: 40px;
+
 		}
 		li {
 			padding: 20px 0;

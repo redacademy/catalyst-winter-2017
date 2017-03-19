@@ -476,7 +476,7 @@ a {
     height: 100px; }
     @media all and (min-width: 600px) {
       .container .logo {
-        width: 20%; } }
+        width: 30%; } }
   .container .header-logo {
     background: url("../../images/full-logo.svg") no-repeat;
     background-size: 100%;
@@ -496,7 +496,7 @@ a {
     width: 50%; }
     @media all and (min-width: 600px) {
       .container .top-menu {
-        width: 76%; } }
+        width: 70%; } }
   .container .desktop-menu {
     visibility: hidden;
     height: 0; }
@@ -511,7 +511,9 @@ a {
           justify-content: flex-end;
       margin: 0 auto; }
       .container .desktop-menu #primary-menu ul {
-        padding-top: 45px; }
+        padding-top: 45px;
+        overflow: hidden;
+        height: 70px; }
       .container .desktop-menu #primary-menu li {
         margin-right: 25px;
         text-transform: uppercase; }
