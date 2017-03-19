@@ -901,7 +901,7 @@ object {
 .gallery-caption {
   display: block; }
 
-.page-template-page-our-story .herobanner {
+.page-template-page-our-story .hero-image-banner {
   color: white;
   text-align: center;
   position: relative; }
@@ -1754,7 +1754,7 @@ object {
 .single-projects h2 {
   font-weight: 500; }
 
-.single-projects .banner {
+.single-projects .hero-image-banner {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -1764,20 +1764,20 @@ object {
   -ms-flex-align: center;
       align-items: center;
   text-align: center; }
-  .single-projects .banner p {
+  .single-projects .hero-image-banner p {
     color: #fff;
     margin: 0;
     text-shadow: -2px 2px 5px #000; }
-  .single-projects .banner .project-name {
+  .single-projects .hero-image-banner .banner-name {
     font-size: 4rem;
     line-height: 1;
     margin-bottom: 1rem; }
-  .single-projects .banner .project-location {
+  .single-projects .hero-image-banner .banner-location {
     font-size: 1.3rem;
     margin-bottom: 0.3rem; }
-  .single-projects .banner .project-status {
+  .single-projects .hero-image-banner .banner-status {
     font-size: 1.3rem; }
-    .single-projects .banner .project-status .project-status {
+    .single-projects .hero-image-banner .banner-status .project-status {
       text-transform: uppercase; }
 
 .single-projects .content-head {

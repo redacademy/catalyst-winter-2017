@@ -6,7 +6,7 @@
  */
 
  get_header(); ?>
-
+<div class="hero-image-banner"></div>
 <div class="project-content">
     <?php while ( have_posts() ) : the_post(); ?>
     <div class="project-post">
