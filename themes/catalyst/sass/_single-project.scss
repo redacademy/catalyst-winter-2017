@@ -1,5 +1,10 @@
 .single-projects {
-    .hero-image-banner {
+  
+    h2 {
+        font-weight: 500;
+    }  
+  
+.hero-image-banner {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -10,16 +15,16 @@
             margin: 0;
             text-shadow: -2px 2px 5px #000;
         }
-        .banner-name {
+        .project-name {
             font-size: 4rem;
             line-height: 1;
             margin-bottom: 1rem;
         }
-        .banner-location {
+        .project-location {
             font-size: 1.3rem;
             margin-bottom: 0.3rem;
         }
-        .banner-status {
+        .project-status {
             font-size: 1.3rem;
             .project-status {
                 text-transform: uppercase;
@@ -52,6 +57,16 @@
         margin: 0 1.5rem;
         text-align: center;
     }
+
+    .gallery {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .gallery-img {
+        width: 85%;
+        margin: 0 0.5rem;
+        opacity: 0.5;
+    }
     .images {
         width: 85%;
         margin: 0 0.5rem;
@@ -59,6 +74,7 @@
         img {
             width: 100%;
         }
+
     }
     .quote-carousel {
         margin: 2rem 0;
@@ -83,6 +99,7 @@
     .collab-link-container {
         text-align: center;
         margin: 3rem 0;
+        padding-top: 1rem;
     }
     .collab-link {
         text-decoration: none;
@@ -92,12 +109,7 @@
         text-transform: uppercase;
     }
     .other-post-gallery {
-        margin: 2rem 0;
-    }
-    .other-proj-wrapper {
-        opacity: 0.5;
-        width: 85%;
-        margin: 0 0.5rem;
+        margin: 2rem 0 3rem;
     }
     .other-proj {
         background-color: #d9f1ff;
@@ -108,7 +120,15 @@
         margin: 2rem 0;
         text-transform: uppercase;
     }
+    .other-proj-wrapper {
+        width: 85%;
+        margin: 0 0.5rem;
+        opacity: 0.5;
+    }
     .is-selected {
         opacity: 1;
+    }
+    .quotes-wrapper{
+        display: none;
     }
 }
