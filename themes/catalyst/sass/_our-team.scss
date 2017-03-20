@@ -1,0 +1,135 @@
+.page-template-our-team {
+    height: 100%;
+    width: 100%;
+    @include media($desktop-width) {
+        font-size: $font__desktop-size;
+        line-height: $line-height-desktop;
+    }
+
+    .hero-image-banner {
+        min-width: 100%;
+        @include flex-column(nowrap, center, center);
+        @include media($desktop-width) {
+            height: 70vh;
+        }
+
+        .entry-title {
+            @include page-title;
+        }
+
+        .banner-text {
+            @include banner-text;
+        }
+    }
+
+    .intro-copy {
+        @include intro-copy;
+    }
+
+    .blue-background {
+        @include blue-background-header;
+
+        .our-team-header {
+            width: 300px;
+            margin: 0 auto;
+            color: $color__header-main;
+            font-size: 2.5rem;
+            font-weight: 400;
+            text-align: center;
+            text-transform: uppercase;
+            @include media($desktop-width) {
+                width: 100%;
+                font-size: 3.15rem;
+            }
+        }
+    }
+
+    .profile-popout {
+        display: none;
+    }
+
+    .staff-profiles-wrapper, .board-profiles-wrapper, .advisors-profiles-wrapper {
+        margin-bottom: 2.5rem;
+        @include flex-column(nowrap, space-between, center);
+        @include media($desktop-width) {
+            width: 80%;
+            margin: 0 auto 3.25rem;
+            @include flex-row(wrap, center, flex-start);
+        }
+
+        .small-header {
+            margin: 2rem auto 1rem;
+            font-size: 2rem;
+            font-weight: 400;
+            text-align: center;
+            text-transform: uppercase;
+            @include media($desktop-width) {
+                width: 100%;
+                margin: 3rem auto 2.5rem;
+            }
+        }
+
+        .navigation-button-container {
+            width: 100%;
+
+            .navigation-button {
+                @include navigation-button;
+            }
+        }
+
+        .profile-preview {
+            width: 100%;
+            margin: 1rem 3rem;
+            text-align: center;
+            position: relative;
+            @include media($desktop-width) {
+                width: 24%;
+            }
+
+            .name {
+                margin: 0.25rem auto;
+                font-size: 1.55rem;
+                font-weight: 600;
+            }
+
+            .job-title {
+                max-width: 235px;
+                margin: 0.25rem auto;
+                font-size: 1.4rem;
+                text-align: center;
+            }
+
+            .enter-button, .exit-button {
+                @include popout-button(45px);
+            }
+
+            .enter-button {
+                @include media($desktop-width) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .advisors-profiles-wrapper {
+
+        .profile-preview {
+            width: 14%;
+            margin: 0 3%;
+            position: relative;
+
+            &:nth-child(4) .job-title {
+                max-width: none;
+                width: 265px;
+                position: absolute;
+                right: -32%;
+            }
+        }
+
+        .navigation-button-container {
+            @include media($desktop-width) {
+                margin: 3rem auto 1rem;
+            }
+        }
+    }
+}

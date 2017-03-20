@@ -18,16 +18,16 @@
 
 					<div class="company-info">
 						<div class="footer-title">
-							<p class="footerLogo"></p>
+							<div class="footerLogo"></div>
 							<h3>catalyst community development society</h3>
 						</div>
-						<p>(the amp) 90-425 Carrall Street, Vancouver, BC, V6B 6E3</p>
-						<p> @ 2017 All Rights Reserved</p>
+						<p>(THE AMP) 90-425 Carrall Street, Vancouver, BC, V6B 6E3</p>
+						<p> <span>@ 2017 All Rights Reserved</span></p>
 					</div>
 
 					<div class="sns-icon">
-					<p class="twitter"></p>
-					<p class="linkedin"></p>
+					<a href="https://twitter.com/catalyst_cds"><div class="twitter"></div></a>
+					<a href="https://www.linkedin.com"><div class="linkedin"></div></a>
 					</div>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->

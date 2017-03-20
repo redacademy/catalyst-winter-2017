@@ -1,7 +1,7 @@
 <?php
 
 /**
-	* Template Name: Careers Archive
+	* Template Name: Careers
 	*
 	* @package Catalyst Theme
 	*/
@@ -17,6 +17,7 @@ get_header(); ?>
 <p class="intro-copy">
 	<?php echo CFS()->get( 'intro_copy' ); ?>
 </p>
+
 <div class="page-header-container">
 	<h2 class="page-title">Job Opportunities</h2>
 </div>
@@ -36,7 +37,9 @@ get_header(); ?>
 			<p class="responsibilities">responsibilities:</p>
 			<?php echo CFS()->get( 'responsibilities' ); ?>   
 		</div>
-		<a href="#" class="contact-link">Contact us</a>
+		<div class='link-container'>
+			<a href="#" class="contact-link">Contact us</a>
+		</div>
 	</div>
 	<?php endforeach; ?>
 </div>

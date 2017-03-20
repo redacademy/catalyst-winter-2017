@@ -1,13 +1,22 @@
 .post-type-archive-projects {
-    .project-content {
+    .banner-text {
+        color: white;
+        width: 380px;
+        margin: 10% auto;
         text-align: center;
+        font-size: 1.55rem;
+        line-height: 2rem;
+        letter-spacing: 2px;
         @include media($desktop-width) {
-            max-width: 1120px;
-            margin: 0 auto;
+            width: 750px;
+            margin: 2% auto;
         }
     }
+    .project-content {
+        text-align: center;
+    }
     .project-post {
-        margin-bottom: 3rem;
+        margin-bottom: 6rem;
     }
     .proj-head {
         background-color: #d9f1ff;
@@ -21,13 +30,14 @@
         }
         p {
             margin: 0;
+            @include media($desktop-width){
+                font-size: 1.5rem;
+            }
         }
         .name {
             font-size: 1.5rem;
             font-weight: bold;
-            @include media($desktop-width) {
-                font-size: 1rem;
-            }
+            color: $color__header-main;
         }
         .status {
             text-transform: uppercase;
@@ -51,12 +61,13 @@
     }
     .project-image {
         width: 100%;
+        max-width: 1000px;
     }
     .project-link {
         text-decoration: none;
-        color: black;
+        color: $color__header-main;
         border: 2px solid black;
-        padding: 1rem 3.5rem;
+        padding: 1rem 4rem;
         text-transform: uppercase;
     }
 }
