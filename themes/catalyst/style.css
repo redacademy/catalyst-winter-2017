@@ -2036,26 +2036,63 @@ object {
     .page-template-careers .contact-link {
       padding: 1rem 4rem; } }
 
-.post-type-archive-projects .banner-text {
-  color: white;
-  width: 380px;
-  margin: 10% auto;
-  text-align: center;
-  font-size: 1.55rem;
-  line-height: 2rem;
-  letter-spacing: 2px; }
+.page-template-projects .hero-image-banner {
+  min-width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
   @media all and (min-width: 600px) {
-    .post-type-archive-projects .banner-text {
-      width: 750px;
-      margin: 2% auto; } }
+    .page-template-projects .hero-image-banner {
+      height: 70vh; } }
+  .page-template-projects .hero-image-banner .entry-title {
+    font-size: 3.5rem;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 5px #323232; }
+    @media all and (min-width: 600px) {
+      .page-template-projects .hero-image-banner .entry-title {
+        margin: 0 0 1.5rem;
+        font-size: 3.85rem; } }
+  .page-template-projects .hero-image-banner .banner-text {
+    font-size: 1.5rem;
+    color: white;
+    width: 380px;
+    margin: 10% auto;
+    text-align: center;
+    line-height: 2rem;
+    letter-spacing: 2px;
+    text-shadow: 1px 2px 5px #323232; }
+    @media all and (min-width: 600px) {
+      .page-template-projects .hero-image-banner .banner-text {
+        width: 750px;
+        margin: 2% auto; } }
 
-.post-type-archive-projects .project-content {
+.page-template-projects .intro-copy {
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 0.85rem;
+  font-size: 1.25rem;
+  font-weight: 100;
+  text-align: center; }
+  @media all and (min-width: 600px) {
+    .page-template-projects .intro-copy {
+      padding: 2.75rem 0.85rem;
+      width: 60%; } }
+
+.page-template-projects .project-content {
   text-align: center; }
 
-.post-type-archive-projects .project-post {
+.page-template-projects .project-post {
   margin-bottom: 6rem; }
 
-.post-type-archive-projects .proj-head {
+.page-template-projects .proj-head {
   background-color: #d9f1ff;
   height: 90px;
   display: -ms-flexbox;
@@ -2065,43 +2102,44 @@ object {
   -ms-flex-pack: center;
       justify-content: center; }
   @media all and (min-width: 600px) {
-    .post-type-archive-projects .proj-head {
+    .page-template-projects .proj-head {
       -ms-flex-direction: row;
           flex-direction: row;
       -ms-flex-align: center;
           align-items: center; } }
-  .post-type-archive-projects .proj-head p {
+  .page-template-projects .proj-head p {
     margin: 0; }
     @media all and (min-width: 600px) {
-      .post-type-archive-projects .proj-head p {
+      .page-template-projects .proj-head p {
         font-size: 1.5rem; } }
-  .post-type-archive-projects .proj-head .name {
+  .page-template-projects .proj-head .name {
     font-size: 1.5rem;
     font-weight: bold;
     color: #323232; }
-  .post-type-archive-projects .proj-head .status {
+
+  .page-template-projects .proj-head .status {
     text-transform: uppercase; }
-  .post-type-archive-projects .proj-head .break {
+  .page-template-projects .proj-head .break {
     display: none; }
     @media all and (min-width: 600px) {
-      .post-type-archive-projects .proj-head .break {
+      .page-template-projects .proj-head .break {
         display: initial;
         font-size: 1.5rem;
         font-weight: 500;
         margin: 0 0.5rem; } }
 
-.post-type-archive-projects .img-container {
+.page-template-projects .img-container {
   margin: 2rem 2rem 3rem; }
   @media all and (min-width: 600px) {
-    .post-type-archive-projects .img-container {
+    .page-template-projects .img-container {
       max-width: 750px;
       margin: 2rem auto 3rem auto; } }
 
-.post-type-archive-projects .project-image {
+.page-template-projects .project-image {
   width: 100%;
   max-width: 1000px; }
 
-.post-type-archive-projects .project-link {
+.page-template-projects .project-link {
   text-decoration: none;
   color: #323232;
   border: 2px solid black;
