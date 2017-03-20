@@ -103,7 +103,7 @@
 	align-items: $align-items;
 }
 @mixin grayscale-image {
-	filter: grayscale(100%);
+	filter: grayscale(100%) invert(60%);
 }
 
 // Buttons
