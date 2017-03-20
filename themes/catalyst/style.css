@@ -1910,10 +1910,60 @@ object {
       font-style: normal;
       margin: 0 auto 1.5rem; }
 
-.post-type-archive-careers #content {
+.page-template-careers #content {
   width: 100%; }
 
-.post-type-archive-careers .page-header-container {
+.page-template-careers .hero-image-banner {
+  min-width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  @media all and (min-width: 600px) {
+    .page-template-careers .hero-image-banner {
+      height: 70vh; } }
+  .page-template-careers .hero-image-banner .entry-title {
+    font-size: 3.5rem;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 5px #323232; }
+    @media all and (min-width: 600px) {
+      .page-template-careers .hero-image-banner .entry-title {
+        margin: 0 0 1.5rem;
+        font-size: 3.85rem; } }
+  .page-template-careers .hero-image-banner .banner-text {
+    font-size: 1.5rem;
+    color: white;
+    width: 380px;
+    margin: 10% auto;
+    text-align: center;
+    line-height: 2rem;
+    letter-spacing: 2px;
+    text-shadow: 1px 2px 5px #323232; }
+    @media all and (min-width: 600px) {
+      .page-template-careers .hero-image-banner .banner-text {
+        width: 750px;
+        margin: 2% auto; } }
+
+.page-template-careers .intro-copy {
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 0.85rem;
+  font-size: 1.25rem;
+  font-weight: 100;
+  text-align: center; }
+  @media all and (min-width: 600px) {
+    .page-template-careers .intro-copy {
+      padding: 2.75rem 0.85rem;
+      width: 60%; } }
+
+.page-template-careers .page-header-container {
   background-color: #D9F1FF;
   display: -ms-flexbox;
   display: flex;
@@ -1923,67 +1973,67 @@ object {
   -ms-flex-align: center;
       align-items: center; }
 
-.post-type-archive-careers .page-title {
+.page-template-careers .page-title {
   font-size: 1.8rem;
   color: #323232;
   text-transform: uppercase;
   margin: 0; }
 
-.post-type-archive-careers .job-container {
+.page-template-careers .job-container {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto; }
 
-.post-type-archive-careers .job-post {
+.page-template-careers .job-post {
   margin: 0 10%;
   border-bottom: 1px solid black;
   padding-bottom: 6rem; }
 
-.post-type-archive-careers .job-title {
+.page-template-careers .job-title {
   font-size: 1.3rem;
   text-align: center;
   color: #4A4A4A;
   text-transform: uppercase;
   margin: 2rem 0; }
 
-.post-type-archive-careers .role-container {
+.page-template-careers .role-container {
   font-size: 1.3rem;
   margin-bottom: 3rem; }
-  .post-type-archive-careers .role-container p {
+  .page-template-careers .role-container p {
     margin-top: 0; }
 
-.post-type-archive-careers .role {
+.page-template-careers .role {
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 0; }
 
-.post-type-archive-careers .resp-container {
+.page-template-careers .resp-container {
   width: 100%;
   max-width: 850px;
   margin: 0 auto;
   font-size: 1.3rem;
   margin-bottom: 4rem; }
-  .post-type-archive-careers .resp-container ul {
+  .page-template-careers .resp-container ul {
     margin-left: 0; }
-  .post-type-archive-careers .resp-container p {
+  .page-template-careers .resp-container p {
     margin-top: 0; }
 
-.post-type-archive-careers .responsibilities {
+.page-template-careers .responsibilities {
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 0; }
 
-.post-type-archive-careers .link-container {
+.page-template-careers .link-container {
   text-align: center; }
 
-.post-type-archive-careers .contact-link {
+.page-template-careers .contact-link {
   text-decoration: none;
   color: #000;
   border: 2px solid #000;
   padding: 1rem 3.5rem;
   text-transform: uppercase; }
   @media all and (min-width: 600px) {
-    .post-type-archive-careers .contact-link {
+    .page-template-careers .contact-link {
       padding: 1rem 4rem; } }
 
 .post-type-archive-projects .banner-text {
