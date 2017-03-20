@@ -729,6 +729,9 @@ a {
 .home .front-content {
   margin-bottom: 50px; }
 
+.home header {
+  position: relative; }
+
 .home .hero-image-banner {
   min-width: 100%; }
   @media all and (min-width: 600px) {
@@ -736,18 +739,27 @@ a {
       height: 70vh; } }
   .home .hero-image-banner img {
     max-width: initial;
-    width: initial;
+    width: 100%;
     height: 110vh; }
     @media all and (min-width: 600px) {
       .home .hero-image-banner img {
         height: 70vh; } }
 
 .home .header-text {
-  margin-top: 250px;
-  position: absolute;
+  font-size: 1.5rem;
   color: white;
+  width: 380px;
   text-align: center;
-  width: 100%; }
+  line-height: 2rem;
+  letter-spacing: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  text-shadow: 1px 2px 5px #323232; }
+  @media all and (min-width: 600px) {
+    .home .header-text {
+      width: 750px; } }
   .home .header-text h1 {
     text-transform: uppercase;
     font-weight: lighter;
@@ -761,11 +773,6 @@ a {
     font-size: 25px;
     font-weight: lighter;
     margin: 0; }
-
-.home .home-hero {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 100%, rgba(0, 0, 0, 0.5) 100%), url("../../images/front-hero-sample.png") no-repeat center 100%;
-  background-size: contain, cover;
-  height: 700px; }
 
 .home h2 {
   text-transform: uppercase;

@@ -39,6 +39,23 @@
 	}
 }
 
+@mixin banner-text-fp {
+	font-size: 1.5rem;
+	color: white;
+	width: 380px;
+	text-align: center;
+	line-height: 2rem;
+	letter-spacing: 2px;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	position: absolute;
+	@include header-text-shadow;
+	@include media($desktop-width) {
+		width: 750px;
+	}
+}
+
 @mixin blue-background-header {
 	height: auto;
 	width: 100%;
