@@ -1,11 +1,12 @@
 <?php
-/**
- * The template for displaying archive for the products post type (careers page).
- *
- * @package RED_Starter_Theme
- */
 
- get_header(); ?>
+/**
+	* Template Name: Careers
+	*
+	* @package Catalyst Theme
+	*/
+
+get_header(); ?>
 <div class="hero-image-banner"> </div>
 <p class="banner-text">Careers</p>
 <div class="page-header-container">
@@ -23,7 +24,9 @@
 			<p class="responsibilities">responsibilities:</p>
 			<?php echo CFS()->get( 'responsibilities' ); ?>   
 		</div>
-		<a href="#" class="contact-link">Contact us</a>
+		<div class='link-container'>
+			<a href="#" class="contact-link">Contact us</a>
+		</div>
 	</div>
 	<?php endwhile; ?>
 </div>

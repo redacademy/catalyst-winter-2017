@@ -10,6 +10,77 @@
 	text-shadow: 1px 2px 5px $color__header-main;
 }
 
+// Headings and boilerplate copy
+
+@mixin page-title {
+	font-size: 3.5rem;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	@include header-text-shadow;
+	@include media($desktop-width) {
+		margin: 0 0 1.5rem;
+		font-size: 3.85rem;
+	}
+}
+
+@mixin banner-text {
+	font-size: 1.5rem;
+	color: white;
+	width: 380px;
+	margin: 10% auto;
+	text-align: center;
+	line-height: 2rem;
+	letter-spacing: 2px;
+	@include header-text-shadow;
+	@include media($desktop-width) {
+		width: 750px;
+		margin: 2% auto;
+	}
+}
+
+@mixin blue-background-header {
+	height: auto;
+	width: 100%;
+	margin: 0 auto 0.75rem;
+	padding: 0.75rem 0.5rem;
+	background-color: $color__brand-blue;
+	text-align: center;
+	line-height: 2.4rem;
+	@include media($desktop-width) {
+		margin: 0 auto 1.5rem;
+		padding: 1rem 0.5rem;
+		line-height: 3.4rem;
+	}
+}
+
+@mixin intro-copy {
+	height: auto;
+	width: 100%;
+	margin: 0 auto;
+	padding: 1rem 0.85rem;
+	font-size: 1.25rem;
+	font-weight: 100;
+	text-align: center;
+	@include media($desktop-width) {
+		padding: 2.75rem 0.85rem;
+		width: 60%;
+	}
+}
+
+@mixin main-copy {
+	height: auto;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0.55rem 0;
+	font-weight: 100;
+	text-align: center;
+	@include media($desktop-width) {
+		width: 75%;
+		padding: 0.75rem auto;
+	}
+}
+
 // Layouts
 
 @mixin center-block {
@@ -38,11 +109,11 @@
 // Buttons
 
 @mixin navigation-button($font-color: $color__header-main) {
-	height: 70px;
-	width: 250px;
+	height: 76px;
+	width: 300px;
 	margin: 2rem auto;
-	border: 3px solid $font-color;
-	font-size: 1.05rem;
+	border: 2px solid $font-color;
+	font-size: 1.35rem;
 	color: $font-color;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -50,12 +121,38 @@
 	justify-content: center;
 	align-items: center;
 	@include media($desktop-width) {
-			font-size: 1.25rem;
+		height: 70px;
+		width: 260px;
+		border-width: 3px;
 	}
 
 	&:hover {
 			background: $color__brand-blue;
 			cursor: pointer;
+	}
+}
+
+@mixin popout-button($size) {
+	height: $size;
+	width: $size;
+	font-size: 3.5rem;
+	font-weight: 100;
+	margin: 0 auto;
+	border: 3px solid $color__header-main;
+	border-radius: 100%;
+	padding: 0 0 9px;
+	background: none;
+	box-shadow: none;
+	@include flex-column(nowrap, center, center);
+
+	&:hover {
+		cursor: pointer;
+		color: $color__menu-hover;
+		border-color: $color__menu-hover;
+	}
+
+	&:focus {
+		outline: none;
 	}
 }
 

@@ -387,7 +387,7 @@ a {
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: purple; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -514,11 +514,16 @@ a {
         padding-top: 45px;
         overflow: hidden;
         height: 70px; }
-      .container .desktop-menu #primary-menu li {
+      .container .desktop-menu #primary-menu .page_item {
         margin-right: 25px;
         text-transform: uppercase; }
-        .container .desktop-menu #primary-menu li a {
-          color: #4A4A4A; }
+        .container .desktop-menu #primary-menu .page_item a {
+          color: #323232;
+          font-size: 15px; }
+          .container .desktop-menu #primary-menu .page_item a:active {
+            color: #935E32; }
+          .container .desktop-menu #primary-menu .page_item a:hover {
+            color: #00A4FF; }
   .container .hamburger-menu {
     display: -ms-flexbox;
     display: flex;
@@ -545,8 +550,8 @@ a {
         padding-left: 20px;
         color: #323232;
         text-transform: uppercase; }
-        .container .hamburger-menu li a:hover {
-          color: #00A4FF; }
+      .container .hamburger-menu li:hover {
+        background-color: #D9F1FF; }
     .container .hamburger-menu .hamburger {
       border: 1px solid #333345;
       border-radius: 0;
@@ -583,6 +588,7 @@ a {
   background-color: #D9F1FF;
   text-align: center;
   width: 100%;
+  height: 180px;
   padding-top: 20px; }
   @media all and (min-width: 600px) {
     .footer {
@@ -591,7 +597,9 @@ a {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       -ms-flex-pack: center;
-          justify-content: center; } }
+          justify-content: center;
+      width: 100%;
+      height: 120px; } }
   .footer .footer-title {
     display: -ms-flexbox;
     display: flex;
@@ -602,33 +610,6 @@ a {
     background: url("../../images/logo.svg") no-repeat;
     background-size: 100%;
     width: 20px; }
-  .footer .twitter {
-    background: url("../../images/twitter.svg") no-repeat;
-    background-size: 100%;
-    height: 50px;
-    width: 50px; }
-  .footer .linkedin {
-    background: url("../../images/linkedin.svg") no-repeat;
-    background-size: 100%;
-    height: 50px;
-    width: 50px; }
-  .footer .page-link {
-    visibility: hidden;
-    height: 10px;
-    text-transform: uppercase;
-    font-size: 12px; }
-    @media all and (min-width: 600px) {
-      .footer .page-link {
-        padding-top: 20px;
-        margin-right: 10px; } }
-    .footer .page-link a {
-      text-decoration: none;
-      font-weight: bold;
-      color: #4A4A4A;
-      margin-right: 20px; }
-    @media all and (min-width: 600px) {
-      .footer .page-link {
-        visibility: visible; } }
   .footer .sns-icon {
     display: -ms-flexbox;
     display: flex;
@@ -636,25 +617,114 @@ a {
         justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-    .footer .sns-icon p {
-      margin-right: 10px; }
+    .footer .sns-icon div {
+      margin: 0 5px; }
     @media all and (min-width: 600px) {
       .footer .sns-icon {
-        margin-left: 30px;
-        -ms-flex-pack: justify;
-            justify-content: space-between; } }
-  .footer .company-info h3 {
-    font-size: 12px;
-    margin: 0;
-    height: 25px;
-    text-transform: uppercase; }
+        width: 20%; }
+        .footer .sns-icon a {
+          padding-right: 10px; } }
+    @media all and (min-width: 900px) {
+      .footer .sns-icon {
+        width: 25%; } }
+  .footer .twitter {
+    background: url("../../images/twitter.svg") no-repeat;
+    background-size: 100%;
+    height: 40px;
+    width: 40px; }
     @media all and (min-width: 600px) {
-      .footer .company-info h3 {
-        font-size: 20px; } }
-  .footer .company-info p {
-    font-size: 12px;
-    height: 20px;
-    margin: 0; }
+      .footer .twitter {
+        height: 40px;
+        width: 40px; } }
+    @media all and (min-width: 900px) {
+      .footer .twitter {
+        height: 50px;
+        width: 50px; } }
+  .footer .linkedin {
+    background: url("../../images/linkedin.svg") no-repeat;
+    background-size: 100%;
+    height: 40px;
+    width: 40px; }
+    @media all and (min-width: 600px) {
+      .footer .linkedin {
+        height: 40px;
+        width: 40px; } }
+    @media all and (min-width: 900px) {
+      .footer .linkedin {
+        height: 50px;
+        width: 50px; } }
+  .footer .page-link {
+    visibility: hidden;
+    height: 10px;
+    text-transform: uppercase;
+    font-size: 12px; }
+    @media all and (min-width: 600px) {
+      .footer .page-link {
+        font-size: 15px;
+        width: 20%;
+        visibility: visible;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+    @media all and (min-width: 900px) {
+      .footer .page-link {
+        padding-top: 20px;
+        width: 25%; } }
+    .footer .page-link a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #4A4A4A;
+      padding: 0 20px; }
+      .footer .page-link a:hover {
+        color: #00A4FF; }
+  .footer .company-info {
+    margin-bottom: 20px; }
+    @media all and (min-width: 600px) {
+      .footer .company-info {
+        width: 55%; } }
+    @media all and (min-width: 900px) {
+      .footer .company-info {
+        width: 50%; } }
+    .footer .company-info span {
+      font-style: italic; }
+    .footer .company-info h3 {
+      font-size: 10px;
+      padding-left: 10px;
+      margin: 0;
+      height: 25px;
+      text-transform: uppercase; }
+      @media all and (min-width: 600px) {
+        .footer .company-info h3 {
+          font-size: 14px;
+          padding-left: 5px; } }
+      @media all and (min-width: 900px) {
+        .footer .company-info h3 {
+          font-size: 16px;
+          padding-left: 10px; } }
+      @media all and (min-width: 1120pxh) {
+        .footer .company-info h3 {
+          font-size: 20px;
+          padding-left: 20px; } }
+    .footer .company-info p {
+      font-size: 10px;
+      font-weight: 100;
+      line-height: 12px;
+      margin: 0; }
+      @media all and (min-width: 600px) {
+        .footer .company-info p {
+          font-size: 14px;
+          line-height: 15px; } }
+      @media all and (min-width: 900px) {
+        .footer .company-info p {
+          font-size: 16px;
+          line-height: 24px; } }
+      @media all and (min-width: 1120px) {
+        .footer .company-info p {
+          font-size: 20px;
+          line-height: 30px; } }
 
 .home .front-content {
   margin-bottom: 50px; }
@@ -1066,81 +1136,298 @@ object {
       width: 25%;
       transform: rotate(180deg); }
 
+.page-template-our-team {
+  height: 100%;
+  width: 100%; }
+  @media all and (min-width: 600px) {
+    .page-template-our-team {
+      font-size: 1.4rem;
+      line-height: 1.75rem; } }
+  .page-template-our-team .hero-image-banner {
+    min-width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    @media all and (min-width: 600px) {
+      .page-template-our-team .hero-image-banner {
+        height: 70vh; } }
+    .page-template-our-team .hero-image-banner .entry-title {
+      font-size: 3.5rem;
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+      text-shadow: 1px 2px 5px #323232; }
+      @media all and (min-width: 600px) {
+        .page-template-our-team .hero-image-banner .entry-title {
+          margin: 0 0 1.5rem;
+          font-size: 3.85rem; } }
+    .page-template-our-team .hero-image-banner .banner-text {
+      font-size: 1.5rem;
+      color: white;
+      width: 380px;
+      margin: 10% auto;
+      text-align: center;
+      line-height: 2rem;
+      letter-spacing: 2px;
+      text-shadow: 1px 2px 5px #323232; }
+      @media all and (min-width: 600px) {
+        .page-template-our-team .hero-image-banner .banner-text {
+          width: 750px;
+          margin: 2% auto; } }
+  .page-template-our-team .intro-copy {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 0.85rem;
+    font-size: 1.25rem;
+    font-weight: 100;
+    text-align: center; }
+    @media all and (min-width: 600px) {
+      .page-template-our-team .intro-copy {
+        padding: 2.75rem 0.85rem;
+        width: 60%; } }
+  .page-template-our-team .blue-background {
+    height: auto;
+    width: 100%;
+    margin: 0 auto 0.75rem;
+    padding: 0.75rem 0.5rem;
+    background-color: #D9F1FF;
+    text-align: center;
+    line-height: 2.4rem; }
+    @media all and (min-width: 600px) {
+      .page-template-our-team .blue-background {
+        margin: 0 auto 1.5rem;
+        padding: 1rem 0.5rem;
+        line-height: 3.4rem; } }
+    .page-template-our-team .blue-background .our-team-header {
+      width: 300px;
+      margin: 0 auto;
+      color: #323232;
+      font-size: 2.5rem;
+      font-weight: 400;
+      text-align: center;
+      text-transform: uppercase; }
+      @media all and (min-width: 600px) {
+        .page-template-our-team .blue-background .our-team-header {
+          width: 100%;
+          font-size: 3.15rem; } }
+  .page-template-our-team .profile-popout {
+    display: none; }
+  .page-template-our-team .staff-profiles-wrapper, .page-template-our-team .board-profiles-wrapper, .page-template-our-team .advisors-profiles-wrapper {
+    margin-bottom: 2.5rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center; }
+    @media all and (min-width: 600px) {
+      .page-template-our-team .staff-profiles-wrapper, .page-template-our-team .board-profiles-wrapper, .page-template-our-team .advisors-profiles-wrapper {
+        width: 80%;
+        margin: 0 auto 3.25rem;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: start;
+            align-items: flex-start; } }
+    .page-template-our-team .staff-profiles-wrapper .small-header, .page-template-our-team .board-profiles-wrapper .small-header, .page-template-our-team .advisors-profiles-wrapper .small-header {
+      margin: 2rem auto 1rem;
+      font-size: 2rem;
+      font-weight: 400;
+      text-align: center;
+      text-transform: uppercase; }
+      @media all and (min-width: 600px) {
+        .page-template-our-team .staff-profiles-wrapper .small-header, .page-template-our-team .board-profiles-wrapper .small-header, .page-template-our-team .advisors-profiles-wrapper .small-header {
+          width: 100%;
+          margin: 3rem auto 2.5rem; } }
+    .page-template-our-team .staff-profiles-wrapper .navigation-button-container, .page-template-our-team .board-profiles-wrapper .navigation-button-container, .page-template-our-team .advisors-profiles-wrapper .navigation-button-container {
+      width: 100%; }
+      .page-template-our-team .staff-profiles-wrapper .navigation-button-container .navigation-button, .page-template-our-team .board-profiles-wrapper .navigation-button-container .navigation-button, .page-template-our-team .advisors-profiles-wrapper .navigation-button-container .navigation-button {
+        height: 76px;
+        width: 300px;
+        margin: 2rem auto;
+        border: 2px solid #323232;
+        font-size: 1.35rem;
+        color: #323232;
+        text-transform: uppercase;
+        text-decoration: none;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center; }
+        @media all and (min-width: 600px) {
+          .page-template-our-team .staff-profiles-wrapper .navigation-button-container .navigation-button, .page-template-our-team .board-profiles-wrapper .navigation-button-container .navigation-button, .page-template-our-team .advisors-profiles-wrapper .navigation-button-container .navigation-button {
+            height: 70px;
+            width: 260px;
+            border-width: 3px; } }
+        .page-template-our-team .staff-profiles-wrapper .navigation-button-container .navigation-button:hover, .page-template-our-team .board-profiles-wrapper .navigation-button-container .navigation-button:hover, .page-template-our-team .advisors-profiles-wrapper .navigation-button-container .navigation-button:hover {
+          background: #D9F1FF;
+          cursor: pointer; }
+    .page-template-our-team .staff-profiles-wrapper .profile-preview, .page-template-our-team .board-profiles-wrapper .profile-preview, .page-template-our-team .advisors-profiles-wrapper .profile-preview {
+      width: 100%;
+      margin: 1rem 3rem;
+      text-align: center;
+      position: relative; }
+      @media all and (min-width: 600px) {
+        .page-template-our-team .staff-profiles-wrapper .profile-preview, .page-template-our-team .board-profiles-wrapper .profile-preview, .page-template-our-team .advisors-profiles-wrapper .profile-preview {
+          width: 24%; } }
+      .page-template-our-team .staff-profiles-wrapper .profile-preview .name, .page-template-our-team .board-profiles-wrapper .profile-preview .name, .page-template-our-team .advisors-profiles-wrapper .profile-preview .name {
+        margin: 0.25rem auto;
+        font-size: 1.55rem;
+        font-weight: 600; }
+      .page-template-our-team .staff-profiles-wrapper .profile-preview .job-title, .page-template-our-team .board-profiles-wrapper .profile-preview .job-title, .page-template-our-team .advisors-profiles-wrapper .profile-preview .job-title {
+        max-width: 235px;
+        margin: 0.25rem auto;
+        font-size: 1.4rem;
+        text-align: center; }
+      .page-template-our-team .staff-profiles-wrapper .profile-preview .enter-button, .page-template-our-team .staff-profiles-wrapper .profile-preview .exit-button, .page-template-our-team .board-profiles-wrapper .profile-preview .enter-button, .page-template-our-team .board-profiles-wrapper .profile-preview .exit-button, .page-template-our-team .advisors-profiles-wrapper .profile-preview .enter-button, .page-template-our-team .advisors-profiles-wrapper .profile-preview .exit-button {
+        height: 45px;
+        width: 45px;
+        font-size: 3.5rem;
+        font-weight: 100;
+        margin: 0 auto;
+        border: 3px solid #323232;
+        border-radius: 100%;
+        padding: 0 0 9px;
+        background: none;
+        box-shadow: none;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center; }
+        .page-template-our-team .staff-profiles-wrapper .profile-preview .enter-button:hover, .page-template-our-team .staff-profiles-wrapper .profile-preview .exit-button:hover, .page-template-our-team .board-profiles-wrapper .profile-preview .enter-button:hover, .page-template-our-team .board-profiles-wrapper .profile-preview .exit-button:hover, .page-template-our-team .advisors-profiles-wrapper .profile-preview .enter-button:hover, .page-template-our-team .advisors-profiles-wrapper .profile-preview .exit-button:hover {
+          cursor: pointer;
+          color: #00A4FF;
+          border-color: #00A4FF; }
+        .page-template-our-team .staff-profiles-wrapper .profile-preview .enter-button:focus, .page-template-our-team .staff-profiles-wrapper .profile-preview .exit-button:focus, .page-template-our-team .board-profiles-wrapper .profile-preview .enter-button:focus, .page-template-our-team .board-profiles-wrapper .profile-preview .exit-button:focus, .page-template-our-team .advisors-profiles-wrapper .profile-preview .enter-button:focus, .page-template-our-team .advisors-profiles-wrapper .profile-preview .exit-button:focus {
+          outline: none; }
+      @media all and (min-width: 600px) {
+        .page-template-our-team .staff-profiles-wrapper .profile-preview .enter-button, .page-template-our-team .board-profiles-wrapper .profile-preview .enter-button, .page-template-our-team .advisors-profiles-wrapper .profile-preview .enter-button {
+          display: none; } }
+  .page-template-our-team .advisors-profiles-wrapper .profile-preview {
+    width: 14%;
+    margin: 0 3%;
+    position: relative; }
+    .page-template-our-team .advisors-profiles-wrapper .profile-preview:nth-child(4) .job-title {
+      max-width: none;
+      width: 265px;
+      position: absolute;
+      right: -32%; }
+  @media all and (min-width: 600px) {
+    .page-template-our-team .advisors-profiles-wrapper .navigation-button-container {
+      margin: 3rem auto 1rem; } }
+
 .page-template-news {
   margin: 0 auto; }
   .page-template-news .entry-content {
     text-align: center; }
-  .page-template-news h1 {
+  .page-template-news .entry-title {
+    text-shadow: 1px 2px 5px #323232;
+    position: absolute;
+    left: 39%;
+    top: 11%;
+    width: 120px;
+    line-height: 60px;
     text-align: center;
     padding-top: 100px;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 500;
     text-transform: uppercase;
     color: white; }
+    @media all and (min-width: 600px) {
+      .page-template-news .entry-title {
+        font-size: 3.5rem;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 1px 2px 5px #323232;
+        width: 100%;
+        position: initial;
+        margin: 0; } }
+  @media all and (min-width: 600px) and (min-width: 600px) {
+    .page-template-news .entry-title {
+      margin: 0 0 1.5rem;
+      font-size: 3.85rem; } }
+  .page-template-news .entry-subtitle {
+    position: absolute;
+    width: 250px;
+    top: 55%;
+    left: 32%;
+    color: white;
+    font-size: 1.5rem;
+    color: white;
+    width: 380px;
+    margin: 10% auto;
+    text-align: center;
+    line-height: 2rem;
+    letter-spacing: 2px;
+    text-shadow: 1px 2px 5px #323232;
+    margin: 0; }
+    @media all and (min-width: 600px) {
+      .page-template-news .entry-subtitle {
+        width: 750px;
+        margin: 2% auto; } }
+    @media all and (min-width: 600px) {
+      .page-template-news .entry-subtitle {
+        width: 100%;
+        position: initial;
+        font-size: 30px;
+        text-align: center; } }
   .page-template-news .entry-header {
     display: none; }
-  @media all and (min-width: 600px) {
-    .page-template-news .video {
-      margin: 20px auto;
-      width: 1100px;
-      height: 400px;
-      margin-top: 10; } }
-  .page-template-news .video h1 {
-    text-align: center;
-    padding-top: 100px;
-    font-size: 60px;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: white; }
-  .page-template-news .video .entry-header {
-    display: none; }
-  @media all and (min-width: 600px) {
-    .page-template-news .video .video {
-      margin: 20px auto;
-      width: 1100px;
-      height: 400px;
-      background-color: grey; } }
-  .page-template-news .video h2 {
+  .page-template-news h2 {
+    font-size: 30px;
+    font-weight: 400;
     text-transform: uppercase;
     background-color: #D9F1FF;
-    padding: 20px 0;
+    padding: 30px 0;
     text-align: center; }
-  @media all and (min-width: 600px) {
-    .page-template-news .video .stories {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      width: 100%;
-      -ms-flex-pack: justify;
-          justify-content: space-between; } }
-  .page-template-news .video .stories li {
-    margin-bottom: 20px; }
-  .page-template-news .video .stories ul {
-    margin: 0 auto;
-    padding-left: 0; }
-  .page-template-news .video .stories .twitter-list {
-    list-style-type: none;
-    padding: 180px 150px;
-    background-color: pink;
-    margin-left: 10px;
-    margin-right: 10px; }
-  .page-template-news .video .stories .article-list {
-    list-style-type: none;
-    padding: 180px 100px;
-    background-color: grey;
-    margin-left: 10px;
-    margin-right: 10px; }
-  .page-template-news .video .load-more {
+    @media all and (min-width: 600px) {
+      .page-template-news h2 {
+        font-size: 50px; } }
+  .page-template-news .load-more {
     margin-bottom: 80px;
     margin-top: 40px;
     text-align: center; }
-    .page-template-news .video .load-more a {
+    .page-template-news .load-more a {
       padding: 30px 80px;
       text-transform: uppercase;
       border: 3px solid black;
       text-decoration: none;
       color: black; }
+      .page-template-news .load-more a:hover {
+        border: 3px solid #8ED7FF;
+        box-shadow: 1px 1px 5px #323232; }
+  @media all and (min-width: 600px) {
+    .page-template-news .content-post {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center; } }
+  .page-template-news .content-post .MediaCard-borderOverlay {
+    display: none; }
+  .page-template-news .twitter {
+    padding: 10px 20px; }
+  .page-template-news .article {
+    padding: 10px 20px; }
+  .page-template-news .EmbeddedTweet-tweet {
+    background-color: black; }
 
 .page-template-collaborate {
   height: 100%;
@@ -1150,45 +1437,37 @@ object {
       font-size: 1.4rem;
       line-height: 1.75rem; } }
   .page-template-collaborate .hero-image-banner {
-    height: 50vh;
     min-width: 100%;
-    text-shadow: 1px 2px 5px #323232;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: column nowrap;
         flex-flow: column nowrap;
-    -ms-flex-pack: start;
-        justify-content: flex-start;
+    -ms-flex-pack: center;
+        justify-content: center;
     -ms-flex-align: center;
         align-items: center; }
     @media all and (min-width: 600px) {
       .page-template-collaborate .hero-image-banner {
-        height: 60vh;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-        -ms-flex-pack: center;
-            justify-content: center;
-        -ms-flex-align: center;
-            align-items: center; } }
+        height: 70vh; } }
     .page-template-collaborate .hero-image-banner .entry-title {
-      font-size: 3rem;
+      font-size: 3.5rem;
       color: white;
       text-align: center;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      text-shadow: 1px 2px 5px #323232; }
       @media all and (min-width: 600px) {
         .page-template-collaborate .hero-image-banner .entry-title {
           margin: 0 0 1.5rem;
           font-size: 3.85rem; } }
     .page-template-collaborate .hero-image-banner .banner-text {
+      font-size: 1.5rem;
       color: white;
       width: 380px;
       margin: 10% auto;
       text-align: center;
-      font-size: 1.55rem;
       line-height: 2rem;
-      letter-spacing: 2px; }
+      letter-spacing: 2px;
+      text-shadow: 1px 2px 5px #323232; }
       @media all and (min-width: 600px) {
         .page-template-collaborate .hero-image-banner .banner-text {
           width: 750px;
@@ -1198,6 +1477,7 @@ object {
     width: 100%;
     margin: 0 auto;
     padding: 1rem 0.85rem;
+    font-size: 1.25rem;
     font-weight: 100;
     text-align: center; }
     @media all and (min-width: 600px) {
@@ -1216,11 +1496,11 @@ object {
         width: 75%;
         padding: 0.75rem auto; } }
   .page-template-collaborate .navigation-button {
-    height: 70px;
-    width: 250px;
+    height: 76px;
+    width: 300px;
     margin: 2rem auto;
-    border: 3px solid #323232;
-    font-size: 1.05rem;
+    border: 2px solid #323232;
+    font-size: 1.35rem;
     color: #323232;
     text-transform: uppercase;
     text-decoration: none;
@@ -1232,7 +1512,9 @@ object {
         align-items: center; }
     @media all and (min-width: 600px) {
       .page-template-collaborate .navigation-button {
-        font-size: 1.25rem; } }
+        height: 70px;
+        width: 260px;
+        border-width: 3px; } }
     .page-template-collaborate .navigation-button:hover {
       background: #D9F1FF;
       cursor: pointer; }
@@ -1244,11 +1526,13 @@ object {
     margin: 0 auto 0.75rem;
     padding: 0.75rem 0.5rem;
     background-color: #D9F1FF;
-    text-align: center; }
+    text-align: center;
+    line-height: 2.4rem; }
     @media all and (min-width: 600px) {
       .page-template-collaborate .blue-background {
         margin: 0 auto 1.5rem;
-        padding: 1rem 0.5rem; } }
+        padding: 1rem 0.5rem;
+        line-height: 3.4rem; } }
     .page-template-collaborate .blue-background h2 {
       max-width: 400px;
       margin: 0 auto;
@@ -1627,9 +1911,7 @@ object {
       margin: 0 auto 1.5rem; }
 
 .post-type-archive-careers #content {
-  width: 100%;
-  max-width: 1120px;
-  margin: 0 auto; }
+  width: 100%; }
 
 .post-type-archive-careers .page-header-container {
   background-color: #D9F1FF;
@@ -1637,33 +1919,38 @@ object {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  height: 75px;
+  height: 50px;
   -ms-flex-align: center;
       align-items: center; }
 
 .post-type-archive-careers .page-title {
+  font-size: 1.8rem;
+  color: #323232;
   text-transform: uppercase;
-  font-size: 3rem;
   margin: 0; }
 
 .post-type-archive-careers .job-container {
   width: 100%;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto; }
 
 .post-type-archive-careers .job-post {
-  margin-bottom: 8rem;
+  margin: 0 10%;
   border-bottom: 1px solid black;
-  padding-bottom: 8rem; }
+  padding-bottom: 6rem; }
 
 .post-type-archive-careers .job-title {
+  font-size: 1.3rem;
   text-align: center;
+  color: #4A4A4A;
   text-transform: uppercase;
-  font-size: 1.7rem;
-  font-weight: 100; }
+  margin: 2rem 0; }
 
 .post-type-archive-careers .role-container {
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  margin-bottom: 3rem; }
+  .post-type-archive-careers .role-container p {
+    margin-top: 0; }
 
 .post-type-archive-careers .role {
   text-transform: uppercase;
@@ -1672,16 +1959,22 @@ object {
 
 .post-type-archive-careers .resp-container {
   width: 100%;
-  max-width: 750px;
+  max-width: 850px;
   margin: 0 auto;
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  margin-bottom: 4rem; }
   .post-type-archive-careers .resp-container ul {
     margin-left: 0; }
+  .post-type-archive-careers .resp-container p {
+    margin-top: 0; }
 
 .post-type-archive-careers .responsibilities {
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 0; }
+
+.post-type-archive-careers .link-container {
+  text-align: center; }
 
 .post-type-archive-careers .contact-link {
   text-decoration: none;
@@ -1689,6 +1982,9 @@ object {
   border: 2px solid #000;
   padding: 1rem 3.5rem;
   text-transform: uppercase; }
+  @media all and (min-width: 600px) {
+    .post-type-archive-careers .contact-link {
+      padding: 1rem 4rem; } }
 
 .post-type-archive-projects .banner-text {
   color: white;

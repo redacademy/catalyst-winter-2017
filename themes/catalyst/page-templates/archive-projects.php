@@ -1,11 +1,12 @@
 <?php
-/**
- * The template for displaying archive for the projects post type (projects page).
- *
- * @package RED_Starter_Theme
- */
 
- get_header(); ?>
+/**
+	* Template Name: Projects
+	*
+	* @package Catalyst Theme
+	*/
+
+get_header(); ?>
 <div class="hero-image-banner"></div>
 <div class="project-content">
     <?php while ( have_posts() ) : the_post(); ?>
