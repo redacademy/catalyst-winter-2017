@@ -7,7 +7,14 @@
 	*/
 
 get_header(); ?>
-<div class="hero-image-banner"></div>
+    <div class="hero-image-banner">
+        <header class="entry-header">
+            <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+            <p class="banner-text">
+                <?php echo CFS()->get( 'bannertext' ); ?>
+            </p>
+        </header><!-- .entry-header -->
+    </div>
 <div class="project-content">
     <?php while ( have_posts() ) : the_post(); ?>
     <div class="project-post">

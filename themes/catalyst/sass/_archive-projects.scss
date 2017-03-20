@@ -37,6 +37,7 @@
         .name {
             font-size: 1.5rem;
             font-weight: bold;
+            color: $color__header-main;
         }
         .status {
             text-transform: uppercase;
@@ -64,7 +65,7 @@
     }
     .project-link {
         text-decoration: none;
-        color: black;
+        color: $color__header-main;
         border: 2px solid black;
         padding: 1rem 4rem;
         text-transform: uppercase;
