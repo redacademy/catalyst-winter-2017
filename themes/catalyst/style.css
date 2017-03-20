@@ -1911,9 +1911,7 @@ object {
       margin: 0 auto 1.5rem; }
 
 .post-type-archive-careers #content {
-  width: 100%;
-  max-width: 1120px;
-  margin: 0 auto; }
+  width: 100%; }
 
 .post-type-archive-careers .page-header-container {
   background-color: #D9F1FF;
@@ -1921,33 +1919,38 @@ object {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  height: 75px;
+  height: 50px;
   -ms-flex-align: center;
       align-items: center; }
 
 .post-type-archive-careers .page-title {
+  font-size: 1.8rem;
+  color: #323232;
   text-transform: uppercase;
-  font-size: 3rem;
   margin: 0; }
 
 .post-type-archive-careers .job-container {
   width: 100%;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto; }
 
 .post-type-archive-careers .job-post {
-  margin-bottom: 8rem;
+  margin: 0 10%;
   border-bottom: 1px solid black;
-  padding-bottom: 8rem; }
+  padding-bottom: 6rem; }
 
 .post-type-archive-careers .job-title {
+  font-size: 1.3rem;
   text-align: center;
+  color: #4A4A4A;
   text-transform: uppercase;
-  font-size: 1.7rem;
-  font-weight: 100; }
+  margin: 2rem 0; }
 
 .post-type-archive-careers .role-container {
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  margin-bottom: 3rem; }
+  .post-type-archive-careers .role-container p {
+    margin-top: 0; }
 
 .post-type-archive-careers .role {
   text-transform: uppercase;
@@ -1956,16 +1959,22 @@ object {
 
 .post-type-archive-careers .resp-container {
   width: 100%;
-  max-width: 750px;
+  max-width: 850px;
   margin: 0 auto;
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  margin-bottom: 4rem; }
   .post-type-archive-careers .resp-container ul {
     margin-left: 0; }
+  .post-type-archive-careers .resp-container p {
+    margin-top: 0; }
 
 .post-type-archive-careers .responsibilities {
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 0; }
+
+.post-type-archive-careers .link-container {
+  text-align: center; }
 
 .post-type-archive-careers .contact-link {
   text-decoration: none;
@@ -1973,6 +1982,9 @@ object {
   border: 2px solid #000;
   padding: 1rem 3.5rem;
   text-transform: uppercase; }
+  @media all and (min-width: 600px) {
+    .post-type-archive-careers .contact-link {
+      padding: 1rem 4rem; } }
 
 .post-type-archive-projects .project-content {
   text-align: center; }
