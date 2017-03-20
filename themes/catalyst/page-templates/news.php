@@ -19,8 +19,9 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
         <header class="header">
-            <div class="herobanner">
+            <div class="hero-image-banner">
                 <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+				<p class="entry-subtitle"><?php echo CFS()->get('bannertext'); ?></p>
             </div>
         </header>
 
@@ -30,7 +31,6 @@ get_header(); ?>
 
 			<?php endwhile; // End of the loop. ?>
 
-	<?php get_sidebar(); ?>
         </main> <!--#main -->
 	</div> <!--#primary -->
 
