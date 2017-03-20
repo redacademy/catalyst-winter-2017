@@ -1038,6 +1038,11 @@ object {
     @media all and (min-width: 600px) {
       .page-template-our-story .site-content a {
         border: 3px solid black; } }
+    .page-template-our-story .site-content a:hover {
+      border-color: #D9F1FF;
+      box-shadow: 1px 1px 5px #323232; }
+    .page-template-our-story .site-content a.active {
+      background-color: #D9F1FF; }
   .page-template-our-story .site-content h2 {
     font-size: 50px;
     text-transform: uppercase;
@@ -1103,10 +1108,10 @@ object {
       width: 25%; }
   @media all and (min-width: 600px) {
     .page-template-our-story .site-content .mission-quote .quotation-left {
-      right: 60%; } }
+      right: 80%; } }
   @media all and (min-width: 600px) {
     .page-template-our-story .site-content .mission-quote .quotation-right {
-      left: 55%; } }
+      left: 77%; } }
   .page-template-our-story .site-content .quote {
     text-align: center; }
   .page-template-our-story .site-content .robert {

@@ -47,8 +47,16 @@
             border: 1px solid black;
             text-decoration: none;
             color: black;
+
             @include media($desktop-width) {
                 border: 3px solid black;
+            }
+              &:hover{
+                border-color: $color__brand-blue;
+                box-shadow: 1px 1px 5px $color__header-main;
+            }
+              &.active{
+                background-color: $color__brand-blue;
             }
         }
         h2 {
@@ -117,12 +125,12 @@
         .mission-quote {
             .quotation-left {
                 @include media($desktop-width) {
-                    right: 60%;
+                    right: 80%;
                 }
             }
             .quotation-right {
                 @include media($desktop-width) {
-                    left: 55%;
+                    left: 77%;
                 }
             }
         }
@@ -230,8 +238,6 @@
         .end-content {
             margin-bottom: 50px;
         }
-        // .mission-quote2 {
-        //     padding: 61px;
-        // }
+
     }
 }
