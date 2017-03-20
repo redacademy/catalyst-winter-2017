@@ -44,7 +44,7 @@
         h2 {
             max-width: 400px;
             margin: 0 auto;
-            font-size: 2rem;
+            font-size: 2.15rem;
             font-weight: 400;
             color: $color__header-main;
             line-height: 2.4rem;
@@ -341,15 +341,19 @@
 
             &:nth-child(3) {
                 padding: 0.15rem;
-                background: linear-gradient(lightgray 0%, lightgray 100%);
             }
 
             &:nth-child(4) {
                 height: 45px;
             }
 
+            &:nth-child(5) {
+                filter: grayscale(100%) invert(15%);
+            }
+
             &:nth-child(6) {
-                height: 85px;
+                height: 115px;
+                filter: grayscale(80%) saturate(5);
             }
         }
     }

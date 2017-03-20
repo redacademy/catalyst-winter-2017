@@ -1536,7 +1536,7 @@ object {
     .page-template-collaborate .blue-background h2 {
       max-width: 400px;
       margin: 0 auto;
-      font-size: 2rem;
+      font-size: 2.15rem;
       font-weight: 400;
       color: #323232;
       line-height: 2.4rem;
@@ -1799,19 +1799,21 @@ object {
       height: 35px;
       width: auto;
       margin: 4%;
-      filter: grayscale(100%); }
+      filter: grayscale(100%) invert(60%); }
       @media all and (min-width: 600px) {
         .page-template-collaborate .supporters-logo-container .sponsor-logo {
           margin: 1.5rem 2.5rem; } }
       .page-template-collaborate .supporters-logo-container .sponsor-logo:nth-child(2) {
         height: 60px; }
       .page-template-collaborate .supporters-logo-container .sponsor-logo:nth-child(3) {
-        padding: 0.15rem;
-        background: linear-gradient(lightgray 0%, lightgray 100%); }
+        padding: 0.15rem; }
       .page-template-collaborate .supporters-logo-container .sponsor-logo:nth-child(4) {
         height: 45px; }
+      .page-template-collaborate .supporters-logo-container .sponsor-logo:nth-child(5) {
+        filter: grayscale(100%) invert(15%); }
       .page-template-collaborate .supporters-logo-container .sponsor-logo:nth-child(6) {
-        height: 85px; }
+        height: 115px;
+        filter: grayscale(80%) saturate(5); }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -2027,7 +2029,8 @@ object {
         font-size: 1.5rem; } }
   .post-type-archive-projects .proj-head .name {
     font-size: 1.5rem;
-    font-weight: bold; }
+    font-weight: bold;
+    color: #323232; }
   .post-type-archive-projects .proj-head .status {
     text-transform: uppercase; }
   .post-type-archive-projects .proj-head .break {
@@ -2052,7 +2055,7 @@ object {
 
 .post-type-archive-projects .project-link {
   text-decoration: none;
-  color: black;
+  color: #323232;
   border: 2px solid black;
   padding: 1rem 4rem;
   text-transform: uppercase; }
