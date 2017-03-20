@@ -1,6 +1,25 @@
-.post-type-archive-careers {
+.page-template-careers {
     #content {
         width: 100%;
+    }
+    .hero-image-banner {
+        min-width: 100%;
+        @include flex-column(nowrap, center, center);
+        @include media($desktop-width) {
+            height: 70vh;
+        }
+
+        .entry-title {
+            @include page-title;
+        }
+
+        .banner-text {
+            @include banner-text;
+        }
+    }
+
+    .intro-copy {
+        @include intro-copy;
     }
     .page-header-container {
         background-color: $color__brand-blue;
