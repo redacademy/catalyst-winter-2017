@@ -2027,7 +2027,8 @@ object {
         font-size: 1.5rem; } }
   .post-type-archive-projects .proj-head .name {
     font-size: 1.5rem;
-    font-weight: bold; }
+    font-weight: bold;
+    color: #323232; }
   .post-type-archive-projects .proj-head .status {
     text-transform: uppercase; }
   .post-type-archive-projects .proj-head .break {
@@ -2052,7 +2053,7 @@ object {
 
 .post-type-archive-projects .project-link {
   text-decoration: none;
-  color: black;
+  color: #323232;
   border: 2px solid black;
   padding: 1rem 4rem;
   text-transform: uppercase; }
