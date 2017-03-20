@@ -1019,8 +1019,11 @@ object {
     height: 1px; }
   .page-template-our-story .site-content .top-text {
     text-align: center;
-    font-size: 18px;
-    margin: auto; }
+    font-size: 20px;
+    margin: 30px auto;
+    width: 280px;
+    font-weight: 100;
+    line-height: 25px; }
     @media all and (min-width: 600px) {
       .page-template-our-story .site-content .top-text {
         width: 100%;
@@ -1036,9 +1039,9 @@ object {
       .page-template-our-story .site-content a {
         border: 3px solid black; } }
   .page-template-our-story .site-content h2 {
-    font-size: 45px;
+    font-size: 50px;
     text-transform: uppercase;
-    font-weight: lighter;
+    font-weight: 400;
     background-color: #D9F1FF;
     padding: 20px 0;
     text-align: center;
@@ -1054,20 +1057,56 @@ object {
         font-size: 50px;
         line-height: 55px;
         margin-bottom: 50px; } }
-  .page-template-our-story .site-content .mission-quote {
+  .page-template-our-story .site-content .mission-quote,
+  .page-template-our-story .site-content .mission-quote2 {
     display: -ms-flexbox;
     display: flex;
+    padding: 61px;
     margin: 30px auto;
-    font-weight: lighter; }
-    .page-template-our-story .site-content .mission-quote .quotation-left {
-      width: 25%; }
-    .page-template-our-story .site-content .mission-quote .quotation-right {
-      width: 25%;
-      transform: rotate(180deg); }
+    font-weight: lighter;
+    position: relative; }
     @media all and (min-width: 600px) {
-      .page-template-our-story .site-content .mission-quote {
+      .page-template-our-story .site-content .mission-quote,
+      .page-template-our-story .site-content .mission-quote2 {
         margin: 0 auto;
         font-size: 20px; } }
+    .page-template-our-story .site-content .mission-quote .quote,
+    .page-template-our-story .site-content .mission-quote2 .quote {
+      z-index: 1;
+      width: 320px;
+      text-align: center;
+      margin: auto;
+      font-size: 18px; }
+      @media all and (min-width: 600px) {
+        .page-template-our-story .site-content .mission-quote .quote,
+        .page-template-our-story .site-content .mission-quote2 .quote {
+          font-size: 20px;
+          width: 100%; } }
+    .page-template-our-story .site-content .mission-quote .quotation-left,
+    .page-template-our-story .site-content .mission-quote2 .quotation-left {
+      position: absolute;
+      margin: 0 auto;
+      bottom: 87%;
+      right: 80%;
+      font-size: 300px;
+      color: #D9F1FF;
+      width: 25%;
+      transform: rotate(180deg); }
+    .page-template-our-story .site-content .mission-quote .quotation-right,
+    .page-template-our-story .site-content .mission-quote2 .quotation-right {
+      position: absolute;
+      top: 82%;
+      margin: 0 auto;
+      left: 76%;
+      font-size: 300px;
+      color: #D9F1FF;
+      width: 25%; }
+  @media all and (min-width: 600px) {
+    .page-template-our-story .site-content .mission-quote .quotation-left {
+      right: 60%; } }
+  @media all and (min-width: 600px) {
+    .page-template-our-story .site-content .mission-quote .quotation-right {
+      left: 55%; } }
   .page-template-our-story .site-content .quote {
     text-align: center; }
   .page-template-our-story .site-content .robert {
@@ -1079,8 +1118,26 @@ object {
       margin: 0; }
   .page-template-our-story .site-content .arrow {
     transform: rotate(90deg); }
+  .page-template-our-story .site-content .rent {
+    margin: 0; }
+    .page-template-our-story .site-content .rent .rent-title {
+      margin: 0; }
+    .page-template-our-story .site-content .rent img {
+      margin-bottom: 50px; }
+  .page-template-our-story .site-content .mission-text {
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: lighter;
+    width: 80%;
+    margin-bottom: 20px; }
+    @media all and (min-width: 600px) {
+      .page-template-our-story .site-content .mission-text {
+        width: 260px;
+        margin-bottom: 0; } }
   .page-template-our-story .site-content .mission-content {
     text-align: center; }
+    .page-template-our-story .site-content .mission-content .arrow {
+      margin-bottom: 10px; }
     @media all and (min-width: 600px) {
       .page-template-our-story .site-content .mission-content {
         display: -ms-flexbox;
@@ -1093,52 +1150,51 @@ object {
         .page-template-our-story .site-content .mission-content .arrow {
           margin-top: 50px;
           height: 50px;
-          transform: rotate(0deg); }
-        .page-template-our-story .site-content .mission-content .alignnone {
-          height: 150px; } }
+          transform: rotate(0deg); } }
     .page-template-our-story .site-content .mission-content .mission-image {
-      width: 25%;
+      width: 100%;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-      margin: auto; }
+      margin: 0 auto; }
+      @media all and (min-width: 600px) {
+        .page-template-our-story .site-content .mission-content .mission-image {
+          width: 25%; } }
       .page-template-our-story .site-content .mission-content .mission-image img {
-        width: 100%; }
+        width: 100%;
+        height: 180px; }
       .page-template-our-story .site-content .mission-content .mission-image h5 {
         width: 100%; }
+  .page-template-our-story .site-content .formula-p {
+    width: 90%;
+    margin: auto; }
+  .page-template-our-story .site-content .formula-text {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 100; }
+    @media all and (min-width: 600px) {
+      .page-template-our-story .site-content .formula-text {
+        font-size: 24px; } }
   .page-template-our-story .site-content .formula-carousel {
-    margin-bottom: 2rem; }
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 2rem;
+    width: 100%; }
     .page-template-our-story .site-content .formula-carousel .formulas {
-      width: 100%;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: center;
-          justify-content: center; }
-    .page-template-our-story .site-content .formula-carousel .formula-textimg {
-      width: 200px; }
+      width: 10%; }
+    .page-template-our-story .site-content .formula-carousel .formula-textimg p {
+      font-size: 12px; }
   .page-template-our-story .site-content h5 {
     font-size: 20px;
     text-transform: uppercase;
-    margin-bottom: 0; }
-  .page-template-our-story .site-content .mission-text {
-    margin: 0 auto;
-    width: 310px;
-    font-size: 16px;
-    font-weight: lighter; }
+    margin-bottom: 5px; }
   .page-template-our-story .site-content .end-content {
     margin-bottom: 50px; }
-  .page-template-our-story .site-content .end-content-quote {
-    display: -ms-flexbox;
-    display: flex;
-    width: 500px;
-    margin: 30px auto;
-    font-weight: lighter; }
-    .page-template-our-story .site-content .end-content-quote .quotation-left {
-      width: 25%; }
-    .page-template-our-story .site-content .end-content-quote .quotation-right {
-      width: 25%;
-      transform: rotate(180deg); }
 
 .page-template-our-team {
   height: 100%;

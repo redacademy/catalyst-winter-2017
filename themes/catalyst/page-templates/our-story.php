@@ -19,43 +19,50 @@ get_header(); ?>
 		</div>
 		</header>
 
-		<?php echo CFS()->get( 'intro_copy' ); ?>
+		<p class="top-text"><?php echo CFS()->get( 'intro_copy' ); ?></p>
 			<section class="catalyst-mission">
 				<h2><?php echo CFS()->get( 'content_title1' ); ?></h2>
 				<h3><?php echo CFS()->get( 'our_mission' ); ?></h3>
 
 				<div class="mission-quote">
-					<img class="quotation-left" src="../../images/ourstory/start.svg" alt="quotation"/>
+					<p class="quotation-left">"</p>
 					<p class="quote"><?php echo CFS()->get( 'quotation1' ); ?></p>
-					<img class="quotation-right" src="../../images/ourstory/start.svg" alt="quotation"/>
+					<p class="quotation-right">"</p>
 				</div>
-
+				<div class="robert">
 				<h4><?php echo CFS()->get( 'text_area1' ); ?></h4>
 				<p class="position"><?php echo CFS()->get( 'text_area2' ); ?></p>
+				</div>
+				<div class="mission-content">
+					<div class="mission-image income">
+					<img src ="<?php echo CFS()->get( 'image1' ); ?>"/>
+					<div class="mission-text">
+					<h5><?php echo CFS()->get( 'image_title1' ); ?></h5>
+					<p class="mission-text"><?php echo CFS()->get( 'image_text1' ); ?></p>
+					</div>
+					</div>
 
-<div class="mission-content">
-<div class="mission-image income">
-<img src ="../../image/ourstory/plus.svg"/>
-<h5><?php echo CFS()->get( 'image_title1' ); ?></h5>
-<p class="mission-text"><?php echo CFS()->get( 'image_text1' ); ?></p>
-</div>
+					<img src="<?php echo CFS()->get( 'arrow_image' ); ?>"class="arrow"/>
 
-<img src="../../image/ourstory/arrow-next.svg"class="arrow"/>
+					<div class="mission-image rent">
+					<img src ="<?php echo CFS()->get( 'image2' ); ?>"/>
+					<div class="mission-text">
+					<h5 class="rent-title"><?php echo CFS()->get( 'image_title2' ); ?></h5>
+					<p class="mission-text"><?php echo CFS()->get( 'image_text2' ); ?></p>
+					</div>
+					</div>
 
-<div class="mission-image rent">
-<h5><?php echo CFS()->get( 'image_title2' ); ?></h5>
-<p class="mission-text"><?php echo CFS()->get( 'image_text2' ); ?></p>
-</div>
+					<img src="<?php echo CFS()->get( 'arrow_image' ); ?>"class="arrow"/>
 
-<img src="../../image/ourstory/arrow-next.svg"class="arrow"/>
 
-<div class="mission-image life">
-<h5><?php echo CFS()->get( 'image_title3' ); ?></h5>
-<p class="mission-text"><?php echo CFS()->get( 'image_text3' ); ?></p>
-</div>
-
-</div>
-</div>
+					<div class="mission-image life">
+					<img src ="<?php echo CFS()->get( 'image3' ); ?>"/>
+					<div class="mission-text">
+					<h5><?php echo CFS()->get( 'image_title3' ); ?></h5>
+					<p class="mission-text"><?php echo CFS()->get( 'image_text3' ); ?></p>
+					</div>
+					</div>
+				</div>
 
 			</section>
 			<section class="formula">
@@ -87,14 +94,16 @@ get_header(); ?>
 			</section>
 			<section class="end-content">
 				<div class="end-content-quote">
-				<img class="quotation-left" src="../../images/ourstory/start.svg" alt="quotation"/>
-				<p class="quote"><?php echo CFS()->get( 'quotation2' ); ?></p>
-				<img class="quotation-left" src="../../images/ourstory/start.svg" alt="quotation"/>
-				</div>
 
+				<div class="mission-quote2">
+					<p class="quotation-left">"</p>
+					<p class="quote"><?php echo CFS()->get( 'quotation2' ); ?></p>
+					<p class="quotation-right">"</p>
+				</div>
+				<div class="robert">
 				<h4><?php echo CFS()->get( 'text_area1' ); ?></h4>
 				<p class="position"><?php echo CFS()->get( 'text_area2' ); ?></p>
-
+				</div>
 				<a><?php echo CFS()->get( 'btn2' ); ?></a>
 			</section>
 		</main><!-- #main -->
