@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="177px" height="177px" viewBox="0 0 177 177" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Development</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CATALYSTFORMULA" transform="translate(-637.000000, 1.000000)">
+            <g id="Development" transform="translate(638.000000, 0.000000)">
+                <circle id="Oval" stroke="#323232" stroke-width="2" fill="#FFFFFF" cx="87.5" cy="87.5" r="87.5"></circle>
+                <g id="buildlings" transform="translate(59.000000, 93.000000)">
+                    <rect id="Rectangle-5" fill="#D8F1FF" x="6" y="8" width="9" height="9"></rect>
+                    <rect id="Rectangle-5" fill="#D8F1FF" x="22" y="23" width="9" height="9"></rect>
+                    <rect id="Rectangle-5" fill="#D8F1FF" x="22" y="9" width="9" height="9"></rect>
+                    <rect id="Rectangle-5" fill="#D8F1FF" x="7" y="23" width="9" height="9"></rect>
+                    <rect id="Rectangle-5" fill="#D8F1FF" x="41" y="23" width="9" height="9"></rect>
+                    <rect id="Rectangle-5" fill="#D8F1FF" x="42" y="37" width="9" height="9"></rect>
+                    <path d="M37.4677734,60 L22.203125,60 L22.203125,47.5 L15.6611328,47.5 L15.6611328,60 L0.396484375,60 L0.396484375,0 L37.4677734,0 L37.4677734,60 Z M24.3837891,57.5 L35.2871094,57.5 L35.2871094,2.5 L2.57714844,2.5 L2.57714844,57.5 L13.4804687,57.5 L13.4804687,45 L24.3837891,45 L24.3837891,57.5 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                    <path d="M16.7514648,33.2488719 L5.84814453,33.2488719 L5.84814453,22.5234294 L16.7514648,22.5234294 L16.7514648,33.2488719 Z M8.02880859,31.1037834 L14.5708008,31.1037834 L14.5708008,24.6685179 L8.02880859,24.6685179 L8.02880859,31.1037834 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                    <path d="M32.0161133,33.2488719 L21.112793,33.2488719 L21.112793,22.5234294 L32.0161133,22.5234294 L32.0161133,33.2488719 Z M23.293457,31.1037834 L29.8354492,31.1037834 L29.8354492,24.6685179 L23.293457,24.6685179 L23.293457,31.1037834 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                    <path d="M51.6420898,33.2488719 L40.7387695,33.2488719 L40.7387695,22.5234294 L51.6420898,22.5234294 L51.6420898,33.2488719 Z M42.9194336,31.1037834 L49.4614258,31.1037834 L49.4614258,24.6685179 L42.9194336,24.6685179 L42.9194336,31.1037834 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                    <path d="M51.6420898,46.119403 L40.7387695,46.119403 L40.7387695,35.3939604 L51.6420898,35.3939604 L51.6420898,46.119403 Z M42.9194336,43.9743145 L49.4614258,43.9743145 L49.4614258,37.5390489 L42.9194336,37.5390489 L42.9194336,43.9743145 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                    <path d="M16.7514648,18.2332523 L5.84814453,18.2332523 L5.84814453,7.50780979 L16.7514648,7.50780979 L16.7514648,18.2332523 Z M8.02880859,16.0881638 L14.5708008,16.0881638 L14.5708008,9.6528983 L8.02880859,9.6528983 L8.02880859,16.0881638 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                    <path d="M32.0161133,18.2332523 L21.112793,18.2332523 L21.112793,7.50780979 L32.0161133,7.50780979 L32.0161133,18.2332523 Z M23.293457,16.0881638 L29.8354492,16.0881638 L29.8354492,9.6528983 L23.293457,9.6528983 L23.293457,16.0881638 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                    <path d="M57.09375,60 L35.2871094,60 L35.2871094,17.1607081 L57.09375,17.1607081 L57.09375,60 Z M37.4677734,57.3225443 L54.9130859,57.3225443 L54.9130859,19.8381638 L37.4677734,19.8381638 L37.4677734,57.3225443 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                </g>
+                <text id="DEVELOPMENT" font-family="Futura-Bold, Futura" font-size="20" font-weight="bold" fill="#323232">
+                    <tspan x="8.48" y="73">DEVELOPMENT</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

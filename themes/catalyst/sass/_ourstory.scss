@@ -1,39 +1,27 @@
-.page-template-page-our-story {
+.page-template-our-story {
     .hero-image-banner {
         color: white;
         text-align: center;
         position: relative;
     }
     .entry-title {
-        margin: 0;
-        padding-top: 150px;
-        font-size: 60px;
-        text-transform: uppercase;
-        font-weight: lighter;
-        text-shadow: 1px 2px black;
+        @include page-title;
+        @include media($desktop-width) {
+            padding-top: 150px;
+        }
     }
     .header-text {
         position: absolute;
-        top: 10%;
-        left: 15%;
+        top: 20%;
+        left: 8%;
         @include media($desktop-width) {
             position: initial;
         }
     }
     .bannertext {
-        font-size: 20px;
-        font-weight: lighter;
-        width: 400px;
-        margin: auto;
-        padding-top: 29px;
-        font-size: 26px;
-        line-height: 27px;
-        text-shadow: 1px 2px black;
+        @include banner-text;
         @include media($desktop-width) {
-            width: 100%;
-            padding-top: 29px;
-            font-size: 26px;
-            line-height: 27px;
+
         }
     }
     .site-content {
@@ -45,7 +33,6 @@
         .top-text {
             text-align: center;
             font-size: 18px;
-            // width: 500px;
             margin: auto;
             @include media($desktop-width) {
                 width: 100%;
@@ -139,7 +126,7 @@
                 width: 25%;
                 display: flex;
                 flex-wrap: wrap;
-                    margin: auto;
+                margin: auto;
                 img {
                     width: 100%;
                 }
@@ -148,7 +135,7 @@
                 }
             }
         }
-        .formula-carousel{
+        .formula-carousel {
             margin-bottom: 2rem;
             .formulas {
                 width: 100%;

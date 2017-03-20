@@ -971,67 +971,71 @@ object {
 .gallery-caption {
   display: block; }
 
-.page-template-page-our-story .hero-image-banner {
+.page-template-our-story .hero-image-banner {
   color: white;
   text-align: center;
   position: relative; }
 
-.page-template-page-our-story .entry-title {
-  margin: 0;
-  padding-top: 150px;
-  font-size: 60px;
+.page-template-our-story .entry-title {
+  font-size: 3.5rem;
+  color: white;
+  text-align: center;
   text-transform: uppercase;
-  font-weight: lighter;
-  text-shadow: 1px 2px black; }
-
-.page-template-page-our-story .header-text {
-  position: absolute;
-  top: 10%;
-  left: 15%; }
+  text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 600px) {
-    .page-template-page-our-story .header-text {
+    .page-template-our-story .entry-title {
+      margin: 0 0 1.5rem;
+      font-size: 3.85rem; } }
+  @media all and (min-width: 600px) {
+    .page-template-our-story .entry-title {
+      padding-top: 150px; } }
+
+.page-template-our-story .header-text {
+  position: absolute;
+  top: 20%;
+  left: 8%; }
+  @media all and (min-width: 600px) {
+    .page-template-our-story .header-text {
       position: initial; } }
 
-.page-template-page-our-story .bannertext {
-  font-size: 20px;
-  font-weight: lighter;
-  width: 400px;
-  margin: auto;
-  padding-top: 29px;
-  font-size: 26px;
-  line-height: 27px;
-  text-shadow: 1px 2px black; }
+.page-template-our-story .bannertext {
+  font-size: 1.5rem;
+  color: white;
+  width: 380px;
+  margin: 10% auto;
+  text-align: center;
+  line-height: 2rem;
+  letter-spacing: 2px;
+  text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 600px) {
-    .page-template-page-our-story .bannertext {
-      width: 100%;
-      padding-top: 29px;
-      font-size: 26px;
-      line-height: 27px; } }
+    .page-template-our-story .bannertext {
+      width: 750px;
+      margin: 2% auto; } }
 
-.page-template-page-our-story .site-content {
+.page-template-our-story .site-content {
   text-align: center; }
-  .page-template-page-our-story .site-content .entry-header {
+  .page-template-our-story .site-content .entry-header {
     visibility: hidden;
     height: 1px; }
-  .page-template-page-our-story .site-content .top-text {
+  .page-template-our-story .site-content .top-text {
     text-align: center;
     font-size: 18px;
     margin: auto; }
     @media all and (min-width: 600px) {
-      .page-template-page-our-story .site-content .top-text {
+      .page-template-our-story .site-content .top-text {
         width: 100%;
         font-size: 22px;
         font-weight: lighter; } }
-  .page-template-page-our-story .site-content a {
+  .page-template-our-story .site-content a {
     padding: 20px 50px;
     text-transform: uppercase;
     border: 1px solid black;
     text-decoration: none;
     color: black; }
     @media all and (min-width: 600px) {
-      .page-template-page-our-story .site-content a {
+      .page-template-our-story .site-content a {
         border: 3px solid black; } }
-  .page-template-page-our-story .site-content h2 {
+  .page-template-our-story .site-content h2 {
     font-size: 45px;
     text-transform: uppercase;
     font-weight: lighter;
@@ -1039,46 +1043,46 @@ object {
     padding: 20px 0;
     text-align: center;
     line-height: 50px; }
-  .page-template-page-our-story .site-content h3 {
+  .page-template-our-story .site-content h3 {
     text-align: center;
     font-size: 35px;
     font-weight: lighter;
     margin: auto;
     line-height: 35px; }
     @media all and (min-width: 600px) {
-      .page-template-page-our-story .site-content h3 {
+      .page-template-our-story .site-content h3 {
         font-size: 50px;
         line-height: 55px;
         margin-bottom: 50px; } }
-  .page-template-page-our-story .site-content .mission-quote {
+  .page-template-our-story .site-content .mission-quote {
     display: -ms-flexbox;
     display: flex;
     margin: 30px auto;
     font-weight: lighter; }
-    .page-template-page-our-story .site-content .mission-quote .quotation-left {
+    .page-template-our-story .site-content .mission-quote .quotation-left {
       width: 25%; }
-    .page-template-page-our-story .site-content .mission-quote .quotation-right {
+    .page-template-our-story .site-content .mission-quote .quotation-right {
       width: 25%;
       transform: rotate(180deg); }
     @media all and (min-width: 600px) {
-      .page-template-page-our-story .site-content .mission-quote {
+      .page-template-our-story .site-content .mission-quote {
         margin: 0 auto;
         font-size: 20px; } }
-  .page-template-page-our-story .site-content .quote {
+  .page-template-our-story .site-content .quote {
     text-align: center; }
-  .page-template-page-our-story .site-content .robert {
+  .page-template-our-story .site-content .robert {
     margin-bottom: 60px;
     text-align: center; }
-    .page-template-page-our-story .site-content .robert h4 {
+    .page-template-our-story .site-content .robert h4 {
       margin: 0; }
-    .page-template-page-our-story .site-content .robert .position {
+    .page-template-our-story .site-content .robert .position {
       margin: 0; }
-  .page-template-page-our-story .site-content .arrow {
+  .page-template-our-story .site-content .arrow {
     transform: rotate(90deg); }
-  .page-template-page-our-story .site-content .mission-content {
+  .page-template-our-story .site-content .mission-content {
     text-align: center; }
     @media all and (min-width: 600px) {
-      .page-template-page-our-story .site-content .mission-content {
+      .page-template-our-story .site-content .mission-content {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: center;
@@ -1086,53 +1090,53 @@ object {
         width: 100%;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
-        .page-template-page-our-story .site-content .mission-content .arrow {
+        .page-template-our-story .site-content .mission-content .arrow {
           margin-top: 50px;
           height: 50px;
           transform: rotate(0deg); }
-        .page-template-page-our-story .site-content .mission-content .alignnone {
+        .page-template-our-story .site-content .mission-content .alignnone {
           height: 150px; } }
-    .page-template-page-our-story .site-content .mission-content .mission-image {
+    .page-template-our-story .site-content .mission-content .mission-image {
       width: 25%;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       margin: auto; }
-      .page-template-page-our-story .site-content .mission-content .mission-image img {
+      .page-template-our-story .site-content .mission-content .mission-image img {
         width: 100%; }
-      .page-template-page-our-story .site-content .mission-content .mission-image h5 {
+      .page-template-our-story .site-content .mission-content .mission-image h5 {
         width: 100%; }
-  .page-template-page-our-story .site-content .formula-carousel {
+  .page-template-our-story .site-content .formula-carousel {
     margin-bottom: 2rem; }
-    .page-template-page-our-story .site-content .formula-carousel .formulas {
+    .page-template-our-story .site-content .formula-carousel .formulas {
       width: 100%;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: center;
           justify-content: center; }
-    .page-template-page-our-story .site-content .formula-carousel .formula-textimg {
+    .page-template-our-story .site-content .formula-carousel .formula-textimg {
       width: 200px; }
-  .page-template-page-our-story .site-content h5 {
+  .page-template-our-story .site-content h5 {
     font-size: 20px;
     text-transform: uppercase;
     margin-bottom: 0; }
-  .page-template-page-our-story .site-content .mission-text {
+  .page-template-our-story .site-content .mission-text {
     margin: 0 auto;
     width: 310px;
     font-size: 16px;
     font-weight: lighter; }
-  .page-template-page-our-story .site-content .end-content {
+  .page-template-our-story .site-content .end-content {
     margin-bottom: 50px; }
-  .page-template-page-our-story .site-content .end-content-quote {
+  .page-template-our-story .site-content .end-content-quote {
     display: -ms-flexbox;
     display: flex;
     width: 500px;
     margin: 30px auto;
     font-weight: lighter; }
-    .page-template-page-our-story .site-content .end-content-quote .quotation-left {
+    .page-template-our-story .site-content .end-content-quote .quotation-left {
       width: 25%; }
-    .page-template-page-our-story .site-content .end-content-quote .quotation-right {
+    .page-template-our-story .site-content .end-content-quote .quotation-right {
       width: 25%;
       transform: rotate(180deg); }
 
