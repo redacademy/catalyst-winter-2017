@@ -2,7 +2,7 @@
 <?php
 
 /**
-	* Template Name: Thankyou
+	* Template Name: Submit
 	*
 	* @package Catalyst Theme
 	*/
