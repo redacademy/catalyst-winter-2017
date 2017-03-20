@@ -16,11 +16,9 @@ get_header(); ?>
         </p>
     </header>
 </div>
-<div class='intro container'>
-    <p class="intro">
-                <?php echo CFS()->get( 'intro_copy' ); ?>
-    </p>
-</div>
+<p class="intro-copy">
+            <?php echo CFS()->get( 'intro_copy' ); ?>
+</p>
 
 <div class="project-content">
     <?php $posts = get_posts( array( 

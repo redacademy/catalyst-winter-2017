@@ -1,16 +1,22 @@
 .page-template-projects {
-    .banner-text {
-        color: white;
-        width: 380px;
-        margin: 10% auto;
-        text-align: center;
-        font-size: 1.55rem;
-        line-height: 2rem;
-        letter-spacing: 2px;
+    .hero-image-banner {
+        min-width: 100%;
+        @include flex-column(nowrap, center, center);
         @include media($desktop-width) {
-            width: 750px;
-            margin: 2% auto;
+            height: 70vh;
         }
+
+        .entry-title {
+            @include page-title;
+        }
+
+        .banner-text {
+            @include banner-text;
+        }
+    }
+
+    .intro-copy {
+        @include intro-copy;
     }
     .project-content {
         text-align: center;
