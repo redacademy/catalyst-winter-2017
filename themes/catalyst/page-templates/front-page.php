@@ -10,12 +10,16 @@ get_header(); ?>
 
 <section class="front-page">
     <header>
+        <div class="hero-image-banner" data-flickity='{"contain": true, "wrapAround": true, "imagesLoaded": true, "pageDots": false}' >     <?php $banner_array = CFS()->get('fp_gallery');
+            foreach ($banner_array as $image) : ?>
+                <img class="fp-image" src='<?php echo $image['fp_images']; ?>'/>
+            <?php endforeach ?>
+        </div>
         <div class="header-text">
             <h1>we improve the quality of peoples lives</h1>
             <p>We build communities.</p>
             <p>We use real estate to affect social change.</p>
         </div>
-        <div class="hero-image-banner"></div>
     </header>
     <div class="front-content">
         <div class="formula">

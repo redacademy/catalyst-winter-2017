@@ -729,6 +729,19 @@ a {
 .home .front-content {
   margin-bottom: 50px; }
 
+.home .hero-image-banner {
+  min-width: 100%; }
+  @media all and (min-width: 600px) {
+    .home .hero-image-banner {
+      height: 70vh; } }
+  .home .hero-image-banner img {
+    max-width: initial;
+    width: initial;
+    height: 110vh; }
+    @media all and (min-width: 600px) {
+      .home .hero-image-banner img {
+        height: 70vh; } }
+
 .home .header-text {
   margin-top: 250px;
   position: absolute;
@@ -2116,7 +2129,6 @@ object {
     font-size: 1.5rem;
     font-weight: bold;
     color: #323232; }
-
   .page-template-projects .proj-head .status {
     text-transform: uppercase; }
   .page-template-projects .proj-head .break {

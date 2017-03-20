@@ -2,6 +2,21 @@
     .front-content {
         margin-bottom: 50px;
     }
+    .hero-image-banner {
+        min-width: 100%;
+        @include media($desktop-width) {
+            height: 70vh;
+        }
+        img{
+            max-width: initial;
+            width: initial;
+            height: 110vh;
+            @include media($desktop-width) {
+                height: 70vh;
+            }
+        }
+        
+    }
     .header-text {
         margin-top: 250px;
         position: absolute;
