@@ -7,13 +7,27 @@
 	*/
 
 get_header(); ?>
-<div class="hero-image-banner"> </div>
-<p class="banner-text"><?php echo CFS()->get( 'bannertext' ); ?></p>
+<div class="hero-image-banner"> 
+	<header class="entry-header">
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<p class="banner-text">
+			<?php echo CFS()->get( 'bannertext' ); ?>
+		</p>
+	</header><!-- .entry-header -->
+</div>
+<p class="intro-copy">
+	<?php echo CFS()->get( 'intro_copy' ); ?>
+</p>
+
 <div class="page-header-container">
 	<h2 class="page-title">Job Opportunities</h2>
 </div>
 <div class="job-container">
-	<?php while ( have_posts() ) : the_post(); ?>
+	 <?php $posts = get_posts( array( 
+        'post_type' => 'projects', 
+        'order' => 'ASC', 
+    ));
+    foreach ( $posts as $post ) : ?>
 	<div class="job-post">
 		<h3 class='job-title'><?php echo CFS()->get( 'job_title' ); ?> </h3> 
 		<div class="role-container">
@@ -28,7 +42,7 @@ get_header(); ?>
 			<a href="#" class="contact-link">Contact us</a>
 		</div>
 	</div>
-	<?php endwhile; ?>
+	<?php endforeach; ?>
 </div>
 
 <?php get_footer(); ?>
