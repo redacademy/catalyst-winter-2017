@@ -20,20 +20,21 @@ get_header(); ?>
     <div class="front-content">
         <div class="formula">
             <h2>the catalyst formula</h2>
-            <div></div>
+            <p class="catalyst-formula-copy"><?php echo CFS()->get( 'catalyst_formula_copy' ); ?></p>
              <div class="readmore"><a href="">learn more</a></div>
         </div>
 
         <div class="projects">
             <h2>our projects</h2>
-            <p class="proj-desc">Our Goal is to serve people better by offering our real estate development expertise and a share of ownership</p>
+            <p class="our-projects-copy"><?php echo CFS()->get( 'our_projects_copy' ); ?></p>
             <?php get_template_part( 'template-parts/projects-carousel', 'projects carousel' ); ?>
              <div class="readmore"><a>view more projects</a></div>
         </div>
 
         <div class="team">
             <h2>team catalyst</h2>
-            <div></div>
+            <p class="team-catalyst-copy"><?php echo CFS()->get( 'team_catalyst_copy' ); ?></p>
+            <h3 class="small-subheader"><?php echo CFS()->get( 'team_catalyst_subheader' ); ?></h3>
             <div class="readmore"><a>collaborate with us</a></div>
         </div>
     </div>
