@@ -1,7 +1,7 @@
 <?php
 
 /**
-	* Template Name: Projects
+	* Template Name: Projects Archive
 	*
 	* @package Catalyst Theme
 	*/
