@@ -5,7 +5,7 @@
 
 		<h4 class="name"><?php echo CFS()->get('name'); ?></h4>
 		<p class="job-title"><?php echo CFS()->get('job_title'); ?></p>
-		<button class="enter-button" type="button"></button>
+		<button class="enter-button" type="button"><span>+</span></button>
 	</section>
 
 	<section class="profile-popout">
@@ -20,7 +20,7 @@
 			</div>
 
 			<div class="right-column">
-				<button class="exit-button" type="button"></button>
+				<button class="exit-button" type="button"><span>X</span></button>
 
 				<h3 class="tagline"><?php echo CFS()->get('tagline'); ?></h3>
 
