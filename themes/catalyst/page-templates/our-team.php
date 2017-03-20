@@ -16,20 +16,22 @@ get_header(); ?>
 					<p class="banner-text">
 						<?php echo CFS()->get( 'bannertext' ); ?>
 					</p>
-				</div><!-- .entry-header -->
+				</div><!-- .page-header -->
 			</div>
 
-			<?php while ( have_posts() ) : the_post(); ?>
+			<p class="intro-copy">
+                <?php echo CFS()->get( 'intro_copy' ); ?>
+            </p>
 
 				 <div class="staff-profiles-wrapper">
 
                 <?php
-                    $args = array( 'post_type' => 'staff', 'order' => 'DSC', 'numberposts' => -1 );
+                    $args = array( 'post_type' => 'staff', 'order' => 'ASC', 'numberposts' => -1 );
                     $staff_profiles = get_posts( $args ); // returns an array of posts
                 ?>
 
                 <?php foreach ( $staff_profiles as $post ) : setup_postdata( $post ); ?>
-                    <?php get_template_part( 'template-parts/content' 'staff' ); ?>
+                    <?php get_template_part( 'template-parts/content', 'staff' ); ?>
                 <?php endforeach; wp_reset_postdata(); ?>
 
                 </div>
@@ -37,7 +39,7 @@ get_header(); ?>
                 <div class="board-profiles-wrapper">
 
                     <?php
-                        $args = array( 'post_type' => 'board', 'order' => 'DSC', 'numberposts' => -1 );
+                        $args = array( 'post_type' => 'board', 'order' => 'ASC', 'numberposts' => -1 );
                         $board_profiles = get_posts( $args ); // returns an array of posts
                     ?>
 
@@ -50,7 +52,7 @@ get_header(); ?>
                 <div class="advisors-profiles-wrapper">
 
                     <?php
-                        $args = array( 'post_type' => 'advisors', 'order' => 'DSC', 'numberposts' => -1 );
+                        $args = array( 'post_type' => 'advisors', 'order' => 'ASC', 'numberposts' => -1 );
                         $advisor_profiles = get_posts( $args ); // returns an array of posts
                     ?>
 
@@ -59,8 +61,6 @@ get_header(); ?>
                     <?php endforeach; wp_reset_postdata(); ?>
 
                 </div>
-
-			<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
