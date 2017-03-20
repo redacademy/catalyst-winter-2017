@@ -2,7 +2,12 @@
   
     h2 {
         font-weight: 500;
-    }  
+        color: $color__header-main;
+    } 
+    h3,
+    p {
+        color: $color__text-main;
+    } 
   
 .hero-image-banner {
         display: flex;
@@ -43,7 +48,7 @@
     .proj-content {
         margin: 0 1.5rem;
         @include media($desktop-width) {
-            max-width: 700px;
+            width: 80%;
             margin: 0 auto;
         }
         h3 {
@@ -71,6 +76,9 @@
         width: 85%;
         margin: 0 0.5rem;
         opacity: 0.5;
+        @include media ($desktop-width){
+            width: 50%;
+        }
         img {
             width: 100%;
         }
@@ -83,6 +91,7 @@
         text-align: center;
         margin: 0 1rem;
         width: 85%;
+        font-style: italic;
     }
     .quote-text {
         margin-bottom: 2rem;
@@ -91,10 +100,12 @@
         font-weight: bold;
         font-size: 1.3rem;
         margin: 0;
+        color: $color__text-main;
     }
     .line {
         font-style: italic;
         margin: 0;
+        color: $color__text-main;
     }
     .collab-link-container {
         text-align: center;
@@ -124,6 +135,31 @@
         width: 85%;
         margin: 0 0.5rem;
         opacity: 0.5;
+        text-align: center;
+        @include media ($desktop-width){
+            width: 50%;
+        }
+        .project-name,
+        .project-location,
+        .project-status {
+            display: none;
+            @include media ($desktop-width){
+                display: block;
+                margin: 0 auto;
+            }
+            span{
+                display: inline;
+                text-transform: uppercase;
+            }
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+        .project-name{
+            font-weight: bold;
+
+        }
     }
     .is-selected {
         opacity: 1;

@@ -1,13 +1,20 @@
 <?php
 
 /**
-	* Template Name: Projects
+	* Template Name: Projects Archive
 	*
 	* @package Catalyst Theme
 	*/
 
 get_header(); ?>
-<div class="hero-image-banner"></div>
+    <div class="hero-image-banner">
+        <header class="entry-header">
+            <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+            <p class="banner-text">
+                <?php echo CFS()->get( 'bannertext' ); ?>
+            </p>
+        </header><!-- .entry-header -->
+    </div>
 <div class="project-content">
     <?php while ( have_posts() ) : the_post(); ?>
     <div class="project-post">
@@ -17,7 +24,7 @@ get_header(); ?>
             <p>Status: <span class='status'><?php echo CFS()->get('project_status'); ?></span></p>
         </div>
         <div class="img-container">
-            <img class='project-image' src='<?php echo CFS()->get('banner_image'); ?>'>
+            <img class='project-image' src='<?php echo CFS()->get('heroimage'); ?>'>
         </div>
     
 
