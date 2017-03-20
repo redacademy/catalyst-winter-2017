@@ -23,7 +23,9 @@ get_header(); ?>
 			<p class="responsibilities">responsibilities:</p>
 			<?php echo CFS()->get( 'responsibilities' ); ?>   
 		</div>
-		<a href="#" class="contact-link">Contact us</a>
+		<div class='link-container'>
+			<a href="#" class="contact-link">Contact us</a>
+		</div>
 	</div>
 	<?php endwhile; ?>
 </div>
