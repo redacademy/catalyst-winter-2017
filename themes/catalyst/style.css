@@ -1223,6 +1223,8 @@ object {
       display: flex;
       -ms-flex-pack: center;
           justify-content: center; } }
+  .page-template-news .content-post .MediaCard-borderOverlay {
+    display: none; }
   .page-template-news .twitter {
     padding: 10px 20px; }
   .page-template-news .article {

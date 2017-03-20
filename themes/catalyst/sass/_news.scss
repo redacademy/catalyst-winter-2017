@@ -62,17 +62,20 @@
             border: 3px solid black;
             text-decoration: none;
             color: black;
-            &:hover{
+            &:hover {
                 border: 3px solid #8ED7FF;
                 box-shadow: 1px 1px 5px $color__header-main;
             }
-
         }
     }
     .content-post {
-         @include media($desktop-width) {
-        display: flex;
-        justify-content: center;}
+        @include media($desktop-width) {
+            display: flex;
+            justify-content: center;
+        }
+        .MediaCard-borderOverlay {
+            display: none;
+        }
     }
     .twitter {
         padding: 10px 20px;
@@ -80,7 +83,7 @@
     .article {
         padding: 10px 20px;
     }
-    .EmbeddedTweet-tweet{
+    .EmbeddedTweet-tweet {
         background-color: black;
     }
 }
