@@ -381,18 +381,6 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-/* Links */
-a {
-  color: royalblue; }
-  a:visited {
-    color: purple; }
-  a:hover, a:focus, a:active {
-    color: purple; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
-
 /* Menus */
 .main-navigation {
   clear: both;
@@ -476,7 +464,7 @@ a {
     height: 100px; }
     @media all and (min-width: 600px) {
       .container .logo {
-        width: 30%; } }
+        width: 20%; } }
   .container .header-logo {
     background: url("../../images/full-logo.svg") no-repeat;
     background-size: 100%;
@@ -490,13 +478,19 @@ a {
     text-indent: 193%; }
     @media all and (min-width: 600px) {
       .container .header-logo {
-        height: 100px; } }
+        margin: 20px auto;
+        width: 110px; } }
+    @media all and (min-width: 845px) {
+      .container .header-logo {
+        height: 100px;
+        margin: 15px auto;
+        width: 145px; } }
   .container .top-menu {
     z-index: 1;
     width: 50%; }
     @media all and (min-width: 600px) {
       .container .top-menu {
-        width: 70%; } }
+        width: 80%; } }
   .container .desktop-menu {
     visibility: hidden;
     height: 0; }
@@ -509,21 +503,36 @@ a {
       display: flex;
       -ms-flex-pack: end;
           justify-content: flex-end;
-      margin: 0 auto; }
+      margin: 0 auto;
+      padding-top: 45px; }
       .container .desktop-menu #primary-menu ul {
         padding-top: 45px;
         overflow: hidden;
         height: 70px; }
-      .container .desktop-menu #primary-menu .page_item {
-        margin-right: 25px;
-        text-transform: uppercase; }
-        .container .desktop-menu #primary-menu .page_item a {
-          color: #323232;
-          font-size: 15px; }
-          .container .desktop-menu #primary-menu .page_item a:active {
-            color: #935E32; }
-          .container .desktop-menu #primary-menu .page_item a:hover {
-            color: #00A4FF; }
+      .container .desktop-menu #primary-menu li {
+        padding: 0 12px; }
+      .container .desktop-menu #primary-menu li.current-menu-item a {
+        color: #935E32; }
+      .container .desktop-menu #primary-menu a {
+        text-transform: uppercase;
+        color: #323232;
+        font-size: 15px; }
+        @media all and (min-width: 600px) {
+          .container .desktop-menu #primary-menu a {
+            font-size: 9px; } }
+        @media all and (min-width: 660px) {
+          .container .desktop-menu #primary-menu a {
+            font-size: 11px; } }
+        @media all and (min-width: 750px) {
+          .container .desktop-menu #primary-menu a {
+            font-size: 13px; } }
+        @media all and (min-width: 845px) {
+          .container .desktop-menu #primary-menu a {
+            font-size: 15px; } }
+        .container .desktop-menu #primary-menu a:active {
+          color: #935E32; }
+        .container .desktop-menu #primary-menu a:hover {
+          color: #00A4FF; }
   .container .hamburger-menu {
     display: -ms-flexbox;
     display: flex;
@@ -605,11 +614,11 @@ a {
     display: flex;
     -ms-flex-pack: center;
         justify-content: center;
-    min-width: 320px; }
+    min-width: 358px; }
   .footer .footerLogo {
-    background: url("../../images/logo.svg") no-repeat;
+    background: url("../../images/logo.png") no-repeat;
     background-size: 100%;
-    width: 20px; }
+    width: 15px; }
   .footer .sns-icon {
     display: -ms-flexbox;
     display: flex;
@@ -621,9 +630,13 @@ a {
       margin: 0 5px; }
     @media all and (min-width: 600px) {
       .footer .sns-icon {
+        padding-left: 17px;
         width: 20%; }
         .footer .sns-icon a {
           padding-right: 10px; } }
+    @media all and (min-width: 600px) {
+      .footer .sns-icon {
+        padding-left: 0; } }
     @media all and (min-width: 900px) {
       .footer .sns-icon {
         width: 25%; } }
@@ -712,13 +725,17 @@ a {
       font-size: 10px;
       font-weight: 100;
       line-height: 12px;
-      margin: 0; }
+      margin: 0 auto; }
       @media all and (min-width: 600px) {
         .footer .company-info p {
           font-size: 14px;
           line-height: 15px; } }
+      @media all and (min-width: 668px) {
+        .footer .company-info p {
+          width: 368px; } }
       @media all and (min-width: 900px) {
         .footer .company-info p {
+          width: 100%;
           font-size: 16px;
           line-height: 24px; } }
       @media all and (min-width: 1120px) {
@@ -729,12 +746,37 @@ a {
 .home .front-content {
   margin-bottom: 50px; }
 
+.home header {
+  position: relative; }
+
+.home .hero-image-banner {
+  min-width: 100%; }
+  @media all and (min-width: 600px) {
+    .home .hero-image-banner {
+      height: 70vh; } }
+  .home .hero-image-banner img {
+    max-width: initial;
+    width: 100%;
+    height: 110vh; }
+    @media all and (min-width: 600px) {
+      .home .hero-image-banner img {
+        height: 70vh; } }
+
 .home .header-text {
-  margin-top: 250px;
-  position: absolute;
+  font-size: 1.5rem;
   color: white;
+  width: 380px;
   text-align: center;
-  width: 100%; }
+  line-height: 2rem;
+  letter-spacing: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  text-shadow: 1px 2px 5px #323232; }
+  @media all and (min-width: 600px) {
+    .home .header-text {
+      width: 750px; } }
   .home .header-text h1 {
     text-transform: uppercase;
     font-weight: lighter;
@@ -748,11 +790,6 @@ a {
     font-size: 25px;
     font-weight: lighter;
     margin: 0; }
-
-.home .home-hero {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 100%, rgba(0, 0, 0, 0.5) 100%), url("../../images/front-hero-sample.png") no-repeat center 100%;
-  background-size: contain, cover;
-  height: 700px; }
 
 .home h2 {
   text-transform: uppercase;
@@ -971,114 +1008,180 @@ object {
 .gallery-caption {
   display: block; }
 
-.page-template-page-our-story .hero-image-banner {
+.page-template-our-story .hero-image-banner {
   color: white;
   text-align: center;
   position: relative; }
 
-.page-template-page-our-story .entry-title {
-  margin: 0;
-  padding-top: 150px;
-  font-size: 60px;
+.page-template-our-story .entry-title {
+  font-size: 3.5rem;
+  color: white;
+  text-align: center;
   text-transform: uppercase;
-  font-weight: lighter;
-  text-shadow: 1px 2px black; }
-
-.page-template-page-our-story .header-text {
-  position: absolute;
-  top: 10%;
-  left: 15%; }
+  text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 600px) {
-    .page-template-page-our-story .header-text {
+    .page-template-our-story .entry-title {
+      margin: 0 0 1.5rem;
+      font-size: 3.85rem; } }
+  @media all and (min-width: 600px) {
+    .page-template-our-story .entry-title {
+      padding-top: 150px; } }
+
+.page-template-our-story .header-text {
+  position: absolute;
+  top: 20%;
+  left: 8%; }
+  @media all and (min-width: 600px) {
+    .page-template-our-story .header-text {
       position: initial; } }
 
-.page-template-page-our-story .bannertext {
-  font-size: 20px;
-  font-weight: lighter;
-  width: 400px;
-  margin: auto;
-  padding-top: 29px;
-  font-size: 26px;
-  line-height: 27px;
-  text-shadow: 1px 2px black; }
+.page-template-our-story .bannertext {
+  font-size: 1.5rem;
+  color: white;
+  width: 380px;
+  margin: 10% auto;
+  text-align: center;
+  line-height: 2rem;
+  letter-spacing: 2px;
+  text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 600px) {
-    .page-template-page-our-story .bannertext {
-      width: 100%;
-      padding-top: 29px;
-      font-size: 26px;
-      line-height: 27px; } }
+    .page-template-our-story .bannertext {
+      width: 750px;
+      margin: 2% auto; } }
 
-.page-template-page-our-story .site-content {
+.page-template-our-story .site-content {
   text-align: center; }
-  .page-template-page-our-story .site-content .entry-header {
+  .page-template-our-story .site-content .entry-header {
     visibility: hidden;
     height: 1px; }
-  .page-template-page-our-story .site-content .top-text {
+  .page-template-our-story .site-content .top-text {
     text-align: center;
-    font-size: 18px;
-    margin: auto; }
+    font-size: 20px;
+    margin: 30px auto;
+    width: 280px;
+    font-weight: 100;
+    line-height: 25px; }
     @media all and (min-width: 600px) {
-      .page-template-page-our-story .site-content .top-text {
+      .page-template-our-story .site-content .top-text {
         width: 100%;
         font-size: 22px;
         font-weight: lighter; } }
-  .page-template-page-our-story .site-content a {
+  .page-template-our-story .site-content a {
     padding: 20px 50px;
     text-transform: uppercase;
     border: 1px solid black;
     text-decoration: none;
     color: black; }
     @media all and (min-width: 600px) {
-      .page-template-page-our-story .site-content a {
+      .page-template-our-story .site-content a {
         border: 3px solid black; } }
-  .page-template-page-our-story .site-content h2 {
-    font-size: 45px;
+    .page-template-our-story .site-content a:hover {
+      border-color: #D9F1FF;
+      box-shadow: 1px 1px 5px #323232; }
+    .page-template-our-story .site-content a.active {
+      background-color: #D9F1FF; }
+  .page-template-our-story .site-content h2 {
+    font-size: 50px;
     text-transform: uppercase;
-    font-weight: lighter;
+    font-weight: 400;
     background-color: #D9F1FF;
     padding: 20px 0;
     text-align: center;
     line-height: 50px; }
-  .page-template-page-our-story .site-content h3 {
+  .page-template-our-story .site-content h3 {
     text-align: center;
     font-size: 35px;
     font-weight: lighter;
     margin: auto;
     line-height: 35px; }
     @media all and (min-width: 600px) {
-      .page-template-page-our-story .site-content h3 {
+      .page-template-our-story .site-content h3 {
         font-size: 50px;
         line-height: 55px;
         margin-bottom: 50px; } }
-  .page-template-page-our-story .site-content .mission-quote {
+  .page-template-our-story .site-content .mission-quote,
+  .page-template-our-story .site-content .mission-quote2 {
     display: -ms-flexbox;
     display: flex;
+    padding: 61px;
     margin: 30px auto;
-    font-weight: lighter; }
-    .page-template-page-our-story .site-content .mission-quote .quotation-left {
-      width: 25%; }
-    .page-template-page-our-story .site-content .mission-quote .quotation-right {
-      width: 25%;
-      transform: rotate(180deg); }
+    font-weight: lighter;
+    position: relative; }
     @media all and (min-width: 600px) {
-      .page-template-page-our-story .site-content .mission-quote {
+      .page-template-our-story .site-content .mission-quote,
+      .page-template-our-story .site-content .mission-quote2 {
         margin: 0 auto;
         font-size: 20px; } }
-  .page-template-page-our-story .site-content .quote {
+    .page-template-our-story .site-content .mission-quote .quote,
+    .page-template-our-story .site-content .mission-quote2 .quote {
+      z-index: 1;
+      width: 320px;
+      text-align: center;
+      margin: auto;
+      font-size: 18px; }
+      @media all and (min-width: 600px) {
+        .page-template-our-story .site-content .mission-quote .quote,
+        .page-template-our-story .site-content .mission-quote2 .quote {
+          font-size: 20px;
+          width: 100%; } }
+    .page-template-our-story .site-content .mission-quote .quotation-left,
+    .page-template-our-story .site-content .mission-quote2 .quotation-left {
+      position: absolute;
+      margin: 0 auto;
+      bottom: 87%;
+      right: 80%;
+      font-size: 300px;
+      color: #D9F1FF;
+      width: 25%;
+      transform: rotate(180deg); }
+    .page-template-our-story .site-content .mission-quote .quotation-right,
+    .page-template-our-story .site-content .mission-quote2 .quotation-right {
+      position: absolute;
+      top: 82%;
+      margin: 0 auto;
+      left: 76%;
+      font-size: 300px;
+      color: #D9F1FF;
+      width: 25%; }
+  @media all and (min-width: 600px) {
+    .page-template-our-story .site-content .mission-quote .quotation-left {
+      right: 80%; } }
+  @media all and (min-width: 600px) {
+    .page-template-our-story .site-content .mission-quote .quotation-right {
+      left: 77%; } }
+  .page-template-our-story .site-content .quote {
     text-align: center; }
-  .page-template-page-our-story .site-content .robert {
+  .page-template-our-story .site-content .robert {
     margin-bottom: 60px;
     text-align: center; }
-    .page-template-page-our-story .site-content .robert h4 {
+    .page-template-our-story .site-content .robert h4 {
       margin: 0; }
-    .page-template-page-our-story .site-content .robert .position {
+    .page-template-our-story .site-content .robert .position {
       margin: 0; }
-  .page-template-page-our-story .site-content .arrow {
+  .page-template-our-story .site-content .arrow {
     transform: rotate(90deg); }
-  .page-template-page-our-story .site-content .mission-content {
-    text-align: center; }
+  .page-template-our-story .site-content .rent {
+    margin: 0; }
+    .page-template-our-story .site-content .rent .rent-title {
+      margin: 0; }
+    .page-template-our-story .site-content .rent img {
+      margin-bottom: 50px; }
+  .page-template-our-story .site-content .mission-text {
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: lighter;
+    width: 80%;
+    margin-bottom: 20px; }
     @media all and (min-width: 600px) {
-      .page-template-page-our-story .site-content .mission-content {
+      .page-template-our-story .site-content .mission-text {
+        width: 260px;
+        margin-bottom: 0; } }
+  .page-template-our-story .site-content .mission-content {
+    text-align: center; }
+    .page-template-our-story .site-content .mission-content .arrow {
+      margin-bottom: 10px; }
+    @media all and (min-width: 600px) {
+      .page-template-our-story .site-content .mission-content {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: center;
@@ -1086,55 +1189,54 @@ object {
         width: 100%;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
-        .page-template-page-our-story .site-content .mission-content .arrow {
+        .page-template-our-story .site-content .mission-content .arrow {
           margin-top: 50px;
           height: 50px;
-          transform: rotate(0deg); }
-        .page-template-page-our-story .site-content .mission-content .alignnone {
-          height: 150px; } }
-    .page-template-page-our-story .site-content .mission-content .mission-image {
-      width: 25%;
+          transform: rotate(0deg); } }
+    .page-template-our-story .site-content .mission-content .mission-image {
+      width: 100%;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-      margin: auto; }
-      .page-template-page-our-story .site-content .mission-content .mission-image img {
+      margin: 0 auto; }
+      @media all and (min-width: 600px) {
+        .page-template-our-story .site-content .mission-content .mission-image {
+          width: 25%; } }
+      .page-template-our-story .site-content .mission-content .mission-image img {
+        width: 100%;
+        height: 180px; }
+      .page-template-our-story .site-content .mission-content .mission-image h5 {
         width: 100%; }
-      .page-template-page-our-story .site-content .mission-content .mission-image h5 {
-        width: 100%; }
-  .page-template-page-our-story .site-content .formula-carousel {
-    margin-bottom: 2rem; }
-    .page-template-page-our-story .site-content .formula-carousel .formulas {
-      width: 100%;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: center;
-          justify-content: center; }
-    .page-template-page-our-story .site-content .formula-carousel .formula-textimg {
-      width: 200px; }
-  .page-template-page-our-story .site-content h5 {
-    font-size: 20px;
-    text-transform: uppercase;
-    margin-bottom: 0; }
-  .page-template-page-our-story .site-content .mission-text {
-    margin: 0 auto;
-    width: 310px;
+  .page-template-our-story .site-content .formula-p {
+    width: 90%;
+    margin: auto; }
+  .page-template-our-story .site-content .formula-text {
     font-size: 16px;
-    font-weight: lighter; }
-  .page-template-page-our-story .site-content .end-content {
-    margin-bottom: 50px; }
-  .page-template-page-our-story .site-content .end-content-quote {
+    line-height: 28px;
+    font-weight: 100; }
+    @media all and (min-width: 600px) {
+      .page-template-our-story .site-content .formula-text {
+        font-size: 24px; } }
+  .page-template-our-story .site-content .formula-carousel {
     display: -ms-flexbox;
     display: flex;
-    width: 500px;
-    margin: 30px auto;
-    font-weight: lighter; }
-    .page-template-page-our-story .site-content .end-content-quote .quotation-left {
-      width: 25%; }
-    .page-template-page-our-story .site-content .end-content-quote .quotation-right {
-      width: 25%;
-      transform: rotate(180deg); }
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 2rem;
+    width: 100%; }
+    .page-template-our-story .site-content .formula-carousel .formulas {
+      width: 10%; }
+    .page-template-our-story .site-content .formula-carousel .formula-textimg p {
+      font-size: 12px; }
+  .page-template-our-story .site-content h5 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 5px; }
+  .page-template-our-story .site-content .end-content {
+    margin-bottom: 50px; }
 
 .page-template-our-team {
   height: 100%;
@@ -1356,38 +1458,17 @@ object {
   .page-template-news .entry-content {
     text-align: center; }
   .page-template-news .entry-title {
-    text-shadow: 1px 2px 5px #323232;
-    position: absolute;
-    left: 39%;
-    top: 11%;
-    width: 120px;
-    line-height: 60px;
+    font-size: 3.5rem;
+    color: white;
     text-align: center;
-    padding-top: 100px;
-    font-size: 40px;
-    font-weight: 500;
     text-transform: uppercase;
-    color: white; }
+    text-shadow: 1px 2px 5px #323232;
+    padding-top: 150px; }
     @media all and (min-width: 600px) {
       .page-template-news .entry-title {
-        font-size: 3.5rem;
-        color: white;
-        text-align: center;
-        text-transform: uppercase;
-        text-shadow: 1px 2px 5px #323232;
-        width: 100%;
-        position: initial;
-        margin: 0; } }
-  @media all and (min-width: 600px) and (min-width: 600px) {
-    .page-template-news .entry-title {
-      margin: 0 0 1.5rem;
-      font-size: 3.85rem; } }
+        margin: 0 0 1.5rem;
+        font-size: 3.85rem; } }
   .page-template-news .entry-subtitle {
-    position: absolute;
-    width: 250px;
-    top: 55%;
-    left: 32%;
-    color: white;
     font-size: 1.5rem;
     color: white;
     width: 380px;
@@ -1395,18 +1476,11 @@ object {
     text-align: center;
     line-height: 2rem;
     letter-spacing: 2px;
-    text-shadow: 1px 2px 5px #323232;
-    margin: 0; }
+    text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 600px) {
       .page-template-news .entry-subtitle {
         width: 750px;
         margin: 2% auto; } }
-    @media all and (min-width: 600px) {
-      .page-template-news .entry-subtitle {
-        width: 100%;
-        position: initial;
-        font-size: 30px;
-        text-align: center; } }
   .page-template-news .entry-header {
     display: none; }
   .page-template-news h2 {
@@ -1432,20 +1506,8 @@ object {
       .page-template-news .load-more a:hover {
         border: 3px solid #8ED7FF;
         box-shadow: 1px 1px 5px #323232; }
-  @media all and (min-width: 600px) {
-    .page-template-news .content-post {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: center;
-          justify-content: center; } }
-  .page-template-news .content-post .MediaCard-borderOverlay {
-    display: none; }
-  .page-template-news .twitter {
-    padding: 10px 20px; }
-  .page-template-news .article {
-    padding: 10px 20px; }
-  .page-template-news .EmbeddedTweet-tweet {
-    background-color: black; }
+  .page-template-news .video {
+    height: 300px; }
 
 .page-template-collaborate {
   height: 100%;

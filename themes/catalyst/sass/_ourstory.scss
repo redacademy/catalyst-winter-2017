@@ -1,40 +1,26 @@
-.page-template-page-our-story {
+.page-template-our-story {
     .hero-image-banner {
         color: white;
         text-align: center;
         position: relative;
     }
     .entry-title {
-        margin: 0;
-        padding-top: 150px;
-        font-size: 60px;
-        text-transform: uppercase;
-        font-weight: lighter;
-        text-shadow: 1px 2px black;
+        @include page-title;
+        @include media($desktop-width) {
+            padding-top: 150px;
+        }
     }
     .header-text {
         position: absolute;
-        top: 10%;
-        left: 15%;
+        top: 20%;
+        left: 8%;
         @include media($desktop-width) {
             position: initial;
         }
     }
     .bannertext {
-        font-size: 20px;
-        font-weight: lighter;
-        width: 400px;
-        margin: auto;
-        padding-top: 29px;
-        font-size: 26px;
-        line-height: 27px;
-        text-shadow: 1px 2px black;
-        @include media($desktop-width) {
-            width: 100%;
-            padding-top: 29px;
-            font-size: 26px;
-            line-height: 27px;
-        }
+        @include banner-text;
+        @include media($desktop-width) {}
     }
     .site-content {
         text-align: center;
@@ -44,9 +30,11 @@
         }
         .top-text {
             text-align: center;
-            font-size: 18px;
-            // width: 500px;
-            margin: auto;
+            font-size: 20px;
+            margin: 30px auto;
+            width: 280px;
+            font-weight: 100;
+            line-height: 25px;
             @include media($desktop-width) {
                 width: 100%;
                 font-size: 22px;
@@ -59,14 +47,22 @@
             border: 1px solid black;
             text-decoration: none;
             color: black;
+
             @include media($desktop-width) {
                 border: 3px solid black;
             }
+              &:hover{
+                border-color: $color__brand-blue;
+                box-shadow: 1px 1px 5px $color__header-main;
+            }
+              &.active{
+                background-color: $color__brand-blue;
+            }
         }
         h2 {
-            font-size: 45px;
+            font-size: 50px;
             text-transform: uppercase;
-            font-weight: lighter;
+            font-weight: 400;
             background-color: $color__brand-blue;
             padding: 20px 0;
             text-align: center;
@@ -76,31 +72,66 @@
             text-align: center;
             font-size: 35px;
             font-weight: lighter;
-            // width: 487px;
             margin: auto;
             line-height: 35px;
             @include media($desktop-width) {
                 font-size: 50px;
                 line-height: 55px;
-                // width: 700px;
                 margin-bottom: 50px;
             }
         }
-        .mission-quote {
+        .mission-quote,
+        .mission-quote2 {
             display: flex;
-            // width: 500px;
+            padding: 61px;
             margin: 30px auto;
             font-weight: lighter;
-            .quotation-left {
-                width: 25%;
-            }
-            .quotation-right {
-                width: 25%;
-                transform: rotate(180deg);
-            }
+            position: relative;
             @include media($desktop-width) {
                 margin: 0 auto;
                 font-size: 20px;
+            }
+            .quote {
+                z-index: 1;
+                width: 320px;
+                text-align: center;
+                margin: auto;
+                font-size: 18px;
+                @include media($desktop-width) {
+                    font-size: 20px;
+                    width: 100%;
+                }
+            }
+            .quotation-left {
+                position: absolute;
+                margin: 0 auto;
+                bottom: 87%;
+                right: 80%;
+                font-size: 300px;
+                color: $color__brand-blue;
+                width: 25%;
+                transform: rotate(180deg);
+            }
+            .quotation-right {
+                position: absolute;
+                top: 82%;
+                margin: 0 auto;
+                left: 76%;
+                font-size: 300px;
+                color: $color__brand-blue;
+                width: 25%;
+            }
+        }
+        .mission-quote {
+            .quotation-left {
+                @include media($desktop-width) {
+                    right: 80%;
+                }
+            }
+            .quotation-right {
+                @include media($desktop-width) {
+                    left: 77%;
+                }
             }
         }
         .quote {
@@ -119,8 +150,31 @@
         .arrow {
             transform: rotate(90deg);
         }
+        .rent {
+            margin: 0;
+            .rent-title {
+                margin: 0;
+            }
+            img {
+                margin-bottom: 50px;
+            }
+        }
+        .mission-text {
+            margin: 0 auto;
+            font-size: 16px;
+            font-weight: lighter;
+            width: 80%;
+            margin-bottom: 20px;
+            @include media($desktop-width) {
+                width: 260px;
+                margin-bottom: 0;
+            }
+        }
         .mission-content {
             text-align: center;
+            .arrow {
+                margin-bottom: 10px;
+            }
             @include media($desktop-width) {
                 display: flex;
                 justify-content: center;
@@ -131,63 +185,59 @@
                     height: 50px;
                     transform: rotate(0deg);
                 }
-                .alignnone {
-                    height: 150px;
-                }
             }
             .mission-image {
-                width: 25%;
+                width: 100%;
                 display: flex;
                 flex-wrap: wrap;
-                    margin: auto;
+                margin: 0 auto;
+                @include media($desktop-width) {
+                    width: 25%;
+                }
                 img {
                     width: 100%;
+                    height: 180px;
                 }
                 h5 {
                     width: 100%;
                 }
             }
         }
-        .formula-carousel{
+        .formula-p {
+            width: 90%;
+            margin: auto;
+        }
+        .formula-text {
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 100;
+            @include media($desktop-width) {
+                font-size: 24px;
+            }
+        }
+        .formula-carousel {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
             margin-bottom: 2rem;
+            width: 100%;
             .formulas {
-                width: 100%;
-                display: flex;
-                justify-content: center;
+                width: 10%;
             }
             .formula-textimg {
-                width: 200px
+                p {
+                    font-size: 12px;
+                }
             }
         }
         h5 {
             font-size: 20px;
             text-transform: uppercase;
-            margin-bottom: 0;
-        }
-        .mission-text {
-            margin: 0 auto;
-            width: 310px;
-            font-size: 16px;
-            font-weight: lighter;
+            margin-bottom: 5px;
         }
         .end-content {
             margin-bottom: 50px;
         }
-        .end-content-quote {
-            display: flex;
-            width: 500px;
-            margin: 30px auto;
-            font-weight: lighter;
-            .quotation-left {
-                width: 25%;
-            }
-            .quotation-right {
-                width: 25%;
-                transform: rotate(180deg);
-            }
-            @include media($desktop-width) {
-                // width: 989px;
-            }
-        }
+
     }
 }

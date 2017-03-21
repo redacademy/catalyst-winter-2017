@@ -3,40 +3,41 @@
     .entry-content {
         text-align: center;
     }
-    .entry-title {
-        @include header-text-shadow;
-        position: absolute;
-        left: 39%;
-        top: 11%;
-        width: 120px;
-        line-height: 60px;
-        text-align: center;
-        padding-top: 100px;
-        font-size: 40px;
-        font-weight: 500;
-        text-transform: uppercase;
-        color: white;
-        @include media($desktop-width) {
-            @include page-title;
-            width: 100%;
-            position: initial;
-            margin: 0;
-        }
+    .entry-title{
+        @include  page-title;
+        padding-top: 150px;
+        // position: absolute;
+        // left: 39%;
+        // top: 11%;
+        // width: 120px;
+        // line-height: 60px;
+        // text-align: center;
+        // padding-top: 100px;
+        // font-size: 40px;
+        // font-weight: 500;
+        // text-transform: uppercase;
+        // color: white;
+        // @include media($desktop-width) {
+        //     @include page-title;
+        //     // width: 100%;
+        //     // position: initial;
+        //     // margin: 0;
+        // }
     }
     .entry-subtitle {
-        position: absolute;
-        width: 250px;
-        top: 55%;
-        left: 32%;
-        color: white;
+        // position: absolute;
+        // width: 250px;
+        // top: 55%;
+        // left: 32%;
+        // color: white;
         @include banner-text;
-        margin: 0;
-        @include media($desktop-width) {
-            width: 100%;
-            position: initial;
-            font-size: 30px;
-            text-align: center;
-        }
+        // margin: 0;
+        // @include media($desktop-width) {
+        //     width: 100%;
+        //     position: initial;
+        //     font-size: 30px;
+        //     text-align: center;
+        // }
     }
     .entry-header {
         display: none;
@@ -68,22 +69,7 @@
             }
         }
     }
-    .content-post {
-        @include media($desktop-width) {
-            display: flex;
-            justify-content: center;
-        }
-        .MediaCard-borderOverlay {
-            display: none;
-        }
-    }
-    .twitter {
-        padding: 10px 20px;
-    }
-    .article {
-        padding: 10px 20px;
-    }
-    .EmbeddedTweet-tweet {
-        background-color: black;
-    }
+   .video{
+       height: 300px;
+   }
 }

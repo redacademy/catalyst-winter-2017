@@ -24,15 +24,10 @@ get_header(); ?>
 				<p class="entry-subtitle"><?php echo CFS()->get('bannertext'); ?></p>
             </div>
         </header>
-
-        <?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
-
-			<?php endwhile; // End of the loop. ?>
-
+		<div class="video">youtube</div>
+		<?php get_sidebar(); ?>
+		<div class="load-more"><a>load more</a></div>
         </main> <!--#main -->
 	</div> <!--#primary -->
-
 
 <?php get_footer(); ?>

@@ -6,7 +6,7 @@
         $(".mobile-menu").slideToggle("slow", function () {
             $(".hamburger").hide();
             $(".cross").show();
-             $(".list").show().css("width", "400px");
+            $(".list").show().css("width", "400px");
         });
     });
 
@@ -32,5 +32,6 @@
         var thisPopout = $staffProfilePopouts[buttonIndex];
         thisPopout.classList.remove( 'profile-popout' );
     });
+
 
 })(jQuery);
