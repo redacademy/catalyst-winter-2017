@@ -76,11 +76,17 @@
         width: 85%;
         margin: 0 0.5rem;
         opacity: 0.5;
+        height: 300px;
+        overflow: hidden;
         @include media ($desktop-width){
             width: 50%;
+            height: 500px;
         }
         img {
-            width: 100%;
+            width: auto;
+            height: 100%;
+            max-width: none;
+
         }
 
     }

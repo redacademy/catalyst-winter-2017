@@ -2502,12 +2502,17 @@ object {
 .single-projects .images {
   width: 85%;
   margin: 0 0.5rem;
-  opacity: 0.5; }
+  opacity: 0.5;
+  height: 300px;
+  overflow: hidden; }
   @media all and (min-width: 600px) {
     .single-projects .images {
-      width: 50%; } }
+      width: 50%;
+      height: 500px; } }
   .single-projects .images img {
-    width: 100%; }
+    width: auto;
+    height: 100%;
+    max-width: none; }
 
 .single-projects .quote-carousel {
   margin: 2rem 0; }
