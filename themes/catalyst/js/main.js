@@ -1,20 +1,20 @@
 (function ($) {
 
-    $(".cross").hide();
-    $(".mobile-menu").hide();
-    $(".hamburger").click(function () {
-        $(".mobile-menu").slideToggle("slow", function () {
-            $(".hamburger").hide();
-            $(".cross").show();
-            $(".list").show().css("width", "400px");
+    $('.cross').hide();
+    $('.mobile-menu').hide();
+    $('.hamburger').click(function () {
+        $('.mobile-menu').slideToggle('slow', function () {
+            $('.hamburger').hide();
+            $('.cross').show();
+            $('.list').show().css('width', '400px');
         });
     });
 
-    $(".cross").click(function () {
-        $(".mobile-menu").slideToggle("slow", function () {
-            $(".cross").hide();
-            $(".hamburger").show();
-            $(".list").hide();
+    $('.cross').click(function () {
+        $('.mobile-menu').slideToggle('slow', function () {
+            $('.cross').hide();
+            $('.hamburger').show();
+            $('.list').hide();
         });
     });
 
@@ -24,7 +24,7 @@
     var $staffEnterButtons = $( '.staff-enter-button' );
     var $boardEnterButtons = $( '.board-enter-button' );
     var $staffExitButton = $( '.staff-exit-button' );
-    
+
     $staffExitButton.hide();
     // var $boardExitButton = $( '.board-exit-button' );
 
@@ -42,7 +42,7 @@
 
     var $advisorsProfilesWrapper = $( '.advisors-profiles-wrapper' );
     var $introCopy = $( '.intro-copy' );
-     
+
     $staffEnterButtons.click(function(){
         var buttonIndex = jQuery.inArray( this, $staffEnterButtons );
         var thisPopout = $staffProfilePopouts[buttonIndex];
@@ -51,7 +51,7 @@
         $boardProfilesWrapper.animate({opacity: 0.25}, 130);
         $advisorsProfilesWrapper.animate({opacity: 0.25}, 130);
         $introCopy.animate({opacity: 0.25}, 130);
-        
+
         $staffProfilesHeader.hide();
         $staffProfilePreviews.hide();
         $staffProfilesWrapper.css('margin-top', '-0.75rem');
@@ -76,7 +76,7 @@
         $staffProfilesWrapper.animate({opacity: 0.25}, 130);
         $advisorsProfilesWrapper.animate({opacity: 0.25}, 130);
         $introCopy.animate({opacity: 0.25}, 130);
-        
+
         $( '.board-profiles-wrapper > .small-header:nth-child(1)' ).hide();
         $boardProfilePreviews.toggleClass( 'hide' );
         thisPopout.toggleClass( 'show-popout' );

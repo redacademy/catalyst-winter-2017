@@ -25,7 +25,12 @@ get_header(); ?>
 
 <h2>link to other stories</h2>
 <div class="newsmedia-content">
-	<?php get_sidebar(); ?>
+	<div class="newsmedia-twitter">
+	<div class="twitter1"><?php echo CFS()->get( 'twitter_post1' ); ?></div>
+	<div class="twitter2"><?php echo CFS()->get( 'twitter_post2' ); ?></div>
+	<div class="twitter3"><?php echo CFS()->get( 'twitter_post3' ); ?></div>
+	</div>
+
 	<div class="newsmedia-article">
 		<?php
 			$args = array(
@@ -37,7 +42,9 @@ get_header(); ?>
 		<?php foreach ( $newsmedia_article as $newsmedia ) : setup_postdata( $newsmedia ); ?>
 			<div class="<?php echo $newsmedia_article->name ?>">
        	 	<?php echo get_the_post_thumbnail( $newsmedia ) ?>
-            <?php get_template_part( 'template-parts/content', 'newsmedia_type' ); ?>
+			<p><?php red_starter_posted_on(); ?></p>
+			<h3><?php echo get_the_title( $newsmedia ) ?></h3>
+            <p><?php get_template_part( 'template-parts/content', 'newsmedia_type' ); ?></p>
 			</div>
         <?php endforeach; wp_reset_postdata(); ?>
 	</div>
