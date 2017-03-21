@@ -1202,18 +1202,19 @@ object {
       .page-template-our-story .site-content .formula-text {
         font-size: 24px; } }
   .page-template-our-story .site-content .formula-carousel {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     margin-bottom: 2rem;
     width: 100%; }
     .page-template-our-story .site-content .formula-carousel .formulas {
-      width: 10%; }
-    .page-template-our-story .site-content .formula-carousel .formula-textimg p {
-      font-size: 12px; }
+      width: 40%;
+      display: block; }
+    .page-template-our-story .site-content .formula-carousel .img {
+      vertical-align: middle;
+      width: 85%; }
+    .page-template-our-story .site-content .formula-carousel .fill {
+      vertical-align: middle;
+      width: 15%; }
+    .page-template-our-story .site-content .formula-carousel .formula-text {
+      width: 85%; }
   .page-template-our-story .site-content h5 {
     font-size: 20px;
     text-transform: uppercase;

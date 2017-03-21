@@ -74,15 +74,17 @@ get_header(); ?>
 				</div>
 
 
-				<div class="formula-carousel" data-flickity='{"contain": true, "pageDots": false, "imagesLoaded": true }'>
+				<div class="formula-carousel" data-flickity='{ "pageDots": false, "imagesLoaded": true }'>
 					<?php $formula_images = CFS()->get('formula');
 					foreach ($formula_images as $images) : ?>
 						<div class="formulas">
-							<div class="formula-textimg">
-								<?php echo '<img src="'.$images['formula_image'].'"/>'; ?>
-								<p class='formula-text'> <?php echo $images['formula_text']; ?> </p>
+							<div>
+								<?php echo '<img class="img" src="'.$images['formula_image'].'"/>';
+								echo '<img class="fill" src="'.$images['fill'].'"/>'; ?>
 							</div>
-							<?php echo '<img src="'.$images['fill'].'"/>'; ?>
+								<p class='formula-text'> <?php echo $images['formula_text']; ?> </p>
+
+							
 						</div>
 					<?php endforeach ?>
 				</div>

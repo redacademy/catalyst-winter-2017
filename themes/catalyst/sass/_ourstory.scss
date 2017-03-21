@@ -216,18 +216,22 @@
             }
         }
         .formula-carousel {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
             margin-bottom: 2rem;
             width: 100%;
             .formulas {
-                width: 10%;
+                width: 40%;
+                display: block;
             }
-            .formula-textimg {
-                p {
-                    font-size: 12px;
-                }
+            .img {
+                vertical-align: middle;
+                width: 85%;
+            }
+            .fill {
+                vertical-align: middle;
+                width: 15%;
+            }
+            .formula-text {
+                width: 85%;
             }
         }
         h5 {
