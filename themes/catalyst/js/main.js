@@ -1,20 +1,20 @@
 (function ($) {
 
-    $(".cross").hide();
-    $(".mobile-menu").hide();
-    $(".hamburger").click(function () {
-        $(".mobile-menu").slideToggle("slow", function () {
-            $(".hamburger").hide();
-            $(".cross").show();
-            $(".list").show().css("width", "400px");
+    $('.cross').hide();
+    $('.mobile-menu').hide();
+    $('.hamburger').click(function () {
+        $('.mobile-menu').slideToggle('slow', function () {
+            $('.hamburger').hide();
+            $('.cross').show();
+            $('.list').show().css('width', '400px');
         });
     });
 
-    $(".cross").click(function () {
-        $(".mobile-menu").slideToggle("slow", function () {
-            $(".cross").hide();
-            $(".hamburger").show();
-            $(".list").hide();
+    $('.cross').click(function () {
+        $('.mobile-menu').slideToggle('slow', function () {
+            $('.cross').hide();
+            $('.hamburger').show();
+            $('.list').hide();
         });
     });
 
@@ -25,7 +25,7 @@
     var $boardEnterButtons = $( '.board-enter-button' );
     var $staffExitButton = $( '.staff-exit-button' );
     var $boardExitButtons = $( '.board-exit-button' );
-    
+
     $staffExitButton.hide();
 
     var $staffProfilePreviews = $( '.staff-profile-preview' );
@@ -42,7 +42,7 @@
 
     var $advisorsProfilesWrapper = $( '.advisors-profiles-wrapper' );
     var $introCopy = $( '.intro-copy' );
-     
+
     $staffEnterButtons.click(function(){
         var buttonIndex = jQuery.inArray( this, $staffEnterButtons );
         var thisPopout = $staffProfilePopouts[buttonIndex];
@@ -55,7 +55,7 @@
         $introCopy.animate({opacity: 0.25}, 130);
 
         // Clear the active profiles section of inactive profiles and show only the active profile popout.
-        
+
         $staffProfilesHeader.hide();
         $staffProfilePreviews.hide();
         $staffProfilePopouts.hide();
@@ -87,7 +87,7 @@
         $staffProfilesWrapper.animate({opacity: 0.25}, 130);
         $advisorsProfilesWrapper.animate({opacity: 0.25}, 130);
         $introCopy.animate({opacity: 0.25}, 130);
-    
+
         // Clear the active profiles section of inactive profiles and show only the active profile popout.
 
         $boardProfilesHeader.addClass( 'blue-background' ).css('margin-bottom', '0');
