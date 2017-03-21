@@ -27,6 +27,7 @@
     }
 
     .blue-background {
+        position: relative;
         @include blue-background-header;
 
         .our-team-header {
@@ -37,16 +38,26 @@
             font-weight: 400;
             text-align: center;
             text-transform: uppercase;
+            position: relative;
             @include media($desktop-width) {
                 width: 100%;
                 font-size: 3.15rem;
             }
+        }
+
+        .staff-exit-button {
+            display: inline-block;
+            position: absolute;
+            top: 25%;
+            right: 3%;
+            @include exit-popout-button(45px, #FFF);
         }
     }
 
     .profile-popout {
         height: 0;
         width: 0;
+        background: $color__brand-blue;
         opacity: 0;
         overflow: hidden;
         transition: opacity 0.7s ease;
@@ -56,6 +67,26 @@
         }
     }
 
+    // Buttons
+        
+        .enter-button, .exit-button {
+            @include popout-button(45px);
+        }
+
+        .enter-button {
+            @include media($desktop-width) {
+                display: none;
+            }
+        }
+
+        .exit-button {
+            font-size: 2.5rem;
+            background: white;
+            padding-top: 0.6rem;
+            padding-left: 0.08rem;
+            position: absolute;
+        }
+
     .staff-profiles-wrapper, .board-profiles-wrapper, .advisors-profiles-wrapper {
         margin-bottom: 2.5rem;
         @include flex-column(nowrap, space-between, center);
@@ -64,6 +95,7 @@
             margin: 0 auto 3.25rem;
             @include flex-row(wrap, center, flex-start);
         }
+
     // Toggle-able classes for hiding and showing team member profiles, and greying-out content.
 
         .hide {
@@ -132,15 +164,6 @@
                 text-align: center;
             }
 
-            .enter-button, .exit-button {
-                @include popout-button(45px);
-            }
-
-            .enter-button {
-                @include media($desktop-width) {
-                    display: none;
-                }
-            }
         }
     }
 

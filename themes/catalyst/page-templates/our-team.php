@@ -25,6 +25,7 @@ get_header(); ?>
             </p>
             <div class="blue-background">
                 <h2 class="our-team-header">Meet Team Catalyst</h2>
+                <button class="staff-exit-button exit-button" type="button"><span>X</span></button>
             </div>
 
             <div class="staff-profiles-wrapper">

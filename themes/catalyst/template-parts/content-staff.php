@@ -20,7 +20,6 @@
 			</div>
 
 			<div class="right-column">
-				<button class="staff-exit-button exit-button" type="button"><span>X</span></button>
 
 				<h3 class="tagline"><?php echo CFS()->get('tagline'); ?></h3>
 

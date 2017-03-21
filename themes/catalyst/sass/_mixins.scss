@@ -149,7 +149,7 @@
 	}
 }
 
-@mixin popout-button($size) {
+@mixin popout-button($size, $background: none) {
 	height: $size;
 	width: $size;
 	font-size: 3.5rem;
@@ -158,7 +158,32 @@
 	border: 3px solid $color__header-main;
 	border-radius: 100%;
 	padding: 0 0 9px;
-	background: none;
+	background: $background;
+	box-shadow: none;
+	@include flex-column(nowrap, center, center);
+
+	&:hover {
+		cursor: pointer;
+		color: $color__menu-hover;
+		border-color: $color__menu-hover;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+
+@mixin exit-popout-button($size, $background: none) {
+	height: $size;
+	width: $size;
+	font-size: 2.5rem;
+	font-weight: 100;
+	margin: 0 auto;
+	border: 3px solid $color__header-main;
+	border-radius: 100%;
+	padding-top: 0.6rem;
+	padding-left: 0.08rem;
+	background: $background;
 	box-shadow: none;
 	@include flex-column(nowrap, center, center);
 
