@@ -3,28 +3,6 @@
 --------------------------------------------------------------*/
 
 
-/* Links */
-
-a {
-	color: $color__link;
-	&:visited {
-		color: $color__link-visited;
-	}
-	&:hover,
-	&:focus,
-	&:active {
-		color: $color__link-visited;
-	}
-	&:focus {
-		outline: thin dotted;
-	}
-	&:hover,
-	&:active {
-		outline: 0;
-	}
-}
-
-
 /* Menus */
 
 .main-navigation {
@@ -33,7 +11,6 @@ a {
 	float: left;
 	width: 100%;
 	ul {
-		// display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
@@ -57,10 +34,6 @@ a {
 			a {
 				width: 200px;
 			}
-			:hover>a,
-			.focus>a {}
-			a:hover,
-			a.focus {}
 		}
 		li:hover>ul,
 		li.focus>ul {
@@ -70,16 +43,11 @@ a {
 	li {
 		float: left;
 		position: relative;
-		&:hover>a,
-		&.focus>a {}
 	}
 	a {
 		display: block;
 		text-decoration: none;
 	}
-	.current_page_item>a,
-	.current-menu-item>a,
-	.current_page_ancestor>a {}
 }
 
 
@@ -132,7 +100,7 @@ a {
 		padding-left: 20px;
 		height: 100px;
 		@include media($desktop-width) {
-			width: 30%;
+			width: 20%;
 		}
 	}
 	.header-logo {
@@ -146,14 +114,20 @@ a {
 		overflow: hidden;
 		text-indent: 193%;
 		@include media($desktop-width) {
+			margin: 20px auto;
+			width: 110px
+		}
+		@include media(845px) {
 			height: 100px;
+			margin: 15px auto;
+			width: 145px
 		}
 	}
 	.top-menu {
 		z-index: 1;
 		width: 50%;
 		@include media($desktop-width) {
-			width: 70%;
+			width: 80%;
 		}
 	}
 	.desktop-menu {
@@ -167,23 +141,36 @@ a {
 			display: flex;
 			justify-content: flex-end;
 			margin: 0 auto;
+			padding-top: 45px;
 			ul {
 				padding-top: 45px;
 				overflow: hidden;
 				height: 70px;
 			}
-			.page_item {
-				margin-right: 25px;
+			li {
+				padding: 0 12px;
+			}
+			a {
 				text-transform: uppercase;
-				a {
-					color: $color__header-main;
+				color: $color__header-main;
+				font-size: 15px;
+				@include media($desktop-width){
+				    font-size: 9px;
+				}
+				@include media(660px){
+					font-size: 11px;
+				}
+				@include media(750px){
+					font-size: 13px;
+				}
+				@include media(845px){
 					font-size: 15px;
-					&:active {
-						color: $color__menu-active;
-					}
-					&:hover {
-						color: $color__menu-hover;
-					}
+				}
+				&:active {
+					color: $color__menu-active;
+				}
+				&:hover {
+					color: $color__menu-hover;
 				}
 			}
 		}
@@ -217,7 +204,6 @@ a {
 			&:hover {
 				background-color: $color__brand-blue;
 			}
-
 		}
 		.hamburger {
 			border: 1px solid #333345;

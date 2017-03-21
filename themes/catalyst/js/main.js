@@ -6,7 +6,7 @@
         $(".mobile-menu").slideToggle("slow", function () {
             $(".hamburger").hide();
             $(".cross").show();
-             $(".list").show().css("width", "400px");
+            $(".list").show().css("width", "400px");
         });
     });
 
@@ -17,5 +17,6 @@
             $(".list").hide();
         });
     });
+
 
 })(jQuery);
