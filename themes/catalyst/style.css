@@ -1264,6 +1264,8 @@ object {
       @media all and (min-width: 600px) {
         .page-template-our-story .site-content .formula-carousel:after {
           content: ''; } }
+    .page-template-our-story .site-content .formula-carousel .formula-text {
+      width: 85%; }
   .page-template-our-story .site-content h5 {
     font-size: 20px;
     text-transform: uppercase;
