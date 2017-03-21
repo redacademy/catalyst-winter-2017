@@ -150,6 +150,12 @@
 			li {
 				padding: 0 12px;
 			}
+			li.current-menu-item{
+				a{
+					color: $color__menu-active;
+				}
+			}
+
 			a {
 				text-transform: uppercase;
 				color: $color__header-main;

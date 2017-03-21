@@ -511,6 +511,8 @@ textarea {
         height: 70px; }
       .container .desktop-menu #primary-menu li {
         padding: 0 12px; }
+      .container .desktop-menu #primary-menu li.current-menu-item a {
+        color: #935E32; }
       .container .desktop-menu #primary-menu a {
         text-transform: uppercase;
         color: #323232;
