@@ -73,22 +73,7 @@ get_header(); ?>
 					<p class="formula-text"><?php echo CFS()->get( 'formula_text2' ); ?></p>
 				</div>
 
-
-				<div class="formula-carousel" data-flickity='{"contain": true, "pageDots": false, "imagesLoaded": true }'>
-					<?php $formula_images = CFS()->get('formula');
-					foreach ($formula_images as $images) : ?>
-						<div class="formulas">
-							<div class="formula-textimg">
-								<?php echo '<img src="'.$images['formula_image'].'"/>'; ?>
-								<p class='formula-text'> <?php echo $images['formula_text']; ?> </p>
-							</div>
-							<?php echo '<img src="'.$images['fill'].'"/>'; ?>
-						</div>
-					<?php endforeach ?>
-				</div>
-
-
-
+				<?php get_template_part( 'template-parts/ourStory-carousel', 'projects carousel' ); ?>
 
 				<a><?php echo CFS()->get( 'btn1' ); ?></a>
 			</section>

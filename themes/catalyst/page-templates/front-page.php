@@ -25,6 +25,7 @@ get_header(); ?>
         <div class="formula">
             <h2>the catalyst formula</h2>
             <p class="catalyst-formula-copy"><?php echo CFS()->get( 'catalyst_formula_copy' ); ?></p>
+            <?php get_template_part( 'template-parts/ourStory-carousel', 'projects carousel' ); ?>
              <div class="readmore"><a href="">learn more</a></div>
         </div>
 
