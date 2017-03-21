@@ -2512,7 +2512,8 @@ object {
   .single-projects .images img {
     width: auto;
     height: 100%;
-    max-width: none; }
+    max-width: none;
+    min-width: 100%; }
 
 .single-projects .quote-carousel {
   margin: 2rem 0; }
@@ -2568,9 +2569,12 @@ object {
   width: 85%;
   margin: 0 0.5rem;
   opacity: 0.5;
-  text-align: center; }
+  text-align: center;
+  height: 300px;
+  overflow: hidden; }
   @media all and (min-width: 600px) {
     .single-projects .other-proj-wrapper {
+      height: 500px;
       width: 50%; } }
   .single-projects .other-proj-wrapper .project-name,
   .single-projects .other-proj-wrapper .project-location,
@@ -2588,8 +2592,10 @@ object {
       display: inline;
       text-transform: uppercase; }
   .single-projects .other-proj-wrapper img {
-    display: block;
-    margin: 0 auto; }
+    width: auto;
+    height: 100%;
+    max-width: none;
+    min-width: 100%; }
   .single-projects .other-proj-wrapper .project-name {
     font-weight: bold; }
 

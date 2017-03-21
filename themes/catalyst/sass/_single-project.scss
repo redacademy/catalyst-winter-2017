@@ -86,7 +86,7 @@
             width: auto;
             height: 100%;
             max-width: none;
-
+            min-width: 100%;
         }
 
     }
@@ -142,7 +142,10 @@
         margin: 0 0.5rem;
         opacity: 0.5;
         text-align: center;
+        height: 300px;
+        overflow: hidden;
         @include media ($desktop-width){
+            height: 500px;
             width: 50%;
         }
         .project-name,
@@ -158,9 +161,11 @@
                 text-transform: uppercase;
             }
         }
-        img{
-            display: block;
-            margin: 0 auto;
+        img {
+            width: auto;
+            height: 100%;
+            max-width: none;
+            min-width: 100%;
         }
         .project-name{
             font-weight: bold;
