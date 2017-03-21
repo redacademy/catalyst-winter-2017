@@ -1,19 +1,72 @@
-.page-template-default {
+.page-template-contact {
     text-align: center;
-    .contact-title {
-        background-color: $color__brand-blue;
-        font-size: 1.4rem;
-        text-transform: uppercase;
-        margin-bottom: 1.5rem;
-        h3 {
-            width: 350px;
+    height: 100%;
+    width: 100%;
+    @include media($desktop-width) {
+        font-size: $font__desktop-size;
+        line-height: $line-height-desktop;
+    }
+
+    .hero-image-banner {
+        min-width: 100%;
+        @include flex-column(nowrap, center, center);
+        @include media($desktop-width) {
+            height: 70vh;
+        }
+
+        .entry-title {
+            @include page-title;
+        }
+        .banner-text {
+            @include banner-text;
+        }
+        .banner-text-small {
+            font-size: 1rem;
+            color: white;
+            width: 380px;
             margin: 0 auto;
-            height: 100px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            text-align: center;
+            line-height: 2rem;
+            letter-spacing: 2px;
+            @include header-text-shadow;
             @include media($desktop-width) {
-                width: 100%;
+                width: 750px;
+                margin: 2% auto;
+            }
+        }
+    }
+    .blue-background {
+        height: auto;
+        width: 100%;
+        margin: 2rem auto 0.75rem;
+        padding: 0.75rem 0.5rem;
+        background-color: $color__brand-blue;
+        text-align: center;
+        line-height: 2.4rem;
+        @include media($desktop-width) {
+            margin: 2rem auto 1.5rem;
+            padding: 1rem 0.5rem;
+            line-height: 3.4rem;
+        }
+        h2 {
+            max-width: 400px;
+            margin: 0 auto;
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: $color__header-main;
+            line-height: 2.4rem;
+            text-transform: uppercase;
+            @include media($desktop-width) {
+                max-width: none;
+                font-size: 3.2rem;
+                line-height: 3.4rem;
+            }
+        }
+
+        .supporters-header {
+            font-size: 1.55rem;
+            @include media($desktop-width) {
+                font-size: 1.85rem;
             }
         }
     }
@@ -29,9 +82,6 @@
                 flex-wrap: wrap;
                 justify-content: space-between;
                 padding: 0.5rem 2rem;
-                p {
-                    flex-basis: 48%;
-                }
             }
             p:nth-child(6),
             p:nth-child(7),
@@ -44,6 +94,7 @@
                 flex-basis: 100%;
                 margin: 0 auto;
             }
+            
         }
         input {
             width: 100%;
@@ -72,7 +123,31 @@
                 margin-left: 1rem;
             }
         }
-        .wpcf7-text textarea {
+        .other-option {
+            span {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .Other {
+                width: 80%;
+            }
+        }
+        .radio-blurb {
+            text-align: left;
+            font-style: italic;
+            opacity: 0.5;
+            font-size: 1rem;
+            @include media ($desktop-width){
+                font-size: 1.3rem;
+            }
+        }
+        .radios {
+            @include media ($desktop-width){
+                display: flex;
+                margin: 0 auto;
+            }
+        }
+        .wpcf7-textarea {
             padding-left: 1rem;
             padding-top: 1rem;
             width: 100%;
