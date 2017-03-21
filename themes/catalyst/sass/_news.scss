@@ -3,41 +3,34 @@
     .entry-content {
         text-align: center;
     }
-    .entry-title{
-        @include  page-title;
+    .entry-title {
+        position: absolute;
+        left: 30%;
+        width: 202px;
+        line-height: 54px;
+        top: 11%;
+        @include page-title;
         padding-top: 150px;
-        // position: absolute;
-        // left: 39%;
-        // top: 11%;
-        // width: 120px;
-        // line-height: 60px;
-        // text-align: center;
-        // padding-top: 100px;
-        // font-size: 40px;
-        // font-weight: 500;
-        // text-transform: uppercase;
-        // color: white;
-        // @include media($desktop-width) {
-        //     @include page-title;
-        //     // width: 100%;
-        //     // position: initial;
-        //     // margin: 0;
-        // }
+        @include media($desktop-width) {
+            position: initial;
+            margin: 0;
+            width: 100%;
+        }
     }
     .entry-subtitle {
-        // position: absolute;
-        // width: 250px;
-        // top: 55%;
-        // left: 32%;
+        position: absolute;
+        width: 250px;
+        top: 55%;
+        left: 12%;
         // color: white;
         @include banner-text;
         // margin: 0;
-        // @include media($desktop-width) {
-        //     width: 100%;
-        //     position: initial;
-        //     font-size: 30px;
-        //     text-align: center;
-        // }
+        @include media($desktop-width) {
+            width: 100%;
+            position: initial;
+            font-size: 30px;
+            text-align: center;
+        }
     }
     .entry-header {
         display: none;
@@ -69,7 +62,22 @@
             }
         }
     }
-   .video{
-       height: 300px;
-   }
+    .video {
+        text-align: center;
+        height: 400px;
+    }
+    .newsmedia-content {
+        @include media($desktop-width) {
+            display: flex;
+            .newsmedia-article {
+                width: 50%;
+            }
+            .widget-area {
+                width: 50%;
+            }
+        }
+    }
+    .widget-title {
+        display: none;
+    }
 }

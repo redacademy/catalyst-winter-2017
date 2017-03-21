@@ -357,8 +357,8 @@ add_action( 'init', 'sponsor_cpt', 0 );
 function news_meida_post_type() {
 
 	$labels = array(
-		'name'                  => 'Newsmedia Types',
-		'singular_name'         => 'Newsmedia Type',
+		'name'                  => 'Newsmedia',
+		'singular_name'         => 'Newsmedia',
 		'menu_name'             => 'Newsmedias',
 		'name_admin_bar'        => 'Newsmedias',
 		'archives'              => 'Newsmedia Archives',
@@ -386,8 +386,8 @@ function news_meida_post_type() {
 		'filter_items_list'     => 'Filter items list',
 	);
 	$args = array(
-		'label'                 => 'Newsmedia Type',
-		'description'           => 'Newsmedia Type Description',
+		'label'                 => 'Newsmedia',
+		'description'           => 'Newsmedia articles',
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions', 'custom-fields', ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
