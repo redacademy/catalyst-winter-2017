@@ -6,16 +6,6 @@
         line-height: $line-height-desktop;
     }
 
-    .hide-preview {
-        display: none;
-    }
-
-    .show-popout {
-        height: 100%;
-        width: 100%;
-        @include flex-column(nowrap, center, center);
-    }
-
     .hero-image-banner {
         min-width: 100%;
         @include flex-column(nowrap, center, center);
@@ -55,7 +45,15 @@
     }
 
     .profile-popout {
-        display: none;
+        height: 0;
+        width: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: opacity 0.7s ease;
+
+        .left-column {
+            @include flex-column(nowrap, center, center);
+        }
     }
 
     .staff-profiles-wrapper, .board-profiles-wrapper, .advisors-profiles-wrapper {
@@ -65,6 +63,24 @@
             width: 80%;
             margin: 0 auto 3.25rem;
             @include flex-row(wrap, center, flex-start);
+        }
+    // Toggle-able classes for hiding and showing team member profiles, and greying-out content.
+
+        .hide {
+            height: 0;
+            width: 0;
+            overflow: hidden;
+        }
+
+        .show-popout {
+            height: 100%;
+            width: 100%;
+            @include flex-column(nowrap, center, center);
+            opacity: 1;
+        }
+
+        .translucent {
+            opacity: 0.5;
         }
 
         .small-header {

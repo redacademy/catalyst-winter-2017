@@ -19,6 +19,7 @@ get_header(); ?>
 				</div><!-- .page-header -->
 			</div>
 
+            <div class="content-wrapper">
 			<p class="intro-copy">
                 <?php echo CFS()->get( 'intro_copy' ); ?>
             </p>
@@ -70,7 +71,7 @@ get_header(); ?>
                     <a class="navigation-button" href="<?php echo get_home_url(); ?>/projects">View Projects</a>
                 </div>
             </div>
-
+            </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
