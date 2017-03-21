@@ -381,18 +381,6 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-/* Links */
-a {
-  color: royalblue; }
-  a:visited {
-    color: purple; }
-  a:hover, a:focus, a:active {
-    color: purple; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
-
 /* Menus */
 .main-navigation {
   clear: both;
@@ -476,7 +464,7 @@ a {
     height: 100px; }
     @media all and (min-width: 600px) {
       .container .logo {
-        width: 30%; } }
+        width: 20%; } }
   .container .header-logo {
     background: url("../../images/full-logo.svg") no-repeat;
     background-size: 100%;
@@ -490,13 +478,19 @@ a {
     text-indent: 193%; }
     @media all and (min-width: 600px) {
       .container .header-logo {
-        height: 100px; } }
+        margin: 20px auto;
+        width: 110px; } }
+    @media all and (min-width: 845px) {
+      .container .header-logo {
+        height: 100px;
+        margin: 15px auto;
+        width: 145px; } }
   .container .top-menu {
     z-index: 1;
     width: 50%; }
     @media all and (min-width: 600px) {
       .container .top-menu {
-        width: 70%; } }
+        width: 80%; } }
   .container .desktop-menu {
     visibility: hidden;
     height: 0; }
@@ -509,21 +503,36 @@ a {
       display: flex;
       -ms-flex-pack: end;
           justify-content: flex-end;
-      margin: 0 auto; }
+      margin: 0 auto;
+      padding-top: 45px; }
       .container .desktop-menu #primary-menu ul {
         padding-top: 45px;
         overflow: hidden;
         height: 70px; }
-      .container .desktop-menu #primary-menu .page_item {
-        margin-right: 25px;
-        text-transform: uppercase; }
-        .container .desktop-menu #primary-menu .page_item a {
-          color: #323232;
-          font-size: 15px; }
-          .container .desktop-menu #primary-menu .page_item a:active {
-            color: #935E32; }
-          .container .desktop-menu #primary-menu .page_item a:hover {
-            color: #00A4FF; }
+      .container .desktop-menu #primary-menu li {
+        padding: 0 12px; }
+      .container .desktop-menu #primary-menu li.current-menu-item a {
+        color: #935E32; }
+      .container .desktop-menu #primary-menu a {
+        text-transform: uppercase;
+        color: #323232;
+        font-size: 15px; }
+        @media all and (min-width: 600px) {
+          .container .desktop-menu #primary-menu a {
+            font-size: 9px; } }
+        @media all and (min-width: 660px) {
+          .container .desktop-menu #primary-menu a {
+            font-size: 11px; } }
+        @media all and (min-width: 750px) {
+          .container .desktop-menu #primary-menu a {
+            font-size: 13px; } }
+        @media all and (min-width: 845px) {
+          .container .desktop-menu #primary-menu a {
+            font-size: 15px; } }
+        .container .desktop-menu #primary-menu a:active {
+          color: #935E32; }
+        .container .desktop-menu #primary-menu a:hover {
+          color: #00A4FF; }
   .container .hamburger-menu {
     display: -ms-flexbox;
     display: flex;
