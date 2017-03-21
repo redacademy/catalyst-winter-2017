@@ -1,9 +1,33 @@
 .page-template-submit{
-    .content-area {
-        margin: 0 2rem;
+    height: 100%;
+    width: 100%;
+    @include media($desktop-width) {
+        font-size: $font__desktop-size;
+        line-height: $line-height-desktop;
     }
-    .site-main {
+
+    .hero-image-banner {
+        min-width: 100%;
+        @include flex-column(nowrap, center, center);
+        @include media($desktop-width) {
+            height: 70vh;
+        }
+
+        .banner-text {
+            color: #fff;
+            font-size: 2.5rem;
+            width: 320px;
+            margin: 10% auto;
+            text-align: center;
+            line-height: 4rem;
+            letter-spacing: 2px;
+            text-shadow: 1px 2px 5px #323232;
+            text-transform: uppercase;
+        }
+    }
+    .thankyou-container {
         text-align: center;
+        margin: 2rem auto;
     }
     .top-message {
         line-height: 1;
