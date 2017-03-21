@@ -2624,14 +2624,24 @@ object {
       letter-spacing: 2px;
       text-shadow: 1px 2px 5px #323232;
       text-transform: uppercase; }
+      @media all and (min-width: 600px) {
+        .page-template-submit .hero-image-banner .banner-text {
+          max-width: 879px;
+          width: 100%;
+          min-width: 600px;
+          font-size: 4.5rem; } }
   .page-template-submit .thankyou-container {
-    text-align: center; }
+    text-align: center;
+    margin: 2rem auto; }
   .page-template-submit .top-message {
     line-height: 1; }
   .page-template-submit .thanks {
     font-size: 2rem;
     text-transform: uppercase;
     margin: 0; }
+    @media all and (min-width: 600px) {
+      .page-template-submit .thanks {
+        font-size: 4rem; } }
   .page-template-submit .text {
     font-size: 1.8rem;
     margin: 0; }
