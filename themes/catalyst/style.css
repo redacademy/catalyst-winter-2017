@@ -1387,7 +1387,7 @@ object {
     margin: 0 auto;
     border: 3px solid #323232;
     border-radius: 100%;
-    padding: 0 0 9px;
+    padding: 0 0 9px 1px;
     background: none;
     box-shadow: none;
     display: -ms-flexbox;
@@ -1537,10 +1537,13 @@ object {
         .page-template-our-team .staff-profiles-wrapper .profile-preview, .page-template-our-team .board-profiles-wrapper .profile-preview, .page-template-our-team .advisors-profiles-wrapper .profile-preview {
           width: 24%; } }
       .page-template-our-team .staff-profiles-wrapper .profile-preview .profile-image, .page-template-our-team .board-profiles-wrapper .profile-preview .profile-image, .page-template-our-team .advisors-profiles-wrapper .profile-preview .profile-image {
-        width: 215px; }
+        width: 215px;
+        border-radius: 50%; }
         @media all and (min-width: 600px) {
           .page-template-our-team .staff-profiles-wrapper .profile-preview .profile-image, .page-template-our-team .board-profiles-wrapper .profile-preview .profile-image, .page-template-our-team .advisors-profiles-wrapper .profile-preview .profile-image {
             width: 95%; } }
+        .page-template-our-team .staff-profiles-wrapper .profile-preview .profile-image:hover, .page-template-our-team .board-profiles-wrapper .profile-preview .profile-image:hover, .page-template-our-team .advisors-profiles-wrapper .profile-preview .profile-image:hover {
+          box-shadow: 0 2px 8px #4990E2; }
       .page-template-our-team .staff-profiles-wrapper .profile-preview .name, .page-template-our-team .board-profiles-wrapper .profile-preview .name, .page-template-our-team .advisors-profiles-wrapper .profile-preview .name {
         margin: 0.25rem auto;
         font-size: 1.55rem;
