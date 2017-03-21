@@ -1440,38 +1440,17 @@ object {
   .page-template-news .entry-content {
     text-align: center; }
   .page-template-news .entry-title {
-    text-shadow: 1px 2px 5px #323232;
-    position: absolute;
-    left: 39%;
-    top: 11%;
-    width: 120px;
-    line-height: 60px;
+    font-size: 3.5rem;
+    color: white;
     text-align: center;
-    padding-top: 100px;
-    font-size: 40px;
-    font-weight: 500;
     text-transform: uppercase;
-    color: white; }
+    text-shadow: 1px 2px 5px #323232;
+    padding-top: 150px; }
     @media all and (min-width: 600px) {
       .page-template-news .entry-title {
-        font-size: 3.5rem;
-        color: white;
-        text-align: center;
-        text-transform: uppercase;
-        text-shadow: 1px 2px 5px #323232;
-        width: 100%;
-        position: initial;
-        margin: 0; } }
-  @media all and (min-width: 600px) and (min-width: 600px) {
-    .page-template-news .entry-title {
-      margin: 0 0 1.5rem;
-      font-size: 3.85rem; } }
+        margin: 0 0 1.5rem;
+        font-size: 3.85rem; } }
   .page-template-news .entry-subtitle {
-    position: absolute;
-    width: 250px;
-    top: 55%;
-    left: 32%;
-    color: white;
     font-size: 1.5rem;
     color: white;
     width: 380px;
@@ -1479,18 +1458,11 @@ object {
     text-align: center;
     line-height: 2rem;
     letter-spacing: 2px;
-    text-shadow: 1px 2px 5px #323232;
-    margin: 0; }
+    text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 600px) {
       .page-template-news .entry-subtitle {
         width: 750px;
         margin: 2% auto; } }
-    @media all and (min-width: 600px) {
-      .page-template-news .entry-subtitle {
-        width: 100%;
-        position: initial;
-        font-size: 30px;
-        text-align: center; } }
   .page-template-news .entry-header {
     display: none; }
   .page-template-news h2 {
@@ -1516,20 +1488,8 @@ object {
       .page-template-news .load-more a:hover {
         border: 3px solid #8ED7FF;
         box-shadow: 1px 1px 5px #323232; }
-  @media all and (min-width: 600px) {
-    .page-template-news .content-post {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: center;
-          justify-content: center; } }
-  .page-template-news .content-post .MediaCard-borderOverlay {
-    display: none; }
-  .page-template-news .twitter {
-    padding: 10px 20px; }
-  .page-template-news .article {
-    padding: 10px 20px; }
-  .page-template-news .EmbeddedTweet-tweet {
-    background-color: black; }
+  .page-template-news .video {
+    height: 300px; }
 
 .page-template-collaborate {
   height: 100%;
