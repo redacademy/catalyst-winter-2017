@@ -5,7 +5,7 @@
     }
     .entry-title {
         position: absolute;
-        left: 30%;
+        left: 34%;
         width: 202px;
         line-height: 54px;
         top: 11%;
@@ -21,10 +21,8 @@
         position: absolute;
         width: 250px;
         top: 55%;
-        left: 12%;
-        // color: white;
+        left: 18%;
         @include banner-text;
-        // margin: 0;
         @include media($desktop-width) {
             width: 100%;
             position: initial;
