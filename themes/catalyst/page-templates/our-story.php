@@ -25,9 +25,9 @@ get_header(); ?>
 				<h3><?php echo CFS()->get( 'our_mission' ); ?></h3>
 
 				<div class="mission-quote">
-					<p class="quotation-left">"</p>
+					<div class="quotation-left"></div>
 					<p class="quote"><?php echo CFS()->get( 'quotation1' ); ?></p>
-					<p class="quotation-right">"</p>
+					<div class="quotation-right"></div>
 				</div>
 				<div class="robert">
 				<h4><?php echo CFS()->get( 'text_area1' ); ?></h4>
@@ -81,9 +81,9 @@ get_header(); ?>
 				<div class="end-content-quote">
 
 				<div class="mission-quote2">
-					<p class="quotation-left">"</p>
+					<div class="quotation-left"></div>
 					<p class="quote"><?php echo CFS()->get( 'quotation2' ); ?></p>
-					<p class="quotation-right">"</p>
+					<div class="quotation-right"></div>
 				</div>
 				<div class="robert">
 				<h4><?php echo CFS()->get( 'text_area1' ); ?></h4>

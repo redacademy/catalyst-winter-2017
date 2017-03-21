@@ -47,15 +47,14 @@
             border: 1px solid black;
             text-decoration: none;
             color: black;
-
             @include media($desktop-width) {
                 border: 3px solid black;
             }
-              &:hover{
+            &:hover {
                 border-color: $color__brand-blue;
                 box-shadow: 1px 1px 5px $color__header-main;
             }
-              &.active{
+            &.active {
                 background-color: $color__brand-blue;
             }
         }
@@ -103,23 +102,17 @@
                 }
             }
             .quotation-left {
-                position: absolute;
-                margin: 0 auto;
-                bottom: 87%;
-                right: 80%;
-                font-size: 300px;
-                color: $color__brand-blue;
-                width: 25%;
-                transform: rotate(180deg);
+                background: url('../../images/icon/quotation.svg')no-repeat center;
+                background-size: 250%;
+                width: 200px;
+                height: 130px;
             }
             .quotation-right {
-                position: absolute;
-                top: 82%;
-                margin: 0 auto;
-                left: 76%;
-                font-size: 300px;
-                color: $color__brand-blue;
-                width: 25%;
+                background: url('../../images/icon/quotation.svg')no-repeat center;
+                background-size: 250%;
+                width: 200px;
+                height: 130px;
+                transform: rotate(180deg);
             }
         }
         .mission-quote {
@@ -215,13 +208,11 @@
                 font-size: 24px;
             }
         }
-
-        @include ourStory-carousel{
+        @include ourStory-carousel {
             .formula-text {
-			width: 85%;
-		}
+                width: 85%;
+            }
         }
-
         h5 {
             font-size: 20px;
             text-transform: uppercase;
@@ -230,6 +221,5 @@
         .end-content {
             margin-bottom: 50px;
         }
-
     }
 }
