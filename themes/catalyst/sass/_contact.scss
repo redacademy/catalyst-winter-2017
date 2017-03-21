@@ -44,7 +44,7 @@
         text-align: center;
         line-height: 2.4rem;
         @include media($desktop-width) {
-            margin: 0 auto 1.5rem;
+            margin: 2rem auto 1.5rem;
             padding: 1rem 0.5rem;
             line-height: 3.4rem;
         }
@@ -82,9 +82,6 @@
                 flex-wrap: wrap;
                 justify-content: space-between;
                 padding: 0.5rem 2rem;
-                p {
-                    flex-basis: 48%;
-                }
             }
             p:nth-child(6),
             p:nth-child(7),
@@ -135,7 +132,22 @@
                 width: 80%;
             }
         }
-        .wpcf7-text textarea {
+        .radio-blurb {
+            text-align: left;
+            font-style: italic;
+            opacity: 0.5;
+            font-size: 1rem;
+            @include media ($desktop-width){
+                font-size: 1.3rem;
+            }
+        }
+        .radios {
+            @include media ($desktop-width){
+                display: flex;
+                margin: 0 auto;
+            }
+        }
+        .wpcf7-textarea {
             padding-left: 1rem;
             padding-top: 1rem;
             width: 100%;

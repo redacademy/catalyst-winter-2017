@@ -2089,7 +2089,7 @@ object {
     line-height: 2.4rem; }
     @media all and (min-width: 600px) {
       .page-template-contact .blue-background {
-        margin: 0 auto 1.5rem;
+        margin: 2rem auto 1.5rem;
         padding: 1rem 0.5rem;
         line-height: 3.4rem; } }
     .page-template-contact .blue-background h2 {
@@ -2125,10 +2125,7 @@ object {
               flex-wrap: wrap;
           -ms-flex-pack: justify;
               justify-content: space-between;
-          padding: 0.5rem 2rem; }
-          .page-template-contact .wpcf7 form p {
-            -ms-flex-preferred-size: 48%;
-                flex-basis: 48%; } }
+          padding: 0.5rem 2rem; } }
       @media all and (min-width: 600px) {
         .page-template-contact .wpcf7 form p:nth-child(6),
         .page-template-contact .wpcf7 form p:nth-child(7),
@@ -2172,7 +2169,20 @@ object {
       vertical-align: middle; }
     .page-template-contact .wpcf7 .other-option .Other {
       width: 80%; }
-    .page-template-contact .wpcf7 .wpcf7-text textarea {
+    .page-template-contact .wpcf7 .radio-blurb {
+      text-align: left;
+      font-style: italic;
+      opacity: 0.5;
+      font-size: 1rem; }
+      @media all and (min-width: 600px) {
+        .page-template-contact .wpcf7 .radio-blurb {
+          font-size: 1.3rem; } }
+    @media all and (min-width: 600px) {
+      .page-template-contact .wpcf7 .radios {
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0 auto; } }
+    .page-template-contact .wpcf7 .wpcf7-textarea {
       padding-left: 1rem;
       padding-top: 1rem;
       width: 100%;
