@@ -74,7 +74,7 @@ get_header(); ?>
 				</div>
 
 
-				<div class="formula-carousel" data-flickity='{ "pageDots": false, "imagesLoaded": true }'>
+				<div class="formula-carousel" data-flickity='{ "pageDots": false, "imagesLoaded": true, "watchCSS": true }'>
 					<?php $formula_images = CFS()->get('formula');
 					foreach ($formula_images as $images) : ?>
 						<div class="formulas">

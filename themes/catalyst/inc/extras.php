@@ -48,3 +48,5 @@ function catalyst_hero_image_css() {
     add_action( 'wp_enqueue_scripts', 'catalyst_hero_image_css' );
 
 
+
+

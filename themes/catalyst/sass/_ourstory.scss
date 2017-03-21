@@ -233,6 +233,16 @@
             .formula-text {
                 width: 85%;
             }
+            @include media ($desktop-width){
+                display: flex;
+            }
+            &:after {
+                content: 'flickity';
+                display: none;
+                @include media($desktop-width){
+                    content: '';
+                }
+            }
         }
         h5 {
             font-size: 20px;
