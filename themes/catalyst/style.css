@@ -2022,34 +2022,102 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.page-template-default {
-  text-align: center; }
-  .page-template-default .contact-title {
-    background-color: #D9F1FF;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    margin-bottom: 1.5rem; }
-    .page-template-default .contact-title h3 {
-      width: 350px;
-      margin: 0 auto;
-      height: 100px;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-align: center;
-          align-items: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+.page-template-contact {
+  text-align: center;
+  height: 100%;
+  width: 100%; }
+  @media all and (min-width: 600px) {
+    .page-template-contact {
+      font-size: 1.4rem;
+      line-height: 1.75rem; } }
+  .page-template-contact .hero-image-banner {
+    min-width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    @media all and (min-width: 600px) {
+      .page-template-contact .hero-image-banner {
+        height: 70vh; } }
+    .page-template-contact .hero-image-banner .entry-title {
+      font-size: 3.5rem;
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+      text-shadow: 1px 2px 5px #323232; }
       @media all and (min-width: 600px) {
-        .page-template-default .contact-title h3 {
-          width: 100%; } }
-  .page-template-default .wpcf7 {
+        .page-template-contact .hero-image-banner .entry-title {
+          margin: 0 0 1.5rem;
+          font-size: 3.85rem; } }
+    .page-template-contact .hero-image-banner .banner-text {
+      font-size: 1.5rem;
+      color: white;
+      width: 380px;
+      margin: 10% auto;
+      text-align: center;
+      line-height: 2rem;
+      letter-spacing: 2px;
+      text-shadow: 1px 2px 5px #323232; }
+      @media all and (min-width: 600px) {
+        .page-template-contact .hero-image-banner .banner-text {
+          width: 750px;
+          margin: 2% auto; } }
+    .page-template-contact .hero-image-banner .banner-text-small {
+      font-size: 1rem;
+      color: white;
+      width: 380px;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 2rem;
+      letter-spacing: 2px;
+      text-shadow: 1px 2px 5px #323232; }
+      @media all and (min-width: 600px) {
+        .page-template-contact .hero-image-banner .banner-text-small {
+          width: 750px;
+          margin: 2% auto; } }
+  .page-template-contact .blue-background {
+    height: auto;
+    width: 100%;
+    margin: 2rem auto 0.75rem;
+    padding: 0.75rem 0.5rem;
+    background-color: #D9F1FF;
+    text-align: center;
+    line-height: 2.4rem; }
+    @media all and (min-width: 600px) {
+      .page-template-contact .blue-background {
+        margin: 0 auto 1.5rem;
+        padding: 1rem 0.5rem;
+        line-height: 3.4rem; } }
+    .page-template-contact .blue-background h2 {
+      max-width: 400px;
+      margin: 0 auto;
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: #323232;
+      line-height: 2.4rem;
+      text-transform: uppercase; }
+      @media all and (min-width: 600px) {
+        .page-template-contact .blue-background h2 {
+          max-width: none;
+          font-size: 3.2rem;
+          line-height: 3.4rem; } }
+    .page-template-contact .blue-background .supporters-header {
+      font-size: 1.55rem; }
+      @media all and (min-width: 600px) {
+        .page-template-contact .blue-background .supporters-header {
+          font-size: 1.85rem; } }
+  .page-template-contact .wpcf7 {
     padding: 3%; }
-    .page-template-default .wpcf7 form {
+    .page-template-contact .wpcf7 form {
       margin: 0 auto;
       background-color: #D9F1FF;
       padding: 0.5rem 1rem; }
       @media all and (min-width: 600px) {
-        .page-template-default .wpcf7 form {
+        .page-template-contact .wpcf7 form {
           max-width: 1000px;
           display: -ms-flexbox;
           display: flex;
@@ -2058,55 +2126,60 @@ object {
           -ms-flex-pack: justify;
               justify-content: space-between;
           padding: 0.5rem 2rem; }
-          .page-template-default .wpcf7 form p {
+          .page-template-contact .wpcf7 form p {
             -ms-flex-preferred-size: 48%;
                 flex-basis: 48%; } }
       @media all and (min-width: 600px) {
-        .page-template-default .wpcf7 form p:nth-child(6),
-        .page-template-default .wpcf7 form p:nth-child(7),
-        .page-template-default .wpcf7 form p:nth-child(8) {
+        .page-template-contact .wpcf7 form p:nth-child(6),
+        .page-template-contact .wpcf7 form p:nth-child(7),
+        .page-template-contact .wpcf7 form p:nth-child(8) {
           -ms-flex-preferred-size: 100%;
               flex-basis: 100%; } }
-      .page-template-default .wpcf7 form p:nth-child(9) {
+      .page-template-contact .wpcf7 form p:nth-child(9) {
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
         margin: 0 auto; }
-    .page-template-default .wpcf7 input {
+    .page-template-contact .wpcf7 input {
       width: 100%;
       height: 50px;
       padding-left: 1rem;
       border: none;
       font-style: italic; }
-    .page-template-default .wpcf7 .radio {
+    .page-template-contact .wpcf7 .radio {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: column;
           flex-direction: column; }
       @media all and (min-width: 600px) {
-        .page-template-default .wpcf7 .radio {
+        .page-template-contact .wpcf7 .radio {
           -ms-flex-direction: row;
               flex-direction: row;
           -ms-flex-pack: center;
               justify-content: center; } }
-      .page-template-default .wpcf7 .radio input {
+      .page-template-contact .wpcf7 .radio input {
         width: 1rem; }
-      .page-template-default .wpcf7 .radio .wpcf7-list-item {
+      .page-template-contact .wpcf7 .radio .wpcf7-list-item {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-align: center;
             align-items: center; }
-      .page-template-default .wpcf7 .radio .wpcf7-list-item-label {
+      .page-template-contact .wpcf7 .radio .wpcf7-list-item-label {
         font-size: 1.1rem;
         text-transform: uppercase;
         margin-left: 1rem; }
-    .page-template-default .wpcf7 .wpcf7-text textarea {
+    .page-template-contact .wpcf7 .other-option span {
+      display: inline-block;
+      vertical-align: middle; }
+    .page-template-contact .wpcf7 .other-option .Other {
+      width: 80%; }
+    .page-template-contact .wpcf7 .wpcf7-text textarea {
       padding-left: 1rem;
       padding-top: 1rem;
       width: 100%;
       height: 70vh;
       border: none;
       font-style: italic; }
-    .page-template-default .wpcf7 .wpcf7-submit {
+    .page-template-contact .wpcf7 .wpcf7-submit {
       width: 200px;
       background-color: #fff;
       border: 1px solid #000;
