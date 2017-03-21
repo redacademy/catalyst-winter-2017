@@ -614,11 +614,11 @@ textarea {
     display: flex;
     -ms-flex-pack: center;
         justify-content: center;
-    min-width: 320px; }
+    min-width: 358px; }
   .footer .footerLogo {
-    background: url("../../images/logo.svg") no-repeat;
+    background: url("../../images/logo.png") no-repeat;
     background-size: 100%;
-    width: 20px; }
+    width: 15px; }
   .footer .sns-icon {
     display: -ms-flexbox;
     display: flex;
@@ -630,9 +630,13 @@ textarea {
       margin: 0 5px; }
     @media all and (min-width: 600px) {
       .footer .sns-icon {
+        padding-left: 17px;
         width: 20%; }
         .footer .sns-icon a {
           padding-right: 10px; } }
+    @media all and (min-width: 600px) {
+      .footer .sns-icon {
+        padding-left: 0; } }
     @media all and (min-width: 900px) {
       .footer .sns-icon {
         width: 25%; } }
@@ -721,13 +725,17 @@ textarea {
       font-size: 10px;
       font-weight: 100;
       line-height: 12px;
-      margin: 0; }
+      margin: 0 auto; }
       @media all and (min-width: 600px) {
         .footer .company-info p {
           font-size: 14px;
           line-height: 15px; } }
+      @media all and (min-width: 668px) {
+        .footer .company-info p {
+          width: 368px; } }
       @media all and (min-width: 900px) {
         .footer .company-info p {
+          width: 100%;
           font-size: 16px;
           line-height: 24px; } }
       @media all and (min-width: 1120px) {
