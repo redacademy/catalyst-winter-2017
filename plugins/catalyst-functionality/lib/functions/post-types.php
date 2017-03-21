@@ -352,26 +352,25 @@ function sponsor_cpt() {
 add_action( 'init', 'sponsor_cpt', 0 );
 
 
-
-// Register Custom Post Type
-function news_meida_post_type() {
+// news media Custom Post Type
+function newsmedia_cpt() {
 
 	$labels = array(
-		'name'                  => 'Newsmedia',
+		'name'                  => 'Newsmedias',
 		'singular_name'         => 'Newsmedia',
-		'menu_name'             => 'Newsmedias',
-		'name_admin_bar'        => 'Newsmedias',
+		'menu_name'             => 'Newsmedia',
+		'name_admin_bar'        => 'Newsmedia',
 		'archives'              => 'Newsmedia Archives',
 		'attributes'            => 'Newsmedia Attributes',
 		'parent_item_colon'     => 'Parent Item:',
 		'all_items'             => 'All Newsmedias',
-		'add_new_item'          => 'Add New Item',
+		'add_new_item'          => 'Add New Newsmedia',
 		'add_new'               => 'Add New Newsmedia',
 		'new_item'              => 'New Newsmedia',
-		'edit_item'             => 'Edit Newsmedia',
+		'edit_item'             => 'Edit Item',
 		'update_item'           => 'Update Newsmedia',
 		'view_item'             => 'View Newsmedia',
-		'view_items'            => 'View Newsmedias',
+		'view_items'            => 'View Newsmedia',
 		'search_items'          => 'Search Newsmedia',
 		'not_found'             => 'Not found',
 		'not_found_in_trash'    => 'Not found in Trash',
@@ -381,15 +380,15 @@ function news_meida_post_type() {
 		'use_featured_image'    => 'Use as featured image',
 		'insert_into_item'      => 'Insert into item',
 		'uploaded_to_this_item' => 'Uploaded to this item',
-		'items_list'            => 'Newsmedia list',
-		'items_list_navigation' => 'Newsmedia list navigation',
+		'items_list'            => 'Items list',
+		'items_list_navigation' => 'Items list navigation',
 		'filter_items_list'     => 'Filter items list',
 	);
 	$args = array(
 		'label'                 => 'Newsmedia',
-		'description'           => 'Newsmedia articles',
+		'description'           => 'articles of news and media',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions', 'custom-fields', ),
+		'supports'              => array( 'title', 'editor', 'author', 'thumbnail', 'revisions', 'custom-fields', ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
@@ -404,7 +403,7 @@ function news_meida_post_type() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
 	);
-	register_post_type( 'newsmedia_type', $args );
+	register_post_type( 'newsmeida', $args );
 
 }
-add_action( 'init', 'news_meida_post_type', 0 );
+add_action( 'init', 'newsmedia_cpt', 0 );

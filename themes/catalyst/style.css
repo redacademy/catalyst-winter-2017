@@ -2659,7 +2659,8 @@ object {
     .page-template-submit .hero-image-banner .banner-text {
       color: #fff;
       font-size: 2.5rem;
-      width: 320px;
+      min-width: 320px;
+      width: 100%;
       margin: 10% auto;
       text-align: center;
       line-height: 4rem;

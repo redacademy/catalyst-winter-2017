@@ -79,3 +79,64 @@
         display: none;
     }
 }
+
+// .post-type-archive-newsmeida {
+//     height: 100%;
+//     width: 100%;
+//     @include media($desktop-width) {
+//         font-size: $font__desktop-size;
+//         line-height: $line-height-desktop;
+//     }
+
+//     .hero-image-banner {
+//         height: 60vh;
+//                 background: linear-gradient( to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100% ),
+//                 url() no-repeat center bottom;
+//                 background-size: cover, cover;
+//         @include flex-column(nowrap, center, center);
+//         @include media($desktop-width) {
+//             height: 70vh;
+//         }
+
+//         .entry-title {
+//             @include page-title;
+//         }
+
+//         .banner-text {
+//             @include banner-text;
+//         }
+//     }
+
+//     .intro-copy {
+//         @include intro-copy;
+//     }
+
+//     .blue-background {
+//         position: relative;
+//         @include blue-background-header;
+
+//         .our-team-header {
+//             width: 300px;
+//             margin: 0 auto;
+//             color: $color__header-main;
+//             font-size: 2.5rem;
+//             font-weight: 400;
+//             text-align: center;
+//             text-transform: uppercase;
+//             position: relative;
+//             @include media($desktop-width) {
+//                 width: 100%;
+//                 font-size: 3.15rem;
+//             }
+//         }
+//         // Exit button for staff profile popouts.
+
+//         .staff-exit-button {
+//             display: inline-block;
+//             position: absolute;
+//             top: 25%;
+//             right: 3%;
+//             @include exit-popout-button(42px, #FFF);
+//         }
+//     }
+// }
