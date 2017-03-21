@@ -45,7 +45,10 @@ get_header(); ?>
             </div>
 
             <div class="board-profiles-wrapper">
-                <h3 class="small-header">Board</h3>
+                <div class="board-profiles-header">
+                    <h3 class="small-header">Board</h3>
+                    <button class="board-exit-button exit-button" type="button"><span>X</span></button>
+                </div>
 
                 <?php
                     $args = array( 'post_type' => 'board', 'order' => 'ASC', 'numberposts' => -1 );

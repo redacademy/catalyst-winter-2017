@@ -20,8 +20,6 @@
 			</div>
 
 			<div class="right-column">
-				<button class="board-exit-button exit-button" type="button"><span>X</span></button>
-
 				<h3 class="tagline"><?php echo CFS()->get('tagline'); ?></h3>
 
 				<article class="cv">

@@ -50,15 +50,15 @@
             display: inline-block;
             position: absolute;
             top: 25%;
-            right: 3%;
-            @include exit-popout-button(42px, #FFF);
+            right: 5%;
+            @include exit-popout-button(40px, #FFF);
         }
     }
 
     // Buttons
         
         .enter-button, .exit-button {
-            @include popout-button(42px);
+            @include popout-button(40px);
         }
 
         .enter-button {
@@ -130,6 +130,28 @@
             }
         }
 
+        .board-profiles-header {
+            height: auto;
+            width: 100%;
+            margin: 2 auto 1rem;
+            position: relative;
+            @include flex-row(nowrap, center, center);
+
+            .small-header {
+                height: auto;
+                width: auto;
+                margin: 0;
+            }
+
+            .board-exit-button {
+                margin: 0px;
+                position: absolute;
+                top: 18%;
+                right: 5%;
+            }
+
+        }
+
         // Profile preview styles
         
         .navigation-button-container {
@@ -175,15 +197,29 @@
     .advisors-profiles-wrapper {
 
         .profile-preview {
-            width: 14%;
+            width: 100%;
             margin: 0 3%;
             position: relative;
+            @include flex-column(nowrap, center, center);
+            @include media(1000px) {
+                width: 14%;
+            }
+
+            .name {
+                margin: 0 auto;
+            }
+
+            .job-title {
+                min-width: 130px;
+                margin: 0 auto;
+            }
 
             &:nth-child(4) .job-title {
-                max-width: none;
                 width: 265px;
-                position: absolute;
-                right: -32%;
+                @include media($desktop-width) {
+                    position: absolute;
+                    left: -50%;
+                }
             }
         }
 
