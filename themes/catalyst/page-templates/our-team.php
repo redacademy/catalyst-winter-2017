@@ -19,11 +19,13 @@ get_header(); ?>
 				</div><!-- .page-header -->
 			</div>
 
+            <div class="content-wrapper">
 			<p class="intro-copy">
                 <?php echo CFS()->get( 'intro_copy' ); ?>
             </p>
             <div class="blue-background">
                 <h2 class="our-team-header">Meet Team Catalyst</h2>
+                <button class="staff-exit-button exit-button" type="button"><span>X</span></button>
             </div>
 
             <div class="staff-profiles-wrapper">
@@ -70,7 +72,7 @@ get_header(); ?>
                     <a class="navigation-button" href="<?php echo get_home_url(); ?>/projects">View Projects</a>
                 </div>
             </div>
-
+            </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

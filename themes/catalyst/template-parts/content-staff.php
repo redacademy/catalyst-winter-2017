@@ -1,14 +1,14 @@
 <?php ?>
 
-	<section class="profile-preview">
+	<section class="staff-profile-preview profile-preview">
 		<img class="profile-image" src="<?php echo CFS()->get('profile_image'); ?>"/>
 
 		<h4 class="name"><?php echo CFS()->get('name'); ?></h4>
 		<p class="job-title"><?php echo CFS()->get('job_title'); ?></p>
-		<button class="enter-button" type="button"><span>+</span></button>
+		<button class="staff-enter-button enter-button" type="button"><span>+</span></button>
 	</section>
 
-	<section class="profile-popout">
+	<section class="staff-profile-popout profile-popout">
 
 			<div class="left-column">
 				<img class="profile-image" src="<?php echo CFS()->get('profile_image'); ?>"/>
@@ -20,7 +20,6 @@
 			</div>
 
 			<div class="right-column">
-				<button class="exit-button" type="button"><span>X</span></button>
 
 				<h3 class="tagline"><?php echo CFS()->get('tagline'); ?></h3>
 

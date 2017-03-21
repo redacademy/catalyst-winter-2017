@@ -27,6 +27,7 @@
     }
 
     .blue-background {
+        position: relative;
         @include blue-background-header;
 
         .our-team-header {
@@ -37,16 +38,54 @@
             font-weight: 400;
             text-align: center;
             text-transform: uppercase;
+            position: relative;
             @include media($desktop-width) {
                 width: 100%;
                 font-size: 3.15rem;
             }
         }
+
+        .staff-exit-button {
+            display: inline-block;
+            position: absolute;
+            top: 25%;
+            right: 3%;
+            @include exit-popout-button(45px, #FFF);
+        }
     }
 
     .profile-popout {
-        display: none;
+        height: 0;
+        width: 0;
+        background: $color__brand-blue;
+        opacity: 0;
+        overflow: hidden;
+        transition: opacity 0.7s ease;
+
+        .left-column {
+            @include flex-column(nowrap, center, center);
+        }
     }
+
+    // Buttons
+        
+        .enter-button, .exit-button {
+            @include popout-button(45px);
+        }
+
+        .enter-button {
+            @include media($desktop-width) {
+                display: none;
+            }
+        }
+
+        .exit-button {
+            font-size: 2.5rem;
+            background: white;
+            padding-top: 0.6rem;
+            padding-left: 0.08rem;
+            position: absolute;
+        }
 
     .staff-profiles-wrapper, .board-profiles-wrapper, .advisors-profiles-wrapper {
         margin-bottom: 2.5rem;
@@ -55,6 +94,25 @@
             width: 80%;
             margin: 0 auto 3.25rem;
             @include flex-row(wrap, center, flex-start);
+        }
+
+    // Toggle-able classes for hiding and showing team member profiles, and greying-out content.
+
+        .hide {
+            height: 0;
+            width: 0;
+            overflow: hidden;
+        }
+
+        .show-popout {
+            height: 100%;
+            width: 100%;
+            @include flex-column(nowrap, center, center);
+            opacity: 1;
+        }
+
+        .translucent {
+            opacity: 0.5;
         }
 
         .small-header {
@@ -86,6 +144,13 @@
                 width: 24%;
             }
 
+            .profile-image {
+                width: 215px;
+                @include media($desktop-width) {
+                    width: 95%;
+                }
+            }
+
             .name {
                 margin: 0.25rem auto;
                 font-size: 1.55rem;
@@ -99,15 +164,6 @@
                 text-align: center;
             }
 
-            .enter-button, .exit-button {
-                @include popout-button(45px);
-            }
-
-            .enter-button {
-                @include media($desktop-width) {
-                    display: none;
-                }
-            }
         }
     }
 
