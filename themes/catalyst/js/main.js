@@ -68,15 +68,6 @@
         });
     });
 
-    // function exitPopout( activePopout ) {
-    //     activePopout.hide();
-    //     $staffProfilePreviews.show();
-    //     $staffProfilesHeader.show();
-    //     $boardProfilesWrapper.css( 'opacity', '1' );
-    //     $advisorsProfilesWrapper.css( 'opacity', '1' );
-    //     $introCopy.css( 'opacity', '1' );
-    // }
-
     $boardEnterButtons.click(function(){
         var buttonIndex = jQuery.inArray( this, $boardEnterButtons );
         var thisPopout = $boardProfilePopouts[buttonIndex];
@@ -90,8 +81,5 @@
         $boardProfilePreviews.toggleClass( 'hide' );
         thisPopout.toggleClass( 'show-popout' );
     });
-
-
-
 
 })(jQuery);
