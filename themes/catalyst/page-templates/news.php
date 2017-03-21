@@ -1,14 +1,7 @@
 
 <?php
 /**
- * Template Name: news
- *
- * @package RED_Starter_Theme
- */
-
-
-/**
-	* Template Name: news
+	* Template Name: news and meida
 	*
 	* @package Catalyst Theme
 	*/
@@ -24,8 +17,30 @@ get_header(); ?>
 				<p class="entry-subtitle"><?php echo CFS()->get('bannertext'); ?></p>
             </div>
         </header>
-		<div class="video">youtube</div>
-		<?php get_sidebar(); ?>
+
+		<div class="video"><?php echo CFS()->get('video'); ?></div>
+
+
+<h2>link to other stories</h2>
+<div class="newsmedia-content">
+	<?php get_sidebar(); ?>
+	<div class="newsmedia-article">
+		<?php
+			$args = array(
+			'post_type' => 'newsmedia_type',
+			'order' => 'ASC',
+			'numberposts' => 5 );
+			$newsmedia_article = get_posts( $args ); // returns an array of posts
+		?>
+		<?php foreach ( $newsmedia_article as $newsmedia ) : setup_postdata( $newsmedia ); ?>
+			<div class="<?php echo $newsmedia_article->name ?>">
+       	 	<?php echo get_the_post_thumbnail( $newsmedia ) ?>
+            <?php get_template_part( 'template-parts/content', 'newsmedia_type' ); ?>
+			</div>
+        <?php endforeach; wp_reset_postdata(); ?>
+	</div>
+
+</div>
 		<div class="load-more"><a>load more</a></div>
         </main> <!--#main -->
 	</div> <!--#primary -->
