@@ -50,7 +50,7 @@
             <?php $gallery_images = CFS()->get('gallery_images');
             foreach ($gallery_images as $image) : ?>
                 <div class="images">
-                    <?php echo '<img src="'.$image['images'].'"/>'; ?>
+                    <?php echo '<img src="'.$image['image'].'"/>'; ?>
                 </div>
             <?php endforeach ?>
         </div>
