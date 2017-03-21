@@ -82,4 +82,9 @@
         thisPopout.toggleClass( 'show-popout' );
     });
 
+    //send user to thank you page on form submission
+    document.addEventListener( 'wpcf7mailsent', function() {
+        location = 'http://google.com/';
+    }, false );
+
 })(jQuery);
