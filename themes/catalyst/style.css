@@ -823,6 +823,31 @@ a {
 .home .team {
   padding-top: 3rem; }
 
+.home .formula-carousel {
+  margin-bottom: 2rem;
+  width: 100%; }
+  .home .formula-carousel .formulas {
+    width: 40%;
+    display: block; }
+  .home .formula-carousel .img {
+    vertical-align: middle;
+    width: 85%; }
+  .home .formula-carousel .fill {
+    vertical-align: middle;
+    width: 15%; }
+  @media all and (min-width: 600px) {
+    .home .formula-carousel {
+      display: -ms-flexbox;
+      display: flex; } }
+  .home .formula-carousel:after {
+    content: 'flickity';
+    display: none; }
+    @media all and (min-width: 600px) {
+      .home .formula-carousel:after {
+        content: ''; } }
+  .home .formula-carousel .formula-text {
+    display: none; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -1213,8 +1238,6 @@ object {
     .page-template-our-story .site-content .formula-carousel .fill {
       vertical-align: middle;
       width: 15%; }
-    .page-template-our-story .site-content .formula-carousel .formula-text {
-      width: 85%; }
     @media all and (min-width: 600px) {
       .page-template-our-story .site-content .formula-carousel {
         display: -ms-flexbox;

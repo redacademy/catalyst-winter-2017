@@ -98,6 +98,38 @@
 	}
 }
 
+@mixin ourStory-carousel {
+	.formula-carousel {
+		margin-bottom: 2rem;
+		width: 100%;
+		.formulas {
+			width: 40%;
+			display: block;
+		}
+		.img {
+			vertical-align: middle;
+			width: 85%;
+		}
+		.fill {
+			vertical-align: middle;
+			width: 15%;
+		}
+		@include media ($desktop-width){
+			display: flex;
+		}
+		&:after {
+			content: 'flickity';
+			display: none;
+			@include media($desktop-width){
+				content: '';
+			}
+		}
+		@content
+    }
+}
+
+
+
 // Layouts
 
 @mixin center-block {
@@ -172,6 +204,8 @@
 		outline: none;
 	}
 }
+
+
 
 // Media Queries 
 

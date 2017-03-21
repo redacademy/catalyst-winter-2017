@@ -215,35 +215,13 @@
                 font-size: 24px;
             }
         }
-        .formula-carousel {
-            margin-bottom: 2rem;
-            width: 100%;
-            .formulas {
-                width: 40%;
-                display: block;
-            }
-            .img {
-                vertical-align: middle;
-                width: 85%;
-            }
-            .fill {
-                vertical-align: middle;
-                width: 15%;
-            }
+
+        @include ourStory-carousel{
             .formula-text {
-                width: 85%;
-            }
-            @include media ($desktop-width){
-                display: flex;
-            }
-            &:after {
-                content: 'flickity';
-                display: none;
-                @include media($desktop-width){
-                    content: '';
-                }
-            }
+			width: 85%;
+		}
         }
+
         h5 {
             font-size: 20px;
             text-transform: uppercase;

@@ -95,4 +95,9 @@
     .team{
         padding-top: 3rem;
     }
+    @include ourStory-carousel{
+        .formula-text{
+            display: none;
+        }
+    }
 }
