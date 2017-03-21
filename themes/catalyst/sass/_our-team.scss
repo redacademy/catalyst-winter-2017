@@ -6,6 +6,16 @@
         line-height: $line-height-desktop;
     }
 
+    .hide-preview {
+        display: none;
+    }
+
+    .show-popout {
+        height: 100%;
+        width: 100%;
+        @include flex-column(nowrap, center, center);
+    }
+
     .hero-image-banner {
         min-width: 100%;
         @include flex-column(nowrap, center, center);
@@ -84,6 +94,13 @@
             position: relative;
             @include media($desktop-width) {
                 width: 24%;
+            }
+
+            .profile-image {
+                width: 215px;
+                @include media($desktop-width) {
+                    width: 95%;
+                }
             }
 
             .name {
