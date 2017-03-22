@@ -82,53 +82,49 @@
         .mission-quote,
         .mission-quote2 {
             display: flex;
-            padding: 61px;
-            margin: 30px auto;
+            height: 200px;
             font-weight: lighter;
             position: relative;
             @include media($desktop-width) {
-                margin: 0 auto;
+                padding-top: 30px;
+                justify-content: center;
                 font-size: 20px;
             }
-            .quote {
+            .quote,
+            .quote2 {
+                text-align: center;
                 z-index: 1;
                 width: 320px;
                 text-align: center;
                 margin: auto;
                 font-size: 18px;
+                position: absolute;
+                width: 90%;
                 @include media($desktop-width) {
                     font-size: 20px;
-                    width: 100%;
                 }
             }
-            .quotation-left {
+            .quotation-left,
+            .quotation-left2 {
                 background: url('../../images/icon/quotation.svg')no-repeat center;
                 background-size: 250%;
-                width: 200px;
+                width: 145px;
                 height: 130px;
+                position: absolute;
+                right: 80%;
+                bottom: 48%;
             }
-            .quotation-right {
+            .quotation-right,
+            .quotation-right2 {
                 background: url('../../images/icon/quotation.svg')no-repeat center;
                 background-size: 250%;
-                width: 200px;
+                width: 145px;
                 height: 130px;
                 transform: rotate(180deg);
+                position: absolute;
+                left: 80%;
+                bottom: 50%;
             }
-        }
-        .mission-quote {
-            .quotation-left {
-                @include media($desktop-width) {
-                    right: 80%;
-                }
-            }
-            .quotation-right {
-                @include media($desktop-width) {
-                    left: 77%;
-                }
-            }
-        }
-        .quote {
-            text-align: center;
         }
         .robert {
             margin-bottom: 60px;
@@ -159,7 +155,7 @@
             width: 80%;
             margin-bottom: 20px;
             @include media($desktop-width) {
-                width: 260px;
+                width: 96%;
                 margin-bottom: 0;
             }
         }
@@ -205,8 +201,12 @@
             line-height: 28px;
             font-weight: 100;
             @include media($desktop-width) {
-                font-size: 24px;
+                font-size: 14px;
+                line-height: 14px;
             }
+        }
+        .formula-carousel {
+            padding-left: 20px;
         }
         @include ourStory-carousel {
             .formula-text {
@@ -219,7 +219,7 @@
             margin-bottom: 5px;
         }
         .end-content {
-            margin-bottom: 50px;
+            margin: 50px 0;
         }
     }
 }

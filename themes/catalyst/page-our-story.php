@@ -81,9 +81,9 @@ get_header(); ?>
 				<div class="end-content-quote">
 
 				<div class="mission-quote2">
-					<div class="quotation-left"></div>
-					<p class="quote"><?php echo CFS()->get( 'quotation2' ); ?></p>
-					<div class="quotation-right"></div>
+					<div class="quotation-left2"></div>
+					<p class="quote2"><?php echo CFS()->get( 'quotation2' ); ?></p>
+					<div class="quotation-right2"></div>
 				</div>
 				<div class="robert">
 				<h4><?php echo CFS()->get( 'text_area1' ); ?></h4>
