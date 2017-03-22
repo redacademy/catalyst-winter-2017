@@ -36,7 +36,7 @@
 
             <div class="member-carousel">
                 <?php $members = CFS()->get('team_members');
-                    foreach ( $members as $member ) : setup_postdata( $post ); ?>
+                    foreach ( $members as $member ) : setup_postdata( $member ); ?>
                     <div class="member">
                         <img class="member_img" src='<?php echo $member['member']; ?>' />
                         <p class="member-name"> <?php echo $member['member_name']; ?> </p>

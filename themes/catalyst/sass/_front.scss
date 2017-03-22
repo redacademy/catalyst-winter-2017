@@ -46,7 +46,7 @@
     }
     .readmore {
         text-align: center;
-        margin: 5rem 0;
+        margin: 3rem 0;
         a {
             padding: 20px 50px;
             text-transform: uppercase;
@@ -85,6 +85,20 @@
             .person,
             .line {
                 margin: 0;
+            }
+        }
+        .image-wrapper{
+            height: 300px;
+            overflow: hidden;
+            @include media ($desktop-width){
+                height: 500px;
+                width: 50%;
+            }
+            img {
+                width: auto;
+                height: 100%;
+                max-width: none;
+                min-width: 100%;
             }
         }
         .is-selected {

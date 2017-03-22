@@ -15,7 +15,9 @@
     foreach ( $posts as $post ) :
         $id = get_the_id(); ?>
         <div class="other-proj-wrapper">
-            <a href="<?php echo get_permalink() ?>"><img src='<?php echo CFS()->get('heroimage', $id); ?>' /></a>
+            <div class="image-wrapper">
+                <a href="<?php echo get_permalink() ?>"><img src='<?php echo CFS()->get('heroimage', $id); ?>' /></a>
+            </div>
             <p class='project-name'><?php echo CFS()->get('project_name', $id); ?></p>
             <p class='project-location'>Location: <?php echo CFS()->get('project_location', $id); ?></p>
             <p class='project-status'>Status: <span class='project-status'><?php echo CFS()->get('project_status', $id); ?></span></p>
