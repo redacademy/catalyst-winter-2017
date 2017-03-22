@@ -70,6 +70,7 @@
             $staffProfilePopouts.hide();
             $staffProfilesWrapper.css('margin-top', '-0.75rem');
             thisPopout.show().addClass( 'show-popout' );
+            $( window )
             $staffExitButton.show(130);
 
             $staffExitButton.click(function () {
@@ -127,14 +128,15 @@
         popFromImages();
     }
     
-    if ( $( window ).width() < 760 ) {
-
-        $staffProfileImages.off('click');
-        popFromButtons();
-    } else {
-        $staffEnterButtons.off('click');
-        popFromImages();
-    }
+    $( window ).resize( function(){
+        if ( $( window ).width() < 760 ) {
+            $staffProfileImages.off('click');
+            popFromButtons();
+        } else {
+            $staffEnterButtons.off('click');
+            popFromImages();
+        }
+    });
 
 
     $boardEnterButtons.click(function(){
