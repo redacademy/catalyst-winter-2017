@@ -67,76 +67,89 @@
     .newsmedia-content {
         @include media($desktop-width) {
             display: flex;
+            width: 100%;
             .newsmedia-article {
-                width: 50%;
+                width: 60%;
             }
             .widget-area {
-                width: 50%;
+                width: 40%;
             }
         }
     }
     .widget-title {
         display: none;
     }
+    .newsmedia-article {
+        #news {
+            background-color: $color__brand-blue;
+            padding-bottom: 20px;
+            margin: 10px 0;
+        }
+        [class="292"] {
+            display: none;
+        }
+        [class="286"] {
+            display: none;
+        }
+        [class="282"] {
+            display: none;
+        }
+        [class="284"] {
+            display: none;
+        }
+        @include media($desktop-width) {
+            padding: 0px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            [class="296"] {
+                width: 100%;
+            }
+            [class="292"] {
+                width: 48%;
+                display: block;
+            }
+            [class="286"] {
+                width: 48%;
+                display: block;
+            }
+            [class="282"] {
+                width: 48%;
+                display: block;
+            }
+            [class="284"] {
+                width: 48%;
+                display: block;
+            }
+        }
+        .article-content {
+            padding: 5px 15px;
+            p {
+                margin: 0;
+            }
+            h3 {
+                margin: 8px 0;
+            }
+        }
+        #post-19 {
+            font-size: 14px;
+            margin: 0;
+            padding-bottom: 10px;
+            p {
+                text-align: left;
+            }
+            .entry-content{
+                margin: 0;
+            }
+        }
+        .date{
+            font-size: 12px;
+        }
+        .cfs-hyperlink {
+            color: $color__text-main;
+            text-decoration: none;
+            text-transform: uppercase;
+
+        }
+    }
 }
-
-// .post-type-archive-newsmeida {
-//     height: 100%;
-//     width: 100%;
-//     @include media($desktop-width) {
-//         font-size: $font__desktop-size;
-//         line-height: $line-height-desktop;
-//     }
-
-//     .hero-image-banner {
-//         height: 60vh;
-//                 background: linear-gradient( to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100% ),
-//                 url() no-repeat center bottom;
-//                 background-size: cover, cover;
-//         @include flex-column(nowrap, center, center);
-//         @include media($desktop-width) {
-//             height: 70vh;
-//         }
-
-//         .entry-title {
-//             @include page-title;
-//         }
-
-//         .banner-text {
-//             @include banner-text;
-//         }
-//     }
-
-//     .intro-copy {
-//         @include intro-copy;
-//     }
-
-//     .blue-background {
-//         position: relative;
-//         @include blue-background-header;
-
-//         .our-team-header {
-//             width: 300px;
-//             margin: 0 auto;
-//             color: $color__header-main;
-//             font-size: 2.5rem;
-//             font-weight: 400;
-//             text-align: center;
-//             text-transform: uppercase;
-//             position: relative;
-//             @include media($desktop-width) {
-//                 width: 100%;
-//                 font-size: 3.15rem;
-//             }
-//         }
-//         // Exit button for staff profile popouts.
-
-//         .staff-exit-button {
-//             display: inline-block;
-//             position: absolute;
-//             top: 25%;
-//             right: 3%;
-//             @include exit-popout-button(42px, #FFF);
-//         }
-//     }
-// }
