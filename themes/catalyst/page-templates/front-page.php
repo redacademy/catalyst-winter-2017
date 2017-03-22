@@ -1,12 +1,11 @@
 <?php
-
-
 get_header(); ?>
 
 
 <section class="front-page">
     <header>
-        <div class="hero-image-banner" data-flickity='{"contain": true, "wrapAround": true, "imagesLoaded": true, "pageDots": false, "prevNextButtons": false, "autoPlay": 2000, "draggable": false}' >     <?php $banner_array = CFS()->get('fp_gallery');
+        <div class="hero-image-banner" data-flickity='{"contain": true, "wrapAround": true, "imagesLoaded": true, "pageDots": false, "prevNextButtons": false, "autoPlay": 2000, "draggable": false}' >     
+        <?php $banner_array = CFS()->get('fp_gallery');
             foreach ($banner_array as $image) : ?>
                 <img class="fp-image" src='<?php echo $image['fp_images']; ?>'/>
             <?php endforeach ?>
