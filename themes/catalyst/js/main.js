@@ -33,7 +33,7 @@
     var $boardProfilePreviews = $( '.board-profile-preview' );
 
     var $staffProfileImages = $( '.staff-profile-preview > .profile-image' );
-
+    var $boardProfileImages = $( '.board-profile-preview > .profile-image' );
 
     var $staffProfilePopouts = $( '.staff-profile-popout' );
     var $boardProfilePopouts = $( '.board-profile-popout' );
@@ -48,14 +48,14 @@
     var $advisorsProfilesWrapper = $( '.advisors-profiles-wrapper' );
     var $introCopy = $( '.intro-copy' );
 
-    // var isRetina = window.devicePixelRatio >=2 ? true : false;
 
     // Make the plus-sign buttons the click target for displaying profile popouts
 
-    function popFromButtons() {
-        $staffEnterButtons.on('click', function(){
-            var buttonIndex = jQuery.inArray( this, $staffEnterButtons );
-            var thisPopout = $staffProfilePopouts[buttonIndex];
+    function showStaffPopout($targetArray) {
+        $targetArray.on('click', function(){
+
+            var targetIndex = jQuery.inArray( this, $targetArray );
+            var thisPopout = $staffProfilePopouts[targetIndex];
             thisPopout = $( thisPopout );
 
             // Grey-out the rest of the page content.
@@ -87,94 +87,65 @@
         });
     }
 
-    // Make the profile images the click target for displaying profile popouts
-
-    function popFromImages() {
-        $staffProfileImages.on('click', function(){
-            var buttonIndex = jQuery.inArray( this, $staffProfileImages );
-            var thisPopout = $staffProfilePopouts[buttonIndex];
+    function showBoardPopout($targetArray) {
+        $targetArray.on( 'click', function() {
+            var targetIndex = jQuery.inArray( this, $targetArray );
+            var thisPopout = $boardProfilePopouts[targetIndex];
             thisPopout = $( thisPopout );
 
             // Grey-out the rest of the page content.
 
-            $boardProfilesWrapper.animate({opacity: 0.25}, 130);
+            $staffProfilesWrapper.animate({opacity: 0.25}, 130);
             $advisorsProfilesWrapper.animate({opacity: 0.25}, 130);
             $introCopy.animate({opacity: 0.25}, 130);
 
             // Clear the active profiles section of inactive profiles and show only the active profile popout.
 
-            $staffProfilesHeader.hide();
-            $staffProfilePreviews.hide();
-            $staffProfilePopouts.hide();
-            $staffProfilesWrapper.css('margin-top', '-0.75rem');
+            $boardProfilesHeader.addClass( 'blue-background' ).css('margin-bottom', '0');
+            $boardProfilePreviews.hide();
+            $boardProfilePopouts.hide();
             thisPopout.show().addClass( 'show-popout' );
-            scrollToPopout( thisPopout, $catalystTeamHeader );
-            $staffExitButton.show(130);
+            scrollToPopout( thisPopout, $boardProfilesHeader );
+            $boardExitButton.show();
 
-            $staffExitButton.click(function () {
-                $staffExitButton.hide();
+            $boardExitButton.click(function(){
+                $boardExitButton.hide();
                 thisPopout.removeClass( 'show-popout' );
-                $staffProfilesWrapper.css('margin-top', '0');
-                $staffProfilePreviews.show();
-                $staffProfilesHeader.show();
-                $boardProfilesWrapper.css( 'opacity', '1' );
+                $boardProfilesHeader.removeClass( 'blue-background' );
+                $staffProfilesWrapper.css( 'opacity', '1' );
                 $advisorsProfilesWrapper.css( 'opacity', '1' );
                 $introCopy.css( 'opacity', '1' );
+                $boardProfilePreviews.show();
             });
         });
     }
 
     function scrollToPopout($thisPopout, $sectionHeader) {
         $('html, body').animate({
-            scrollTop: ( $thisPopout.offset().top - ( $sectionHeader.height() * 2 ) )
+            scrollTop: ( $thisPopout.offset().top - ( $sectionHeader.height() * 2.5 ) )
         }, 200);
     }
 
     if ( $( window ).width() < 760 ) {
-        popFromButtons();
+        showStaffPopout( $staffEnterButtons );
+        showBoardPopout( $boardEnterButtons )
     } else {
-        popFromImages();
+        showStaffPopout( $staffProfileImages );
+        showBoardPopout( $boardProfileImages );
     }
     
     $( window ).resize( function(){
         if ( $( window ).width() < 760 ) {
-            $staffProfileImages.off('click');
-            popFromButtons();
+            $staffProfileImages.off( 'click' );
+            $boardProfileImages.off( 'click' );
+            showStaffPopout( $staffEnterButtons );
+            showBoardPopout( $boardEnterButtons );
         } else {
             $staffEnterButtons.off('click');
-            popFromImages();
+            $boardEnterButtons.off( 'click' );
+            showStaffPopout( $staffProfileImages );
+            showBoardPopout( $boardProfileImages );
         }
-    });
-
-
-    $boardEnterButtons.click(function(){
-        var buttonIndex = jQuery.inArray( this, $boardEnterButtons );
-        var thisPopout = $boardProfilePopouts[buttonIndex];
-        thisPopout = $( thisPopout );
-
-         // Grey-out the rest of the page content.
-
-        $staffProfilesWrapper.animate({opacity: 0.25}, 130);
-        $advisorsProfilesWrapper.animate({opacity: 0.25}, 130);
-        $introCopy.animate({opacity: 0.25}, 130);
-
-        // Clear the active profiles section of inactive profiles and show only the active profile popout.
-
-        $boardProfilesHeader.addClass( 'blue-background' ).css('margin-bottom', '0');
-        $boardProfilePreviews.hide();
-        $boardProfilePopouts.hide();
-        thisPopout.show().toggleClass( 'show-popout' );
-        $boardExitButton.show();
-
-        $boardExitButton.click(function(){
-            $boardExitButton.hide();
-            thisPopout.removeClass( 'show-popout' );
-            $boardProfilesHeader.removeClass( 'blue-background' );
-            $staffProfilesWrapper.css( 'opacity', '1' );
-            $advisorsProfilesWrapper.css( 'opacity', '1' );
-            $introCopy.css( 'opacity', '1' );
-            $boardProfilePreviews.show();
-        });
     });
 
     //send user to thank you page on form submission
