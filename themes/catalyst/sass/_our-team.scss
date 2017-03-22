@@ -201,9 +201,12 @@
 
     .advisors-profiles-wrapper {
 
+        .small-header {
+            margin: 2rem auto;
+        }
         .profile-preview {
             width: 100%;
-            margin: 0 3%;
+            margin: 1.25rem auto;
             position: relative;
             @include flex-column(nowrap, center, center);
             @include media(1000px) {

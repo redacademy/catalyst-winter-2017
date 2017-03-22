@@ -1553,9 +1553,11 @@ object {
         margin: 0.25rem auto;
         font-size: 1.4rem;
         text-align: center; }
+  .page-template-our-team .advisors-profiles-wrapper .small-header {
+    margin: 2rem auto; }
   .page-template-our-team .advisors-profiles-wrapper .profile-preview {
     width: 100%;
-    margin: 0 3%;
+    margin: 1.25rem auto;
     position: relative;
     display: -ms-flexbox;
     display: flex;

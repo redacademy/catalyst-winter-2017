@@ -44,69 +44,93 @@
     var $advisorsProfilesWrapper = $( '.advisors-profiles-wrapper' );
     var $introCopy = $( '.intro-copy' );
 
-    $staffEnterButtons.click(function(){
-        var buttonIndex = jQuery.inArray( this, $staffEnterButtons );
-        var thisPopout = $staffProfilePopouts[buttonIndex];
-        thisPopout = $( thisPopout );
+    // var isRetina = window.devicePixelRatio >=2 ? true : false;
 
-        // Grey-out the rest of the page content.
+    // Make the plus-sign buttons the click target for displaying profile popouts
 
-        $boardProfilesWrapper.animate({opacity: 0.25}, 130);
-        $advisorsProfilesWrapper.animate({opacity: 0.25}, 130);
-        $introCopy.animate({opacity: 0.25}, 130);
+    function popFromButtons() {
+        $staffEnterButtons.click(function(){
+            var buttonIndex = jQuery.inArray( this, $staffEnterButtons );
+            var thisPopout = $staffProfilePopouts[buttonIndex];
+            thisPopout = $( thisPopout );
 
-        // Clear the active profiles section of inactive profiles and show only the active profile popout.
+            // Grey-out the rest of the page content.
 
-        $staffProfilesHeader.hide();
-        $staffProfilePreviews.hide();
-        $staffProfilePopouts.hide();
-        $staffProfilesWrapper.css('margin-top', '-0.75rem');
-        thisPopout.show().toggleClass( 'show-popout' );
-        $staffExitButton.show(130);
+            $boardProfilesWrapper.animate({opacity: 0.25}, 130);
+            $advisorsProfilesWrapper.animate({opacity: 0.25}, 130);
+            $introCopy.animate({opacity: 0.25}, 130);
 
-        $staffExitButton.click(function () {
-            $staffExitButton.hide();
-            thisPopout.removeClass( 'show-popout' );
-            $staffProfilesWrapper.css('margin-top', '0');
-            $staffProfilePreviews.show();
-            $staffProfilesHeader.show();
-            $boardProfilesWrapper.css( 'opacity', '1' );
-            $advisorsProfilesWrapper.css( 'opacity', '1' );
-            $introCopy.css( 'opacity', '1' );
+            // Clear the active profiles section of inactive profiles and show only the active profile popout.
+
+            $staffProfilesHeader.hide();
+            $staffProfilePreviews.hide();
+            $staffProfilesWrapper.css('margin-top', '-0.75rem');
+            thisPopout.toggleClass( 'show-popout' );
+            $staffExitButton.show(130);
+
+            $staffExitButton.click(function () {
+                $staffExitButton.hide();
+                thisPopout.removeClass( 'show-popout' );
+                $staffProfilesWrapper.css('margin-top', '0');
+                $staffProfilePreviews.show();
+                $staffProfilesHeader.show();
+                $boardProfilesWrapper.css( 'opacity', '1' );
+                $advisorsProfilesWrapper.css( 'opacity', '1' );
+                $introCopy.css( 'opacity', '1' );
+            });
         });
-    });
+    }
 
-    // $staffProfilePreviews.click(function(){
-    //     var buttonIndex = jQuery.inArray( this, $staffProfilePreviews );
-    //     var thisPopout = $staffProfilePopouts[buttonIndex];
-    //     thisPopout = $( thisPopout );
+    // Make the profile images the click target for displaying profile popouts
 
-    //     // Grey-out the rest of the page content.
+    function popFromImages() {
+        $staffProfilePreviews.click(function(){
+            var buttonIndex = jQuery.inArray( this, $staffProfilePreviews );
+            var thisPopout = $staffProfilePopouts[buttonIndex];
+            thisPopout = $( thisPopout );
 
-    //     $boardProfilesWrapper.animate({opacity: 0.25}, 130);
-    //     $advisorsProfilesWrapper.animate({opacity: 0.25}, 130);
-    //     $introCopy.animate({opacity: 0.25}, 130);
+            // Grey-out the rest of the page content.
 
-    //     // Clear the active profiles section of inactive profiles and show only the active profile popout.
+            $boardProfilesWrapper.animate({opacity: 0.25}, 130);
+            $advisorsProfilesWrapper.animate({opacity: 0.25}, 130);
+            $introCopy.animate({opacity: 0.25}, 130);
 
-    //     $staffProfilesHeader.hide();
-    //     $staffProfilePreviews.hide();
-    //     $staffProfilePopouts.hide();
-    //     $staffProfilesWrapper.css('margin-top', '-0.75rem');
-    //     thisPopout.show().toggleClass( 'show-popout' );
-    //     $staffExitButton.show(130);
+            // Clear the active profiles section of inactive profiles and show only the active profile popout.
 
-    //     $staffExitButton.click(function () {
-    //         $staffExitButton.hide();
-    //         thisPopout.removeClass( 'show-popout' );
-    //         $staffProfilesWrapper.css('margin-top', '0');
-    //         $staffProfilePreviews.show();
-    //         $staffProfilesHeader.show();
-    //         $boardProfilesWrapper.css( 'opacity', '1' );
-    //         $advisorsProfilesWrapper.css( 'opacity', '1' );
-    //         $introCopy.css( 'opacity', '1' );
-    //     });
-    // });
+            $staffProfilesHeader.hide();
+            $staffProfilePreviews.hide();
+            $staffProfilePopouts.hide();
+            $staffProfilesWrapper.css('margin-top', '-0.75rem');
+            thisPopout.show().toggleClass( 'show-popout' );
+            $staffExitButton.show(130);
+
+            $staffExitButton.click(function () {
+                $staffExitButton.hide();
+                thisPopout.removeClass( 'show-popout' );
+                $staffProfilesWrapper.css('margin-top', '0');
+                $staffProfilePreviews.show();
+                $staffProfilesHeader.show();
+                $boardProfilesWrapper.css( 'opacity', '1' );
+                $advisorsProfilesWrapper.css( 'opacity', '1' );
+                $introCopy.css( 'opacity', '1' );
+            });
+        });
+    }
+
+  if ( $( window ).width() < 760 ) {
+    popFromButtons();
+  } else {
+    popFromImages();
+  }
+
+  $( window ).resize(function( ){
+      
+    if ( $( window ).width() < 760 ) {
+        popFromButtons();
+    } else {
+        popFromImages();
+    }
+  });
 
     $boardEnterButtons.click(function(){
         var buttonIndex = jQuery.inArray( this, $boardEnterButtons );
