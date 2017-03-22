@@ -353,6 +353,7 @@ add_action( 'init', 'sponsor_cpt', 0 );
 
 
 // news media Custom Post Type
+// Register Custom Post Type
 function newsmedia_cpt() {
 
 	$labels = array(
@@ -363,14 +364,14 @@ function newsmedia_cpt() {
 		'archives'              => 'Newsmedia Archives',
 		'attributes'            => 'Newsmedia Attributes',
 		'parent_item_colon'     => 'Parent Item:',
-		'all_items'             => 'All Newsmedias',
+		'all_items'             => 'All INewsmedia',
 		'add_new_item'          => 'Add New Newsmedia',
-		'add_new'               => 'Add New Newsmedia',
+		'add_new'               => 'Add New',
 		'new_item'              => 'New Newsmedia',
-		'edit_item'             => 'Edit Item',
+		'edit_item'             => 'Edit Newsmedia',
 		'update_item'           => 'Update Newsmedia',
 		'view_item'             => 'View Newsmedia',
-		'view_items'            => 'View Newsmedia',
+		'view_items'            => 'View Newsmedias',
 		'search_items'          => 'Search Newsmedia',
 		'not_found'             => 'Not found',
 		'not_found_in_trash'    => 'Not found in Trash',
@@ -386,9 +387,9 @@ function newsmedia_cpt() {
 	);
 	$args = array(
 		'label'                 => 'Newsmedia',
-		'description'           => 'articles of news and media',
+		'description'           => 'news and media articles',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'author', 'thumbnail', 'revisions', 'custom-fields', ),
+		'supports'              => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'custom-fields', ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
@@ -403,7 +404,7 @@ function newsmedia_cpt() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
 	);
-	register_post_type( 'newsmeida', $args );
+	register_post_type( 'newsmedia', $args );
 
 }
 add_action( 'init', 'newsmedia_cpt', 0 );
