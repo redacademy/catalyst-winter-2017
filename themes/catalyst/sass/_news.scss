@@ -173,6 +173,15 @@
     }
     .tweet_wrap {
         padding: 20px;
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .tweet_data{
+        width: 30%;
+    }
+    .times{
+        width: 30%;
     }
     .tweet-actions a {
         padding: 5px;
