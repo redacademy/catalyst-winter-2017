@@ -46,7 +46,7 @@
     }
     .readmore {
         text-align: center;
-        margin: 20px 0;
+        margin: 5rem 0;
         a {
             padding: 20px 50px;
             text-transform: uppercase;
@@ -60,7 +60,7 @@
         padding-top: 3rem;
         text-align: center;
         .quotes-wrapper {
-            margin: 0 1rem;
+            margin: 0 auto;
             width: 85%;
         }
         .quote-text {
@@ -93,6 +93,50 @@
     }
     .team{
         padding-top: 3rem;
+        text-align: center;
+        .member {
+            width: 50%;
+            margin: 0 1rem;
+            max-width: 275px;
+            opacity: 0.5;
+            @include media ($desktop-width){
+                margin: 0 3rem;
+                width: 33%;
+            }
+            p {
+                margin: 0;
+            }
+            .member-name {
+                font-size: 1.4rem;
+                font-weight: bold;
+            }
+            .position {
+                font-style: italic;
+                font-size: 1.2rem;
+            }
+        }
+        .is-selected {
+            opacity: 1;
+        }
+        .team-catalyst-copy {
+            width: 300px;
+            margin: 0 auto;
+            @include media($desktop-width){
+                max-width: 1000px;
+                width: 100%;
+                font-size: 1.2rem;
+            }
+        }
+        .small-subheader {
+            font-size: 1.3rem;
+            width: 300px;
+            margin: 2rem auto;
+            text-transform: uppercase;
+            @include media($desktop-width){
+                width: 100%;
+                font-size: 1.5rem;
+            }
+        }
     }
     @include ourStory-carousel{
         .formula-text{

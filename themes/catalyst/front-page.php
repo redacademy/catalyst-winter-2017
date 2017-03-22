@@ -33,6 +33,17 @@
             <h2>team catalyst</h2>
             <p class="team-catalyst-copy"><?php echo CFS()->get( 'team_catalyst_copy' ); ?></p>
             <h3 class="small-subheader"><?php echo CFS()->get( 'team_catalyst_subheader' ); ?></h3>
+
+            <div class="member-carousel" data-flickity='{"contain": true, "wrapAround": true, "imagesLoaded": true, "pageDots": false  }'>
+                <?php $members = CFS()->get('team_members');
+                    foreach ( $members as $member ) : setup_postdata( $post ); ?>
+                    <div class="member">
+                        <img class="member_img" src='<?php echo $member['member']; ?>' />
+                        <p class="member-name"> <?php echo $member['member_name']; ?> </p>
+                        <p class="position"> <?php echo $member['position']; ?> </p>
+                    </div>
+                <?php endforeach; wp_reset_postdata(); ?>
+            </div>
             <div class="readmore"><a>collaborate with us</a></div>
         </div>
     </div>
