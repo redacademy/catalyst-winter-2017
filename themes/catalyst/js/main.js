@@ -40,6 +40,7 @@
 
     var $staffProfilesWrapper = $( '.staff-profiles-wrapper' );
     var $staffProfilesHeader = $( '.staff-profiles-wrapper > .small-header:nth-child(1)' );
+    var $catalystTeamHeader = $( '.our-team-header' );
 
     var $boardProfilesWrapper = $( '.board-profiles-wrapper' );
     var $boardProfilesHeader = $( '.board-profiles-header' );
@@ -70,7 +71,7 @@
             $staffProfilePopouts.hide();
             $staffProfilesWrapper.css('margin-top', '-0.75rem');
             thisPopout.show().addClass( 'show-popout' );
-            $( window )
+            scrollToPopout(thisPopout, $catalystTeamHeader);
             $staffExitButton.show(130);
 
             $staffExitButton.click(function () {
@@ -107,6 +108,7 @@
             $staffProfilePopouts.hide();
             $staffProfilesWrapper.css('margin-top', '-0.75rem');
             thisPopout.show().addClass( 'show-popout' );
+            scrollToPopout( thisPopout, $catalystTeamHeader );
             $staffExitButton.show(130);
 
             $staffExitButton.click(function () {
@@ -120,6 +122,12 @@
                 $introCopy.css( 'opacity', '1' );
             });
         });
+    }
+
+    function scrollToPopout($thisPopout, $sectionHeader) {
+        $('html, body').animate({
+            scrollTop: ( $thisPopout.offset().top - ( $sectionHeader.height() * 2 ) )
+        }, 200);
     }
 
     if ( $( window ).width() < 760 ) {
