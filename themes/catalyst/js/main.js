@@ -33,7 +33,7 @@
     var $boardProfilePreviews = $( '.board-profile-preview' );
 
     var $staffProfileImages = $( '.staff-profile-preview > .profile-image' );
-    // var $boardProfileImages = $( '.board-profile-preview > .profile-image' );
+
 
     var $staffProfilePopouts = $( '.staff-profile-popout' );
     var $boardProfilePopouts = $( '.board-profile-popout' );
@@ -52,9 +52,7 @@
     // Make the plus-sign buttons the click target for displaying profile popouts
 
     function popFromButtons() {
-        $staffEnterButtons.click(function(){
-            console.log('buttons');
-            console.log(isMobileWidth);
+        $staffEnterButtons.on('click', function(){
             var buttonIndex = jQuery.inArray( this, $staffEnterButtons );
             var thisPopout = $staffProfilePopouts[buttonIndex];
             thisPopout = $( thisPopout );
@@ -90,10 +88,8 @@
     // Make the profile images the click target for displaying profile popouts
 
     function popFromImages() {
-        $staffProfileImages.click(function(){
-            console.log('images');
-            console.log(isMobileWidth);
-            var buttonIndex = jQuery.inArray( this, $staffProfilePreviews );
+        $staffProfileImages.on('click', function(){
+            var buttonIndex = jQuery.inArray( this, $staffProfileImages );
             var thisPopout = $staffProfilePopouts[buttonIndex];
             thisPopout = $( thisPopout );
 
@@ -125,41 +121,21 @@
         });
     }
 
-    var isMobileWidth = false;
-
     if ( $( window ).width() < 760 ) {
-        isMobileWidth = true;
-        console.log(isMobileWidth);
         popFromButtons();
     } else {
-        isMobileWidth = false;
-        console.log(isMobileWidth);
+        popFromImages();
+    }
+    
+    if ( $( window ).width() < 760 ) {
+
+        $staffProfileImages.off('click');
+        popFromButtons();
+    } else {
+        $staffEnterButtons.off('click');
         popFromImages();
     }
 
-    $( window ).resize(function( ){
-      
-        if ( $( window ).width() <= 760 ) {
-            isMobileWidth = true;
-            
-            if ( isMobileWidth ) {
-                popFromButtons();
-                // console.log( isMobileWidth );
-            } else {
-                return;
-            }
-            
-        } else if ( $( window ).width() >760 ){
-          isMobileWidth = false;
-            
-            if ( isMobileWidth !== true ) {
-                console.log( isMobileWidth );
-                popFromImages();
-            } else {
-                return;
-            }
-        }
-    });
 
     $boardEnterButtons.click(function(){
         var buttonIndex = jQuery.inArray( this, $boardEnterButtons );

@@ -18,5 +18,5 @@
 							</div>
 								<p class='formula-text'> <?php echo $images['formula_text']; ?> </p>
 						</div>
-					<?php endforeach ?>
+					<?php endforeach; wp_reset_postdata();?>
 				</div>

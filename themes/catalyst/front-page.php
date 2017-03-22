@@ -1,11 +1,4 @@
-<?php
-/**
-* Template Name: Front Page
-*
-* @package RED_Starter_Theme
-*/
-
-get_header(); ?>
+<?php get_header(); ?>
 
 
 <section class="front-page">

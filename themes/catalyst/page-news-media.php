@@ -34,8 +34,14 @@ get_header(); ?>
              foreach ( $newsarticles as $newsarticle ) : setup_postdata( $newsarticle ); ?>
 
              <div id="news" class="<?php echo $newsarticle->ID ?>">
-                <div class="article-thumb"><?php echo get_the_post_thumbnail($newsarticle->ID) ?></div>
-
+                <?php
+                $img = get_the_post_thumbnail($newsarticle->ID);
+                if(!empty($img)){
+                echo "<div class='article-thumb' style='height:150px'>".$img."</div>";
+                }else{
+                    echo " <div class='article-thumb' style='height:0px'></div>";
+                };
+                ?>
                 <div class="article-content">
                 <p class="date"><?php echo get_the_date("m d, Y", $newsarticle->ID) ?></p>
                 <h3><?php echo get_the_title($newsarticle->ID) ?></h3>
@@ -47,17 +53,6 @@ get_header(); ?>
 
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
 
         <div class="load-more"><a>load more</a></div>
         </main> <!--#main -->
