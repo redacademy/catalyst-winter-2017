@@ -93,11 +93,11 @@
     }
     .team{
         padding-top: 3rem;
+        text-align: center;
         .member {
             width: 50%;
             margin: 0 1rem;
             max-width: 275px;
-            text-align: center;
             opacity: 0.5;
             @include media ($desktop-width){
                 margin: 0 3rem;

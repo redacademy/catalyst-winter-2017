@@ -864,12 +864,12 @@ textarea {
     opacity: 1; }
 
 .home .team {
-  padding-top: 3rem; }
+  padding-top: 3rem;
+  text-align: center; }
   .home .team .member {
     width: 50%;
     margin: 0 1rem;
     max-width: 275px;
-    text-align: center;
     opacity: 0.5; }
     @media all and (min-width: 600px) {
       .home .team .member {
