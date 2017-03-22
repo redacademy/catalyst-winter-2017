@@ -885,6 +885,23 @@ textarea {
       font-size: 1.2rem; }
   .home .team .is-selected {
     opacity: 1; }
+  .home .team .team-catalyst-copy {
+    width: 300px;
+    margin: 0 auto; }
+    @media all and (min-width: 600px) {
+      .home .team .team-catalyst-copy {
+        max-width: 1000px;
+        width: 100%;
+        font-size: 1.2rem; } }
+  .home .team .small-subheader {
+    font-size: 1.3rem;
+    width: 300px;
+    margin: 2rem auto;
+    text-transform: uppercase; }
+    @media all and (min-width: 600px) {
+      .home .team .small-subheader {
+        width: 100%;
+        font-size: 1.5rem; } }
 
 .home .formula-carousel {
   margin-bottom: 2rem;
