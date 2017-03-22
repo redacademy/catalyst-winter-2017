@@ -54,17 +54,6 @@ get_header(); ?>
     </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
         <div class="load-more"><a>load more</a></div>
         </main> <!--#main -->
     </div> <!--#primary -->

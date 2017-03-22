@@ -1,6 +1,3 @@
-<?php
-
-
 get_header(); ?>
 
 
