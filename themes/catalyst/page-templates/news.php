@@ -27,23 +27,20 @@ get_header(); ?>
 <div class="newsmedia-content">
     <?php get_sidebar(); ?>
     <div class="newsmedia-article">
-        <?php
-            $args = array(
+        <?php $newsarticles = get_posts( array(
             'post_type' => 'newsmedia',
             'order' => 'ASC',
-            'numberposts' => 5
-            );
-            $newsmedia_article = get_posts( $args ); // returns an array of posts
-        ?>
-        <?php foreach ( $newsmedia_article as $newsmedia ) : $id = get_the_id( $newsmedia ); ?>
-            <div class="<?php echo $newsmedia->ID ?>">
-                <?php echo get_the_post_thumbnail( $newsmedia ) ?>
-                <p><?php echo get_the_date("Y-m-d", $newsmedia ) ?></p>
-                <h3><?php echo get_the_title( $newsmedia ) ?></h3>
+            ));
+             foreach ( $newsarticles as $newsarticle ) : ?>
+
+            <div>
+                <?php echo get_the_post_thumbnail($newsarticle->ID) ?>
+                <p><?php echo get_the_date("Y-m-d", $newsarticle->ID) ?></p>
+                <h3><?php echo get_the_title($newsarticle->ID) ?></h3>
                 <?php get_template_part( 'template-parts/content', 'newsmedia'); ?>
-				<a href="<?php echo CFS()->get('link', $id); ?>">link</a>
+				<?php echo CFS()->get('link', $newsarticle->ID); ?>
             </div>
-        <?php endforeach; wp_reset_postdata(); ?>
+        <?php endforeach; ?>
 
     </div>
 </div>
