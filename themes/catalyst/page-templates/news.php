@@ -31,14 +31,17 @@ get_header(); ?>
             'post_type' => 'newsmedia',
             'order' => 'ASC',
             ));
-             foreach ( $newsarticles as $newsarticle ) : ?>
+             foreach ( $newsarticles as $newsarticle ) : setup_postdata( $newsarticle ); ?>
 
-            <div>
+             <div id="news" class="<?php echo $newsarticle->ID ?>">
                 <?php echo get_the_post_thumbnail($newsarticle->ID) ?>
-                <p><?php echo get_the_date("Y-m-d", $newsarticle->ID) ?></p>
+
+                <div class="article-content">
+                <p class="date"><?php echo get_the_date("Y-m-d", $newsarticle->ID) ?></p>
                 <h3><?php echo get_the_title($newsarticle->ID) ?></h3>
-                <?php get_template_part( 'template-parts/content', 'newsmedia'); ?>
+                <?php echo get_template_part( 'template-parts/content', 'newsmedia'); ?>
 				<?php echo CFS()->get('link', $newsarticle->ID); ?>
+                </div>
             </div>
         <?php endforeach; ?>
 
