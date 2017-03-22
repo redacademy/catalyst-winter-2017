@@ -648,6 +648,8 @@ textarea {
     @media all and (min-width: 886px) {
       .footer #text-2 p {
         font-size: 20px; } }
+  .footer #text-3 {
+    margin-top: 5px; }
   .footer .sns-icon {
     display: -ms-flexbox;
     display: flex;
@@ -728,7 +730,7 @@ textarea {
     margin: auto; }
     @media all and (min-width: 600px) {
       .footer .footer-widget-area {
-        width: 350px; } }
+        width: 310px; } }
     @media all and (min-width: 670px) {
       .footer .footer-widget-area {
         width: 380px; } }
@@ -757,9 +759,6 @@ textarea {
         .footer .company-info p {
           font-size: 14px;
           line-height: 15px; } }
-      @media all and (min-width: 668px) {
-        .footer .company-info p {
-          width: 368px; } }
       @media all and (min-width: 900px) {
         .footer .company-info p {
           width: 100%;
