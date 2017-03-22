@@ -52,7 +52,7 @@
                 <div class="images">
                     <?php echo '<img src="'.$image['image'].'"/>'; ?>
                 </div>
-            <?php endforeach ?>
+            <?php endforeach; wp_reset_postdata(); ?>
         </div>
         <div class="quote-carousel" data-flickity='{"contain": true, "wrapAround": true, "imagesLoaded": true, "autoPlay": 2000, "prevNextButtons": false, "pageDots": false }'>
             <?php $quotes_gallery = CFS()->get('quotes_gallery');
@@ -63,12 +63,12 @@
                     echo '<p class="line"> '.$quotes['line1'].'</p>';
                     echo '<p class="line"> '.$quotes['line2'].'</p>'; ?>
                 </div>
-                <?php endforeach ?>
+                <?php endforeach; wp_reset_postdata(); ?>
         </div>
         <div class="collab-link-container">
             <a href="#" class="collab-link">Collaborate with us</a>
         </div>
-        <?php endwhile; ?>
+        <?php endwhile; wp_reset_postdata(); ?>
     </section>
     <section>
         <div class="other-proj">
