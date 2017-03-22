@@ -17,7 +17,7 @@
 					</div>
 
 					<div class="company-info">
-						<div class="footer-title">
+						<!--<div class="footer-title">-->
 							<div class="footerLogo"></div>
 							<?php
 							/**
@@ -39,7 +39,7 @@
 					<div class="sns-icon">
 						<a href="https://twitter.com/catalyst_cds"><div class="twitter"></div></a>
 						<a href="https://www.linkedin.com"><div class="linkedin"></div></a>
-					</div>
+
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
