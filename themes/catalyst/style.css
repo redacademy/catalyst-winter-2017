@@ -1062,7 +1062,7 @@ object {
 .page-template-our-story .bannertext {
   font-size: 1.5rem;
   color: white;
-  width: 380px;
+  width: 320px;
   margin: 10% auto;
   text-align: center;
   line-height: 2rem;
@@ -1300,7 +1300,7 @@ object {
     .page-template-our-team .hero-image-banner .banner-text {
       font-size: 1.5rem;
       color: white;
-      width: 380px;
+      width: 320px;
       margin: 10% auto;
       text-align: center;
       line-height: 2rem;
@@ -1615,7 +1615,7 @@ object {
     left: 18%;
     font-size: 1.5rem;
     color: white;
-    width: 380px;
+    width: 320px;
     margin: 10% auto;
     text-align: center;
     line-height: 2rem;
@@ -1703,7 +1703,7 @@ object {
     .page-template-collaborate .hero-image-banner .banner-text {
       font-size: 1.5rem;
       color: white;
-      width: 380px;
+      width: 320px;
       margin: 10% auto;
       text-align: center;
       line-height: 2rem;
@@ -2094,7 +2094,7 @@ object {
     .page-template-contact .hero-image-banner .banner-text {
       font-size: 1.5rem;
       color: white;
-      width: 380px;
+      width: 320px;
       margin: 10% auto;
       text-align: center;
       line-height: 2rem;
@@ -2265,7 +2265,7 @@ object {
   .page-template-careers .hero-image-banner .banner-text {
     font-size: 1.5rem;
     color: white;
-    width: 380px;
+    width: 320px;
     margin: 10% auto;
     text-align: center;
     line-height: 2rem;
@@ -2388,7 +2388,7 @@ object {
   .page-template-projects .hero-image-banner .banner-text {
     font-size: 1.5rem;
     color: white;
-    width: 380px;
+    width: 320px;
     margin: 10% auto;
     text-align: center;
     line-height: 2rem;
@@ -2544,12 +2544,18 @@ object {
 .single-projects .images {
   width: 85%;
   margin: 0 0.5rem;
-  opacity: 0.5; }
+  opacity: 0.5;
+  height: 300px;
+  overflow: hidden; }
   @media all and (min-width: 600px) {
     .single-projects .images {
-      width: 50%; } }
+      width: 50%;
+      height: 500px; } }
   .single-projects .images img {
-    width: 100%; }
+    width: auto;
+    height: 100%;
+    max-width: none;
+    min-width: 100%; }
 
 .single-projects .quote-carousel {
   margin: 2rem 0; }
@@ -2605,9 +2611,12 @@ object {
   width: 85%;
   margin: 0 0.5rem;
   opacity: 0.5;
-  text-align: center; }
+  text-align: center;
+  height: 300px;
+  overflow: hidden; }
   @media all and (min-width: 600px) {
     .single-projects .other-proj-wrapper {
+      height: 500px;
       width: 50%; } }
   .single-projects .other-proj-wrapper .project-name,
   .single-projects .other-proj-wrapper .project-location,
@@ -2625,8 +2634,10 @@ object {
       display: inline;
       text-transform: uppercase; }
   .single-projects .other-proj-wrapper img {
-    display: block;
-    margin: 0 auto; }
+    width: auto;
+    height: 100%;
+    max-width: none;
+    min-width: 100%; }
   .single-projects .other-proj-wrapper .project-name {
     font-weight: bold; }
 
