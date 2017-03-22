@@ -48,5 +48,19 @@ function catalyst_hero_image_css() {
     add_action( 'wp_enqueue_scripts', 'catalyst_hero_image_css' );
 
 
+function flexible_widget_titles( $widget_title ) {
 
+// get rid of any leading and trailing spaces
+
+$title = trim( $widget_title );
+
+// check the first and last character, if [ and ] set the title to empty
+
+if ( $title[0] == '[' && $title[strlen($title) - 1] == ']' ) $title = '';
+
+return $title;
+
+}
+
+add_filter( 'widget_title', 'flexible_widget_titles' );
 
