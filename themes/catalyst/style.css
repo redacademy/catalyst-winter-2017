@@ -1696,7 +1696,8 @@ object {
       .page-template-news .newsmedia-content .newsmedia-article {
         width: 60%; }
       .page-template-news .newsmedia-content .widget-area {
-        width: 40%; } }
+        width: 40%;
+        padding: 0 20px; } }
   .page-template-news .widget-title {
     display: none; }
   .page-template-news .newsmedia-article #news {

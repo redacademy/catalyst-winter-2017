@@ -28,9 +28,9 @@
                     <p class="person"> <?php echo $quote['person']; ?></p> 
                     <p class="line"> <?php echo $quote['line2']; ?></p>
                     <p class="line"> <?php echo $quote['line1']; ?></p> 
-                <?php endforeach ?>
+                <?php endforeach; wp_reset_postdata(); ?>
             </div>
         </div>
 
-    <?php endforeach; ?>
+    <?php endforeach; wp_reset_postdata();?>
 </div>
