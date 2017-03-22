@@ -1663,6 +1663,7 @@ object {
   .page-template-news .entry-header {
     display: none; }
   .page-template-news h2 {
+    margin-bottom: 20px;
     font-size: 30px;
     font-weight: 400;
     text-transform: uppercase;
@@ -1687,7 +1688,10 @@ object {
         box-shadow: 1px 1px 5px #323232; }
   .page-template-news .video {
     text-align: center;
-    height: 400px; }
+    height: 350px; }
+  .page-template-news .newsmedia-content .widget-area {
+    margin-top: 10px;
+    padding: 0 20px; }
   @media all and (min-width: 600px) {
     .page-template-news .newsmedia-content {
       display: -ms-flexbox;
@@ -1696,72 +1700,87 @@ object {
       .page-template-news .newsmedia-content .newsmedia-article {
         width: 60%; }
       .page-template-news .newsmedia-content .widget-area {
-        width: 40%;
-        padding: 0 20px; } }
+        width: 40%; } }
   .page-template-news .widget-title {
     display: none; }
-  .page-template-news .newsmedia-article #news {
-    background-color: #D9F1FF;
-    padding-bottom: 20px;
-    margin: 10px 0; }
-  .page-template-news .newsmedia-article .article-thumb {
-    width: 100%;
-    overflow: hidden; }
-    .page-template-news .newsmedia-article .article-thumb img {
-      max-width: 105%; }
-  .page-template-news .newsmedia-article [class="292"] {
-    display: none; }
-  .page-template-news .newsmedia-article [class="286"] {
-    display: none; }
-  .page-template-news .newsmedia-article [class="282"] {
-    display: none; }
-  .page-template-news .newsmedia-article [class="296"] {
-    display: none; }
-  @media all and (min-width: 600px) {
-    .page-template-news .newsmedia-article {
-      padding: 0px 20px;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -ms-flex-pack: distribute;
-          justify-content: space-around; }
-      .page-template-news .newsmedia-article [class="284"] {
-        width: 100%; }
-      .page-template-news .newsmedia-article [class="292"] {
-        width: 48%;
-        display: block; }
-      .page-template-news .newsmedia-article [class="286"] {
-        width: 48%;
-        display: block; }
-      .page-template-news .newsmedia-article [class="282"] {
-        width: 48%;
-        display: block; }
-      .page-template-news .newsmedia-article [class="296"] {
-        width: 48%;
-        display: block; } }
-  .page-template-news .newsmedia-article .article-content {
-    padding: 5px 15px;
-    margin-bottom: 10px;
-    height: 180px;
-    overflow: hidden; }
-    .page-template-news .newsmedia-article .article-content p {
-      margin: 0; }
-    .page-template-news .newsmedia-article .article-content h3 {
-      margin: 8px 0; }
-  .page-template-news .newsmedia-article #post-19 {
-    font-size: 14px; }
-    .page-template-news .newsmedia-article #post-19 p {
-      text-align: left; }
-    .page-template-news .newsmedia-article #post-19 .entry-content {
-      margin: 0; }
-  .page-template-news .newsmedia-article .date {
-    font-size: 12px; }
-  .page-template-news .newsmedia-article .cfs-hyperlink {
-    color: #4A4A4A;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 5px 15px; }
+  .page-template-news .newsmedia-article {
+    padding: 0px 20px; }
+    .page-template-news .newsmedia-article #news {
+      background-color: #D9F1FF;
+      padding-bottom: 20px;
+      margin: 10px 0; }
+    .page-template-news .newsmedia-article .article-thumb {
+      width: 100%;
+      overflow: hidden; }
+      .page-template-news .newsmedia-article .article-thumb img {
+        max-width: 105%; }
+    .page-template-news .newsmedia-article [class="292"] {
+      display: none; }
+    .page-template-news .newsmedia-article [class="286"] {
+      display: none; }
+    .page-template-news .newsmedia-article [class="282"] {
+      display: none; }
+    .page-template-news .newsmedia-article [class="296"] {
+      display: none; }
+    @media all and (min-width: 600px) {
+      .page-template-news .newsmedia-article {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+        .page-template-news .newsmedia-article [class="284"] {
+          width: 100%; }
+        .page-template-news .newsmedia-article [class="292"] {
+          width: 48%;
+          display: block; }
+        .page-template-news .newsmedia-article [class="286"] {
+          width: 48%;
+          display: block; }
+        .page-template-news .newsmedia-article [class="282"] {
+          width: 48%;
+          display: block; }
+        .page-template-news .newsmedia-article [class="296"] {
+          width: 48%;
+          display: block; } }
+    .page-template-news .newsmedia-article .article-content {
+      padding: 5px 15px;
+      margin-bottom: 10px;
+      height: 180px;
+      overflow: hidden; }
+      .page-template-news .newsmedia-article .article-content p {
+        margin: 0; }
+      .page-template-news .newsmedia-article .article-content h3 {
+        margin: 8px 0; }
+    .page-template-news .newsmedia-article #post-19 {
+      font-size: 14px; }
+      .page-template-news .newsmedia-article #post-19 p {
+        text-align: left; }
+      .page-template-news .newsmedia-article #post-19 .entry-content {
+        margin: 0; }
+    .page-template-news .newsmedia-article .date {
+      font-size: 12px; }
+    .page-template-news .newsmedia-article .cfs-hyperlink {
+      color: #4A4A4A;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 5px 15px; }
+  .page-template-news ul.light li.tweets_avatar {
+    background: #D9F1FF;
+    border: none;
+    box-shadow: none;
+    border-radius: 0; }
+  .page-template-news .tweet_wrap {
+    padding: 20px; }
+  .page-template-news .tweet-actions a {
+    padding: 5px;
+    background-color: lightgrey;
+    border-radius: 20px; }
+  .page-template-news .wdtf-user-card {
+    width: 20%; }
+  .page-template-news .light .tweets-intent-data {
+    border: none; }
 
 .page-template-collaborate {
   height: 100%;
