@@ -174,4 +174,51 @@
         location = 'http://google.com/';
     }, false );
 
+    //flickity frontpage
+    $('.member-carousel').flickity({
+        contain: true,
+        wrapAround: true,
+        imagesLoaded: true,
+        pageDots: false,
+        prevNextButtons: false,
+    });
+    $('.hero-image-banner').flickity({
+        contain: true,
+        wrapAround: true,
+        imagesLoaded: true,
+        pageDots: false,
+        prevNextButtons: false,
+        autoPlay: 2000,
+        draggable: false
+    });
+    
+    //flickity single projects
+    $('.img-carousel').flickity({
+        contain: true,
+        wrapAround: true,
+        imagesLoaded: true,
+        pageDots: false,
+    });
+    $('.quote-carousel').flickity({
+        contain: true,
+        wrapAround: true,
+        imagesLoaded: true,
+        pageDots: false,
+        prevNextButtons: false,
+        autoPlay: 2000,
+    });
+    //flickity ourstory template part
+    $('.formula-carousel').flickity({
+        imagesLoaded: true,
+        pageDots: false,
+        watchCSS: true
+    });
+    //flickity projects template part 
+    $('.other-post-gallery').flickity({
+        contain: true,
+        wrapAround: true,
+        imagesLoaded: true,
+        pageDots: false,
+    });
+
 })(jQuery);

@@ -7,7 +7,7 @@
 
 ?>
 
-<div class="formula-carousel" data-flickity='{ "pageDots": false, "imagesLoaded": true, "watchCSS": true }'>
+<div class="formula-carousel">
     
 					<?php $formula_images = CFS()->get('formula', 21);
 					foreach ($formula_images as $images) : ?>

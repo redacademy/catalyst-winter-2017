@@ -7,7 +7,7 @@
 
 ?>
 
-<div class="other-post-gallery" data-flickity='{"contain": true, "wrapAround": true, "imagesLoaded": true, "pageDots": false  }'>
+<div class="other-post-gallery">
     <?php $posts = get_posts( array( 
         'post_type' => 'projects', 
         'order' => 'ASC', 
