@@ -34,6 +34,7 @@
         display: none;
     }
     h2 {
+        margin-bottom: 20px;
         font-size: 30px;
         font-weight: 400;
         text-transform: uppercase;
@@ -62,9 +63,13 @@
     }
     .video {
         text-align: center;
-        height: 400px;
+        height: 350px;
     }
     .newsmedia-content {
+        .widget-area {
+            margin-top: 10px;
+            padding: 0 20px;
+        }
         @include media($desktop-width) {
             display: flex;
             width: 100%;
@@ -73,7 +78,6 @@
             }
             .widget-area {
                 width: 40%;
-                padding: 0 20px;
             }
         }
     }
@@ -81,6 +85,7 @@
         display: none;
     }
     .newsmedia-article {
+        padding: 0px 20px;
         #news {
             background-color: $color__brand-blue;
             padding-bottom: 20px;
@@ -106,7 +111,6 @@
             display: none;
         }
         @include media($desktop-width) {
-            padding: 0px 20px;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
@@ -160,5 +164,25 @@
             text-transform: uppercase;
             padding: 5px 15px;
         }
+    }
+    ul.light li.tweets_avatar {
+        background: $color__brand-blue;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+    }
+    .tweet_wrap {
+        padding: 20px;
+    }
+    .tweet-actions a {
+        padding: 5px;
+        background-color: lightgrey;
+        border-radius: 20px;
+    }
+    .wdtf-user-card {
+        width: 20%;
+    }
+    .light .tweets-intent-data {
+        border: none;
     }
 }
