@@ -1,4 +1,4 @@
-get_header(); ?>
+<?php get_header(); ?>
 
 
 <section class="front-page">
