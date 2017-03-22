@@ -37,7 +37,7 @@ get_header(); ?>
                 <?php echo get_the_post_thumbnail($newsarticle->ID) ?>
 
                 <div class="article-content">
-                <p class="date"><?php echo get_the_date("Y-m-d", $newsarticle->ID) ?></p>
+                <p class="date"><?php echo get_the_date("m d, Y", $newsarticle->ID) ?></p>
                 <h3><?php echo get_the_title($newsarticle->ID) ?></h3>
                 <?php echo get_template_part( 'template-parts/content', 'newsmedia'); ?>
 				<?php echo CFS()->get('link', $newsarticle->ID); ?>
