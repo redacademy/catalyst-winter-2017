@@ -74,16 +74,7 @@
             scrollToPopout(thisPopout, $catalystTeamHeader);
             $staffExitButton.show(130);
 
-            $staffExitButton.click(function () {
-                $staffExitButton.hide();
-                thisPopout.removeClass( 'show-popout' );
-                $staffProfilesWrapper.css('margin-top', '0');
-                $staffProfilePreviews.show();
-                $staffProfilesHeader.show();
-                $boardProfilesWrapper.css( 'opacity', '1' );
-                $advisorsProfilesWrapper.css( 'opacity', '1' );
-                $introCopy.css( 'opacity', '1' );
-            });
+            hideStaffPopout(thisPopout);
         });
     }
 
@@ -108,15 +99,36 @@
             scrollToPopout( thisPopout, $boardProfilesHeader );
             $boardExitButton.show();
 
-            $boardExitButton.click(function(){
-                $boardExitButton.hide();
-                thisPopout.removeClass( 'show-popout' );
-                $boardProfilesHeader.removeClass( 'blue-background' );
-                $staffProfilesWrapper.css( 'opacity', '1' );
-                $advisorsProfilesWrapper.css( 'opacity', '1' );
-                $introCopy.css( 'opacity', '1' );
-                $boardProfilePreviews.show();
-            });
+            hideBoardPopout(thisPopout);
+        });
+    }
+
+    function hideStaffPopout($thisPopout) {
+        $staffExitButton.click(function () {
+            $staffExitButton.hide();
+            $thisPopout.removeClass( 'show-popout' );
+            $staffProfilesWrapper.css('margin-top', '0');
+            $staffProfilePreviews.show();
+            $staffProfilesHeader.show();
+            $boardProfilesWrapper.css( 'opacity', '1' );
+            $advisorsProfilesWrapper.css( 'opacity', '1' );
+            $introCopy.css( 'opacity', '1' );
+
+            scrollToProfile( $thisPopout );
+        });
+    }
+
+    function hideBoardPopout($thisPopout) {
+        $boardExitButton.click(function(){
+            $boardExitButton.hide();
+            $thisPopout.removeClass( 'show-popout' );
+            $boardProfilesHeader.removeClass( 'blue-background' );
+            $boardProfilePreviews.show();
+            $staffProfilesWrapper.css( 'opacity', '1' );
+            $advisorsProfilesWrapper.css( 'opacity', '1' );
+            $introCopy.css( 'opacity', '1' );
+
+            scrollToProfile( $thisPopout );
         });
     }
 
@@ -124,6 +136,12 @@
         $('html, body').animate({
             scrollTop: ( $thisPopout.offset().top - ( $sectionHeader.height() * 2.5 ) )
         }, 200);
+    }
+
+    function scrollToProfile($thisPopout) {
+        $('html, body').animate({
+            scrollTop: ( $thisPopout.prev().offset().top - ($thisPopout.prev().height() / 2) )
+        }, 0);
     }
 
     if ( $( window ).width() < 760 ) {
