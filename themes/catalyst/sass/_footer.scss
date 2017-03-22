@@ -22,8 +22,24 @@
         background-size: 100%;
         width: 15px;
         position: absolute;
-        right: 68%;
+        right: 95%;
+        bottom: 60%;
         height: 20px;
+        @include media($desktop-width) {
+            right: 92%;
+            bottom: 76%;
+        }
+        @include media(800px) {
+            right: 85%;
+        }
+        @include media(900px) {
+            right: 93%;
+        }
+        @include media(1120px) {
+            right: 88%;
+            width: 17px;
+            height: 24px;
+        }
     }
     #text-2 {
         p {
@@ -31,6 +47,9 @@
             font-size: 14px;
             padding-left: 18px;
             @include media($desktop-width) {
+                font-size: 16px;
+            }
+            @include media(886px) {
                 font-size: 20px;
             }
         }
@@ -111,6 +130,23 @@
             }
         }
     }
+    .footer-widget-area {
+        position: relative;
+        width: 300px;
+        margin: auto;
+        @include media($desktop-width) {
+            width: 350px;
+        }
+        @include media(670px) {
+            width: 380px;
+        }
+        @include media(800px) {
+            width: 457px;
+        }
+        @include media(1120px) {
+            width: 535px;
+        }
+    }
     .company-info {
         margin-bottom: 20px;
         @include media($desktop-width) {
@@ -122,25 +158,6 @@
         span {
             font-style: italic;
         }
-        // h3 {
-        //     font-size: 10px;
-        //     padding-left: 10px;
-        //     margin: 0;
-        //     height: 25px;
-        //     text-transform: uppercase;
-        //     @include media($desktop-width) {
-        //         font-size: 14px;
-        //         padding-left: 5px;
-        //     }
-        //     @include media($footer__desktop-width) {
-        //         font-size: 16px;
-        //         padding-left: 10px;
-        //     }
-        //     @include media(1120pxh) {
-        //         font-size: 20px;
-        //         padding-left: 20px;
-        //     }
-        // }
         p {
             font-size: 10px;
             font-weight: 100;

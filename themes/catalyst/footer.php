@@ -18,7 +18,7 @@
 
 					<div class="company-info">
 						<!--<div class="footer-title">-->
-							<div class="footerLogo"></div>
+
 							<?php
 							/**
 							* The footer containing the footer-1 widget area.s
@@ -32,6 +32,7 @@
 							?>
 
 							<div id="secondary" class="footer-widget-area" role="complementary">
+								<div class="footerLogo"></div>
 								<?php dynamic_sidebar( 'footer-1' ); ?>
 							</div><!-- #secondary -->
 						</div>
