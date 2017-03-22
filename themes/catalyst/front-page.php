@@ -3,7 +3,7 @@
 
 <section class="front-page">
     <header>
-        <div class="hero-image-banner" data-flickity='{"contain": true, "wrapAround": true, "imagesLoaded": true, "pageDots": false, "prevNextButtons": false, "autoPlay": 2000, "draggable": false}' >     <?php $banner_array = CFS()->get('fp_gallery');
+        <div class="hero-image-banner">     <?php $banner_array = CFS()->get('fp_gallery');
             foreach ($banner_array as $image) : ?>
                 <img class="fp-image" src='<?php echo $image['fp_images']; ?>'/>
             <?php endforeach ?>
@@ -34,7 +34,7 @@
             <p class="team-catalyst-copy"><?php echo CFS()->get( 'team_catalyst_copy' ); ?></p>
             <h3 class="small-subheader"><?php echo CFS()->get( 'team_catalyst_subheader' ); ?></h3>
 
-            <div class="member-carousel" data-flickity='{"contain": true, "wrapAround": true, "imagesLoaded": true, "pageDots": false  }'>
+            <div class="member-carousel">
                 <?php $members = CFS()->get('team_members');
                     foreach ( $members as $member ) : setup_postdata( $post ); ?>
                     <div class="member">

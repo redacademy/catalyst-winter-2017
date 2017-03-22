@@ -46,7 +46,7 @@
                 <p>Disclosed floor plans, site map, draft design, and construction photos during the development stage of the project.</p>
             </div>
         </div>
-        <div class="img-carousel" data-flickity='{"contain": true, "wrapAround": true, "pageDots": false, "imagesLoaded": true }'>
+        <div class="img-carousel">
             <?php $gallery_images = CFS()->get('gallery_images');
             foreach ($gallery_images as $image) : ?>
                 <div class="images">
@@ -54,7 +54,7 @@
                 </div>
             <?php endforeach; wp_reset_postdata(); ?>
         </div>
-        <div class="quote-carousel" data-flickity='{"contain": true, "wrapAround": true, "imagesLoaded": true, "autoPlay": 2000, "prevNextButtons": false, "pageDots": false }'>
+        <div class="quote-carousel">
             <?php $quotes_gallery = CFS()->get('quotes_gallery');
             foreach ($quotes_gallery as $quotes) : ?>
                 <div class="quotes">
