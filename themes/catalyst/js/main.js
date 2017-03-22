@@ -32,6 +32,9 @@
     var $staffProfilePreviews = $( '.staff-profile-preview' );
     var $boardProfilePreviews = $( '.board-profile-preview' );
 
+    var $staffProfileImages = $( '.staff-profile-preview > .profile-image' );
+    // var $boardProfileImages = $( '.board-profile-preview > .profile-image' );
+
     var $staffProfilePopouts = $( '.staff-profile-popout' );
     var $boardProfilePopouts = $( '.board-profile-popout' );
 
@@ -50,6 +53,8 @@
 
     function popFromButtons() {
         $staffEnterButtons.click(function(){
+            console.log('buttons');
+            console.log(isMobileWidth);
             var buttonIndex = jQuery.inArray( this, $staffEnterButtons );
             var thisPopout = $staffProfilePopouts[buttonIndex];
             thisPopout = $( thisPopout );
@@ -64,8 +69,9 @@
 
             $staffProfilesHeader.hide();
             $staffProfilePreviews.hide();
+            $staffProfilePopouts.hide();
             $staffProfilesWrapper.css('margin-top', '-0.75rem');
-            thisPopout.toggleClass( 'show-popout' );
+            thisPopout.show().addClass( 'show-popout' );
             $staffExitButton.show(130);
 
             $staffExitButton.click(function () {
@@ -84,7 +90,9 @@
     // Make the profile images the click target for displaying profile popouts
 
     function popFromImages() {
-        $staffProfilePreviews.click(function(){
+        $staffProfileImages.click(function(){
+            console.log('images');
+            console.log(isMobileWidth);
             var buttonIndex = jQuery.inArray( this, $staffProfilePreviews );
             var thisPopout = $staffProfilePopouts[buttonIndex];
             thisPopout = $( thisPopout );
@@ -101,7 +109,7 @@
             $staffProfilePreviews.hide();
             $staffProfilePopouts.hide();
             $staffProfilesWrapper.css('margin-top', '-0.75rem');
-            thisPopout.show().toggleClass( 'show-popout' );
+            thisPopout.show().addClass( 'show-popout' );
             $staffExitButton.show(130);
 
             $staffExitButton.click(function () {
@@ -117,20 +125,41 @@
         });
     }
 
-  if ( $( window ).width() < 760 ) {
-    popFromButtons();
-  } else {
-    popFromImages();
-  }
+    var isMobileWidth = false;
 
-  $( window ).resize(function( ){
-      
     if ( $( window ).width() < 760 ) {
+        isMobileWidth = true;
+        console.log(isMobileWidth);
         popFromButtons();
     } else {
+        isMobileWidth = false;
+        console.log(isMobileWidth);
         popFromImages();
     }
-  });
+
+    $( window ).resize(function( ){
+      
+        if ( $( window ).width() <= 760 ) {
+            isMobileWidth = true;
+            
+            if ( isMobileWidth ) {
+                popFromButtons();
+                // console.log( isMobileWidth );
+            } else {
+                return;
+            }
+            
+        } else if ( $( window ).width() >760 ){
+          isMobileWidth = false;
+            
+            if ( isMobileWidth !== true ) {
+                console.log( isMobileWidth );
+                popFromImages();
+            } else {
+                return;
+            }
+        }
+    });
 
     $boardEnterButtons.click(function(){
         var buttonIndex = jQuery.inArray( this, $boardEnterButtons );
