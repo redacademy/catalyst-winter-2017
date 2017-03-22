@@ -54,6 +54,9 @@
             }
         }
     }
+    #text-3{
+        margin-top: 5px;
+    }
     .sns-icon {
         display: flex;
         justify-content: center;
@@ -135,7 +138,7 @@
         width: 300px;
         margin: auto;
         @include media($desktop-width) {
-            width: 350px;
+            width: 310px;
         }
         @include media(670px) {
             width: 380px;
@@ -166,9 +169,6 @@
             @include media($desktop-width) {
                 font-size: 14px;
                 line-height: 15px;
-            }
-            @include media(668px) {
-                width: 368px;
             }
             @include media($footer__desktop-width) {
                 width: 100%;
