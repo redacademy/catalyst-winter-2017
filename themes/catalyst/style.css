@@ -1668,13 +1668,17 @@ object {
     background-color: #D9F1FF;
     padding-bottom: 20px;
     margin: 10px 0; }
+  .page-template-news .newsmedia-article .article-thumb {
+    width: 300px;
+    height: 150px;
+    overflow: hidden; }
   .page-template-news .newsmedia-article [class="292"] {
     display: none; }
   .page-template-news .newsmedia-article [class="286"] {
     display: none; }
   .page-template-news .newsmedia-article [class="282"] {
     display: none; }
-  .page-template-news .newsmedia-article [class="284"] {
+  .page-template-news .newsmedia-article [class="296"] {
     display: none; }
   @media all and (min-width: 600px) {
     .page-template-news .newsmedia-article {
@@ -1685,7 +1689,7 @@ object {
           flex-wrap: wrap;
       -ms-flex-pack: distribute;
           justify-content: space-around; }
-      .page-template-news .newsmedia-article [class="296"] {
+      .page-template-news .newsmedia-article [class="284"] {
         width: 100%; }
       .page-template-news .newsmedia-article [class="292"] {
         width: 48%;
@@ -1696,19 +1700,20 @@ object {
       .page-template-news .newsmedia-article [class="282"] {
         width: 48%;
         display: block; }
-      .page-template-news .newsmedia-article [class="284"] {
+      .page-template-news .newsmedia-article [class="296"] {
         width: 48%;
         display: block; } }
   .page-template-news .newsmedia-article .article-content {
-    padding: 5px 15px; }
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    height: 180px;
+    overflow: hidden; }
     .page-template-news .newsmedia-article .article-content p {
       margin: 0; }
     .page-template-news .newsmedia-article .article-content h3 {
       margin: 8px 0; }
   .page-template-news .newsmedia-article #post-19 {
-    font-size: 14px;
-    margin: 0;
-    padding-bottom: 10px; }
+    font-size: 14px; }
     .page-template-news .newsmedia-article #post-19 p {
       text-align: left; }
     .page-template-news .newsmedia-article #post-19 .entry-content {
@@ -1718,7 +1723,8 @@ object {
   .page-template-news .newsmedia-article .cfs-hyperlink {
     color: #4A4A4A;
     text-decoration: none;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    padding: 5px 15px; }
 
 .page-template-collaborate {
   height: 100%;

@@ -29,19 +29,19 @@ get_header(); ?>
     <div class="newsmedia-article">
         <?php $newsarticles = get_posts( array(
             'post_type' => 'newsmedia',
-            'order' => 'ASC',
+            'order' => 'DSC',
             ));
              foreach ( $newsarticles as $newsarticle ) : setup_postdata( $newsarticle ); ?>
 
              <div id="news" class="<?php echo $newsarticle->ID ?>">
-                <?php echo get_the_post_thumbnail($newsarticle->ID) ?>
+                <div class="article-thumb"><?php echo get_the_post_thumbnail($newsarticle->ID) ?></div>
 
                 <div class="article-content">
                 <p class="date"><?php echo get_the_date("m d, Y", $newsarticle->ID) ?></p>
                 <h3><?php echo get_the_title($newsarticle->ID) ?></h3>
                 <?php echo get_template_part( 'template-parts/content', 'newsmedia'); ?>
-				<?php echo CFS()->get('link', $newsarticle->ID); ?>
                 </div>
+                <?php echo CFS()->get('link', $newsarticle->ID); ?>
             </div>
         <?php endforeach; ?>
 
