@@ -618,7 +618,17 @@ textarea {
   .footer .footerLogo {
     background: url("../../images/logo.png") no-repeat;
     background-size: 100%;
-    width: 15px; }
+    width: 15px;
+    position: absolute;
+    right: 68%;
+    height: 20px; }
+  .footer #text-2 p {
+    font-weight: bold;
+    font-size: 14px;
+    padding-left: 18px; }
+    @media all and (min-width: 600px) {
+      .footer #text-2 p {
+        font-size: 20px; } }
   .footer .sns-icon {
     display: -ms-flexbox;
     display: flex;
@@ -703,24 +713,6 @@ textarea {
         width: 50%; } }
     .footer .company-info span {
       font-style: italic; }
-    .footer .company-info h3 {
-      font-size: 10px;
-      padding-left: 10px;
-      margin: 0;
-      height: 25px;
-      text-transform: uppercase; }
-      @media all and (min-width: 600px) {
-        .footer .company-info h3 {
-          font-size: 14px;
-          padding-left: 5px; } }
-      @media all and (min-width: 900px) {
-        .footer .company-info h3 {
-          font-size: 16px;
-          padding-left: 10px; } }
-      @media all and (min-width: 1120pxh) {
-        .footer .company-info h3 {
-          font-size: 20px;
-          padding-left: 20px; } }
     .footer .company-info p {
       font-size: 10px;
       font-weight: 100;
