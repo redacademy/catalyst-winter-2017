@@ -775,16 +775,16 @@ textarea {
 .home header {
   position: relative; }
 
-.home .hero-image-banner {
+.home .fp-carousel {
   min-width: 100%; }
   @media all and (min-width: 600px) {
-    .home .hero-image-banner {
+    .home .fp-carousel {
       height: 70vh; } }
-  .home .hero-image-banner img {
+  .home .fp-carousel img {
     max-width: initial;
     height: 110vh; }
     @media all and (min-width: 600px) {
-      .home .hero-image-banner img {
+      .home .fp-carousel img {
         height: 70vh; } }
 
 .home .header-text {
@@ -2252,15 +2252,15 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.page-template-contact {
+.page-template-default {
   text-align: center;
   height: 100%;
   width: 100%; }
   @media all and (min-width: 600px) {
-    .page-template-contact {
+    .page-template-default {
       font-size: 1.4rem;
       line-height: 1.75rem; } }
-  .page-template-contact .hero-image-banner {
+  .page-template-default .hero-image-banner {
     min-width: 100%;
     display: -ms-flexbox;
     display: flex;
@@ -2271,19 +2271,15 @@ object {
     -ms-flex-align: center;
         align-items: center; }
     @media all and (min-width: 600px) {
-      .page-template-contact .hero-image-banner {
+      .page-template-default .hero-image-banner {
         height: 70vh; } }
-    .page-template-contact .hero-image-banner .entry-title {
+    .page-template-default .hero-image-banner .banner-title {
       font-size: 3.5rem;
-      color: white;
+      color: #fff;
       text-align: center;
       text-transform: uppercase;
       text-shadow: 1px 2px 5px #323232; }
-      @media all and (min-width: 600px) {
-        .page-template-contact .hero-image-banner .entry-title {
-          margin: 0 0 1.5rem;
-          font-size: 3.85rem; } }
-    .page-template-contact .hero-image-banner .banner-text {
+    .page-template-default .hero-image-banner .banner-text {
       font-size: 1.5rem;
       color: white;
       width: 320px;
@@ -2293,10 +2289,10 @@ object {
       letter-spacing: 2px;
       text-shadow: 1px 2px 5px #323232; }
       @media all and (min-width: 600px) {
-        .page-template-contact .hero-image-banner .banner-text {
+        .page-template-default .hero-image-banner .banner-text {
           width: 750px;
           margin: 2% auto; } }
-    .page-template-contact .hero-image-banner .banner-text-small {
+    .page-template-default .hero-image-banner .banner-text-small {
       font-size: 1rem;
       color: white;
       width: 380px;
@@ -2306,10 +2302,10 @@ object {
       letter-spacing: 2px;
       text-shadow: 1px 2px 5px #323232; }
       @media all and (min-width: 600px) {
-        .page-template-contact .hero-image-banner .banner-text-small {
+        .page-template-default .hero-image-banner .banner-text-small {
           width: 750px;
           margin: 2% auto; } }
-  .page-template-contact .blue-background {
+  .page-template-default .blue-background {
     height: auto;
     width: 100%;
     margin: 2rem auto 0.75rem;
@@ -2318,11 +2314,11 @@ object {
     text-align: center;
     line-height: 2.4rem; }
     @media all and (min-width: 600px) {
-      .page-template-contact .blue-background {
+      .page-template-default .blue-background {
         margin: 2rem auto 1.5rem;
         padding: 1rem 0.5rem;
         line-height: 3.4rem; } }
-    .page-template-contact .blue-background h2 {
+    .page-template-default .blue-background h2 {
       max-width: 400px;
       margin: 0 auto;
       font-size: 1.4rem;
@@ -2331,23 +2327,23 @@ object {
       line-height: 2.4rem;
       text-transform: uppercase; }
       @media all and (min-width: 600px) {
-        .page-template-contact .blue-background h2 {
+        .page-template-default .blue-background h2 {
           max-width: none;
           font-size: 3.2rem;
           line-height: 3.4rem; } }
-    .page-template-contact .blue-background .supporters-header {
+    .page-template-default .blue-background .supporters-header {
       font-size: 1.55rem; }
       @media all and (min-width: 600px) {
-        .page-template-contact .blue-background .supporters-header {
+        .page-template-default .blue-background .supporters-header {
           font-size: 1.85rem; } }
-  .page-template-contact .wpcf7 {
+  .page-template-default .wpcf7 {
     padding: 3%; }
-    .page-template-contact .wpcf7 form {
+    .page-template-default .wpcf7 form {
       margin: 0 auto;
       background-color: #D9F1FF;
       padding: 0.5rem 1rem; }
       @media all and (min-width: 600px) {
-        .page-template-contact .wpcf7 form {
+        .page-template-default .wpcf7 form {
           max-width: 1000px;
           display: -ms-flexbox;
           display: flex;
@@ -2357,69 +2353,69 @@ object {
               justify-content: space-between;
           padding: 0.5rem 2rem; } }
       @media all and (min-width: 600px) {
-        .page-template-contact .wpcf7 form p:nth-child(6),
-        .page-template-contact .wpcf7 form p:nth-child(7),
-        .page-template-contact .wpcf7 form p:nth-child(8) {
+        .page-template-default .wpcf7 form p:nth-child(6),
+        .page-template-default .wpcf7 form p:nth-child(7),
+        .page-template-default .wpcf7 form p:nth-child(8) {
           -ms-flex-preferred-size: 100%;
               flex-basis: 100%; } }
-      .page-template-contact .wpcf7 form p:nth-child(9) {
+      .page-template-default .wpcf7 form p:nth-child(9) {
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
         margin: 0 auto; }
-    .page-template-contact .wpcf7 input {
+    .page-template-default .wpcf7 input {
       width: 100%;
       height: 50px;
       padding-left: 1rem;
       border: none;
       font-style: italic; }
-    .page-template-contact .wpcf7 .radio {
+    .page-template-default .wpcf7 .radio {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: column;
           flex-direction: column; }
       @media all and (min-width: 600px) {
-        .page-template-contact .wpcf7 .radio {
+        .page-template-default .wpcf7 .radio {
           -ms-flex-direction: row;
               flex-direction: row;
           -ms-flex-pack: center;
               justify-content: center; } }
-      .page-template-contact .wpcf7 .radio input {
+      .page-template-default .wpcf7 .radio input {
         width: 1rem; }
-      .page-template-contact .wpcf7 .radio .wpcf7-list-item {
+      .page-template-default .wpcf7 .radio .wpcf7-list-item {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-align: center;
             align-items: center; }
-      .page-template-contact .wpcf7 .radio .wpcf7-list-item-label {
+      .page-template-default .wpcf7 .radio .wpcf7-list-item-label {
         font-size: 1.1rem;
         text-transform: uppercase;
         margin-left: 1rem; }
-    .page-template-contact .wpcf7 .other-option span {
+    .page-template-default .wpcf7 .other-option span {
       display: inline-block;
       vertical-align: middle; }
-    .page-template-contact .wpcf7 .other-option .Other {
+    .page-template-default .wpcf7 .other-option .Other {
       width: 80%; }
-    .page-template-contact .wpcf7 .radio-blurb {
+    .page-template-default .wpcf7 .radio-blurb {
       text-align: left;
       font-style: italic;
       opacity: 0.5;
       font-size: 1rem; }
       @media all and (min-width: 600px) {
-        .page-template-contact .wpcf7 .radio-blurb {
+        .page-template-default .wpcf7 .radio-blurb {
           font-size: 1.3rem; } }
     @media all and (min-width: 600px) {
-      .page-template-contact .wpcf7 .radios {
+      .page-template-default .wpcf7 .radios {
         display: -ms-flexbox;
         display: flex;
         margin: 0 auto; } }
-    .page-template-contact .wpcf7 .wpcf7-textarea {
+    .page-template-default .wpcf7 .wpcf7-textarea {
       padding-left: 1rem;
       padding-top: 1rem;
       width: 100%;
       height: 70vh;
       border: none;
       font-style: italic; }
-    .page-template-contact .wpcf7 .wpcf7-submit {
+    .page-template-default .wpcf7 .wpcf7-submit {
       width: 200px;
       background-color: #fff;
       border: 1px solid #000;

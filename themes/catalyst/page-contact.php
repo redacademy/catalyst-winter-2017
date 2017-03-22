@@ -12,7 +12,9 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
             <div class="hero-image-banner">
                 <header class="entry-header">
-                    <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+                    <p class="banner-title">
+                        <?php echo CFS()->get( 'bannertext' ); ?>
+                    </p>
                     <p class="banner-text">
                         <?php echo CFS()->get( 'address' ); ?>
                     </p>

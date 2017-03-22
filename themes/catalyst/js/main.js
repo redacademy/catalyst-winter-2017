@@ -179,7 +179,7 @@
         pageDots: false,
         prevNextButtons: false,
     });
-    $('.hero-image-banner').flickity({
+    $('.fp-carousel').flickity({
         contain: true,
         wrapAround: true,
         imagesLoaded: true,

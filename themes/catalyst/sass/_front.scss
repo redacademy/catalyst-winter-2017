@@ -5,7 +5,7 @@
     header {
         position: relative;
     }
-    .hero-image-banner {
+    .fp-carousel {
         min-width: 100%;
         @include media($desktop-width) {
             height: 70vh;

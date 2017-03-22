@@ -1,4 +1,4 @@
-.page-template-contact {
+.page-template-default {
     text-align: center;
     height: 100%;
     width: 100%;
@@ -13,9 +13,12 @@
         @include media($desktop-width) {
             height: 70vh;
         }
-
-        .entry-title {
-            @include page-title;
+        .banner-title {
+            font-size: 3.5rem;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 1px 2px 5px #323232;
         }
         .banner-text {
             @include banner-text;

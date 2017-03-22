@@ -3,7 +3,7 @@
 
 <section class="front-page">
     <header>
-        <div class="hero-image-banner">     <?php $banner_array = CFS()->get('fp_gallery');
+        <div class="fp-carousel"><?php $banner_array = CFS()->get('fp_gallery');
             foreach ($banner_array as $image) : ?>
                 <img class="fp-image" src='<?php echo $image['fp_images']; ?>'/>
             <?php endforeach ?>
