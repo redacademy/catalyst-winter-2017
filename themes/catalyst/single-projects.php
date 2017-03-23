@@ -12,9 +12,11 @@
         <?php while ( have_posts() ) : the_post(); ?>
 
             <div class="hero-image-banner">
-                <p class='project-name'><?php echo CFS()->get('project_name'); ?></p>
-                <p class='project-location'>Location: <?php echo CFS()->get('project_location'); ?></p>
-                <p class='project-status'>Status: <span class='project-status'><?php echo CFS()->get('project_status'); ?></span></p>
+                <div class="header-text">
+                    <p class='project-name'><?php echo CFS()->get('project_name'); ?></p>
+                    <p class='project-location'>Location: <?php echo CFS()->get('project_location'); ?></p>
+                    <p class='project-status'>Status: <span class='project-status'><?php echo CFS()->get('project_status'); ?></span></p>
+                </div>
             </div>
 
             <div class="content-head">
