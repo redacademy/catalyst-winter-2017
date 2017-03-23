@@ -320,7 +320,7 @@ table {
   .hero-image-banner .header-text {
     position: absolute; }
 
-.formulas .fill:last-child {
+.formulas:last-child .fill {
   display: none; }
 
 /*--------------------------------------------------------------
