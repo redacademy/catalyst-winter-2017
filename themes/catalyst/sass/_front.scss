@@ -70,6 +70,27 @@
             margin: 0 auto;
             width: 85%;
         }
+
+        .left-quotation-mark, .right-quotation-mark {
+            height: 120px;
+            width: 85px;
+            background: url('../../images/icon/quotation.svg') center;
+            background-size: 275%;
+            position: relative;
+            z-index: -1;
+        }
+
+        .left-quotation-mark {
+            top: 3rem;
+            right: 2rem;
+        }
+
+        .right-quotation-mark {
+            bottom: 6rem;
+            left: 62rem;
+            transform: rotate(180deg);
+        }
+
         .quote-text {
             margin-bottom: 2rem;
         }
