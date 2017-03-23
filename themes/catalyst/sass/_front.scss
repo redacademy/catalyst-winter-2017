@@ -108,16 +108,21 @@
             background-size: 275%;
             position: relative;
             z-index: -1;
+            display: none;
+        }
+
+        .is-selected .left-quotation-mark, .is-selected .right-quotation-mark {
+            display: inline-block;
         }
 
         .left-quotation-mark {
-            top: 3rem;
-            right: 2rem;
+            top: 11vh;
+            right: 36vw;
         }
 
         .right-quotation-mark {
-            bottom: 6rem;
-            left: 62rem;
+            bottom: 22vh;
+            left: 35vw;
             transform: rotate(180deg);
         }
 

@@ -6,6 +6,8 @@
     }
 }
 
-.formulas:last-child .fill {
-    display: none;
+.formulas {
+    .fill:last-child {
+        display: none;
+    }
 }

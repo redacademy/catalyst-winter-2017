@@ -87,12 +87,64 @@
     }
     .quote-carousel {
         margin: 2rem 0;
+
+        .flickity-viewport {
+            height: 300px !important;
+        }
     }
     .quotes {
         text-align: center;
         margin: 0 1rem;
         width: 85%;
         font-style: italic;
+
+        p {
+            height: auto;
+        }
+    }
+    .left-quotation-mark, .right-quotation-mark {
+        height: 120px;
+        width: 85px;
+        margin: 0;
+        background: url('../../images/icon/quotation.svg') center;
+        background-size: 275%;
+        position: relative;
+        z-index: -1;
+        display: none; 
+    }
+    .is-selected .left-quotation-mark, .is-selected .right-quotation-mark {
+        display: inline-block;
+    }
+
+    .other-proj-wrapper .left-quotation-mark, .other-proj-wrapper .right-quotation-mark {
+        display: none;
+    }
+
+    .left-quotation-mark {
+        top: 10vh;
+        right: 37vw;
+
+        @include media($desktop-width) {
+            right: 41vw;
+        }
+
+        @include media(1300px) {
+            right: 36vw;
+        }
+    }
+
+    .right-quotation-mark {
+        bottom: 21vh;
+        left: 35vw;
+        transform: rotate(180deg);
+
+        @include media($desktop-width) {
+            left: 41vw;
+        }
+
+        @include media(1300px) {
+            left: 36vw;
+        }
     }
     .quote-text {
         margin-bottom: 2rem;

@@ -1,23 +1,29 @@
 .page-template-news {
     margin: 0 auto;
-
     .hero-image-banner {
-        @include flex-column(nowrap, flex-start, center);
+        height: 70vh;
+        position: relative;
         @include media($desktop-width) {
-            height: 70vh;
+            @include flex-column(nowrap, flex-start, center);
         }
     }
     .entry-content {
         text-align: center;
     }
-    .entry-title {
+    .header-text {
         position: absolute;
-        left: 34%;
+        padding-top: 130px;
+        left: 10%;
+        @include media($desktop-width) {
+        left: 0%;
+         position: initial;
+        }
+    }
+    .entry-title {
+        margin: auto;
         width: 202px;
         line-height: 54px;
-        top: 11%;
         @include page-title;
-        padding-top: 150px;
         @include media($desktop-width) {
             position: initial;
             margin: 0;
@@ -25,10 +31,7 @@
         }
     }
     .entry-subtitle {
-        position: absolute;
         width: 250px;
-        top: 55%;
-        left: 18%;
         @include banner-text;
         @include media($desktop-width) {
             width: 100%;
@@ -184,10 +187,10 @@
         width: 100%;
         flex-wrap: wrap;
     }
-    .tweet_data{
+    .tweet_data {
         width: 30%;
     }
-    .times{
+    .times {
         width: 30%;
     }
     .tweet-actions a {
