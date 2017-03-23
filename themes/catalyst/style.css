@@ -2849,14 +2849,14 @@ object {
 .single-projects .quotes-wrapper {
   display: none; }
 
-.page-template-submit {
+.page-id-252 {
   height: 100%;
   width: 100%; }
   @media all and (min-width: 600px) {
-    .page-template-submit {
+    .page-id-252 {
       font-size: 1.4rem;
       line-height: 1.75rem; } }
-  .page-template-submit .hero-image-banner {
+  .page-id-252 .hero-image-banner {
     min-width: 100%;
     display: -ms-flexbox;
     display: flex;
@@ -2867,47 +2867,47 @@ object {
     -ms-flex-align: center;
         align-items: center; }
     @media all and (min-width: 600px) {
-      .page-template-submit .hero-image-banner {
+      .page-id-252 .hero-image-banner {
         height: 70vh; } }
-    .page-template-submit .hero-image-banner .banner-text {
+    .page-id-252 .hero-image-banner .banner-text {
       color: #fff;
-      font-size: 2.5rem;
+      font-size: 3.5rem;
       min-width: 320px;
       width: 100%;
       margin: 10% auto;
       text-align: center;
-      line-height: 4rem;
+      line-height: 1;
       letter-spacing: 2px;
       text-shadow: 1px 2px 5px #323232;
       text-transform: uppercase; }
       @media all and (min-width: 600px) {
-        .page-template-submit .hero-image-banner .banner-text {
-          max-width: 879px;
+        .page-id-252 .hero-image-banner .banner-text {
+          max-width: 900px;
           width: 100%;
           min-width: 600px;
           font-size: 4.5rem; } }
-  .page-template-submit .thankyou-container {
+  .page-id-252 .thankyou-container {
     text-align: center;
     margin: 2rem auto; }
-  .page-template-submit .top-message {
+  .page-id-252 .top-message {
     line-height: 1; }
-  .page-template-submit .thanks {
+  .page-id-252 .thanks {
     font-size: 2rem;
     text-transform: uppercase;
     margin: 0; }
     @media all and (min-width: 600px) {
-      .page-template-submit .thanks {
+      .page-id-252 .thanks {
         font-size: 4rem; } }
-  .page-template-submit .text {
+  .page-id-252 .text {
     font-size: 1.8rem;
     margin: 0; }
-  .page-template-submit .logo {
+  .page-id-252 .logo {
     margin: 1rem 0.5rem; }
-  .page-template-submit .bottom-message {
+  .page-id-252 .bottom-message {
     margin: 5rem 0.5rem; }
-  .page-template-submit .bottom-text {
+  .page-id-252 .bottom-text {
     font-size: 1.3rem;
     line-height: 1;
     font-weight: 100; }
-    .page-template-submit .bottom-text span {
+    .page-id-252 .bottom-text span {
       text-transform: uppercase; }
