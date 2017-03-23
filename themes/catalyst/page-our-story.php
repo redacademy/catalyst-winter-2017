@@ -69,8 +69,8 @@ get_header(); ?>
 
 				<h2><?php echo CFS()->get( 'content_title2' ); ?></h2>
 				<div class="formula-p">
-					<p class="formula-text"><?php echo CFS()->get( 'formula_text1' ); ?></p>
-					<p class="formula-text"><?php echo CFS()->get( 'formula_text2' ); ?></p>
+					<p class="formula-text1"><?php echo CFS()->get( 'formula_text1' ); ?></p>
+					<p class="formula-text2"><?php echo CFS()->get( 'formula_text2' ); ?></p>
 				</div>
 
 				<?php get_template_part( 'template-parts/ourStory-carousel', 'projects carousel' ); ?>
@@ -89,7 +89,7 @@ get_header(); ?>
 				<h4><?php echo CFS()->get( 'text_area1' ); ?></h4>
 				<p class="position"><?php echo CFS()->get( 'text_area2' ); ?></p>
 				</div>
-				<a><?php echo CFS()->get( 'btn2' ); ?></a>
+				<a href="<?php the_permalink( ); ?>"><?php echo CFS()->get( 'btn2' ); ?></a>
 			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->

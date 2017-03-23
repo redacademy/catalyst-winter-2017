@@ -1,4 +1,4 @@
-.page-template-news {
+.page-template-page-news-media {
     margin: 0 auto;
     .hero-image-banner {
         height: 70vh;
@@ -183,15 +183,15 @@
     }
     .tweet_wrap {
         padding: 20px;
-        display: flex;
-        width: 100%;
-        flex-wrap: wrap;
-    }
+    //     display: flex;
+    //     width: 100%;
+    //     flex-wrap: wrap;
+     }
     .tweet_data {
-        width: 30%;
+        // width: 30%;
     }
     .times {
-        width: 30%;
+        // width: 30%;
     }
     .tweet-actions a {
         padding: 5px;
@@ -199,7 +199,7 @@
         border-radius: 20px;
     }
     .wdtf-user-card {
-        width: 20%;
+        // width: 45%;
     }
     .light .tweets-intent-data {
         border: none;
