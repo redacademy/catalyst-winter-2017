@@ -876,9 +876,12 @@ textarea {
     text-transform: uppercase; }
   .home .projects .quotes-wrapper {
     margin: 0 auto;
-    width: 85%; }
+    width: 85%;
+    display: none; }
+  .home .projects .is-selected .quotes-wrapper {
+    display: initial; }
   .home .projects .left-quotation-mark, .home .projects .right-quotation-mark {
-    height: 120px;
+    height: 60px;
     width: 85px;
     background: url("../../images/icon/quotation.svg") center;
     background-size: 275%;
