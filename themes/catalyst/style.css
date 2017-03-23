@@ -2798,12 +2798,53 @@ object {
 
 .single-projects .quote-carousel {
   margin: 2rem 0; }
+  .single-projects .quote-carousel .flickity-viewport {
+    height: 300px !important; }
 
 .single-projects .quotes {
   text-align: center;
   margin: 0 1rem;
   width: 85%;
   font-style: italic; }
+  .single-projects .quotes p {
+    height: auto; }
+
+.single-projects .left-quotation-mark, .single-projects .right-quotation-mark {
+  height: 120px;
+  width: 85px;
+  margin: 0;
+  background: url("../../images/icon/quotation.svg") center;
+  background-size: 275%;
+  position: relative;
+  z-index: -1;
+  display: none; }
+
+.single-projects .is-selected .left-quotation-mark, .single-projects .is-selected .right-quotation-mark {
+  display: inline-block; }
+
+.single-projects .other-proj-wrapper .left-quotation-mark, .single-projects .other-proj-wrapper .right-quotation-mark {
+  display: none; }
+
+.single-projects .left-quotation-mark {
+  top: 10vh;
+  right: 37vw; }
+  @media all and (min-width: 600px) {
+    .single-projects .left-quotation-mark {
+      right: 41vw; } }
+  @media all and (min-width: 1300px) {
+    .single-projects .left-quotation-mark {
+      right: 36vw; } }
+
+.single-projects .right-quotation-mark {
+  bottom: 21vh;
+  left: 35vw;
+  transform: rotate(180deg); }
+  @media all and (min-width: 600px) {
+    .single-projects .right-quotation-mark {
+      left: 41vw; } }
+  @media all and (min-width: 1300px) {
+    .single-projects .right-quotation-mark {
+      left: 36vw; } }
 
 .single-projects .quote-text {
   margin-bottom: 2rem; }
