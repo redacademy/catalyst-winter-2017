@@ -2,10 +2,12 @@
 
 
 <section class="front-page">
-    <header>
+    <header class="hero-image-banner">
         <div class="fp-carousel"><?php $banner_array = CFS()->get('fp_gallery');
             foreach ($banner_array as $image) : ?>
-                <img class="fp-image" src='<?php echo $image['fp_images']; ?>'/>
+                
+                    <img class="fp-image" src='<?php echo $image['fp_images']; ?>'/>
+                
             <?php endforeach ?>
         </div>
         <div class="header-text">

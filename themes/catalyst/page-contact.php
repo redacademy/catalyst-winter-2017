@@ -11,7 +11,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
             <div class="hero-image-banner">
-                <header class="entry-header">
+                <header class="header-text">
                     <p class="banner-title">
                         <?php echo CFS()->get( 'bannertext' ); ?>
                     </p>

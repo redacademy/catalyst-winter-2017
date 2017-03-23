@@ -11,9 +11,11 @@
             height: 70vh;
         }
         img{
-            max-width: initial;
             height: 110vh;
-            @include media($desktop-width) {
+            min-width: 100%;
+            max-width: initial;
+            @include media($desktop-width){
+                width: 100%;
                 height: 70vh;
             }
         }
@@ -56,6 +58,11 @@
             text-decoration: none;
         }
     }
+    .formulas {
+        .fill:last-child{
+            display: none;
+        }
+    }
     .projects {
         padding-top: 3rem;
         text-align: center;
@@ -63,6 +70,27 @@
             margin: 0 auto;
             width: 85%;
         }
+
+        .left-quotation-mark, .right-quotation-mark {
+            height: 120px;
+            width: 85px;
+            background: url('../../images/icon/quotation.svg') center;
+            background-size: 275%;
+            position: relative;
+            z-index: -1;
+        }
+
+        .left-quotation-mark {
+            top: 3rem;
+            right: 2rem;
+        }
+
+        .right-quotation-mark {
+            bottom: 6rem;
+            left: 62rem;
+            transform: rotate(180deg);
+        }
+
         .quote-text {
             margin-bottom: 2rem;
         }
@@ -109,13 +137,13 @@
         padding-top: 3rem;
         text-align: center;
         .member {
-            width: 50%;
-            margin: 0 1rem;
-            max-width: 275px;
+            margin: 0 2rem;
+            width: 100%;
+            max-width: 40%;
             opacity: 0.5;
             @include media ($desktop-width){
-                margin: 0 3rem;
-                width: 33%;
+                margin: 0 5rem;
+                max-width: 25%;
             }
             p {
                 margin: 0;

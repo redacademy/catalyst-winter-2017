@@ -43,6 +43,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+/* Layouts*/
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -313,6 +314,14 @@ img {
 table {
   margin: 0 0 1.5rem;
   width: 100%; }
+
+.hero-image-banner {
+  position: relative; }
+  .hero-image-banner .header-text {
+    position: absolute; }
+
+.formulas:last-child .fill {
+  display: none; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -685,7 +694,7 @@ textarea {
         height: 50px;
         width: 50px; } }
   .footer .linkedin {
-    background: url("../../images/linkedin.svg") no-repeat;
+    background: url("../../images/linkedIn.svg") no-repeat;
     background-size: 100%;
     height: 40px;
     width: 40px; }
@@ -781,10 +790,12 @@ textarea {
     .home .fp-carousel {
       height: 70vh; } }
   .home .fp-carousel img {
-    max-width: initial;
-    height: 110vh; }
+    height: 110vh;
+    min-width: 100%;
+    max-width: initial; }
     @media all and (min-width: 600px) {
       .home .fp-carousel img {
+        width: 100%;
         height: 70vh; } }
 
 .home .header-text {
@@ -834,12 +845,29 @@ textarea {
     color: black;
     text-decoration: none; }
 
+.home .formulas .fill:last-child {
+  display: none; }
+
 .home .projects {
   padding-top: 3rem;
   text-align: center; }
   .home .projects .quotes-wrapper {
     margin: 0 auto;
     width: 85%; }
+  .home .projects .left-quotation-mark, .home .projects .right-quotation-mark {
+    height: 120px;
+    width: 85px;
+    background: url("../../images/icon/quotation.svg") center;
+    background-size: 275%;
+    position: relative;
+    z-index: -1; }
+  .home .projects .left-quotation-mark {
+    top: 3rem;
+    right: 2rem; }
+  .home .projects .right-quotation-mark {
+    bottom: 6rem;
+    left: 62rem;
+    transform: rotate(180deg); }
   .home .projects .quote-text {
     margin-bottom: 2rem; }
   .home .projects .person {
@@ -878,14 +906,14 @@ textarea {
   padding-top: 3rem;
   text-align: center; }
   .home .team .member {
-    width: 50%;
-    margin: 0 1rem;
-    max-width: 275px;
+    margin: 0 2rem;
+    width: 100%;
+    max-width: 40%;
     opacity: 0.5; }
     @media all and (min-width: 600px) {
       .home .team .member {
-        margin: 0 3rem;
-        width: 33%; } }
+        margin: 0 5rem;
+        max-width: 25%; } }
     .home .team .member p {
       margin: 0; }
     .home .team .member .member-name {
@@ -1685,6 +1713,18 @@ object {
 
 .page-template-news {
   margin: 0 auto; }
+  .page-template-news .hero-image-banner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-align: center;
+        align-items: center; }
+    @media all and (min-width: 600px) {
+      .page-template-news .hero-image-banner {
+        height: 70vh; } }
   .page-template-news .entry-content {
     text-align: center; }
   .page-template-news .entry-title {
@@ -1892,7 +1932,7 @@ object {
         .page-template-collaborate .hero-image-banner .entry-title {
           margin: 0 0 1.5rem;
           font-size: 3.85rem; } }
-    .page-template-collaborate .hero-image-banner .banner-text {
+    .page-template-collaborate .hero-image-banner .header-text {
       font-size: 1.5rem;
       color: white;
       width: 320px;
@@ -1902,7 +1942,7 @@ object {
       letter-spacing: 2px;
       text-shadow: 1px 2px 5px #323232; }
       @media all and (min-width: 600px) {
-        .page-template-collaborate .hero-image-banner .banner-text {
+        .page-template-collaborate .hero-image-banner .header-text {
           width: 750px;
           margin: 2% auto; } }
   .page-template-collaborate .intro-copy {
@@ -2353,6 +2393,12 @@ object {
               justify-content: space-between;
           padding: 0.5rem 2rem; } }
       @media all and (min-width: 600px) {
+        .page-template-default .wpcf7 form p:nth-child(2),
+        .page-template-default .wpcf7 form p:nth-child(3),
+        .page-template-default .wpcf7 form p:nth-child(4),
+        .page-template-default .wpcf7 form p:nth-child(5) {
+          width: 48%; } }
+      @media all and (min-width: 600px) {
         .page-template-default .wpcf7 form p:nth-child(6),
         .page-template-default .wpcf7 form p:nth-child(7),
         .page-template-default .wpcf7 form p:nth-child(8) {
@@ -2550,7 +2596,7 @@ object {
     .page-template-careers .contact-link {
       padding: 1rem 4rem; } }
 
-.page-template-projects .hero-image-banner {
+.page-id-195 .hero-image-banner {
   min-width: 100%;
   display: -ms-flexbox;
   display: flex;
@@ -2561,19 +2607,19 @@ object {
   -ms-flex-align: center;
       align-items: center; }
   @media all and (min-width: 600px) {
-    .page-template-projects .hero-image-banner {
+    .page-id-195 .hero-image-banner {
       height: 70vh; } }
-  .page-template-projects .hero-image-banner .entry-title {
+  .page-id-195 .hero-image-banner .entry-title {
     font-size: 3.5rem;
     color: white;
     text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 600px) {
-      .page-template-projects .hero-image-banner .entry-title {
+      .page-id-195 .hero-image-banner .entry-title {
         margin: 0 0 1.5rem;
         font-size: 3.85rem; } }
-  .page-template-projects .hero-image-banner .banner-text {
+  .page-id-195 .hero-image-banner .banner-text {
     font-size: 1.5rem;
     color: white;
     width: 320px;
@@ -2583,11 +2629,11 @@ object {
     letter-spacing: 2px;
     text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 600px) {
-      .page-template-projects .hero-image-banner .banner-text {
+      .page-id-195 .hero-image-banner .banner-text {
         width: 750px;
         margin: 2% auto; } }
 
-.page-template-projects .intro-copy {
+.page-id-195 .intro-copy {
   height: auto;
   width: 100%;
   margin: 0 auto;
@@ -2596,17 +2642,17 @@ object {
   font-weight: 100;
   text-align: center; }
   @media all and (min-width: 600px) {
-    .page-template-projects .intro-copy {
+    .page-id-195 .intro-copy {
       padding: 2.75rem 0.85rem;
       width: 60%; } }
 
-.page-template-projects .project-content {
+.page-id-195 .project-content {
   text-align: center; }
 
-.page-template-projects .project-post {
+.page-id-195 .project-post {
   margin-bottom: 6rem; }
 
-.page-template-projects .proj-head {
+.page-id-195 .proj-head {
   background-color: #d9f1ff;
   height: 90px;
   display: -ms-flexbox;
@@ -2616,43 +2662,43 @@ object {
   -ms-flex-pack: center;
       justify-content: center; }
   @media all and (min-width: 600px) {
-    .page-template-projects .proj-head {
+    .page-id-195 .proj-head {
       -ms-flex-direction: row;
           flex-direction: row;
       -ms-flex-align: center;
           align-items: center; } }
-  .page-template-projects .proj-head p {
+  .page-id-195 .proj-head p {
     margin: 0; }
     @media all and (min-width: 600px) {
-      .page-template-projects .proj-head p {
+      .page-id-195 .proj-head p {
         font-size: 1.5rem; } }
-  .page-template-projects .proj-head .name {
+  .page-id-195 .proj-head .name {
     font-size: 1.5rem;
     font-weight: bold;
     color: #323232; }
-  .page-template-projects .proj-head .status {
+  .page-id-195 .proj-head .status {
     text-transform: uppercase; }
-  .page-template-projects .proj-head .break {
+  .page-id-195 .proj-head .break {
     display: none; }
     @media all and (min-width: 600px) {
-      .page-template-projects .proj-head .break {
+      .page-id-195 .proj-head .break {
         display: initial;
         font-size: 1.5rem;
         font-weight: 500;
         margin: 0 0.5rem; } }
 
-.page-template-projects .img-container {
+.page-id-195 .img-container {
   margin: 2rem 2rem 3rem; }
   @media all and (min-width: 600px) {
-    .page-template-projects .img-container {
+    .page-id-195 .img-container {
       max-width: 750px;
       margin: 2rem auto 3rem auto; } }
 
-.page-template-projects .project-image {
+.page-id-195 .project-image {
   width: 100%;
   max-width: 1000px; }
 
-.page-template-projects .project-link {
+.page-id-195 .project-link {
   text-decoration: none;
   color: #323232;
   border: 2px solid black;

@@ -1,5 +1,12 @@
 .page-template-news {
     margin: 0 auto;
+
+    .hero-image-banner {
+        @include flex-column(nowrap, flex-start, center);
+        @include media($desktop-width) {
+            height: 70vh;
+        }
+    }
     .entry-content {
         text-align: center;
     }
