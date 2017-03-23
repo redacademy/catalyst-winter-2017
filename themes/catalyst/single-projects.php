@@ -44,9 +44,6 @@
             <div class="content-head">
                 <h2>Architectural design</h2>
             </div>
-            <div class="arch-text">
-                <p>Disclosed floor plans, site map, draft design, and construction photos during the development stage of the project.</p>
-            </div>
         </div>
         <div class="img-carousel">
             <?php $gallery_images = CFS()->get('gallery_images');

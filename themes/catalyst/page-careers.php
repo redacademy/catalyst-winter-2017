@@ -24,7 +24,7 @@ get_header(); ?>
 </div>
 <div class="job-container">
 	 <?php $posts = get_posts( array( 
-        'post_type' => 'projects', 
+        'post_type' => 'careers', 
         'order' => 'ASC', 
     ));
     foreach ( $posts as $post ) : ?>

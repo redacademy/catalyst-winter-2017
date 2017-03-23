@@ -1468,7 +1468,7 @@ object {
     height: auto;
     width: 100%;
     margin: 0 auto;
-    padding: 1rem 0.85rem;
+    padding: 2rem 0.85rem;
     font-size: 1.25rem;
     font-weight: 100;
     text-align: center; }
@@ -1977,7 +1977,7 @@ object {
     height: auto;
     width: 100%;
     margin: 0 auto;
-    padding: 1rem 0.85rem;
+    padding: 2rem 0.85rem;
     font-size: 1.25rem;
     font-weight: 100;
     text-align: center; }
@@ -2544,7 +2544,7 @@ object {
   height: auto;
   width: 100%;
   margin: 0 auto;
-  padding: 1rem 0.85rem;
+  padding: 2rem 0.85rem;
   font-size: 1.25rem;
   font-weight: 100;
   text-align: center; }
@@ -2578,6 +2578,9 @@ object {
   margin: 0 10%;
   border-bottom: 1px solid black;
   padding-bottom: 6rem; }
+
+.page-template-careers .job-post:last-child {
+  border-bottom: none; }
 
 .page-template-careers .job-title {
   font-size: 1.3rem;
@@ -2667,7 +2670,7 @@ object {
   height: auto;
   width: 100%;
   margin: 0 auto;
-  padding: 1rem 0.85rem;
+  padding: 2rem 0.85rem;
   font-size: 1.25rem;
   font-weight: 100;
   text-align: center; }
@@ -2785,16 +2788,12 @@ object {
   margin: 0 1.5rem; }
   @media all and (min-width: 600px) {
     .single-projects .proj-content {
-      width: 80%;
+      max-width: 1000px;
       margin: 0 auto; } }
   .single-projects .proj-content h3 {
     margin-bottom: 0; }
   .single-projects .proj-content p {
     margin-top: 0; }
-
-.single-projects .arch-text {
-  margin: 0 1.5rem;
-  text-align: center; }
 
 .single-projects .gallery {
   text-align: center;
@@ -2834,6 +2833,7 @@ object {
   margin-bottom: 2rem; }
 
 .single-projects .person {
+  font-style: normal;
   font-weight: bold;
   font-size: 1.3rem;
   margin: 0;
@@ -2877,6 +2877,9 @@ object {
   opacity: 0.5;
   text-align: center;
   overflow: hidden; }
+  @media all and (min-width: 600px) {
+    .single-projects .other-proj-wrapper {
+      width: 50%; } }
   .single-projects .other-proj-wrapper .project-name,
   .single-projects .other-proj-wrapper .project-location,
   .single-projects .other-proj-wrapper .project-status {
@@ -2900,8 +2903,7 @@ object {
   overflow: hidden; }
   @media all and (min-width: 600px) {
     .single-projects .image-wrapper {
-      height: 500px;
-      width: 50%; } }
+      height: 500px; } }
   .single-projects .image-wrapper img {
     width: auto;
     height: 100%;
