@@ -49,7 +49,7 @@
     var $introCopy = $( '.intro-copy' );
 
 
-    // Make the plus-sign buttons the click target for displaying profile popouts
+    // Function to show staff popouts.
 
     function showStaffPopout($targetArray) {
         $targetArray.on('click', function(){
@@ -78,6 +78,8 @@
         });
     }
 
+    // Function to show board profile popouts.
+
     function showBoardPopout($targetArray) {
         $targetArray.on( 'click', function() {
             var targetIndex = jQuery.inArray( this, $targetArray );
@@ -103,6 +105,8 @@
         });
     }
 
+    // FUnction to hide staff profile popouts.
+
     function hideStaffPopout($thisPopout) {
         $staffExitButton.click(function () {
             $staffExitButton.hide();
@@ -118,6 +122,8 @@
         });
     }
 
+    // FUnction to hide board profile popouts.
+
     function hideBoardPopout($thisPopout) {
         $boardExitButton.click(function(){
             $boardExitButton.hide();
@@ -132,17 +138,23 @@
         });
     }
 
+    // Scroll to opened popout when it is opened
+
     function scrollToPopout($thisPopout, $sectionHeader) {
         $('html, body').animate({
             scrollTop: ( $thisPopout.offset().top - ( $sectionHeader.height() * 2.5 ) )
         }, 200);
     }
 
+    // Scroll to last viewed profile after popout is closed
+
     function scrollToProfile($thisPopout) {
         $('html, body').animate({
             scrollTop: ( $thisPopout.prev().offset().top - ($thisPopout.prev().height() / 2) )
         }, 0);
     }
+
+    // On page load, set the open popouts functions to target either 'enter-button' (mobile) or 'profile-image' (desktop).
 
     if ( $( window ).width() < 760 ) {
         showStaffPopout( $staffEnterButtons );
@@ -152,6 +164,8 @@
         showBoardPopout( $boardProfileImages );
     }
     
+    // On window resize, set the appropriate open popout function and kill the one that is not being used.
+
     $( window ).resize( function(){
         if ( $( window ).width() < 760 ) {
             $staffProfileImages.off( 'click' );
@@ -164,6 +178,23 @@
             showStaffPopout( $staffProfileImages );
             showBoardPopout( $boardProfileImages );
         }
+    });
+
+    // Load more posts on when user clicks button on news & media page.
+
+    var loadPostsButton = $( '.page-template-news .load-more-button' );
+    var apiLink = $( location ).attr('href') + '/wp-json/newsmedia';
+
+    loadPostsButton.click(function( data ){
+        $.get(apiLink, function(){
+            console.log( data );
+        });
+        // $.ajax({
+		// 	url: apiLink += $selectedTopic + '.json' + '?' + $.param( {'api-key': '4bd2bd098b3449068be47890b4f42e24'} ),
+		// 	method: 'GET' 
+		// }).done(function(){
+
+        // });
     });
 
     //send user to thank you page on form submission
