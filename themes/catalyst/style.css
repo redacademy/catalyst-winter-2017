@@ -1858,9 +1858,6 @@ object {
       .page-template-page-news-media .load-more a:hover {
         border: 3px solid #8ED7FF;
         box-shadow: 1px 1px 5px #323232; }
-  .page-template-page-news-media .video {
-    text-align: center;
-    height: 350px; }
   .page-template-page-news-media .newsmedia-content .widget-area {
     margin-top: 10px;
     padding: 0 20px; }
@@ -1951,6 +1948,11 @@ object {
     border-radius: 20px; }
   .page-template-page-news-media .light .tweets-intent-data {
     border: none; }
+  .page-template-page-news-media .video {
+    text-align: center; }
+    .page-template-page-news-media .video iframe {
+      width: 90%;
+      height: 500px; }
 
 .page-template-collaborate {
   height: 100%;
