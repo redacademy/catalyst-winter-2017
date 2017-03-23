@@ -44,6 +44,9 @@
         border-bottom: 1px solid black;
         padding-bottom: 6rem;
     }
+    .job-post:last-child {
+        border-bottom: none;
+    }
     .job-title {
         font-size: 1.3rem;
         text-align: center;

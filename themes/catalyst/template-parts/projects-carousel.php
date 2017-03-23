@@ -20,7 +20,7 @@
             </div>
             <p class='project-name'><?php echo CFS()->get('project_name', $id); ?></p>
             <p class='project-location'>Location: <?php echo CFS()->get('project_location', $id); ?></p>
-            <p class='project-status'>Status: <span class='project-status'><?php echo CFS()->get('project_status', $id); ?></span></p>
+            <p class='project-status'>Status: <span><?php echo CFS()->get('project_status', $id); ?></span></p>
             <div class="left-quotation-mark"></div>
             <div class="quotes-wrapper">
                 <?php $quotes_array = CFS()->get('quotes_gallery', $id);
