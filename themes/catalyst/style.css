@@ -2425,6 +2425,8 @@ object {
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
         margin: 0 auto; }
+      .page-template-default .wpcf7 form p:nth-child(10) {
+        margin: 2rem auto; }
     .page-template-default .wpcf7 input {
       width: 100%;
       height: 50px;
