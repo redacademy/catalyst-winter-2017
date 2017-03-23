@@ -150,26 +150,25 @@
 			li {
 				padding: 0 12px;
 			}
-			li.current-menu-item{
-				a{
+			li.current-menu-item {
+				a {
 					color: $color__menu-active;
 				}
 			}
-
 			a {
 				text-transform: uppercase;
 				color: $color__header-main;
 				font-size: 15px;
-				@include media($desktop-width){
-				    font-size: 9px;
+				@include media($desktop-width) {
+					font-size: 9px;
 				}
-				@include media(700px){
+				@include media(700px) {
 					font-size: 11px;
 				}
-				@include media(793px){
+				@include media(793px) {
 					font-size: 13px;
 				}
-				@include media(890px){
+				@include media(890px) {
 					font-size: 15px;
 				}
 				&:active {
@@ -232,18 +231,16 @@
 			color: white;
 			padding: 25px 20px;
 			text-shadow: none;
+			height: 30px;
+			position: absolute;
+			right: 63%;
+			top: 10%;
 		}
 		.mobile-menu {
 			padding-top: 60px;
 		}
 		@include media($desktop-width) {
 			display: none;
-		}
-		.cross {
-			height: 30px;
-			position: absolute;
-			right: 73%;
-			top: 10%;
 		}
 	}
 }

@@ -2,6 +2,7 @@
     margin: 0 auto;
     .hero-image-banner {
         height: 70vh;
+        position: relative;
         @include media($desktop-width) {
             @include flex-column(nowrap, flex-start, center);
         }
@@ -10,11 +11,13 @@
         text-align: center;
     }
     .header-text {
-        padding-top: 150px;
-            padding-left: 19%;
-           @include media($desktop-width){
-             padding-left: 0%;
-           }
+        position: absolute;
+        padding-top: 130px;
+        left: 10%;
+        @include media($desktop-width) {
+        left: 0%;
+         position: initial;
+        }
     }
     .entry-title {
         margin: auto;
