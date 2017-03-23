@@ -860,13 +860,16 @@ textarea {
     background: url("../../images/icon/quotation.svg") center;
     background-size: 275%;
     position: relative;
-    z-index: -1; }
+    z-index: -1;
+    display: none; }
+  .home .projects .is-selected .left-quotation-mark, .home .projects .is-selected .right-quotation-mark {
+    display: inline-block; }
   .home .projects .left-quotation-mark {
-    top: 3rem;
-    right: 2rem; }
+    top: 11vh;
+    right: 36vw; }
   .home .projects .right-quotation-mark {
-    bottom: 6rem;
-    left: 62rem;
+    bottom: 22vh;
+    left: 35vw;
     transform: rotate(180deg); }
   .home .projects .quote-text {
     margin-bottom: 2rem; }
