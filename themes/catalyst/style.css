@@ -589,17 +589,16 @@ textarea {
       line-height: 20px;
       color: white;
       padding: 25px 20px;
-      text-shadow: none; }
+      text-shadow: none;
+      height: 30px;
+      position: absolute;
+      right: 63%;
+      top: 10%; }
     .container .hamburger-menu .mobile-menu {
       padding-top: 60px; }
     @media all and (min-width: 600px) {
       .container .hamburger-menu {
         display: none; } }
-    .container .hamburger-menu .cross {
-      height: 30px;
-      position: absolute;
-      right: 73%;
-      top: 10%; }
 
 .footer {
   margin: 0 auto;
@@ -1719,7 +1718,8 @@ object {
 .page-template-news {
   margin: 0 auto; }
   .page-template-news .hero-image-banner {
-    height: 70vh; }
+    height: 70vh;
+    position: relative; }
     @media all and (min-width: 600px) {
       .page-template-news .hero-image-banner {
         display: -ms-flexbox;
@@ -1733,11 +1733,13 @@ object {
   .page-template-news .entry-content {
     text-align: center; }
   .page-template-news .header-text {
-    padding-top: 150px;
-    padding-left: 19%; }
+    position: absolute;
+    padding-top: 130px;
+    left: 10%; }
     @media all and (min-width: 600px) {
       .page-template-news .header-text {
-        padding-left: 0%; } }
+        left: 0%;
+        position: initial; } }
   .page-template-news .entry-title {
     margin: auto;
     width: 202px;
