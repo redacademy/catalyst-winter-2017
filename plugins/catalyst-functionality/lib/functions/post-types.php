@@ -397,6 +397,7 @@ function newsmedia_cpt() {
 		'show_in_menu'          => true,
 		'menu_position'         => 5,
 		'show_in_rest'			=> true,
+		'rest_controller_class' => 'WP_REST_Posts_Controller',
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
