@@ -163,13 +163,13 @@
 				@include media($desktop-width){
 				    font-size: 9px;
 				}
-				@include media(660px){
+				@include media(700px){
 					font-size: 11px;
 				}
-				@include media(750px){
+				@include media(793px){
 					font-size: 13px;
 				}
-				@include media(845px){
+				@include media(890px){
 					font-size: 15px;
 				}
 				&:active {
