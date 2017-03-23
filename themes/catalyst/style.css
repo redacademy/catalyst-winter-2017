@@ -398,7 +398,7 @@ table {
     left: 0;
     text-align: center; }
 
-.formulas:last-child .fill {
+.formulas .fill:last-child {
   display: none; }
 
 * {
