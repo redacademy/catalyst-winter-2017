@@ -5,6 +5,17 @@
     header {
         position: relative;
     }
+    .fp-carousel:after {
+        content:'';
+        position:absolute;
+        left:0;
+        top:0;
+        width:100%; 
+        height:100%;
+        display:inline-block;
+        background: black;
+        opacity: 0.15;
+    }
     .fp-carousel {
         min-width: 100%;
         @include media($desktop-width) {
