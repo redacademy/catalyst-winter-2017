@@ -11,9 +11,6 @@ get_header(); ?>
 <div class="hero-image-banner">
     <header class="header-text">
         <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-        <p class="banner-text">
-            <?php echo CFS()->get( 'bannertext' ); ?>
-        </p>
     </header>
 </div>
 <p class="intro-copy">
