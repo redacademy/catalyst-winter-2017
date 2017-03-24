@@ -1509,7 +1509,10 @@ object {
         .page-id-21 .site-content .formula-carousel:after {
           content: ''; } }
     .page-id-21 .site-content .formula-carousel .formula-text {
-      width: 85%; }
+      width: 85%;
+      font-size: 14px;
+      line-height: 15px;
+      padding-left: 26px; }
   .page-id-21 .site-content h5 {
     font-size: 20px;
     text-transform: uppercase;

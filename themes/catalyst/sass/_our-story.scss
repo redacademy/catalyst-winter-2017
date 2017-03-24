@@ -253,6 +253,9 @@
         @include ourStory-carousel {
             .formula-text {
                 width: 85%;
+                font-size: 14px;
+                line-height: 15px;
+                padding-left: 26px;
             }
         }
         h5 {
