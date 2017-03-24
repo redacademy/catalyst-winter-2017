@@ -13,9 +13,22 @@
 
             <div class="hero-image-banner">
                 <div class="header-text">
-                    <p class='project-name'><?php echo CFS()->get('project_name'); ?></p>
-                    <p class='project-location'>Location: <?php echo CFS()->get('project_location'); ?></p>
-                    <p class='project-status'>Status: <span class='project-status'><?php echo CFS()->get('project_status'); ?></span></p>
+                    <?php 
+                        $projname = CFS()->get('project_name');
+                        $projloc = CFS()->get('project_location');
+                        $projstat = CFS()->get('project_status');
+                        if ( !empty( $projname ) ) : 
+                    ?>
+                        <p class='project-name'><?php echo $projname; ?></p>
+                    <?php endif;
+                        if ( !empty( $projloc ) ) : 
+                    ?>
+                        <p class='project-location'>Location: <?php echo $projloc; ?></p>
+                    <?php endif;
+                        if ( !empty( $projstat ) ) : 
+                    ?>
+                        <p class='project-status'>Status: <span class='project-status'><?php echo $projstat; ?></span></p>
+                    <?php endif; ?>
                 </div>
             </div>
 
@@ -24,19 +37,48 @@
             </div>
 
             <div class="proj-content">
-                <h3>Structure: </h3>
-                <?php echo CFS()->get('structure'); ?>
-                <h3>Status: </h3>
-                <p><?php echo CFS()->get('status'); ?></p>
-                <h3>Partners: </h3>
-                <?php echo CFS()->get('partners'); ?>
-                <h3>Financing/Grants: </h3>
-                <?php echo CFS()->get('financing_grants'); ?>
-                <h3>Affordability: </h3>
-                <?php echo CFS()->get('affordability'); ?>
-                <h3>Total Project Cost: </h3>
-                <p><?php echo CFS()->get('cost'); ?></p>
-                <p><?php echo CFS()->get('description'); ?></p>
+                <?php 
+                    $structure = CFS()->get('structure');
+                    $status = CFS()->get('status');
+                    $partners = CFS()->get('partners');
+                    $grants = CFS()->get('financing_grants');
+                    $affordability= CFS()->get('affordability');
+                    $cost = CFS()->get('cost');
+                    $description = CFS()->get('description');
+                    if ( !empty( $projstat ) ) : 
+                    ?>
+                        <h3>Structure: </h3>
+                <?php echo $structure; ?>
+                    <?php endif;
+                    if ( !empty( $status ) ) : 
+                    ?>
+                        <h3>Status: </h3>
+                <p><?php echo $status; ?></p>
+                    <?php endif;
+                    if ( !empty( $partners ) ) : 
+                    ?>
+                        <h3>Partners: </h3>
+                <?php echo $partners; ?>
+                    <?php endif;
+                    if ( !empty( $grants ) ) : 
+                    ?>
+                        <h3>Financing/Grants: </h3>
+                <?php echo $grants; ?>
+                    <?php endif;
+                    if ( !empty( $affordability ) ) : 
+                    ?>
+                        <h3>Affordability: </h3>
+                <?php echo $affordability; ?>
+                    <?php endif;
+                    if ( !empty( $cost ) ) : 
+                    ?>
+                        <h3>Total Project Cost: </h3>
+                <p><?php echo $cost; ?></p>
+                    <?php endif;
+                    if ( !empty( $cost ) ) : 
+                    ?>
+                        <p><?php echo $description; ?></p>
+                    <?php endif; ?>
             </div>
     </section>
     <section>
