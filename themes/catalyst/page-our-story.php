@@ -12,28 +12,58 @@ get_header(); ?>
 
 		<?php get_template_part( 'template-parts/hero-banner'); ?>
 
-		<p class="top-text"><?php echo CFS()->get( 'intro_copy' ); ?></p>
 			<section class="catalyst-mission">
-				<h2><?php echo CFS()->get( 'content_title1' ); ?></h2>
-				<h3><?php echo CFS()->get( 'our_mission' ); ?></h3>
+
+  				<?php $content_title1 = CFS()->get( 'content_title1' );
+                if ( !empty( $content_title1 ) ) :?>
+                <h2 class='status'><?php echo $content_title1; ?></h2>
+                <?php endif; ?>
+
+				<?php $our_mission = CFS()->get( 'our_mission' );
+                if ( !empty( $our_mission ) ) :?>
+                <h3 class='status'><?php echo $our_mission; ?></h3>
+                <?php endif; ?>
 
 				<div class="mission-quote">
 					<div class="quotation-left"></div>
-					<p class="quote"><?php echo CFS()->get( 'quotation1' ); ?></p>
+
+					<?php $quotation1 = CFS()->get( 'quotation1' );
+					if ( !empty( $quotation1) ) :?>
+					<p class='quote'><?php echo $quotation1; ?></p>
+					<?php endif; ?>
+
 					<div class="quotation-right"></div>
 				</div>
 				<div class="robert">
-				<h4><?php echo CFS()->get( 'text_area1' ); ?></h4>
-				<p class="position"><?php echo CFS()->get( 'text_area2' ); ?></p>
+
+				<?php $text_area1 = CFS()->get( 'text_area1' );
+				if ( !empty( $text_area1) ) :?>
+				<h4><?php echo $text_area1; ?></h4>
+				<?php endif; ?>
+
+				<?php $text_area2 = CFS()->get( 'text_area2' );
+				if ( !empty( $text_area2) ) :?>
+				<p class="position"><?php echo $text_area2; ?></p>
+				<?php endif; ?>
+
 				</div>
 				<div class="mission-content">
 					<div class="mission-image income">
 					<img src ="<?php echo CFS()->get( 'image1' ); ?>"/>
 					<div class="mission-text">
-					<h5><?php echo CFS()->get( 'image_title1' ); ?></h5>
-					<p class="mission-text"><?php echo CFS()->get( 'image_text1' ); ?></p>
-					</div>
-					</div>
+
+					<?php $image_title1 = CFS()->get( 'image_title1' );
+					if ( !empty( $image_title1) ) :?>
+					<h5 class="position"><?php echo $image_title1; ?></h5>
+					<?php endif; ?>
+
+					<?php $mission_text = CFS()->get( 'image_text1' );
+					if ( !empty( $mission_text) ) :?>
+					<p class="mission-text"><?php echo $mission_text; ?></p>
+					<?php endif; ?>
+
+				</div>
+				</div>
 
 					<img src="<?php echo CFS()->get( 'arrow_image' ); ?>"class="arrow"/>
 
