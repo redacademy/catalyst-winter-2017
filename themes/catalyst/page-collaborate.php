@@ -12,9 +12,6 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 
 <?php get_template_part( 'template-parts/hero-banner'); ?>
-		<p class="intro-copy">
-			<?php echo CFS()->get( 'intro_copy' ); ?>
-		</p>
 
 		<div class="blue-background">
 			<h2 class="subheader">Non-Profit Partners &amp; Investors</h2>

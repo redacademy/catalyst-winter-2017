@@ -10,10 +10,6 @@ get_header(); ?>
 
    <?php get_template_part( 'template-parts/hero-banner'); ?>
 
-<p class="intro-copy">
-            <?php echo CFS()->get( 'intro_copy' ); ?>
-</p>
-
 <div class="project-content">
     <?php $posts = get_posts( array(
         'post_type' => 'projects',
@@ -22,9 +18,26 @@ get_header(); ?>
     foreach ( $posts as $post ) :?>
         <div class="project-post">
             <div class="proj-head">
-                <p class='name'><?php echo CFS()->get('project_name'); ?></p><span class='break'>|</span>
-                <p>Location: <span><?php echo CFS()->get('project_location'); ?></span></p><span class='break'>|</span>
-                <p>Status: <span class='status'><?php echo CFS()->get('project_status'); ?></span></p>
+
+                <?php $project_name = CFS()->get('project_name');
+                if ( !empty( $project_name ) ) : ?>
+                <p class="name"><?php echo $project_name; ?></p>
+                <?php endif; ?>
+                <span class='break'>|</span>
+
+                <p>Location:
+                 <?php $project_location = CFS()->get( 'project_location' );
+                if ( !empty( $project_location ) ) : ?>
+                <span><?php echo $project_location; ?></span>
+                <?php endif; ?>
+
+                </p><span class='break'>|</span>
+                <p>Status:
+                <?php $project_status = CFS()->get( 'project_status' );
+                if ( !empty( $project_status ) ) :?>
+                <span class='status'><?php echo $project_status; ?></span>
+                <?php endif; ?>
+                </p>
             </div>
             <div class="img-container">
                 <img class='project-image' src='<?php echo CFS()->get('heroimage'); ?>'>

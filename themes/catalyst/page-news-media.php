@@ -13,8 +13,12 @@ get_header(); ?>
 
        <?php get_template_part( 'template-parts/hero-banner'); ?>
 
-        <div class="video"><?php echo CFS()->get('video'); ?></div>
-
+        <?php
+        $video = CFS()->get('video');
+        if ( !empty( $video ) ) :
+        ?>
+        <div class="video"><?php echo $video; ?></div>
+        <?php endif; ?>
 
 <h2>link to other stories</h2>
 <div class="newsmedia-content">
