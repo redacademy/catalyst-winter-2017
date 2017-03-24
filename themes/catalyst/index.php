@@ -2,7 +2,7 @@
 /**
  * The main template file.
  *
- * @package RED_Starter_Theme
+ * @package Catalyst_Theme
  */
 
 get_header(); ?>

@@ -2,7 +2,7 @@
 /**
  * The template for displaying the footer.
  *
- * @package RED_Starter_Theme
+ * @package Catalyst_Theme
  */
 
 ?>
@@ -23,7 +23,7 @@
 							/**
 							* The footer containing the footer-1 widget area.s
 							*
-							* @package RED_Starter_Theme
+							* @package Catalyst_Theme
 							*/
 
 							if ( ! is_active_sidebar( 'footer-1' ) ) {
