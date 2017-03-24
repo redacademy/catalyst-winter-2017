@@ -18,6 +18,8 @@
         });
     });
 
+
+
     // Toggle profile popout when enter/exit buttons are clicked (Our Team page)
 
 
@@ -163,7 +165,7 @@
         showStaffPopout( $staffProfileImages );
         showBoardPopout( $boardProfileImages );
     }
-    
+
     // On window resize, set the appropriate open popout function and kill the one that is not being used.
 
     $( window ).resize( function(){
@@ -226,7 +228,7 @@
         autoPlay: 2000,
         draggable: false
     });
-    
+
     //flickity single projects
     $('.img-carousel').flickity({
         contain: true,
@@ -248,7 +250,7 @@
         pageDots: false,
         watchCSS: true
     });
-    //flickity projects template part 
+    //flickity projects template part
     $('.other-post-gallery').flickity({
         contain: true,
         wrapAround: true,
