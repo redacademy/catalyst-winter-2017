@@ -10,14 +10,15 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<div class="hero-image-banner">
+			<!--<div class="hero-image-banner">
 				<div class="header-text">
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 					<p class="banner-text">
 						<?php echo CFS()->get( 'bannertext' ); ?>
 					</p>
-				</div><!-- .page-header -->
-			</div>
+				</div>
+			</div>-->
+            <?php get_template_part( 'template-parts/hero-banner'); ?>
 
             <div class="content-wrapper">
 			<p class="intro-copy">
