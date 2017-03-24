@@ -181,20 +181,27 @@
     });
 
     // Load more posts on when user clicks button on news & media page.
-
+    var postsContainer = $( '.newsmedia-article' );
     var loadPostsButton = $( '.page-template-news .load-more-button' );
-    var apiLink = $( location ).attr('href') + '/wp-json/newsmedia';
+    // var apiLink = $( location ).attr('href') + '/wp-json/wp/v2/news';
+    var apiLink = 'http://catalyst.cp.academy.red/wp-json/wp/v2/news/?_embed'
 
-    loadPostsButton.click(function( data ){
-        $.get(apiLink, function(){
-            console.log( data );
+    loadPostsButton.click(function(){
+
+        var postsArrayOffset = 5
+        $.get(apiLink, function( data ){
+            var newPosts = data.slice(postsArrayOffset, postsArrayOffset + 6);
+            $.each( newPosts, function(i, post)  {
+                // var articleElement = $( document ).createElement('article').addClass( 'news' );
+                // var articleThumbContainer = $( document ).createElement('div').addClass( 'article-thumb' );
+                console.log(post);
+                // console.log(post._links['wp:attachment']);
+                if ( post._links['wp:featuredmedia'] ) {
+                    var articleThumb = $( document .createElement('img') ).attr('src', post._links['wp:featuredmedia'][0].href);
+                    postsContainer.append(articleThumb);
+                }
+            });
         });
-        // $.ajax({
-		// 	url: apiLink += $selectedTopic + '.json' + '?' + $.param( {'api-key': '4bd2bd098b3449068be47890b4f42e24'} ),
-		// 	method: 'GET' 
-		// }).done(function(){
-
-        // });
     });
 
     //send user to thank you page on form submission
