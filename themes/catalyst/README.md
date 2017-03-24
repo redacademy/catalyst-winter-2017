@@ -1,21 +1,19 @@
 # Catalyst
 
-A WordPress starter theme for Catalyst, forked from Underscores.
+A custom WordPress theme developed for Catalyst Community Development Corporation, forked from Underscores.
 
-## Installation
+![Theme screenshot](/relative/path/to/img.jpg?raw=true "Optional Title")
 
-### 1. Download me (don't clone me!)
+## Technologies Used
 
-Then add me to your `wp-content` directory.
+* Wordpress as a CMS
+* PHP
+* HTML
+* SCSS/SASS
+* Jquery/Javascript
 
-### 2. Rename the `redstarter` directory
+## Developed By
 
-Make sure that the theme directory name is project appropriate!
-
-### 3. Install the dev dependencies
-
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `inhabitent.dev` to the appropriate localhost URL).
+* Jisu Lee
+* Kevin Hashimoto
+* Evan Gray
