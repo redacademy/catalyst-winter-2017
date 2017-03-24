@@ -8,19 +8,16 @@
 
 get_header(); ?>
 
-<div class="hero-image-banner">
-    <header class="header-text">
-        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-    </header>
-</div>
+   <?php get_template_part( 'template-parts/hero-banner'); ?>
+
 <p class="intro-copy">
             <?php echo CFS()->get( 'intro_copy' ); ?>
 </p>
 
 <div class="project-content">
-    <?php $posts = get_posts( array( 
-        'post_type' => 'projects', 
-        'order' => 'ASC', 
+    <?php $posts = get_posts( array(
+        'post_type' => 'projects',
+        'order' => 'ASC',
     ));
     foreach ( $posts as $post ) :?>
         <div class="project-post">
