@@ -30,7 +30,7 @@
             width: 100%;
         }
     }
-    .entry-subtitle {
+    .banner-text {
         width: 250px;
         @include banner-text;
         @include media($desktop-width) {
