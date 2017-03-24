@@ -30,10 +30,11 @@ get_header(); ?>
         <?php $newsarticles = get_posts( array(
             'post_type' => 'newsmedia',
             'order' => 'DSC',
+            'numberposts' => '5',
             ));
              foreach ( $newsarticles as $newsarticle ) : setup_postdata( $newsarticle ); ?>
 
-             <div id="news" class="<?php echo $newsarticle->ID ?>">
+             <article id="post-<?php echo $newsarticle->ID ?>" class="news">
                 <?php
                 $img = get_the_post_thumbnail($newsarticle->ID);
                 if(!empty($img)){
@@ -48,7 +49,7 @@ get_header(); ?>
                 <?php echo get_template_part( 'template-parts/content', 'newsmedia'); ?>
                 </div>
                 <?php echo CFS()->get('link', $newsarticle->ID); ?>
-            </div>
+            </article>
         <?php endforeach; ?>
 
     </div>

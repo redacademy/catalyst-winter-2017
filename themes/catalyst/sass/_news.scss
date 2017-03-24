@@ -1,4 +1,4 @@
-.page-template-page-news-media {
+.page-template-news {
     margin: 0 auto;
     .hero-image-banner {
         height: 70vh;
@@ -92,7 +92,7 @@
     }
     .newsmedia-article {
         padding: 0px 20px;
-        #news {
+        .news {
             background-color: $color__brand-blue;
             padding-bottom: 20px;
             margin: 10px 0;
@@ -104,40 +104,23 @@
                 max-width: 105%;
             }
         }
-        [class="292"] {
+        .news {
             display: none;
         }
-        [class="286"] {
-            display: none;
-        }
-        [class="282"] {
-            display: none;
-        }
-        [class="296"] {
-            display: none;
+        .news:first-child {
+            width: 100%;
+            display: block;
         }
         @include media($desktop-width) {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            [class="284"] {
+            .news {
+                width: 48%;
+                display: block;
+            }
+            .news:nth-child(5n + 1) {
                 width: 100%;
-            }
-            [class="292"] {
-                width: 48%;
-                display: block;
-            }
-            [class="286"] {
-                width: 48%;
-                display: block;
-            }
-            [class="282"] {
-                width: 48%;
-                display: block;
-            }
-            [class="296"] {
-                width: 48%;
-                display: block;
             }
         }
         .article-content {
