@@ -13,29 +13,29 @@
         @include media($desktop-width) {
             height: 70vh;
         }
-        .banner-title {
-            font-size: 3.5rem;
-            color: #fff;
-            text-align: center;
-            text-transform: uppercase;
-            text-shadow: 1px 2px 5px #323232;
-        }
-        .banner-text {
-            @include banner-text;
-        }
-        .banner-text-small {
-            font-size: 1rem;
-            color: white;
-            width: 380px;
-            margin: 0 auto;
-            text-align: center;
-            line-height: 2rem;
-            letter-spacing: 2px;
-            @include header-text-shadow;
-            @include media($desktop-width) {
-                width: 750px;
-                margin: 2% auto;
-            }
+    }
+    .banner-title {
+        font-size: 3.5rem;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 1px 2px 5px #323232;
+    }
+    .banner-text {
+        @include banner-text;
+    }
+    .banner-text-small {
+        font-size: 1rem;
+        color: white;
+        width: 380px;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 2rem;
+        letter-spacing: 2px;
+        @include header-text-shadow;
+        @include media($desktop-width) {
+            width: 750px;
+            margin: 2% auto;
         }
     }
     .blue-background {
@@ -65,12 +65,11 @@
                 line-height: 3.4rem;
             }
         }
-
-        .supporters-header {
-            font-size: 1.55rem;
-            @include media($desktop-width) {
-                font-size: 1.85rem;
-            }
+    }
+    .supporters-header {
+        font-size: 1.55rem;
+        @include media($desktop-width) {
+            font-size: 1.85rem;
         }
     }
     .wpcf7 {
