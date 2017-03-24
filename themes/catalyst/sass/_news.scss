@@ -15,8 +15,8 @@
         padding-top: 130px;
         left: 10%;
         @include media($desktop-width) {
-        left: 0%;
-         position: initial;
+            left: 0%;
+            position: initial;
         }
     }
     .entry-title {
@@ -70,10 +70,6 @@
                 box-shadow: 1px 1px 5px $color__header-main;
             }
         }
-    }
-    .video {
-        text-align: center;
-        height: 350px;
     }
     .newsmedia-content {
         .widget-area {
@@ -166,25 +162,21 @@
     }
     .tweet_wrap {
         padding: 20px;
-    //     display: flex;
-    //     width: 100%;
-    //     flex-wrap: wrap;
-     }
-    .tweet_data {
-        // width: 30%;
-    }
-    .times {
-        // width: 30%;
     }
     .tweet-actions a {
         padding: 5px;
         background-color: lightgrey;
         border-radius: 20px;
     }
-    .wdtf-user-card {
-        // width: 45%;
-    }
     .light .tweets-intent-data {
         border: none;
+    }
+    .video {
+        text-align: center;
+        iframe {
+            width: 90%;
+            height: 500px;
+            // margin-bottom: 10px;
+        }
     }
 }
