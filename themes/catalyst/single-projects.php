@@ -2,7 +2,7 @@
 /**
  * The template for displaying single posts for projects(projects page).
  *
- * @package RED_Starter_Theme
+ * @package Catalyst_Theme
  */
 
  get_header(); ?>

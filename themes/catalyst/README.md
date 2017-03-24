@@ -1,6 +1,6 @@
-# RED Starter
+# Catalyst
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+A WordPress starter theme for Catalyst, forked from Underscores.
 
 ## Installation
 

@@ -2,7 +2,7 @@
 /**
  * The header for our theme.
  *
- * @package RED_Starter_Theme
+ * @package Catalyst_Theme
  */
 
 ?><!DOCTYPE html>

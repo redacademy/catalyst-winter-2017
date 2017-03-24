@@ -2,7 +2,7 @@
 /**
  * Template part for displaying projects carousel.
  *
- * @package RED_Starter_Theme
+ * @package Catalyst_Theme
  */
 
 ?>

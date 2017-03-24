@@ -2,7 +2,7 @@
 /**
  * Custom functions that act independently of the theme templates.
  *
- * @package RED_Starter_Theme
+ * @package catalyst_Theme
  */
 
 /**
@@ -28,7 +28,7 @@ function catalyst_hero_image_css() {
                 background-size: cover, cover;
             }";
 
-            wp_add_inline_style( 'red-starter-style', $hero_image_css );
+            wp_add_inline_style( 'catalyst-style', $hero_image_css );
         }
 
         elseif ( is_front_page() === true ) {
@@ -41,7 +41,7 @@ function catalyst_hero_image_css() {
                 background-size: cover, cover;
             }";
 
-            wp_add_inline_style( 'red-starter-style', $hero_image_css );
+            wp_add_inline_style( 'catalyst-style', $hero_image_css );
             return;
         }
     }
