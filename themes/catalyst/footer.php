@@ -17,23 +17,11 @@
 					</div>
 
 					<div class="company-info">
-						<!--<div class="footer-title">-->
-
-							<?php
-							/**
-							* The footer containing the footer-1 widget area.s
-							*
-							* @package Catalyst_Theme
-							*/
-
-							if ( ! is_active_sidebar( 'footer-1' ) ) {
-								return;
-							}
-							?>
-
 							<div id="secondary" class="footer-widget-area" role="complementary">
 								<div class="footerLogo"></div>
-								<?php dynamic_sidebar( 'footer-1' ); ?>
+								<?php if ( function_exists('dynamic_sidebar') || dynamic_sidebar('Footer') ) : ?>
+								<?php endif; ?>
+								<?php dynamic_sidebar( 'Footer' ); ?>
 							</div><!-- #secondary -->
 						</div>
 
