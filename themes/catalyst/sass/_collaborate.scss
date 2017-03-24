@@ -1,4 +1,4 @@
-.page-template-collaborate {
+.page-id-18 {
     height: 100%;
     width: 100%;
     @include media($desktop-width) {
@@ -69,7 +69,7 @@
 
         .partners-information-container {
             @include media($desktop-width) {
-                @include flex-row(wrap, space-between, baseline);              
+                @include flex-row(wrap, space-between, baseline);
                 padding: 0 7rem 0 9rem;
             }
             .partners-information {
@@ -92,7 +92,7 @@
                 text-transform: uppercase;
                 @include media($desktop-width) {
                     margin: 1.9rem 0 0.5rem;
-                    font-size: 2rem;                   
+                    font-size: 2rem;
                     padding-left: 7%;
                     text-align: left;
                 }

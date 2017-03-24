@@ -1,14 +1,14 @@
-.single-projects {
-  
+.page-id-195 {
+
     h2 {
         font-weight: 500;
         color: $color__header-main;
-    } 
+    }
     h3,
     p {
         color: $color__text-main;
-    } 
-  
+    }
+
 .hero-image-banner {
         display: flex;
         flex-direction: column;
@@ -110,7 +110,7 @@
         background-size: 275%;
         position: relative;
         z-index: -1;
-        display: none; 
+        display: none;
     }
     .is-selected .left-quotation-mark, .is-selected .right-quotation-mark {
         display: inline-block;
