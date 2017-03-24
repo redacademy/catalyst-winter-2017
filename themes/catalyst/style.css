@@ -3108,3 +3108,24 @@ object {
     font-weight: 100; }
     .page-id-252 .bottom-text span {
       text-transform: uppercase; }
+
+.error404 .site-content {
+  height: 80vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 0 2%; }
+
+.error404 .not-found {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.error404 .logo {
+  margin-left: 2rem; }
