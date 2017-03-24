@@ -1258,7 +1258,7 @@ object {
     .page-template-our-story .header-text {
       position: initial; } }
 
-.page-template-our-story .bannertext {
+.page-template-our-story .banner-text {
   font-size: 1.5rem;
   color: #fff;
   margin: 0 auto;
@@ -1877,7 +1877,7 @@ object {
         position: initial;
         margin: 0;
         width: 100%; } }
-  .page-template-page-news-media .entry-subtitle {
+  .page-template-page-news-media .banner-text {
     width: 250px;
     font-size: 1.5rem;
     color: white;
@@ -1888,11 +1888,11 @@ object {
     letter-spacing: 2px;
     text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 600px) {
-      .page-template-page-news-media .entry-subtitle {
+      .page-template-page-news-media .banner-text {
         width: 750px;
         margin: 2% auto; } }
     @media all and (min-width: 600px) {
-      .page-template-page-news-media .entry-subtitle {
+      .page-template-page-news-media .banner-text {
         width: 100%;
         position: initial;
         font-size: 30px;
