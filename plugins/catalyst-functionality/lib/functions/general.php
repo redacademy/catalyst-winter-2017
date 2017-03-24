@@ -137,7 +137,8 @@ class RF_General {
 
       return $messages;
    }
-
 }
 
 new RF_General();
+
+
