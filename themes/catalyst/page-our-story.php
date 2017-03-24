@@ -67,9 +67,10 @@ get_header(); ?>
 				</div>
 
 				<?php get_template_part( 'template-parts/ourStory-carousel', 'projects carousel' ); ?>
-
-				<a><?php echo CFS()->get( 'btn1' ); ?></a>
 			</section>
+
+	<div><?php echo CFS()->get( 'pdf_download' ); ?></div>
+
 			<section class="end-content">
 				<div class="end-content-quote">
 
