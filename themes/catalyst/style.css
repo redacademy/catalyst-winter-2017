@@ -558,6 +558,8 @@ textarea {
         margin: 15px auto;
         width: 145px; } }
   .container .top-menu {
+    position: absolute;
+    right: 0%;
     z-index: 1;
     width: 50%; }
     @media all and (min-width: 600px) {
