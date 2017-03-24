@@ -10,10 +10,6 @@ get_header(); ?>
 
 <?php get_template_part( 'template-parts/hero-banner'); ?>
 
-<p class="intro-copy">
-	<?php echo CFS()->get( 'intro_copy' ); ?>
-</p>
-
 <div class="page-header-container">
 	<h2 class="page-title">Job Opportunities</h2>
 </div>

@@ -1267,6 +1267,19 @@ object {
   letter-spacing: 2px;
   text-shadow: 1px 2px 5px #323232; }
 
+.page-id-21 .intro-copy {
+  text-align: center;
+  font-size: 20px;
+  margin: 30px auto;
+  width: 280px;
+  font-weight: 100;
+  line-height: 25px; }
+  @media all and (min-width: 600px) {
+    .page-id-21 .intro-copy {
+      width: 100%;
+      font-size: 22px;
+      font-weight: lighter; } }
+
 .page-id-21 .site-content {
   text-align: center; }
 
