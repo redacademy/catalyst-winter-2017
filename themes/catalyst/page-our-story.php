@@ -89,7 +89,7 @@ get_header(); ?>
 				<h4><?php echo CFS()->get( 'text_area1' ); ?></h4>
 				<p class="position"><?php echo CFS()->get( 'text_area2' ); ?></p>
 				</div>
-				<a href="<?php the_permalink( ); ?>"><?php echo CFS()->get( 'btn2' ); ?></a>
+				<a href="<?php echo get_home_url(); ?>/our-team"><?php echo CFS()->get( 'btn2' ); ?></a>
 			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
