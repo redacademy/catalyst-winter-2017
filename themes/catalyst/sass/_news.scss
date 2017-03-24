@@ -1,4 +1,4 @@
-.page-template-page-news-media{
+.page-template-page-news-media {
     margin: 0 auto;
     .hero-image-banner {
         height: 70vh;
@@ -154,13 +154,26 @@
             padding: 5px 15px;
         }
     }
-    ul.light li.tweets_avatar {
-        background: $color__brand-blue;
+    li.tweets_avatar {
         border: none;
         box-shadow: none;
         border-radius: 0;
+        padding: 0 !important;
+        &:nth-child(2) {
+            display: none;
+            @include media($desktop-width) {
+                display: block;
+            }
+        }
+        &:nth-child(3) {
+            display: none;
+            @include media($desktop-width) {
+                display: block;
+            }
+        }
     }
     .tweet_wrap {
+        background: $color__brand-blue;
         padding: 20px;
     }
     .tweet-actions a {
