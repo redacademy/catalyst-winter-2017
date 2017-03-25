@@ -10,40 +10,6 @@
 	display: block;
 	float: left;
 	width: 100%;
-	ul {
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
-		box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-		float: left;
-		position: absolute;
-		top: $base__space-unit;
-		left: -999rem;
-		z-index: 99999;
-		left: -999rem;
-		top: 0;
-		li {
-			&:hover>ul,
-			&.focus>ul {
-				left: 100%;
-			}
-		}
-		a {
-			width: 200px;
-		}
-		li:hover>ul,
-		li.focus>ul {
-			left: auto;
-		}
-	}
-	li {
-		float: left;
-		position: relative;
-	}
-	a {
-		display: block;
-		text-decoration: none;
-	}
 }
 
 
@@ -135,15 +101,22 @@
 			visibility: visible;
 			height: 100px;
 		}
+		.menu-menu-1-container {
+			height: 100px;
+			width: auto;
+		}
 		#primary-menu {
 			display: flex;
 			justify-content: flex-end;
 			margin: 0 auto;
 			padding-top: 45px;
+			padding-right: 5%;
+			list-style: none;
 			ul {
+				height: 70px;
 				padding-top: 45px;
 				overflow: hidden;
-				height: 70px;
+				list-style: none;
 			}
 			li {
 				padding: 0 12px;
@@ -157,6 +130,7 @@
 				text-transform: uppercase;
 				color: $color__header-main;
 				font-size: 15px;
+				text-decoration: none;
 				@include media($desktop-width) {
 					font-size: 9px;
 				}

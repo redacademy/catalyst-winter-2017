@@ -183,25 +183,33 @@
     });
 
     // Load more posts on when user clicks button on news & media page.
-    var postsContainer = $( '.newsmedia-article' );
-    var loadPostsButton = $( '.page-template-news .load-more-button' );
+
+    // function addZero {
+
+    // }
+    // var postsContainer = $( '.newsmedia-article' );
+    var loadPostsButton = $( '.load-more .load-more-button' );
     // var apiLink = $( location ).attr('href') + '/wp-json/wp/v2/news';
-    var apiLink = 'http://catalyst.cp.academy.red/wp-json/wp/v2/news/?_embed'
+    var apiLink = 'http://catalyst.cp.academy.red/wp-json/wp/v2/news/?&_embed=true'
 
     loadPostsButton.click(function(){
 
         var postsArrayOffset = 5
         $.get(apiLink, function( data ){
-            var newPosts = data.slice(postsArrayOffset, postsArrayOffset + 6);
+            var newPosts = data.slice( postsArrayOffset, postsArrayOffset + 6 );
             $.each( newPosts, function(i, post)  {
-                // var articleElement = $( document ).createElement('article').addClass( 'news' );
-                // var articleThumbContainer = $( document ).createElement('div').addClass( 'article-thumb' );
-                console.log(post);
-                // console.log(post._links['wp:attachment']);
-                if ( post._links['wp:featuredmedia'] ) {
-                    var articleThumb = $( document .createElement('img') ).attr('src', post._links['wp:featuredmedia'][0].href);
-                    postsContainer.append(articleThumb);
+                // var articleElement = $( document.createElement(' article' ) ).addClass( 'news' );
+                // var articleContent = $( document.createElement( 'div' ) ).addClass( 'article-content' );
+                var myDate = new Date( post.date );
+                var formattedDate = myDate.getDay() + ', ' + ( '0' + myDate.getMonth() ).slice( -2 ) + ', ' + myDate.getFullYear();
+                console.log( formattedDate );
+   
+                if ( post.better_featured_image !== null ) {
+                    var articleThumb = $( document.createElement( 'img' ) ).attr( 'src', post.better_featured_image.source_url );
+                    // var articleThumbContainer = $( document.createElement( 'div' ) ).addClass( 'article-thumb' ).append( articleThumb );    
                 }
+                
+
             });
         });
     });
