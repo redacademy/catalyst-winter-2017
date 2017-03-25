@@ -57,9 +57,9 @@ get_header(); ?>
 					<h5 class="position"><?php echo $image_title1; ?></h5>
 					<?php endif; ?>
 
-					<?php $mission_text = CFS()->get( 'image_text1' );
-					if ( !empty( $mission_text) ) :?>
-					<p class="mission-text"><?php echo $mission_text; ?></p>
+					<?php $image_text1 = CFS()->get( 'image_text1' );
+					if ( !empty( $image_text1) ) :?>
+					<p class="mission-text"><?php echo $image_text1; ?></p>
 					<?php endif; ?>
 
 				</div>
@@ -70,50 +70,92 @@ get_header(); ?>
 					<div class="mission-image rent">
 					<img src ="<?php echo CFS()->get( 'image2' ); ?>"/>
 					<div class="mission-text">
-					<h5 class="rent-title"><?php echo CFS()->get( 'image_title2' ); ?></h5>
-					<p class="mission-text"><?php echo CFS()->get( 'image_text2' ); ?></p>
+					<?php $image_title2 = CFS()->get( 'image_title2' );
+					if ( !empty( $image_title2 ) ) :?>
+					<h5 class="rent-title"><?php echo $image_title2; ?></h5>
+					<?php endif; ?>
+					<?php $image_text2 = CFS()->get( 'image_text2' );
+					if ( !empty( $image_text2) ) :?>
+					<p class="mission-text"><?php echo $image_text2; ?></p>
+					<?php endif; ?>
 					</div>
 					</div>
 
 					<img src="<?php echo CFS()->get( 'arrow_image' ); ?>"class="arrow"/>
 
-
 					<div class="mission-image life">
 					<img src ="<?php echo CFS()->get( 'image3' ); ?>"/>
 					<div class="mission-text">
-					<h5><?php echo CFS()->get( 'image_title3' ); ?></h5>
-					<p class="mission-text"><?php echo CFS()->get( 'image_text3' ); ?></p>
+
+					<?php $image_title3 = CFS()->get( 'image_title3' );
+					if ( !empty( $image_title3 ) ) :?>
+					<h5><?php echo $image_title3; ?></h5>
+					<?php endif; ?>
+
+					<?php $image_text3 = CFS()->get( 'image_text3' );
+					if ( !empty( $image_text3 ) ) :?>
+					<p class="mission-text"><?php echo $image_text3; ?></p>
+					<?php endif; ?>
+
 					</div>
 					</div>
 				</div>
-
 			</section>
 			<section class="formula">
 
-				<h2><?php echo CFS()->get( 'content_title2' ); ?></h2>
+
+			<?php $content_title2 = CFS()->get( 'content_title2' );
+			if ( !empty( $content_title2 ) ) :?>
+			<h2><?php echo $content_title2; ?></h2>
+			<?php endif; ?>
+
 				<div class="formula-p">
-					<p class="formula-text1"><?php echo CFS()->get( 'formula_text1' ); ?></p>
-					<p class="formula-text2"><?php echo CFS()->get( 'formula_text2' ); ?></p>
+					<?php $formula_text1 = CFS()->get( 'formula_text1' );
+					if ( !empty( $formula_text1 ) ) :?>
+					<p class="formula-text1"><?php echo $formula_text1; ?></p>
+					<?php endif; ?>
+
+					<?php $formula_text2 = CFS()->get( 'formula_text2' );
+					if ( !empty( $formula_text2 ) ) :?>
+					<p class="formula-text2"><?php echo $formula_text2; ?></p>
+					<?php endif; ?>
 				</div>
 
 				<?php get_template_part( 'template-parts/ourStory-carousel', 'projects carousel' ); ?>
 			</section>
 
-	<div class="download"><?php echo CFS()->get( 'pdf_download' ); ?></div>
+			<?php $pdf_download = CFS()->get( 'pdf_download' );
+			if ( !empty( $pdf_download ) ) :?>
+			<div class="download"><?php echo $pdf_download; ?></div>
+			<?php endif; ?>
 
 			<section class="end-content">
 				<div class="end-content-quote">
-
 				<div class="mission-quote2">
 					<div class="quotation-left2"></div>
-					<p class="quote2"><?php echo CFS()->get( 'quotation2' ); ?></p>
+					<?php $quotation2 = CFS()->get( 'quotation2' );
+					if ( !empty( $quotation2 ) ) :?>
+					<p class="quote2"><?php echo $quotation2; ?></p>
+					<?php endif; ?>
 					<div class="quotation-right2"></div>
 				</div>
 				<div class="robert">
-				<h4><?php echo CFS()->get( 'text_area1' ); ?></h4>
-				<p class="position"><?php echo CFS()->get( 'text_area2' ); ?></p>
+					<?php $text_area1 = CFS()->get( 'text_area1' );
+					if ( !empty( $text_area1 ) ) :?>
+					<h4><?php echo $text_area1; ?></h4>
+					<?php endif; ?>
+
+					<?php $text_area2 = CFS()->get( 'text_area2' );
+					if ( !empty( $text_area2 ) ) :?>
+					<p class="position"><?php echo $text_area2; ?></p>
+					<?php endif; ?>
 				</div>
-				<a class="btn" href="<?php echo get_home_url(); ?>/our-team"><?php echo CFS()->get( 'btn2' ); ?></a>
+
+				<?php $btn2 = CFS()->get( 'btn2' );
+				if ( !empty( $btn2 ) ) :?>
+				<a class="btn" href="<?php echo get_home_url(); ?>/our-team"><?php echo $btn2; ?></a>
+				<?php endif; ?>
+
 			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
