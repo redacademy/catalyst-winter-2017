@@ -10,6 +10,41 @@
 	display: block;
 	float: left;
 	width: 100%;
+
+	ul {
+ 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+ 			float: left;
+ 			position: absolute;
+ 			top: $base__space-unit;
+ 			left: -999rem;
+ 			z-index: 99999;
+ 			ul {
+ 				left: -999rem;
+ 				top: 0;
+ 			}
+ 			li {
+ 				&:hover>ul,
+ 				&.focus>ul {
+ 					left: 100%;
+ 				}
+ 			}
+
+		a {
+			width: 200px;
+		}
+		li:hover>ul,
+		li.focus>ul {
+			left: auto;
+		}
+	}
+	li {
+		float: left;
+		position: relative;
+	}
+	a {
+		display: block;
+		text-decoration: none;
+	}
 }
 
 
