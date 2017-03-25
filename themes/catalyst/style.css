@@ -572,6 +572,7 @@ textarea {
         text-transform: uppercase;
         color: #323232;
         font-size: 15px;
+        font-weight: 100;
         text-decoration: none; }
         @media all and (min-width: 600px) {
           .container .desktop-menu #primary-menu a {

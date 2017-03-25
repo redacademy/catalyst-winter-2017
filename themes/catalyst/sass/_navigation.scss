@@ -130,6 +130,7 @@
 				text-transform: uppercase;
 				color: $color__header-main;
 				font-size: 15px;
+				font-weight: 100;
 				text-decoration: none;
 				@include media($desktop-width) {
 					font-size: 9px;
