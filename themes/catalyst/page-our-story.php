@@ -99,7 +99,7 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/ourStory-carousel', 'projects carousel' ); ?>
 			</section>
 
-	<div><?php echo CFS()->get( 'pdf_download' ); ?></div>
+	<div class="download"><?php echo CFS()->get( 'pdf_download' ); ?></div>
 
 			<section class="end-content">
 				<div class="end-content-quote">
@@ -113,7 +113,7 @@ get_header(); ?>
 				<h4><?php echo CFS()->get( 'text_area1' ); ?></h4>
 				<p class="position"><?php echo CFS()->get( 'text_area2' ); ?></p>
 				</div>
-				<a href="<?php echo get_home_url(); ?>/our-team"><?php echo CFS()->get( 'btn2' ); ?></a>
+				<a class="btn" href="<?php echo get_home_url(); ?>/our-team"><?php echo CFS()->get( 'btn2' ); ?></a>
 			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
