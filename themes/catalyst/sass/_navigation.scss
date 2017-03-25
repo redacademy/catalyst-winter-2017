@@ -10,6 +10,7 @@
 	display: block;
 	float: left;
 	width: 100%;
+
 	ul {
  			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
  			float: left;
@@ -135,15 +136,22 @@
 			visibility: visible;
 			height: 100px;
 		}
+		.menu-menu-1-container {
+			height: 100px;
+			width: auto;
+		}
 		#primary-menu {
 			display: flex;
 			justify-content: flex-end;
 			margin: 0 auto;
 			padding-top: 45px;
+			padding-right: 5%;
+			list-style: none;
 			ul {
+				height: 70px;
 				padding-top: 45px;
 				overflow: hidden;
-				height: 70px;
+				list-style: none;
 			}
 			li {
 				padding: 0 12px;
@@ -157,6 +165,8 @@
 				text-transform: uppercase;
 				color: $color__header-main;
 				font-size: 15px;
+				font-weight: 100;
+				text-decoration: none;
 				@include media($desktop-width) {
 					font-size: 9px;
 				}
