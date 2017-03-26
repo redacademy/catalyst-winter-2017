@@ -192,8 +192,8 @@
         margin: 1.25rem auto;
         position: relative;
         @include flex-column(nowrap, center, center);
-        @include media(1000px) {
-            width: 14%;
+        @include media(1350px) {
+            width: 20%;
         }
         .name {
             margin: 0 auto;
@@ -204,10 +204,6 @@
         }
         &:nth-child(4) .job-title {
             width: 265px;
-            @include media($desktop-width) {
-                position: absolute;
-                left: -50%;
-            }
         }
     }
     .navigation-button-container {

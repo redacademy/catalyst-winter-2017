@@ -1873,9 +1873,9 @@ object {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center; }
-  @media all and (min-width: 1000px) {
+  @media all and (min-width: 1350px) {
     .advisors-profiles-wrapper .profile-preview {
-      width: 14%; } }
+      width: 20%; } }
   .advisors-profiles-wrapper .profile-preview .name {
     margin: 0 auto; }
   .advisors-profiles-wrapper .profile-preview .job-title {
@@ -1883,10 +1883,6 @@ object {
     margin: 0 auto; }
   .advisors-profiles-wrapper .profile-preview:nth-child(4) .job-title {
     width: 265px; }
-    @media all and (min-width: 760px) {
-      .advisors-profiles-wrapper .profile-preview:nth-child(4) .job-title {
-        position: absolute;
-        left: -50%; } }
 
 @media all and (min-width: 760px) {
   .advisors-profiles-wrapper .navigation-button-container {
