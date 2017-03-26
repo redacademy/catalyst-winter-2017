@@ -112,7 +112,7 @@
     function hideStaffPopout($thisPopout) {
         $staffExitButton.click(function () {
             $staffExitButton.hide();
-            $thisPopout.removeClass( 'show-popout' );
+            $thisPopout.removeClass( 'show-popout' ).addClass( 'translucent' );
             $staffProfilesWrapper.css('margin-top', '0');
             $staffProfilePreviews.show();
             $staffProfilesHeader.show();
@@ -129,7 +129,7 @@
     function hideBoardPopout($thisPopout) {
         $boardExitButton.click(function(){
             $boardExitButton.hide();
-            $thisPopout.removeClass( 'show-popout' );
+            $thisPopout.removeClass( 'show-popout' ).addClass( 'translucent' );
             $boardProfilesHeader.removeClass( 'blue-background' );
             $boardProfilePreviews.show();
             $staffProfilesWrapper.css( 'opacity', '1' );

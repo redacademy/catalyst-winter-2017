@@ -41,6 +41,11 @@
         top: 25%;
         right: 5%;
         @include exit-popout-button(40px, #FFF);
+
+        span {
+            position: relative;
+            bottom: 2px;
+        }
     }
 }
 
@@ -93,15 +98,18 @@
         }
     }
     // Toggle-able classes for hiding and showing team member profiles, and greying-out content.
+
+    .translucent {
+        opacity: 0.5;
+    }
+
     .show-popout {
         height: 100%;
         width: 100%;
         @include flex-column(nowrap, center, center);
         opacity: 1;
     }
-    .translucent {
-        opacity: 0.5;
-    }
+
     .small-header {
         margin: 2rem auto 1rem;
         font-size: 2rem;
@@ -116,7 +124,7 @@
     .board-profiles-header {
         height: auto;
         width: 100%;
-        margin: 2 auto 1rem;
+        margin: 2rem auto 2.5rem;
         position: relative;
         @include flex-row(nowrap, center, center);
         .small-header {
@@ -129,6 +137,11 @@
             position: absolute;
             top: 18%;
             right: 5%;
+
+            span {
+                position: relative;
+                bottom: 2px;
+            }
         }
     }
     // Profile preview styles
@@ -144,7 +157,7 @@
         text-align: center;
         position: relative;
         @include media($desktop-width) {
-            width: 24%;
+            width: 30%;
         }
         .profile-image {
             width: 215px;
