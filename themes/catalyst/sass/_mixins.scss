@@ -15,6 +15,7 @@
 @mixin page-title {
 	font-size: 3.15rem;
 	color: white;
+	font-weight: $font__bold;
 	text-align: center;
 	text-transform: uppercase;
 	@include header-text-shadow;
@@ -26,7 +27,8 @@
 
 @mixin banner-text {
 	font-size: 1.35rem;
-	font-weight: 300;
+    font-family: $font__secondary;
+    font-weight: $font__bold;
 	color: white;
 	width: 100%;
 	margin: $base__space-unit auto;
@@ -78,7 +80,7 @@
 	margin: 0 auto;
 	padding: 2rem 0.85rem;
 	font-size: 1.25rem;
-	font-weight: 100;
+	font-family: $font__secondary;
 	text-align: center;
 	@include media($desktop-width) {
 		padding: 2.75rem 0.85rem;

@@ -325,14 +325,14 @@ th {
   font-family: 'quattrocento';
   src: url("../../fonts/quattrocentosans-bold-webfont.eot");
   src: url("../../fonts/quattrocentosans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/quattrocentosans-bold-webfont.woff2") format("woff2"), url("../../fonts/quattrocentosans-bold-webfont.woff") format("woff"), url("../../fonts/quattrocentosans-bold-webfont.ttf") format("truetype"), url("../../fonts/quattrocentosans-bold-webfont.svg#quattrocento_sansbold") format("svg");
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: 'quattrocento';
   src: url("../../fonts/quattrocentosans-bolditalic-webfont.eot");
   src: url("../../fonts/quattrocentosans-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/quattrocentosans-bolditalic-webfont.woff2") format("woff2"), url("../../fonts/quattrocentosans-bolditalic-webfont.woff") format("woff"), url("../../fonts/quattrocentosans-bolditalic-webfont.ttf") format("truetype"), url("../../fonts/quattrocentosans-bolditalic-webfont.svg#quattrocento_sansbold_italic") format("svg");
-  font-weight: 400;
+  font-weight: 700;
   font-style: italic; }
 
 @font-face {
@@ -463,16 +463,6 @@ table {
 
 .formulas:last-child .fill {
   display: none; }
-
-.banner-text {
-  font-family: quattrocento, sans-serif;
-  font-weight: 700; }
-
-.entry-title {
-  font-weight: 700; }
-
-.intro-copy {
-  font-family: quattrocento, sans-serif; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -1265,6 +1255,7 @@ object {
 .page-id-21 .entry-title {
   font-size: 3.15rem;
   color: white;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   text-shadow: 1px 2px 5px #323232; }
@@ -1286,7 +1277,8 @@ object {
 
 .page-id-21 .banner-text {
   font-size: 1.35rem;
-  font-weight: 300;
+  font-family: quattrocento, sans-serif;
+  font-weight: 700;
   color: white;
   width: 100%;
   margin: 1.5rem auto;
@@ -1300,17 +1292,17 @@ object {
       margin: 2% auto; } }
 
 .page-id-21 .intro-copy {
-  text-align: center;
-  font-size: 20px;
-  margin: 30px auto;
-  width: 280px;
-  font-weight: 100;
-  line-height: 25px; }
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0.85rem;
+  font-size: 1.25rem;
+  font-family: quattrocento, sans-serif;
+  text-align: center; }
   @media all and (min-width: 600px) {
     .page-id-21 .intro-copy {
-      width: 100%;
-      font-size: 22px;
-      font-weight: lighter; } }
+      padding: 2.75rem 0.85rem;
+      width: 60%; } }
 
 .page-id-21 .site-content {
   text-align: center; }
@@ -1598,6 +1590,7 @@ object {
   .page-id-159 .entry-title {
     font-size: 3.15rem;
     color: white;
+    font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232; }
@@ -1607,7 +1600,8 @@ object {
         font-size: 3.85rem; } }
   .page-id-159 .banner-text {
     font-size: 1.35rem;
-    font-weight: 300;
+    font-family: quattrocento, sans-serif;
+    font-weight: 700;
     color: white;
     width: 100%;
     margin: 1.5rem auto;
@@ -1626,7 +1620,7 @@ object {
   margin: 0 auto;
   padding: 2rem 0.85rem;
   font-size: 1.25rem;
-  font-weight: 100;
+  font-family: quattrocento, sans-serif;
   text-align: center; }
   @media all and (min-width: 600px) {
     .intro-copy {
@@ -1979,6 +1973,7 @@ object {
     line-height: 54px;
     font-size: 3.15rem;
     color: white;
+    font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232; }
@@ -1994,7 +1989,8 @@ object {
   .page-id-19 .banner-text {
     width: 250px;
     font-size: 1.35rem;
-    font-weight: 300;
+    font-family: quattrocento, sans-serif;
+    font-weight: 700;
     color: white;
     width: 100%;
     margin: 1.5rem auto;
@@ -2150,6 +2146,7 @@ object {
   .page-id-18 .entry-title {
     font-size: 3.15rem;
     color: white;
+    font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232; }
@@ -2159,7 +2156,8 @@ object {
         font-size: 3.85rem; } }
   .page-id-18 .banner-text {
     font-size: 1.35rem;
-    font-weight: 300;
+    font-family: quattrocento, sans-serif;
+    font-weight: 700;
     color: white;
     width: 100%;
     margin: 1.5rem auto;
@@ -2177,7 +2175,7 @@ object {
     margin: 0 auto;
     padding: 2rem 0.85rem;
     font-size: 1.25rem;
-    font-weight: 100;
+    font-family: quattrocento, sans-serif;
     text-align: center; }
     @media all and (min-width: 600px) {
       .page-id-18 .intro-copy {
@@ -2529,6 +2527,7 @@ object {
   .page-id-7 .banner-title {
     font-size: 3.15rem;
     color: white;
+    font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232; }
@@ -2538,7 +2537,8 @@ object {
         font-size: 3.85rem; } }
   .page-id-7 .banner-text {
     font-size: 1.35rem;
-    font-weight: 300;
+    font-family: quattrocento, sans-serif;
+    font-weight: 700;
     color: white;
     width: 100%;
     margin: 1.5rem auto;
@@ -2696,6 +2696,7 @@ object {
 .page-id-196 .entry-title {
   font-size: 3.15rem;
   color: white;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   text-shadow: 1px 2px 5px #323232; }
@@ -2706,7 +2707,8 @@ object {
 
 .page-id-196 .banner-text {
   font-size: 1.35rem;
-  font-weight: 300;
+  font-family: quattrocento, sans-serif;
+  font-weight: 700;
   color: white;
   width: 100%;
   margin: 1.5rem auto;
@@ -2725,7 +2727,7 @@ object {
   margin: 0 auto;
   padding: 2rem 0.85rem;
   font-size: 1.25rem;
-  font-weight: 100;
+  font-family: quattrocento, sans-serif;
   text-align: center; }
   @media all and (min-width: 600px) {
     .page-id-196 .intro-copy {
@@ -2816,6 +2818,7 @@ object {
 .page-id-195 .entry-title {
   font-size: 3.15rem;
   color: white;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   text-shadow: 1px 2px 5px #323232; }
@@ -2826,7 +2829,8 @@ object {
 
 .page-id-195 .banner-text {
   font-size: 1.35rem;
-  font-weight: 300;
+  font-family: quattrocento, sans-serif;
+  font-weight: 700;
   color: white;
   width: 100%;
   margin: 1.5rem auto;
@@ -2845,7 +2849,7 @@ object {
   margin: 0 auto;
   padding: 2rem 0.85rem;
   font-size: 1.25rem;
-  font-weight: 100;
+  font-family: quattrocento, sans-serif;
   text-align: center; }
   @media all and (min-width: 600px) {
     .page-id-195 .intro-copy {
@@ -3137,6 +3141,7 @@ object {
   .page-id-252 .banner-text {
     font-size: 3.15rem;
     color: white;
+    font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232;
