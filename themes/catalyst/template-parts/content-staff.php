@@ -19,13 +19,9 @@
 				<p class="quote"><?php echo CFS()->get('quote'); ?></p>
 			</div>
 
-			<div class="right-column">
+			<h3 class="tagline clearfix"><?php echo CFS()->get('tagline'); ?></h3>
 
-				<h3 class="tagline"><?php echo CFS()->get('tagline'); ?></h3>
-
-				<article class="cv">
-					<?php echo CFS()->get('cvdescription'); ?>
-				</article>
-			</div>
-
+			<article class="cv">
+				<?php echo CFS()->get('cvdescription'); ?>
+			</article>
 	</section><!-- #post-## -->

@@ -1697,12 +1697,26 @@ object {
     width: 0;
     padding-top: 3rem;
     background: #D9F1FF;
+    font-weight: 200;
     opacity: 0;
     overflow: hidden;
     transition: opacity 0.7s ease; }
+    .staff-profiles-wrapper .profile-popout a,
+    .board-profiles-wrapper .profile-popout a,
+    .advisors-profiles-wrapper .profile-popout a {
+      color: #4A4A4A;
+      font-weight: bold;
+      text-decoration: none; }
+      .staff-profiles-wrapper .profile-popout a:hover,
+      .board-profiles-wrapper .profile-popout a:hover,
+      .advisors-profiles-wrapper .profile-popout a:hover {
+        color: #935E32; }
     .staff-profiles-wrapper .profile-popout .left-column,
     .board-profiles-wrapper .profile-popout .left-column,
     .advisors-profiles-wrapper .profile-popout .left-column {
+      width: 40%;
+      margin-right: 10%;
+      float: left;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-flow: column nowrap;
@@ -1720,6 +1734,59 @@ object {
           .board-profiles-wrapper .profile-popout .left-column img,
           .advisors-profiles-wrapper .profile-popout .left-column img {
             width: 95%; } }
+      .staff-profiles-wrapper .profile-popout .left-column .quote,
+      .board-profiles-wrapper .profile-popout .left-column .quote,
+      .advisors-profiles-wrapper .profile-popout .left-column .quote {
+        margin-bottom: 2.5rem;
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+        text-align: center; }
+    .staff-profiles-wrapper .profile-popout h3,
+    .board-profiles-wrapper .profile-popout h3,
+    .advisors-profiles-wrapper .profile-popout h3 {
+      display: inline; }
+    .staff-profiles-wrapper .profile-popout article,
+    .board-profiles-wrapper .profile-popout article,
+    .advisors-profiles-wrapper .profile-popout article {
+      font-size: 1.15rem;
+      line-height: 1.5rem;
+      display: inline; }
+      .staff-profiles-wrapper .profile-popout article p:nth-last-of-type(2), .staff-profiles-wrapper .profile-popout article h4,
+      .board-profiles-wrapper .profile-popout article p:nth-last-of-type(2),
+      .board-profiles-wrapper .profile-popout article h4,
+      .advisors-profiles-wrapper .profile-popout article p:nth-last-of-type(2),
+      .advisors-profiles-wrapper .profile-popout article h4 {
+        max-width: 50%;
+        float: right; }
+      .staff-profiles-wrapper .profile-popout article p:nth-last-of-type(2),
+      .board-profiles-wrapper .profile-popout article p:nth-last-of-type(2),
+      .advisors-profiles-wrapper .profile-popout article p:nth-last-of-type(2) {
+        margin-bottom: 0;
+        padding: 1.5rem;
+        background: white; }
+      .staff-profiles-wrapper .profile-popout article h4,
+      .board-profiles-wrapper .profile-popout article h4,
+      .advisors-profiles-wrapper .profile-popout article h4 {
+        margin-top: 0;
+        padding: 1.5rem;
+        background: white;
+        clear: right; }
+        .staff-profiles-wrapper .profile-popout article h4 + p,
+        .board-profiles-wrapper .profile-popout article h4 + p,
+        .advisors-profiles-wrapper .profile-popout article h4 + p {
+          clear: both; }
+      .staff-profiles-wrapper .profile-popout article ul,
+      .board-profiles-wrapper .profile-popout article ul,
+      .advisors-profiles-wrapper .profile-popout article ul {
+        margin: 0;
+        padding: 0;
+        list-style: none; }
+        .staff-profiles-wrapper .profile-popout article ul li::before,
+        .board-profiles-wrapper .profile-popout article ul li::before,
+        .advisors-profiles-wrapper .profile-popout article ul li::before {
+          content: "-";
+          margin-right: 0.5rem;
+          display: inline; }
   .staff-profiles-wrapper .translucent,
   .board-profiles-wrapper .translucent,
   .advisors-profiles-wrapper .translucent {
@@ -1729,6 +1796,7 @@ object {
   .advisors-profiles-wrapper .show-popout {
     height: 100%;
     width: 100%;
+    padding: 7% 7%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: column nowrap;
