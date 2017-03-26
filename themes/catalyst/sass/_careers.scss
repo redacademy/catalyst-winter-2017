@@ -1,4 +1,4 @@
-.page-template-careers {
+.page-id-196 {
     #content {
         width: 100%;
     }
@@ -21,6 +21,7 @@
         align-items: center;
     }
     .page-title {
+        font-weight: $font__bold;
         font-size: 1.8rem;
         color: $color__header-main;
         text-transform: uppercase;
@@ -40,6 +41,7 @@
         border-bottom: none;
     }
     .job-title {
+        font-weight: $font__bold;
         font-size: 1.3rem;
         text-align: center;
         color: $color__text-main;
@@ -47,6 +49,7 @@
         margin: 2rem 0;
     }
     .role-container {
+        font-family: $font__secondary;
         font-size: 1.3rem;
         margin-bottom: 3rem;
         p{
@@ -55,10 +58,11 @@
     }
     .role {
         text-transform: uppercase;
-        font-weight: bold;
+        font-weight: $font__bold;
         margin-bottom: 0;
     }
     .resp-container {
+        font-family: $font__secondary;
         width: 100%;
         max-width: 850px;
         margin: 0 auto;
@@ -73,16 +77,17 @@
     }
     .responsibilities {
         text-transform: uppercase;
-        font-weight: bold;
+        font-weight: $font__bold;
         margin-bottom: 0;
     }
     .link-container{
         text-align: center
     }
     .contact-link {
+        font-weight: $font__bold;
         text-decoration: none;
-        color: #000;
-        border: 2px solid #000;
+        color: $color__header-main;
+        border: 2px solid $color__header-main;
         padding: 1rem 3.5rem;
         text-transform: uppercase;
         @include media($desktop_width){

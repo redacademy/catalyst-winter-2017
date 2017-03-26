@@ -18,17 +18,14 @@
         display: none;
     }
 }
-* {
-    font-family: muli, sans-serif;
-}
 .banner-text {
-    font-family: quattrocento, sans-serif;
-    font-weight: 700;
+    font-family: $font__secondary;
+    font-weight: $font__bold;
 }
 .entry-title {
-    font-weight: 700;
+    font-weight: $font__bold;
 }
 .intro-copy {
-    font-family: quattrocento, sans-serif;
+    font-family: $font__secondary;
 }
 

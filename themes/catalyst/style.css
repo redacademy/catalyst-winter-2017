@@ -358,7 +358,7 @@ input,
 select,
 textarea {
   color: #4A4A4A;
-  font-family: sans-serif;
+  font-family: muli, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.4rem; }
@@ -463,9 +463,6 @@ table {
 
 .formulas:last-child .fill {
   display: none; }
-
-* {
-  font-family: muli, sans-serif; }
 
 .banner-text {
   font-family: quattrocento, sans-serif;
@@ -2693,21 +2690,21 @@ object {
       font-style: normal;
       margin: 0 auto 1.5rem; }
 
-.page-template-careers #content {
+.page-id-196 #content {
   width: 100%; }
 
-.page-template-careers .entry-title {
+.page-id-196 .entry-title {
   font-size: 3.15rem;
   color: white;
   text-align: center;
   text-transform: uppercase;
   text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 600px) {
-    .page-template-careers .entry-title {
+    .page-id-196 .entry-title {
       margin: 0 0 1.5rem;
       font-size: 3.85rem; } }
 
-.page-template-careers .banner-text {
+.page-id-196 .banner-text {
   font-size: 1.35rem;
   font-weight: 300;
   color: white;
@@ -2718,11 +2715,11 @@ object {
   letter-spacing: 2px;
   text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 600px) {
-    .page-template-careers .banner-text {
+    .page-id-196 .banner-text {
       width: 750px;
       margin: 2% auto; } }
 
-.page-template-careers .intro-copy {
+.page-id-196 .intro-copy {
   height: auto;
   width: 100%;
   margin: 0 auto;
@@ -2731,11 +2728,11 @@ object {
   font-weight: 100;
   text-align: center; }
   @media all and (min-width: 600px) {
-    .page-template-careers .intro-copy {
+    .page-id-196 .intro-copy {
       padding: 2.75rem 0.85rem;
       width: 60%; } }
 
-.page-template-careers .page-header-container {
+.page-id-196 .page-header-container {
   background-color: #D9F1FF;
   display: -ms-flexbox;
   display: flex;
@@ -2745,70 +2742,75 @@ object {
   -ms-flex-align: center;
       align-items: center; }
 
-.page-template-careers .page-title {
+.page-id-196 .page-title {
+  font-weight: 700;
   font-size: 1.8rem;
   color: #323232;
   text-transform: uppercase;
   margin: 0; }
 
-.page-template-careers .job-container {
+.page-id-196 .job-container {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto; }
 
-.page-template-careers .job-post {
+.page-id-196 .job-post {
   margin: 0 10%;
   border-bottom: 1px solid black;
   padding-bottom: 6rem; }
 
-.page-template-careers .job-post:last-child {
+.page-id-196 .job-post:last-child {
   border-bottom: none; }
 
-.page-template-careers .job-title {
+.page-id-196 .job-title {
+  font-weight: 700;
   font-size: 1.3rem;
   text-align: center;
   color: #4A4A4A;
   text-transform: uppercase;
   margin: 2rem 0; }
 
-.page-template-careers .role-container {
+.page-id-196 .role-container {
+  font-family: quattrocento, sans-serif;
   font-size: 1.3rem;
   margin-bottom: 3rem; }
-  .page-template-careers .role-container p {
+  .page-id-196 .role-container p {
     margin-top: 0; }
 
-.page-template-careers .role {
+.page-id-196 .role {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 0; }
 
-.page-template-careers .resp-container {
+.page-id-196 .resp-container {
+  font-family: quattrocento, sans-serif;
   width: 100%;
   max-width: 850px;
   margin: 0 auto;
   font-size: 1.3rem;
   margin-bottom: 4rem; }
-  .page-template-careers .resp-container ul {
+  .page-id-196 .resp-container ul {
     margin-left: 0; }
-  .page-template-careers .resp-container p {
+  .page-id-196 .resp-container p {
     margin-top: 0; }
 
-.page-template-careers .responsibilities {
+.page-id-196 .responsibilities {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 0; }
 
-.page-template-careers .link-container {
+.page-id-196 .link-container {
   text-align: center; }
 
-.page-template-careers .contact-link {
+.page-id-196 .contact-link {
+  font-weight: 700;
   text-decoration: none;
-  color: #000;
-  border: 2px solid #000;
+  color: #323232;
+  border: 2px solid #323232;
   padding: 1rem 3.5rem;
   text-transform: uppercase; }
   @media all and (min-width: 600px) {
-    .page-template-careers .contact-link {
+    .page-id-196 .contact-link {
       padding: 1rem 4rem; } }
 
 .page-id-195 .entry-title {
@@ -3198,9 +3200,3 @@ object {
 
 .error404 .logo {
   margin-left: 2rem; }
-
-.error404 .entry-title {
-  font-weight: 300; }
-
-.error404 .banner-text {
-  font-style: italic; }
