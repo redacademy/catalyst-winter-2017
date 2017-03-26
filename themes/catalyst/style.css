@@ -1329,7 +1329,7 @@ object {
 .page-id-21 h2 {
   font-size: 30px;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 700;
   background-color: #D9F1FF;
   padding: 10px 0;
   text-align: center;
@@ -1343,7 +1343,7 @@ object {
   text-align: center;
   padding: 0 10px;
   font-size: 28px;
-  font-weight: 400;
+  font-weight: 700;
   margin: auto;
   line-height: 35px; }
   @media all and (min-width: 600px) {
@@ -1372,6 +1372,7 @@ object {
 
 .page-id-21 .download,
 .page-id-21 .btn {
+  font-weight: 700;
   padding: 20px 50px;
   text-transform: uppercase;
   border: 1px solid black;
@@ -1380,7 +1381,7 @@ object {
   @media all and (min-width: 600px) {
     .page-id-21 .download,
     .page-id-21 .btn {
-      border: 3px solid black; } }
+      border: 3px solid #323232; } }
   .page-id-21 .download:hover,
   .page-id-21 .btn:hover {
     border-color: #D9F1FF;
@@ -1392,10 +1393,11 @@ object {
 .page-id-21 .download {
   width: 300px;
   margin: 0 auto;
-  padding: 5px 0; }
+  padding: 5px 0;
+  font-weight: 700; }
   .page-id-21 .download a {
     text-decoration: none;
-    color: black; }
+    color: #323232; }
 
 .page-id-21 .mission-quote2 {
   margin-bottom: 80px; }
@@ -1426,6 +1428,7 @@ object {
   font-size: 18px;
   position: absolute;
   width: 90%;
+  font-family: quattrocento, sans-serif;
   font-style: italic; }
   @media all and (min-width: 600px) {
     .page-id-21 .quote,
@@ -1477,6 +1480,7 @@ object {
       font-size: 30px; } }
 
 .page-id-21 h4 {
+  font-weight: 700;
   margin: 0; }
   @media all and (min-width: 600px) {
     .page-id-21 h4 {
@@ -1484,6 +1488,7 @@ object {
 
 .page-id-21 .position {
   font-style: italic;
+  font-weight: 600;
   margin: 0; }
 
 .page-id-21 .arrow {
@@ -1499,7 +1504,7 @@ object {
 .page-id-21 .mission-text {
   margin: 0 auto;
   font-size: 16px;
-  font-weight: lighter;
+  font-family: quattrocento, sans-serif;
   width: 80%;
   margin-bottom: 20px; }
   @media all and (min-width: 600px) {
@@ -1538,11 +1543,14 @@ object {
       width: 100%;
       height: 180px; }
     .page-id-21 .mission-content .mission-image h5 {
+      font-family: quattrocento, sans-serif;
+      font-weight: 700;
       font-size: 20px;
       text-transform: uppercase;
       width: 100%; }
 
 .page-id-21 .formula-p {
+  font-family: quattrocento, sans-serif;
   width: 90%;
   margin: auto; }
 
@@ -1557,9 +1565,11 @@ object {
       font-size: 24px;
       line-height: 28px; } }
 
-@media all and (min-width: 600px) {
-  .page-id-21 .formula-carousel {
-    padding-left: 20px; } }
+.page-id-21 .formula-carousel {
+  font-family: quattrocento, sans-serif; }
+  @media all and (min-width: 600px) {
+    .page-id-21 .formula-carousel {
+      padding-left: 20px; } }
 
 .page-id-21 .formula-carousel {
   margin-bottom: 2rem;

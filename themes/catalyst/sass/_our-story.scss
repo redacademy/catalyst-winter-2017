@@ -25,7 +25,7 @@
     h2 {
         font-size: 30px;
         text-transform: uppercase;
-        font-weight: 400;
+        font-weight: $font__bold;
         background-color: $color__brand-blue;
         padding: 10px 0;
         text-align: center;
@@ -39,7 +39,7 @@
         text-align: center;
         padding: 0 10px;
         font-size: 28px;
-        font-weight: 400;
+        font-weight: $font__bold;
         margin: auto;
         line-height: 35px;
         @include media($desktop-width) {
@@ -68,13 +68,14 @@
     }
     .download,
     .btn {
+        font-weight: $font__bold;
         padding: 20px 50px;
         text-transform: uppercase;
         border: 1px solid black;
         text-decoration: none;
         color: black;
         @include media($desktop-width) {
-            border: 3px solid black;
+            border: 3px solid $color__header-main;
         }
         &:hover {
             border-color: $color__brand-blue;
@@ -88,9 +89,10 @@
         width: 300px;
         margin: 0 auto;
         padding: 5px 0;
+        font-weight: $font__bold;
         a {
             text-decoration: none;
-            color: black;
+            color: $color__header-main;
         }
     }
     .mission-quote2 {
@@ -119,6 +121,7 @@
         font-size: 18px;
         position: absolute;
         width: 90%;
+        font-family: $font__secondary;
         font-style: italic;
         @include media($desktop-width) {
             font-size: 20px;
@@ -167,6 +170,7 @@
         }
     }
     h4 {
+        font-weight: $font__bold;
         margin: 0;
         @include media($desktop-width) {
             margin: 15px;
@@ -174,6 +178,7 @@
     }
     .position {
         font-style: italic;
+        font-weight: $font__semibold;
         margin: 0;
     }
     .arrow {
@@ -191,7 +196,7 @@
     .mission-text {
         margin: 0 auto;
         font-size: 16px;
-        font-weight: lighter;
+        font-family: $font__secondary;
         width: 80%;
         margin-bottom: 20px;
         @include media($desktop-width) {
@@ -228,6 +233,8 @@
                 height: 180px;
             }
             h5 {
+                font-family: $font__secondary;
+                font-weight: $font__bold;
                 font-size: 20px;
                 text-transform: uppercase;
                 width: 100%;
@@ -235,6 +242,7 @@
         }
     }
     .formula-p {
+        font-family: $font__secondary;
         width: 90%;
         margin: auto;
     }
@@ -249,6 +257,7 @@
         }
     }
     .formula-carousel {
+        font-family: $font__secondary;
         @include media($desktop-width) {
             padding-left: 20px;
         }
