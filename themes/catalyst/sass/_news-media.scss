@@ -91,29 +91,29 @@
             margin: 10px 0;
         }
         .article-thumb {
+            height: 235px;
             width: 100%;
             overflow: hidden;
             img {
+                height: auto;
+                min-width: 100%;
                 max-width: 105%;
             }
         }
         .news {
             display: none;
         }
-        .news:first-child {
-            width: 100%;
-            display: block;
-        }
         @include media($desktop-width) {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            @include flex-row(wrap, space-around);
             .news {
+                height: auto;
+                min-height: 390px;
                 width: 48%;
                 display: block;
             }
             .news:nth-child(5n + 1) {
-                width: 100%;
+                width: 98%;
+                display: block;
             }
         }
         .article-content {
@@ -128,7 +128,7 @@
                 margin: 8px 0;
             }
         }
-        #post-19 {
+        .hentry {
             font-size: 14px;
             p {
                 text-align: left;
