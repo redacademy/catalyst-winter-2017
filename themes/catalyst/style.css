@@ -379,9 +379,25 @@ table {
   width: 100%; }
 
 .hero-image-banner {
-  position: relative; }
+  position: relative;
+  min-width: 100%;
+  padding: 10% 0 10%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  @media all and (min-width: 600px) {
+    .hero-image-banner {
+      height: 70vh; } }
   .hero-image-banner .header-text {
-    position: absolute; }
+    width: 100%;
+    position: absolute;
+    left: 0;
+    text-align: center; }
 
 .formulas:last-child .fill {
   display: none; }
@@ -1123,44 +1139,6 @@ textarea {
   display: none; }
 
 /*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-/* Posts and pages */
-.sticky {
-  display: block; }
-
-.hentry {
-  margin: 0 0 1.5rem; }
-
-.updated:not(.published) {
-  display: none; }
-
-.single .byline,
-.group-blog .byline {
-  display: inline; }
-
-.page-content,
-.entry-content,
-.entry-summary {
-  margin: 1.5rem 0 0; }
-
-.page-links {
-  clear: both;
-  margin: 0 0 1.5rem; }
-
-/* Asides */
-.blog .format-aside .entry-title,
-.archive .format-aside .entry-title {
-  display: none; }
-
-/* Comments */
-.comment-content a {
-  word-wrap: break-word; }
-
-.bypostauthor {
-  display: block; }
-
-/*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
 .page-content .wp-smiley,
@@ -1220,13 +1198,8 @@ object {
 .gallery-caption {
   display: block; }
 
-.page-id-21 .hero-image-banner {
-  color: white;
-  text-align: center;
-  position: relative; }
-
 .page-id-21 .entry-title {
-  font-size: 3.5rem;
+  font-size: 3.15rem;
   color: white;
   text-align: center;
   text-transform: uppercase;
@@ -1248,13 +1221,19 @@ object {
       position: initial; } }
 
 .page-id-21 .banner-text {
-  font-size: 1.5rem;
-  color: #fff;
-  margin: 0 auto;
+  font-size: 1.35rem;
+  font-weight: 300;
+  color: white;
+  width: 100%;
+  margin: 1.5rem auto;
   text-align: center;
   line-height: 2rem;
   letter-spacing: 2px;
   text-shadow: 1px 2px 5px #323232; }
+  @media all and (min-width: 600px) {
+    .page-id-21 .banner-text {
+      width: 750px;
+      margin: 2% auto; } }
 
 .page-id-21 .intro-copy {
   text-align: center;
@@ -1552,121 +1531,86 @@ object {
     .page-id-159 {
       font-size: 1.4rem;
       line-height: 1.75rem; } }
-  .page-id-159 .hero-image-banner {
-    min-width: 100%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: column nowrap;
-        flex-flow: column nowrap;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center; }
-    @media all and (min-width: 600px) {
-      .page-id-159 .hero-image-banner {
-        height: 70vh; } }
-    .page-id-159 .hero-image-banner .entry-title {
-      font-size: 3.5rem;
-      color: white;
-      text-align: center;
-      text-transform: uppercase;
-      text-shadow: 1px 2px 5px #323232; }
-      @media all and (min-width: 600px) {
-        .page-id-159 .hero-image-banner .entry-title {
-          margin: 0 0 1.5rem;
-          font-size: 3.85rem; } }
-    .page-id-159 .hero-image-banner .banner-text {
-      font-size: 1.5rem;
-      color: white;
-      width: 320px;
-      margin: 10% auto;
-      text-align: center;
-      line-height: 2rem;
-      letter-spacing: 2px;
-      text-shadow: 1px 2px 5px #323232; }
-      @media all and (min-width: 600px) {
-        .page-id-159 .hero-image-banner .banner-text {
-          width: 750px;
-          margin: 2% auto; } }
-  .page-id-159 .intro-copy {
-    height: auto;
-    width: 100%;
-    margin: 0 auto;
-    padding: 2rem 0.85rem;
-    font-size: 1.25rem;
-    font-weight: 100;
-    text-align: center; }
-    @media all and (min-width: 600px) {
-      .page-id-159 .intro-copy {
-        padding: 2.75rem 0.85rem;
-        width: 60%; } }
-  .page-id-159 .blue-background {
-    position: relative;
-    height: auto;
-    width: 100%;
-    margin: 0 auto 0.75rem;
-    padding: 0.75rem 0.5rem;
-    background-color: #D9F1FF;
+  .page-id-159 .entry-title {
+    font-size: 3.15rem;
+    color: white;
     text-align: center;
-    line-height: 2.4rem; }
+    text-transform: uppercase;
+    text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 600px) {
-      .page-id-159 .blue-background {
-        margin: 0 auto 1.5rem;
-        padding: 1rem 0.5rem;
-        line-height: 3.4rem; } }
-    .page-id-159 .blue-background .our-team-header {
-      width: 300px;
-      margin: 0 auto;
-      color: #323232;
-      font-size: 2.5rem;
-      font-weight: 400;
-      text-align: center;
-      text-transform: uppercase;
-      position: relative; }
-      @media all and (min-width: 600px) {
-        .page-id-159 .blue-background .our-team-header {
-          width: 100%;
-          font-size: 3.15rem; } }
-    .page-id-159 .blue-background .staff-exit-button {
-      display: inline-block;
-      position: absolute;
-      top: 25%;
-      right: 5%;
-      height: 40px;
-      width: 40px;
-      font-size: 2.15rem;
-      font-weight: 100;
-      margin: 0 auto;
-      border: 3px solid #323232;
-      border-radius: 100%;
-      padding-top: 0.75rem;
-      padding-left: 0.05rem;
-      background: #FFF;
-      box-shadow: none;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-      -ms-flex-pack: center;
-          justify-content: center;
-      -ms-flex-align: center;
-          align-items: center; }
-      .page-id-159 .blue-background .staff-exit-button:hover {
-        cursor: pointer;
-        color: #00A4FF;
-        border-color: #00A4FF; }
-      .page-id-159 .blue-background .staff-exit-button:focus {
-        outline: none; }
-  .page-id-159 .enter-button, .page-id-159 .exit-button {
+      .page-id-159 .entry-title {
+        margin: 0 0 1.5rem;
+        font-size: 3.85rem; } }
+  .page-id-159 .banner-text {
+    font-size: 1.35rem;
+    font-weight: 300;
+    color: white;
+    width: 100%;
+    margin: 1.5rem auto;
+    text-align: center;
+    line-height: 2rem;
+    letter-spacing: 2px;
+    text-shadow: 1px 2px 5px #323232; }
+    @media all and (min-width: 600px) {
+      .page-id-159 .banner-text {
+        width: 750px;
+        margin: 2% auto; } }
+
+.intro-copy {
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0.85rem;
+  font-size: 1.25rem;
+  font-weight: 100;
+  text-align: center; }
+  @media all and (min-width: 600px) {
+    .intro-copy {
+      padding: 2.75rem 0.85rem;
+      width: 60%; } }
+
+.blue-background {
+  position: relative;
+  height: auto;
+  width: 100%;
+  margin: 0 auto 0.75rem;
+  padding: 0.75rem 0.5rem;
+  background-color: #D9F1FF;
+  text-align: center;
+  line-height: 2.4rem; }
+  @media all and (min-width: 600px) {
+    .blue-background {
+      margin: 0 auto 1.5rem;
+      padding: 1rem 0.5rem;
+      line-height: 3.4rem; } }
+  .blue-background .our-team-header {
+    width: 300px;
+    margin: 0 auto;
+    color: #323232;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative; }
+    @media all and (min-width: 600px) {
+      .blue-background .our-team-header {
+        width: 100%;
+        font-size: 3.15rem; } }
+  .blue-background .staff-exit-button {
+    display: inline-block;
+    position: absolute;
+    top: 25%;
+    right: 5%;
     height: 40px;
     width: 40px;
-    font-size: 3.2rem;
+    font-size: 2.15rem;
     font-weight: 100;
     margin: 0 auto;
     border: 3px solid #323232;
     border-radius: 100%;
-    padding: 0 0 9px 1px;
-    background: none;
+    padding-top: 0.75rem;
+    padding-left: 0.05rem;
+    background: #FFF;
     box-shadow: none;
     display: -ms-flexbox;
     display: flex;
@@ -1676,68 +1620,92 @@ object {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center; }
-    .page-id-159 .enter-button:hover, .page-id-159 .exit-button:hover {
+    .blue-background .staff-exit-button:hover {
       cursor: pointer;
       color: #00A4FF;
       border-color: #00A4FF; }
-    .page-id-159 .enter-button:focus, .page-id-159 .exit-button:focus {
+    .blue-background .staff-exit-button:focus {
       outline: none; }
+
+.enter-button,
+.exit-button {
+  height: 40px;
+  width: 40px;
+  font-size: 3.2rem;
+  font-weight: 100;
+  margin: 0 auto;
+  border: 3px solid #323232;
+  border-radius: 100%;
+  padding: 0 0 9px 1px;
+  background: none;
+  box-shadow: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .enter-button:hover,
+  .exit-button:hover {
+    cursor: pointer;
+    color: #00A4FF;
+    border-color: #00A4FF; }
+  .enter-button:focus,
+  .exit-button:focus {
+    outline: none; }
+
+@media all and (min-width: 600px) {
+  .enter-button {
+    display: none; } }
+
+.exit-button {
+  font-size: 2.5rem;
+  background: white;
+  padding-top: 0.6rem;
+  padding-left: 0.08rem;
+  position: absolute; }
+
+.staff-profiles-wrapper,
+.board-profiles-wrapper,
+.advisors-profiles-wrapper {
+  margin-bottom: 2.5rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center; }
   @media all and (min-width: 600px) {
-    .page-id-159 .enter-button {
-      display: none; } }
-  .page-id-159 .exit-button {
-    font-size: 2.5rem;
-    background: white;
-    padding-top: 0.6rem;
-    padding-left: 0.08rem;
-    position: absolute; }
-  .page-id-159 .staff-profiles-wrapper, .page-id-159 .board-profiles-wrapper, .page-id-159 .advisors-profiles-wrapper {
-    margin-bottom: 2.5rem;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: column nowrap;
-        flex-flow: column nowrap;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    -ms-flex-align: center;
-        align-items: center; }
-    @media all and (min-width: 600px) {
-      .page-id-159 .staff-profiles-wrapper, .page-id-159 .board-profiles-wrapper, .page-id-159 .advisors-profiles-wrapper {
-        width: 80%;
-        margin: 0 auto 3.25rem;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-        -ms-flex-pack: center;
-            justify-content: center;
-        -ms-flex-align: start;
-            align-items: flex-start; } }
-    .page-id-159 .staff-profiles-wrapper .profile-popout, .page-id-159 .board-profiles-wrapper .profile-popout, .page-id-159 .advisors-profiles-wrapper .profile-popout {
-      height: 0;
-      width: 0;
-      padding-top: 3rem;
-      background: #D9F1FF;
-      opacity: 0;
-      overflow: hidden;
-      transition: opacity 0.7s ease; }
-      .page-id-159 .staff-profiles-wrapper .profile-popout .left-column, .page-id-159 .board-profiles-wrapper .profile-popout .left-column, .page-id-159 .advisors-profiles-wrapper .profile-popout .left-column {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-        -ms-flex-pack: center;
-            justify-content: center;
-        -ms-flex-align: center;
-            align-items: center; }
-        .page-id-159 .staff-profiles-wrapper .profile-popout .left-column img, .page-id-159 .board-profiles-wrapper .profile-popout .left-column img, .page-id-159 .advisors-profiles-wrapper .profile-popout .left-column img {
-          width: 215px; }
-          @media all and (min-width: 600px) {
-            .page-id-159 .staff-profiles-wrapper .profile-popout .left-column img, .page-id-159 .board-profiles-wrapper .profile-popout .left-column img, .page-id-159 .advisors-profiles-wrapper .profile-popout .left-column img {
-              width: 95%; } }
-    .page-id-159 .staff-profiles-wrapper .show-popout, .page-id-159 .board-profiles-wrapper .show-popout, .page-id-159 .advisors-profiles-wrapper .show-popout {
-      height: 100%;
-      width: 100%;
+    .staff-profiles-wrapper,
+    .board-profiles-wrapper,
+    .advisors-profiles-wrapper {
+      width: 80%;
+      margin: 0 auto 3.25rem;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: start;
+          align-items: flex-start; } }
+  .staff-profiles-wrapper .profile-popout,
+  .board-profiles-wrapper .profile-popout,
+  .advisors-profiles-wrapper .profile-popout {
+    height: 0;
+    width: 0;
+    padding-top: 3rem;
+    background: #D9F1FF;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.7s ease; }
+    .staff-profiles-wrapper .profile-popout .left-column,
+    .board-profiles-wrapper .profile-popout .left-column,
+    .advisors-profiles-wrapper .profile-popout .left-column {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-flow: column nowrap;
@@ -1745,98 +1713,191 @@ object {
       -ms-flex-pack: center;
           justify-content: center;
       -ms-flex-align: center;
-          align-items: center;
-      opacity: 1; }
-    .page-id-159 .staff-profiles-wrapper .translucent, .page-id-159 .board-profiles-wrapper .translucent, .page-id-159 .advisors-profiles-wrapper .translucent {
-      opacity: 0.5; }
-    .page-id-159 .staff-profiles-wrapper .small-header, .page-id-159 .board-profiles-wrapper .small-header, .page-id-159 .advisors-profiles-wrapper .small-header {
-      margin: 2rem auto 1rem;
-      font-size: 2rem;
-      font-weight: 400;
-      text-align: center;
-      text-transform: uppercase; }
-      @media all and (min-width: 600px) {
-        .page-id-159 .staff-profiles-wrapper .small-header, .page-id-159 .board-profiles-wrapper .small-header, .page-id-159 .advisors-profiles-wrapper .small-header {
-          width: 100%;
-          margin: 3rem auto 2.5rem; } }
-    .page-id-159 .staff-profiles-wrapper .board-profiles-header, .page-id-159 .board-profiles-wrapper .board-profiles-header, .page-id-159 .advisors-profiles-wrapper .board-profiles-header {
+          align-items: center; }
+      .staff-profiles-wrapper .profile-popout .left-column img,
+      .board-profiles-wrapper .profile-popout .left-column img,
+      .advisors-profiles-wrapper .profile-popout .left-column img {
+        width: 215px; }
+        @media all and (min-width: 600px) {
+          .staff-profiles-wrapper .profile-popout .left-column img,
+          .board-profiles-wrapper .profile-popout .left-column img,
+          .advisors-profiles-wrapper .profile-popout .left-column img {
+            width: 95%; } }
+  .staff-profiles-wrapper .show-popout,
+  .board-profiles-wrapper .show-popout,
+  .advisors-profiles-wrapper .show-popout {
+    height: 100%;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    opacity: 1; }
+  .staff-profiles-wrapper .translucent,
+  .board-profiles-wrapper .translucent,
+  .advisors-profiles-wrapper .translucent {
+    opacity: 0.5; }
+  .staff-profiles-wrapper .small-header,
+  .board-profiles-wrapper .small-header,
+  .advisors-profiles-wrapper .small-header {
+    margin: 2rem auto 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase; }
+    @media all and (min-width: 600px) {
+      .staff-profiles-wrapper .small-header,
+      .board-profiles-wrapper .small-header,
+      .advisors-profiles-wrapper .small-header {
+        width: 100%;
+        margin: 3rem auto 2.5rem; } }
+  .staff-profiles-wrapper .board-profiles-header,
+  .board-profiles-wrapper .board-profiles-header,
+  .advisors-profiles-wrapper .board-profiles-header {
+    height: auto;
+    width: 100%;
+    margin: 2 auto 1rem;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    .staff-profiles-wrapper .board-profiles-header .small-header,
+    .board-profiles-wrapper .board-profiles-header .small-header,
+    .advisors-profiles-wrapper .board-profiles-header .small-header {
       height: auto;
-      width: 100%;
-      margin: 2 auto 1rem;
-      position: relative;
+      width: auto;
+      margin: 0; }
+    .staff-profiles-wrapper .board-profiles-header .board-exit-button,
+    .board-profiles-wrapper .board-profiles-header .board-exit-button,
+    .advisors-profiles-wrapper .board-profiles-header .board-exit-button {
+      margin: 0px;
+      position: absolute;
+      top: 18%;
+      right: 5%; }
+  .staff-profiles-wrapper .navigation-button-container,
+  .board-profiles-wrapper .navigation-button-container,
+  .advisors-profiles-wrapper .navigation-button-container {
+    width: 100%; }
+    .staff-profiles-wrapper .navigation-button-container .navigation-button,
+    .board-profiles-wrapper .navigation-button-container .navigation-button,
+    .advisors-profiles-wrapper .navigation-button-container .navigation-button {
+      height: 76px;
+      width: 300px;
+      margin: 2rem auto;
+      border: 2px solid #323232;
+      font-size: 1.35rem;
+      color: #323232;
+      text-transform: uppercase;
+      text-decoration: none;
       display: -ms-flexbox;
       display: flex;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
       -ms-flex-pack: center;
           justify-content: center;
       -ms-flex-align: center;
           align-items: center; }
-      .page-id-159 .staff-profiles-wrapper .board-profiles-header .small-header, .page-id-159 .board-profiles-wrapper .board-profiles-header .small-header, .page-id-159 .advisors-profiles-wrapper .board-profiles-header .small-header {
-        height: auto;
-        width: auto;
-        margin: 0; }
-      .page-id-159 .staff-profiles-wrapper .board-profiles-header .board-exit-button, .page-id-159 .board-profiles-wrapper .board-profiles-header .board-exit-button, .page-id-159 .advisors-profiles-wrapper .board-profiles-header .board-exit-button {
-        margin: 0px;
-        position: absolute;
-        top: 18%;
-        right: 5%; }
-    .page-id-159 .staff-profiles-wrapper .navigation-button-container, .page-id-159 .board-profiles-wrapper .navigation-button-container, .page-id-159 .advisors-profiles-wrapper .navigation-button-container {
-      width: 100%; }
-      .page-id-159 .staff-profiles-wrapper .navigation-button-container .navigation-button, .page-id-159 .board-profiles-wrapper .navigation-button-container .navigation-button, .page-id-159 .advisors-profiles-wrapper .navigation-button-container .navigation-button {
-        height: 76px;
-        width: 300px;
-        margin: 2rem auto;
-        border: 2px solid #323232;
-        font-size: 1.35rem;
-        color: #323232;
-        text-transform: uppercase;
-        text-decoration: none;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: center;
-            justify-content: center;
-        -ms-flex-align: center;
-            align-items: center; }
-        @media all and (min-width: 600px) {
-          .page-id-159 .staff-profiles-wrapper .navigation-button-container .navigation-button, .page-id-159 .board-profiles-wrapper .navigation-button-container .navigation-button, .page-id-159 .advisors-profiles-wrapper .navigation-button-container .navigation-button {
-            height: 70px;
-            width: 260px;
-            border-width: 3px; } }
-        .page-id-159 .staff-profiles-wrapper .navigation-button-container .navigation-button:hover, .page-id-159 .board-profiles-wrapper .navigation-button-container .navigation-button:hover, .page-id-159 .advisors-profiles-wrapper .navigation-button-container .navigation-button:hover {
-          background: #D9F1FF;
-          cursor: pointer; }
-    .page-id-159 .staff-profiles-wrapper .profile-preview, .page-id-159 .board-profiles-wrapper .profile-preview, .page-id-159 .advisors-profiles-wrapper .profile-preview {
-      width: 100%;
-      margin: 1rem 3rem;
-      text-align: center;
-      position: relative; }
       @media all and (min-width: 600px) {
-        .page-id-159 .staff-profiles-wrapper .profile-preview, .page-id-159 .board-profiles-wrapper .profile-preview, .page-id-159 .advisors-profiles-wrapper .profile-preview {
-          width: 24%; } }
-      .page-id-159 .staff-profiles-wrapper .profile-preview .profile-image, .page-id-159 .board-profiles-wrapper .profile-preview .profile-image, .page-id-159 .advisors-profiles-wrapper .profile-preview .profile-image {
-        width: 215px;
-        border-radius: 50%; }
-        @media all and (min-width: 600px) {
-          .page-id-159 .staff-profiles-wrapper .profile-preview .profile-image, .page-id-159 .board-profiles-wrapper .profile-preview .profile-image, .page-id-159 .advisors-profiles-wrapper .profile-preview .profile-image {
-            width: 95%; } }
-        .page-id-159 .staff-profiles-wrapper .profile-preview .profile-image:hover, .page-id-159 .board-profiles-wrapper .profile-preview .profile-image:hover, .page-id-159 .advisors-profiles-wrapper .profile-preview .profile-image:hover {
-          box-shadow: 0 2px 8px #4990E2; }
-      .page-id-159 .staff-profiles-wrapper .profile-preview .name, .page-id-159 .board-profiles-wrapper .profile-preview .name, .page-id-159 .advisors-profiles-wrapper .profile-preview .name {
-        margin: 0.25rem auto;
-        font-size: 1.55rem;
-        font-weight: 600; }
-      .page-id-159 .staff-profiles-wrapper .profile-preview .job-title, .page-id-159 .board-profiles-wrapper .profile-preview .job-title, .page-id-159 .advisors-profiles-wrapper .profile-preview .job-title {
-        max-width: 235px;
-        margin: 0.25rem auto;
-        font-size: 1.4rem;
-        text-align: center; }
-  .page-id-159 .advisors-profiles-wrapper .small-header {
-    margin: 2rem auto; }
-  .page-id-159 .advisors-profiles-wrapper .profile-preview {
+        .staff-profiles-wrapper .navigation-button-container .navigation-button,
+        .board-profiles-wrapper .navigation-button-container .navigation-button,
+        .advisors-profiles-wrapper .navigation-button-container .navigation-button {
+          height: 70px;
+          width: 260px;
+          border-width: 3px; } }
+      .staff-profiles-wrapper .navigation-button-container .navigation-button:hover,
+      .board-profiles-wrapper .navigation-button-container .navigation-button:hover,
+      .advisors-profiles-wrapper .navigation-button-container .navigation-button:hover {
+        background: #D9F1FF;
+        cursor: pointer; }
+  .staff-profiles-wrapper .profile-preview,
+  .board-profiles-wrapper .profile-preview,
+  .advisors-profiles-wrapper .profile-preview {
     width: 100%;
-    margin: 1.25rem auto;
-    position: relative;
+    margin: 1rem 3rem;
+    text-align: center;
+    position: relative; }
+    @media all and (min-width: 600px) {
+      .staff-profiles-wrapper .profile-preview,
+      .board-profiles-wrapper .profile-preview,
+      .advisors-profiles-wrapper .profile-preview {
+        width: 24%; } }
+    .staff-profiles-wrapper .profile-preview .profile-image,
+    .board-profiles-wrapper .profile-preview .profile-image,
+    .advisors-profiles-wrapper .profile-preview .profile-image {
+      width: 215px;
+      border-radius: 50%; }
+      @media all and (min-width: 600px) {
+        .staff-profiles-wrapper .profile-preview .profile-image,
+        .board-profiles-wrapper .profile-preview .profile-image,
+        .advisors-profiles-wrapper .profile-preview .profile-image {
+          width: 95%; } }
+      .staff-profiles-wrapper .profile-preview .profile-image:hover,
+      .board-profiles-wrapper .profile-preview .profile-image:hover,
+      .advisors-profiles-wrapper .profile-preview .profile-image:hover {
+        box-shadow: 0 2px 8px #4990E2; }
+    .staff-profiles-wrapper .profile-preview .name,
+    .board-profiles-wrapper .profile-preview .name,
+    .advisors-profiles-wrapper .profile-preview .name {
+      margin: 0.25rem auto;
+      font-size: 1.55rem;
+      font-weight: 600; }
+    .staff-profiles-wrapper .profile-preview .job-title,
+    .board-profiles-wrapper .profile-preview .job-title,
+    .advisors-profiles-wrapper .profile-preview .job-title {
+      max-width: 235px;
+      margin: 0.25rem auto;
+      font-size: 1.4rem;
+      text-align: center; }
+
+.advisors-profiles-wrapper .small-header {
+  margin: 2rem auto; }
+
+.advisors-profiles-wrapper .profile-preview {
+  width: 100%;
+  margin: 1.25rem auto;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  @media all and (min-width: 1000px) {
+    .advisors-profiles-wrapper .profile-preview {
+      width: 14%; } }
+  .advisors-profiles-wrapper .profile-preview .name {
+    margin: 0 auto; }
+  .advisors-profiles-wrapper .profile-preview .job-title {
+    min-width: 130px;
+    margin: 0 auto; }
+  .advisors-profiles-wrapper .profile-preview:nth-child(4) .job-title {
+    width: 265px; }
+    @media all and (min-width: 600px) {
+      .advisors-profiles-wrapper .profile-preview:nth-child(4) .job-title {
+        position: absolute;
+        left: -50%; } }
+
+@media all and (min-width: 600px) {
+  .advisors-profiles-wrapper .navigation-button-container {
+    margin: 3rem auto 1rem; } }
+
+.page-id-19 {
+  margin: 0 auto; }
+  .page-id-19 .entry-content {
+    text-align: center; }
+  .page-id-19 .header-text {
+    position: absolute;
+    padding: 15% 0 15%;
+    left: 0;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: column nowrap;
@@ -1845,54 +1906,14 @@ object {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center; }
-    @media all and (min-width: 1000px) {
-      .page-id-159 .advisors-profiles-wrapper .profile-preview {
-        width: 14%; } }
-    .page-id-159 .advisors-profiles-wrapper .profile-preview .name {
-      margin: 0 auto; }
-    .page-id-159 .advisors-profiles-wrapper .profile-preview .job-title {
-      min-width: 130px;
-      margin: 0 auto; }
-    .page-id-159 .advisors-profiles-wrapper .profile-preview:nth-child(4) .job-title {
-      width: 265px; }
-      @media all and (min-width: 600px) {
-        .page-id-159 .advisors-profiles-wrapper .profile-preview:nth-child(4) .job-title {
-          position: absolute;
-          left: -50%; } }
-  @media all and (min-width: 600px) {
-    .page-id-159 .advisors-profiles-wrapper .navigation-button-container {
-      margin: 3rem auto 1rem; } }
-
-.page-id-19 {
-  margin: 0 auto; }
-  .page-id-19 .hero-image-banner {
-    height: 70vh;
-    position: relative; }
-    @media all and (min-width: 600px) {
-      .page-id-19 .hero-image-banner {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-        -ms-flex-align: center;
-            align-items: center; } }
-  .page-id-19 .entry-content {
-    text-align: center; }
-  .page-id-19 .header-text {
-    position: absolute;
-    padding-top: 130px;
-    left: 10%; }
     @media all and (min-width: 600px) {
       .page-id-19 .header-text {
-        left: 0%;
         position: initial; } }
   .page-id-19 .entry-title {
     margin: auto;
     width: 202px;
     line-height: 54px;
-    font-size: 3.5rem;
+    font-size: 3.15rem;
     color: white;
     text-align: center;
     text-transform: uppercase;
@@ -1908,10 +1929,11 @@ object {
         width: 100%; } }
   .page-id-19 .banner-text {
     width: 250px;
-    font-size: 1.5rem;
+    font-size: 1.35rem;
+    font-weight: 300;
     color: white;
-    width: 320px;
-    margin: 10% auto;
+    width: 100%;
+    margin: 1.5rem auto;
     text-align: center;
     line-height: 2rem;
     letter-spacing: 2px;
@@ -2054,42 +2076,32 @@ object {
     .page-id-18 {
       font-size: 1.4rem;
       line-height: 1.75rem; } }
-  .page-id-18 .hero-image-banner {
-    min-width: 100%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: column nowrap;
-        flex-flow: column nowrap;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center; }
+  .page-id-18 .header-text {
+    margin: 0 auto; }
+  .page-id-18 .entry-title {
+    font-size: 3.15rem;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 600px) {
-      .page-id-18 .hero-image-banner {
-        height: 70vh; } }
-    .page-id-18 .hero-image-banner .entry-title {
-      font-size: 3.5rem;
-      color: white;
-      text-align: center;
-      text-transform: uppercase;
-      text-shadow: 1px 2px 5px #323232; }
-      @media all and (min-width: 600px) {
-        .page-id-18 .hero-image-banner .entry-title {
-          margin: 0 0 1.5rem;
-          font-size: 3.85rem; } }
-    .page-id-18 .hero-image-banner .header-text {
-      font-size: 1.5rem;
-      color: white;
-      width: 320px;
-      margin: 10% auto;
-      text-align: center;
-      line-height: 2rem;
-      letter-spacing: 2px;
-      text-shadow: 1px 2px 5px #323232; }
-      @media all and (min-width: 600px) {
-        .page-id-18 .hero-image-banner .header-text {
-          width: 750px;
-          margin: 2% auto; } }
+      .page-id-18 .entry-title {
+        margin: 0 0 1.5rem;
+        font-size: 3.85rem; } }
+  .page-id-18 .banner-text {
+    font-size: 1.35rem;
+    font-weight: 300;
+    color: white;
+    width: 100%;
+    margin: 1.5rem auto;
+    text-align: center;
+    line-height: 2rem;
+    letter-spacing: 2px;
+    text-shadow: 1px 2px 5px #323232; }
+    @media all and (min-width: 600px) {
+      .page-id-18 .banner-text {
+        width: 750px;
+        margin: 2% auto; } }
   .page-id-18 .intro-copy {
     height: auto;
     width: 100%;
@@ -2437,60 +2449,52 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.page-template-default {
+.page-id-7 {
   text-align: center;
   height: 100%;
   width: 100%; }
   @media all and (min-width: 600px) {
-    .page-template-default {
+    .page-id-7 {
       font-size: 1.4rem;
       line-height: 1.75rem; } }
-  .page-template-default .hero-image-banner {
-    min-width: 100%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: column nowrap;
-        flex-flow: column nowrap;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center; }
+  .page-id-7 .banner-title {
+    font-size: 3.15rem;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 600px) {
-      .page-template-default .hero-image-banner {
-        height: 70vh; } }
-    .page-template-default .hero-image-banner .banner-title {
-      font-size: 3.5rem;
-      color: #fff;
-      text-align: center;
-      text-transform: uppercase;
-      text-shadow: 1px 2px 5px #323232; }
-    .page-template-default .hero-image-banner .banner-text {
-      font-size: 1.5rem;
-      color: white;
-      width: 320px;
-      margin: 10% auto;
-      text-align: center;
-      line-height: 2rem;
-      letter-spacing: 2px;
-      text-shadow: 1px 2px 5px #323232; }
-      @media all and (min-width: 600px) {
-        .page-template-default .hero-image-banner .banner-text {
-          width: 750px;
-          margin: 2% auto; } }
-    .page-template-default .hero-image-banner .banner-text-small {
-      font-size: 1rem;
-      color: white;
-      width: 380px;
-      margin: 0 auto;
-      text-align: center;
-      line-height: 2rem;
-      letter-spacing: 2px;
-      text-shadow: 1px 2px 5px #323232; }
-      @media all and (min-width: 600px) {
-        .page-template-default .hero-image-banner .banner-text-small {
-          width: 750px;
-          margin: 2% auto; } }
-  .page-template-default .blue-background {
+      .page-id-7 .banner-title {
+        margin: 0 0 1.5rem;
+        font-size: 3.85rem; } }
+  .page-id-7 .banner-text {
+    font-size: 1.35rem;
+    font-weight: 300;
+    color: white;
+    width: 100%;
+    margin: 1.5rem auto;
+    text-align: center;
+    line-height: 2rem;
+    letter-spacing: 2px;
+    text-shadow: 1px 2px 5px #323232; }
+    @media all and (min-width: 600px) {
+      .page-id-7 .banner-text {
+        width: 750px;
+        margin: 2% auto; } }
+  .page-id-7 .banner-text-small {
+    font-size: 1rem;
+    color: white;
+    width: 380px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2rem;
+    letter-spacing: 2px;
+    text-shadow: 1px 2px 5px #323232; }
+    @media all and (min-width: 600px) {
+      .page-id-7 .banner-text-small {
+        width: 750px;
+        margin: 2% auto; } }
+  .page-id-7 .blue-background {
     height: auto;
     width: 100%;
     margin: 2rem auto 0.75rem;
@@ -2499,11 +2503,11 @@ object {
     text-align: center;
     line-height: 2.4rem; }
     @media all and (min-width: 600px) {
-      .page-template-default .blue-background {
+      .page-id-7 .blue-background {
         margin: 2rem auto 1.5rem;
         padding: 1rem 0.5rem;
         line-height: 3.4rem; } }
-    .page-template-default .blue-background h2 {
+    .page-id-7 .blue-background h2 {
       max-width: 400px;
       margin: 0 auto;
       font-size: 1.4rem;
@@ -2512,23 +2516,23 @@ object {
       line-height: 2.4rem;
       text-transform: uppercase; }
       @media all and (min-width: 600px) {
-        .page-template-default .blue-background h2 {
+        .page-id-7 .blue-background h2 {
           max-width: none;
           font-size: 3.2rem;
           line-height: 3.4rem; } }
-    .page-template-default .blue-background .supporters-header {
+    .page-id-7 .blue-background .supporters-header {
       font-size: 1.55rem; }
       @media all and (min-width: 600px) {
-        .page-template-default .blue-background .supporters-header {
+        .page-id-7 .blue-background .supporters-header {
           font-size: 1.85rem; } }
-  .page-template-default .wpcf7 {
+  .page-id-7 .wpcf7 {
     padding: 3%; }
-    .page-template-default .wpcf7 form {
+    .page-id-7 .wpcf7 form {
       margin: 0 auto;
       background-color: #D9F1FF;
       padding: 0.5rem 1rem; }
       @media all and (min-width: 600px) {
-        .page-template-default .wpcf7 form {
+        .page-id-7 .wpcf7 form {
           max-width: 1000px;
           display: -ms-flexbox;
           display: flex;
@@ -2538,77 +2542,77 @@ object {
               justify-content: space-between;
           padding: 0.5rem 2rem; } }
       @media all and (min-width: 600px) {
-        .page-template-default .wpcf7 form p:nth-child(2),
-        .page-template-default .wpcf7 form p:nth-child(3),
-        .page-template-default .wpcf7 form p:nth-child(4),
-        .page-template-default .wpcf7 form p:nth-child(5) {
+        .page-id-7 .wpcf7 form p:nth-child(2),
+        .page-id-7 .wpcf7 form p:nth-child(3),
+        .page-id-7 .wpcf7 form p:nth-child(4),
+        .page-id-7 .wpcf7 form p:nth-child(5) {
           width: 48%; } }
       @media all and (min-width: 600px) {
-        .page-template-default .wpcf7 form p:nth-child(6),
-        .page-template-default .wpcf7 form p:nth-child(7),
-        .page-template-default .wpcf7 form p:nth-child(8) {
+        .page-id-7 .wpcf7 form p:nth-child(6),
+        .page-id-7 .wpcf7 form p:nth-child(7),
+        .page-id-7 .wpcf7 form p:nth-child(8) {
           -ms-flex-preferred-size: 100%;
               flex-basis: 100%; } }
-      .page-template-default .wpcf7 form p:nth-child(9) {
+      .page-id-7 .wpcf7 form p:nth-child(9) {
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
         margin: 0 auto; }
-      .page-template-default .wpcf7 form p:nth-child(10) {
+      .page-id-7 .wpcf7 form p:nth-child(10) {
         margin: 2rem auto; }
-    .page-template-default .wpcf7 input {
+    .page-id-7 .wpcf7 input {
       width: 100%;
       height: 50px;
       padding-left: 1rem;
       border: none;
       font-style: italic; }
-    .page-template-default .wpcf7 .radio {
+    .page-id-7 .wpcf7 .radio {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: column;
           flex-direction: column; }
       @media all and (min-width: 600px) {
-        .page-template-default .wpcf7 .radio {
+        .page-id-7 .wpcf7 .radio {
           -ms-flex-direction: row;
               flex-direction: row;
           -ms-flex-pack: center;
               justify-content: center; } }
-      .page-template-default .wpcf7 .radio input {
+      .page-id-7 .wpcf7 .radio input {
         width: 1rem; }
-      .page-template-default .wpcf7 .radio .wpcf7-list-item {
+      .page-id-7 .wpcf7 .radio .wpcf7-list-item {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-align: center;
             align-items: center; }
-      .page-template-default .wpcf7 .radio .wpcf7-list-item-label {
+      .page-id-7 .wpcf7 .radio .wpcf7-list-item-label {
         font-size: 1.1rem;
         text-transform: uppercase;
         margin-left: 1rem; }
-    .page-template-default .wpcf7 .other-option span {
+    .page-id-7 .wpcf7 .other-option span {
       display: inline-block;
       vertical-align: middle; }
-    .page-template-default .wpcf7 .other-option .Other {
+    .page-id-7 .wpcf7 .other-option .Other {
       width: 80%; }
-    .page-template-default .wpcf7 .radio-blurb {
+    .page-id-7 .wpcf7 .radio-blurb {
       text-align: left;
       font-style: italic;
       opacity: 0.5;
       font-size: 1rem; }
       @media all and (min-width: 600px) {
-        .page-template-default .wpcf7 .radio-blurb {
+        .page-id-7 .wpcf7 .radio-blurb {
           font-size: 1.3rem; } }
     @media all and (min-width: 600px) {
-      .page-template-default .wpcf7 .radios {
+      .page-id-7 .wpcf7 .radios {
         display: -ms-flexbox;
         display: flex;
         margin: 0 auto; } }
-    .page-template-default .wpcf7 .wpcf7-textarea {
+    .page-id-7 .wpcf7 .wpcf7-textarea {
       padding-left: 1rem;
       padding-top: 1rem;
       width: 100%;
       height: 70vh;
       border: none;
       font-style: italic; }
-    .page-template-default .wpcf7 .wpcf7-submit {
+    .page-id-7 .wpcf7 .wpcf7-submit {
       width: 200px;
       background-color: #fff;
       border: 1px solid #000;
@@ -2620,42 +2624,31 @@ object {
 .page-template-careers #content {
   width: 100%; }
 
-.page-template-careers .hero-image-banner {
-  min-width: 100%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: column nowrap;
-      flex-flow: column nowrap;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center; }
+.page-template-careers .entry-title {
+  font-size: 3.15rem;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 600px) {
-    .page-template-careers .hero-image-banner {
-      height: 70vh; } }
-  .page-template-careers .hero-image-banner .entry-title {
-    font-size: 3.5rem;
-    color: white;
-    text-align: center;
-    text-transform: uppercase;
-    text-shadow: 1px 2px 5px #323232; }
-    @media all and (min-width: 600px) {
-      .page-template-careers .hero-image-banner .entry-title {
-        margin: 0 0 1.5rem;
-        font-size: 3.85rem; } }
-  .page-template-careers .hero-image-banner .banner-text {
-    font-size: 1.5rem;
-    color: white;
-    width: 320px;
-    margin: 10% auto;
-    text-align: center;
-    line-height: 2rem;
-    letter-spacing: 2px;
-    text-shadow: 1px 2px 5px #323232; }
-    @media all and (min-width: 600px) {
-      .page-template-careers .hero-image-banner .banner-text {
-        width: 750px;
-        margin: 2% auto; } }
+    .page-template-careers .entry-title {
+      margin: 0 0 1.5rem;
+      font-size: 3.85rem; } }
+
+.page-template-careers .banner-text {
+  font-size: 1.35rem;
+  font-weight: 300;
+  color: white;
+  width: 100%;
+  margin: 1.5rem auto;
+  text-align: center;
+  line-height: 2rem;
+  letter-spacing: 2px;
+  text-shadow: 1px 2px 5px #323232; }
+  @media all and (min-width: 600px) {
+    .page-template-careers .banner-text {
+      width: 750px;
+      margin: 2% auto; } }
 
 .page-template-careers .intro-copy {
   height: auto;
@@ -2746,42 +2739,31 @@ object {
     .page-template-careers .contact-link {
       padding: 1rem 4rem; } }
 
-.page-id-195 .hero-image-banner {
-  min-width: 100%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: column nowrap;
-      flex-flow: column nowrap;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center; }
+.page-id-195 .entry-title {
+  font-size: 3.15rem;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 600px) {
-    .page-id-195 .hero-image-banner {
-      height: 70vh; } }
-  .page-id-195 .hero-image-banner .entry-title {
-    font-size: 3.5rem;
-    color: white;
-    text-align: center;
-    text-transform: uppercase;
-    text-shadow: 1px 2px 5px #323232; }
-    @media all and (min-width: 600px) {
-      .page-id-195 .hero-image-banner .entry-title {
-        margin: 0 0 1.5rem;
-        font-size: 3.85rem; } }
-  .page-id-195 .hero-image-banner .banner-text {
-    font-size: 1.5rem;
-    color: white;
-    width: 320px;
-    margin: 10% auto;
-    text-align: center;
-    line-height: 2rem;
-    letter-spacing: 2px;
-    text-shadow: 1px 2px 5px #323232; }
-    @media all and (min-width: 600px) {
-      .page-id-195 .hero-image-banner .banner-text {
-        width: 750px;
-        margin: 2% auto; } }
+    .page-id-195 .entry-title {
+      margin: 0 0 1.5rem;
+      font-size: 3.85rem; } }
+
+.page-id-195 .banner-text {
+  font-size: 1.35rem;
+  font-weight: 300;
+  color: white;
+  width: 100%;
+  margin: 1.5rem auto;
+  text-align: center;
+  line-height: 2rem;
+  letter-spacing: 2px;
+  text-shadow: 1px 2px 5px #323232; }
+  @media all and (min-width: 600px) {
+    .page-id-195 .banner-text {
+      width: 750px;
+      margin: 2% auto; } }
 
 .page-id-195 .intro-copy {
   height: auto;
@@ -2863,31 +2845,24 @@ object {
 .single-projects p {
   color: #4A4A4A; }
 
-.single-projects .hero-image-banner {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  text-align: center; }
-  .single-projects .hero-image-banner p {
-    color: #fff;
-    margin: 0;
-    text-shadow: -2px 2px 5px #000; }
-  .single-projects .hero-image-banner .project-name {
-    font-size: 4rem;
-    line-height: 1;
-    margin-bottom: 1rem; }
-  .single-projects .hero-image-banner .project-location {
-    font-size: 1.3rem;
-    margin-bottom: 0.3rem; }
-  .single-projects .hero-image-banner .project-status {
-    font-size: 1.3rem; }
-    .single-projects .hero-image-banner .project-status .project-status {
-      text-transform: uppercase; }
+.single-projects .hero-image-banner p {
+  color: #fff;
+  margin: 0;
+  text-shadow: -2px 2px 5px #000; }
+
+.single-projects .hero-image-banner .project-name {
+  font-size: 4rem;
+  line-height: 1;
+  margin-bottom: 1rem; }
+
+.single-projects .hero-image-banner .project-location {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem; }
+
+.single-projects .hero-image-banner .project-status {
+  font-size: 1.3rem; }
+  .single-projects .hero-image-banner .project-status .project-status {
+    text-transform: uppercase; }
 
 .single-projects .content-head {
   background-color: #d9f1ff;
@@ -3081,36 +3056,25 @@ object {
     .page-id-252 {
       font-size: 1.4rem;
       line-height: 1.75rem; } }
-  .page-id-252 .hero-image-banner {
-    min-width: 100%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: column nowrap;
-        flex-flow: column nowrap;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center; }
+  .page-id-252 .entry-title {
+    display: none; }
+  .page-id-252 .banner-text {
+    font-size: 3.15rem;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 5px #323232;
+    line-height: 4rem; }
     @media all and (min-width: 600px) {
-      .page-id-252 .hero-image-banner {
-        height: 70vh; } }
-    .page-id-252 .hero-image-banner .banner-text {
-      color: #fff;
-      font-size: 3.5rem;
-      min-width: 320px;
-      width: 100%;
-      margin: 10% auto;
-      text-align: center;
-      line-height: 1;
-      letter-spacing: 2px;
-      text-shadow: 1px 2px 5px #323232;
-      text-transform: uppercase; }
-      @media all and (min-width: 600px) {
-        .page-id-252 .hero-image-banner .banner-text {
-          max-width: 900px;
-          width: 100%;
-          min-width: 600px;
-          font-size: 4.5rem; } }
+      .page-id-252 .banner-text {
+        margin: 0 0 1.5rem;
+        font-size: 3.85rem; } }
+    @media all and (min-width: 600px) {
+      .page-id-252 .banner-text {
+        max-width: 900px;
+        width: 100%;
+        min-width: 600px;
+        font-size: 4.5rem; } }
   .page-id-252 .thankyou-container {
     text-align: center;
     margin: 2rem auto; }

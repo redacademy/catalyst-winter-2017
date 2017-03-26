@@ -13,7 +13,7 @@
 // Headings and boilerplate copy
 
 @mixin page-title {
-	font-size: 3.5rem;
+	font-size: 3.15rem;
 	color: white;
 	text-align: center;
 	text-transform: uppercase;
@@ -25,10 +25,11 @@
 }
 
 @mixin banner-text {
-	font-size: 1.5rem;
+	font-size: 1.35rem;
+	font-weight: 300;
 	color: white;
-	width: 320px;
-	margin: 10% auto;
+	width: 100%;
+	margin: $base__space-unit auto;
 	text-align: center;
 	line-height: 2rem;
 	letter-spacing: 2px;

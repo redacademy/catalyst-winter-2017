@@ -1,4 +1,4 @@
-.page-template-default {
+.page-id-7 {
     text-align: center;
     height: 100%;
     width: 100%;
@@ -7,18 +7,8 @@
         line-height: $line-height-desktop;
     }
 
-    .hero-image-banner {
-        min-width: 100%;
-        @include flex-column(nowrap, center, center);
-        @include media($desktop-width) {
-            height: 70vh;
-        }
         .banner-title {
-            font-size: 3.5rem;
-            color: #fff;
-            text-align: center;
-            text-transform: uppercase;
-            text-shadow: 1px 2px 5px #323232;
+            @include page-title;
         }
         .banner-text {
             @include banner-text;
@@ -37,7 +27,7 @@
                 margin: 2% auto;
             }
         }
-    }
+    
     .blue-background {
         height: auto;
         width: 100%;

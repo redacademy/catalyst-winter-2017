@@ -9,12 +9,7 @@
         color: $color__text-main;
     }
 
-.hero-image-banner {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+    .hero-image-banner {
         p {
             color: #fff;
             margin: 0;
@@ -83,7 +78,6 @@
             max-width: none;
             min-width: 100%;
         }
-
     }
     .quote-carousel {
         margin: 2rem 0;

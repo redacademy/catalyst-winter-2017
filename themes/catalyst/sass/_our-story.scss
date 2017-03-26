@@ -1,9 +1,4 @@
 .page-id-21 {
-    .hero-image-banner {
-        color: white;
-        text-align: center;
-        position: relative;
-    }
     .entry-title {
         @include page-title;
         @include media($desktop-width) {
@@ -19,13 +14,7 @@
         }
     }
     .banner-text {
-        font-size: 1.5rem;
-        color: #fff;
-        margin: 0 auto;
-        text-align: center;
-        line-height: 2rem;
-        letter-spacing: 2px;
-        text-shadow: 1px 2px 5px #323232;
+        @include banner-text;
     }
     .intro-copy {
         text-align: center;

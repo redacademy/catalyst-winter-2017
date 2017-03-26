@@ -1,21 +1,14 @@
 .page-id-19 {
     margin: 0 auto;
-    .hero-image-banner {
-        height: 70vh;
-        position: relative;
-        @include media($desktop-width) {
-            @include flex-column(nowrap, flex-start, center);
-        }
-    }
     .entry-content {
         text-align: center;
     }
     .header-text {
         position: absolute;
-        padding-top: 130px;
-        left: 10%;
+        padding: 15% 0 15%;
+        left: 0;
+        @include flex-column(nowrap, center, center);
         @include media($desktop-width) {
-            left: 0%;
             position: initial;
         }
     }

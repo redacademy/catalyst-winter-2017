@@ -1,11 +1,4 @@
 .page-id-195 {
-    .hero-image-banner {
-        min-width: 100%;
-        @include flex-column(nowrap, center, center);
-        @include media($desktop-width) {
-            height: 70vh;
-        }
-
         .entry-title {
             @include page-title;
         }
@@ -13,7 +6,6 @@
         .banner-text {
             @include banner-text;
         }
-    }
 
     .intro-copy {
         @include intro-copy;

@@ -5,236 +5,201 @@
         font-size: $font__desktop-size;
         line-height: $line-height-desktop;
     }
-
-    .hero-image-banner {
-        min-width: 100%;
-        @include flex-column(nowrap, center, center);
-        @include media($desktop-width) {
-            height: 70vh;
-        }
-
-        .entry-title {
-            @include page-title;
-        }
-
-        .banner-text {
-            @include banner-text;
-        }
+    .entry-title {
+        @include page-title;
     }
-
-    .intro-copy {
-        @include intro-copy;
+    .banner-text {
+        @include banner-text;
     }
+}
 
-    .blue-background {
+.intro-copy {
+    @include intro-copy;
+}
+
+.blue-background {
+    position: relative;
+    @include blue-background-header;
+    .our-team-header {
+        width: 300px;
+        margin: 0 auto;
+        color: $color__header-main;
+        font-size: 2.5rem;
+        font-weight: 400;
+        text-align: center;
+        text-transform: uppercase;
         position: relative;
-        @include blue-background-header;
-
-        .our-team-header {
-            width: 300px;
-            margin: 0 auto;
-            color: $color__header-main;
-            font-size: 2.5rem;
-            font-weight: 400;
-            text-align: center;
-            text-transform: uppercase;
-            position: relative;
-            @include media($desktop-width) {
-                width: 100%;
-                font-size: 3.15rem;
-            }
-        }
-        // Exit button for staff profile popouts.
-
-        .staff-exit-button {
-            display: inline-block;
-            position: absolute;
-            top: 25%;
-            right: 5%;
-            @include exit-popout-button(40px, #FFF);
+        @include media($desktop-width) {
+            width: 100%;
+            font-size: 3.15rem;
         }
     }
+    // Exit button for staff profile popouts.
+    .staff-exit-button {
+        display: inline-block;
+        position: absolute;
+        top: 25%;
+        right: 5%;
+        @include exit-popout-button(40px, #FFF);
+    }
+}
 
-    // Buttons
+// Buttons
+.enter-button,
+.exit-button {
+    @include popout-button(40px);
+}
 
-        .enter-button, .exit-button {
-            @include popout-button(40px);
-        }
+.enter-button {
+    @include media($desktop-width) {
+        display: none;
+    }
+}
 
-        .enter-button {
-            @include media($desktop-width) {
-                display: none;
-            }
-        }
+.exit-button {
+    font-size: 2.5rem;
+    background: white;
+    padding-top: 0.6rem;
+    padding-left: 0.08rem;
+    position: absolute;
+}
 
-        .exit-button {
-            font-size: 2.5rem;
-            background: white;
-            padding-top: 0.6rem;
-            padding-left: 0.08rem;
-            position: absolute;
-        }
-
-    .staff-profiles-wrapper, .board-profiles-wrapper, .advisors-profiles-wrapper {
-        margin-bottom: 2.5rem;
-        @include flex-column(nowrap, space-between, center);
-        @include media($desktop-width) {
-            width: 80%;
-            margin: 0 auto 3.25rem;
-            @include flex-row(wrap, center, flex-start);
-        }
-
-        .profile-popout {
-            height: 0;
-            width: 0;
-            padding-top: 3rem;
-            background: $color__brand-blue;
-            opacity: 0;
-            overflow: hidden;
-            transition: opacity 0.7s ease;
-
-            .left-column {
-                @include flex-column(nowrap, center, center);
-
-                img {
-                    width: 215px;
-                    @include media($desktop-width) {
-                        width: 95%;
-                    }
-                }
-            }
-        }
-
-    // Toggle-able classes for hiding and showing team member profiles, and greying-out content.
-
-        .show-popout {
-            height: 100%;
-            width: 100%;
+.staff-profiles-wrapper,
+.board-profiles-wrapper,
+.advisors-profiles-wrapper {
+    margin-bottom: 2.5rem;
+    @include flex-column(nowrap, space-between, center);
+    @include media($desktop-width) {
+        width: 80%;
+        margin: 0 auto 3.25rem;
+        @include flex-row(wrap, center, flex-start);
+    }
+    .profile-popout {
+        height: 0;
+        width: 0;
+        padding-top: 3rem;
+        background: $color__brand-blue;
+        opacity: 0;
+        overflow: hidden;
+        transition: opacity 0.7s ease;
+        .left-column {
             @include flex-column(nowrap, center, center);
-            opacity: 1;
-        }
-
-        .translucent {
-            opacity: 0.5;
-        }
-
-        .small-header {
-            margin: 2rem auto 1rem;
-            font-size: 2rem;
-            font-weight: 400;
-            text-align: center;
-            text-transform: uppercase;
-            @include media($desktop-width) {
-                width: 100%;
-                margin: 3rem auto 2.5rem;
-            }
-        }
-
-        .board-profiles-header {
-            height: auto;
-            width: 100%;
-            margin: 2 auto 1rem;
-            position: relative;
-            @include flex-row(nowrap, center, center);
-
-            .small-header {
-                height: auto;
-                width: auto;
-                margin: 0;
-            }
-
-            .board-exit-button {
-                margin: 0px;
-                position: absolute;
-                top: 18%;
-                right: 5%;
-            }
-
-        }
-
-        // Profile preview styles
-
-        .navigation-button-container {
-            width: 100%;
-
-            .navigation-button {
-                @include navigation-button;
-            }
-        }
-
-        .profile-preview {
-            width: 100%;
-            margin: 1rem 3rem;
-            text-align: center;
-            position: relative;
-            @include media($desktop-width) {
-                width: 24%;
-            }
-
-            .profile-image {
+            img {
                 width: 215px;
-                border-radius: 50%;
                 @include media($desktop-width) {
                     width: 95%;
                 }
-
-                &:hover {
-                    box-shadow: 0 2px 8px #4990E2;
-                }
             }
-
-            .name {
-                margin: 0.25rem auto;
-                font-size: 1.55rem;
-                font-weight: 600;
-            }
-
-            .job-title {
-                max-width: 235px;
-                margin: 0.25rem auto;
-                font-size: 1.4rem;
-                text-align: center;
-            }
-
         }
     }
-
-    .advisors-profiles-wrapper {
-
-        .small-header {
-            margin: 2rem auto;
-        }
-        .profile-preview {
+    // Toggle-able classes for hiding and showing team member profiles, and greying-out content.
+    .show-popout {
+        height: 100%;
+        width: 100%;
+        @include flex-column(nowrap, center, center);
+        opacity: 1;
+    }
+    .translucent {
+        opacity: 0.5;
+    }
+    .small-header {
+        margin: 2rem auto 1rem;
+        font-size: 2rem;
+        font-weight: 400;
+        text-align: center;
+        text-transform: uppercase;
+        @include media($desktop-width) {
             width: 100%;
-            margin: 1.25rem auto;
-            position: relative;
-            @include flex-column(nowrap, center, center);
-            @include media(1000px) {
-                width: 14%;
+            margin: 3rem auto 2.5rem;
+        }
+    }
+    .board-profiles-header {
+        height: auto;
+        width: 100%;
+        margin: 2 auto 1rem;
+        position: relative;
+        @include flex-row(nowrap, center, center);
+        .small-header {
+            height: auto;
+            width: auto;
+            margin: 0;
+        }
+        .board-exit-button {
+            margin: 0px;
+            position: absolute;
+            top: 18%;
+            right: 5%;
+        }
+    }
+    // Profile preview styles
+    .navigation-button-container {
+        width: 100%;
+        .navigation-button {
+            @include navigation-button;
+        }
+    }
+    .profile-preview {
+        width: 100%;
+        margin: 1rem 3rem;
+        text-align: center;
+        position: relative;
+        @include media($desktop-width) {
+            width: 24%;
+        }
+        .profile-image {
+            width: 215px;
+            border-radius: 50%;
+            @include media($desktop-width) {
+                width: 95%;
             }
-
-            .name {
-                margin: 0 auto;
-            }
-
-            .job-title {
-                min-width: 130px;
-                margin: 0 auto;
-            }
-
-            &:nth-child(4) .job-title {
-                width: 265px;
-                @include media($desktop-width) {
-                    position: absolute;
-                    left: -50%;
-                }
+            &:hover {
+                box-shadow: 0 2px 8px #4990E2;
             }
         }
+        .name {
+            margin: 0.25rem auto;
+            font-size: 1.55rem;
+            font-weight: 600;
+        }
+        .job-title {
+            max-width: 235px;
+            margin: 0.25rem auto;
+            font-size: 1.4rem;
+            text-align: center;
+        }
+    }
+}
 
-        .navigation-button-container {
+.advisors-profiles-wrapper {
+    .small-header {
+        margin: 2rem auto;
+    }
+    .profile-preview {
+        width: 100%;
+        margin: 1.25rem auto;
+        position: relative;
+        @include flex-column(nowrap, center, center);
+        @include media(1000px) {
+            width: 14%;
+        }
+        .name {
+            margin: 0 auto;
+        }
+        .job-title {
+            min-width: 130px;
+            margin: 0 auto;
+        }
+        &:nth-child(4) .job-title {
+            width: 265px;
             @include media($desktop-width) {
-                margin: 3rem auto 1rem;
+                position: absolute;
+                left: -50%;
             }
+        }
+    }
+    .navigation-button-container {
+        @include media($desktop-width) {
+            margin: 3rem auto 1rem;
         }
     }
 }

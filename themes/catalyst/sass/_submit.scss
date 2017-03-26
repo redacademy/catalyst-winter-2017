@@ -6,32 +6,21 @@
         line-height: $line-height-desktop;
     }
 
-    .hero-image-banner {
-        min-width: 100%;
-        @include flex-column(nowrap, center, center);
-        @include media($desktop-width) {
-            height: 70vh;
-        }
+    .entry-title {
+        display: none;
+    }
 
-        .banner-text {
-            color: #fff;
-            font-size: 3.5rem;
-            min-width: 320px;
+    .banner-text {
+        @include page-title;
+        line-height: 4rem;
+        @include media ($desktop-width){
+            max-width: 900px;
             width: 100%;
-            margin: 10% auto;
-            text-align: center;
-            line-height: 1;
-            letter-spacing: 2px;
-            text-shadow: 1px 2px 5px #323232;
-            text-transform: uppercase;
-            @include media ($desktop-width){
-                max-width: 900px;
-                width: 100%;
-                min-width: 600px;
-                font-size: 4.5rem;
-            }
+            min-width: 600px;
+            font-size: 4.5rem;
         }
     }
+
     .thankyou-container {
         text-align: center;
         margin: 2rem auto;
