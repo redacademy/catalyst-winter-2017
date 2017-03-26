@@ -1854,6 +1854,7 @@ object {
       border: 2px solid #323232;
       font-size: 1.35rem;
       color: #323232;
+      font-weight: 700;
       text-transform: uppercase;
       text-decoration: none;
       display: -ms-flexbox;
@@ -2186,7 +2187,7 @@ object {
     width: 100%;
     margin: 0 auto;
     padding: 0.55rem 0;
-    font-weight: 100;
+    font-family: quattrocento, sans-serif;
     text-align: center; }
     @media all and (min-width: 600px) {
       .page-id-18 .main-copy {
@@ -2199,6 +2200,7 @@ object {
     border: 2px solid #323232;
     font-size: 1.35rem;
     color: #323232;
+    font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
     display: -ms-flexbox;
@@ -2234,7 +2236,7 @@ object {
       max-width: 400px;
       margin: 0 auto;
       font-size: 2.15rem;
-      font-weight: 400;
+      font-weight: 700;
       color: #323232;
       line-height: 2.4rem;
       text-transform: uppercase; }
@@ -2273,7 +2275,7 @@ object {
       margin-top: 4rem;
       margin-bottom: 1.25rem;
       font-size: 1.75rem;
-      font-weight: 400;
+      font-weight: 700;
       color: #4A4A4A;
       text-align: center;
       text-transform: uppercase; }
@@ -2288,13 +2290,14 @@ object {
     .page-id-18 .content-container .partners-information-container .small-subheader {
       margin: 0.5rem 0 1.5rem;
       font-size: 1.1rem;
-      font-weight: 400;
+      font-weight: 700;
       text-transform: uppercase; }
       @media all and (min-width: 600px) {
         .page-id-18 .content-container .partners-information-container .small-subheader {
           font-size: 1.45rem;
           margin-bottom: 2rem; } }
     .page-id-18 .content-container .partners-information-container .collaborate-dashed-list {
+      font-family: quattrocento, sans-serif;
       margin: 0 0 2rem;
       padding-left: 0.75rem;
       list-style-type: none;
@@ -2308,7 +2311,6 @@ object {
           display: inline-block; } }
       .page-id-18 .content-container .partners-information-container .collaborate-dashed-list li {
         margin: 1.5rem 0;
-        font-weight: 100;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-flow: row nowrap;
@@ -2321,7 +2323,7 @@ object {
           height: 100%;
           padding-right: 0.5rem;
           font-size: 0.85rem;
-          font-weight: bold;
+          font-weight: 700;
           position: relative;
           bottom: 0.2rem; }
         @media all and (min-width: 600px) {
@@ -2387,7 +2389,6 @@ object {
       height: auto;
       width: 100%;
       margin: 0 auto;
-      font-weight: 100;
       text-align: center; }
       @media all and (min-width: 600px) {
         .page-id-18 .content-container .partners-information-container .partners-text {

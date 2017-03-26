@@ -93,7 +93,7 @@
 	width: 100%;
 	margin: 0 auto;
 	padding: 0.55rem 0;
-	font-weight: 100;
+	font-family: $font__secondary;
 	text-align: center;
 	@include media($desktop-width) {
 		width: 75%;
@@ -170,6 +170,7 @@
 	border: 2px solid $font-color;
 	font-size: 1.35rem;
 	color: $font-color;
+	font-weight: $font__bold;
 	text-transform: uppercase;
 	text-decoration: none;
 	display: flex;
