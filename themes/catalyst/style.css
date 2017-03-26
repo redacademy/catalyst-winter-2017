@@ -225,38 +225,101 @@ th {
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'muli';
-  src: url("../../fonts/muli-black-webfont.eot");
-  src: url("../../fonts/muli-black-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/muli-black-webfont.woff2") format("woff2"), url("../../fonts/muli-black-webfont.woff") format("woff"), url("../../fonts/muli-black-webfont.ttf") format("truetype"), url("../../fonts/muli-black-webfont.svg#muliblack") format("svg");
-  font-weight: normal;
+  src: url("../../muli-black-webfont.eot");
+  src: url("../../muli-black-webfont.eot?#iefix") format("embedded-opentype"), url("../../muli-black-webfont.woff2") format("woff2"), url("../../muli-black-webfont.woff") format("woff"), url("../../muli-black-webfont.ttf") format("truetype"), url("../../muli-black-webfont.svg#muliblack") format("svg");
+  font-weight: 900;
   font-style: normal; }
 
 @font-face {
   font-family: 'muli';
-  src: url("../../fonts/muli-bold-webfont.eot");
-  src: url("../../fonts/muli-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/muli-bold-webfont.woff2") format("woff2"), url("../../fonts/muli-bold-webfont.woff") format("woff"), url("../../fonts/muli-bold-webfont.ttf") format("truetype"), url("../../fonts/muli-bold-webfont.svg#mulibold") format("svg");
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'muli';
-  src: url("../../fonts/muli-bolditalic-webfont.eot");
-  src: url("../../fonts/muli-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/muli-bolditalic-webfont.woff2") format("woff2"), url("../../fonts/muli-bolditalic-webfont.woff") format("woff"), url("../../fonts/muli-bolditalic-webfont.ttf") format("truetype"), url("../../fonts/muli-bolditalic-webfont.svg#mulibold_italic") format("svg");
-  font-weight: bold;
+  src: url("../../muli-blackitalic-webfont.eot");
+  src: url("../../muli-blackitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../muli-blackitalic-webfont.woff2") format("woff2"), url("../../muli-blackitalic-webfont.woff") format("woff"), url("../../muli-blackitalic-webfont.ttf") format("truetype"), url("../../muli-blackitalic-webfont.svg#muliblack_italic") format("svg");
+  font-weight: 900;
   font-style: italic; }
 
 @font-face {
   font-family: 'muli';
-  src: url("../../fonts/muli-italic-webfont.eot");
-  src: url("../../fonts/muli-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/muli-italic-webfont.woff2") format("woff2"), url("../../fonts/muli-italic-webfont.woff") format("woff"), url("../../fonts/muli-italic-webfont.ttf") format("truetype"), url("../../fonts/muli-italic-webfont.svg#muliitalic") format("svg");
+  src: url("../../muli-bold-webfont.eot");
+  src: url("../../muli-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../muli-bold-webfont.woff2") format("woff2"), url("../../muli-bold-webfont.woff") format("woff"), url("../../muli-bold-webfont.ttf") format("truetype"), url("../../muli-bold-webfont.svg#mulibold") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'muli';
+  src: url("../../muli-bolditalic-webfont.eot");
+  src: url("../../muli-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../muli-bolditalic-webfont.woff2") format("woff2"), url("../../muli-bolditalic-webfont.woff") format("woff"), url("../../muli-bolditalic-webfont.ttf") format("truetype"), url("../../muli-bolditalic-webfont.svg#mulibold_italic") format("svg");
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'muli';
+  src: url("../../muli-extrabold-webfont.eot");
+  src: url("../../muli-extrabold-webfont.eot?#iefix") format("embedded-opentype"), url("../../muli-extrabold-webfont.woff2") format("woff2"), url("../../muli-extrabold-webfont.woff") format("woff"), url("../../muli-extrabold-webfont.ttf") format("truetype"), url("../../muli-extrabold-webfont.svg#muliextrabold") format("svg");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'muli';
+  src: url("../../muli-extrabolditalic-webfont.eot");
+  src: url("../../muli-extrabolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../muli-extrabolditalic-webfont.woff2") format("woff2"), url("../../muli-extrabolditalic-webfont.woff") format("woff"), url("../../muli-extrabolditalic-webfont.ttf") format("truetype"), url("../../muli-extrabolditalic-webfont.svg#muliextrabold_italic") format("svg");
+  font-weight: 800;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'muli';
+  src: url("../../muli-extralight-webfont.eot");
+  src: url("../../muli-extralight-webfont.eot?#iefix") format("embedded-opentype"), url("../../muli-extralight-webfont.woff2") format("woff2"), url("../../muli-extralight-webfont.woff") format("woff"), url("../../muli-extralight-webfont.ttf") format("truetype"), url("../../muli-extralight-webfont.svg#muliextralight") format("svg");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'muli';
+  src: url("../../muli-extralightitalic-webfont.eot");
+  src: url("../../muli-extralightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../muli-extralightitalic-webfont.woff2") format("woff2"), url("../../muli-extralightitalic-webfont.woff") format("woff"), url("../../muli-extralightitalic-webfont.ttf") format("truetype"), url("../../muli-extralightitalic-webfont.svg#muliextralight_italic") format("svg");
+  font-weight: 200;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'muli';
+  src: url("../../muli-italic-webfont.eot");
+  src: url("../../muli-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../../muli-italic-webfont.woff2") format("woff2"), url("../../muli-italic-webfont.woff") format("woff"), url("../../muli-italic-webfont.ttf") format("truetype"), url("../../muli-italic-webfont.svg#muliitalic") format("svg");
   font-weight: normal;
   font-style: italic; }
 
 @font-face {
   font-family: 'muli';
-  src: url("../../fonts/muli-light-webfont.eot");
-  src: url("../../fonts/muli-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/muli-light-webfont.woff2") format("woff2"), url("../../fonts/muli-light-webfont.woff") format("woff"), url("../../fonts/muli-light-webfont.ttf") format("truetype"), url("../../fonts/muli-light-webfont.svg#mulilight") format("svg");
+  src: url("../../muli-light-webfont.eot");
+  src: url("../../muli-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../muli-light-webfont.woff2") format("woff2"), url("../../muli-light-webfont.woff") format("woff"), url("../../muli-light-webfont.ttf") format("truetype"), url("../../muli-light-webfont.svg#mulilight") format("svg");
   font-weight: 300;
   font-style: normal; }
+
+@font-face {
+  font-family: 'muli';
+  src: url("../../muli-lightitalic-webfont.eot");
+  src: url("../../muli-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../muli-lightitalic-webfont.woff2") format("woff2"), url("../../muli-lightitalic-webfont.woff") format("woff"), url("../../muli-lightitalic-webfont.ttf") format("truetype"), url("../../muli-lightitalic-webfont.svg#mulilight_italic") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'muli';
+  src: url("../../muli-regular-webfont.eot");
+  src: url("../../muli-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../muli-regular-webfont.woff2") format("woff2"), url("../../muli-regular-webfont.woff") format("woff"), url("../../muli-regular-webfont.ttf") format("truetype"), url("../../muli-regular-webfont.svg#muliregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'muli';
+  src: url("../../muli-semibold-webfont.eot");
+  src: url("../../muli-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../muli-semibold-webfont.woff2") format("woff2"), url("../../muli-semibold-webfont.woff") format("woff"), url("../../muli-semibold-webfont.ttf") format("truetype"), url("../../muli-semibold-webfont.svg#mulisemibold") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'muli';
+  src: url("../../muli-semibolditalic-webfont.eot");
+  src: url("../../muli-semibolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../muli-semibolditalic-webfont.woff2") format("woff2"), url("../../muli-semibolditalic-webfont.woff") format("woff"), url("../../muli-semibolditalic-webfont.ttf") format("truetype"), url("../../muli-semibolditalic-webfont.svg#mulisemibold_italic") format("svg");
+  font-weight: 600;
+  font-style: italic; }
 
 @font-face {
   font-family: 'quattrocento';
@@ -398,7 +461,7 @@ table {
     left: 0;
     text-align: center; }
 
-.formulas .fill:last-child {
+.formulas:last-child .fill {
   display: none; }
 
 * {
