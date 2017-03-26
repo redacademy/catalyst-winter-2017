@@ -31,7 +31,6 @@
         @include banner-text-fp;
         h1 {
             text-transform: uppercase;
-            font-weight: lighter;
             font-size: 50px;
             line-height: 75px;
             max-width: 700px;
@@ -41,7 +40,7 @@
         }
         p {
             font-size: 25px;
-            font-weight: lighter;
+            font-family: $font__secondary;
             margin: 0;
         }
     }
@@ -50,6 +49,7 @@
         font-size: 30px;
         background-color: $color__brand-blue;
         padding: 20px 0;
+        font-weight: $font__bold;
         text-align: center;
     }
     .readmore {
@@ -60,6 +60,7 @@
             text-transform: uppercase;
             border: 3px solid black;
             text-decoration: none;
+            font-weight: $font__bold;
             color: black;
             text-decoration: none;
         }
@@ -69,18 +70,24 @@
         max-width: 1000px;
         padding-bottom: 2rem;
         margin: 2rem auto;
+        font-family: $font__secondary;
     }
     .projects {
         padding-top: 3rem;
         text-align: center;
         .our-projects-copy {
+            font-family: $font__secondary;
             max-width: 650px;
             margin: 2rem auto;
         }
         .project-name {
-            font-weight: bold;
+            font-weight: $font__bold;
+        }
+        .project-location {
+            font-family: $font__secondary;
         }
         .project-status{
+            font-family: $font__secondary;
             span {
                 text-transform: uppercase;
             }
@@ -92,6 +99,10 @@
         }
         .is-selected .quotes-wrapper {
             display: initial;
+        }
+        .quote {
+            font-family: $font__secondary;
+            font-style: italic;
         }
 
 
@@ -124,11 +135,12 @@
             margin-bottom: 2rem;
         }
         .person {
-            font-weight: bold;
+            font-weight: $font__bold;
             font-size: 1.3rem;
             margin: 0;
         }
         .line {
+            font-weight: $font__semibold;
             font-style: italic;
             margin: 0;
         }
@@ -181,17 +193,19 @@
             }
             .member-name {
                 font-size: 1.4rem;
-                font-weight: bold;
+                font-weight: $font__bold;
             }
             .position {
                 font-style: italic;
                 font-size: 1.2rem;
+                font-weight: $font__semibold;
             }
         }
         .is-selected {
             opacity: 1;
         }
         .team-catalyst-copy {
+            font-family: $font__secondary;
             width: 300px;
             margin: 0 auto;
             @include media($desktop-width){
@@ -201,6 +215,7 @@
             }
         }
         .small-subheader {
+            font-weight: $font__bold;
             font-size: 1.3rem;
             width: 300px;
             margin: 2rem auto;

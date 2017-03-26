@@ -954,7 +954,6 @@ textarea {
       width: 750px; } }
   .home .header-text h1 {
     text-transform: uppercase;
-    font-weight: lighter;
     font-size: 50px;
     line-height: 75px;
     max-width: 700px;
@@ -963,7 +962,7 @@ textarea {
     line-height: 70px; }
   .home .header-text p {
     font-size: 25px;
-    font-weight: lighter;
+    font-family: quattrocento, sans-serif;
     margin: 0; }
 
 .home h2 {
@@ -971,6 +970,7 @@ textarea {
   font-size: 30px;
   background-color: #D9F1FF;
   padding: 20px 0;
+  font-weight: 700;
   text-align: center; }
 
 .home .readmore {
@@ -981,6 +981,7 @@ textarea {
     text-transform: uppercase;
     border: 3px solid black;
     text-decoration: none;
+    font-weight: 700;
     color: black;
     text-decoration: none; }
 
@@ -988,24 +989,33 @@ textarea {
 .home .formula-carousel {
   max-width: 1000px;
   padding-bottom: 2rem;
-  margin: 2rem auto; }
+  margin: 2rem auto;
+  font-family: quattrocento, sans-serif; }
 
 .home .projects {
   padding-top: 3rem;
   text-align: center; }
   .home .projects .our-projects-copy {
+    font-family: quattrocento, sans-serif;
     max-width: 650px;
     margin: 2rem auto; }
   .home .projects .project-name {
-    font-weight: bold; }
-  .home .projects .project-status span {
-    text-transform: uppercase; }
+    font-weight: 700; }
+  .home .projects .project-location {
+    font-family: quattrocento, sans-serif; }
+  .home .projects .project-status {
+    font-family: quattrocento, sans-serif; }
+    .home .projects .project-status span {
+      text-transform: uppercase; }
   .home .projects .quotes-wrapper {
     margin: 0 auto;
     width: 85%;
     display: none; }
   .home .projects .is-selected .quotes-wrapper {
     display: initial; }
+  .home .projects .quote {
+    font-family: quattrocento, sans-serif;
+    font-style: italic; }
   .home .projects .left-quotation-mark, .home .projects .right-quotation-mark {
     height: 60px;
     width: 85px;
@@ -1026,10 +1036,11 @@ textarea {
   .home .projects .quote-text {
     margin-bottom: 2rem; }
   .home .projects .person {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1.3rem;
     margin: 0; }
   .home .projects .line {
+    font-weight: 600;
     font-style: italic;
     margin: 0; }
   .home .projects .other-proj-wrapper {
@@ -1075,13 +1086,15 @@ textarea {
       margin: 0; }
     .home .team .member .member-name {
       font-size: 1.4rem;
-      font-weight: bold; }
+      font-weight: 700; }
     .home .team .member .position {
       font-style: italic;
-      font-size: 1.2rem; }
+      font-size: 1.2rem;
+      font-weight: 600; }
   .home .team .is-selected {
     opacity: 1; }
   .home .team .team-catalyst-copy {
+    font-family: quattrocento, sans-serif;
     width: 300px;
     margin: 0 auto; }
     @media all and (min-width: 600px) {
@@ -1090,6 +1103,7 @@ textarea {
         width: 100%;
         font-size: 1.2rem; } }
   .home .team .small-subheader {
+    font-weight: 700;
     font-size: 1.3rem;
     width: 300px;
     margin: 2rem auto;
