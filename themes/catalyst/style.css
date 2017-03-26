@@ -325,14 +325,14 @@ th {
   font-family: 'quattrocento';
   src: url("../../fonts/quattrocentosans-bold-webfont.eot");
   src: url("../../fonts/quattrocentosans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/quattrocentosans-bold-webfont.woff2") format("woff2"), url("../../fonts/quattrocentosans-bold-webfont.woff") format("woff"), url("../../fonts/quattrocentosans-bold-webfont.ttf") format("truetype"), url("../../fonts/quattrocentosans-bold-webfont.svg#quattrocento_sansbold") format("svg");
-  font-weight: bold;
+  font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: 'quattrocento';
   src: url("../../fonts/quattrocentosans-bolditalic-webfont.eot");
   src: url("../../fonts/quattrocentosans-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/quattrocentosans-bolditalic-webfont.woff2") format("woff2"), url("../../fonts/quattrocentosans-bolditalic-webfont.woff") format("woff"), url("../../fonts/quattrocentosans-bolditalic-webfont.ttf") format("truetype"), url("../../fonts/quattrocentosans-bolditalic-webfont.svg#quattrocento_sansbold_italic") format("svg");
-  font-weight: bold;
+  font-weight: 400;
   font-style: italic; }
 
 @font-face {
@@ -466,6 +466,16 @@ table {
 
 * {
   font-family: muli, sans-serif; }
+
+.banner-text {
+  font-family: quattrocento, sans-serif;
+  font-weight: 700; }
+
+.entry-title {
+  font-weight: 700; }
+
+.intro-copy {
+  font-family: quattrocento, sans-serif; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -2868,7 +2878,8 @@ object {
         font-size: 1.5rem; } }
   .page-id-195 .proj-head .name {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-family: muli;
+    font-weight: 700;
     color: #323232; }
   .page-id-195 .proj-head .status {
     text-transform: uppercase; }
@@ -2894,6 +2905,7 @@ object {
 
 .page-id-195 .project-link {
   text-decoration: none;
+  font-weight: 700;
   color: #323232;
   border: 2px solid black;
   padding: 1rem 4rem;
@@ -3186,3 +3198,9 @@ object {
 
 .error404 .logo {
   margin-left: 2rem; }
+
+.error404 .entry-title {
+  font-weight: 300; }
+
+.error404 .banner-text {
+  font-style: italic; }
