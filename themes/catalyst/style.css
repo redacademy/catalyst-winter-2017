@@ -778,7 +778,7 @@ textarea {
         width: 17px;
         height: 24px; } }
   .footer #text-2 p {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     padding-left: 18px; }
     @media all and (min-width: 600px) {
@@ -788,7 +788,11 @@ textarea {
       .footer #text-2 p {
         font-size: 20px; } }
   .footer #text-3 {
-    margin-top: 5px; }
+    margin-top: 5px;
+    font-family: quattrocento, sans-serif; }
+  .footer #text-4 {
+    font-family: quattrocento, sans-serif;
+    font-style: italic; }
   .footer .sns-icon {
     display: -ms-flexbox;
     display: flex;
@@ -858,7 +862,7 @@ textarea {
         width: 25%; } }
     .footer .page-link a {
       text-decoration: none;
-      font-weight: 500;
+      font-weight: 600;
       color: #4A4A4A;
       padding: 0 20px; }
       .footer .page-link a:hover {
