@@ -12,18 +12,25 @@
 
     .banner-text {
         @include page-title;
+        margin: 0 auto;
         line-height: 4rem;
         @include media ($desktop-width){
+            margin: 0 auto;
             max-width: 900px;
             width: 100%;
             min-width: 600px;
             font-size: 4.5rem;
+            line-height: 5rem;
         }
     }
 
     .thankyou-container {
         text-align: center;
         margin: 2rem auto;
+
+        .logo {
+            margin: 1rem 0.5rem;
+        }
     }
     .top-message {
         line-height: 1;
@@ -40,9 +47,7 @@
             font-size: 1.8rem;
             margin: 0;
         }
-    .logo {
-        margin: 1rem 0.5rem;
-    }
+
     .bottom-message {
         margin: 5rem 0.5rem;
     }

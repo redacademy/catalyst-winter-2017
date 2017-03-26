@@ -54,13 +54,14 @@
 .container {
 	display: flex;
 	flex-wrap: wrap;
+	height: 80px;
 	width: 100%;
 	margin: auto;
 	.logo {
 		width: 50%;
 		display: flex;
 		padding-left: 20px;
-		height: 100px;
+		height: 100%;
 		@include media($desktop-width) {
 			width: 20%;
 		}

@@ -517,6 +517,7 @@ textarea {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  height: 80px;
   width: 100%;
   margin: auto; }
   .container .logo {
@@ -524,7 +525,7 @@ textarea {
     display: -ms-flexbox;
     display: flex;
     padding-left: 20px;
-    height: 100px; }
+    height: 100%; }
     @media all and (min-width: 600px) {
       .container .logo {
         width: 20%; } }
@@ -3064,6 +3065,7 @@ object {
     text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232;
+    margin: 0 auto;
     line-height: 4rem; }
     @media all and (min-width: 600px) {
       .page-id-252 .banner-text {
@@ -3071,13 +3073,17 @@ object {
         font-size: 3.85rem; } }
     @media all and (min-width: 600px) {
       .page-id-252 .banner-text {
+        margin: 0 auto;
         max-width: 900px;
         width: 100%;
         min-width: 600px;
-        font-size: 4.5rem; } }
+        font-size: 4.5rem;
+        line-height: 5rem; } }
   .page-id-252 .thankyou-container {
     text-align: center;
     margin: 2rem auto; }
+    .page-id-252 .thankyou-container .logo {
+      margin: 1rem 0.5rem; }
   .page-id-252 .top-message {
     line-height: 1; }
   .page-id-252 .thanks {
@@ -3090,8 +3096,6 @@ object {
   .page-id-252 .text {
     font-size: 1.8rem;
     margin: 0; }
-  .page-id-252 .logo {
-    margin: 1rem 0.5rem; }
   .page-id-252 .bottom-message {
     margin: 5rem 0.5rem; }
   .page-id-252 .bottom-text {
