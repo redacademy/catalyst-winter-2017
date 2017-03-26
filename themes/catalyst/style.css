@@ -3220,6 +3220,7 @@ object {
   .page-id-252 .top-message {
     line-height: 1; }
   .page-id-252 .thanks {
+    font-weight: 700;
     font-size: 2rem;
     text-transform: uppercase;
     margin: 0; }
@@ -3234,7 +3235,7 @@ object {
   .page-id-252 .bottom-text {
     font-size: 1.3rem;
     line-height: 1;
-    font-weight: 100; }
+    font-family: quattrocento, sans-serif; }
     .page-id-252 .bottom-text span {
       text-transform: uppercase; }
 
