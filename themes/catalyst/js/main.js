@@ -6,7 +6,7 @@
         $('.mobile-menu').slideToggle('slow', function () {
             $('.hamburger').hide();
             $('.cross').show();
-            $('.list').show().css('width', '400px');
+            $('.list').css('width', '60vw').show();
         });
     });
 

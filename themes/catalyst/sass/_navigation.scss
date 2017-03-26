@@ -10,41 +10,6 @@
 	display: block;
 	float: left;
 	width: 100%;
-
-	ul {
- 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
- 			float: left;
- 			position: absolute;
- 			top: $base__space-unit;
- 			left: -999rem;
- 			z-index: 99999;
- 			ul {
- 				left: -999rem;
- 				top: 0;
- 			}
- 			li {
- 				&:hover>ul,
- 				&.focus>ul {
- 					left: 100%;
- 				}
- 			}
-
-		a {
-			width: 200px;
-		}
-		li:hover>ul,
-		li.focus>ul {
-			left: auto;
-		}
-	}
-	li {
-		float: left;
-		position: relative;
-	}
-	a {
-		display: block;
-		text-decoration: none;
-	}
 }
 
 
@@ -124,7 +89,9 @@
 		position: absolute;
 		right: 0%;
 		z-index: 1;
+		height: 100%;
 		width: 50%;
+		@include flex-row(nowrap, flex-end, baseline)
 		@include media($desktop-width) {
 			width: 80%;
 		}
@@ -132,12 +99,13 @@
 	.desktop-menu {
 		visibility: hidden;
 		height: 0;
-		@include media($desktop-width) {
+		width: 100%;
+		@include media(1180px) {
 			visibility: visible;
-			height: 100px;
+			height: 100%;
 		}
 		.menu-menu-1-container {
-			height: 100px;
+			height: 100%;
 			width: auto;
 		}
 		#primary-menu {
@@ -148,7 +116,7 @@
 			padding-right: 5%;
 			list-style: none;
 			ul {
-				height: 70px;
+				height: 70%;
 				padding-top: 45px;
 				overflow: hidden;
 				list-style: none;
@@ -164,21 +132,9 @@
 			a {
 				text-transform: uppercase;
 				color: $color__header-main;
-				font-size: 15px;
+				font-size: 1rem;
 				font-weight: 100;
 				text-decoration: none;
-				@include media($desktop-width) {
-					font-size: 9px;
-				}
-				@include media(700px) {
-					font-size: 11px;
-				}
-				@include media(793px) {
-					font-size: 13px;
-				}
-				@include media(890px) {
-					font-size: 15px;
-				}
 				&:active {
 					color: $color__menu-active;
 				}
@@ -189,13 +145,15 @@
 		}
 	}
 	.hamburger-menu {
+		width: 60%;
 		display: flex;
-		justify-content: flex-end;
+		@include flex-column(nowrap, flex-start, flex-end);
 		.hamburger {
 			margin-top: 27px;
 			margin-right: 20px;
 		}
 		.list {
+			width: 100%;
 			position: relative;
 			background-color: rgba(255, 255, 255, .8);
 		}
@@ -203,6 +161,7 @@
 			display: flex;
 			flex-direction: column;
 			margin-top: 40px;
+			list-style: none;
 		}
 		li {
 			padding: 20px 0;
@@ -211,6 +170,7 @@
 				display: block;
 				text-decoration: none;
 				padding-left: 20px;
+				font-size: 1.2rem;
 				color: $color__header-main;
 				text-transform: uppercase;
 			}
@@ -247,7 +207,7 @@
 		.mobile-menu {
 			padding-top: 60px;
 		}
-		@include media($desktop-width) {
+		@include media(1180px) {
 			display: none;
 		}
 	}

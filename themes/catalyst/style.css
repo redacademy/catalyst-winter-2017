@@ -462,30 +462,6 @@ textarea {
   display: block;
   float: left;
   width: 100%; }
-  .main-navigation ul {
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-    float: left;
-    position: absolute;
-    top: 1.5rem;
-    left: -999rem;
-    z-index: 99999; }
-    .main-navigation ul ul {
-      left: -999rem;
-      top: 0; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: 100%; }
-    .main-navigation ul a {
-      width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
-    float: left;
-    position: relative; }
-  .main-navigation a {
-    display: block;
-    text-decoration: none; }
 
 /* Small menu. */
 .menu-toggle,
@@ -560,19 +536,29 @@ textarea {
     position: absolute;
     right: 0%;
     z-index: 1;
-    width: 50%; }
+    height: 100%;
+    width: 50%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    -ms-flex-align: baseline;
+        align-items: baseline; }
     @media all and (min-width: 600px) {
       .container .top-menu {
         width: 80%; } }
   .container .desktop-menu {
     visibility: hidden;
-    height: 0; }
-    @media all and (min-width: 600px) {
+    height: 0;
+    width: 100%; }
+    @media all and (min-width: 1180px) {
       .container .desktop-menu {
         visibility: visible;
-        height: 100px; } }
+        height: 100%; } }
     .container .desktop-menu .menu-menu-1-container {
-      height: 100px;
+      height: 100%;
       width: auto; }
     .container .desktop-menu #primary-menu {
       display: -ms-flexbox;
@@ -584,7 +570,7 @@ textarea {
       padding-right: 5%;
       list-style: none; }
       .container .desktop-menu #primary-menu ul {
-        height: 70px;
+        height: 70%;
         padding-top: 45px;
         overflow: hidden;
         list-style: none; }
@@ -595,34 +581,29 @@ textarea {
       .container .desktop-menu #primary-menu a {
         text-transform: uppercase;
         color: #323232;
-        font-size: 15px;
+        font-size: 1rem;
         font-weight: 100;
         text-decoration: none; }
-        @media all and (min-width: 600px) {
-          .container .desktop-menu #primary-menu a {
-            font-size: 9px; } }
-        @media all and (min-width: 700px) {
-          .container .desktop-menu #primary-menu a {
-            font-size: 11px; } }
-        @media all and (min-width: 793px) {
-          .container .desktop-menu #primary-menu a {
-            font-size: 13px; } }
-        @media all and (min-width: 890px) {
-          .container .desktop-menu #primary-menu a {
-            font-size: 15px; } }
         .container .desktop-menu #primary-menu a:active {
           color: #935E32; }
         .container .desktop-menu #primary-menu a:hover {
           color: #00A4FF; }
   .container .hamburger-menu {
+    width: 60%;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: end;
-        justify-content: flex-end; }
+    display: flex;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-align: end;
+        align-items: flex-end; }
     .container .hamburger-menu .hamburger {
       margin-top: 27px;
       margin-right: 20px; }
     .container .hamburger-menu .list {
+      width: 100%;
       position: relative;
       background-color: rgba(255, 255, 255, 0.8); }
     .container .hamburger-menu ul {
@@ -630,7 +611,8 @@ textarea {
       display: flex;
       -ms-flex-direction: column;
           flex-direction: column;
-      margin-top: 40px; }
+      margin-top: 40px;
+      list-style: none; }
     .container .hamburger-menu li {
       padding: 20px 0;
       border-bottom: 1px solid white; }
@@ -638,6 +620,7 @@ textarea {
         display: block;
         text-decoration: none;
         padding-left: 20px;
+        font-size: 1.2rem;
         color: #323232;
         text-transform: uppercase; }
       .container .hamburger-menu li:hover {
@@ -668,7 +651,7 @@ textarea {
       top: 10%; }
     .container .hamburger-menu .mobile-menu {
       padding-top: 60px; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 1180px) {
       .container .hamburger-menu {
         display: none; } }
 
