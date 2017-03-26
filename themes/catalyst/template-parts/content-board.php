@@ -10,18 +10,48 @@
 
 	<section class="board-profile-popout profile-popout">
 
-			<div class="left-column">
-				<img class="profile-image" src="<?php echo CFS()->get('profile_image'); ?>"/>
+			<?php $cvDescription = CFS()->get('cvdescription');
+				if ( !empty( $cvDescription ) ) : 
+			?>
 
-				<h4 class="name"><?php echo CFS()->get('name'); ?></h4>
-				<p class="job-title"><?php echo CFS()->get('job_title'); ?></p>
+				<div class="left-column">
+					<img class="profile-image" src="<?php echo CFS()->get('profile_image'); ?>"/>
 
-				<p class="quote"><?php echo CFS()->get('quote'); ?></p>
-			</div>
+					<h4 class="name"><?php echo CFS()->get('name'); ?></h4>
+					<p class="job-title"><?php echo CFS()->get('job_title'); ?></p>
+
+					<?php $quote = CFS()->get('quote'); 
+						if ( !empty( $quote ) ) : 
+					?>
+						<p class="quote"><?php echo $quote; ?></p>
+					<?php endif; ?>
+				</div>
+
+			<?php $cvDescription = CFS()->get('cvdescription');
+				elseif ( empty( $cvDescription ) ) : 
+			?>
+				<div class="center-column">
+					<img class="profile-image" src="<?php echo CFS()->get('profile_image'); ?>"/>
+
+					<h4 class="name"><?php echo CFS()->get('name'); ?></h4>
+					<p class="job-title"><?php echo CFS()->get('job_title'); ?></p>
+
+					<?php $quote = CFS()->get('quote'); 
+						if ( !empty( $quote ) ) : 
+					?>
+						<p class="quote"><?php echo $quote; ?></p>
+					<?php endif; ?>
+				</div>
+
+			<?php endif; ?>
 
 			<h3 class="tagline clearfix"><?php echo CFS()->get('tagline'); ?></h3>
 
+			<?php $cvDescription = CFS()->get('cvdescription');
+				if ( !empty( $cvDescription ) ) : 
+			?>
 			<article class="cv">
-				<?php echo CFS()->get('cvdescription'); ?>
+				<?php echo $cvDescription; ?>
 			</article>
+			<?php endif; ?>
 	</section><!-- #post-## -->

@@ -1711,6 +1711,22 @@ object {
       .board-profiles-wrapper .profile-popout a:hover,
       .advisors-profiles-wrapper .profile-popout a:hover {
         color: #935E32; }
+    .staff-profiles-wrapper .profile-popout .center-column,
+    .board-profiles-wrapper .profile-popout .center-column,
+    .advisors-profiles-wrapper .profile-popout .center-column {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+      -ms-flex-align: center;
+          align-items: center;
+      margin: 0 auto; }
+      .staff-profiles-wrapper .profile-popout .center-column img,
+      .board-profiles-wrapper .profile-popout .center-column img,
+      .advisors-profiles-wrapper .profile-popout .center-column img {
+        width: 400px; }
     .staff-profiles-wrapper .profile-popout .left-column,
     .board-profiles-wrapper .profile-popout .left-column,
     .advisors-profiles-wrapper .profile-popout .left-column {
@@ -1728,7 +1744,7 @@ object {
       .staff-profiles-wrapper .profile-popout .left-column img,
       .board-profiles-wrapper .profile-popout .left-column img,
       .advisors-profiles-wrapper .profile-popout .left-column img {
-        width: 215px; }
+        width: 225px; }
         @media all and (min-width: 760px) {
           .staff-profiles-wrapper .profile-popout .left-column img,
           .board-profiles-wrapper .profile-popout .left-column img,
@@ -1852,7 +1868,9 @@ object {
       .board-profiles-wrapper .board-profiles-header .board-exit-button span,
       .advisors-profiles-wrapper .board-profiles-header .board-exit-button span {
         position: relative;
-        bottom: 2px; }
+        bottom: 2px;
+        right: 1px;
+        font-size: 2.05rem; }
   .staff-profiles-wrapper .navigation-button-container,
   .board-profiles-wrapper .navigation-button-container,
   .advisors-profiles-wrapper .navigation-button-container {

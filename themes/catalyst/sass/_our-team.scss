@@ -99,13 +99,22 @@
             }
         }
 
+        .center-column {
+            @include flex-column(nowrap, flex-start, center);
+            margin: 0 auto;
+
+            img {
+                width: 400px;
+            }
+        }
+
         .left-column {
             width: 40%;
             margin-right: 10%;
             float: left;
             @include flex-column(nowrap, center, center);
             img {
-                width: 215px;
+                width: 225px;
                 @include media($desktop-width) {
                     width: 95%;
                 }
@@ -210,6 +219,8 @@
             span {
                 position: relative;
                 bottom: 2px;
+                right: 1px;
+                font-size: 2.05rem;
             }
         }
     }
