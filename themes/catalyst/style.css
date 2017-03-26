@@ -959,7 +959,8 @@ textarea {
     max-width: 700px;
     margin: 0 auto;
     text-shadow: 2px 2px 5px black;
-    line-height: 70px; }
+    line-height: 70px;
+    font-weight: 700; }
   .home .header-text p {
     font-size: 25px;
     font-family: quattrocento, sans-serif;
@@ -1971,6 +1972,8 @@ object {
   margin: 0 auto; }
   .page-id-19 .entry-content {
     text-align: center; }
+    .page-id-19 .entry-content p {
+      font-weight: 300; }
   .page-id-19 .header-text {
     position: absolute;
     padding: 15% 0 15%;
@@ -2032,7 +2035,7 @@ object {
   .page-id-19 h2 {
     margin-bottom: 20px;
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 700;
     text-transform: uppercase;
     background-color: #D9F1FF;
     padding: 30px 0;
@@ -2043,7 +2046,8 @@ object {
   .page-id-19 .load-more {
     margin-bottom: 80px;
     margin-top: 40px;
-    text-align: center; }
+    text-align: center;
+    font-family: 700; }
     .page-id-19 .load-more a {
       padding: 30px 80px;
       text-transform: uppercase;
@@ -2109,7 +2113,8 @@ object {
       .page-id-19 .newsmedia-article .article-content p {
         margin: 0; }
       .page-id-19 .newsmedia-article .article-content h3 {
-        margin: 8px 0; }
+        margin: 8px 0;
+        font-family: 700; }
     .page-id-19 .newsmedia-article .hentry {
       font-size: 14px; }
       .page-id-19 .newsmedia-article .hentry p {
@@ -2117,9 +2122,11 @@ object {
       .page-id-19 .newsmedia-article .hentry .entry-content {
         margin: 0; }
     .page-id-19 .newsmedia-article .date {
-      font-size: 12px; }
+      font-size: 12px;
+      font-weight: 300; }
     .page-id-19 .newsmedia-article .cfs-hyperlink {
       color: #4A4A4A;
+      font-weight: 700;
       text-decoration: none;
       text-transform: uppercase;
       padding: 5px 15px; }

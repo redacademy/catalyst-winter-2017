@@ -2,6 +2,9 @@
     margin: 0 auto;
     .entry-content {
         text-align: center;
+        p {
+            font-weight: $font__light;
+        }
     }
     .header-text {
         position: absolute;
@@ -39,7 +42,7 @@
     h2 {
         margin-bottom: 20px;
         font-size: 30px;
-        font-weight: 400;
+        font-weight: $font__bold;
         text-transform: uppercase;
         background-color: $color__brand-blue;
         padding: 30px 0;
@@ -52,6 +55,7 @@
         margin-bottom: 80px;
         margin-top: 40px;
         text-align: center;
+        font-family: $font__bold;
         a {
             padding: 30px 80px;
             text-transform: uppercase;
@@ -126,6 +130,7 @@
             }
             h3 {
                 margin: 8px 0;
+                font-family: $font__bold;
             }
         }
         .hentry {
@@ -139,9 +144,11 @@
         }
         .date {
             font-size: 12px;
+            font-weight: $font__light;
         }
         .cfs-hyperlink {
             color: $color__text-main;
+            font-weight: $font__bold;
             text-decoration: none;
             text-transform: uppercase;
             padding: 5px 15px;
