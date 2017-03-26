@@ -2581,7 +2581,7 @@ object {
       max-width: 400px;
       margin: 0 auto;
       font-size: 1.4rem;
-      font-weight: 400;
+      font-weight: 700;
       color: #323232;
       line-height: 2.4rem;
       text-transform: uppercase; }
@@ -2596,7 +2596,8 @@ object {
         .page-id-7 .blue-background .supporters-header {
           font-size: 1.85rem; } }
   .page-id-7 .wpcf7 {
-    padding: 3%; }
+    padding: 3%;
+    font-family: quattrocento, sans-serif; }
     .page-id-7 .wpcf7 form {
       margin: 0 auto;
       background-color: #D9F1FF;
@@ -2684,6 +2685,8 @@ object {
       font-style: italic; }
     .page-id-7 .wpcf7 .wpcf7-submit {
       width: 200px;
+      font-family: muli, sans-serif;
+      font-weight: 700;
       background-color: #fff;
       border: 1px solid #000;
       font-size: 1rem;
