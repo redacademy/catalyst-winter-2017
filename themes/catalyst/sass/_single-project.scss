@@ -1,7 +1,7 @@
 .single-projects {
 
     h2 {
-        font-weight: 500;
+        font-weight: $font__bold;
         color: $color__header-main;
     }
     h3,
@@ -19,16 +19,19 @@
             font-size: 4rem;
             line-height: 1;
             margin-bottom: 1rem;
+            font-weight: $font__bold;
         }
         .project-location {
+            font-family: $font__secondary;
+            font-weight: $font__bold;
             font-size: 1.3rem;
             margin-bottom: 0.3rem;
         }
         .project-status {
+            font-family: $font__secondary;
+            font-weight: $font__bold;
             font-size: 1.3rem;
-            .project-status {
-                text-transform: uppercase;
-            }
+            text-transform: uppercase;
         }
     }
     .content-head {
@@ -42,12 +45,14 @@
     }
     .proj-content {
         margin: 0 1.5rem;
+        font-family: $font__secondary;
         @include media($desktop-width) {
             max-width: 1000px;
             margin: 0 auto;
         }
         h3 {
             margin-bottom: 0;
+            font-weight: $font__bold;
         }
         p {
             margin-top: 0;
@@ -142,20 +147,23 @@
     }
     .quote-text {
         margin-bottom: 2rem;
+        font-family: $font__secondary;
+        font-weight: $font__bold;
     }
     .person {
-        font-style: normal;
-        font-weight: bold;
+        font-weight: $font__bold;
         font-size: 1.3rem;
         margin: 0;
         color: $color__text-main;
     }
     .line {
+        font-weight: $font__semibold;
         font-style: italic;
         margin: 0;
         color: $color__text-main;
     }
     .collab-link-container {
+        font-weight: $font__bold;
         text-align: center;
         margin: 3rem 0;
         padding-top: 1rem;
@@ -202,7 +210,11 @@
             }
         }
         .project-name{
-            font-weight: bold;
+            font-weight: $font__bold;
+        }
+        .project-location,
+        .project-status {
+            font-family: $font__secondary;
         }
     }
     .image-wrapper{
