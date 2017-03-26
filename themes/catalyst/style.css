@@ -658,7 +658,6 @@ textarea {
         text-transform: uppercase;
         color: #323232;
         font-size: 1rem;
-        font-weight: 100;
         text-decoration: none; }
         .container .desktop-menu #primary-menu a:active {
           color: #935E32; }
@@ -3257,5 +3256,9 @@ object {
   -ms-flex-align: center;
       align-items: center; }
 
-.error404 .logo {
-  margin-left: 2rem; }
+.error404 .error-logo {
+  background: url(../../images/full-logo.svg) no-repeat;
+  margin-left: 2rem;
+  height: 200px;
+  width: 400px;
+  background-size: 100%; }

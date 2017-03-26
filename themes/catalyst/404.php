@@ -13,7 +13,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 		</div>
 			<section class="error-404 not-found">
-				<img src="wp-content/themes/catalyst/images/full-logo.svg" alt="" class="logo">
+				<div class="error-logo"></div>
 				<h1 class="entry-title"><?php echo esc_html( 'Oops! That page can&rsquo;t be found.' ); ?></h1>
 				<p class="banner-text"><?php echo esc_html( 'It looks like nothing was found at this location.' ); ?></p>
 			</section><!-- .error-404 -->

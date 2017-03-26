@@ -50,17 +50,16 @@ function catalyst_hero_image_css() {
 
 function flexible_widget_titles( $widget_title ) {
 
-// get rid of any leading and trailing spaces
+    // get rid of any leading and trailing spaces
 
-$title = trim( $widget_title );
+    $title = trim( $widget_title );
 
-// check the first and last character, if [ and ] set the title to empty
+    // check the first and last character, if [ and ] set the title to empty
 
-if ( $title[0] == '[' && $title[strlen($title) - 1] == ']' ) $title = '';
+    if ( $title[0] == '[' && $title[strlen($title) - 1] == ']' ) $title = '';
 
-return $title;
+    return $title;
 
 }
-
 add_filter( 'widget_title', 'flexible_widget_titles' );
 
