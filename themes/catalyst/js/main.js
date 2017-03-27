@@ -22,6 +22,7 @@
 
     // Toggle profile popout when enter/exit buttons are clicked (Our Team page)
 
+    var $cvElements = $( '.cv' );
 
     var $staffEnterButtons = $( '.staff-enter-button' );
     var $boardEnterButtons = $( '.board-enter-button' );
@@ -72,6 +73,7 @@
             $staffProfilePreviews.hide();
             $staffProfilePopouts.hide();
             $staffProfilesWrapper.css('margin-top', '-0.75rem');
+
             thisPopout.show().addClass( 'show-popout' );
             scrollToPopout(thisPopout, $catalystTeamHeader);
             $staffExitButton.show(130);
@@ -112,7 +114,7 @@
     function hideStaffPopout($thisPopout) {
         $staffExitButton.click(function () {
             $staffExitButton.hide();
-            $thisPopout.removeClass( 'show-popout' );
+            $thisPopout.removeClass( 'show-popout' ).addClass( 'translucent' );
             $staffProfilesWrapper.css('margin-top', '0');
             $staffProfilePreviews.show();
             $staffProfilesHeader.show();
@@ -129,7 +131,7 @@
     function hideBoardPopout($thisPopout) {
         $boardExitButton.click(function(){
             $boardExitButton.hide();
-            $thisPopout.removeClass( 'show-popout' );
+            $thisPopout.removeClass( 'show-popout' ).addClass( 'translucent' );
             $boardProfilesHeader.removeClass( 'blue-background' );
             $boardProfilePreviews.show();
             $staffProfilesWrapper.css( 'opacity', '1' );

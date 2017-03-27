@@ -22,7 +22,7 @@ function catalyst_hero_image_css() {
             $url = CFS()->get ( 'heroimage');
 
             $hero_image_css = ".hero-image-banner{
-                height: 55vh;
+                height: 60vh;
                 background: linear-gradient( to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100% ),
                 url({$url}) no-repeat center bottom;
                 background-size: cover, cover;

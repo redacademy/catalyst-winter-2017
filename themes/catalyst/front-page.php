@@ -35,7 +35,7 @@
             <?php endif; ?>
 
             <?php get_template_part( 'template-parts/projects-carousel', 'projects carousel' ); ?>
-             <div class="readmore"><a>view more projects</a></div>
+            <div class="readmore"><a>view more projects</a></div>
         </div>
 
         <div class="team">

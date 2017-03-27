@@ -14,12 +14,12 @@ get_header(); ?>
 
 			<section class="catalyst-mission">
 
-  				<?php $content_title1 = CFS()->get( 'content_title1' );
+  				<?php $content_title1 = esc_html( CFS()->get('content_title') );
                 if ( !empty( $content_title1 ) ) :?>
                 <h2 class='status'><?php echo $content_title1; ?></h2>
                 <?php endif; ?>
 
-				<?php $our_mission = CFS()->get( 'our_mission' );
+				<?php $our_mission = esc_html( CFS()->get( 'our_mission' ) );
                 if ( !empty( $our_mission ) ) :?>
                 <h3 class='status'><?php echo $our_mission; ?></h3>
                 <?php endif; ?>
@@ -27,7 +27,7 @@ get_header(); ?>
 				<div class="mission-quote">
 					<div class="quotation-left"></div>
 
-					<?php $quotation1 = CFS()->get( 'quotation1' );
+					<?php $quotation1 = esc_html( CFS()->get( 'quotation1' ) );
 					if ( !empty( $quotation1) ) :?>
 					<p class='quote'><?php echo $quotation1; ?></p>
 					<?php endif; ?>
@@ -36,12 +36,12 @@ get_header(); ?>
 				</div>
 				<div class="robert">
 
-				<?php $text_area1 = CFS()->get( 'text_area1' );
+				<?php $text_area1 = esc_html( CFS()->get( 'text_area1' ) );
 				if ( !empty( $text_area1) ) :?>
 				<h4><?php echo $text_area1; ?></h4>
 				<?php endif; ?>
 
-				<?php $text_area2 = CFS()->get( 'text_area2' );
+				<?php $text_area2 = esc_html( CFS()->get( 'text_area2' ) );
 				if ( !empty( $text_area2) ) :?>
 				<p class="position"><?php echo $text_area2; ?></p>
 				<?php endif; ?>
@@ -49,50 +49,50 @@ get_header(); ?>
 				</div>
 				<div class="mission-content">
 					<div class="mission-image income">
-					<img src ="<?php echo CFS()->get( 'image1' ); ?>"/>
+					<img src ="<?php echo esc_attr( CFS()->get( 'image1' ) ); ?>"/>
 					<div class="mission-text">
 
-					<?php $image_title1 = CFS()->get( 'image_title1' );
+					<?php $image_title1 = esc_html( CFS()->get( 'image_title1' ) );
 					if ( !empty( $image_title1) ) :?>
 					<h5 class="position"><?php echo $image_title1; ?></h5>
 					<?php endif; ?>
 
-					<?php $image_text1 = CFS()->get( 'image_text1' );
-					if ( !empty( $image_text1) ) :?>
+					<?php $image_text1 = esc_html( CFS()->get( 'image_text1' ) );
+					if ( !empty( $image_text1 ) ) :?>
 					<p class="mission-text"><?php echo $image_text1; ?></p>
 					<?php endif; ?>
 
 				</div>
 				</div>
 
-					<img src="<?php echo CFS()->get( 'arrow_image' ); ?>"class="arrow"/>
+					<img src="<?php echo esc_attr( CFS()->get( 'arrow_image' ) ); ?>"class="arrow"/>
 
 					<div class="mission-image rent">
-					<img src ="<?php echo CFS()->get( 'image2' ); ?>"/>
+					<img src ="<?php echo esc_attr( CFS()->get( 'image2' ) ); ?>"/>
 					<div class="mission-text">
-					<?php $image_title2 = CFS()->get( 'image_title2' );
+					<?php $image_title2 = esc_html( CFS()->get( 'image_title2' ) );
 					if ( !empty( $image_title2 ) ) :?>
 					<h5 class="rent-title"><?php echo $image_title2; ?></h5>
 					<?php endif; ?>
-					<?php $image_text2 = CFS()->get( 'image_text2' );
+					<?php $image_text2 = esc_html( CFS()->get( 'image_text2' ) );
 					if ( !empty( $image_text2) ) :?>
 					<p class="mission-text"><?php echo $image_text2; ?></p>
 					<?php endif; ?>
 					</div>
 					</div>
 
-					<img src="<?php echo CFS()->get( 'arrow_image' ); ?>"class="arrow"/>
+					<img src="<?php echo esc_attr( CFS()->get( 'arrow_image' ) ); ?>"class="arrow"/>
 
 					<div class="mission-image life">
-					<img src ="<?php echo CFS()->get( 'image3' ); ?>"/>
+					<img src ="<?php echo esc_attr( CFS()->get( 'image3' ) ); ?>"/>
 					<div class="mission-text">
 
-					<?php $image_title3 = CFS()->get( 'image_title3' );
+					<?php $image_title3 = esc_html( CFS()->get( 'image_title3' ) );
 					if ( !empty( $image_title3 ) ) :?>
 					<h5><?php echo $image_title3; ?></h5>
 					<?php endif; ?>
 
-					<?php $image_text3 = CFS()->get( 'image_text3' );
+					<?php $image_text3 = esc_html( CFS()->get( 'image_text3' ) );
 					if ( !empty( $image_text3 ) ) :?>
 					<p class="mission-text"><?php echo $image_text3; ?></p>
 					<?php endif; ?>
@@ -101,21 +101,20 @@ get_header(); ?>
 					</div>
 				</div>
 			</section>
+
 			<section class="formula">
-
-
-			<?php $content_title2 = CFS()->get( 'content_title2' );
+			<?php $content_title2 = esc_html( CFS()->get( 'content_title2' ) );
 			if ( !empty( $content_title2 ) ) :?>
 			<h2><?php echo $content_title2; ?></h2>
 			<?php endif; ?>
 
 				<div class="formula-p">
-					<?php $formula_text1 = CFS()->get( 'formula_text1' );
+					<?php $formula_text1 = esc_html( CFS()->get( 'formula_text1' ) );
 					if ( !empty( $formula_text1 ) ) :?>
 					<p class="formula-text1"><?php echo $formula_text1; ?></p>
 					<?php endif; ?>
 
-					<?php $formula_text2 = CFS()->get( 'formula_text2' );
+					<?php $formula_text2 = esc_html( CFS()->get( 'formula_text2' ) );
 					if ( !empty( $formula_text2 ) ) :?>
 					<p class="formula-text2"><?php echo $formula_text2; ?></p>
 					<?php endif; ?>
@@ -133,25 +132,25 @@ get_header(); ?>
 				<div class="end-content-quote">
 				<div class="mission-quote2">
 					<div class="quotation-left2"></div>
-					<?php $quotation2 = CFS()->get( 'quotation2' );
+					<?php $quotation2 = esc_html( CFS()->get( 'quotation2' ) );
 					if ( !empty( $quotation2 ) ) :?>
 					<p class="quote2"><?php echo $quotation2; ?></p>
 					<?php endif; ?>
 					<div class="quotation-right2"></div>
 				</div>
 				<div class="robert">
-					<?php $text_area1 = CFS()->get( 'text_area1' );
+					<?php $text_area1 = esc_html( CFS()->get( 'text_area1' ) );
 					if ( !empty( $text_area1 ) ) :?>
 					<h4><?php echo $text_area1; ?></h4>
 					<?php endif; ?>
 
-					<?php $text_area2 = CFS()->get( 'text_area2' );
+					<?php $text_area2 = esc_html( CFS()->get( 'text_area2' ) );
 					if ( !empty( $text_area2 ) ) :?>
 					<p class="position"><?php echo $text_area2; ?></p>
 					<?php endif; ?>
 				</div>
 
-				<?php $btn2 = CFS()->get( 'btn2' );
+				<?php $btn2 = esc_html( CFS()->get( 'btn2' ) );
 				if ( !empty( $btn2 ) ) :?>
 				<a class="btn" href="<?php echo get_home_url(); ?>/our-team"><?php echo $btn2; ?></a>
 				<?php endif; ?>
