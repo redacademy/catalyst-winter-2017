@@ -26,12 +26,14 @@
             <?php endif; ?>
 
             <?php get_template_part( 'template-parts/ourStory-carousel', 'projects carousel' ); ?>
-            <div class="readmore"><a href="">learn more</a></div>
+            <a class='navigation-button'href="">learn more</a>
         </div>
 
 
         <div class="projects">
-            <h2>our projects</h2>
+            <div class="blue-background-header">
+                <h2 class='subheader-lrg'>our projects</h2>
+            </div>
 
             <?php $our_projects_copy = CFS()->get( 'our_projects_copy' );
             if ( !empty( $our_projects_copy ) ) :?>
@@ -39,11 +41,13 @@
             <?php endif; ?>
 
             <?php get_template_part( 'template-parts/projects-carousel', 'projects carousel' ); ?>
-            <div class="readmore"><a>view more projects</a></div>
+            <a class='navigation-button' href=''>view more projects</a>
         </div>
 
         <div class="team">
-            <h2>team catalyst</h2>
+            <div class="blue-background-header">
+                <h2 class='subheader-lrg'>team catalyst</h2>
+            </div>        
 
             <?php $team_catalyst_copy = esc_html( CFS()->get( 'team_catalyst_copy' ) );
             if ( !empty( $team_catalyst_copy ) ) :?>
