@@ -5,6 +5,9 @@
         font-size: $font__desktop-size;
         line-height: $line-height-desktop;
     }
+    .header-text {
+        @include header-text;
+    }
     .entry-title {
         @include page-title;
     }

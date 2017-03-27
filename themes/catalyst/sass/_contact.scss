@@ -6,27 +6,20 @@
         font-size: $font__desktop-size;
         line-height: $line-height-desktop;
     }
-
-        .banner-title {
-            @include page-title;
-        }
-        .banner-text {
-            @include banner-text;
-        }
-        .banner-text-small {
-            font-size: 1rem;
-            color: white;
-            width: 380px;
-            margin: 0 auto;
-            text-align: center;
-            line-height: 2rem;
-            letter-spacing: 2px;
-            @include header-text-shadow;
-            @include media($desktop-width) {
-                width: 750px;
-                margin: 2% auto;
-            }
-        }
+    .header-text {
+        @include header-text;
+    }
+    .entry-title {
+        @include page-title;
+    }
+    .banner-text {
+        @include banner-text;
+    }
+    .banner-text-small {
+        font-size: 1rem;
+        letter-spacing: 2px;
+        @include header-text-shadow;
+    }
     
     .blue-background {
         height: auto;
