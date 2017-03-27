@@ -13,79 +13,39 @@
 
             <div class="hero-image-banner">
                 <div class="header-text">
-                    <?php $project_name = CFS()->get( 'project_name' );
-                    if ( !empty( $project_name ) ) :?>
-                    <p class='project-name'><?php echo $project_name; ?></p>
-                    <?php endif; ?>
-
-                    <?php $project_location = CFS()->get( 'project_location' );
-                    if ( !empty( $project_location ) ) :?>
-                    <p class='project-location'>Location: <?php echo $project_location; ?></p>
-                    <?php endif; ?>
-
-                    <?php $project_status = CFS()->get( 'project_status' );
-                    if ( !empty( $project_status ) ) :?>
-                    <p class='project-status'>Status: <span class='project-status'><?php echo $project_status; ?></span></p>
-                    <?php endif; ?>
+                    <p class='project-name'><?php echo CFS()->get('project_name'); ?></p>
+                    <p class='project-location'>Location: <?php echo CFS()->get('project_location'); ?></p>
+                    <p class='project-status'>Status: <span class='project-status'><?php echo CFS()->get('project_status'); ?></span></p>
                 </div>
             </div>
 
-            <div class="blue-background-header">
-                <h2 class='subheader-sm'>Project details</h2>
+            <div class="content-head">
+                <h2>Project details</h2>
             </div>
 
             <div class="proj-content">
                 <h3>Structure: </h3>
-                <?php $structure = CFS()->get( 'structure' );
-                if ( !empty( $structure ) ) :?>
-                <?php echo $structure; ?>
-                <?php endif; ?>
-
+                <?php echo CFS()->get('structure'); ?>
                 <h3>Status: </h3>
-                <?php $status = CFS()->get( 'status' );
-                if ( !empty( $status ) ) :?>
-                <p><?php echo $status; ?></p>
-                <?php endif; ?>
-
+                <p><?php echo CFS()->get('status'); ?></p>
                 <h3>Partners: </h3>
-                <?php $partners = CFS()->get( 'partners' );
-                if ( !empty( $partners ) ) :?>
-                <?php echo $partners; ?>
-                <?php endif; ?>
-
+                <?php echo CFS()->get('partners'); ?>
                 <h3>Financing/Grants: </h3>
-                <?php $financing_grants = CFS()->get( 'financing_grants' );
-                if ( !empty( $financing_grants ) ) :?>
-                <?php echo $financing_grants; ?>
-                <?php endif; ?>
-
+                <?php echo CFS()->get('financing_grants'); ?>
                 <h3>Affordability: </h3>
-                <?php $affordability = CFS()->get( 'affordability' );
-                if ( !empty( $affordability ) ) :?>
-                <?php echo $affordability; ?>
-                <?php endif; ?>
-
+                <?php echo CFS()->get('affordability'); ?>
                 <h3>Total Project Cost: </h3>
-                <?php $cost = CFS()->get( 'cost' );
-                if ( !empty( $cost ) ) :?>
-                <p><?php echo $cost; ?></p>
-                <?php endif; ?>
-
-                <?php $description = CFS()->get( 'description' );
-                if ( !empty( $description ) ) :?>
-                <p><?php echo $description; ?></p>
-                <?php endif; ?>
-
+                <p><?php echo CFS()->get('cost'); ?></p>
+                <p><?php echo CFS()->get('description'); ?></p>
             </div>
     </section>
     <section>
         <div>
-            <div class="blue-background-header">
-                <h2 class='subheader-sm'>Architectural design</h2>
+            <div class="content-head">
+                <h2>Architectural design</h2>
             </div>
         </div>
         <div class="img-carousel">
-
             <?php $gallery_images = CFS()->get('gallery_images');
             foreach ($gallery_images as $image) : ?>
                 <div class="images">
@@ -106,12 +66,14 @@
                 </div>
                 <?php endforeach; wp_reset_postdata(); ?>
         </div>
-        <a href="#" class="navigation-button">Collaborate with us</a>
+        <div class="collab-link-container">
+            <a href="#" class="collab-link">Collaborate with us</a>
+        </div>
         <?php endwhile; wp_reset_postdata(); ?>
     </section>
     <section>
-        <div class="blue-background-header">
-            <h2 class='subheader-sm'>Other Projects</h2>
+        <div class="other-proj">
+            <h2>Other Projects</h2>
         </div>
         <?php get_template_part( 'template-parts/projects-carousel', 'projects carousel' ); ?>
     </section>

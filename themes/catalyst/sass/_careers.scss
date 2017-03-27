@@ -1,17 +1,14 @@
-.page-id-196 {
+.page-template-careers {
     #content {
         width: 100%;
     }
-    .header-text {
-        @include header-text;
-    }
-    .entry-title {
-        @include page-title;
-    }
+        .entry-title {
+            @include page-title;
+        }
 
-    .banner-text {
-        @include banner-text;
-    }
+        .banner-text {
+            @include banner-text;
+        }
 
     .intro-copy {
         @include intro-copy;
@@ -24,7 +21,6 @@
         align-items: center;
     }
     .page-title {
-        font-weight: $font__bold;
         font-size: 1.8rem;
         color: $color__header-main;
         text-transform: uppercase;
@@ -44,7 +40,6 @@
         border-bottom: none;
     }
     .job-title {
-        font-weight: $font__bold;
         font-size: 1.3rem;
         text-align: center;
         color: $color__text-main;
@@ -52,7 +47,6 @@
         margin: 2rem 0;
     }
     .role-container {
-        font-family: $font__secondary;
         font-size: 1.3rem;
         margin-bottom: 3rem;
         p{
@@ -61,11 +55,10 @@
     }
     .role {
         text-transform: uppercase;
-        font-weight: $font__bold;
+        font-weight: bold;
         margin-bottom: 0;
     }
     .resp-container {
-        font-family: $font__secondary;
         width: 100%;
         max-width: 850px;
         margin: 0 auto;
@@ -80,10 +73,20 @@
     }
     .responsibilities {
         text-transform: uppercase;
-        font-weight: $font__bold;
+        font-weight: bold;
         margin-bottom: 0;
     }
-    .navigation-button {
-        @include navigation-button();
+    .link-container{
+        text-align: center
+    }
+    .contact-link {
+        text-decoration: none;
+        color: #000;
+        border: 2px solid #000;
+        padding: 1rem 3.5rem;
+        text-transform: uppercase;
+        @include media($desktop_width){
+            padding: 1rem 4rem;
+        }
     }
 }

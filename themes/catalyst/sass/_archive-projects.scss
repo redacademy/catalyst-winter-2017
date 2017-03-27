@@ -1,14 +1,11 @@
 .page-id-195 {
-    .header-text {
-        @include header-text;
-    }
-    .entry-title {
-        @include page-title;
-    }
+        .entry-title {
+            @include page-title;
+        }
 
-    .banner-text {
-        @include banner-text;
-    }
+        .banner-text {
+            @include banner-text;
+        }
 
     .intro-copy {
         @include intro-copy;
@@ -19,13 +16,38 @@
     .project-post {
         margin-bottom: 6rem;
     }
-    .break {
-        display: none;
+    .proj-head {
+        background-color: #d9f1ff;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         @include media($desktop-width) {
-            display: initial;
+            flex-direction: row;
+            align-items: center;
+        }
+        p {
+            margin: 0;
+            @include media($desktop-width){
+                font-size: 1.5rem;
+            }
+        }
+        .name {
             font-size: 1.5rem;
-            font-weight: 500;
-            margin: 0 0.5rem;
+            font-weight: bold;
+            color: $color__header-main;
+        }
+        .status {
+            text-transform: uppercase;
+        }
+        .break {
+            display: none;
+            @include media($desktop-width) {
+                display: initial;
+                font-size: 1.5rem;
+                font-weight: 500;
+                margin: 0 0.5rem;
+            }
         }
     }
     .img-container {
@@ -39,7 +61,11 @@
         width: 100%;
         max-width: 1000px;
     }
-    .navigation-button {
-        @include navigation-button();
+    .project-link {
+        text-decoration: none;
+        color: $color__header-main;
+        border: 2px solid black;
+        padding: 1rem 4rem;
+        text-transform: uppercase;
     }
 }

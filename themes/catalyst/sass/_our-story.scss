@@ -1,24 +1,55 @@
 .page-id-21 {
-    .header-text {
-        @include header-text;
-    }
     .entry-title {
         @include page-title;
+        @include media($desktop-width) {
+            padding-top: 150px;
+        }
+    }
+    .header-text {
+        position: absolute;
+        top: 20%;
+        padding: 0 10px;
+        @include media($desktop-width) {
+            position: initial;
+        }
     }
     .banner-text {
         @include banner-text;
     }
     .intro-copy {
-        @include intro-copy;
+        text-align: center;
+        font-size: 20px;
+        margin: 30px auto;
+        width: 280px;
+        font-weight: 100;
+        line-height: 25px;
+        @include media($desktop-width) {
+            width: 100%;
+            font-size: 22px;
+            font-weight: lighter;
+        }
     }
     .site-content {
         text-align: center;
+    }
+    h2 {
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 400;
+        background-color: $color__brand-blue;
+        padding: 10px 0;
+        text-align: center;
+        line-height: 50px;
+        @include media($desktop-width) {
+            font-size: 50px;
+            padding: 20px 0;
+        }
     }
     h3 {
         text-align: center;
         padding: 0 10px;
         font-size: 28px;
-        font-weight: $font__bold;
+        font-weight: 400;
         margin: auto;
         line-height: 35px;
         @include media($desktop-width) {
@@ -45,18 +76,15 @@
             font-weight: lighter;
         }
     }
-    .navigation-button {
-        @include navigation-button();
-    }
-    .download {
-        font-weight: $font__bold;
+    .download,
+    .btn {
         padding: 20px 50px;
         text-transform: uppercase;
         border: 1px solid black;
         text-decoration: none;
         color: black;
         @include media($desktop-width) {
-            border: 3px solid $color__header-main;
+            border: 3px solid black;
         }
         &:hover {
             border-color: $color__brand-blue;
@@ -70,10 +98,9 @@
         width: 300px;
         margin: 0 auto;
         padding: 5px 0;
-        font-weight: $font__bold;
         a {
             text-decoration: none;
-            color: $color__header-main;
+            color: black;
         }
     }
     .mission-quote2 {
@@ -102,7 +129,6 @@
         font-size: 18px;
         position: absolute;
         width: 90%;
-        font-family: $font__secondary;
         font-style: italic;
         @include media($desktop-width) {
             font-size: 20px;
@@ -151,7 +177,6 @@
         }
     }
     h4 {
-        font-weight: $font__bold;
         margin: 0;
         @include media($desktop-width) {
             margin: 15px;
@@ -159,7 +184,6 @@
     }
     .position {
         font-style: italic;
-        font-weight: $font__semibold;
         margin: 0;
     }
     .arrow {
@@ -170,12 +194,14 @@
         .rent-title {
             margin: 0;
         }
-
+        img {
+            margin-bottom: 50px;
+        }
     }
     .mission-text {
         margin: 0 auto;
         font-size: 16px;
-        font-family: $font__secondary;
+        font-weight: lighter;
         width: 80%;
         margin-bottom: 20px;
         @include media($desktop-width) {
@@ -212,8 +238,6 @@
                 height: 180px;
             }
             h5 {
-                font-family: $font__secondary;
-                font-weight: $font__bold;
                 font-size: 20px;
                 text-transform: uppercase;
                 width: 100%;
@@ -221,7 +245,6 @@
         }
     }
     .formula-p {
-        font-family: $font__secondary;
         width: 90%;
         margin: auto;
     }
@@ -236,7 +259,6 @@
         }
     }
     .formula-carousel {
-        font-family: $font__secondary;
         @include media($desktop-width) {
             padding-left: 20px;
         }

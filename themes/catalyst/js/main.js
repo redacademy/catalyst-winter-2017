@@ -22,7 +22,6 @@
 
     // Toggle profile popout when enter/exit buttons are clicked (Our Team page)
 
-    var $cvElements = $( '.cv' );
 
     var $staffEnterButtons = $( '.staff-enter-button' );
     var $boardEnterButtons = $( '.board-enter-button' );
@@ -73,7 +72,6 @@
             $staffProfilePreviews.hide();
             $staffProfilePopouts.hide();
             $staffProfilesWrapper.css('margin-top', '-0.75rem');
-
             thisPopout.show().addClass( 'show-popout' );
             scrollToPopout(thisPopout, $catalystTeamHeader);
             $staffExitButton.show(130);
@@ -114,7 +112,7 @@
     function hideStaffPopout($thisPopout) {
         $staffExitButton.click(function () {
             $staffExitButton.hide();
-            $thisPopout.removeClass( 'show-popout' ).addClass( 'translucent' );
+            $thisPopout.removeClass( 'show-popout' );
             $staffProfilesWrapper.css('margin-top', '0');
             $staffProfilePreviews.show();
             $staffProfilesHeader.show();
@@ -131,7 +129,7 @@
     function hideBoardPopout($thisPopout) {
         $boardExitButton.click(function(){
             $boardExitButton.hide();
-            $thisPopout.removeClass( 'show-popout' ).addClass( 'translucent' );
+            $thisPopout.removeClass( 'show-popout' );
             $boardProfilesHeader.removeClass( 'blue-background' );
             $boardProfilePreviews.show();
             $staffProfilesWrapper.css( 'opacity', '1' );
@@ -186,84 +184,33 @@
 
     // Load more posts on when user clicks button on news & media page.
 
-    function formatDate(myDate) {
-        var formattedDate = addLeadingZero( myDate.getDate() ) + ', ' + ( '0' + ( myDate.getMonth() + 1 ) ).slice( -2 ) + ', ' + myDate.getFullYear();
-        return formattedDate;
-    }
-    function addLeadingZero(date) {
+    // function addZero {
 
-        if (date < 10) {
-            date = '0' + date;
-            return date;
-        } else {
-            return date;
-        }
-    }
-
-    function constructArticleContent(formattedDate, articleTitle, articleExcerpt) {
-
-        var articleContent = '<div class="article-content" >';
-            articleContent += '<p class="date" >' + formattedDate + '</p>';
-            articleContent += '<h3>' + articleTitle + '</h3>';
-            articleContent += '<div class="entry-content">' + articleExcerpt + '</div></div>';
-        
-        return articleContent;
-    }
-
-    function constructArticleThumbnail(post) {
-        if ( post.better_featured_image !== null ) {  
-            var articleThumb = '<img src="' + post.better_featured_image.source_url + '" />';
-            var articleThumbContainer = '<div class="article-thumb">' + articleThumb + '</div>'; 
-        } else {
-            articleThumbContainer = '';
-        }
-
-        return articleThumbContainer;
-    }
-
-    function constructArticleElement( articleID, articleThumbContainer, articleContent ) {
-        var articleElement = '<article class="news" id="' + articleID + '">';
-                
-        if ( articleThumbContainer ) {
-            articleElement += articleThumbContainer;
-        }
-
-            articleElement += articleContent;
-            articleElement += '</article>';
-
-            return articleElement;
-    }
-
-    var $postsContainer = $( '.newsmedia-article' );
-    var $loadPostsButton = $( '.load-more .load-more-button' );
-    var renderedArticles = 5;
-    // var apiLink = $( location ).attr('href') + '/wp-json/wp/v2/news/?&_embed=true';
+    // }
+    // var postsContainer = $( '.newsmedia-article' );
+    var loadPostsButton = $( '.load-more .load-more-button' );
+    // var apiLink = $( location ).attr('href') + '/wp-json/wp/v2/news';
     var apiLink = 'http://catalyst.cp.academy.red/wp-json/wp/v2/news/?&_embed=true'
 
-    $loadPostsButton.click(function(){
+    loadPostsButton.click(function(){
 
+        var postsArrayOffset = 5
         $.get(apiLink, function( data ){
+            var newPosts = data.slice( postsArrayOffset, postsArrayOffset + 6 );
+            $.each( newPosts, function(i, post)  {
+                // var articleElement = $( document.createElement(' article' ) ).addClass( 'news' );
+                // var articleContent = $( document.createElement( 'div' ) ).addClass( 'article-content' );
+                var myDate = new Date( post.date );
+                var formattedDate = myDate.getDay() + ', ' + ( '0' + myDate.getMonth() ).slice( -2 ) + ', ' + myDate.getFullYear();
+                console.log( formattedDate );
+   
+                if ( post.better_featured_image !== null ) {
+                    var articleThumb = $( document.createElement( 'img' ) ).attr( 'src', post.better_featured_image.source_url );
+                    // var articleThumbContainer = $( document.createElement( 'div' ) ).addClass( 'article-thumb' ).append( articleThumb );    
+                }
+                
 
-            var newPosts = data.slice( ( data.length - renderedArticles ) - renderedArticles, ( data.length - renderedArticles ) );
-            
-            if ( renderedArticles < data.length ) {
-                $.each( newPosts, function(i, post)  {
-                    var myDate = new Date( post.date );
-                    var formattedDate = formatDate(myDate);
-                    var articleID = post.id;
-                    var articleTitle = post.title.rendered;
-                    var articleExcerpt = post.excerpt.rendered;
-
-                    var constructedArticleElement = 
-                        constructArticleElement(articleID,
-                                                constructArticleThumbnail(post),
-                                                constructArticleContent(formattedDate, articleTitle, articleExcerpt)
-                                                );
-
-                    $postsContainer.append(constructedArticleElement);
-                    renderedArticles += 5;
-                });
-            }
+            });
         });
     });
 
