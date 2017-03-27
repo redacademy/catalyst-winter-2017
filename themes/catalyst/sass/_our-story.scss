@@ -247,6 +247,10 @@
             font-size: 14px;
             line-height: 15px;
             padding-left: 26px;
+
+            @include media($desktop-width) {
+                display: none;
+            }
         }
     }
     h5 {

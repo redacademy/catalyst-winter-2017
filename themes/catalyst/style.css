@@ -1651,6 +1651,9 @@ object {
     font-size: 14px;
     line-height: 15px;
     padding-left: 26px; }
+    @media all and (min-width: 760px) {
+      .page-id-21 .formula-carousel .formula-text {
+        display: none; } }
 
 .page-id-21 h5 {
   font-size: 20px;

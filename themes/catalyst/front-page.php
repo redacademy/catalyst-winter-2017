@@ -26,7 +26,7 @@
             <?php endif; ?>
 
             <?php get_template_part( 'template-parts/ourStory-carousel', 'projects carousel' ); ?>
-            <a class='navigation-button'href="">learn more</a>
+            <a class="navigation-button" href="<?php echo get_home_url(); ?>/our-story">learn more</a>
         </div>
 
 
@@ -41,7 +41,7 @@
             <?php endif; ?>
 
             <?php get_template_part( 'template-parts/projects-carousel', 'projects carousel' ); ?>
-            <a class='navigation-button' href=''>view more projects</a>
+            <a class="navigation-button" href="<?php echo get_home_url(); ?>/projects">view more projects</a>
         </div>
 
         <div class="team">
@@ -69,7 +69,7 @@
                     </div>
                 <?php endforeach; wp_reset_postdata(); ?>
             </div>
-            <a class='navigation-button' href=''>collaborate with us</a>
+            <a class="navigation-button" href="<?php echo get_home_url(); ?>/our-team">Meet Our Team</a>
         </div>
     </div>
 </section>
