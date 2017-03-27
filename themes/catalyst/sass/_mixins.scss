@@ -59,21 +59,6 @@
 	}
 }
 
-@mixin blue-background-header {
-	height: auto;
-	width: 100%;
-	margin: 0 auto 0.75rem;
-	padding: 0.75rem 0.5rem;
-	background-color: $color__brand-blue;
-	text-align: center;
-	line-height: 2.4rem;
-	@include media($desktop-width) {
-		margin: 0 auto 1.5rem;
-		padding: 1rem 0.5rem;
-		line-height: 3.4rem;
-	}
-}
-
 @mixin intro-copy {
 	height: auto;
 	width: 100%;

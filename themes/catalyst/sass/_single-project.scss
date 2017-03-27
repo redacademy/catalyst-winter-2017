@@ -1,9 +1,5 @@
 .single-projects {
 
-    h2 {
-        font-weight: $font__bold;
-        color: $color__header-main;
-    }
     h3,
     p {
         color: $color__text-main;
@@ -33,15 +29,6 @@
             font-size: 1.3rem;
             text-transform: uppercase;
         }
-    }
-    .content-head {
-        background-color: #d9f1ff;
-        height: 70px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 2rem 0;
-        text-transform: uppercase;
     }
     .proj-content {
         margin: 0 1.5rem;
@@ -177,15 +164,6 @@
     }
     .other-post-gallery {
         margin: 2rem 0 3rem;
-    }
-    .other-proj {
-        background-color: #d9f1ff;
-        height: 70px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 2rem 0;
-        text-transform: uppercase;
     }
     .other-proj-wrapper {
         width: 85%;

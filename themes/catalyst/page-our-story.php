@@ -16,7 +16,9 @@ get_header(); ?>
 
   				<?php $content_title1 = CFS()->get( 'content_title1' );
                 if ( !empty( $content_title1 ) ) :?>
-                <h2 class='status'><?php echo $content_title1; ?></h2>
+				<div class="blue-background">
+                	<h2 class='subheader-lrg'><?php echo $content_title1; ?></h2>
+				</div>
                 <?php endif; ?>
 
 				<?php $our_mission = CFS()->get( 'our_mission' );
@@ -106,7 +108,9 @@ get_header(); ?>
 
 			<?php $content_title2 = CFS()->get( 'content_title2' );
 			if ( !empty( $content_title2 ) ) :?>
-			<h2><?php echo $content_title2; ?></h2>
+			<div class="blue-background">
+				<h2 calss='subheader-lrg'><?php echo $content_title2; ?></h2>
+			</div>
 			<?php endif; ?>
 
 				<div class="formula-p">

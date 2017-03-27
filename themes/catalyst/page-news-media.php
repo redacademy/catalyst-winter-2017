@@ -20,7 +20,9 @@ get_header(); ?>
         <div class="video"><?php echo $video; ?></div>
         <?php endif; ?>
 
-<h2>link to other stories</h2>
+<div class="blue-background">
+    <h2 class="subheader-sm">link to other stories</h2>
+</div>
 <div class="newsmedia-content">
     <?php get_sidebar(); ?>
     <div class="newsmedia-article">

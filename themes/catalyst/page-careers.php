@@ -10,8 +10,8 @@ get_header(); ?>
 
 <?php get_template_part( 'template-parts/hero-banner'); ?>
 
-<div class="page-header-container">
-	<h2 class="page-title">Job Opportunities</h2>
+<div class="blue-background">
+    <h2 class="subheader-lrg">job opportunities</h2>
 </div>
 <div class="job-container">
 	 <?php $posts = get_posts( array(

@@ -464,6 +464,48 @@ table {
 .formulas:last-child .fill {
   display: none; }
 
+.blue-background-header {
+  height: auto;
+  width: 100%;
+  margin: 0 auto 0.75rem;
+  padding: 0.75rem 0.5rem;
+  background-color: #D9F1FF;
+  text-align: center;
+  line-height: 2.4rem; }
+  @media all and (min-width: 600px) {
+    .blue-background-header {
+      margin: 0 auto 1.5rem;
+      padding: 1rem 0.5rem;
+      line-height: 3.4rem; } }
+
+.subheader-sm {
+  max-width: 400px;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #323232;
+  line-height: 2.4rem;
+  text-transform: uppercase; }
+  @media all and (min-width: 600px) {
+    .subheader-sm {
+      max-width: none;
+      font-size: 2rem;
+      line-height: 3.4rem; } }
+
+.subheader-lrg {
+  max-width: 400px;
+  margin: 0 auto;
+  font-size: 2.15rem;
+  font-weight: 700;
+  color: #323232;
+  line-height: 2.4rem;
+  text-transform: uppercase; }
+  @media all and (min-width: 600px) {
+    .subheader-lrg {
+      max-width: none;
+      font-size: 3.2rem;
+      line-height: 3.4rem; } }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -965,14 +1007,6 @@ textarea {
     font-family: quattrocento, sans-serif;
     margin: 0; }
 
-.home h2 {
-  text-transform: uppercase;
-  font-size: 30px;
-  background-color: #D9F1FF;
-  padding: 20px 0;
-  font-weight: 700;
-  text-align: center; }
-
 .home .readmore {
   text-align: center;
   margin: 5rem 0; }
@@ -1325,19 +1359,6 @@ object {
 .page-id-21 .site-content {
   text-align: center; }
 
-.page-id-21 h2 {
-  font-size: 30px;
-  text-transform: uppercase;
-  font-weight: 700;
-  background-color: #D9F1FF;
-  padding: 10px 0;
-  text-align: center;
-  line-height: 50px; }
-  @media all and (min-width: 600px) {
-    .page-id-21 h2 {
-      font-size: 50px;
-      padding: 20px 0; } }
-
 .page-id-21 h3 {
   text-align: center;
   padding: 0 10px;
@@ -1655,63 +1676,36 @@ object {
       padding: 2.75rem 0.85rem;
       width: 60%; } }
 
-.blue-background {
-  position: relative;
-  height: auto;
-  width: 100%;
-  margin: 0 auto 0.75rem;
-  padding: 0.75rem 0.5rem;
-  background-color: #D9F1FF;
-  text-align: center;
-  line-height: 2.4rem; }
-  @media all and (min-width: 600px) {
-    .blue-background {
-      margin: 0 auto 1.5rem;
-      padding: 1rem 0.5rem;
-      line-height: 3.4rem; } }
-  .blue-background .our-team-header {
-    width: 300px;
-    margin: 0 auto;
-    color: #323232;
-    font-size: 2.5rem;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    position: relative; }
-    @media all and (min-width: 600px) {
-      .blue-background .our-team-header {
-        width: 100%;
-        font-size: 3.15rem; } }
-  .blue-background .staff-exit-button {
-    display: inline-block;
-    position: absolute;
-    top: 25%;
-    right: 5%;
-    height: 40px;
-    width: 40px;
-    font-size: 2.15rem;
-    font-weight: 100;
-    margin: 0 auto;
-    border: 3px solid #323232;
-    border-radius: 100%;
-    padding-top: 0.75rem;
-    padding-left: 0.05rem;
-    background: #FFF;
-    box-shadow: none;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: column nowrap;
-        flex-flow: column nowrap;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center; }
-    .blue-background .staff-exit-button:hover {
-      cursor: pointer;
-      color: #00A4FF;
-      border-color: #00A4FF; }
-    .blue-background .staff-exit-button:focus {
-      outline: none; }
+.staff-exit-button {
+  display: inline-block;
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  height: 40px;
+  width: 40px;
+  font-size: 2.15rem;
+  font-weight: 100;
+  margin: 0 auto;
+  border: 3px solid #323232;
+  border-radius: 100%;
+  padding-top: 0.75rem;
+  padding-left: 0.05rem;
+  background: #FFF;
+  box-shadow: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .staff-exit-button:hover {
+    cursor: pointer;
+    color: #00A4FF;
+    border-color: #00A4FF; }
+  .staff-exit-button:focus {
+    outline: none; }
 
 .enter-button,
 .exit-button {
@@ -2043,17 +2037,6 @@ object {
         text-align: center; } }
   .page-id-19 .entry-header {
     display: none; }
-  .page-id-19 h2 {
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-    background-color: #D9F1FF;
-    padding: 30px 0;
-    text-align: center; }
-    @media all and (min-width: 600px) {
-      .page-id-19 h2 {
-        font-size: 50px; } }
   .page-id-19 .load-more {
     margin-bottom: 80px;
     margin-top: 40px;
@@ -2255,37 +2238,11 @@ object {
       cursor: pointer; }
   .page-id-18 .infographic-container + .navigation-button {
     margin: 3rem auto 6rem; }
-  .page-id-18 .blue-background {
-    height: auto;
-    width: 100%;
-    margin: 0 auto 0.75rem;
-    padding: 0.75rem 0.5rem;
-    background-color: #D9F1FF;
-    text-align: center;
-    line-height: 2.4rem; }
+  .page-id-18 .supporters-header {
+    font-size: 1.55rem; }
     @media all and (min-width: 600px) {
-      .page-id-18 .blue-background {
-        margin: 0 auto 1.5rem;
-        padding: 1rem 0.5rem;
-        line-height: 3.4rem; } }
-    .page-id-18 .blue-background h2 {
-      max-width: 400px;
-      margin: 0 auto;
-      font-size: 2.15rem;
-      font-weight: 700;
-      color: #323232;
-      line-height: 2.4rem;
-      text-transform: uppercase; }
-      @media all and (min-width: 600px) {
-        .page-id-18 .blue-background h2 {
-          max-width: none;
-          font-size: 3.2rem;
-          line-height: 3.4rem; } }
-    .page-id-18 .blue-background .supporters-header {
-      font-size: 1.55rem; }
-      @media all and (min-width: 600px) {
-        .page-id-18 .blue-background .supporters-header {
-          font-size: 1.85rem; } }
+      .page-id-18 .supporters-header {
+        font-size: 1.85rem; } }
   .page-id-18 .content-container {
     padding: 0 1rem; }
     @media all and (min-width: 600px) {
@@ -2613,19 +2570,6 @@ object {
         margin: 2rem auto 1.5rem;
         padding: 1rem 0.5rem;
         line-height: 3.4rem; } }
-    .page-id-7 .blue-background h2 {
-      max-width: 400px;
-      margin: 0 auto;
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: #323232;
-      line-height: 2.4rem;
-      text-transform: uppercase; }
-      @media all and (min-width: 600px) {
-        .page-id-7 .blue-background h2 {
-          max-width: none;
-          font-size: 3.2rem;
-          line-height: 3.4rem; } }
     .page-id-7 .blue-background .supporters-header {
       font-size: 1.55rem; }
       @media all and (min-width: 600px) {
@@ -2902,41 +2846,14 @@ object {
 .page-id-195 .project-post {
   margin-bottom: 6rem; }
 
-.page-id-195 .proj-head {
-  background-color: #d9f1ff;
-  height: 90px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: center;
-      justify-content: center; }
+.page-id-195 .break {
+  display: none; }
   @media all and (min-width: 600px) {
-    .page-id-195 .proj-head {
-      -ms-flex-direction: row;
-          flex-direction: row;
-      -ms-flex-align: center;
-          align-items: center; } }
-  .page-id-195 .proj-head p {
-    margin: 0; }
-    @media all and (min-width: 600px) {
-      .page-id-195 .proj-head p {
-        font-size: 1.5rem; } }
-  .page-id-195 .proj-head .name {
-    font-size: 1.5rem;
-    font-family: muli;
-    font-weight: 700;
-    color: #323232; }
-  .page-id-195 .proj-head .status {
-    text-transform: uppercase; }
-  .page-id-195 .proj-head .break {
-    display: none; }
-    @media all and (min-width: 600px) {
-      .page-id-195 .proj-head .break {
-        display: initial;
-        font-size: 1.5rem;
-        font-weight: 500;
-        margin: 0 0.5rem; } }
+    .page-id-195 .break {
+      display: initial;
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin: 0 0.5rem; } }
 
 .page-id-195 .img-container {
   margin: 2rem 2rem 3rem; }
@@ -2956,10 +2873,6 @@ object {
   border: 2px solid black;
   padding: 1rem 4rem;
   text-transform: uppercase; }
-
-.single-projects h2 {
-  font-weight: 700;
-  color: #323232; }
 
 .single-projects h3,
 .single-projects p {
@@ -2986,18 +2899,6 @@ object {
   font-family: quattrocento, sans-serif;
   font-weight: 700;
   font-size: 1.3rem;
-  text-transform: uppercase; }
-
-.single-projects .content-head {
-  background-color: #d9f1ff;
-  height: 70px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  margin: 2rem 0;
   text-transform: uppercase; }
 
 .single-projects .proj-content {
@@ -3120,18 +3021,6 @@ object {
 
 .single-projects .other-post-gallery {
   margin: 2rem 0 3rem; }
-
-.single-projects .other-proj {
-  background-color: #d9f1ff;
-  height: 70px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  margin: 2rem 0;
-  text-transform: uppercase; }
 
 .single-projects .other-proj-wrapper {
   width: 85%;

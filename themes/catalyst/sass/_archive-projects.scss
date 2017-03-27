@@ -16,39 +16,13 @@
     .project-post {
         margin-bottom: 6rem;
     }
-    .proj-head {
-        background-color: #d9f1ff;
-        height: 90px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .break {
+        display: none;
         @include media($desktop-width) {
-            flex-direction: row;
-            align-items: center;
-        }
-        p {
-            margin: 0;
-            @include media($desktop-width){
-                font-size: 1.5rem;
-            }
-        }
-        .name {
+            display: initial;
             font-size: 1.5rem;
-            font-family: muli;
-            font-weight: 700;
-            color: $color__header-main;
-        }
-        .status {
-            text-transform: uppercase;
-        }
-        .break {
-            display: none;
-            @include media($desktop-width) {
-                display: initial;
-                font-size: 1.5rem;
-                font-weight: 500;
-                margin: 0 0.5rem;
-            }
+            font-weight: 500;
+            margin: 0 0.5rem;
         }
     }
     .img-container {

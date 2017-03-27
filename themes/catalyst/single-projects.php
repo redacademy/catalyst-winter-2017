@@ -19,8 +19,8 @@
                 </div>
             </div>
 
-            <div class="content-head">
-                <h2>Project details</h2>
+            <div class="blue-background-header">
+                <h2 class='subheader-sm'>Project details</h2>
             </div>
 
             <div class="proj-content">
@@ -41,8 +41,8 @@
     </section>
     <section>
         <div>
-            <div class="content-head">
-                <h2>Architectural design</h2>
+            <div class="blue-background-header">
+                <h2 class='subheader-sm'>Architectural design</h2>
             </div>
         </div>
         <div class="img-carousel">
@@ -72,8 +72,8 @@
         <?php endwhile; wp_reset_postdata(); ?>
     </section>
     <section>
-        <div class="other-proj">
-            <h2>Other Projects</h2>
+        <div class="blue-background-header">
+            <h2 class='subheader-sm'>Other Projects</h2>
         </div>
         <?php get_template_part( 'template-parts/projects-carousel', 'projects carousel' ); ?>
     </section>

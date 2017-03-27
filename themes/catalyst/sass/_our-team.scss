@@ -17,23 +17,6 @@
     @include intro-copy;
 }
 
-.blue-background {
-    position: relative;
-    @include blue-background-header;
-    .our-team-header {
-        width: 300px;
-        margin: 0 auto;
-        color: $color__header-main;
-        font-size: 2.5rem;
-        font-weight: $font__bold;
-        text-align: center;
-        text-transform: uppercase;
-        position: relative;
-        @include media($desktop-width) {
-            width: 100%;
-            font-size: 3.15rem;
-        }
-    }
     // Exit button for staff profile popouts.
     .staff-exit-button {
         display: inline-block;
@@ -42,7 +25,6 @@
         right: 5%;
         @include exit-popout-button(40px, #FFF);
     }
-}
 
 // Buttons
 .enter-button,
