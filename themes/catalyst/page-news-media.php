@@ -20,9 +20,7 @@ get_header(); ?>
         <div class="video"><?php echo $video; ?></div>
         <?php endif; ?>
 
-<div class="blue-background">
-    <h2 class="subheader-sm">link to other stories</h2>
-</div>
+<h2>link to other stories</h2>
 <div class="newsmedia-content">
     <?php get_sidebar(); ?>
     <div class="newsmedia-article">
@@ -54,7 +52,7 @@ get_header(); ?>
     </div>
 </div>
 
-        <a class="navigation-button" href=''>load more</a>
+        <div class="load-more"><a class="load-more-button">load more</a></div>
         </main> <!--#main -->
     </div> <!--#primary -->
 

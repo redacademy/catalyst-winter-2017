@@ -4,39 +4,72 @@
 	font-size: $sizeValue * 1rem;
 }
 
-// Text decoration
+// Text decoration 
+
 @mixin header-text-shadow {
 	text-shadow: 1px 2px 5px $color__header-main;
 }
 
 // Headings and boilerplate copy
 
-@mixin header-text {
-	max-width: 900px;
-	color: white;
-	padding: 0 2rem;
-	line-height: 1;
-}
-
 @mixin page-title {
 	font-size: 3.15rem;
-	font-weight: $font__bold;
+	color: white;
+	text-align: center;
 	text-transform: uppercase;
 	@include header-text-shadow;
 	@include media($desktop-width) {
-		margin-bottom: 1rem;
+		margin: 0 0 1.5rem;
 		font-size: 3.85rem;
 	}
 }
+
 @mixin banner-text {
 	font-size: 1.35rem;
-    font-family: $font__secondary;
-    font-weight: $font__bold;
-
+	font-weight: 300;
+	color: white;
+	width: 100%;
 	margin: $base__space-unit auto;
+	text-align: center;
+	line-height: 2rem;
 	letter-spacing: 2px;
-	margin: 0;
 	@include header-text-shadow;
+	@include media($desktop-width) {
+		width: 750px;
+		margin: 2% auto;
+	}
+}
+
+@mixin banner-text-fp {
+	font-size: 1.5rem;
+	color: white;
+	width: 380px;
+	text-align: center;
+	line-height: 2rem;
+	letter-spacing: 2px;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	position: absolute;
+	@include header-text-shadow;
+	@include media($desktop-width) {
+		width: 750px;
+	}
+}
+
+@mixin blue-background-header {
+	height: auto;
+	width: 100%;
+	margin: 0 auto 0.75rem;
+	padding: 0.75rem 0.5rem;
+	background-color: $color__brand-blue;
+	text-align: center;
+	line-height: 2.4rem;
+	@include media($desktop-width) {
+		margin: 0 auto 1.5rem;
+		padding: 1rem 0.5rem;
+		line-height: 3.4rem;
+	}
 }
 
 @mixin intro-copy {
@@ -45,7 +78,7 @@
 	margin: 0 auto;
 	padding: 2rem 0.85rem;
 	font-size: 1.25rem;
-	font-family: $font__secondary;
+	font-weight: 100;
 	text-align: center;
 	@include media($desktop-width) {
 		padding: 2.75rem 0.85rem;
@@ -58,7 +91,7 @@
 	width: 100%;
 	margin: 0 auto;
 	padding: 0.55rem 0;
-	font-family: $font__secondary;
+	font-weight: 100;
 	text-align: center;
 	@include media($desktop-width) {
 		width: 75%;
@@ -85,19 +118,20 @@
 		&:last-child .fill {
 			display: none;
 		}
-		@include media ($desktop-width) {
+		@include media ($desktop-width){
 			display: flex;
 		}
 		&:after {
 			content: 'flickity';
 			display: none;
-			@include media($desktop-width) {
+			@include media($desktop-width){
 				content: '';
 			}
 		}
 		@content;
-	}
+    }
 }
+
 
 
 /* Layouts*/
@@ -121,33 +155,33 @@
 	justify-content: $justify-content;
 	align-items: $align-items;
 }
-
 @mixin grayscale-image {
 	filter: grayscale(100%) invert(60%);
 }
 
 // Buttons
+
 @mixin navigation-button($font-color: $color__header-main) {
-	height: 70px;
-	width: 250px;
+	height: 76px;
+	width: 300px;
 	margin: 2rem auto;
 	border: 2px solid $font-color;
 	font-size: 1.35rem;
 	color: $font-color;
-	font-weight: $font__bold;
 	text-transform: uppercase;
 	text-decoration: none;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	&:hover {
-		border: 2px solid $color__brand-blue;
-		box-shadow: 0px 2px 5px $color__header-main;
+	@include media($desktop-width) {
+		height: 70px;
+		width: 260px;
+		border-width: 3px;
 	}
-	&:active {
-		background: $color__brand-blue;
-		border: 2px solid white;
-		cursor: pointer;
+
+	&:hover {
+			background: $color__brand-blue;
+			cursor: pointer;
 	}
 }
 
@@ -163,11 +197,13 @@
 	background: $background;
 	box-shadow: none;
 	@include flex-column(nowrap, center, center);
+
 	&:hover {
 		cursor: pointer;
 		color: $color__menu-hover;
 		border-color: $color__menu-hover;
 	}
+
 	&:focus {
 		outline: none;
 	}
@@ -186,19 +222,24 @@
 	background: $background;
 	box-shadow: none;
 	@include flex-column(nowrap, center, center);
+
 	&:hover {
 		cursor: pointer;
 		color: $color__menu-hover;
 		border-color: $color__menu-hover;
 	}
+
 	&:focus {
 		outline: none;
 	}
 }
 
-// Media Queries
+
+
+// Media Queries 
+
 @mixin media($width) {
-	@media all and (min-width: $width) {
-		@content;
-	}
+  @media all and (min-width: $width) {
+    @content;
+  }
 }

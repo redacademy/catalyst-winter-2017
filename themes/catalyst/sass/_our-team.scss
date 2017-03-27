@@ -5,9 +5,6 @@
         font-size: $font__desktop-size;
         line-height: $line-height-desktop;
     }
-    .header-text {
-        @include header-text;
-    }
     .entry-title {
         @include page-title;
     }
@@ -20,6 +17,23 @@
     @include intro-copy;
 }
 
+.blue-background {
+    position: relative;
+    @include blue-background-header;
+    .our-team-header {
+        width: 300px;
+        margin: 0 auto;
+        color: $color__header-main;
+        font-size: 2.5rem;
+        font-weight: 400;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        @include media($desktop-width) {
+            width: 100%;
+            font-size: 3.15rem;
+        }
+    }
     // Exit button for staff profile popouts.
     .staff-exit-button {
         display: inline-block;
@@ -27,12 +41,8 @@
         top: 25%;
         right: 5%;
         @include exit-popout-button(40px, #FFF);
-
-        span {
-            position: relative;
-            bottom: 2px;
-        }
     }
+}
 
 // Buttons
 .enter-button,
@@ -69,114 +79,33 @@
         width: 0;
         padding-top: 3rem;
         background: $color__brand-blue;
-        font-weight: 200;
         opacity: 0;
         overflow: hidden;
         transition: opacity 0.7s ease;
-
-        a {
-            color: $color__text-main;
-            font-weight: bold;
-            text-decoration: none;
-
-            &:hover {
-                color: $color__menu-active;
-            }
-        }
-
-        .center-column {
-            @include flex-column(nowrap, flex-start, center);
-            margin: 0 auto;
-
-            img {
-                width: 400px;
-            }
-        }
-
         .left-column {
-            width: 40%;
-            margin-right: 10%;
-            float: left;
             @include flex-column(nowrap, center, center);
             img {
-                width: 225px;
+                width: 215px;
                 @include media($desktop-width) {
                     width: 95%;
                 }
             }
-
-            .quote {
-                margin-bottom: 2.5rem;
-                font-size: 2.25rem;
-                line-height: 2.5rem;
-                text-align: center;
-            }
-        }
-
-        h3 {
-            display: inline;
-        }
-
-        article {
-            font-size: 1.15rem;
-            line-height: 1.5rem;
-            display: inline;
-
-            p:nth-last-of-type(2), h4 {
-                max-width: 50%;
-                float: right;
-            }
-
-            p:nth-last-of-type(2) {
-                margin-bottom: 0;
-                padding: $base__space-unit;
-                background: white;
-            }
-
-            h4 {
-                margin-top: 0;
-                padding: $base__space-unit;
-                background: white;
-                clear: right;
-
-                & + p {
-                    clear: both;
-                }
-            }
-
-
-            ul {
-                margin: 0;
-                padding: 0;
-                list-style: none;
-
-                & li::before {
-                    content: "-";
-                    margin-right: 0.5rem;
-                    display: inline;
-                }
-
-            }
         }
     }
     // Toggle-able classes for hiding and showing team member profiles, and greying-out content.
-
-    .translucent {
-        opacity: 0.5;
-    }
-
     .show-popout {
         height: 100%;
         width: 100%;
-        padding: 7% 7%;
         @include flex-column(nowrap, center, center);
         opacity: 1;
     }
-
+    .translucent {
+        opacity: 0.5;
+    }
     .small-header {
         margin: 2rem auto 1rem;
         font-size: 2rem;
-        font-weight: $font__bold;
+        font-weight: 400;
         text-align: center;
         text-transform: uppercase;
         @include media($desktop-width) {
@@ -187,7 +116,7 @@
     .board-profiles-header {
         height: auto;
         width: 100%;
-        margin: 2rem auto 2.5rem;
+        margin: 2 auto 1rem;
         position: relative;
         @include flex-row(nowrap, center, center);
         .small-header {
@@ -200,13 +129,6 @@
             position: absolute;
             top: 18%;
             right: 5%;
-
-            span {
-                position: relative;
-                bottom: 2px;
-                right: 1px;
-                font-size: 2.05rem;
-            }
         }
     }
     // Profile preview styles
@@ -222,7 +144,7 @@
         text-align: center;
         position: relative;
         @include media($desktop-width) {
-            width: 30%;
+            width: 24%;
         }
         .profile-image {
             width: 215px;
@@ -237,15 +159,13 @@
         .name {
             margin: 0.25rem auto;
             font-size: 1.55rem;
-            font-weight: $font__bold;
+            font-weight: 600;
         }
         .job-title {
             max-width: 235px;
             margin: 0.25rem auto;
             font-size: 1.4rem;
             text-align: center;
-            font-weight: $font__semibold;
-            font-style: italic;
         }
     }
 }
@@ -259,8 +179,8 @@
         margin: 1.25rem auto;
         position: relative;
         @include flex-column(nowrap, center, center);
-        @include media(1350px) {
-            width: 20%;
+        @include media(1000px) {
+            width: 14%;
         }
         .name {
             margin: 0 auto;
@@ -271,6 +191,10 @@
         }
         &:nth-child(4) .job-title {
             width: 265px;
+            @include media($desktop-width) {
+                position: absolute;
+                left: -50%;
+            }
         }
     }
     .navigation-button-container {
