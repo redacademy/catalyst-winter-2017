@@ -6,27 +6,20 @@
         font-size: $font__desktop-size;
         line-height: $line-height-desktop;
     }
-
-        .banner-title {
-            @include page-title;
-        }
-        .banner-text {
-            @include banner-text;
-        }
-        .banner-text-small {
-            font-size: 1rem;
-            color: white;
-            width: 380px;
-            margin: 0 auto;
-            text-align: center;
-            line-height: 2rem;
-            letter-spacing: 2px;
-            @include header-text-shadow;
-            @include media($desktop-width) {
-                width: 750px;
-                margin: 2% auto;
-            }
-        }
+    .header-text {
+        @include header-text;
+    }
+    .entry-title {
+        @include page-title;
+    }
+    .banner-text {
+        @include banner-text;
+    }
+    .banner-text-small {
+        font-size: 1rem;
+        letter-spacing: 2px;
+        @include header-text-shadow;
+    }
     
     .blue-background {
         height: auto;
@@ -41,20 +34,6 @@
             padding: 1rem 0.5rem;
             line-height: 3.4rem;
         }
-        h2 {
-            max-width: 400px;
-            margin: 0 auto;
-            font-size: 1.4rem;
-            font-weight: 400;
-            color: $color__header-main;
-            line-height: 2.4rem;
-            text-transform: uppercase;
-            @include media($desktop-width) {
-                max-width: none;
-                font-size: 3.2rem;
-                line-height: 3.4rem;
-            }
-        }
 
         .supporters-header {
             font-size: 1.55rem;
@@ -65,6 +44,7 @@
     }
     .wpcf7 {
         padding: 3%;
+        font-family: $font__secondary;
         form {
             margin: 0 auto;
             background-color: $color__brand-blue;
@@ -162,6 +142,8 @@
         }
         .wpcf7-submit {
             width: 200px;
+            font-family: $font__main;
+            font-weight: $font__bold;
             background-color: #fff;
             border: 1px solid #000;
             font-size: 1rem;

@@ -1,68 +1,26 @@
 .page-id-19 {
     margin: 0 auto;
     .entry-content {
-        text-align: center;
+        // text-align: left;
+        p {
+            font-weight: $font__light;
+        }
     }
     .header-text {
-        position: absolute;
-        padding: 15% 0 15%;
-        left: 0;
-        @include flex-column(nowrap, center, center);
-        @include media($desktop-width) {
-            position: initial;
-        }
+        @include header-text;
     }
     .entry-title {
-        margin: auto;
-        width: 202px;
-        line-height: 54px;
         @include page-title;
-        @include media($desktop-width) {
-            position: initial;
-            margin: 0;
-            width: 100%;
-        }
     }
     .banner-text {
-        width: 250px;
         @include banner-text;
-        @include media($desktop-width) {
-            width: 100%;
-            position: initial;
-            font-size: 30px;
-            text-align: center;
-        }
     }
     .entry-header {
         display: none;
     }
-    h2 {
-        margin-bottom: 20px;
-        font-size: 30px;
-        font-weight: 400;
-        text-transform: uppercase;
-        background-color: $color__brand-blue;
-        padding: 30px 0;
-        text-align: center;
-        @include media($desktop-width) {
-            font-size: 50px;
-        }
-    }
-    .load-more {
-        margin-bottom: 80px;
-        margin-top: 40px;
-        text-align: center;
-        a {
-            padding: 30px 80px;
-            text-transform: uppercase;
-            border: 3px solid black;
-            text-decoration: none;
-            color: black;
-            &:hover {
-                border: 3px solid #8ED7FF;
-                box-shadow: 1px 1px 5px $color__header-main;
-            }
-        }
+
+    .navigation-button {
+        @include navigation-button();
     }
     .newsmedia-content {
         .widget-area {
@@ -91,29 +49,29 @@
             margin: 10px 0;
         }
         .article-thumb {
+            height: 235px;
             width: 100%;
             overflow: hidden;
             img {
+                height: auto;
+                min-width: 100%;
                 max-width: 105%;
             }
         }
         .news {
             display: none;
         }
-        .news:first-child {
-            width: 100%;
-            display: block;
-        }
         @include media($desktop-width) {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            @include flex-row(wrap, space-around);
             .news {
+                height: auto;
+                // min-height: 390px;
                 width: 48%;
                 display: block;
             }
             .news:nth-child(5n + 1) {
-                width: 100%;
+                width: 98%;
+                display: block;
             }
         }
         .article-content {
@@ -126,9 +84,10 @@
             }
             h3 {
                 margin: 8px 0;
+                font-family: $font__bold;
             }
         }
-        #post-19 {
+        .hentry {
             font-size: 14px;
             p {
                 text-align: left;
@@ -139,9 +98,11 @@
         }
         .date {
             font-size: 12px;
+            font-weight: $font__light;
         }
         .cfs-hyperlink {
             color: $color__text-main;
+            font-weight: $font__bold;
             text-decoration: none;
             text-transform: uppercase;
             padding: 5px 15px;
@@ -169,13 +130,16 @@
         background: $color__brand-blue;
         padding: 20px;
     }
+    .tweet_data, .times{
+            padding: 0 60px;
+    }
     .tweet-actions a {
         padding: 5px;
         background-color: lightgrey;
         border-radius: 20px;
     }
-    .tweets-intent-data {
-        border: none;
+    .light .tweets-intent-data{
+        border-top: none;
     }
     .video {
         text-align: center;

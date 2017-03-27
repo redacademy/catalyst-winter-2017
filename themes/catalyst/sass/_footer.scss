@@ -43,7 +43,7 @@
     }
     #text-2 {
         p {
-            font-weight: bold;
+            font-weight: $font__bold;
             font-size: 14px;
             padding-left: 18px;
             @include media($desktop-width) {
@@ -56,6 +56,11 @@
     }
     #text-3{
         margin-top: 5px;
+        font-family: $font__secondary;
+    }
+    #text-4{
+        font-family: $font__secondary;
+        font-style: italic;
     }
     .sns-icon {
         display: flex;
@@ -125,7 +130,7 @@
         }
         a {
             text-decoration: none;
-            font-weight: 500;
+            font-weight: $font__semibold;
             color: $color__text-main;
             padding: 0 20px;
             &:hover {

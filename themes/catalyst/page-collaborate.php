@@ -14,11 +14,11 @@ get_header(); ?>
 <?php get_template_part( 'template-parts/hero-banner'); ?>
 
 		<div class="blue-background">
-			<h2 class="subheader">Non-Profit Partners &amp; Investors</h2>
+			<h2 class="subheader-lrg">Non-Profit Partners &amp; Investors</h2>
 		</div>
 
 		<div class="content-container">
-			<p class="main-copy"><?php echo CFS()->get( 'main_copy' ); ?></p>
+			<p class="main-copy"><?php echo esc_html(  CFS()->get( 'main_copy' ) ); ?></p>
 
 			<a class="navigation-button" href="#">Learn More</a>
 
@@ -26,34 +26,48 @@ get_header(); ?>
 				<section class="non-profit-information partners-information">
 					<h3 class="small-header">Non-Profit</h3>
 					<ul class="collaborate-dashed-list">
-						<h4 class="small-subheader"><?php echo CFS()->get( 'partners_requirements_header' ); ?></h4>
-						<li><span class="hyphen">- </span><?php echo CFS()->get( 'partners_requirement_1' ); ?></li>
-						<li><span class="hyphen">- </span><?php echo CFS()->get( 'partners_requirement_2' ); ?></li>
-						<li><span class="hyphen">- </span><?php echo CFS()->get( 'partners_requirement_3' ); ?></li>
-						<h4 class="small-subheader"><?php echo CFS()->get( 'partners_benefits_header' ); ?></h4>
-						<li><span class="hyphen">- </span><?php echo CFS()->get( 'partners_benefit_1' ); ?></li>
-						<li><span class="hyphen">- </span><?php echo CFS()->get( 'partners_benefit_2' ); ?></li>
-						<li><span class="hyphen">- </span><?php echo CFS()->get( 'partners_benefit_3' ); ?></li>
-						<li><span class="hyphen">- </span><?php echo CFS()->get( 'partners_benefit_4' ); ?></li>
+						<h4 class="small-subheader"><?php echo esc_html( CFS()->get( 'partners_requirements_header' ) ); ?></h4>
+						<li><span class="hyphen">- </span><?php echo esc_html( CFS()->get( 'partners_requirement_1' ) ); ?></li>
+						<li><span class="hyphen">- </span><?php echo esc_html( CFS()->get( 'partners_requirement_2' ) ); ?></li>
+						<li><span class="hyphen">- </span><?php echo esc_html( CFS()->get( 'partners_requirement_3' ) ); ?></li>
+						<h4 class="small-subheader"><?php echo esc_html( CFS()->get( 'partners_benefits_header' ) ); ?></h4>
+						<li><span class="hyphen">- </span><?php echo esc_html( CFS()->get( 'partners_benefit_1' ) ); ?></li>
+						<li><span class="hyphen">- </span><?php echo esc_html( CFS()->get( 'partners_benefit_2' ) ); ?></li>
+						<li><span class="hyphen">- </span><?php echo esc_html( CFS()->get( 'partners_benefit_3' ) ); ?></li>
+						<li><span class="hyphen">- </span><?php echo esc_html( CFS()->get( 'partners_benefit_4' ) ); ?></li>
 						<div class="key-graphic-1"></div>
-						<p class="partners-text"><?php echo CFS()->get( 'partners_copy' ) ?></p>
+						<?php $partners_copy_1 = CFS()->get( 'partners_copy_1' );
+						if ( !empty( $partners_copy_1 ) ) : ?>
+						<p class="partners-text"><?php echo $partners_copy_1; ?></p>
+						<?php endif; ?>
+						<?php $partners_copy_2 = CFS()->get( 'partners_copy_2' );
+						if ( !empty( $partners_copy_2 ) ) : ?>
+						<p class="partners-text partners-text-2"><?php echo $partners_copy_2; ?></p>
+						<?php endif; ?>
 						<div class="key-graphic-2"></div>
 					</ul>
 				</section>
 				<section class="investors-information partners-information">
 					<h3 class="small-header">Investors</h3>
 					<ul class="collaborate-dashed-list">
-						<h4 class="small-subheader"><?php echo CFS()->get( 'investors_requirements_header' ); ?></h4>
-						<li><span class="hyphen">- </span><?php echo CFS()->get( 'investors_requirement_1' ); ?></li>
-						<li><span class="hyphen">- </span><?php echo CFS()->get( 'investors_requirement_2' ); ?></li>
-						<li><span class="hyphen">- </span><?php echo CFS()->get( 'investors_requirement_3' ); ?></li>
+						<h4 class="small-subheader"><?php echo esc_html( CFS()->get( 'investors_requirements_header' ) ); ?></h4>
+						<li><span class="hyphen">- </span><?php echo esc_html( CFS()->get( 'investors_requirement_1' ) ); ?></li>
+						<li><span class="hyphen">- </span><?php echo esc_html( CFS()->get( 'investors_requirement_2' ) ); ?></li>
+						<li><span class="hyphen">- </span><?php echo esc_html( CFS()->get( 'investors_requirement_3' ) ); ?></li>
 						<h4 class="small-subheader">Your Return:</h4>
-						<li><span class="hyphen">- </span><?php echo CFS()->get( 'investors_benefit_1' ); ?></li>
-						<li><span class="hyphen">- </span><?php echo CFS()->get( 'investors_benefit_2' ); ?></li>
-						<li><span class="hyphen">- </span><?php echo CFS()->get( 'investors_benefit_3' ); ?></li>
-						<li><span class="hyphen">- </span><?php echo CFS()->get( 'investors_benefit_4' ); ?></li>
+						<li><span class="hyphen">- </span><?php echo esc_html( CFS()->get( 'investors_benefit_1' ) ); ?></li>
+						<li><span class="hyphen">- </span><?php echo esc_html( CFS()->get( 'investors_benefit_2' ) ); ?></li>
+						<li><span class="hyphen">- </span><?php echo esc_html( CFS()->get( 'investors_benefit_3' ) ); ?></li>
+						<li><span class="hyphen">- </span><?php echo esc_html( CFS()->get( 'investors_benefit_4' ) ); ?></li>
 						<div class="dollar-sign-graphic-1"></div>
-						<p class="partners-text"><?php echo CFS()->get( 'investors_copy' ); ?></p>
+						<?php $investors_copy_1 = esc_html( CFS()->get( 'investors_copy_1' ) );
+						if ( !empty( $investors_copy_1 ) ) : ?>
+						<p class="partners-text"><?php echo $investors_copy_1; ?></p>
+						<?php endif; ?>
+						<?php $investors_copy_2 = esc_html( CFS()->get( 'investors_copy_2' ) );
+						if ( !empty( $investors_copy_2 ) ) : ?>
+						<p class="partners-text partners-text-2"><?php echo $investors_copy_2; ?></p>
+						<?php endif; ?>
 						<div class="dollar-sign-graphic-2"></div>
 					</ul>
 				</section>
@@ -65,7 +79,7 @@ get_header(); ?>
 		</div>
 		<a class="navigation-button" href="<?php echo get_home_url() ; ?>/contact">Contact Us</a>
 			<div class="blue-background">
-				<h2 class="subheader supporters-header">Our Supporters</h2>
+				<h2 class="subheader-sm supporters-header">Our Supporters</h2>
 			</div>
 		<div class="supporters-logo-container">
 			<?php

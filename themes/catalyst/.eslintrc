@@ -12,7 +12,8 @@
     "no-empty": 1,
     "quotes": [ 1, "single"],
     "no-global-assign": 1,
-    "no-unused-vars": 1
+    "no-unused-vars": 1,
+    "no-undef": 1
   },
   "globals": {
     "jQuery": false,

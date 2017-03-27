@@ -6,7 +6,7 @@
         line-height: $line-height-desktop;
     }
         .header-text {
-            margin: 0 auto;
+            @include header-text;
         }
 
         .entry-title {
@@ -33,31 +33,14 @@
         margin: 3rem auto 6rem;
     }
 
-    .blue-background {
-        @include blue-background-header;
 
-        h2 {
-            max-width: 400px;
-            margin: 0 auto;
-            font-size: 2.15rem;
-            font-weight: 400;
-            color: $color__header-main;
-            line-height: 2.4rem;
-            text-transform: uppercase;
-            @include media($desktop-width) {
-                max-width: none;
-                font-size: 3.2rem;
-                line-height: 3.4rem;
-            }
-        }
-
-        .supporters-header {
-            font-size: 1.55rem;
-            @include media($desktop-width) {
-                font-size: 1.85rem;
-            }
+    .supporters-header {
+        font-size: 1.55rem;
+        @include media($desktop-width) {
+            font-size: 1.85rem;
         }
     }
+
 
    .content-container {
        padding: 0 1rem;
@@ -81,7 +64,7 @@
                 margin-top: 4rem;
                 margin-bottom: 1.25rem;
                 font-size: 1.75rem;
-                font-weight: 400;
+                font-weight: $font__bold;
                 color: $color__text-main;
                 text-align: center;
                 text-transform: uppercase;
@@ -100,7 +83,7 @@
             .small-subheader {
                 margin: 0.5rem 0 1.5rem;
                 font-size: 1.1rem;
-                font-weight: 400;
+                font-weight: $font__bold;
                 text-transform: uppercase;
                 @include media($desktop-width) {
                     font-size: 1.45rem;
@@ -109,6 +92,7 @@
             }
 
             .collaborate-dashed-list {
+                font-family: $font__secondary;
                 margin: 0 0 2rem;
                 padding-left: 0.75rem;
                 list-style-type: none;
@@ -123,14 +107,13 @@
 
                 li {
                     margin: 1.5rem 0;
-                    font-weight: 100;
                     @include flex-row(nowrap, flex-start, baseline);
 
                     .hyphen {
                         height: 100%;
                         padding-right: 0.5rem;
                         font-size: 0.85rem;
-                        font-weight: bold;
+                        font-weight: $font__bold;
                         position: relative;
                         bottom: 0.2rem;
                     }
@@ -208,7 +191,7 @@
             .partners-text {
                 height: auto;
                 width: 100%;
-                margin: 0 auto;
+                margin: $base__space-unit auto;
                 font-weight: 100;
                 text-align: center;
                 @include media ($desktop-width) {
@@ -216,6 +199,11 @@
                     padding: 2rem 0 0;
                     transform: translateX(-1rem);
                 }
+            }
+
+            .partners-text-2 {
+                margin-top: $base__space-unit;
+                padding-top: 0;
             }
         }
     }
