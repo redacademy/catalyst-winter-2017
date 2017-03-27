@@ -24,9 +24,7 @@ get_header(); ?>
 			<?php get_sidebar(); ?>
 			<div class="newsmedia-article">
 				<?php while ( have_posts() ) : the_post(); ?>
-				<div class="<?php echo $newsmedia->ID ?>">
 					<?php get_template_part( 'template-parts/content', 'newsmedia'); ?>
-				</div>
 				<?php endwhile; ?>
 			</div>
 		</div>
