@@ -4,19 +4,20 @@
 	font-size: $sizeValue * 1rem;
 }
 
-// Text decoration 
-
+// Text decoration
 @mixin header-text-shadow {
 	text-shadow: 1px 2px 5px $color__header-main;
 }
 
 // Headings and boilerplate copy
+
 @mixin header-text {
 	max-width: 900px;
 	color: white;
 	padding: 0 2rem;
 	line-height: 1;
 }
+
 @mixin page-title {
 	font-size: 3.15rem;
 	font-weight: $font__bold;
@@ -31,6 +32,7 @@
 	font-size: 1.35rem;
     font-family: $font__secondary;
     font-weight: $font__bold;
+
 	margin: $base__space-unit auto;
 	letter-spacing: 2px;
 	margin: 0;
@@ -83,20 +85,19 @@
 		&:last-child .fill {
 			display: none;
 		}
-		@include media ($desktop-width){
+		@include media ($desktop-width) {
 			display: flex;
 		}
 		&:after {
 			content: 'flickity';
 			display: none;
-			@include media($desktop-width){
+			@include media($desktop-width) {
 				content: '';
 			}
 		}
 		@content;
-    }
+	}
 }
-
 
 
 /* Layouts*/
@@ -120,15 +121,15 @@
 	justify-content: $justify-content;
 	align-items: $align-items;
 }
+
 @mixin grayscale-image {
 	filter: grayscale(100%) invert(60%);
 }
 
 // Buttons
-
 @mixin navigation-button($font-color: $color__header-main) {
 	height: 70px;
-	width: 300px;
+	width: 250px;
 	margin: 2rem auto;
 	border: 2px solid $font-color;
 	font-size: 1.35rem;
@@ -139,10 +140,14 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 	&:hover {
-			background: $color__brand-blue;
-			cursor: pointer;
+		border: 2px solid $color__brand-blue;
+		box-shadow: 0px 2px 5px $color__header-main;
+	}
+	&:active {
+		background: $color__brand-blue;
+		border: 2px solid white;
+		cursor: pointer;
 	}
 }
 
@@ -158,13 +163,11 @@
 	background: $background;
 	box-shadow: none;
 	@include flex-column(nowrap, center, center);
-
 	&:hover {
 		cursor: pointer;
 		color: $color__menu-hover;
 		border-color: $color__menu-hover;
 	}
-
 	&:focus {
 		outline: none;
 	}
@@ -183,24 +186,19 @@
 	background: $background;
 	box-shadow: none;
 	@include flex-column(nowrap, center, center);
-
 	&:hover {
 		cursor: pointer;
 		color: $color__menu-hover;
 		border-color: $color__menu-hover;
 	}
-
 	&:focus {
 		outline: none;
 	}
 }
 
-
-
-// Media Queries 
-
+// Media Queries
 @mixin media($width) {
-  @media all and (min-width: $width) {
-    @content;
-  }
+	@media all and (min-width: $width) {
+		@content;
+	}
 }

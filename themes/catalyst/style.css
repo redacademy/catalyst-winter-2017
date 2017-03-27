@@ -1002,7 +1002,7 @@ textarea {
 
 .home .navigation-button {
   height: 70px;
-  width: 300px;
+  width: 250px;
   margin: 2rem auto;
   border: 2px solid #323232;
   font-size: 1.35rem;
@@ -1017,7 +1017,11 @@ textarea {
   -ms-flex-align: center;
       align-items: center; }
   .home .navigation-button:hover {
+    border: 2px solid #D9F1FF;
+    box-shadow: 0px 2px 5px #323232; }
+  .home .navigation-button:active {
     background: #D9F1FF;
+    border: 2px solid white;
     cursor: pointer; }
 
 .home .catalyst-formula-copy,
@@ -1379,7 +1383,7 @@ object {
 
 .page-id-21 .navigation-button {
   height: 70px;
-  width: 300px;
+  width: 250px;
   margin: 2rem auto;
   border: 2px solid #323232;
   font-size: 1.35rem;
@@ -1394,7 +1398,11 @@ object {
   -ms-flex-align: center;
       align-items: center; }
   .page-id-21 .navigation-button:hover {
+    border: 2px solid #D9F1FF;
+    box-shadow: 0px 2px 5px #323232; }
+  .page-id-21 .navigation-button:active {
     background: #D9F1FF;
+    border: 2px solid white;
     cursor: pointer; }
 
 .page-id-21 .download {
@@ -1521,8 +1529,6 @@ object {
   margin: 0; }
   .page-id-21 .rent .rent-title {
     margin: 0; }
-  .page-id-21 .rent img {
-    margin-bottom: 50px; }
 
 .page-id-21 .mission-text {
   margin: 0 auto;
@@ -1964,7 +1970,7 @@ object {
     .board-profiles-wrapper .navigation-button-container .navigation-button,
     .advisors-profiles-wrapper .navigation-button-container .navigation-button {
       height: 70px;
-      width: 300px;
+      width: 250px;
       margin: 2rem auto;
       border: 2px solid #323232;
       font-size: 1.35rem;
@@ -1981,7 +1987,13 @@ object {
       .staff-profiles-wrapper .navigation-button-container .navigation-button:hover,
       .board-profiles-wrapper .navigation-button-container .navigation-button:hover,
       .advisors-profiles-wrapper .navigation-button-container .navigation-button:hover {
+        border: 2px solid #D9F1FF;
+        box-shadow: 0px 2px 5px #323232; }
+      .staff-profiles-wrapper .navigation-button-container .navigation-button:active,
+      .board-profiles-wrapper .navigation-button-container .navigation-button:active,
+      .advisors-profiles-wrapper .navigation-button-container .navigation-button:active {
         background: #D9F1FF;
+        border: 2px solid white;
         cursor: pointer; }
   .staff-profiles-wrapper .profile-preview,
   .board-profiles-wrapper .profile-preview,
@@ -2085,7 +2097,7 @@ object {
     display: none; }
   .page-id-19 .navigation-button {
     height: 70px;
-    width: 300px;
+    width: 250px;
     margin: 2rem auto;
     border: 2px solid #323232;
     font-size: 1.35rem;
@@ -2100,7 +2112,11 @@ object {
     -ms-flex-align: center;
         align-items: center; }
     .page-id-19 .navigation-button:hover {
+      border: 2px solid #D9F1FF;
+      box-shadow: 0px 2px 5px #323232; }
+    .page-id-19 .navigation-button:active {
       background: #D9F1FF;
+      border: 2px solid white;
       cursor: pointer; }
   .page-id-19 .newsmedia-content .widget-area {
     margin-top: 10px;
@@ -2260,7 +2276,7 @@ object {
         padding: 0.75rem auto; } }
   .page-id-18 .navigation-button {
     height: 70px;
-    width: 300px;
+    width: 250px;
     margin: 2rem auto;
     border: 2px solid #323232;
     font-size: 1.35rem;
@@ -2275,7 +2291,11 @@ object {
     -ms-flex-align: center;
         align-items: center; }
     .page-id-18 .navigation-button:hover {
+      border: 2px solid #D9F1FF;
+      box-shadow: 0px 2px 5px #323232; }
+    .page-id-18 .navigation-button:active {
       background: #D9F1FF;
+      border: 2px solid white;
       cursor: pointer; }
   .page-id-18 .infographic-container + .navigation-button {
     margin: 3rem auto 6rem; }
@@ -2812,7 +2832,7 @@ object {
 
 .page-id-196 .navigation-button {
   height: 70px;
-  width: 300px;
+  width: 250px;
   margin: 2rem auto;
   border: 2px solid #323232;
   font-size: 1.35rem;
@@ -2827,7 +2847,11 @@ object {
   -ms-flex-align: center;
       align-items: center; }
   .page-id-196 .navigation-button:hover {
+    border: 2px solid #D9F1FF;
+    box-shadow: 0px 2px 5px #323232; }
+  .page-id-196 .navigation-button:active {
     background: #D9F1FF;
+    border: 2px solid white;
     cursor: pointer; }
 
 .page-id-195 .header-text {
@@ -2896,7 +2920,7 @@ object {
 
 .page-id-195 .navigation-button {
   height: 70px;
-  width: 300px;
+  width: 250px;
   margin: 2rem auto;
   border: 2px solid #323232;
   font-size: 1.35rem;
@@ -2911,7 +2935,11 @@ object {
   -ms-flex-align: center;
       align-items: center; }
   .page-id-195 .navigation-button:hover {
+    border: 2px solid #D9F1FF;
+    box-shadow: 0px 2px 5px #323232; }
+  .page-id-195 .navigation-button:active {
     background: #D9F1FF;
+    border: 2px solid white;
     cursor: pointer; }
 
 .single-projects h3,
@@ -3048,7 +3076,7 @@ object {
 
 .single-projects .navigation-button {
   height: 70px;
-  width: 300px;
+  width: 250px;
   margin: 2rem auto;
   border: 2px solid #323232;
   font-size: 1.35rem;
@@ -3063,7 +3091,11 @@ object {
   -ms-flex-align: center;
       align-items: center; }
   .single-projects .navigation-button:hover {
+    border: 2px solid #D9F1FF;
+    box-shadow: 0px 2px 5px #323232; }
+  .single-projects .navigation-button:active {
     background: #D9F1FF;
+    border: 2px solid white;
     cursor: pointer; }
 
 .single-projects .other-post-gallery {
