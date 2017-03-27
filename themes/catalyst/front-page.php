@@ -26,7 +26,7 @@
             <h2>our projects</h2>
             <p class="our-projects-copy"><?php echo CFS()->get( 'our_projects_copy' ); ?></p>
             <?php get_template_part( 'template-parts/projects-carousel', 'projects carousel' ); ?>
-             <div class="readmore"><a>view more projects</a></div>
+            <div class="readmore"><a>view more projects</a></div>
         </div>
 
         <div class="team">
