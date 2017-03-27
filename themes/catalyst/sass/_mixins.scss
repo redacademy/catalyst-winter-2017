@@ -104,16 +104,30 @@
 		margin-bottom: 2rem;
 		width: 100%;
 		.formulas {
-			width: 40%;
+			height: 270px;
+			width: 270px;
+			margin: 0 1rem;
 			display: block;
+
+			& div {
+				height: 100%;
+				display: flex;
+			}
 		}
 		.img {
 			vertical-align: middle;
 			width: 85%;
+			
+			&:last-child {
+				width: 77%;
+			}
 		}
 		.fill {
+			margin-left: 1.5rem;
 			vertical-align: middle;
-			width: 15%;
+			@include media($desktop-width) {
+				margin-left: 0.85rem;
+			}
 		}
 		&:last-child .fill {
 			display: none;

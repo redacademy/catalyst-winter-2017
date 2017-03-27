@@ -1039,14 +1039,25 @@ textarea {
   margin-bottom: 2rem;
   width: 100%; }
   .home .formula-carousel .formulas {
-    width: 40%;
+    height: 270px;
+    width: 270px;
+    margin: 0 1rem;
     display: block; }
+    .home .formula-carousel .formulas div {
+      height: 100%;
+      display: -ms-flexbox;
+      display: flex; }
   .home .formula-carousel .img {
     vertical-align: middle;
     width: 85%; }
+    .home .formula-carousel .img:last-child {
+      width: 77%; }
   .home .formula-carousel .fill {
-    vertical-align: middle;
-    width: 15%; }
+    margin-left: 1.5rem;
+    vertical-align: middle; }
+    @media all and (min-width: 760px) {
+      .home .formula-carousel .fill {
+        margin-left: 0.85rem; } }
   .home .formula-carousel:last-child .fill {
     display: none; }
   @media all and (min-width: 760px) {
@@ -1484,14 +1495,25 @@ object {
   margin-bottom: 2rem;
   width: 100%; }
   .page-id-21 .formula-carousel .formulas {
-    width: 40%;
+    height: 270px;
+    width: 270px;
+    margin: 0 1rem;
     display: block; }
+    .page-id-21 .formula-carousel .formulas div {
+      height: 100%;
+      display: -ms-flexbox;
+      display: flex; }
   .page-id-21 .formula-carousel .img {
     vertical-align: middle;
     width: 85%; }
+    .page-id-21 .formula-carousel .img:last-child {
+      width: 77%; }
   .page-id-21 .formula-carousel .fill {
-    vertical-align: middle;
-    width: 15%; }
+    margin-left: 1.5rem;
+    vertical-align: middle; }
+    @media all and (min-width: 760px) {
+      .page-id-21 .formula-carousel .fill {
+        margin-left: 0.85rem; } }
   .page-id-21 .formula-carousel:last-child .fill {
     display: none; }
   @media all and (min-width: 760px) {
@@ -2408,7 +2430,7 @@ object {
     .page-id-18 .content-container .partners-information-container .partners-text {
       height: auto;
       width: 100%;
-      margin: 0 auto;
+      margin: 1.5rem auto;
       font-weight: 100;
       text-align: center; }
       @media all and (min-width: 760px) {
@@ -2416,6 +2438,9 @@ object {
           width: 330px;
           padding: 2rem 0 0;
           transform: translateX(-1rem); } }
+    .page-id-18 .content-container .partners-information-container .partners-text-2 {
+      margin-top: 1.5rem;
+      padding-top: 0; }
   .page-id-18 .infographic-container {
     height: auto;
     width: 100%;
