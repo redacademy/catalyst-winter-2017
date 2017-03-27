@@ -157,7 +157,7 @@ get_header(); ?>
 
 				<?php $btn2 = CFS()->get( 'btn2' );
 				if ( !empty( $btn2 ) ) :?>
-				<a class="btn" href="<?php echo get_home_url(); ?>/our-team"><?php echo $btn2; ?></a>
+				<a class="navigation-button" href="<?php echo get_home_url(); ?>/our-team"><?php echo $btn2; ?></a>
 				<?php endif; ?>
 
 			</section>

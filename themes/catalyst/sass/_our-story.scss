@@ -53,8 +53,10 @@
             font-weight: lighter;
         }
     }
-    .download,
-    .btn {
+    .navigation-button {
+        @include navigation-button();
+    }
+    .download {
         font-weight: $font__bold;
         padding: 20px 50px;
         text-transform: uppercase;

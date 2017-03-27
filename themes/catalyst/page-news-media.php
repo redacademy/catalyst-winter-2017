@@ -54,7 +54,7 @@ get_header(); ?>
     </div>
 </div>
 
-        <div class="load-more"><a class="load-more-button">load more</a></div>
+        <a class="navigation-button" href=''>load more</a>
         </main> <!--#main -->
     </div> <!--#primary -->
 

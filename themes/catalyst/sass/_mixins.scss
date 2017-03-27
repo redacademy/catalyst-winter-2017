@@ -149,7 +149,7 @@
 // Buttons
 
 @mixin navigation-button($font-color: $color__header-main) {
-	height: 76px;
+	height: 70px;
 	width: 300px;
 	margin: 2rem auto;
 	border: 2px solid $font-color;
@@ -161,11 +161,6 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	@include media($desktop-width) {
-		height: 70px;
-		width: 260px;
-		border-width: 3px;
-	}
 
 	&:hover {
 			background: $color__brand-blue;

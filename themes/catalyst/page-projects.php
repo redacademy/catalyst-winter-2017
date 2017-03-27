@@ -42,7 +42,7 @@ get_header(); ?>
             <div class="img-container">
                 <img class='project-image' src='<?php echo CFS()->get('heroimage'); ?>'>
             </div>
-            <a href="<?php the_permalink(); ?>" class="project-link">Learn More</a>
+            <a href="<?php the_permalink(); ?>" class="navigation-button">Learn More</a>
         </div>
     <?php endforeach; ?>
 </div>

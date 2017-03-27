@@ -66,9 +66,7 @@
                 </div>
                 <?php endforeach; wp_reset_postdata(); ?>
         </div>
-        <div class="collab-link-container">
-            <a href="#" class="collab-link">Collaborate with us</a>
-        </div>
+        <a href="#" class="navigation-button">Collaborate with us</a>
         <?php endwhile; wp_reset_postdata(); ?>
     </section>
     <section>

@@ -29,9 +29,8 @@ get_header(); ?>
 			<p class="responsibilities">responsibilities:</p>
 			<?php echo CFS()->get( 'responsibilities' ); ?>
 		</div>
-		<div class='link-container'>
-			<a href="#" class="contact-link">Contact us</a>
-		</div>
+		<a class='navigation-button' href=''>Contact us</a>
+
 	</div>
 	<?php endforeach; ?>
 </div>

@@ -21,7 +21,7 @@
             </div>
             <p class="catalyst-formula-copy"><?php echo CFS()->get( 'catalyst_formula_copy' ); ?></p>
             <?php get_template_part( 'template-parts/ourStory-carousel', 'projects carousel' ); ?>
-             <div class="readmore"><a href="">learn more</a></div>
+            <a class='navigation-button' href="">learn more</a>
         </div>
 
         <div class="projects">
@@ -30,7 +30,7 @@
             </div>
             <p class="our-projects-copy"><?php echo CFS()->get( 'our_projects_copy' ); ?></p>
             <?php get_template_part( 'template-parts/projects-carousel', 'projects carousel' ); ?>
-             <div class="readmore"><a>view more projects</a></div>
+             <a class='navigation-button' href=''>view more projects</a>
         </div>
 
         <div class="team">
@@ -50,7 +50,7 @@
                     </div>
                 <?php endforeach; wp_reset_postdata(); ?>
             </div>
-            <div class="readmore"><a>collaborate with us</a></div>
+            <a class='navigation-button' href=''>collaborate with us</a>
         </div>
     </div>
 </section>

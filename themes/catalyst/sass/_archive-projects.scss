@@ -36,12 +36,7 @@
         width: 100%;
         max-width: 1000px;
     }
-    .project-link {
-        text-decoration: none;
-        font-weight: 700;
-        color: $color__header-main;
-        border: 2px solid black;
-        padding: 1rem 4rem;
-        text-transform: uppercase;
+    .navigation-button {
+        @include navigation-button();
     }
 }

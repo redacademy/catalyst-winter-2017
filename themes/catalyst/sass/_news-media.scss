@@ -40,22 +40,8 @@
         display: none;
     }
 
-    .load-more {
-        margin-bottom: 80px;
-        margin-top: 40px;
-        text-align: center;
-        font-family: $font__bold;
-        a {
-            padding: 30px 80px;
-            text-transform: uppercase;
-            border: 3px solid black;
-            text-decoration: none;
-            color: black;
-            &:hover {
-                border: 3px solid #8ED7FF;
-                box-shadow: 1px 1px 5px $color__header-main;
-            }
-        }
+    .navigation-button {
+        @include navigation-button();
     }
     .newsmedia-content {
         .widget-area {

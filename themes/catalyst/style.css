@@ -1007,17 +1007,25 @@ textarea {
     font-family: quattrocento, sans-serif;
     margin: 0; }
 
-.home .readmore {
-  text-align: center;
-  margin: 5rem 0; }
-  .home .readmore a {
-    padding: 20px 50px;
-    text-transform: uppercase;
-    border: 3px solid black;
-    text-decoration: none;
-    font-weight: 700;
-    color: black;
-    text-decoration: none; }
+.home .navigation-button {
+  height: 70px;
+  width: 300px;
+  margin: 2rem auto;
+  border: 2px solid #323232;
+  font-size: 1.35rem;
+  color: #323232;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .home .navigation-button:hover {
+    background: #D9F1FF;
+    cursor: pointer; }
 
 .home .catalyst-formula-copy,
 .home .formula-carousel {
@@ -1390,8 +1398,27 @@ object {
       font-size: 22px;
       font-weight: lighter; } }
 
-.page-id-21 .download,
-.page-id-21 .btn {
+.page-id-21 .navigation-button {
+  height: 70px;
+  width: 300px;
+  margin: 2rem auto;
+  border: 2px solid #323232;
+  font-size: 1.35rem;
+  color: #323232;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .page-id-21 .navigation-button:hover {
+    background: #D9F1FF;
+    cursor: pointer; }
+
+.page-id-21 .download {
   font-weight: 700;
   padding: 20px 50px;
   text-transform: uppercase;
@@ -1399,15 +1426,12 @@ object {
   text-decoration: none;
   color: black; }
   @media all and (min-width: 600px) {
-    .page-id-21 .download,
-    .page-id-21 .btn {
+    .page-id-21 .download {
       border: 3px solid #323232; } }
-  .page-id-21 .download:hover,
-  .page-id-21 .btn:hover {
+  .page-id-21 .download:hover {
     border-color: #D9F1FF;
     box-shadow: 1px 1px 5px #323232; }
-  .page-id-21 .download.active,
-  .page-id-21 .btn.active {
+  .page-id-21 .download.active {
     background-color: #D9F1FF; }
 
 .page-id-21 .download {
@@ -1870,7 +1894,7 @@ object {
     .staff-profiles-wrapper .navigation-button-container .navigation-button,
     .board-profiles-wrapper .navigation-button-container .navigation-button,
     .advisors-profiles-wrapper .navigation-button-container .navigation-button {
-      height: 76px;
+      height: 70px;
       width: 300px;
       margin: 2rem auto;
       border: 2px solid #323232;
@@ -1885,13 +1909,6 @@ object {
           justify-content: center;
       -ms-flex-align: center;
           align-items: center; }
-      @media all and (min-width: 600px) {
-        .staff-profiles-wrapper .navigation-button-container .navigation-button,
-        .board-profiles-wrapper .navigation-button-container .navigation-button,
-        .advisors-profiles-wrapper .navigation-button-container .navigation-button {
-          height: 70px;
-          width: 260px;
-          border-width: 3px; } }
       .staff-profiles-wrapper .navigation-button-container .navigation-button:hover,
       .board-profiles-wrapper .navigation-button-container .navigation-button:hover,
       .advisors-profiles-wrapper .navigation-button-container .navigation-button:hover {
@@ -2037,20 +2054,25 @@ object {
         text-align: center; } }
   .page-id-19 .entry-header {
     display: none; }
-  .page-id-19 .load-more {
-    margin-bottom: 80px;
-    margin-top: 40px;
-    text-align: center;
-    font-family: 700; }
-    .page-id-19 .load-more a {
-      padding: 30px 80px;
-      text-transform: uppercase;
-      border: 3px solid black;
-      text-decoration: none;
-      color: black; }
-      .page-id-19 .load-more a:hover {
-        border: 3px solid #8ED7FF;
-        box-shadow: 1px 1px 5px #323232; }
+  .page-id-19 .navigation-button {
+    height: 70px;
+    width: 300px;
+    margin: 2rem auto;
+    border: 2px solid #323232;
+    font-size: 1.35rem;
+    color: #323232;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    .page-id-19 .navigation-button:hover {
+      background: #D9F1FF;
+      cursor: pointer; }
   .page-id-19 .newsmedia-content .widget-area {
     margin-top: 10px;
     padding: 0 20px; }
@@ -2213,7 +2235,7 @@ object {
         width: 75%;
         padding: 0.75rem auto; } }
   .page-id-18 .navigation-button {
-    height: 76px;
+    height: 70px;
     width: 300px;
     margin: 2rem auto;
     border: 2px solid #323232;
@@ -2228,11 +2250,6 @@ object {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center; }
-    @media all and (min-width: 600px) {
-      .page-id-18 .navigation-button {
-        height: 70px;
-        width: 260px;
-        border-width: 3px; } }
     .page-id-18 .navigation-button:hover {
       background: #D9F1FF;
       cursor: pointer; }
@@ -2785,19 +2802,25 @@ object {
   font-weight: 700;
   margin-bottom: 0; }
 
-.page-id-196 .link-container {
-  text-align: center; }
-
-.page-id-196 .contact-link {
-  font-weight: 700;
-  text-decoration: none;
-  color: #323232;
+.page-id-196 .navigation-button {
+  height: 70px;
+  width: 300px;
+  margin: 2rem auto;
   border: 2px solid #323232;
-  padding: 1rem 3.5rem;
-  text-transform: uppercase; }
-  @media all and (min-width: 600px) {
-    .page-id-196 .contact-link {
-      padding: 1rem 4rem; } }
+  font-size: 1.35rem;
+  color: #323232;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .page-id-196 .navigation-button:hover {
+    background: #D9F1FF;
+    cursor: pointer; }
 
 .page-id-195 .entry-title {
   font-size: 3.15rem;
@@ -2866,13 +2889,25 @@ object {
   width: 100%;
   max-width: 1000px; }
 
-.page-id-195 .project-link {
-  text-decoration: none;
-  font-weight: 700;
+.page-id-195 .navigation-button {
+  height: 70px;
+  width: 300px;
+  margin: 2rem auto;
+  border: 2px solid #323232;
+  font-size: 1.35rem;
   color: #323232;
-  border: 2px solid black;
-  padding: 1rem 4rem;
-  text-transform: uppercase; }
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .page-id-195 .navigation-button:hover {
+    background: #D9F1FF;
+    cursor: pointer; }
 
 .single-projects h3,
 .single-projects p {
@@ -3006,18 +3041,25 @@ object {
   margin: 0;
   color: #4A4A4A; }
 
-.single-projects .collab-link-container {
+.single-projects .navigation-button {
+  height: 70px;
+  width: 300px;
+  margin: 2rem auto;
+  border: 2px solid #323232;
+  font-size: 1.35rem;
+  color: #323232;
   font-weight: 700;
-  text-align: center;
-  margin: 3rem 0;
-  padding-top: 1rem; }
-
-.single-projects .collab-link {
+  text-transform: uppercase;
   text-decoration: none;
-  color: black;
-  border: 2px solid black;
-  padding: 1rem;
-  text-transform: uppercase; }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .single-projects .navigation-button:hover {
+    background: #D9F1FF;
+    cursor: pointer; }
 
 .single-projects .other-post-gallery {
   margin: 2rem 0 3rem; }
