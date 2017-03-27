@@ -25,13 +25,7 @@ $color__menu-active: #935E32;
 
 // Typography
 
-$font__main: muli, sans-serif;
-$font__secondary: quattrocento, sans-serif;
-
-$font__bold: 700;
-$font__semibold: 600;
-$font__light: 300;
-
+$font__main: sans-serif;
 $font__desktop-size: 1.4rem;
 
 $line-height-body: 1.4rem;
@@ -39,5 +33,5 @@ $line-height-desktop: 1.75rem;
 
 // Media query screen widths
 
-$desktop-width: 760px;
+$desktop-width: 600px;
 $footer__desktop-width: 900px;

@@ -13,10 +13,11 @@
     .banner-text {
         @include page-title;
         margin: 0 auto;
-        color: white;
-        line-height: 1;
+        line-height: 4rem;
         @include media ($desktop-width){
+            margin: 0 auto;
             max-width: 900px;
+            width: 100%;
             min-width: 600px;
             font-size: 4.5rem;
             line-height: 5rem;
@@ -35,7 +36,6 @@
         line-height: 1;
     }
     .thanks {
-        font-weight: $font__bold;
         font-size: 2rem;
         text-transform: uppercase;
         margin: 0;
@@ -54,7 +54,7 @@
     .bottom-text {
         font-size: 1.3rem;
         line-height: 1;
-        font-family: $font__secondary;
+        font-weight: 100;
         span{
             text-transform: uppercase;
         }

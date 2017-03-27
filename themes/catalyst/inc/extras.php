@@ -22,7 +22,7 @@ function catalyst_hero_image_css() {
             $url = CFS()->get ( 'heroimage');
 
             $hero_image_css = ".hero-image-banner{
-                height: 60vh;
+                height: 55vh;
                 background: linear-gradient( to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100% ),
                 url({$url}) no-repeat center bottom;
                 background-size: cover, cover;
@@ -50,16 +50,17 @@ function catalyst_hero_image_css() {
 
 function flexible_widget_titles( $widget_title ) {
 
-    // get rid of any leading and trailing spaces
+// get rid of any leading and trailing spaces
 
-    $title = trim( $widget_title );
+$title = trim( $widget_title );
 
-    // check the first and last character, if [ and ] set the title to empty
+// check the first and last character, if [ and ] set the title to empty
 
-    if ( $title[0] == '[' && $title[strlen($title) - 1] == ']' ) $title = '';
+if ( $title[0] == '[' && $title[strlen($title) - 1] == ']' ) $title = '';
 
-    return $title;
+return $title;
 
 }
+
 add_filter( 'widget_title', 'flexible_widget_titles' );
 

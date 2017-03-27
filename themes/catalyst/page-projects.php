@@ -17,32 +17,32 @@ get_header(); ?>
     ));
     foreach ( $posts as $post ) :?>
         <div class="project-post">
-            <div class="blue-background-header">
+            <div class="proj-head">
 
                 <?php $project_name = CFS()->get('project_name');
                 if ( !empty( $project_name ) ) : ?>
-                <h2 class="subheader-sm"><?php echo $project_name; ?></h2>
+                <p class="name"><?php echo $project_name; ?></p>
                 <?php endif; ?>
                 <span class='break'>|</span>
 
-                <h2 class='subheader-sm'>Location:
+                <p>Location:
                  <?php $project_location = CFS()->get( 'project_location' );
                 if ( !empty( $project_location ) ) : ?>
                 <span><?php echo $project_location; ?></span>
                 <?php endif; ?>
 
-                </h2><span class='break'>|</span>
-                <h2 class='subheader-sm'>Status:
+                </p><span class='break'>|</span>
+                <p>Status:
                 <?php $project_status = CFS()->get( 'project_status' );
                 if ( !empty( $project_status ) ) :?>
                 <span class='status'><?php echo $project_status; ?></span>
                 <?php endif; ?>
-                </h2>
+                </p>
             </div>
             <div class="img-container">
                 <img class='project-image' src='<?php echo CFS()->get('heroimage'); ?>'>
             </div>
-            <a href="<?php the_permalink(); ?>" class="navigation-button">Learn More</a>
+            <a href="<?php the_permalink(); ?>" class="project-link">Learn More</a>
         </div>
     <?php endforeach; ?>
 </div>

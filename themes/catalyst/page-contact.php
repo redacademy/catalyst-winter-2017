@@ -12,7 +12,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
             <div class="hero-image-banner">
                 <header class="header-text">
-                    <p class="entry-title">
+                    <p class="banner-title">
                         <?php echo CFS()->get( 'bannertext' ); ?>
                     </p>
                     <p class="banner-text">
@@ -24,7 +24,7 @@ get_header(); ?>
                 </header><!-- .page-header -->
             </div>
             <div class="blue-background">
-			    <h2 class="subheader-sm">we would like to hear from you</h2>
+			    <h2 class="subheader">we would like to hear from you</h2>
 		    </div>
 			<?php while ( have_posts() ) : the_post(); ?>
 

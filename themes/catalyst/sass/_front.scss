@@ -28,41 +28,59 @@
         
     }
     .header-text {
-        	@include header-text;
+        @include banner-text-fp;
         h1 {
-            @include page-title;
+            text-transform: uppercase;
+            font-weight: lighter;
+            font-size: 50px;
+            line-height: 75px;
+            max-width: 700px;
+            margin: 0 auto;
+            text-shadow: 2px 2px 5px black;
+            line-height: 70px;
         }
         p {
-            @include banner-text;
+            font-size: 25px;
+            font-weight: lighter;
+            margin: 0;
         }
     }
-
-    .navigation-button{
-        @include navigation-button();
+    h2 {
+        text-transform: uppercase;
+        font-size: 30px;
+        background-color: $color__brand-blue;
+        padding: 20px 0;
+        text-align: center;
+    }
+    .readmore {
+        text-align: center;
+        margin: 5rem 0;
+        a {
+            padding: 20px 50px;
+            text-transform: uppercase;
+            border: 3px solid black;
+            text-decoration: none;
+            color: black;
+            text-decoration: none;
+        }
     }
     .catalyst-formula-copy,
     .formula-carousel {
         max-width: 1000px;
         padding-bottom: 2rem;
         margin: 2rem auto;
-        font-family: $font__secondary;
     }
     .projects {
         padding-top: 3rem;
         text-align: center;
         .our-projects-copy {
-            font-family: $font__secondary;
             max-width: 650px;
             margin: 2rem auto;
         }
         .project-name {
-            font-weight: $font__bold;
-        }
-        .project-location {
-            font-family: $font__secondary;
+            font-weight: bold;
         }
         .project-status{
-            font-family: $font__secondary;
             span {
                 text-transform: uppercase;
             }
@@ -74,10 +92,6 @@
         }
         .is-selected .quotes-wrapper {
             display: initial;
-        }
-        .quote {
-            font-family: $font__secondary;
-            font-style: italic;
         }
 
 
@@ -110,12 +124,11 @@
             margin-bottom: 2rem;
         }
         .person {
-            font-weight: $font__bold;
+            font-weight: bold;
             font-size: 1.3rem;
             margin: 0;
         }
         .line {
-            font-weight: $font__semibold;
             font-style: italic;
             margin: 0;
         }
@@ -168,19 +181,17 @@
             }
             .member-name {
                 font-size: 1.4rem;
-                font-weight: $font__bold;
+                font-weight: bold;
             }
             .position {
                 font-style: italic;
                 font-size: 1.2rem;
-                font-weight: $font__semibold;
             }
         }
         .is-selected {
             opacity: 1;
         }
         .team-catalyst-copy {
-            font-family: $font__secondary;
             width: 300px;
             margin: 0 auto;
             @include media($desktop-width){
@@ -190,7 +201,6 @@
             }
         }
         .small-subheader {
-            font-weight: $font__bold;
             font-size: 1.3rem;
             width: 300px;
             margin: 2rem auto;

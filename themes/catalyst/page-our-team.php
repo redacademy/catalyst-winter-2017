@@ -14,8 +14,8 @@ get_header(); ?>
             <?php get_template_part( 'template-parts/hero-banner'); ?>
 
             <div class="content-wrapper">
-            <div class="blue-background-header">
-                <h2 class="subheader-lrg">Meet Team Catalyst</h2>
+            <div class="blue-background">
+                <h2 class="our-team-header">Meet Team Catalyst</h2>
                 <button class="staff-exit-button exit-button" type="button"><span>X</span></button>
             </div>
 
