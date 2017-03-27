@@ -27,7 +27,11 @@
             <div class="quotes-wrapper">
                 <?php $quotes_array = CFS()->get('quotes_gallery', $id);
                 $first_quotes_object = array_slice($quotes_array,0,1);
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> 33dabe1d09e5458a7370616ae91a535e49bc2363
                 if ( !empty( $quotes_array ) ) : ?>
                     <?php foreach ($first_quotes_object as $quote) : ?>
                         <p class="quote"><?php echo esc_html( $quote['quotes'] ); ?></p> 
