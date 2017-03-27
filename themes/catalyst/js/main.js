@@ -18,7 +18,7 @@
         });
     });
 
-
+    $('#timeline-Widget-0 li').css('background-color', 'red');
 
     // Toggle profile popout when enter/exit buttons are clicked (Our Team page)
 
@@ -206,14 +206,14 @@
             articleContent += '<p class="date" >' + formattedDate + '</p>';
             articleContent += '<h3>' + articleTitle + '</h3>';
             articleContent += '<div class="entry-content">' + articleExcerpt + '</div></div>';
-        
+
         return articleContent;
     }
 
     function constructArticleThumbnail(post) {
-        if ( post.better_featured_image !== null ) {  
+        if ( post.better_featured_image !== null ) {
             var articleThumb = '<img src="' + post.better_featured_image.source_url + '" />';
-            var articleThumbContainer = '<div class="article-thumb">' + articleThumb + '</div>'; 
+            var articleThumbContainer = '<div class="article-thumb">' + articleThumb + '</div>';
         } else {
             articleThumbContainer = '';
         }
@@ -223,7 +223,7 @@
 
     function constructArticleElement( articleID, articleThumbContainer, articleContent ) {
         var articleElement = '<article class="news" id="' + articleID + '">';
-                
+
         if ( articleThumbContainer ) {
             articleElement += articleThumbContainer;
         }
@@ -245,7 +245,7 @@
         $.get(apiLink, function( data ){
 
             var newPosts = data.slice( ( data.length - renderedArticles ) - renderedArticles, ( data.length - renderedArticles ) );
-            
+
             if ( renderedArticles < data.length ) {
                 $.each( newPosts, function(i, post)  {
                     var myDate = new Date( post.date );
@@ -254,7 +254,7 @@
                     var articleTitle = post.title.rendered;
                     var articleExcerpt = post.excerpt.rendered;
 
-                    var constructedArticleElement = 
+                    var constructedArticleElement =
                         constructArticleElement(articleID,
                                                 constructArticleThumbnail(post),
                                                 constructArticleContent(formattedDate, articleTitle, articleExcerpt)
