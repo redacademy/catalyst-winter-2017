@@ -2529,12 +2529,8 @@ object {
     .page-id-18 .content-container .partners-information-container .partners-text {
       height: auto;
       width: 100%;
-<<<<<<< HEAD
       margin: 1.5rem auto;
       font-weight: 100;
-=======
-      margin: 0 auto;
->>>>>>> b6363f30eeae9b0216062d91b2de5b76d446cf09
       text-align: center; }
       @media all and (min-width: 760px) {
         .page-id-18 .content-container .partners-information-container .partners-text {
