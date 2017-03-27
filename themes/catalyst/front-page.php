@@ -29,6 +29,7 @@
             <div class="readmore"><a href="">learn more</a></div>
         </div>
 
+
         <div class="projects">
             <h2>our projects</h2>
             <?php $our_projects_copy = CFS()->get( 'our_projects_copy' );
