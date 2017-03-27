@@ -2082,10 +2082,8 @@ object {
 
 .page-id-19 {
   margin: 0 auto; }
-  .page-id-19 .entry-content {
-    text-align: center; }
-    .page-id-19 .entry-content p {
-      font-weight: 300; }
+  .page-id-19 .entry-content p {
+    font-weight: 300; }
   .page-id-19 .header-text {
     position: absolute;
     padding: 15% 0 15%;
@@ -2205,7 +2203,6 @@ object {
             align-items: center; }
         .page-id-19 .newsmedia-article .news {
           height: auto;
-          min-height: 390px;
           width: 48%;
           display: block; }
         .page-id-19 .newsmedia-article .news:nth-child(5n + 1) {
@@ -2254,12 +2251,14 @@ object {
   .page-id-19 .tweet_wrap {
     background: #D9F1FF;
     padding: 20px; }
+  .page-id-19 .tweet_data, .page-id-19 .times {
+    padding: 0 60px; }
   .page-id-19 .tweet-actions a {
     padding: 5px;
     background-color: lightgrey;
     border-radius: 20px; }
-  .page-id-19 .tweets-intent-data {
-    border: none; }
+  .page-id-19 .light .tweets-intent-data {
+    border-top: none; }
   .page-id-19 .video {
     text-align: center; }
     .page-id-19 .video iframe {

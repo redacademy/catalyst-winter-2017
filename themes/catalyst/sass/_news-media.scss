@@ -1,7 +1,7 @@
 .page-id-19 {
     margin: 0 auto;
     .entry-content {
-        text-align: center;
+        // text-align: left;
         p {
             font-weight: $font__light;
         }
@@ -86,7 +86,7 @@
             @include flex-row(wrap, space-around);
             .news {
                 height: auto;
-                min-height: 390px;
+                // min-height: 390px;
                 width: 48%;
                 display: block;
             }
@@ -151,13 +151,16 @@
         background: $color__brand-blue;
         padding: 20px;
     }
+    .tweet_data, .times{
+            padding: 0 60px;
+    }
     .tweet-actions a {
         padding: 5px;
         background-color: lightgrey;
         border-radius: 20px;
     }
-    .tweets-intent-data {
-        border: none;
+    .light .tweets-intent-data{
+        border-top: none;
     }
     .video {
         text-align: center;
