@@ -98,7 +98,7 @@
 
             // Clear the active profiles section of inactive profiles and show only the active profile popout.
 
-            $boardProfilesHeader.addClass( 'blue-background' ).css('margin-bottom', '0');
+            $boardProfilesHeader.addClass( 'blue-background-header' ).css('margin-bottom', '0');
             $boardProfilePreviews.hide();
             $boardProfilePopouts.hide();
             thisPopout.show().addClass( 'show-popout' );
@@ -132,7 +132,7 @@
         $boardExitButton.click(function(){
             $boardExitButton.hide();
             $thisPopout.removeClass( 'show-popout' ).addClass( 'translucent' );
-            $boardProfilesHeader.removeClass( 'blue-background' );
+            $boardProfilesHeader.removeClass( 'blue-background-header' );
             $boardProfilePreviews.show();
             $staffProfilesWrapper.css( 'opacity', '1' );
             $advisorsProfilesWrapper.css( 'opacity', '1' );
