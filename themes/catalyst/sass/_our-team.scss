@@ -17,23 +17,6 @@
     @include intro-copy;
 }
 
-.blue-background {
-    position: relative;
-    @include blue-background-header;
-    .our-team-header {
-        width: 300px;
-        margin: 0 auto;
-        color: $color__header-main;
-        font-size: 2.5rem;
-        font-weight: 400;
-        text-align: center;
-        text-transform: uppercase;
-        position: relative;
-        @include media($desktop-width) {
-            width: 100%;
-            font-size: 3.15rem;
-        }
-    }
     // Exit button for staff profile popouts.
     .staff-exit-button {
         display: inline-block;
@@ -47,7 +30,6 @@
             bottom: 2px;
         }
     }
-}
 
 // Buttons
 .enter-button,
@@ -191,7 +173,7 @@
     .small-header {
         margin: 2rem auto 1rem;
         font-size: 2rem;
-        font-weight: 400;
+        font-weight: $font__bold;
         text-align: center;
         text-transform: uppercase;
         @include media($desktop-width) {
@@ -252,13 +234,15 @@
         .name {
             margin: 0.25rem auto;
             font-size: 1.55rem;
-            font-weight: 600;
+            font-weight: $font__bold;
         }
         .job-title {
             max-width: 235px;
             margin: 0.25rem auto;
             font-size: 1.4rem;
             text-align: center;
+            font-weight: $font__semibold;
+            font-style: italic;
         }
     }
 }

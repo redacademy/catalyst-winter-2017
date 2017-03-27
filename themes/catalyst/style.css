@@ -227,21 +227,56 @@ th {
   font-family: 'muli';
   src: url("../../fonts/muli-black-webfont.eot");
   src: url("../../fonts/muli-black-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/muli-black-webfont.woff2") format("woff2"), url("../../fonts/muli-black-webfont.woff") format("woff"), url("../../fonts/muli-black-webfont.ttf") format("truetype"), url("../../fonts/muli-black-webfont.svg#muliblack") format("svg");
-  font-weight: normal;
+  font-weight: 900;
   font-style: normal; }
+
+@font-face {
+  font-family: 'muli';
+  src: url("../../fonts/muli-blackitalic-webfont.eot");
+  src: url("../../fonts/muli-blackitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/muli-blackitalic-webfont.woff2") format("woff2"), url("../../fonts/muli-blackitalic-webfont.woff") format("woff"), url("../../fonts/muli-blackitalic-webfont.ttf") format("truetype"), url("../../fonts/muli-blackitalic-webfont.svg#muliblack_italic") format("svg");
+  font-weight: 900;
+  font-style: italic; }
 
 @font-face {
   font-family: 'muli';
   src: url("../../fonts/muli-bold-webfont.eot");
   src: url("../../fonts/muli-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/muli-bold-webfont.woff2") format("woff2"), url("../../fonts/muli-bold-webfont.woff") format("woff"), url("../../fonts/muli-bold-webfont.ttf") format("truetype"), url("../../fonts/muli-bold-webfont.svg#mulibold") format("svg");
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: 'muli';
   src: url("../../fonts/muli-bolditalic-webfont.eot");
   src: url("../../fonts/muli-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/muli-bolditalic-webfont.woff2") format("woff2"), url("../../fonts/muli-bolditalic-webfont.woff") format("woff"), url("../../fonts/muli-bolditalic-webfont.ttf") format("truetype"), url("../../fonts/muli-bolditalic-webfont.svg#mulibold_italic") format("svg");
-  font-weight: bold;
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'muli';
+  src: url("../../fonts/muli-extrabold-webfont.eot");
+  src: url("../../fonts/muli-extrabold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/muli-extrabold-webfont.woff2") format("woff2"), url("../../fonts/muli-extrabold-webfont.woff") format("woff"), url("../../fonts/muli-extrabold-webfont.ttf") format("truetype"), url("../../fonts/muli-extrabold-webfont.svg#muliextrabold") format("svg");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'muli';
+  src: url("../../fonts/muli-extrabolditalic-webfont.eot");
+  src: url("../../fonts/muli-extrabolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/muli-extrabolditalic-webfont.woff2") format("woff2"), url("../../fonts/muli-extrabolditalic-webfont.woff") format("woff"), url("../../fonts/muli-extrabolditalic-webfont.ttf") format("truetype"), url("../../fonts/muli-extrabolditalic-webfont.svg#muliextrabold_italic") format("svg");
+  font-weight: 800;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'muli';
+  src: url("../../fonts/muli-extralight-webfont.eot");
+  src: url("../../fonts/muli-extralight-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/muli-extralight-webfont.woff2") format("woff2"), url("../../fonts/muli-extralight-webfont.woff") format("woff"), url("../../fonts/muli-extralight-webfont.ttf") format("truetype"), url("../../fonts/muli-extralight-webfont.svg#muliextralight") format("svg");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'muli';
+  src: url("../../fonts/muli-extralightitalic-webfont.eot");
+  src: url("../../fonts/muli-extralightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/muli-extralightitalic-webfont.woff2") format("woff2"), url("../../fonts/muli-extralightitalic-webfont.woff") format("woff"), url("../../fonts/muli-extralightitalic-webfont.ttf") format("truetype"), url("../../fonts/muli-extralightitalic-webfont.svg#muliextralight_italic") format("svg");
+  font-weight: 200;
   font-style: italic; }
 
 @font-face {
@@ -259,17 +294,45 @@ th {
   font-style: normal; }
 
 @font-face {
+  font-family: 'muli';
+  src: url("../../fonts/muli-lightitalic-webfont.eot");
+  src: url("../../fonts/muli-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/muli-lightitalic-webfont.woff2") format("woff2"), url("../../fonts/muli-lightitalic-webfont.woff") format("woff"), url("../../fonts/muli-lightitalic-webfont.ttf") format("truetype"), url("../../fonts/muli-lightitalic-webfont.svg#mulilight_italic") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'muli';
+  src: url("../../fonts/muli-regular-webfont.eot");
+  src: url("../../fonts/muli-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/muli-regular-webfont.woff2") format("woff2"), url("../../fonts/muli-regular-webfont.woff") format("woff"), url("../../fonts/muli-regular-webfont.ttf") format("truetype"), url("../../fonts/muli-regular-webfont.svg#muliregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'muli';
+  src: url("../../fonts/muli-semibold-webfont.eot");
+  src: url("../../fonts/muli-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/muli-semibold-webfont.woff2") format("woff2"), url("../../fonts/muli-semibold-webfont.woff") format("woff"), url("../../fonts/muli-semibold-webfont.ttf") format("truetype"), url("../../fonts/muli-semibold-webfont.svg#mulisemibold") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'muli';
+  src: url("../../fonts/muli-semibolditalic-webfont.eot");
+  src: url("../../fonts/muli-semibolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/muli-semibolditalic-webfont.woff2") format("woff2"), url("../../fonts/muli-semibolditalic-webfont.woff") format("woff"), url("../../fonts/muli-semibolditalic-webfont.ttf") format("truetype"), url("../../fonts/muli-semibolditalic-webfont.svg#mulisemibold_italic") format("svg");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
   font-family: 'quattrocento';
   src: url("../../fonts/quattrocentosans-bold-webfont.eot");
   src: url("../../fonts/quattrocentosans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/quattrocentosans-bold-webfont.woff2") format("woff2"), url("../../fonts/quattrocentosans-bold-webfont.woff") format("woff"), url("../../fonts/quattrocentosans-bold-webfont.ttf") format("truetype"), url("../../fonts/quattrocentosans-bold-webfont.svg#quattrocento_sansbold") format("svg");
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: 'quattrocento';
   src: url("../../fonts/quattrocentosans-bolditalic-webfont.eot");
   src: url("../../fonts/quattrocentosans-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/quattrocentosans-bolditalic-webfont.woff2") format("woff2"), url("../../fonts/quattrocentosans-bolditalic-webfont.woff") format("woff"), url("../../fonts/quattrocentosans-bolditalic-webfont.ttf") format("truetype"), url("../../fonts/quattrocentosans-bolditalic-webfont.svg#quattrocento_sansbold_italic") format("svg");
-  font-weight: bold;
+  font-weight: 700;
   font-style: italic; }
 
 @font-face {
@@ -295,7 +358,7 @@ input,
 select,
 textarea {
   color: #4A4A4A;
-  font-family: sans-serif;
+  font-family: muli, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.4rem; }
@@ -401,8 +464,47 @@ table {
 .formulas:last-child .fill {
   display: none; }
 
-* {
-  font-family: muli, sans-serif; }
+.blue-background-header {
+  height: auto;
+  width: 100%;
+  margin: 0 auto 0.75rem;
+  padding: 0.75rem 0.5rem;
+  background-color: #D9F1FF;
+  text-align: center;
+  line-height: 2.4rem; }
+  @media all and (min-width: 760px) {
+    .blue-background-header {
+      margin: 0 auto 1.5rem;
+      padding: 1rem 0.5rem;
+      line-height: 3.4rem; } }
+
+.subheader-sm {
+  max-width: 400px;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #323232;
+  line-height: 2.4rem;
+  text-transform: uppercase; }
+  @media all and (min-width: 760px) {
+    .subheader-sm {
+      max-width: none;
+      font-size: 2rem;
+      line-height: 3.4rem; } }
+
+.subheader-lrg {
+  max-width: 400px;
+  margin: 0 auto;
+  font-size: 2.15rem;
+  font-weight: 700;
+  color: #323232;
+  line-height: 2.4rem;
+  text-transform: uppercase; }
+  @media all and (min-width: 760px) {
+    .subheader-lrg {
+      max-width: none;
+      font-size: 3.2rem;
+      line-height: 3.4rem; } }
 
 /*--------------------------------------------------------------
 # Forms
@@ -598,7 +700,6 @@ textarea {
         text-transform: uppercase;
         color: #323232;
         font-size: 1rem;
-        font-weight: 100;
         text-decoration: none; }
         .container .desktop-menu #primary-menu a:active {
           color: #935E32; }
@@ -718,7 +819,7 @@ textarea {
         width: 17px;
         height: 24px; } }
   .footer #text-2 p {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     padding-left: 18px; }
     @media all and (min-width: 760px) {
@@ -728,7 +829,11 @@ textarea {
       .footer #text-2 p {
         font-size: 20px; } }
   .footer #text-3 {
-    margin-top: 5px; }
+    margin-top: 5px;
+    font-family: quattrocento, sans-serif; }
+  .footer #text-4 {
+    font-family: quattrocento, sans-serif;
+    font-style: italic; }
   .footer .sns-icon {
     display: -ms-flexbox;
     display: flex;
@@ -798,7 +903,7 @@ textarea {
         width: 25%; } }
     .footer .page-link a {
       text-decoration: none;
-      font-weight: 500;
+      font-weight: 600;
       color: #4A4A4A;
       padding: 0 20px; }
       .footer .page-link a:hover {
@@ -890,58 +995,69 @@ textarea {
       width: 750px; } }
   .home .header-text h1 {
     text-transform: uppercase;
-    font-weight: lighter;
     font-size: 50px;
     line-height: 75px;
     max-width: 700px;
     margin: 0 auto;
     text-shadow: 2px 2px 5px black;
-    line-height: 70px; }
+    line-height: 70px;
+    font-weight: 700; }
   .home .header-text p {
     font-size: 25px;
-    font-weight: lighter;
+    font-family: quattrocento, sans-serif;
     margin: 0; }
 
-.home h2 {
+.home .navigation-button {
+  height: 70px;
+  width: 300px;
+  margin: 2rem auto;
+  border: 2px solid #323232;
+  font-size: 1.35rem;
+  color: #323232;
+  font-weight: 700;
   text-transform: uppercase;
-  font-size: 30px;
-  background-color: #D9F1FF;
-  padding: 20px 0;
-  text-align: center; }
-
-.home .readmore {
-  text-align: center;
-  margin: 5rem 0; }
-  .home .readmore a {
-    padding: 20px 50px;
-    text-transform: uppercase;
-    border: 3px solid black;
-    text-decoration: none;
-    color: black;
-    text-decoration: none; }
+  text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .home .navigation-button:hover {
+    background: #D9F1FF;
+    cursor: pointer; }
 
 .home .catalyst-formula-copy,
 .home .formula-carousel {
   max-width: 1000px;
   padding-bottom: 2rem;
-  margin: 2rem auto; }
+  margin: 2rem auto;
+  font-family: quattrocento, sans-serif; }
 
 .home .projects {
   padding-top: 3rem;
   text-align: center; }
   .home .projects .our-projects-copy {
+    font-family: quattrocento, sans-serif;
     max-width: 650px;
     margin: 2rem auto; }
   .home .projects .project-name {
-    font-weight: bold; }
-  .home .projects .project-status span {
-    text-transform: uppercase; }
+    font-weight: 700; }
+  .home .projects .project-location {
+    font-family: quattrocento, sans-serif; }
+  .home .projects .project-status {
+    font-family: quattrocento, sans-serif; }
+    .home .projects .project-status span {
+      text-transform: uppercase; }
   .home .projects .quotes-wrapper {
     margin: 0 auto;
     width: 85%;
     display: none; }
   .home .projects .is-selected .quotes-wrapper {
     display: initial; }
+  .home .projects .quote {
+    font-family: quattrocento, sans-serif;
+    font-style: italic; }
   .home .projects .left-quotation-mark, .home .projects .right-quotation-mark {
     height: 60px;
     width: 85px;
@@ -962,10 +1078,11 @@ textarea {
   .home .projects .quote-text {
     margin-bottom: 2rem; }
   .home .projects .person {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1.3rem;
     margin: 0; }
   .home .projects .line {
+    font-weight: 600;
     font-style: italic;
     margin: 0; }
   .home .projects .other-proj-wrapper {
@@ -1011,13 +1128,15 @@ textarea {
       margin: 0; }
     .home .team .member .member-name {
       font-size: 1.4rem;
-      font-weight: bold; }
+      font-weight: 700; }
     .home .team .member .position {
       font-style: italic;
-      font-size: 1.2rem; }
+      font-size: 1.2rem;
+      font-weight: 600; }
   .home .team .is-selected {
     opacity: 1; }
   .home .team .team-catalyst-copy {
+    font-family: quattrocento, sans-serif;
     width: 300px;
     margin: 0 auto; }
     @media all and (min-width: 760px) {
@@ -1026,6 +1145,7 @@ textarea {
         width: 100%;
         font-size: 1.2rem; } }
   .home .team .small-subheader {
+    font-weight: 700;
     font-size: 1.3rem;
     width: 300px;
     margin: 2rem auto;
@@ -1195,6 +1315,7 @@ object {
 .page-id-21 .entry-title {
   font-size: 3.15rem;
   color: white;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   text-shadow: 1px 2px 5px #323232; }
@@ -1216,7 +1337,8 @@ object {
 
 .page-id-21 .banner-text {
   font-size: 1.35rem;
-  font-weight: 300;
+  font-family: quattrocento, sans-serif;
+  font-weight: 700;
   color: white;
   width: 100%;
   margin: 1.5rem auto;
@@ -1230,39 +1352,28 @@ object {
       margin: 2% auto; } }
 
 .page-id-21 .intro-copy {
-  text-align: center;
-  font-size: 20px;
-  margin: 30px auto;
-  width: 280px;
-  font-weight: 100;
-  line-height: 25px; }
+
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0.85rem;
+  font-size: 1.25rem;
+  font-family: quattrocento, sans-serif;
+  text-align: center; }
   @media all and (min-width: 760px) {
     .page-id-21 .intro-copy {
-      width: 100%;
-      font-size: 22px;
-      font-weight: lighter; } }
+      padding: 2.75rem 0.85rem;
+      width: 60%; } }
 
 .page-id-21 .site-content {
   text-align: center; }
 
-.page-id-21 h2 {
-  font-size: 30px;
-  text-transform: uppercase;
-  font-weight: 400;
-  background-color: #D9F1FF;
-  padding: 10px 0;
-  text-align: center;
-  line-height: 50px; }
-  @media all and (min-width: 760px) {
-    .page-id-21 h2 {
-      font-size: 50px;
-      padding: 20px 0; } }
 
 .page-id-21 h3 {
   text-align: center;
   padding: 0 10px;
   font-size: 28px;
-  font-weight: 400;
+  font-weight: 700;
   margin: auto;
   line-height: 35px; }
   @media all and (min-width: 760px) {
@@ -1289,32 +1400,52 @@ object {
       font-size: 22px;
       font-weight: lighter; } }
 
-.page-id-21 .download,
-.page-id-21 .btn {
+.page-id-21 .navigation-button {
+  height: 70px;
+  width: 300px;
+  margin: 2rem auto;
+  border: 2px solid #323232;
+  font-size: 1.35rem;
+  color: #323232;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .page-id-21 .navigation-button:hover {
+    background: #D9F1FF;
+    cursor: pointer; }
+
+.page-id-21 .download {
+  font-weight: 700;
   padding: 20px 50px;
   text-transform: uppercase;
   border: 1px solid black;
   text-decoration: none;
   color: black; }
   @media all and (min-width: 760px) {
-    .page-id-21 .download,
-    .page-id-21 .btn {
-      border: 3px solid black; } }
-  .page-id-21 .download:hover,
-  .page-id-21 .btn:hover {
+
+    .page-id-21 .download {
+      border: 3px solid #323232; } }
+  .page-id-21 .download:hover {
+
     border-color: #D9F1FF;
     box-shadow: 1px 1px 5px #323232; }
-  .page-id-21 .download.active,
-  .page-id-21 .btn.active {
+  .page-id-21 .download.active {
     background-color: #D9F1FF; }
 
 .page-id-21 .download {
   width: 300px;
   margin: 0 auto;
-  padding: 5px 0; }
+  padding: 5px 0;
+  font-weight: 700; }
   .page-id-21 .download a {
     text-decoration: none;
-    color: black; }
+    color: #323232; }
 
 .page-id-21 .mission-quote2 {
   margin-bottom: 80px; }
@@ -1345,6 +1476,7 @@ object {
   font-size: 18px;
   position: absolute;
   width: 90%;
+  font-family: quattrocento, sans-serif;
   font-style: italic; }
   @media all and (min-width: 760px) {
     .page-id-21 .quote,
@@ -1396,6 +1528,7 @@ object {
       font-size: 30px; } }
 
 .page-id-21 h4 {
+  font-weight: 700;
   margin: 0; }
   @media all and (min-width: 760px) {
     .page-id-21 h4 {
@@ -1403,6 +1536,7 @@ object {
 
 .page-id-21 .position {
   font-style: italic;
+  font-weight: 600;
   margin: 0; }
 
 .page-id-21 .arrow {
@@ -1418,7 +1552,7 @@ object {
 .page-id-21 .mission-text {
   margin: 0 auto;
   font-size: 16px;
-  font-weight: lighter;
+  font-family: quattrocento, sans-serif;
   width: 80%;
   margin-bottom: 20px; }
   @media all and (min-width: 760px) {
@@ -1457,11 +1591,14 @@ object {
       width: 100%;
       height: 180px; }
     .page-id-21 .mission-content .mission-image h5 {
+      font-family: quattrocento, sans-serif;
+      font-weight: 700;
       font-size: 20px;
       text-transform: uppercase;
       width: 100%; }
 
 .page-id-21 .formula-p {
+  font-family: quattrocento, sans-serif;
   width: 90%;
   margin: auto; }
 
@@ -1476,9 +1613,13 @@ object {
       font-size: 24px;
       line-height: 28px; } }
 
-@media all and (min-width: 760px) {
-  .page-id-21 .formula-carousel {
-    padding-left: 20px; } }
+
+.page-id-21 .formula-carousel {
+  font-family: quattrocento, sans-serif; }
+  @media all and (min-width: 760px) {
+    .page-id-21 .formula-carousel {
+      padding-left: 20px; } }
+
 
 .page-id-21 .formula-carousel {
   margin-bottom: 2rem;
@@ -1528,6 +1669,7 @@ object {
   .page-id-159 .entry-title {
     font-size: 3.15rem;
     color: white;
+    font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232; }
@@ -1537,7 +1679,8 @@ object {
         font-size: 3.85rem; } }
   .page-id-159 .banner-text {
     font-size: 1.35rem;
-    font-weight: 300;
+    font-family: quattrocento, sans-serif;
+    font-weight: 700;
     color: white;
     width: 100%;
     margin: 1.5rem auto;
@@ -1556,12 +1699,44 @@ object {
   margin: 0 auto;
   padding: 2rem 0.85rem;
   font-size: 1.25rem;
-  font-weight: 100;
+  font-family: quattrocento, sans-serif;
   text-align: center; }
   @media all and (min-width: 760px) {
     .intro-copy {
       padding: 2.75rem 0.85rem;
       width: 60%; } }
+
+
+.staff-exit-button {
+  display: inline-block;
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  height: 40px;
+  width: 40px;
+  font-size: 2.15rem;
+  font-weight: 100;
+  margin: 0 auto;
+  border: 3px solid #323232;
+  border-radius: 100%;
+  padding-top: 0.75rem;
+  padding-left: 0.05rem;
+  background: #FFF;
+  box-shadow: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .staff-exit-button:hover {
+    cursor: pointer;
+    color: #00A4FF;
+    border-color: #00A4FF; }
+  .staff-exit-button:focus {
+    outline: none; }
 
 .blue-background {
   position: relative;
@@ -1623,6 +1798,7 @@ object {
     .blue-background .staff-exit-button span {
       position: relative;
       bottom: 2px; }
+
 
 .enter-button,
 .exit-button {
@@ -1744,7 +1920,9 @@ object {
       .staff-profiles-wrapper .profile-popout .left-column img,
       .board-profiles-wrapper .profile-popout .left-column img,
       .advisors-profiles-wrapper .profile-popout .left-column img {
-        width: 225px; }
+
+        width: 215px; }
+
         @media all and (min-width: 760px) {
           .staff-profiles-wrapper .profile-popout .left-column img,
           .board-profiles-wrapper .profile-popout .left-column img,
@@ -1827,7 +2005,7 @@ object {
   .advisors-profiles-wrapper .small-header {
     margin: 2rem auto 1rem;
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 700;
     text-align: center;
     text-transform: uppercase; }
     @media all and (min-width: 760px) {
@@ -1878,12 +2056,13 @@ object {
     .staff-profiles-wrapper .navigation-button-container .navigation-button,
     .board-profiles-wrapper .navigation-button-container .navigation-button,
     .advisors-profiles-wrapper .navigation-button-container .navigation-button {
-      height: 76px;
+      height: 70px;
       width: 300px;
       margin: 2rem auto;
       border: 2px solid #323232;
       font-size: 1.35rem;
       color: #323232;
+      font-weight: 700;
       text-transform: uppercase;
       text-decoration: none;
       display: -ms-flexbox;
@@ -1892,6 +2071,7 @@ object {
           justify-content: center;
       -ms-flex-align: center;
           align-items: center; }
+
       @media all and (min-width: 760px) {
         .staff-profiles-wrapper .navigation-button-container .navigation-button,
         .board-profiles-wrapper .navigation-button-container .navigation-button,
@@ -1899,6 +2079,7 @@ object {
           height: 70px;
           width: 260px;
           border-width: 3px; } }
+
       .staff-profiles-wrapper .navigation-button-container .navigation-button:hover,
       .board-profiles-wrapper .navigation-button-container .navigation-button:hover,
       .advisors-profiles-wrapper .navigation-button-container .navigation-button:hover {
@@ -1935,14 +2116,16 @@ object {
     .advisors-profiles-wrapper .profile-preview .name {
       margin: 0.25rem auto;
       font-size: 1.55rem;
-      font-weight: 600; }
+      font-weight: 700; }
     .staff-profiles-wrapper .profile-preview .job-title,
     .board-profiles-wrapper .profile-preview .job-title,
     .advisors-profiles-wrapper .profile-preview .job-title {
       max-width: 235px;
       margin: 0.25rem auto;
       font-size: 1.4rem;
-      text-align: center; }
+      text-align: center;
+      font-weight: 600;
+      font-style: italic; }
 
 .advisors-profiles-wrapper .small-header {
   margin: 2rem auto; }
@@ -1970,6 +2153,12 @@ object {
   .advisors-profiles-wrapper .profile-preview:nth-child(4) .job-title {
     width: 265px; }
 
+    @media all and (min-width: 760px) {
+      .advisors-profiles-wrapper .profile-preview:nth-child(4) .job-title {
+        position: absolute;
+        left: -50%; } }
+
+
 @media all and (min-width: 760px) {
   .advisors-profiles-wrapper .navigation-button-container {
     margin: 3rem auto 1rem; } }
@@ -1978,6 +2167,8 @@ object {
   margin: 0 auto; }
   .page-id-19 .entry-content {
     text-align: center; }
+    .page-id-19 .entry-content p {
+      font-weight: 300; }
   .page-id-19 .header-text {
     position: absolute;
     padding: 15% 0 15%;
@@ -1999,6 +2190,7 @@ object {
     line-height: 54px;
     font-size: 3.15rem;
     color: white;
+    font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232; }
@@ -2014,7 +2206,8 @@ object {
   .page-id-19 .banner-text {
     width: 250px;
     font-size: 1.35rem;
-    font-weight: 300;
+    font-family: quattrocento, sans-serif;
+    font-weight: 700;
     color: white;
     width: 100%;
     margin: 1.5rem auto;
@@ -2034,30 +2227,26 @@ object {
         text-align: center; } }
   .page-id-19 .entry-header {
     display: none; }
-  .page-id-19 h2 {
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: 400;
+  .page-id-19 .navigation-button {
+    height: 70px;
+    width: 300px;
+    margin: 2rem auto;
+    border: 2px solid #323232;
+    font-size: 1.35rem;
+    color: #323232;
+    font-weight: 700;
     text-transform: uppercase;
-    background-color: #D9F1FF;
-    padding: 30px 0;
-    text-align: center; }
-    @media all and (min-width: 760px) {
-      .page-id-19 h2 {
-        font-size: 50px; } }
-  .page-id-19 .load-more {
-    margin-bottom: 80px;
-    margin-top: 40px;
-    text-align: center; }
-    .page-id-19 .load-more a {
-      padding: 30px 80px;
-      text-transform: uppercase;
-      border: 3px solid black;
-      text-decoration: none;
-      color: black; }
-      .page-id-19 .load-more a:hover {
-        border: 3px solid #8ED7FF;
-        box-shadow: 1px 1px 5px #323232; }
+    text-decoration: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    .page-id-19 .navigation-button:hover {
+      background: #D9F1FF;
+      cursor: pointer; }
+
   .page-id-19 .newsmedia-content .widget-area {
     margin-top: 10px;
     padding: 0 20px; }
@@ -2114,7 +2303,8 @@ object {
       .page-id-19 .newsmedia-article .article-content p {
         margin: 0; }
       .page-id-19 .newsmedia-article .article-content h3 {
-        margin: 8px 0; }
+        margin: 8px 0;
+        font-family: 700; }
     .page-id-19 .newsmedia-article .hentry {
       font-size: 14px; }
       .page-id-19 .newsmedia-article .hentry p {
@@ -2122,9 +2312,11 @@ object {
       .page-id-19 .newsmedia-article .hentry .entry-content {
         margin: 0; }
     .page-id-19 .newsmedia-article .date {
-      font-size: 12px; }
+      font-size: 12px;
+      font-weight: 300; }
     .page-id-19 .newsmedia-article .cfs-hyperlink {
       color: #4A4A4A;
+      font-weight: 700;
       text-decoration: none;
       text-transform: uppercase;
       padding: 5px 15px; }
@@ -2170,6 +2362,7 @@ object {
   .page-id-18 .entry-title {
     font-size: 3.15rem;
     color: white;
+    font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232; }
@@ -2179,7 +2372,8 @@ object {
         font-size: 3.85rem; } }
   .page-id-18 .banner-text {
     font-size: 1.35rem;
-    font-weight: 300;
+    font-family: quattrocento, sans-serif;
+    font-weight: 700;
     color: white;
     width: 100%;
     margin: 1.5rem auto;
@@ -2197,7 +2391,7 @@ object {
     margin: 0 auto;
     padding: 2rem 0.85rem;
     font-size: 1.25rem;
-    font-weight: 100;
+    font-family: quattrocento, sans-serif;
     text-align: center; }
     @media all and (min-width: 760px) {
       .page-id-18 .intro-copy {
@@ -2208,19 +2402,20 @@ object {
     width: 100%;
     margin: 0 auto;
     padding: 0.55rem 0;
-    font-weight: 100;
+    font-family: quattrocento, sans-serif;
     text-align: center; }
     @media all and (min-width: 760px) {
       .page-id-18 .main-copy {
         width: 75%;
         padding: 0.75rem auto; } }
   .page-id-18 .navigation-button {
-    height: 76px;
+    height: 70px;
     width: 300px;
     margin: 2rem auto;
     border: 2px solid #323232;
     font-size: 1.35rem;
     color: #323232;
+    font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
     display: -ms-flexbox;
@@ -2229,47 +2424,19 @@ object {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center; }
-    @media all and (min-width: 760px) {
-      .page-id-18 .navigation-button {
-        height: 70px;
-        width: 260px;
-        border-width: 3px; } }
+
     .page-id-18 .navigation-button:hover {
       background: #D9F1FF;
       cursor: pointer; }
   .page-id-18 .infographic-container + .navigation-button {
     margin: 3rem auto 6rem; }
-  .page-id-18 .blue-background {
-    height: auto;
-    width: 100%;
-    margin: 0 auto 0.75rem;
-    padding: 0.75rem 0.5rem;
-    background-color: #D9F1FF;
-    text-align: center;
-    line-height: 2.4rem; }
+
+  .page-id-18 .supporters-header {
+    font-size: 1.55rem; }
     @media all and (min-width: 760px) {
-      .page-id-18 .blue-background {
-        margin: 0 auto 1.5rem;
-        padding: 1rem 0.5rem;
-        line-height: 3.4rem; } }
-    .page-id-18 .blue-background h2 {
-      max-width: 400px;
-      margin: 0 auto;
-      font-size: 2.15rem;
-      font-weight: 400;
-      color: #323232;
-      line-height: 2.4rem;
-      text-transform: uppercase; }
-      @media all and (min-width: 760px) {
-        .page-id-18 .blue-background h2 {
-          max-width: none;
-          font-size: 3.2rem;
-          line-height: 3.4rem; } }
-    .page-id-18 .blue-background .supporters-header {
-      font-size: 1.55rem; }
-      @media all and (min-width: 760px) {
-        .page-id-18 .blue-background .supporters-header {
-          font-size: 1.85rem; } }
+      .page-id-18 .supporters-header {
+        font-size: 1.85rem; } }
+
   .page-id-18 .content-container {
     padding: 0 1rem; }
     @media all and (min-width: 760px) {
@@ -2295,7 +2462,7 @@ object {
       margin-top: 4rem;
       margin-bottom: 1.25rem;
       font-size: 1.75rem;
-      font-weight: 400;
+      font-weight: 700;
       color: #4A4A4A;
       text-align: center;
       text-transform: uppercase; }
@@ -2310,13 +2477,14 @@ object {
     .page-id-18 .content-container .partners-information-container .small-subheader {
       margin: 0.5rem 0 1.5rem;
       font-size: 1.1rem;
-      font-weight: 400;
+      font-weight: 700;
       text-transform: uppercase; }
       @media all and (min-width: 760px) {
         .page-id-18 .content-container .partners-information-container .small-subheader {
           font-size: 1.45rem;
           margin-bottom: 2rem; } }
     .page-id-18 .content-container .partners-information-container .collaborate-dashed-list {
+      font-family: quattrocento, sans-serif;
       margin: 0 0 2rem;
       padding-left: 0.75rem;
       list-style-type: none;
@@ -2330,7 +2498,6 @@ object {
           display: inline-block; } }
       .page-id-18 .content-container .partners-information-container .collaborate-dashed-list li {
         margin: 1.5rem 0;
-        font-weight: 100;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-flow: row nowrap;
@@ -2343,7 +2510,7 @@ object {
           height: 100%;
           padding-right: 0.5rem;
           font-size: 0.85rem;
-          font-weight: bold;
+          font-weight: 700;
           position: relative;
           bottom: 0.2rem; }
         @media all and (min-width: 760px) {
@@ -2409,7 +2576,6 @@ object {
       height: auto;
       width: 100%;
       margin: 0 auto;
-      font-weight: 100;
       text-align: center; }
       @media all and (min-width: 760px) {
         .page-id-18 .content-container .partners-information-container .partners-text {
@@ -2549,6 +2715,7 @@ object {
   .page-id-7 .banner-title {
     font-size: 3.15rem;
     color: white;
+    font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232; }
@@ -2558,7 +2725,8 @@ object {
         font-size: 3.85rem; } }
   .page-id-7 .banner-text {
     font-size: 1.35rem;
-    font-weight: 300;
+    font-family: quattrocento, sans-serif;
+    font-weight: 700;
     color: white;
     width: 100%;
     margin: 1.5rem auto;
@@ -2596,26 +2764,15 @@ object {
         margin: 2rem auto 1.5rem;
         padding: 1rem 0.5rem;
         line-height: 3.4rem; } }
-    .page-id-7 .blue-background h2 {
-      max-width: 400px;
-      margin: 0 auto;
-      font-size: 1.4rem;
-      font-weight: 400;
-      color: #323232;
-      line-height: 2.4rem;
-      text-transform: uppercase; }
-      @media all and (min-width: 760px) {
-        .page-id-7 .blue-background h2 {
-          max-width: none;
-          font-size: 3.2rem;
-          line-height: 3.4rem; } }
+
     .page-id-7 .blue-background .supporters-header {
       font-size: 1.55rem; }
       @media all and (min-width: 760px) {
         .page-id-7 .blue-background .supporters-header {
           font-size: 1.85rem; } }
   .page-id-7 .wpcf7 {
-    padding: 3%; }
+    padding: 3%;
+    font-family: quattrocento, sans-serif; }
     .page-id-7 .wpcf7 form {
       margin: 0 auto;
       background-color: #D9F1FF;
@@ -2703,6 +2860,8 @@ object {
       font-style: italic; }
     .page-id-7 .wpcf7 .wpcf7-submit {
       width: 200px;
+      font-family: muli, sans-serif;
+      font-weight: 700;
       background-color: #fff;
       border: 1px solid #000;
       font-size: 1rem;
@@ -2710,23 +2869,26 @@ object {
       font-style: normal;
       margin: 0 auto 1.5rem; }
 
-.page-template-careers #content {
+.page-id-196 #content {
   width: 100%; }
 
-.page-template-careers .entry-title {
+.page-id-196 .entry-title {
   font-size: 3.15rem;
   color: white;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 760px) {
-    .page-template-careers .entry-title {
+
+    .page-id-196 .entry-title {
       margin: 0 0 1.5rem;
       font-size: 3.85rem; } }
 
-.page-template-careers .banner-text {
+.page-id-196 .banner-text {
   font-size: 1.35rem;
-  font-weight: 300;
+  font-family: quattrocento, sans-serif;
+  font-weight: 700;
   color: white;
   width: 100%;
   margin: 1.5rem auto;
@@ -2735,24 +2897,26 @@ object {
   letter-spacing: 2px;
   text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 760px) {
-    .page-template-careers .banner-text {
+
+    .page-id-196 .banner-text {
       width: 750px;
       margin: 2% auto; } }
 
-.page-template-careers .intro-copy {
+.page-id-196 .intro-copy {
   height: auto;
   width: 100%;
   margin: 0 auto;
   padding: 2rem 0.85rem;
   font-size: 1.25rem;
-  font-weight: 100;
+  font-family: quattrocento, sans-serif;
   text-align: center; }
   @media all and (min-width: 760px) {
-    .page-template-careers .intro-copy {
+
+    .page-id-196 .intro-copy {
       padding: 2.75rem 0.85rem;
       width: 60%; } }
 
-.page-template-careers .page-header-container {
+.page-id-196 .page-header-container {
   background-color: #D9F1FF;
   display: -ms-flexbox;
   display: flex;
@@ -2762,75 +2926,88 @@ object {
   -ms-flex-align: center;
       align-items: center; }
 
-.page-template-careers .page-title {
+.page-id-196 .page-title {
+  font-weight: 700;
   font-size: 1.8rem;
   color: #323232;
   text-transform: uppercase;
   margin: 0; }
 
-.page-template-careers .job-container {
+.page-id-196 .job-container {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto; }
 
-.page-template-careers .job-post {
+.page-id-196 .job-post {
   margin: 0 10%;
   border-bottom: 1px solid black;
   padding-bottom: 6rem; }
 
-.page-template-careers .job-post:last-child {
+.page-id-196 .job-post:last-child {
   border-bottom: none; }
 
-.page-template-careers .job-title {
+.page-id-196 .job-title {
+  font-weight: 700;
   font-size: 1.3rem;
   text-align: center;
   color: #4A4A4A;
   text-transform: uppercase;
   margin: 2rem 0; }
 
-.page-template-careers .role-container {
+.page-id-196 .role-container {
+  font-family: quattrocento, sans-serif;
   font-size: 1.3rem;
   margin-bottom: 3rem; }
-  .page-template-careers .role-container p {
+  .page-id-196 .role-container p {
     margin-top: 0; }
 
-.page-template-careers .role {
+.page-id-196 .role {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 0; }
 
-.page-template-careers .resp-container {
+.page-id-196 .resp-container {
+  font-family: quattrocento, sans-serif;
   width: 100%;
   max-width: 850px;
   margin: 0 auto;
   font-size: 1.3rem;
   margin-bottom: 4rem; }
-  .page-template-careers .resp-container ul {
+  .page-id-196 .resp-container ul {
     margin-left: 0; }
-  .page-template-careers .resp-container p {
+  .page-id-196 .resp-container p {
     margin-top: 0; }
 
-.page-template-careers .responsibilities {
+.page-id-196 .responsibilities {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 0; }
 
-.page-template-careers .link-container {
-  text-align: center; }
-
-.page-template-careers .contact-link {
+.page-id-196 .navigation-button {
+  height: 70px;
+  width: 300px;
+  margin: 2rem auto;
+  border: 2px solid #323232;
+  font-size: 1.35rem;
+  color: #323232;
+  font-weight: 700;
+  text-transform: uppercase;
   text-decoration: none;
-  color: #000;
-  border: 2px solid #000;
-  padding: 1rem 3.5rem;
-  text-transform: uppercase; }
-  @media all and (min-width: 760px) {
-    .page-template-careers .contact-link {
-      padding: 1rem 4rem; } }
+
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .page-id-196 .navigation-button:hover {
+    background: #D9F1FF;
+    cursor: pointer; }
 
 .page-id-195 .entry-title {
   font-size: 3.15rem;
   color: white;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   text-shadow: 1px 2px 5px #323232; }
@@ -2841,7 +3018,8 @@ object {
 
 .page-id-195 .banner-text {
   font-size: 1.35rem;
-  font-weight: 300;
+  font-family: quattrocento, sans-serif;
+  font-weight: 700;
   color: white;
   width: 100%;
   margin: 1.5rem auto;
@@ -2860,7 +3038,7 @@ object {
   margin: 0 auto;
   padding: 2rem 0.85rem;
   font-size: 1.25rem;
-  font-weight: 100;
+  font-family: quattrocento, sans-serif;
   text-align: center; }
   @media all and (min-width: 760px) {
     .page-id-195 .intro-copy {
@@ -2873,40 +3051,16 @@ object {
 .page-id-195 .project-post {
   margin-bottom: 6rem; }
 
-.page-id-195 .proj-head {
-  background-color: #d9f1ff;
-  height: 90px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: center;
-      justify-content: center; }
+
+.page-id-195 .break {
+  display: none; }
   @media all and (min-width: 760px) {
-    .page-id-195 .proj-head {
-      -ms-flex-direction: row;
-          flex-direction: row;
-      -ms-flex-align: center;
-          align-items: center; } }
-  .page-id-195 .proj-head p {
-    margin: 0; }
-    @media all and (min-width: 760px) {
-      .page-id-195 .proj-head p {
-        font-size: 1.5rem; } }
-  .page-id-195 .proj-head .name {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #323232; }
-  .page-id-195 .proj-head .status {
-    text-transform: uppercase; }
-  .page-id-195 .proj-head .break {
-    display: none; }
-    @media all and (min-width: 760px) {
-      .page-id-195 .proj-head .break {
-        display: initial;
-        font-size: 1.5rem;
-        font-weight: 500;
-        margin: 0 0.5rem; } }
+    .page-id-195 .break {
+      display: initial;
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin: 0 0.5rem; } }
+
 
 .page-id-195 .img-container {
   margin: 2rem 2rem 3rem; }
@@ -2919,16 +3073,25 @@ object {
   width: 100%;
   max-width: 1000px; }
 
-.page-id-195 .project-link {
-  text-decoration: none;
+.page-id-195 .navigation-button {
+  height: 70px;
+  width: 300px;
+  margin: 2rem auto;
+  border: 2px solid #323232;
+  font-size: 1.35rem;
   color: #323232;
-  border: 2px solid black;
-  padding: 1rem 4rem;
-  text-transform: uppercase; }
-
-.single-projects h2 {
-  font-weight: 500;
-  color: #323232; }
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .page-id-195 .navigation-button:hover {
+    background: #D9F1FF;
+    cursor: pointer; }
 
 .single-projects h3,
 .single-projects p {
@@ -2942,37 +3105,32 @@ object {
 .single-projects .hero-image-banner .project-name {
   font-size: 4rem;
   line-height: 1;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  font-weight: 700; }
 
 .single-projects .hero-image-banner .project-location {
+  font-family: quattrocento, sans-serif;
+  font-weight: 700;
   font-size: 1.3rem;
   margin-bottom: 0.3rem; }
 
 .single-projects .hero-image-banner .project-status {
-  font-size: 1.3rem; }
-  .single-projects .hero-image-banner .project-status .project-status {
-    text-transform: uppercase; }
-
-.single-projects .content-head {
-  background-color: #d9f1ff;
-  height: 70px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  margin: 2rem 0;
+  font-family: quattrocento, sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
   text-transform: uppercase; }
 
 .single-projects .proj-content {
-  margin: 0 1.5rem; }
+  margin: 0 1.5rem;
+  font-family: quattrocento, sans-serif; }
+
   @media all and (min-width: 760px) {
     .single-projects .proj-content {
       max-width: 1000px;
       margin: 0 auto; } }
   .single-projects .proj-content h3 {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-weight: 700; }
   .single-projects .proj-content p {
     margin-top: 0; }
 
@@ -3052,46 +3210,44 @@ object {
       left: 36vw; } }
 
 .single-projects .quote-text {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  font-family: quattrocento, sans-serif;
+  font-weight: 700; }
 
 .single-projects .person {
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1.3rem;
   margin: 0;
   color: #4A4A4A; }
 
 .single-projects .line {
+  font-weight: 600;
   font-style: italic;
   margin: 0;
   color: #4A4A4A; }
 
-.single-projects .collab-link-container {
-  text-align: center;
-  margin: 3rem 0;
-  padding-top: 1rem; }
-
-.single-projects .collab-link {
-  text-decoration: none;
-  color: black;
-  border: 2px solid black;
-  padding: 1rem;
-  text-transform: uppercase; }
-
-.single-projects .other-post-gallery {
-  margin: 2rem 0 3rem; }
-
-.single-projects .other-proj {
-  background-color: #d9f1ff;
+.single-projects .navigation-button {
   height: 70px;
+  width: 300px;
+  margin: 2rem auto;
+  border: 2px solid #323232;
+  font-size: 1.35rem;
+  color: #323232;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
-      align-items: center;
-  margin: 2rem 0;
-  text-transform: uppercase; }
+      align-items: center; }
+  .single-projects .navigation-button:hover {
+    background: #D9F1FF;
+    cursor: pointer; }
+
+.single-projects .other-post-gallery {
+  margin: 2rem 0 3rem; }
 
 .single-projects .other-proj-wrapper {
   width: 85%;
@@ -3118,7 +3274,10 @@ object {
       display: inline;
       text-transform: uppercase; }
   .single-projects .other-proj-wrapper .project-name {
-    font-weight: bold; }
+    font-weight: 700; }
+  .single-projects .other-proj-wrapper .project-location,
+  .single-projects .other-proj-wrapper .project-status {
+    font-family: quattrocento, sans-serif; }
 
 .single-projects .image-wrapper {
   height: 300px;
@@ -3150,6 +3309,7 @@ object {
   .page-id-252 .banner-text {
     font-size: 3.15rem;
     color: white;
+    font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232;
@@ -3175,6 +3335,7 @@ object {
   .page-id-252 .top-message {
     line-height: 1; }
   .page-id-252 .thanks {
+    font-weight: 700;
     font-size: 2rem;
     text-transform: uppercase;
     margin: 0; }
@@ -3189,7 +3350,7 @@ object {
   .page-id-252 .bottom-text {
     font-size: 1.3rem;
     line-height: 1;
-    font-weight: 100; }
+    font-family: quattrocento, sans-serif; }
     .page-id-252 .bottom-text span {
       text-transform: uppercase; }
 
@@ -3211,5 +3372,9 @@ object {
   -ms-flex-align: center;
       align-items: center; }
 
-.error404 .logo {
-  margin-left: 2rem; }
+.error404 .error-logo {
+  background: url(../../images/full-logo.svg) no-repeat;
+  margin-left: 2rem;
+  height: 200px;
+  width: 400px;
+  background-size: 100%; }

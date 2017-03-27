@@ -36,6 +36,7 @@
         line-height: 1;
     }
     .thanks {
+        font-weight: $font__bold;
         font-size: 2rem;
         text-transform: uppercase;
         margin: 0;
@@ -54,7 +55,7 @@
     .bottom-text {
         font-size: 1.3rem;
         line-height: 1;
-        font-weight: 100;
+        font-family: $font__secondary;
         span{
             text-transform: uppercase;
         }

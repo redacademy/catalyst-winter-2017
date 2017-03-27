@@ -16,38 +16,13 @@
     .project-post {
         margin-bottom: 6rem;
     }
-    .proj-head {
-        background-color: #d9f1ff;
-        height: 90px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .break {
+        display: none;
         @include media($desktop-width) {
-            flex-direction: row;
-            align-items: center;
-        }
-        p {
-            margin: 0;
-            @include media($desktop-width){
-                font-size: 1.5rem;
-            }
-        }
-        .name {
+            display: initial;
             font-size: 1.5rem;
-            font-weight: bold;
-            color: $color__header-main;
-        }
-        .status {
-            text-transform: uppercase;
-        }
-        .break {
-            display: none;
-            @include media($desktop-width) {
-                display: initial;
-                font-size: 1.5rem;
-                font-weight: 500;
-                margin: 0 0.5rem;
-            }
+            font-weight: 500;
+            margin: 0 0.5rem;
         }
     }
     .img-container {
@@ -61,11 +36,7 @@
         width: 100%;
         max-width: 1000px;
     }
-    .project-link {
-        text-decoration: none;
-        color: $color__header-main;
-        border: 2px solid black;
-        padding: 1rem 4rem;
-        text-transform: uppercase;
+    .navigation-button {
+        @include navigation-button();
     }
 }

@@ -15,6 +15,7 @@
 @mixin page-title {
 	font-size: 3.15rem;
 	color: white;
+	font-weight: $font__bold;
 	text-align: center;
 	text-transform: uppercase;
 	@include header-text-shadow;
@@ -26,7 +27,8 @@
 
 @mixin banner-text {
 	font-size: 1.35rem;
-	font-weight: 300;
+    font-family: $font__secondary;
+    font-weight: $font__bold;
 	color: white;
 	width: 100%;
 	margin: $base__space-unit auto;
@@ -57,28 +59,13 @@
 	}
 }
 
-@mixin blue-background-header {
-	height: auto;
-	width: 100%;
-	margin: 0 auto 0.75rem;
-	padding: 0.75rem 0.5rem;
-	background-color: $color__brand-blue;
-	text-align: center;
-	line-height: 2.4rem;
-	@include media($desktop-width) {
-		margin: 0 auto 1.5rem;
-		padding: 1rem 0.5rem;
-		line-height: 3.4rem;
-	}
-}
-
 @mixin intro-copy {
 	height: auto;
 	width: 100%;
 	margin: 0 auto;
 	padding: 2rem 0.85rem;
 	font-size: 1.25rem;
-	font-weight: 100;
+	font-family: $font__secondary;
 	text-align: center;
 	@include media($desktop-width) {
 		padding: 2.75rem 0.85rem;
@@ -91,7 +78,7 @@
 	width: 100%;
 	margin: 0 auto;
 	padding: 0.55rem 0;
-	font-weight: 100;
+	font-family: $font__secondary;
 	text-align: center;
 	@include media($desktop-width) {
 		width: 75%;
@@ -162,22 +149,18 @@
 // Buttons
 
 @mixin navigation-button($font-color: $color__header-main) {
-	height: 76px;
+	height: 70px;
 	width: 300px;
 	margin: 2rem auto;
 	border: 2px solid $font-color;
 	font-size: 1.35rem;
 	color: $font-color;
+	font-weight: $font__bold;
 	text-transform: uppercase;
 	text-decoration: none;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	@include media($desktop-width) {
-		height: 70px;
-		width: 260px;
-		border-width: 3px;
-	}
 
 	&:hover {
 			background: $color__brand-blue;

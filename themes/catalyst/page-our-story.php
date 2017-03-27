@@ -16,7 +16,9 @@ get_header(); ?>
 
   				<?php $content_title1 = esc_html( CFS()->get('content_title') );
                 if ( !empty( $content_title1 ) ) :?>
-                <h2 class='status'><?php echo $content_title1; ?></h2>
+				<div class="blue-background">
+                	<h2 class='subheader-lrg'><?php echo $content_title1; ?></h2>
+				</div>
                 <?php endif; ?>
 
 				<?php $our_mission = esc_html( CFS()->get( 'our_mission' ) );
@@ -105,7 +107,9 @@ get_header(); ?>
 			<section class="formula">
 			<?php $content_title2 = esc_html( CFS()->get( 'content_title2' ) );
 			if ( !empty( $content_title2 ) ) :?>
-			<h2><?php echo $content_title2; ?></h2>
+			<div class="blue-background">
+				<h2 calss='subheader-lrg'><?php echo $content_title2; ?></h2>
+			</div>
 			<?php endif; ?>
 
 				<div class="formula-p">
@@ -152,7 +156,7 @@ get_header(); ?>
 
 				<?php $btn2 = esc_html( CFS()->get( 'btn2' ) );
 				if ( !empty( $btn2 ) ) :?>
-				<a class="btn" href="<?php echo get_home_url(); ?>/our-team"><?php echo $btn2; ?></a>
+				<a class="navigation-button" href="<?php echo get_home_url(); ?>/our-team"><?php echo $btn2; ?></a>
 				<?php endif; ?>
 
 			</section>
