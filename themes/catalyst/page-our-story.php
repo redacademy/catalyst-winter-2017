@@ -16,7 +16,7 @@ get_header(); ?>
 
   				<?php $content_title1 = esc_html( CFS()->get('content_title1') );
                 if ( !empty( $content_title1 ) ) :?>
-				<div class="blue-background">
+				<div class="blue-background-header">
                 	<h2 class='subheader-lrg'><?php echo $content_title1; ?></h2>
 				</div>
                 <?php endif; ?>
@@ -107,8 +107,8 @@ get_header(); ?>
 			<section class="formula">
 			<?php $content_title2 = esc_html( CFS()->get( 'content_title2' ) );
 			if ( !empty( $content_title2 ) ) :?>
-			<div class="blue-background">
-				<h2 calss='subheader-lrg'><?php echo $content_title2; ?></h2>
+			<div class="blue-background-header">
+				<h2 class='subheader-lrg'><?php echo $content_title2; ?></h2>
 			</div>
 			<?php endif; ?>
 

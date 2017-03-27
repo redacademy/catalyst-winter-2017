@@ -1,4 +1,5 @@
 .hero-image-banner {
+
     position: relative;
     min-width: 100%;
     @include flex-column(nowrap, center, center);
@@ -13,9 +14,9 @@
 }
 
 .formulas:last-child {
-    .fill {
-        display: none;
-    }
+	.fill {
+		display: none;
+	}
 }
 
 .blue-background-header {
@@ -32,6 +33,7 @@
 		line-height: 3.4rem;
 	}
 }
+
 .subheader-sm {
 	max-width: 400px;
 	margin: 0 auto;
@@ -40,12 +42,14 @@
 	color: $color__header-main;
 	line-height: 2.4rem;
 	text-transform: uppercase;
+	text-align: center;
 	@include media($desktop-width) {
 		max-width: none;
 		font-size: 2rem;
 		line-height: 3.4rem;
 	}
 }
+
 .subheader-lrg {
 	max-width: 400px;
 	margin: 0 auto;
@@ -60,4 +64,3 @@
 		line-height: 3.4rem;
 	}
 }
-

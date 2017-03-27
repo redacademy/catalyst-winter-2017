@@ -18,7 +18,6 @@
     .entry-header {
         display: none;
     }
-
     .navigation-button {
         @include navigation-button();
     }
@@ -31,7 +30,8 @@
             display: flex;
             width: 100%;
             .newsmedia-article {
-                width: 60%;
+                width: 70%;
+                height: 100vh;
             }
             .widget-area {
                 width: 40%;
@@ -41,6 +41,9 @@
     .widget-title {
         display: none;
     }
+    // .post-284{
+    //     display: block;
+    // }
     .newsmedia-article {
         padding: 0px 20px;
         .news {
@@ -58,7 +61,10 @@
                 max-width: 105%;
             }
         }
-        .news {
+        .newsmeida-article:first-child {
+            display: block;
+        }
+         .newsmeida-article:nth-child(2){
             display: none;
         }
         @include media($desktop-width) {
@@ -112,6 +118,7 @@
         border: none;
         box-shadow: none;
         border-radius: 0;
+         background: $color__brand-blue;
         padding: 0 !important;
         &:nth-child(2) {
             display: none;
@@ -130,17 +137,19 @@
         background: $color__brand-blue;
         padding: 20px;
     }
-    .tweet_data, .times{
-            padding: 0 60px;
+    .tweet_data,
+    .times {
+        padding: 0 60px;
     }
     .tweet-actions a {
         padding: 5px;
         background-color: lightgrey;
         border-radius: 20px;
     }
-    .light .tweets-intent-data{
+    .light .tweets-intent-data {
         border-top: none;
     }
+
     .video {
         text-align: center;
         iframe {
