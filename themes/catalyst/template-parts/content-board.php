@@ -54,4 +54,5 @@
 				<?php echo $cvDescription; ?>
 			</article>
 			<?php endif; ?>
+    
 	</section><!-- #post-## -->

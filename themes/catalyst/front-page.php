@@ -16,23 +16,55 @@
     </header>
     <div class="front-content">
         <div class="formula">
+<<<<<<< HEAD
             <h2>the catalyst formula</h2>
             <p class="catalyst-formula-copy"><?php echo esc_html( CFS()->get( 'catalyst_formula_copy' ) ); ?></p>
+=======
+
+            <div class="blue-background-header">
+                <h2 class='subheader-lrg'>the catalyst formula</h2>
+            </div>
+            <?php $catalyst_formula_copy = CFS()->get( 'catalyst_formula_copy' );
+            if ( !empty( $catalyst_formula_copy ) ) :?>
+            <p class="catalyst-formula-copy"><?php echo $catalyst_formula_copy; ?></p>
+            <?php endif; ?>
+
+>>>>>>> b6363f30eeae9b0216062d91b2de5b76d446cf09
             <?php get_template_part( 'template-parts/ourStory-carousel', 'projects carousel' ); ?>
-             <div class="readmore"><a href="">learn more</a></div>
+            <div class="readmore"><a href="">learn more</a></div>
         </div>
 
         <div class="projects">
             <h2>our projects</h2>
+<<<<<<< HEAD
             <p class="our-projects-copy"><?php echo esc_html( CFS()->get( 'our_projects_copy' ) ); ?></p>
+=======
+            <?php $our_projects_copy = CFS()->get( 'our_projects_copy' );
+            if ( !empty( $our_projects_copy ) ) :?>
+            <p class="our-projects-copy"><?php echo $our_projects_copy; ?></p>
+            <?php endif; ?>
+
+>>>>>>> b6363f30eeae9b0216062d91b2de5b76d446cf09
             <?php get_template_part( 'template-parts/projects-carousel', 'projects carousel' ); ?>
             <div class="readmore"><a>view more projects</a></div>
         </div>
 
         <div class="team">
             <h2>team catalyst</h2>
+<<<<<<< HEAD
             <p class="team-catalyst-copy"><?php echo esc_html( CFS()->get( 'team_catalyst_copy' ) ); ?></p>
             <h3 class="small-subheader"><?php echo esc_html( CFS()->get( 'team_catalyst_subheader' ) ); ?></h3>
+=======
+            <?php $team_catalyst_copy = CFS()->get( 'team_catalyst_copy' );
+            if ( !empty( $team_catalyst_copy ) ) :?>
+            <p class="team-catalyst-copy"><?php echo $team_catalyst_copy; ?></p>
+            <?php endif; ?>
+
+            <?php $team_catalyst_subheader = CFS()->get( 'team_catalyst_subheader' );
+            if ( !empty( $team_catalyst_subheader ) ) :?>
+            <h3 class="small-subheader"><?php echo $team_catalyst_subheader; ?></h3>
+            <?php endif; ?>
+>>>>>>> b6363f30eeae9b0216062d91b2de5b76d446cf09
 
             <div class="member-carousel">
                 <?php $members = CFS()->get('team_members');
@@ -44,7 +76,7 @@
                     </div>
                 <?php endforeach; wp_reset_postdata(); ?>
             </div>
-            <div class="readmore"><a>collaborate with us</a></div>
+            <a class='navigation-button' href=''>collaborate with us</a>
         </div>
     </div>
 </section>

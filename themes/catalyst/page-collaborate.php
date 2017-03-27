@@ -14,7 +14,7 @@ get_header(); ?>
 <?php get_template_part( 'template-parts/hero-banner'); ?>
 
 		<div class="blue-background">
-			<h2 class="subheader">Non-Profit Partners &amp; Investors</h2>
+			<h2 class="subheader-lrg">Non-Profit Partners &amp; Investors</h2>
 		</div>
 
 		<div class="content-container">
@@ -79,7 +79,7 @@ get_header(); ?>
 		</div>
 		<a class="navigation-button" href="<?php echo get_home_url() ; ?>/contact">Contact Us</a>
 			<div class="blue-background">
-				<h2 class="subheader supporters-header">Our Supporters</h2>
+				<h2 class="subheader-sm supporters-header">Our Supporters</h2>
 			</div>
 		<div class="supporters-logo-container">
 			<?php

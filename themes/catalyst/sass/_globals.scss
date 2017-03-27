@@ -18,6 +18,47 @@
         display: none;
     }
 }
-* {
-    font-family: muli, sans-serif
+
+.blue-background-header {
+	height: auto;
+	width: 100%;
+	margin: 0 auto 0.75rem;
+	padding: 0.75rem 0.5rem;
+	background-color: $color__brand-blue;
+	text-align: center;
+	line-height: 2.4rem;
+	@include media($desktop-width) {
+		margin: 0 auto 1.5rem;
+		padding: 1rem 0.5rem;
+		line-height: 3.4rem;
+	}
 }
+.subheader-sm {
+	max-width: 400px;
+	margin: 0 auto;
+	font-size: 1.25rem;
+	font-weight: $font__bold;
+	color: $color__header-main;
+	line-height: 2.4rem;
+	text-transform: uppercase;
+	@include media($desktop-width) {
+		max-width: none;
+		font-size: 2rem;
+		line-height: 3.4rem;
+	}
+}
+.subheader-lrg {
+	max-width: 400px;
+	margin: 0 auto;
+	font-size: 2.15rem;
+	font-weight: $font__bold;
+	color: $color__header-main;
+	line-height: 2.4rem;
+	text-transform: uppercase;
+	@include media($desktop-width) {
+		max-width: none;
+		font-size: 3.2rem;
+		line-height: 3.4rem;
+	}
+}
+

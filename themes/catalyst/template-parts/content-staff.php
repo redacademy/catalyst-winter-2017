@@ -9,7 +9,7 @@
 	</section>
 
 	<section class="staff-profile-popout profile-popout">
-
+    
 			<?php $cvDescription = esc_html( CFS()->get('cvdescription') );
 				if ( !empty( $cvDescription ) ) : 
 			?>
@@ -54,4 +54,5 @@
 				<?php echo $cvDescription; ?>
 			</article>
 			<?php endif; ?>
+
 	</section><!-- #post-## -->
