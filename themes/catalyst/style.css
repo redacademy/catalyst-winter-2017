@@ -1427,20 +1427,28 @@ object {
     cursor: pointer; }
 
 .page-id-21 .download {
+  height: 70px;
+  width: 250px;
+  margin: 2rem auto;
+  border: 2px solid #323232;
+  font-size: 1.35rem;
+  color: #323232;
   font-weight: 700;
-  padding: 20px 50px;
   text-transform: uppercase;
-  border: 1px solid black;
   text-decoration: none;
-  color: black; }
-  @media all and (min-width: 760px) {
-    .page-id-21 .download {
-      border: 3px solid #323232; } }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
   .page-id-21 .download:hover {
-    border-color: #D9F1FF;
-    box-shadow: 1px 1px 5px #323232; }
-  .page-id-21 .download.active {
-    background-color: #D9F1FF; }
+    border: 2px solid #D9F1FF;
+    box-shadow: 0px 2px 5px #323232; }
+  .page-id-21 .download:active {
+    background: #D9F1FF;
+    border: 2px solid white;
+    cursor: pointer; }
 
 .page-id-21 .download {
   width: 300px;
@@ -2186,7 +2194,8 @@ object {
       display: flex;
       width: 100%; }
       .page-id-19 .newsmedia-content .newsmedia-article {
-        width: 60%; }
+        width: 70%;
+        height: 100vh; }
       .page-id-19 .newsmedia-content .widget-area {
         width: 40%; } }
   .page-id-19 .widget-title {
@@ -2267,7 +2276,8 @@ object {
   .page-id-19 .tweet_wrap {
     background: #D9F1FF;
     padding: 20px; }
-  .page-id-19 .tweet_data, .page-id-19 .times {
+  .page-id-19 .tweet_data,
+  .page-id-19 .times {
     padding: 0 60px; }
   .page-id-19 .tweet-actions a {
     padding: 5px;

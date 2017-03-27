@@ -39,7 +39,6 @@
     .entry-header {
         display: none;
     }
-
     .navigation-button {
         @include navigation-button();
     }
@@ -52,7 +51,8 @@
             display: flex;
             width: 100%;
             .newsmedia-article {
-                width: 60%;
+                width: 70%;
+                height: 100vh;
             }
             .widget-area {
                 width: 40%;
@@ -151,15 +151,16 @@
         background: $color__brand-blue;
         padding: 20px;
     }
-    .tweet_data, .times{
-            padding: 0 60px;
+    .tweet_data,
+    .times {
+        padding: 0 60px;
     }
     .tweet-actions a {
         padding: 5px;
         background-color: lightgrey;
         border-radius: 20px;
     }
-    .light .tweets-intent-data{
+    .light .tweets-intent-data {
         border-top: none;
     }
     .video {

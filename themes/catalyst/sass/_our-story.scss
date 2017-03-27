@@ -57,22 +57,7 @@
         @include navigation-button();
     }
     .download {
-        font-weight: $font__bold;
-        padding: 20px 50px;
-        text-transform: uppercase;
-        border: 1px solid black;
-        text-decoration: none;
-        color: black;
-        @include media($desktop-width) {
-            border: 3px solid $color__header-main;
-        }
-        &:hover {
-            border-color: $color__brand-blue;
-            box-shadow: 1px 1px 5px $color__header-main;
-        }
-        &.active {
-            background-color: $color__brand-blue;
-        }
+         @include navigation-button();
     }
     .download {
         width: 300px;
