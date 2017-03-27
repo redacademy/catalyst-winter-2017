@@ -452,7 +452,7 @@ table {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .hero-image-banner {
       height: 70vh; } }
   .hero-image-banner .header-text {
@@ -472,7 +472,7 @@ table {
   background-color: #D9F1FF;
   text-align: center;
   line-height: 2.4rem; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .blue-background-header {
       margin: 0 auto 1.5rem;
       padding: 1rem 0.5rem;
@@ -486,7 +486,7 @@ table {
   color: #323232;
   line-height: 2.4rem;
   text-transform: uppercase; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .subheader-sm {
       max-width: none;
       font-size: 2rem;
@@ -500,7 +500,7 @@ table {
   color: #323232;
   line-height: 2.4rem;
   text-transform: uppercase; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .subheader-lrg {
       max-width: none;
       font-size: 3.2rem;
@@ -627,7 +627,7 @@ textarea {
     display: flex;
     padding-left: 20px;
     height: 100%; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .container .logo {
         width: 20%; } }
   .container .header-logo {
@@ -641,7 +641,7 @@ textarea {
     text-align: center;
     overflow: hidden;
     text-indent: 193%; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .container .header-logo {
         margin: 20px auto;
         width: 110px; } }
@@ -664,7 +664,7 @@ textarea {
         justify-content: flex-end;
     -ms-flex-align: baseline;
         align-items: baseline; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .container .top-menu {
         width: 80%; } }
   .container .desktop-menu {
@@ -779,7 +779,7 @@ textarea {
   width: 100%;
   height: 180px;
   padding-top: 20px; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .footer {
       display: -ms-flexbox;
       display: flex;
@@ -803,7 +803,7 @@ textarea {
     right: 95%;
     bottom: 60%;
     height: 20px; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .footer .footerLogo {
         right: 92%;
         bottom: 76%; } }
@@ -822,7 +822,7 @@ textarea {
     font-weight: 700;
     font-size: 14px;
     padding-left: 18px; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .footer #text-2 p {
         font-size: 16px; } }
     @media all and (min-width: 886px) {
@@ -843,13 +843,13 @@ textarea {
         flex-wrap: wrap; }
     .footer .sns-icon div {
       margin: 0 5px; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .footer .sns-icon {
         padding-left: 17px;
         width: 20%; }
         .footer .sns-icon a {
           padding-right: 10px; } }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .footer .sns-icon {
         padding-left: 0; } }
     @media all and (min-width: 900px) {
@@ -860,7 +860,7 @@ textarea {
     background-size: 100%;
     height: 40px;
     width: 40px; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .footer .twitter {
         height: 40px;
         width: 40px; } }
@@ -873,7 +873,7 @@ textarea {
     background-size: 100%;
     height: 40px;
     width: 40px; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .footer .linkedin {
         height: 40px;
         width: 40px; } }
@@ -886,7 +886,7 @@ textarea {
     height: 10px;
     text-transform: uppercase;
     font-size: 12px; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .footer .page-link {
         font-size: 15px;
         width: 20%;
@@ -912,7 +912,7 @@ textarea {
     position: relative;
     width: 300px;
     margin: auto; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .footer .footer-widget-area {
         width: 310px; } }
     @media all and (min-width: 670px) {
@@ -926,7 +926,7 @@ textarea {
         width: 535px; } }
   .footer .company-info {
     margin-bottom: 20px; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .footer .company-info {
         width: 55%; } }
     @media all and (min-width: 900px) {
@@ -939,7 +939,7 @@ textarea {
       font-weight: 100;
       line-height: 12px;
       margin: 0 auto; }
-      @media all and (min-width: 600px) {
+      @media all and (min-width: 760px) {
         .footer .company-info p {
           font-size: 14px;
           line-height: 15px; } }
@@ -990,7 +990,7 @@ textarea {
   transform: translate(-50%, -50%);
   position: absolute;
   text-shadow: 1px 2px 5px #323232; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .home .header-text {
       width: 750px; } }
   .home .header-text h1 {
@@ -1089,7 +1089,7 @@ textarea {
     width: 85%;
     margin: 0 0.5rem;
     opacity: 0.5; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .home .projects .other-proj-wrapper {
         width: 50%; } }
     .home .projects .other-proj-wrapper .project-name,
@@ -1101,7 +1101,7 @@ textarea {
   .home .projects .image-wrapper {
     height: 300px;
     overflow: hidden; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .home .projects .image-wrapper {
         height: 500px; } }
     .home .projects .image-wrapper img {
@@ -1120,7 +1120,7 @@ textarea {
     width: 100%;
     max-width: 40%;
     opacity: 0.5; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .home .team .member {
         margin: 0 5rem;
         max-width: 25%; } }
@@ -1139,7 +1139,7 @@ textarea {
     font-family: quattrocento, sans-serif;
     width: 300px;
     margin: 0 auto; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .home .team .team-catalyst-copy {
         max-width: 1000px;
         width: 100%;
@@ -1150,7 +1150,7 @@ textarea {
     width: 300px;
     margin: 2rem auto;
     text-transform: uppercase; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .home .team .small-subheader {
         width: 100%;
         font-size: 1.5rem; } }
@@ -1169,14 +1169,14 @@ textarea {
     width: 15%; }
   .home .formula-carousel:last-child .fill {
     display: none; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .home .formula-carousel {
       display: -ms-flexbox;
       display: flex; } }
   .home .formula-carousel:after {
     content: 'flickity';
     display: none; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .home .formula-carousel:after {
         content: ''; } }
   .home .formula-carousel .formula-text {
@@ -1319,11 +1319,11 @@ object {
   text-align: center;
   text-transform: uppercase;
   text-shadow: 1px 2px 5px #323232; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-21 .entry-title {
       margin: 0 0 1.5rem;
       font-size: 3.85rem; } }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-21 .entry-title {
       padding-top: 150px; } }
 
@@ -1331,7 +1331,7 @@ object {
   position: absolute;
   top: 20%;
   padding: 0 10px; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-21 .header-text {
       position: initial; } }
 
@@ -1346,7 +1346,7 @@ object {
   line-height: 2rem;
   letter-spacing: 2px;
   text-shadow: 1px 2px 5px #323232; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-21 .banner-text {
       width: 750px;
       margin: 2% auto; } }
@@ -1359,7 +1359,7 @@ object {
   font-size: 1.25rem;
   font-family: quattrocento, sans-serif;
   text-align: center; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-21 .intro-copy {
       padding: 2.75rem 0.85rem;
       width: 60%; } }
@@ -1374,7 +1374,7 @@ object {
   font-weight: 700;
   margin: auto;
   line-height: 35px; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-21 h3 {
       font-size: 50px;
       line-height: 55px;
@@ -1392,7 +1392,7 @@ object {
   width: 280px;
   font-weight: 100;
   line-height: 25px; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-21 .top-text {
       width: 100%;
       font-size: 22px;
@@ -1425,7 +1425,7 @@ object {
   border: 1px solid black;
   text-decoration: none;
   color: black; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-21 .download {
       border: 3px solid #323232; } }
   .page-id-21 .download:hover {
@@ -1445,7 +1445,7 @@ object {
 
 .page-id-21 .mission-quote2 {
   margin-bottom: 80px; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-21 .mission-quote2 {
       margin-bottom: 0px; } }
 
@@ -1459,7 +1459,7 @@ object {
   -ms-flex-pack: center;
       justify-content: center;
   padding-top: 30px; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-21 .mission-quote,
     .page-id-21 .mission-quote2 {
       font-size: 20px; } }
@@ -1474,7 +1474,7 @@ object {
   width: 90%;
   font-family: quattrocento, sans-serif;
   font-style: italic; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-21 .quote,
     .page-id-21 .quote2 {
       font-size: 20px; } }
@@ -1488,7 +1488,7 @@ object {
   position: absolute;
   right: 60%;
   bottom: 32%; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-21 .quotation-left,
     .page-id-21 .quotation-left2 {
       right: 80%;
@@ -1504,7 +1504,7 @@ object {
   position: absolute;
   left: 60%;
   top: 53%; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-21 .quotation-right,
     .page-id-21 .quotation-right2 {
       left: 79%;
@@ -1512,21 +1512,21 @@ object {
 
 .page-id-21 .quotation-right2 {
   top: 94%; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-21 .quotation-right2 {
       top: 51%; } }
 
 .page-id-21 .robert {
   margin-bottom: 60px;
   text-align: center; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-21 .robert {
       font-size: 30px; } }
 
 .page-id-21 h4 {
   font-weight: 700;
   margin: 0; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-21 h4 {
       margin: 15px; } }
 
@@ -1551,7 +1551,7 @@ object {
   font-family: quattrocento, sans-serif;
   width: 80%;
   margin-bottom: 20px; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-21 .mission-text {
       width: 96%;
       margin-bottom: 0; } }
@@ -1560,7 +1560,7 @@ object {
   text-align: center; }
   .page-id-21 .mission-content .arrow {
     margin-bottom: 10px; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-21 .mission-content {
       display: -ms-flexbox;
       display: flex;
@@ -1580,7 +1580,7 @@ object {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: 0 auto; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .page-id-21 .mission-content .mission-image {
         width: 25%; } }
     .page-id-21 .mission-content .mission-image img {
@@ -1603,7 +1603,7 @@ object {
   font-size: 14px;
   line-height: 14px;
   font-weight: 100; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-21 .formula-text1,
     .page-id-21 .formula-text2 {
       font-size: 24px;
@@ -1611,7 +1611,7 @@ object {
 
 .page-id-21 .formula-carousel {
   font-family: quattrocento, sans-serif; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-21 .formula-carousel {
       padding-left: 20px; } }
 
@@ -1629,14 +1629,14 @@ object {
     width: 15%; }
   .page-id-21 .formula-carousel:last-child .fill {
     display: none; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-21 .formula-carousel {
       display: -ms-flexbox;
       display: flex; } }
   .page-id-21 .formula-carousel:after {
     content: 'flickity';
     display: none; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .page-id-21 .formula-carousel:after {
         content: ''; } }
   .page-id-21 .formula-carousel .formula-text {
@@ -1656,7 +1656,7 @@ object {
 .page-id-159 {
   height: 100%;
   width: 100%; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-159 {
       font-size: 1.4rem;
       line-height: 1.75rem; } }
@@ -1667,7 +1667,7 @@ object {
     text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .page-id-159 .entry-title {
         margin: 0 0 1.5rem;
         font-size: 3.85rem; } }
@@ -1682,7 +1682,7 @@ object {
     line-height: 2rem;
     letter-spacing: 2px;
     text-shadow: 1px 2px 5px #323232; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .page-id-159 .banner-text {
         width: 750px;
         margin: 2% auto; } }
@@ -1695,7 +1695,7 @@ object {
   font-size: 1.25rem;
   font-family: quattrocento, sans-serif;
   text-align: center; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .intro-copy {
       padding: 2.75rem 0.85rem;
       width: 60%; } }
@@ -1760,7 +1760,7 @@ object {
   .exit-button:focus {
     outline: none; }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 760px) {
   .enter-button {
     display: none; } }
 
@@ -1783,7 +1783,7 @@ object {
       justify-content: space-between;
   -ms-flex-align: center;
       align-items: center; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .staff-profiles-wrapper,
     .board-profiles-wrapper,
     .advisors-profiles-wrapper {
@@ -1822,7 +1822,7 @@ object {
       .board-profiles-wrapper .profile-popout .left-column img,
       .advisors-profiles-wrapper .profile-popout .left-column img {
         width: 215px; }
-        @media all and (min-width: 600px) {
+        @media all and (min-width: 760px) {
           .staff-profiles-wrapper .profile-popout .left-column img,
           .board-profiles-wrapper .profile-popout .left-column img,
           .advisors-profiles-wrapper .profile-popout .left-column img {
@@ -1853,7 +1853,7 @@ object {
     font-weight: 700;
     text-align: center;
     text-transform: uppercase; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .staff-profiles-wrapper .small-header,
       .board-profiles-wrapper .small-header,
       .advisors-profiles-wrapper .small-header {
@@ -1921,7 +1921,7 @@ object {
     margin: 1rem 3rem;
     text-align: center;
     position: relative; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .staff-profiles-wrapper .profile-preview,
       .board-profiles-wrapper .profile-preview,
       .advisors-profiles-wrapper .profile-preview {
@@ -1931,7 +1931,7 @@ object {
     .advisors-profiles-wrapper .profile-preview .profile-image {
       width: 215px;
       border-radius: 50%; }
-      @media all and (min-width: 600px) {
+      @media all and (min-width: 760px) {
         .staff-profiles-wrapper .profile-preview .profile-image,
         .board-profiles-wrapper .profile-preview .profile-image,
         .advisors-profiles-wrapper .profile-preview .profile-image {
@@ -1981,12 +1981,12 @@ object {
     margin: 0 auto; }
   .advisors-profiles-wrapper .profile-preview:nth-child(4) .job-title {
     width: 265px; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .advisors-profiles-wrapper .profile-preview:nth-child(4) .job-title {
         position: absolute;
         left: -50%; } }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 760px) {
   .advisors-profiles-wrapper .navigation-button-container {
     margin: 3rem auto 1rem; } }
 
@@ -2008,7 +2008,7 @@ object {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .page-id-19 .header-text {
         position: initial; } }
   .page-id-19 .entry-title {
@@ -2021,11 +2021,11 @@ object {
     text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .page-id-19 .entry-title {
         margin: 0 0 1.5rem;
         font-size: 3.85rem; } }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .page-id-19 .entry-title {
         position: initial;
         margin: 0;
@@ -2042,11 +2042,11 @@ object {
     line-height: 2rem;
     letter-spacing: 2px;
     text-shadow: 1px 2px 5px #323232; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .page-id-19 .banner-text {
         width: 750px;
         margin: 2% auto; } }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .page-id-19 .banner-text {
         width: 100%;
         position: initial;
@@ -2076,7 +2076,7 @@ object {
   .page-id-19 .newsmedia-content .widget-area {
     margin-top: 10px;
     padding: 0 20px; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-19 .newsmedia-content {
       display: -ms-flexbox;
       display: flex;
@@ -2103,7 +2103,7 @@ object {
         max-width: 105%; }
     .page-id-19 .newsmedia-article .news {
       display: none; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .page-id-19 .newsmedia-article {
         display: -ms-flexbox;
         display: flex;
@@ -2153,12 +2153,12 @@ object {
     padding: 0 !important; }
     .page-id-19 li.tweets_avatar:nth-child(2) {
       display: none; }
-      @media all and (min-width: 600px) {
+      @media all and (min-width: 760px) {
         .page-id-19 li.tweets_avatar:nth-child(2) {
           display: block; } }
     .page-id-19 li.tweets_avatar:nth-child(3) {
       display: none; }
-      @media all and (min-width: 600px) {
+      @media all and (min-width: 760px) {
         .page-id-19 li.tweets_avatar:nth-child(3) {
           display: block; } }
   .page-id-19 .tweet_wrap {
@@ -2179,7 +2179,7 @@ object {
 .page-id-18 {
   height: 100%;
   width: 100%; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-18 {
       font-size: 1.4rem;
       line-height: 1.75rem; } }
@@ -2192,7 +2192,7 @@ object {
     text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .page-id-18 .entry-title {
         margin: 0 0 1.5rem;
         font-size: 3.85rem; } }
@@ -2207,7 +2207,7 @@ object {
     line-height: 2rem;
     letter-spacing: 2px;
     text-shadow: 1px 2px 5px #323232; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .page-id-18 .banner-text {
         width: 750px;
         margin: 2% auto; } }
@@ -2219,7 +2219,7 @@ object {
     font-size: 1.25rem;
     font-family: quattrocento, sans-serif;
     text-align: center; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .page-id-18 .intro-copy {
         padding: 2.75rem 0.85rem;
         width: 60%; } }
@@ -2230,7 +2230,7 @@ object {
     padding: 0.55rem 0;
     font-family: quattrocento, sans-serif;
     text-align: center; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .page-id-18 .main-copy {
         width: 75%;
         padding: 0.75rem auto; } }
@@ -2257,12 +2257,12 @@ object {
     margin: 3rem auto 6rem; }
   .page-id-18 .supporters-header {
     font-size: 1.55rem; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .page-id-18 .supporters-header {
         font-size: 1.85rem; } }
   .page-id-18 .content-container {
     padding: 0 1rem; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .page-id-18 .content-container .partners-information-container {
         display: -ms-flexbox;
         display: flex;
@@ -2276,7 +2276,7 @@ object {
     .page-id-18 .content-container .partners-information-container .partners-information {
       height: auto;
       margin: 0 0 4rem; }
-      @media all and (min-width: 600px) {
+      @media all and (min-width: 760px) {
         .page-id-18 .content-container .partners-information-container .partners-information {
           width: 490px;
           margin: 0 auto;
@@ -2289,7 +2289,7 @@ object {
       color: #4A4A4A;
       text-align: center;
       text-transform: uppercase; }
-      @media all and (min-width: 600px) {
+      @media all and (min-width: 760px) {
         .page-id-18 .content-container .partners-information-container .small-header {
           margin: 1.9rem 0 0.5rem;
           font-size: 2rem;
@@ -2302,7 +2302,7 @@ object {
       font-size: 1.1rem;
       font-weight: 700;
       text-transform: uppercase; }
-      @media all and (min-width: 600px) {
+      @media all and (min-width: 760px) {
         .page-id-18 .content-container .partners-information-container .small-subheader {
           font-size: 1.45rem;
           margin-bottom: 2rem; } }
@@ -2312,7 +2312,7 @@ object {
       padding-left: 0.75rem;
       list-style-type: none;
       position: relative; }
-      @media all and (min-width: 600px) {
+      @media all and (min-width: 760px) {
         .page-id-18 .content-container .partners-information-container .collaborate-dashed-list {
           height: auto;
           margin: 0;
@@ -2336,7 +2336,7 @@ object {
           font-weight: 700;
           position: relative;
           bottom: 0.2rem; }
-        @media all and (min-width: 600px) {
+        @media all and (min-width: 760px) {
           .page-id-18 .content-container .partners-information-container .collaborate-dashed-list li {
             font-size: 1.4rem; } }
       .page-id-18 .content-container .partners-information-container .collaborate-dashed-list .key-graphic-1 {
@@ -2349,7 +2349,7 @@ object {
         left: -4%;
         z-index: -99999;
         transform: rotate(25deg); }
-        @media all and (min-width: 600px) {
+        @media all and (min-width: 760px) {
           .page-id-18 .content-container .partners-information-container .collaborate-dashed-list .key-graphic-1 {
             bottom: 27.25%;
             left: 4.5%; } }
@@ -2363,7 +2363,7 @@ object {
         right: -1.25%;
         z-index: -99999;
         transform: rotate(-25deg); }
-        @media all and (min-width: 600px) {
+        @media all and (min-width: 760px) {
           .page-id-18 .content-container .partners-information-container .collaborate-dashed-list .key-graphic-2 {
             bottom: 9%;
             left: 83.75%; } }
@@ -2375,7 +2375,7 @@ object {
         position: absolute;
         bottom: 13%;
         z-index: -99999; }
-        @media all and (min-width: 600px) {
+        @media all and (min-width: 760px) {
           .page-id-18 .content-container .partners-information-container .collaborate-dashed-list .dollar-sign-graphic-1 {
             bottom: 32%;
             left: 2%; } }
@@ -2389,7 +2389,7 @@ object {
         right: -2%;
         z-index: -99999;
         display: inline-block; }
-        @media all and (min-width: 600px) {
+        @media all and (min-width: 760px) {
           .page-id-18 .content-container .partners-information-container .collaborate-dashed-list .dollar-sign-graphic-2 {
             bottom: 2%;
             left: 81%; } }
@@ -2400,7 +2400,7 @@ object {
       width: 100%;
       margin: 0 auto;
       text-align: center; }
-      @media all and (min-width: 600px) {
+      @media all and (min-width: 760px) {
         .page-id-18 .content-container .partners-information-container .partners-text {
           width: 330px;
           padding: 2rem 0 0;
@@ -2422,12 +2422,12 @@ object {
     .page-id-18 .infographic-container .business-model-diagram {
       height: auto;
       width: 95%; }
-      @media all and (min-width: 600px) {
+      @media all and (min-width: 760px) {
         .page-id-18 .infographic-container .business-model-diagram {
           height: 530px; } }
     .page-id-18 .infographic-container .key-graphic-1 {
       display: none; }
-      @media all and (min-width: 600px) {
+      @media all and (min-width: 760px) {
         .page-id-18 .infographic-container .key-graphic-1 {
           width: 85px;
           position: absolute;
@@ -2438,7 +2438,7 @@ object {
           display: inline; } }
     .page-id-18 .infographic-container .key-graphic-2 {
       display: none; }
-      @media all and (min-width: 600px) {
+      @media all and (min-width: 760px) {
         .page-id-18 .infographic-container .key-graphic-2 {
           width: 55px;
           position: absolute;
@@ -2448,7 +2448,7 @@ object {
           display: inline; } }
     .page-id-18 .infographic-container .dollar-sign-graphic-1 {
       display: none; }
-      @media all and (min-width: 600px) {
+      @media all and (min-width: 760px) {
         .page-id-18 .infographic-container .dollar-sign-graphic-1 {
           position: absolute;
           top: 14%;
@@ -2457,7 +2457,7 @@ object {
           display: inline; } }
     .page-id-18 .infographic-container .dollar-sign-graphic-2 {
       display: none; }
-      @media all and (min-width: 600px) {
+      @media all and (min-width: 760px) {
         .page-id-18 .infographic-container .dollar-sign-graphic-2 {
           width: 65px;
           position: absolute;
@@ -2466,7 +2466,7 @@ object {
           display: inline; } }
     .page-id-18 .infographic-container .green-line-graphic-1 {
       display: none; }
-      @media all and (min-width: 600px) {
+      @media all and (min-width: 760px) {
         .page-id-18 .infographic-container .green-line-graphic-1 {
           height: auto;
           width: 150px;
@@ -2477,7 +2477,7 @@ object {
           display: inline; } }
     .page-id-18 .infographic-container .green-line-graphic-2 {
       display: none; }
-      @media all and (min-width: 600px) {
+      @media all and (min-width: 760px) {
         .page-id-18 .infographic-container .green-line-graphic-2 {
           height: auto;
           width: 150px;
@@ -2499,7 +2499,7 @@ object {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .page-id-18 .supporters-logo-container {
         padding: 0 0 3rem;
         width: 70%; } }
@@ -2508,7 +2508,7 @@ object {
       width: auto;
       margin: 4%;
       filter: grayscale(100%) invert(60%); }
-      @media all and (min-width: 600px) {
+      @media all and (min-width: 760px) {
         .page-id-18 .supporters-logo-container .sponsor-logo {
           margin: 1.5rem 2.5rem; } }
       .page-id-18 .supporters-logo-container .sponsor-logo:nth-child(2) {
@@ -2531,7 +2531,7 @@ object {
   text-align: center;
   height: 100%;
   width: 100%; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-7 {
       font-size: 1.4rem;
       line-height: 1.75rem; } }
@@ -2542,7 +2542,7 @@ object {
     text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .page-id-7 .banner-title {
         margin: 0 0 1.5rem;
         font-size: 3.85rem; } }
@@ -2557,7 +2557,7 @@ object {
     line-height: 2rem;
     letter-spacing: 2px;
     text-shadow: 1px 2px 5px #323232; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .page-id-7 .banner-text {
         width: 750px;
         margin: 2% auto; } }
@@ -2570,7 +2570,7 @@ object {
     line-height: 2rem;
     letter-spacing: 2px;
     text-shadow: 1px 2px 5px #323232; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .page-id-7 .banner-text-small {
         width: 750px;
         margin: 2% auto; } }
@@ -2582,14 +2582,14 @@ object {
     background-color: #D9F1FF;
     text-align: center;
     line-height: 2.4rem; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .page-id-7 .blue-background {
         margin: 2rem auto 1.5rem;
         padding: 1rem 0.5rem;
         line-height: 3.4rem; } }
     .page-id-7 .blue-background .supporters-header {
       font-size: 1.55rem; }
-      @media all and (min-width: 600px) {
+      @media all and (min-width: 760px) {
         .page-id-7 .blue-background .supporters-header {
           font-size: 1.85rem; } }
   .page-id-7 .wpcf7 {
@@ -2599,7 +2599,7 @@ object {
       margin: 0 auto;
       background-color: #D9F1FF;
       padding: 0.5rem 1rem; }
-      @media all and (min-width: 600px) {
+      @media all and (min-width: 760px) {
         .page-id-7 .wpcf7 form {
           max-width: 1000px;
           display: -ms-flexbox;
@@ -2609,13 +2609,13 @@ object {
           -ms-flex-pack: justify;
               justify-content: space-between;
           padding: 0.5rem 2rem; } }
-      @media all and (min-width: 600px) {
+      @media all and (min-width: 760px) {
         .page-id-7 .wpcf7 form p:nth-child(2),
         .page-id-7 .wpcf7 form p:nth-child(3),
         .page-id-7 .wpcf7 form p:nth-child(4),
         .page-id-7 .wpcf7 form p:nth-child(5) {
           width: 48%; } }
-      @media all and (min-width: 600px) {
+      @media all and (min-width: 760px) {
         .page-id-7 .wpcf7 form p:nth-child(6),
         .page-id-7 .wpcf7 form p:nth-child(7),
         .page-id-7 .wpcf7 form p:nth-child(8) {
@@ -2638,7 +2638,7 @@ object {
       display: flex;
       -ms-flex-direction: column;
           flex-direction: column; }
-      @media all and (min-width: 600px) {
+      @media all and (min-width: 760px) {
         .page-id-7 .wpcf7 .radio {
           -ms-flex-direction: row;
               flex-direction: row;
@@ -2665,10 +2665,10 @@ object {
       font-style: italic;
       opacity: 0.5;
       font-size: 1rem; }
-      @media all and (min-width: 600px) {
+      @media all and (min-width: 760px) {
         .page-id-7 .wpcf7 .radio-blurb {
           font-size: 1.3rem; } }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .page-id-7 .wpcf7 .radios {
         display: -ms-flexbox;
         display: flex;
@@ -2701,7 +2701,7 @@ object {
   text-align: center;
   text-transform: uppercase;
   text-shadow: 1px 2px 5px #323232; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-196 .entry-title {
       margin: 0 0 1.5rem;
       font-size: 3.85rem; } }
@@ -2717,7 +2717,7 @@ object {
   line-height: 2rem;
   letter-spacing: 2px;
   text-shadow: 1px 2px 5px #323232; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-196 .banner-text {
       width: 750px;
       margin: 2% auto; } }
@@ -2730,7 +2730,7 @@ object {
   font-size: 1.25rem;
   font-family: quattrocento, sans-serif;
   text-align: center; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-196 .intro-copy {
       padding: 2.75rem 0.85rem;
       width: 60%; } }
@@ -2829,7 +2829,7 @@ object {
   text-align: center;
   text-transform: uppercase;
   text-shadow: 1px 2px 5px #323232; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-195 .entry-title {
       margin: 0 0 1.5rem;
       font-size: 3.85rem; } }
@@ -2845,7 +2845,7 @@ object {
   line-height: 2rem;
   letter-spacing: 2px;
   text-shadow: 1px 2px 5px #323232; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-195 .banner-text {
       width: 750px;
       margin: 2% auto; } }
@@ -2858,7 +2858,7 @@ object {
   font-size: 1.25rem;
   font-family: quattrocento, sans-serif;
   text-align: center; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-195 .intro-copy {
       padding: 2.75rem 0.85rem;
       width: 60%; } }
@@ -2871,7 +2871,7 @@ object {
 
 .page-id-195 .break {
   display: none; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-195 .break {
       display: initial;
       font-size: 1.5rem;
@@ -2880,7 +2880,7 @@ object {
 
 .page-id-195 .img-container {
   margin: 2rem 2rem 3rem; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-195 .img-container {
       max-width: 750px;
       margin: 2rem auto 3rem auto; } }
@@ -2939,7 +2939,7 @@ object {
 .single-projects .proj-content {
   margin: 0 1.5rem;
   font-family: quattrocento, sans-serif; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .single-projects .proj-content {
       max-width: 1000px;
       margin: 0 auto; } }
@@ -2964,7 +2964,7 @@ object {
   opacity: 0.5;
   height: 300px;
   overflow: hidden; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .single-projects .images {
       width: 50%;
       height: 500px; } }
@@ -3006,7 +3006,7 @@ object {
 .single-projects .left-quotation-mark {
   top: 10vh;
   right: 37vw; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .single-projects .left-quotation-mark {
       right: 41vw; } }
   @media all and (min-width: 1300px) {
@@ -3017,7 +3017,7 @@ object {
   bottom: 21vh;
   left: 35vw;
   transform: rotate(180deg); }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .single-projects .right-quotation-mark {
       left: 41vw; } }
   @media all and (min-width: 1300px) {
@@ -3070,14 +3070,14 @@ object {
   opacity: 0.5;
   text-align: center;
   overflow: hidden; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .single-projects .other-proj-wrapper {
       width: 50%; } }
   .single-projects .other-proj-wrapper .project-name,
   .single-projects .other-proj-wrapper .project-location,
   .single-projects .other-proj-wrapper .project-status {
     display: none; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .single-projects .other-proj-wrapper .project-name,
       .single-projects .other-proj-wrapper .project-location,
       .single-projects .other-proj-wrapper .project-status {
@@ -3097,7 +3097,7 @@ object {
 .single-projects .image-wrapper {
   height: 300px;
   overflow: hidden; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .single-projects .image-wrapper {
       height: 500px; } }
   .single-projects .image-wrapper img {
@@ -3115,7 +3115,7 @@ object {
 .page-id-252 {
   height: 100%;
   width: 100%; }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 760px) {
     .page-id-252 {
       font-size: 1.4rem;
       line-height: 1.75rem; } }
@@ -3130,11 +3130,11 @@ object {
     text-shadow: 1px 2px 5px #323232;
     margin: 0 auto;
     line-height: 4rem; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .page-id-252 .banner-text {
         margin: 0 0 1.5rem;
         font-size: 3.85rem; } }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .page-id-252 .banner-text {
         margin: 0 auto;
         max-width: 900px;
@@ -3154,7 +3154,7 @@ object {
     font-size: 2rem;
     text-transform: uppercase;
     margin: 0; }
-    @media all and (min-width: 600px) {
+    @media all and (min-width: 760px) {
       .page-id-252 .thanks {
         font-size: 4rem; } }
   .page-id-252 .text {
