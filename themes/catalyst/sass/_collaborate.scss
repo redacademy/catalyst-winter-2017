@@ -191,13 +191,19 @@
             .partners-text {
                 height: auto;
                 width: 100%;
-                margin: 0 auto;
+                margin: $base__space-unit auto;
+                font-weight: 100;
                 text-align: center;
                 @include media ($desktop-width) {
                     width: 330px;
                     padding: 2rem 0 0;
                     transform: translateX(-1rem);
                 }
+            }
+
+            .partners-text-2 {
+                margin-top: $base__space-unit;
+                padding-top: 0;
             }
         }
     }
