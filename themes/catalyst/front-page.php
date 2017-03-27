@@ -16,29 +16,41 @@
     </header>
     <div class="front-content">
         <div class="formula">
+
             <div class="blue-background-header">
                 <h2 class='subheader-lrg'>the catalyst formula</h2>
             </div>
-            <p class="catalyst-formula-copy"><?php echo CFS()->get( 'catalyst_formula_copy' ); ?></p>
+            <?php $catalyst_formula_copy = CFS()->get( 'catalyst_formula_copy' );
+            if ( !empty( $catalyst_formula_copy ) ) :?>
+            <p class="catalyst-formula-copy"><?php echo $catalyst_formula_copy; ?></p>
+            <?php endif; ?>
+
             <?php get_template_part( 'template-parts/ourStory-carousel', 'projects carousel' ); ?>
-            <a class='navigation-button' href="">learn more</a>
+            <div class="readmore"><a href="">learn more</a></div>
         </div>
 
         <div class="projects">
-            <div class="blue-background-header">
-                <h2 class='subheader-lrg'>our projects</h2>
-            </div>
-            <p class="our-projects-copy"><?php echo CFS()->get( 'our_projects_copy' ); ?></p>
+            <h2>our projects</h2>
+            <?php $our_projects_copy = CFS()->get( 'our_projects_copy' );
+            if ( !empty( $our_projects_copy ) ) :?>
+            <p class="our-projects-copy"><?php echo $our_projects_copy; ?></p>
+            <?php endif; ?>
+
             <?php get_template_part( 'template-parts/projects-carousel', 'projects carousel' ); ?>
-             <a class='navigation-button' href=''>view more projects</a>
+            <div class="readmore"><a>view more projects</a></div>
         </div>
 
         <div class="team">
-            <div class="blue-background-header">
-                <h2 class='subheader-lrg'>team catalyst</h2>
-            </div>
-            <p class="team-catalyst-copy"><?php echo CFS()->get( 'team_catalyst_copy' ); ?></p>
-            <h3 class="small-subheader"><?php echo CFS()->get( 'team_catalyst_subheader' ); ?></h3>
+            <h2>team catalyst</h2>
+            <?php $team_catalyst_copy = CFS()->get( 'team_catalyst_copy' );
+            if ( !empty( $team_catalyst_copy ) ) :?>
+            <p class="team-catalyst-copy"><?php echo $team_catalyst_copy; ?></p>
+            <?php endif; ?>
+
+            <?php $team_catalyst_subheader = CFS()->get( 'team_catalyst_subheader' );
+            if ( !empty( $team_catalyst_subheader ) ) :?>
+            <h3 class="small-subheader"><?php echo $team_catalyst_subheader; ?></h3>
+            <?php endif; ?>
 
             <div class="member-carousel">
                 <?php $members = CFS()->get('team_members');
