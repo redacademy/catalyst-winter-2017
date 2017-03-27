@@ -18,18 +18,23 @@
 }
 
     // Exit button for staff profile popouts.
-    .staff-exit-button {
-        display: inline-block;
-        position: absolute;
-        top: 25%;
-        right: 5%;
-        @include exit-popout-button(40px, #FFF);
+.blue-background-header {
+    position: relative;
+}
 
-        span {
-            position: relative;
-            bottom: 2px;
-        }
+.staff-exit-button {
+    display: inline-block;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    @include exit-popout-button(40px, #FFF);
+
+    span {
+        font-size: 2.15rem;
+        position: relative;
+        bottom: 1px;
     }
+}
 
 // Buttons
 .enter-button,

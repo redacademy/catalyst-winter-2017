@@ -1728,6 +1728,9 @@ object {
       padding: 2.75rem 0.85rem;
       width: 60%; } }
 
+.blue-background-header {
+  position: relative; }
+
 .staff-exit-button {
   display: inline-block;
   position: absolute;
@@ -1759,15 +1762,16 @@ object {
   .staff-exit-button:focus {
     outline: none; }
   .staff-exit-button span {
+    font-size: 2.15rem;
     position: relative;
-    bottom: 2px; }
+    bottom: 1px; }
 
 .enter-button,
 .exit-button {
   height: 40px;
   width: 40px;
   font-size: 3.2rem;
-  font-weight: 100;
+  font-weight: 400;
   margin: 0 auto;
   border: 3px solid #323232;
   border-radius: 100%;
