@@ -1352,7 +1352,6 @@ object {
       margin: 2% auto; } }
 
 .page-id-21 .intro-copy {
-
   height: auto;
   width: 100%;
   margin: 0 auto;
@@ -1367,7 +1366,6 @@ object {
 
 .page-id-21 .site-content {
   text-align: center; }
-
 
 .page-id-21 h3 {
   text-align: center;
@@ -1428,11 +1426,9 @@ object {
   text-decoration: none;
   color: black; }
   @media all and (min-width: 760px) {
-
     .page-id-21 .download {
       border: 3px solid #323232; } }
   .page-id-21 .download:hover {
-
     border-color: #D9F1FF;
     box-shadow: 1px 1px 5px #323232; }
   .page-id-21 .download.active {
@@ -1613,13 +1609,11 @@ object {
       font-size: 24px;
       line-height: 28px; } }
 
-
 .page-id-21 .formula-carousel {
   font-family: quattrocento, sans-serif; }
   @media all and (min-width: 760px) {
     .page-id-21 .formula-carousel {
       padding-left: 20px; } }
-
 
 .page-id-21 .formula-carousel {
   margin-bottom: 2rem;
@@ -1706,7 +1700,6 @@ object {
       padding: 2.75rem 0.85rem;
       width: 60%; } }
 
-
 .staff-exit-button {
   display: inline-block;
   position: absolute;
@@ -1737,68 +1730,9 @@ object {
     border-color: #00A4FF; }
   .staff-exit-button:focus {
     outline: none; }
-
-.blue-background {
-  position: relative;
-  height: auto;
-  width: 100%;
-  margin: 0 auto 0.75rem;
-  padding: 0.75rem 0.5rem;
-  background-color: #D9F1FF;
-  text-align: center;
-  line-height: 2.4rem; }
-  @media all and (min-width: 760px) {
-    .blue-background {
-      margin: 0 auto 1.5rem;
-      padding: 1rem 0.5rem;
-      line-height: 3.4rem; } }
-  .blue-background .our-team-header {
-    width: 300px;
-    margin: 0 auto;
-    color: #323232;
-    font-size: 2.5rem;
-    font-weight: 400;
-    text-align: center;
-    text-transform: uppercase;
-    position: relative; }
-    @media all and (min-width: 760px) {
-      .blue-background .our-team-header {
-        width: 100%;
-        font-size: 3.15rem; } }
-  .blue-background .staff-exit-button {
-    display: inline-block;
-    position: absolute;
-    top: 25%;
-    right: 5%;
-    height: 40px;
-    width: 40px;
-    font-size: 2.15rem;
-    font-weight: 100;
-    margin: 0 auto;
-    border: 3px solid #323232;
-    border-radius: 100%;
-    padding-top: 0.75rem;
-    padding-left: 0.05rem;
-    background: #FFF;
-    box-shadow: none;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: column nowrap;
-        flex-flow: column nowrap;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center; }
-    .blue-background .staff-exit-button:hover {
-      cursor: pointer;
-      color: #00A4FF;
-      border-color: #00A4FF; }
-    .blue-background .staff-exit-button:focus {
-      outline: none; }
-    .blue-background .staff-exit-button span {
-      position: relative;
-      bottom: 2px; }
-
+  .staff-exit-button span {
+    position: relative;
+    bottom: 2px; }
 
 .enter-button,
 .exit-button {
@@ -1920,9 +1854,7 @@ object {
       .staff-profiles-wrapper .profile-popout .left-column img,
       .board-profiles-wrapper .profile-popout .left-column img,
       .advisors-profiles-wrapper .profile-popout .left-column img {
-
-        width: 215px; }
-
+        width: 225px; }
         @media all and (min-width: 760px) {
           .staff-profiles-wrapper .profile-popout .left-column img,
           .board-profiles-wrapper .profile-popout .left-column img,
@@ -2071,15 +2003,6 @@ object {
           justify-content: center;
       -ms-flex-align: center;
           align-items: center; }
-
-      @media all and (min-width: 760px) {
-        .staff-profiles-wrapper .navigation-button-container .navigation-button,
-        .board-profiles-wrapper .navigation-button-container .navigation-button,
-        .advisors-profiles-wrapper .navigation-button-container .navigation-button {
-          height: 70px;
-          width: 260px;
-          border-width: 3px; } }
-
       .staff-profiles-wrapper .navigation-button-container .navigation-button:hover,
       .board-profiles-wrapper .navigation-button-container .navigation-button:hover,
       .advisors-profiles-wrapper .navigation-button-container .navigation-button:hover {
@@ -2152,12 +2075,6 @@ object {
     margin: 0 auto; }
   .advisors-profiles-wrapper .profile-preview:nth-child(4) .job-title {
     width: 265px; }
-
-    @media all and (min-width: 760px) {
-      .advisors-profiles-wrapper .profile-preview:nth-child(4) .job-title {
-        position: absolute;
-        left: -50%; } }
-
 
 @media all and (min-width: 760px) {
   .advisors-profiles-wrapper .navigation-button-container {
@@ -2246,7 +2163,6 @@ object {
     .page-id-19 .navigation-button:hover {
       background: #D9F1FF;
       cursor: pointer; }
-
   .page-id-19 .newsmedia-content .widget-area {
     margin-top: 10px;
     padding: 0 20px; }
@@ -2424,19 +2340,16 @@ object {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center; }
-
     .page-id-18 .navigation-button:hover {
       background: #D9F1FF;
       cursor: pointer; }
   .page-id-18 .infographic-container + .navigation-button {
     margin: 3rem auto 6rem; }
-
   .page-id-18 .supporters-header {
     font-size: 1.55rem; }
     @media all and (min-width: 760px) {
       .page-id-18 .supporters-header {
         font-size: 1.85rem; } }
-
   .page-id-18 .content-container {
     padding: 0 1rem; }
     @media all and (min-width: 760px) {
@@ -2764,7 +2677,6 @@ object {
         margin: 2rem auto 1.5rem;
         padding: 1rem 0.5rem;
         line-height: 3.4rem; } }
-
     .page-id-7 .blue-background .supporters-header {
       font-size: 1.55rem; }
       @media all and (min-width: 760px) {
@@ -2880,7 +2792,6 @@ object {
   text-transform: uppercase;
   text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 760px) {
-
     .page-id-196 .entry-title {
       margin: 0 0 1.5rem;
       font-size: 3.85rem; } }
@@ -2897,7 +2808,6 @@ object {
   letter-spacing: 2px;
   text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 760px) {
-
     .page-id-196 .banner-text {
       width: 750px;
       margin: 2% auto; } }
@@ -2911,7 +2821,6 @@ object {
   font-family: quattrocento, sans-serif;
   text-align: center; }
   @media all and (min-width: 760px) {
-
     .page-id-196 .intro-copy {
       padding: 2.75rem 0.85rem;
       width: 60%; } }
@@ -2993,7 +2902,6 @@ object {
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
-
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -3051,7 +2959,6 @@ object {
 .page-id-195 .project-post {
   margin-bottom: 6rem; }
 
-
 .page-id-195 .break {
   display: none; }
   @media all and (min-width: 760px) {
@@ -3060,7 +2967,6 @@ object {
       font-size: 1.5rem;
       font-weight: 500;
       margin: 0 0.5rem; } }
-
 
 .page-id-195 .img-container {
   margin: 2rem 2rem 3rem; }
@@ -3123,7 +3029,6 @@ object {
 .single-projects .proj-content {
   margin: 0 1.5rem;
   font-family: quattrocento, sans-serif; }
-
   @media all and (min-width: 760px) {
     .single-projects .proj-content {
       max-width: 1000px;
