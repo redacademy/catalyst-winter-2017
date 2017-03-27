@@ -14,7 +14,7 @@ get_header(); ?>
 
 			<section class="catalyst-mission">
 
-  				<?php $content_title1 = esc_html( CFS()->get('content_title') );
+  				<?php $content_title1 = esc_html( CFS()->get('content_title1') );
                 if ( !empty( $content_title1 ) ) :?>
 				<div class="blue-background">
                 	<h2 class='subheader-lrg'><?php echo $content_title1; ?></h2>
