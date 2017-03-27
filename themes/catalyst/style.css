@@ -458,7 +458,6 @@ table {
   .hero-image-banner .header-text {
     width: 100%;
     position: absolute;
-    left: 0;
     text-align: center; }
 
 .formulas:last-child .fill {
@@ -979,33 +978,27 @@ textarea {
     max-width: initial; }
 
 .home .header-text {
-  font-size: 1.5rem;
+  max-width: 900px;
   color: white;
-  width: 380px;
-  text-align: center;
-  line-height: 2rem;
-  letter-spacing: 2px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  text-shadow: 1px 2px 5px #323232; }
-  @media all and (min-width: 760px) {
-    .home .header-text {
-      width: 750px; } }
+  padding: 0 2rem;
+  line-height: 1; }
   .home .header-text h1 {
+    font-size: 3.15rem;
+    font-weight: 700;
     text-transform: uppercase;
-    font-size: 50px;
-    line-height: 75px;
-    max-width: 700px;
-    margin: 0 auto;
-    text-shadow: 2px 2px 5px black;
-    line-height: 70px;
-    font-weight: 700; }
+    text-shadow: 1px 2px 5px #323232; }
+    @media all and (min-width: 760px) {
+      .home .header-text h1 {
+        margin-bottom: 1rem;
+        font-size: 3.85rem; } }
   .home .header-text p {
-    font-size: 25px;
+    font-size: 1.35rem;
     font-family: quattrocento, sans-serif;
-    margin: 0; }
+    font-weight: 700;
+    margin: 1.5rem auto;
+    letter-spacing: 2px;
+    margin: 0;
+    text-shadow: 1px 2px 5px #323232; }
 
 .home .navigation-button {
   height: 70px;
@@ -1312,44 +1305,30 @@ object {
 .gallery-caption {
   display: block; }
 
+.page-id-21 .header-text {
+  max-width: 900px;
+  color: white;
+  padding: 0 2rem;
+  line-height: 1; }
+
 .page-id-21 .entry-title {
   font-size: 3.15rem;
-  color: white;
   font-weight: 700;
-  text-align: center;
   text-transform: uppercase;
   text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 760px) {
     .page-id-21 .entry-title {
-      margin: 0 0 1.5rem;
+      margin-bottom: 1rem;
       font-size: 3.85rem; } }
-  @media all and (min-width: 760px) {
-    .page-id-21 .entry-title {
-      padding-top: 150px; } }
-
-.page-id-21 .header-text {
-  position: absolute;
-  top: 20%;
-  padding: 0 10px; }
-  @media all and (min-width: 760px) {
-    .page-id-21 .header-text {
-      position: initial; } }
 
 .page-id-21 .banner-text {
   font-size: 1.35rem;
   font-family: quattrocento, sans-serif;
   font-weight: 700;
-  color: white;
-  width: 100%;
   margin: 1.5rem auto;
-  text-align: center;
-  line-height: 2rem;
   letter-spacing: 2px;
+  margin: 0;
   text-shadow: 1px 2px 5px #323232; }
-  @media all and (min-width: 760px) {
-    .page-id-21 .banner-text {
-      width: 750px;
-      margin: 2% auto; } }
 
 .page-id-21 .intro-copy {
   height: auto;
@@ -1660,32 +1639,28 @@ object {
     .page-id-159 {
       font-size: 1.4rem;
       line-height: 1.75rem; } }
+  .page-id-159 .header-text {
+    max-width: 900px;
+    color: white;
+    padding: 0 2rem;
+    line-height: 1; }
   .page-id-159 .entry-title {
     font-size: 3.15rem;
-    color: white;
     font-weight: 700;
-    text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 760px) {
       .page-id-159 .entry-title {
-        margin: 0 0 1.5rem;
+        margin-bottom: 1rem;
         font-size: 3.85rem; } }
   .page-id-159 .banner-text {
     font-size: 1.35rem;
     font-family: quattrocento, sans-serif;
     font-weight: 700;
-    color: white;
-    width: 100%;
     margin: 1.5rem auto;
-    text-align: center;
-    line-height: 2rem;
     letter-spacing: 2px;
+    margin: 0;
     text-shadow: 1px 2px 5px #323232; }
-    @media all and (min-width: 760px) {
-      .page-id-159 .banner-text {
-        width: 750px;
-        margin: 2% auto; } }
 
 .intro-copy {
   height: auto;
@@ -2085,61 +2060,27 @@ object {
   .page-id-19 .entry-content p {
     font-weight: 300; }
   .page-id-19 .header-text {
-    position: absolute;
-    padding: 15% 0 15%;
-    left: 0;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: column nowrap;
-        flex-flow: column nowrap;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center; }
-    @media all and (min-width: 760px) {
-      .page-id-19 .header-text {
-        position: initial; } }
-  .page-id-19 .entry-title {
-    margin: auto;
-    width: 202px;
-    line-height: 54px;
-    font-size: 3.15rem;
+    max-width: 900px;
     color: white;
+    padding: 0 2rem;
+    line-height: 1; }
+  .page-id-19 .entry-title {
+    font-size: 3.15rem;
     font-weight: 700;
-    text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 760px) {
       .page-id-19 .entry-title {
-        margin: 0 0 1.5rem;
+        margin-bottom: 1rem;
         font-size: 3.85rem; } }
-    @media all and (min-width: 760px) {
-      .page-id-19 .entry-title {
-        position: initial;
-        margin: 0;
-        width: 100%; } }
   .page-id-19 .banner-text {
-    width: 250px;
     font-size: 1.35rem;
     font-family: quattrocento, sans-serif;
     font-weight: 700;
-    color: white;
-    width: 100%;
     margin: 1.5rem auto;
-    text-align: center;
-    line-height: 2rem;
     letter-spacing: 2px;
+    margin: 0;
     text-shadow: 1px 2px 5px #323232; }
-    @media all and (min-width: 760px) {
-      .page-id-19 .banner-text {
-        width: 750px;
-        margin: 2% auto; } }
-    @media all and (min-width: 760px) {
-      .page-id-19 .banner-text {
-        width: 100%;
-        position: initial;
-        font-size: 30px;
-        text-align: center; } }
   .page-id-19 .entry-header {
     display: none; }
   .page-id-19 .navigation-button {
@@ -2273,33 +2214,27 @@ object {
       font-size: 1.4rem;
       line-height: 1.75rem; } }
   .page-id-18 .header-text {
-    margin: 0 auto; }
+    max-width: 900px;
+    color: white;
+    padding: 0 2rem;
+    line-height: 1; }
   .page-id-18 .entry-title {
     font-size: 3.15rem;
-    color: white;
     font-weight: 700;
-    text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 760px) {
       .page-id-18 .entry-title {
-        margin: 0 0 1.5rem;
+        margin-bottom: 1rem;
         font-size: 3.85rem; } }
   .page-id-18 .banner-text {
     font-size: 1.35rem;
     font-family: quattrocento, sans-serif;
     font-weight: 700;
-    color: white;
-    width: 100%;
     margin: 1.5rem auto;
-    text-align: center;
-    line-height: 2rem;
     letter-spacing: 2px;
+    margin: 0;
     text-shadow: 1px 2px 5px #323232; }
-    @media all and (min-width: 760px) {
-      .page-id-18 .banner-text {
-        width: 750px;
-        margin: 2% auto; } }
   .page-id-18 .intro-copy {
     height: auto;
     width: 100%;
@@ -2624,45 +2559,32 @@ object {
     .page-id-7 {
       font-size: 1.4rem;
       line-height: 1.75rem; } }
-  .page-id-7 .banner-title {
-    font-size: 3.15rem;
+  .page-id-7 .header-text {
+    max-width: 900px;
     color: white;
+    padding: 0 2rem;
+    line-height: 1; }
+  .page-id-7 .entry-title {
+    font-size: 3.15rem;
     font-weight: 700;
-    text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 760px) {
-      .page-id-7 .banner-title {
-        margin: 0 0 1.5rem;
+      .page-id-7 .entry-title {
+        margin-bottom: 1rem;
         font-size: 3.85rem; } }
   .page-id-7 .banner-text {
     font-size: 1.35rem;
     font-family: quattrocento, sans-serif;
     font-weight: 700;
-    color: white;
-    width: 100%;
     margin: 1.5rem auto;
-    text-align: center;
-    line-height: 2rem;
     letter-spacing: 2px;
+    margin: 0;
     text-shadow: 1px 2px 5px #323232; }
-    @media all and (min-width: 760px) {
-      .page-id-7 .banner-text {
-        width: 750px;
-        margin: 2% auto; } }
   .page-id-7 .banner-text-small {
     font-size: 1rem;
-    color: white;
-    width: 380px;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 2rem;
     letter-spacing: 2px;
     text-shadow: 1px 2px 5px #323232; }
-    @media all and (min-width: 760px) {
-      .page-id-7 .banner-text-small {
-        width: 750px;
-        margin: 2% auto; } }
   .page-id-7 .blue-background {
     height: auto;
     width: 100%;
@@ -2783,33 +2705,30 @@ object {
 .page-id-196 #content {
   width: 100%; }
 
+.page-id-196 .header-text {
+  max-width: 900px;
+  color: white;
+  padding: 0 2rem;
+  line-height: 1; }
+
 .page-id-196 .entry-title {
   font-size: 3.15rem;
-  color: white;
   font-weight: 700;
-  text-align: center;
   text-transform: uppercase;
   text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 760px) {
     .page-id-196 .entry-title {
-      margin: 0 0 1.5rem;
+      margin-bottom: 1rem;
       font-size: 3.85rem; } }
 
 .page-id-196 .banner-text {
   font-size: 1.35rem;
   font-family: quattrocento, sans-serif;
   font-weight: 700;
-  color: white;
-  width: 100%;
   margin: 1.5rem auto;
-  text-align: center;
-  line-height: 2rem;
   letter-spacing: 2px;
+  margin: 0;
   text-shadow: 1px 2px 5px #323232; }
-  @media all and (min-width: 760px) {
-    .page-id-196 .banner-text {
-      width: 750px;
-      margin: 2% auto; } }
 
 .page-id-196 .intro-copy {
   height: auto;
@@ -2911,33 +2830,30 @@ object {
     background: #D9F1FF;
     cursor: pointer; }
 
+.page-id-195 .header-text {
+  max-width: 900px;
+  color: white;
+  padding: 0 2rem;
+  line-height: 1; }
+
 .page-id-195 .entry-title {
   font-size: 3.15rem;
-  color: white;
   font-weight: 700;
-  text-align: center;
   text-transform: uppercase;
   text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 760px) {
     .page-id-195 .entry-title {
-      margin: 0 0 1.5rem;
+      margin-bottom: 1rem;
       font-size: 3.85rem; } }
 
 .page-id-195 .banner-text {
   font-size: 1.35rem;
   font-family: quattrocento, sans-serif;
   font-weight: 700;
-  color: white;
-  width: 100%;
   margin: 1.5rem auto;
-  text-align: center;
-  line-height: 2rem;
   letter-spacing: 2px;
+  margin: 0;
   text-shadow: 1px 2px 5px #323232; }
-  @media all and (min-width: 760px) {
-    .page-id-195 .banner-text {
-      width: 750px;
-      margin: 2% auto; } }
 
 .page-id-195 .intro-copy {
   height: auto;
@@ -3212,22 +3128,19 @@ object {
     display: none; }
   .page-id-252 .banner-text {
     font-size: 3.15rem;
-    color: white;
     font-weight: 700;
-    text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232;
     margin: 0 auto;
-    line-height: 4rem; }
+    color: white;
+    line-height: 1; }
     @media all and (min-width: 760px) {
       .page-id-252 .banner-text {
-        margin: 0 0 1.5rem;
+        margin-bottom: 1rem;
         font-size: 3.85rem; } }
     @media all and (min-width: 760px) {
       .page-id-252 .banner-text {
-        margin: 0 auto;
         max-width: 900px;
-        width: 100%;
         min-width: 600px;
         font-size: 4.5rem;
         line-height: 5rem; } }

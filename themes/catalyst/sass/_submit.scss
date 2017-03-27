@@ -13,11 +13,10 @@
     .banner-text {
         @include page-title;
         margin: 0 auto;
-        line-height: 4rem;
+        color: white;
+        line-height: 1;
         @include media ($desktop-width){
-            margin: 0 auto;
             max-width: 900px;
-            width: 100%;
             min-width: 600px;
             font-size: 4.5rem;
             line-height: 5rem;
