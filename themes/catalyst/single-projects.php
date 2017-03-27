@@ -64,7 +64,7 @@
                 if ( !empty( $affordability ) ) :?>
                 <?php echo $affordability; ?>
                 <?php endif; ?>
-                <!--<?php echo CFS()->get('affordability'); ?>-->
+
                 <h3>Total Project Cost: </h3>
                 <?php $cost = CFS()->get( 'cost' );
                 if ( !empty( $cost ) ) :?>
