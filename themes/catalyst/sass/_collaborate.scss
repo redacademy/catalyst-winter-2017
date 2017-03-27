@@ -6,7 +6,7 @@
         line-height: $line-height-desktop;
     }
         .header-text {
-            margin: 0 auto;
+            @include header-text;
         }
 
         .entry-title {

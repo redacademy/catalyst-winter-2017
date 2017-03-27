@@ -28,21 +28,12 @@
         
     }
     .header-text {
-        @include banner-text-fp;
+        	@include header-text;
         h1 {
-            text-transform: uppercase;
-            font-size: 50px;
-            line-height: 75px;
-            max-width: 700px;
-            margin: 0 auto;
-            text-shadow: 2px 2px 5px black;
-            line-height: 70px;
-            font-weight: $font__bold;
+            @include page-title;
         }
         p {
-            font-size: 25px;
-            font-family: $font__secondary;
-            margin: 0;
+            @include banner-text;
         }
     }
 
