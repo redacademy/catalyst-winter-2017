@@ -458,7 +458,6 @@ table {
   .hero-image-banner .header-text {
     width: 100%;
     position: absolute;
-    left: 0;
     text-align: center; }
 
 .formulas:last-child .fill {
@@ -980,37 +979,31 @@ textarea {
     max-width: initial; }
 
 .home .header-text {
-  font-size: 1.5rem;
+  max-width: 900px;
   color: white;
-  width: 380px;
-  text-align: center;
-  line-height: 2rem;
-  letter-spacing: 2px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  text-shadow: 1px 2px 5px #323232; }
-  @media all and (min-width: 760px) {
-    .home .header-text {
-      width: 750px; } }
+  padding: 0 2rem;
+  line-height: 1; }
   .home .header-text h1 {
+    font-size: 3.15rem;
+    font-weight: 700;
     text-transform: uppercase;
-    font-size: 50px;
-    line-height: 75px;
-    max-width: 700px;
-    margin: 0 auto;
-    text-shadow: 2px 2px 5px black;
-    line-height: 70px;
-    font-weight: 700; }
+    text-shadow: 1px 2px 5px #323232; }
+    @media all and (min-width: 760px) {
+      .home .header-text h1 {
+        margin-bottom: 1rem;
+        font-size: 3.85rem; } }
   .home .header-text p {
-    font-size: 25px;
+    font-size: 1.35rem;
     font-family: quattrocento, sans-serif;
-    margin: 0; }
+    font-weight: 700;
+    margin: 1.5rem auto;
+    letter-spacing: 2px;
+    margin: 0;
+    text-shadow: 1px 2px 5px #323232; }
 
 .home .navigation-button {
   height: 70px;
-  width: 250px;
+  width: 275px;
   margin: 2rem auto;
   border: 2px solid #323232;
   font-size: 1.35rem;
@@ -1164,14 +1157,25 @@ textarea {
   margin-bottom: 2rem;
   width: 100%; }
   .home .formula-carousel .formulas {
-    width: 40%;
+    height: 270px;
+    width: 270px;
+    margin: 0 1rem;
     display: block; }
+    .home .formula-carousel .formulas div {
+      height: 100%;
+      display: -ms-flexbox;
+      display: flex; }
   .home .formula-carousel .img {
     vertical-align: middle;
     width: 85%; }
+    .home .formula-carousel .img:last-child {
+      width: 77%; }
   .home .formula-carousel .fill {
-    vertical-align: middle;
-    width: 15%; }
+    margin-left: 1.5rem;
+    vertical-align: middle; }
+    @media all and (min-width: 760px) {
+      .home .formula-carousel .fill {
+        margin-left: 0.85rem; } }
   .home .formula-carousel:last-child .fill {
     display: none; }
   @media all and (min-width: 760px) {
@@ -1317,41 +1321,30 @@ object {
 .gallery-caption {
   display: block; }
 
+.page-id-21 .header-text {
+  max-width: 900px;
+  color: white;
+  padding: 0 2rem;
+  line-height: 1; }
+
 .page-id-21 .entry-title {
   font-size: 3.15rem;
-  color: white;
   font-weight: 700;
-  text-align: center;
   text-transform: uppercase;
   text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 760px) {
     .page-id-21 .entry-title {
-      margin: 0 0 1.5rem;
+      margin-bottom: 1rem;
       font-size: 3.85rem; } }
-
-.page-id-21 .header-text {
-  position: absolute;
-  top: 20%;
-  padding: 0 10px; }
-  @media all and (min-width: 760px) {
-    .page-id-21 .header-text {
-      position: initial; } }
 
 .page-id-21 .banner-text {
   font-size: 1.35rem;
   font-family: quattrocento, sans-serif;
   font-weight: 700;
-  color: white;
-  width: 100%;
   margin: 1.5rem auto;
-  text-align: center;
-  line-height: 2rem;
   letter-spacing: 2px;
+  margin: 0;
   text-shadow: 1px 2px 5px #323232; }
-  @media all and (min-width: 760px) {
-    .page-id-21 .banner-text {
-      width: 750px;
-      margin: 2% auto; } }
 
 .page-id-21 .intro-copy {
   width: 54%;
@@ -1408,7 +1401,7 @@ object {
 
 .page-id-21 .navigation-button {
   height: 70px;
-  width: 250px;
+  width: 275px;
   margin: 2rem auto;
   border: 2px solid #323232;
   font-size: 1.35rem;
@@ -1650,14 +1643,25 @@ object {
   margin-bottom: 2rem;
   width: 100%; }
   .page-id-21 .formula-carousel .formulas {
-    width: 40%;
+    height: 270px;
+    width: 270px;
+    margin: 0 1rem;
     display: block; }
+    .page-id-21 .formula-carousel .formulas div {
+      height: 100%;
+      display: -ms-flexbox;
+      display: flex; }
   .page-id-21 .formula-carousel .img {
     vertical-align: middle;
     width: 85%; }
+    .page-id-21 .formula-carousel .img:last-child {
+      width: 77%; }
   .page-id-21 .formula-carousel .fill {
-    vertical-align: middle;
-    width: 15%; }
+    margin-left: 1.5rem;
+    vertical-align: middle; }
+    @media all and (min-width: 760px) {
+      .page-id-21 .formula-carousel .fill {
+        margin-left: 0.85rem; } }
   .page-id-21 .formula-carousel:last-child .fill {
     display: none; }
   @media all and (min-width: 760px) {
@@ -1675,6 +1679,9 @@ object {
     font-size: 14px;
     line-height: 15px;
     padding-left: 26px; }
+    @media all and (min-width: 760px) {
+      .page-id-21 .formula-carousel .formula-text {
+        display: none; } }
 
 .page-id-21 h5 {
   font-size: 20px;
@@ -1691,32 +1698,28 @@ object {
     .page-id-159 {
       font-size: 1.4rem;
       line-height: 1.75rem; } }
+  .page-id-159 .header-text {
+    max-width: 900px;
+    color: white;
+    padding: 0 2rem;
+    line-height: 1; }
   .page-id-159 .entry-title {
     font-size: 3.15rem;
-    color: white;
     font-weight: 700;
-    text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 760px) {
       .page-id-159 .entry-title {
-        margin: 0 0 1.5rem;
+        margin-bottom: 1rem;
         font-size: 3.85rem; } }
   .page-id-159 .banner-text {
     font-size: 1.35rem;
     font-family: quattrocento, sans-serif;
     font-weight: 700;
-    color: white;
-    width: 100%;
     margin: 1.5rem auto;
-    text-align: center;
-    line-height: 2rem;
     letter-spacing: 2px;
+    margin: 0;
     text-shadow: 1px 2px 5px #323232; }
-    @media all and (min-width: 760px) {
-      .page-id-159 .banner-text {
-        width: 750px;
-        margin: 2% auto; } }
 
 .intro-copy {
   height: auto;
@@ -1730,6 +1733,9 @@ object {
     .intro-copy {
       padding: 2.75rem 0.85rem;
       width: 60%; } }
+
+.blue-background-header {
+  position: relative; }
 
 .staff-exit-button {
   display: inline-block;
@@ -1762,15 +1768,16 @@ object {
   .staff-exit-button:focus {
     outline: none; }
   .staff-exit-button span {
+    font-size: 2.15rem;
     position: relative;
-    bottom: 2px; }
+    bottom: 1px; }
 
 .enter-button,
 .exit-button {
   height: 40px;
   width: 40px;
   font-size: 3.2rem;
-  font-weight: 100;
+  font-weight: 400;
   margin: 0 auto;
   border: 3px solid #323232;
   border-radius: 100%;
@@ -2020,7 +2027,7 @@ object {
     .board-profiles-wrapper .navigation-button-container .navigation-button,
     .advisors-profiles-wrapper .navigation-button-container .navigation-button {
       height: 70px;
-      width: 250px;
+      width: 275px;
       margin: 2rem auto;
       border: 2px solid #323232;
       font-size: 1.35rem;
@@ -2122,66 +2129,32 @@ object {
   .page-id-19 .entry-content p {
     font-weight: 300; }
   .page-id-19 .header-text {
-    position: absolute;
-    padding: 15% 0 15%;
-    left: 0;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: column nowrap;
-        flex-flow: column nowrap;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center; }
-    @media all and (min-width: 760px) {
-      .page-id-19 .header-text {
-        position: initial; } }
-  .page-id-19 .entry-title {
-    margin: auto;
-    width: 202px;
-    line-height: 54px;
-    font-size: 3.15rem;
+    max-width: 900px;
     color: white;
+    padding: 0 2rem;
+    line-height: 1; }
+  .page-id-19 .entry-title {
+    font-size: 3.15rem;
     font-weight: 700;
-    text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 760px) {
       .page-id-19 .entry-title {
-        margin: 0 0 1.5rem;
+        margin-bottom: 1rem;
         font-size: 3.85rem; } }
-    @media all and (min-width: 760px) {
-      .page-id-19 .entry-title {
-        position: initial;
-        margin: 0;
-        width: 100%; } }
   .page-id-19 .banner-text {
-    width: 250px;
     font-size: 1.35rem;
     font-family: quattrocento, sans-serif;
     font-weight: 700;
-    color: white;
-    width: 100%;
     margin: 1.5rem auto;
-    text-align: center;
-    line-height: 2rem;
     letter-spacing: 2px;
+    margin: 0;
     text-shadow: 1px 2px 5px #323232; }
-    @media all and (min-width: 760px) {
-      .page-id-19 .banner-text {
-        width: 750px;
-        margin: 2% auto; } }
-    @media all and (min-width: 760px) {
-      .page-id-19 .banner-text {
-        width: 100%;
-        position: initial;
-        font-size: 30px;
-        text-align: center; } }
   .page-id-19 .entry-header {
     display: none; }
   .page-id-19 .navigation-button {
     height: 70px;
-    width: 250px;
+    width: 275px;
     margin: 2rem auto;
     border: 2px solid #323232;
     font-size: 1.35rem;
@@ -2319,33 +2292,27 @@ object {
       font-size: 1.4rem;
       line-height: 1.75rem; } }
   .page-id-18 .header-text {
-    margin: 0 auto; }
+    max-width: 900px;
+    color: white;
+    padding: 0 2rem;
+    line-height: 1; }
   .page-id-18 .entry-title {
     font-size: 3.15rem;
-    color: white;
     font-weight: 700;
-    text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 760px) {
       .page-id-18 .entry-title {
-        margin: 0 0 1.5rem;
+        margin-bottom: 1rem;
         font-size: 3.85rem; } }
   .page-id-18 .banner-text {
     font-size: 1.35rem;
     font-family: quattrocento, sans-serif;
     font-weight: 700;
-    color: white;
-    width: 100%;
     margin: 1.5rem auto;
-    text-align: center;
-    line-height: 2rem;
     letter-spacing: 2px;
+    margin: 0;
     text-shadow: 1px 2px 5px #323232; }
-    @media all and (min-width: 760px) {
-      .page-id-18 .banner-text {
-        width: 750px;
-        margin: 2% auto; } }
   .page-id-18 .intro-copy {
     height: auto;
     width: 100%;
@@ -2371,7 +2338,7 @@ object {
         padding: 0.75rem auto; } }
   .page-id-18 .navigation-button {
     height: 70px;
-    width: 250px;
+    width: 275px;
     margin: 2rem auto;
     border: 2px solid #323232;
     font-size: 1.35rem;
@@ -2537,13 +2504,17 @@ object {
     .page-id-18 .content-container .partners-information-container .partners-text {
       height: auto;
       width: 100%;
-      margin: 0 auto;
+      margin: 1.5rem auto;
+      font-weight: 100;
       text-align: center; }
       @media all and (min-width: 760px) {
         .page-id-18 .content-container .partners-information-container .partners-text {
           width: 330px;
           padding: 2rem 0 0;
           transform: translateX(-1rem); } }
+    .page-id-18 .content-container .partners-information-container .partners-text-2 {
+      margin-top: 1.5rem;
+      padding-top: 0; }
   .page-id-18 .infographic-container {
     height: auto;
     width: 100%;
@@ -2674,45 +2645,32 @@ object {
     .page-id-7 {
       font-size: 1.4rem;
       line-height: 1.75rem; } }
-  .page-id-7 .banner-title {
-    font-size: 3.15rem;
+  .page-id-7 .header-text {
+    max-width: 900px;
     color: white;
+    padding: 0 2rem;
+    line-height: 1; }
+  .page-id-7 .entry-title {
+    font-size: 3.15rem;
     font-weight: 700;
-    text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 760px) {
-      .page-id-7 .banner-title {
-        margin: 0 0 1.5rem;
+      .page-id-7 .entry-title {
+        margin-bottom: 1rem;
         font-size: 3.85rem; } }
   .page-id-7 .banner-text {
     font-size: 1.35rem;
     font-family: quattrocento, sans-serif;
     font-weight: 700;
-    color: white;
-    width: 100%;
     margin: 1.5rem auto;
-    text-align: center;
-    line-height: 2rem;
     letter-spacing: 2px;
+    margin: 0;
     text-shadow: 1px 2px 5px #323232; }
-    @media all and (min-width: 760px) {
-      .page-id-7 .banner-text {
-        width: 750px;
-        margin: 2% auto; } }
   .page-id-7 .banner-text-small {
     font-size: 1rem;
-    color: white;
-    width: 380px;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 2rem;
     letter-spacing: 2px;
     text-shadow: 1px 2px 5px #323232; }
-    @media all and (min-width: 760px) {
-      .page-id-7 .banner-text-small {
-        width: 750px;
-        margin: 2% auto; } }
   .page-id-7 .blue-background {
     height: auto;
     width: 100%;
@@ -2833,33 +2791,30 @@ object {
 .page-id-196 #content {
   width: 100%; }
 
+.page-id-196 .header-text {
+  max-width: 900px;
+  color: white;
+  padding: 0 2rem;
+  line-height: 1; }
+
 .page-id-196 .entry-title {
   font-size: 3.15rem;
-  color: white;
   font-weight: 700;
-  text-align: center;
   text-transform: uppercase;
   text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 760px) {
     .page-id-196 .entry-title {
-      margin: 0 0 1.5rem;
+      margin-bottom: 1rem;
       font-size: 3.85rem; } }
 
 .page-id-196 .banner-text {
   font-size: 1.35rem;
   font-family: quattrocento, sans-serif;
   font-weight: 700;
-  color: white;
-  width: 100%;
   margin: 1.5rem auto;
-  text-align: center;
-  line-height: 2rem;
   letter-spacing: 2px;
+  margin: 0;
   text-shadow: 1px 2px 5px #323232; }
-  @media all and (min-width: 760px) {
-    .page-id-196 .banner-text {
-      width: 750px;
-      margin: 2% auto; } }
 
 .page-id-196 .intro-copy {
   height: auto;
@@ -2943,7 +2898,7 @@ object {
 
 .page-id-196 .navigation-button {
   height: 70px;
-  width: 250px;
+  width: 275px;
   margin: 2rem auto;
   border: 2px solid #323232;
   font-size: 1.35rem;
@@ -2965,33 +2920,30 @@ object {
     border: 2px solid white;
     cursor: pointer; }
 
+.page-id-195 .header-text {
+  max-width: 900px;
+  color: white;
+  padding: 0 2rem;
+  line-height: 1; }
+
 .page-id-195 .entry-title {
   font-size: 3.15rem;
-  color: white;
   font-weight: 700;
-  text-align: center;
   text-transform: uppercase;
   text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 760px) {
     .page-id-195 .entry-title {
-      margin: 0 0 1.5rem;
+      margin-bottom: 1rem;
       font-size: 3.85rem; } }
 
 .page-id-195 .banner-text {
   font-size: 1.35rem;
   font-family: quattrocento, sans-serif;
   font-weight: 700;
-  color: white;
-  width: 100%;
   margin: 1.5rem auto;
-  text-align: center;
-  line-height: 2rem;
   letter-spacing: 2px;
+  margin: 0;
   text-shadow: 1px 2px 5px #323232; }
-  @media all and (min-width: 760px) {
-    .page-id-195 .banner-text {
-      width: 750px;
-      margin: 2% auto; } }
 
 .page-id-195 .intro-copy {
   height: auto;
@@ -3034,7 +2986,7 @@ object {
 
 .page-id-195 .navigation-button {
   height: 70px;
-  width: 250px;
+  width: 275px;
   margin: 2rem auto;
   border: 2px solid #323232;
   font-size: 1.35rem;
@@ -3190,7 +3142,7 @@ object {
 
 .single-projects .navigation-button {
   height: 70px;
-  width: 250px;
+  width: 275px;
   margin: 2rem auto;
   border: 2px solid #323232;
   font-size: 1.35rem;
@@ -3274,22 +3226,19 @@ object {
     display: none; }
   .page-id-252 .banner-text {
     font-size: 3.15rem;
-    color: white;
     font-weight: 700;
-    text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232;
     margin: 0 auto;
-    line-height: 4rem; }
+    color: white;
+    line-height: 1; }
     @media all and (min-width: 760px) {
       .page-id-252 .banner-text {
-        margin: 0 0 1.5rem;
+        margin-bottom: 1rem;
         font-size: 3.85rem; } }
     @media all and (min-width: 760px) {
       .page-id-252 .banner-text {
-        margin: 0 auto;
         max-width: 900px;
-        width: 100%;
         min-width: 600px;
         font-size: 4.5rem;
         line-height: 5rem; } }

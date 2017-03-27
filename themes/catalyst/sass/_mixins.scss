@@ -10,51 +10,31 @@
 }
 
 // Headings and boilerplate copy
+@mixin header-text {
+	max-width: 900px;
+	color: white;
+	padding: 0 2rem;
+	line-height: 1;
+}
+
 @mixin page-title {
 	font-size: 3.15rem;
-	color: white;
 	font-weight: $font__bold;
-	text-align: center;
 	text-transform: uppercase;
 	@include header-text-shadow;
 	@include media($desktop-width) {
-		margin: 0 0 1.5rem;
+		margin-bottom: 1rem;
 		font-size: 3.85rem;
 	}
 }
-
 @mixin banner-text {
 	font-size: 1.35rem;
-	font-family: $font__secondary;
-	font-weight: $font__bold;
-	color: white;
-	width: 100%;
+  font-family: $font__secondary;
+  font-weight: $font__bold;
 	margin: $base__space-unit auto;
-	text-align: center;
-	line-height: 2rem;
 	letter-spacing: 2px;
+	margin: 0;
 	@include header-text-shadow;
-	@include media($desktop-width) {
-		width: 750px;
-		margin: 2% auto;
-	}
-}
-
-@mixin banner-text-fp {
-	font-size: 1.5rem;
-	color: white;
-	width: 380px;
-	text-align: center;
-	line-height: 2rem;
-	letter-spacing: 2px;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	position: absolute;
-	@include header-text-shadow;
-	@include media($desktop-width) {
-		width: 750px;
-	}
 }
 
 @mixin intro-copy {
@@ -89,16 +69,30 @@
 		margin-bottom: 2rem;
 		width: 100%;
 		.formulas {
-			width: 40%;
+			height: 270px;
+			width: 270px;
+			margin: 0 1rem;
 			display: block;
+
+			& div {
+				height: 100%;
+				display: flex;
+			}
 		}
 		.img {
 			vertical-align: middle;
 			width: 85%;
+			
+			&:last-child {
+				width: 77%;
+			}
 		}
 		.fill {
+			margin-left: 1.5rem;
 			vertical-align: middle;
-			width: 15%;
+			@include media($desktop-width) {
+				margin-left: 0.85rem;
+			}
 		}
 		&:last-child .fill {
 			display: none;
@@ -147,7 +141,7 @@
 // Buttons
 @mixin navigation-button($font-color: $color__header-main) {
 	height: 70px;
-	width: 250px;
+	width: 275px;
 	margin: 2rem auto;
 	border: 2px solid $font-color;
 	font-size: 1.35rem;
@@ -173,7 +167,7 @@
 	height: $size;
 	width: $size;
 	font-size: 3.2rem;
-	font-weight: 100;
+	font-weight: 400;
 	margin: 0 auto;
 	border: 3px solid $color__header-main;
 	border-radius: 100%;

@@ -7,34 +7,13 @@
         }
     }
     .header-text {
-        position: absolute;
-        padding: 15% 0 15%;
-        left: 0;
-        @include flex-column(nowrap, center, center);
-        @include media($desktop-width) {
-            position: initial;
-        }
+        @include header-text;
     }
     .entry-title {
-        margin: auto;
-        width: 202px;
-        line-height: 54px;
         @include page-title;
-        @include media($desktop-width) {
-            position: initial;
-            margin: 0;
-            width: 100%;
-        }
     }
     .banner-text {
-        width: 250px;
         @include banner-text;
-        @include media($desktop-width) {
-            width: 100%;
-            position: initial;
-            font-size: 30px;
-            text-align: center;
-        }
     }
     .entry-header {
         display: none;

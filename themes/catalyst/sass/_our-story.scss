@@ -1,17 +1,9 @@
 .page-id-21 {
+    .header-text {
+        @include header-text;
+    }
     .entry-title {
         @include page-title;
-        // @include media($desktop-width) {
-        //     padding-top: 150px;
-        // }
-    }
-    .header-text {
-        position: absolute;
-        top: 20%;
-        padding: 0 10px;
-        @include media($desktop-width) {
-            position: initial;
-        }
     }
     .banner-text {
         @include banner-text;
@@ -265,6 +257,10 @@
             font-size: 14px;
             line-height: 15px;
             padding-left: 26px;
+
+            @include media($desktop-width) {
+                display: none;
+            }
         }
     }
     h5 {
