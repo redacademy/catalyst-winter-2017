@@ -1091,7 +1091,7 @@ textarea {
     overflow: hidden; }
     @media all and (min-width: 760px) {
       .home .projects .image-wrapper {
-        height: 50vh; } }
+        height: 500px; } }
     .home .projects .image-wrapper img {
       width: auto;
       height: 100%;
