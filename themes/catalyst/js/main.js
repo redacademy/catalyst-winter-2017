@@ -186,6 +186,11 @@
 
     // Load more posts on when user clicks button on news & media page.
 
+    var $postsContainer = $( '.newsmedia-article' );
+    var $loadPostsButton = $( '#load-more-button' );
+    var renderedArticles = 5;
+    var apiLink = api_vars.ajax_url + 'news/?&_embed=true';
+
     function formatDate(myDate) {
         var formattedDate = addLeadingZero( myDate.getDate() ) + ', ' + ( '0' + ( myDate.getMonth() + 1 ) ).slice( -2 ) + ', ' + myDate.getFullYear();
         return formattedDate;
@@ -233,11 +238,6 @@
 
             return articleElement;
     }
-
-    var $postsContainer = $( '.newsmedia-article' );
-    var $loadPostsButton = $( '#load-more-button' );
-    var renderedArticles = 5;
-    var apiLink = api_vars.ajax_url + 'news/?&_embed=true';
 
     $loadPostsButton.click(function( event ){
         event.preventDefault();
