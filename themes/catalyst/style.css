@@ -1474,17 +1474,16 @@ object {
   z-index: 1;
   margin-top: 67px;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 100;
   line-height: 28px;
   position: absolute;
   width: 80%;
   font-family: quattrocento, sans-serif;
   font-style: italic; }
-  @media all and (min-width: 760px) {
-    .page-id-21 .quote,
-    .page-id-21 .quote2 {
-      font-size: 20px; } }
+
+.page-id-21 .quote2 {
+  padding: 0 40px; }
 
 .page-id-21 .quotation-left,
 .page-id-21 .quotation-left2 {
@@ -1492,18 +1491,23 @@ object {
   background-size: 250%;
   width: 100px;
   height: 130px;
-  position: absolute;
-  right: 79%;
+  position: absolute; }
+
+.page-id-21 .quotation-left {
+  left: 7%;
   top: 18%; }
   @media all and (min-width: 760px) {
-    .page-id-21 .quotation-left,
-    .page-id-21 .quotation-left2 {
-      right: 83%;
+    .page-id-21 .quotation-left {
+      left: 13%;
       top: 20%; } }
 
-@media all and (min-width: 760px) {
-  .page-id-21 .quotation-left2 {
-    right: 86%; } }
+.page-id-21 .quotation-left2 {
+  left: 5%;
+  top: 18%; }
+  @media all and (min-width: 760px) {
+    .page-id-21 .quotation-left2 {
+      left: 8%;
+      top: 20%; } }
 
 .page-id-21 .quotation-right,
 .page-id-21 .quotation-right2 {
@@ -1512,19 +1516,22 @@ object {
   width: 100px;
   height: 130px;
   transform: rotate(180deg);
-  position: absolute;
-  left: 79%;
-  top: 59%; }
+  position: absolute; }
+
+.page-id-21 .quotation-right {
+  right: 7%;
+  top: 54%; }
   @media all and (min-width: 760px) {
-    .page-id-21 .quotation-right,
-    .page-id-21 .quotation-right2 {
-      left: 83%;
+    .page-id-21 .quotation-right {
+      left: 78%;
       top: 36%; } }
 
 .page-id-21 .quotation-right2 {
-  top: 94%; }
+  left: 79%;
+  top: 88%; }
   @media all and (min-width: 760px) {
     .page-id-21 .quotation-right2 {
+      left: 83%;
       top: 58%; } }
 
 .page-id-21 .robert {
@@ -1559,11 +1566,10 @@ object {
     margin: 0; }
 
 .page-id-21 .mission-text {
-  margin: 0 auto;
   font-size: 16px;
   font-family: quattrocento, sans-serif;
   width: 80%;
-  margin-bottom: 20px; }
+  margin: 20px auto; }
   @media all and (min-width: 760px) {
     .page-id-21 .mission-text {
       width: 96%;
@@ -1606,7 +1612,11 @@ object {
       font-weight: 700;
       font-size: 20px;
       text-transform: uppercase;
-      width: 100%; }
+      width: 100%;
+      margin-top: 5px; }
+  .page-id-21 .mission-content p {
+    width: 65%;
+    margin: 0 auto; }
 
 .page-id-21 .formula-p {
   font-family: quattrocento, sans-serif;
