@@ -7,6 +7,8 @@
     }
     .header-text {
         @include header-text;
+        max-width: 900px;
+        padding: 0 10px;
     }
     .entry-title {
         @include page-title;
@@ -58,6 +60,7 @@
                 color: $color__text-main;
                 text-align: center;
                 text-transform: uppercase;
+                letter-spacing: 1.5px;
                 @include media($desktop-width) {
                     margin: 1.9rem 0 0.5rem;
                     font-size: 2rem;
@@ -70,7 +73,6 @@
             }
             .small-subheader {
                 margin: 0.5rem 0 1.5rem;
-                font-size: 1.1rem;
                 font-weight: $font__bold;
                 text-transform: uppercase;
                 @include media($desktop-width) {
@@ -84,7 +86,9 @@
                 padding-left: 0.75rem;
                 list-style-type: none;
                 position: relative;
+                font-size: 20px;
                 @include media($desktop-width) {
+                    font-size: 16px;
                     height: auto;
                     margin: 0;
                     padding: 0.5rem 0.5rem 2.5rem 2rem;
@@ -107,8 +111,8 @@
                     }
                 }
                 .key-graphic-1 {
-                    height: 150px;
-                    width: 84px;
+                    height: 227px;
+                    width: 109px;
                     background: url("../../images/graphics/key.svg") no-repeat 50%;
                     background-size: 100%;
                     position: absolute;
@@ -117,13 +121,15 @@
                     z-index: -99999;
                     transform: rotate(25deg);
                     @include media($desktop-width) {
+                        height: 186px;
+                        width: 88px;
                         bottom: 27.25%;
                         left: 4.5%;
                     }
                 }
                 .key-graphic-2 {
-                    height: 95px;
-                    width: 50px;
+                    height: 100px;
+                    width: 58px;
                     background: url("../../images/graphics/key.svg") no-repeat;
                     background-size: 100%;
                     position: absolute;
@@ -132,13 +138,16 @@
                     z-index: -99999;
                     transform: rotate(-25deg);
                     @include media($desktop-width) {
+                        height: 135px;
+                        width: 114px;
                         bottom: 9%;
                         left: 83.75%;
                     }
                 }
                 .dollar-sign-graphic-1 {
-                    height: 105px;
-                    width: 100px;
+                    height: 129px;
+                    width: 122px;
+                    left: 0%;
                     background: url("../../images/graphics/dollar-sign.svg") no-repeat;
                     background-size: 100%;
                     position: absolute;
@@ -150,8 +159,8 @@
                     }
                 }
                 .dollar-sign-graphic-2 {
-                    height: 67px;
-                    width: 62px;
+                    height: 87px;
+                    width: 82px;
                     background: url("../../images/graphics/dollar-sign.svg") no-repeat;
                     background-size: 100%;
                     position: absolute;
@@ -178,11 +187,17 @@
                     width: 330px;
                     padding: 2rem 0 0;
                     transform: translateX(-1rem);
+                    font-size: 21px;
+                    margin-top: 7.5rem;
                 }
             }
             .partners-text-2 {
-                margin-top: $base__space-unit;
+                margin-top: 2.8rem;
                 padding-top: 0;
+                @include media ($desktop-width) {
+                    font-size: 21px;
+                    margin-top: 7.5rem;
+                }
             }
         }
     }
