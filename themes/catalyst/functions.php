@@ -112,7 +112,7 @@ function catalyst_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'catalyst_scripts' );
 
-remove_filter ('the_content', 'wpautop');
+// remove_filter ('the_content', 'wpautop');
 
 /**
  * Custom template tags for this theme.

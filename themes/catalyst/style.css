@@ -1908,24 +1908,37 @@ object {
         height: 90px;
         width: 120px;
         background: url("../../images/icon/quotation-white.svg") no-repeat center;
-        background-size: 230%;
+        background-size: 170%;
         position: absolute; }
       .page-id-159 .staff-profiles-wrapper .profile-popout .left-quotation,
       .page-id-159 .board-profiles-wrapper .profile-popout .left-quotation,
       .page-id-159 .advisors-profiles-wrapper .profile-popout .left-quotation {
-        left: 0;
-        top: 134%; }
+        left: -10%;
+        top: 54%; }
+        @media all and (min-width: 760px) {
+          .page-id-159 .staff-profiles-wrapper .profile-popout .left-quotation,
+          .page-id-159 .board-profiles-wrapper .profile-popout .left-quotation,
+          .page-id-159 .advisors-profiles-wrapper .profile-popout .left-quotation {
+            left: -8%;
+            top: 43%; } }
       .page-id-159 .staff-profiles-wrapper .profile-popout .right-quotation,
       .page-id-159 .board-profiles-wrapper .profile-popout .right-quotation,
       .page-id-159 .advisors-profiles-wrapper .profile-popout .right-quotation {
-        right: 0;
-        top: 156%;
+        right: -7%;
+        top: 74%;
         transform: rotate(180deg); }
+        @media all and (min-width: 760px) {
+          .page-id-159 .staff-profiles-wrapper .profile-popout .right-quotation,
+          .page-id-159 .board-profiles-wrapper .profile-popout .right-quotation,
+          .page-id-159 .advisors-profiles-wrapper .profile-popout .right-quotation {
+            right: -10%;
+            top: 84%; } }
       .page-id-159 .staff-profiles-wrapper .profile-popout .quote,
       .page-id-159 .board-profiles-wrapper .profile-popout .quote,
       .page-id-159 .advisors-profiles-wrapper .profile-popout .quote {
         margin-bottom: 2.5rem;
         font-size: 1.15rem;
+        font-weight: 300;
         line-height: 1.4rem;
         text-align: center;
         position: relative;
@@ -1935,8 +1948,8 @@ object {
           .page-id-159 .board-profiles-wrapper .profile-popout .quote,
           .page-id-159 .advisors-profiles-wrapper .profile-popout .quote {
             margin-bottom: 2.5rem;
-            font-size: 2.25rem;
-            line-height: 2.5rem;
+            font-size: 1.65rem;
+            line-height: 2rem;
             text-align: center; } }
       .page-id-159 .staff-profiles-wrapper .profile-popout .center-column,
       .page-id-159 .board-profiles-wrapper .profile-popout .center-column,
@@ -1959,6 +1972,7 @@ object {
       .page-id-159 .advisors-profiles-wrapper .profile-popout .left-column {
         width: 100%;
         float: none;
+        position: relative;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-flow: column nowrap;
@@ -1986,13 +2000,14 @@ object {
       .page-id-159 .staff-profiles-wrapper .profile-popout h3,
       .page-id-159 .board-profiles-wrapper .profile-popout h3,
       .page-id-159 .advisors-profiles-wrapper .profile-popout h3 {
+        width: 50%;
         margin: 0 auto;
         font-size: 1.5rem;
         font-family: quattrocento;
         line-height: 1.75rem;
         font-style: italic;
         text-align: center;
-        display: inline; }
+        display: inline-block; }
       .page-id-159 .staff-profiles-wrapper .profile-popout article,
       .page-id-159 .board-profiles-wrapper .profile-popout article,
       .page-id-159 .advisors-profiles-wrapper .profile-popout article {
@@ -2071,7 +2086,7 @@ object {
         .page-id-159 .staff-profiles-wrapper .show-popout,
         .page-id-159 .board-profiles-wrapper .show-popout,
         .page-id-159 .advisors-profiles-wrapper .show-popout {
-          width: 85%; } }
+          width: 950px; } }
     .page-id-159 .staff-profiles-wrapper .small-header,
     .page-id-159 .board-profiles-wrapper .small-header,
     .page-id-159 .advisors-profiles-wrapper .small-header {
