@@ -235,18 +235,18 @@
     }
 
     var $postsContainer = $( '.newsmedia-article' );
-    var $loadPostsButton = $( '.load-more .load-more-button' );
+    var $loadPostsButton = $( '#load-more-button' );
     var renderedArticles = 5;
-    // var apiLink = $( location ).attr('href') + '/wp-json/wp/v2/news/?&_embed=true';
-    var apiLink = 'http://catalyst.cp.academy.red/wp-json/wp/v2/news/?&_embed=true'
+    var apiLink = api_vars.ajax_url + 'news/?&_embed=true';
 
-    $loadPostsButton.click(function(){
+    $loadPostsButton.click(function( event ){
+        event.preventDefault();
 
         $.get(apiLink, function( data ){
 
             var newPosts = data.slice( ( data.length - renderedArticles ) - renderedArticles, ( data.length - renderedArticles ) );
             
-            if ( renderedArticles < data.length ) {
+            if ( renderedArticles < data.length && renderedArticles < 20 ) {
                 $.each( newPosts, function(i, post)  {
                     var myDate = new Date( post.date );
                     var formattedDate = formatDate(myDate);
