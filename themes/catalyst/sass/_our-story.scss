@@ -9,8 +9,9 @@
         @include banner-text;
     }
     .intro-copy {
-        width: 54%;
+        width: 60%;
         line-height: 26px;
+        margin-bottom: 30px;
         @include media($desktop-width) {
             @include intro-copy;
         }
@@ -67,17 +68,17 @@
         font-weight: lighter;
         position: relative;
         justify-content: center;
-        padding-top: 30px;
+        // padding-top: 30px;
     }
     .mission-quote {
-        height: 177px;
+        height: 160px;
         @include media($desktop-width) {
-            height: 158px;
+            height: 125px;
         }
     }
     .mission-quote2 {
-        height: 208px;
-        margin-bottom: 80px;
+        height: 253px;
+        // margin-bottom: 80px;
         @include media($desktop-width) {
             margin-bottom: 0px;
             height: 195px;
@@ -96,9 +97,9 @@
         font-family: $font__secondary;
         font-style: italic;
     }
-    .quote2 {
-        padding: 0 40px;
-    }
+    // .quote2 {
+    //     padding: 0 40px;
+    // }
     .quotation-left,
     .quotation-left2 {
         background: url('../../images/icon/quotation.svg')no-repeat center;
@@ -109,18 +110,18 @@
     }
     .quotation-left {
         left: 7%;
-        top: 18%;
+        top: 0%;
         @include media($desktop-width) {
             left: 13%;
-            top: 20%;
+            top: 1%;
         }
     }
     .quotation-left2 {
         left: 5%;
-        top: 18%;
+        top: 1%;
         @include media($desktop-width) {
-            left: 8%;
-            top: 20%;
+            left: 5%;
+            top: 2%;
         }
     }
     .quotation-right,
@@ -134,30 +135,30 @@
     }
     .quotation-right {
         right: 7%;
-        top: 54%;
+        top: 34%;
         @include media($desktop-width) {
             left: 78%;
             top: 36%;
         }
     }
     .quotation-right2 {
-        left: 79%;
-        top: 88%;
+        left: 82%;
+        top: 46%;
         @include media($desktop-width) {
-            left: 83%;
-            top: 58%;
+            left: 86%;
+            top: 44%;
         }
     }
     .robert {
         text-align: center;
-        margin-top: 25px;
+        // margin-top: 25px;
         @include media($desktop-width) {
             margin-top: 0px;
             font-size: 30px;
         }
     }
     h4 {
-        font-size: 28px;
+        font-size: 20px;
         font-weight: $font__bold;
         margin: 0 auto;
         @include media($desktop-width) {
@@ -169,7 +170,7 @@
         font-style: italic;
         font-weight: $font__semibold;
         margin: 0;
-        font-size: 25px;
+        font-size: 20px;
     }
     .arrow {
         transform: rotate(90deg);
