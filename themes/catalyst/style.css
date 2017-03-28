@@ -1352,7 +1352,7 @@ object {
   @media all and (min-width: 760px) and (min-width: 760px) {
     .page-id-21 .intro-copy {
       padding: 2.75rem 0.85rem;
-      width: 60%; } }
+      width: 65%; } }
 
 .page-id-21 .site-content {
   text-align: center; }
@@ -1724,7 +1724,7 @@ object {
   @media all and (min-width: 760px) {
     .intro-copy {
       padding: 2.75rem 0.85rem;
-      width: 60%; } }
+      width: 65%; } }
 
 .blue-background-header {
   position: relative; }
@@ -2316,7 +2316,7 @@ object {
     @media all and (min-width: 760px) {
       .page-id-18 .intro-copy {
         padding: 2.75rem 0.85rem;
-        width: 60%; } }
+        width: 65%; } }
   .page-id-18 .main-copy {
     height: auto;
     width: 100%;
@@ -2821,7 +2821,7 @@ object {
   @media all and (min-width: 760px) {
     .page-id-196 .intro-copy {
       padding: 2.75rem 0.85rem;
-      width: 60%; } }
+      width: 65%; } }
 
 .page-id-196 .page-header-container {
   background-color: #D9F1FF;
@@ -2950,13 +2950,31 @@ object {
   @media all and (min-width: 760px) {
     .page-id-195 .intro-copy {
       padding: 2.75rem 0.85rem;
-      width: 60%; } }
+      width: 65%; } }
 
 .page-id-195 .project-content {
   text-align: center; }
 
 .page-id-195 .project-post {
   margin-bottom: 6rem; }
+
+.page-id-195 .subheader-name {
+  margin: 0;
+  line-height: 1.5; }
+  @media all and (min-width: 760px) {
+    .page-id-195 .subheader-name {
+      display: inline-block; } }
+
+.page-id-195 .subheader-sub {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: normal;
+  font-family: quattrocento, sans-serif; }
+  @media all and (min-width: 760px) {
+    .page-id-195 .subheader-sub {
+      display: inline-block;
+      font-size: 1.5rem; } }
 
 .page-id-195 .break {
   display: none; }
@@ -2966,6 +2984,9 @@ object {
       font-size: 1.5rem;
       font-weight: 500;
       margin: 0 0.5rem; } }
+
+.page-id-195 .status {
+  text-transform: uppercase; }
 
 .page-id-195 .img-container {
   margin: 2rem 2rem 3rem; }

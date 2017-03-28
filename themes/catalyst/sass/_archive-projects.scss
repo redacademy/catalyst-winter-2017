@@ -19,6 +19,24 @@
     .project-post {
         margin-bottom: 6rem;
     }
+    .subheader-name {
+        margin: 0;
+        line-height: 1.5;
+        @include media ($desktop-width){
+            display: inline-block;
+        }
+    }
+    .subheader-sub{
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1.5;
+        font-weight: normal;
+        font-family: $font__secondary;
+        @include media($desktop-width){
+            display: inline-block;
+            font-size: 1.5rem;
+        }
+    }
     .break {
         display: none;
         @include media($desktop-width) {
@@ -27,6 +45,9 @@
             font-weight: 500;
             margin: 0 0.5rem;
         }
+    }
+    .status {
+        text-transform: uppercase;
     }
     .img-container {
         margin: 2rem 2rem 3rem;
