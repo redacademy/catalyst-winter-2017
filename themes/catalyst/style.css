@@ -3015,27 +3015,34 @@ object {
   font-size: 4rem;
   line-height: 1;
   margin-bottom: 1rem;
-  font-weight: 700; }
+  font-weight: 600;
+  letter-spacing: 1px; }
 
 .single-projects .hero-image-banner .project-location {
   font-family: quattrocento, sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.3rem;
-  margin-bottom: 0.3rem; }
+  margin-bottom: 0.3rem;
+  letter-spacing: 1px; }
 
 .single-projects .hero-image-banner .project-status {
   font-family: quattrocento, sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.3rem;
+  letter-spacing: 1px; }
+
+.single-projects .hero-image-banner .p-stat {
   text-transform: uppercase; }
 
 .single-projects .proj-content {
-  margin: 0 1.5rem;
+  padding: 0 1.5rem;
   font-family: quattrocento, sans-serif; }
   @media all and (min-width: 760px) {
     .single-projects .proj-content {
       max-width: 1000px;
-      margin: 0 auto; } }
+      margin: 0 auto 3rem;
+      padding: 0 2rem;
+      font-size: 1.2rem; } }
   .single-projects .proj-content h3 {
     margin-bottom: 0;
     font-weight: 700; }
@@ -3179,7 +3186,8 @@ object {
       .single-projects .other-proj-wrapper .project-location,
       .single-projects .other-proj-wrapper .project-status {
         display: block;
-        margin: 0 auto; } }
+        margin: 0 auto;
+        font-size: 1.2rem; } }
     .single-projects .other-proj-wrapper .project-name span,
     .single-projects .other-proj-wrapper .project-location span,
     .single-projects .other-proj-wrapper .project-status span {
