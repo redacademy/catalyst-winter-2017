@@ -978,28 +978,24 @@ textarea {
     min-width: 100%;
     max-width: initial; }
 
-.home .header-text {
-  max-width: 900px;
-  color: white;
-  padding: 0 2rem;
-  line-height: 1; }
-  .home .header-text h1 {
-    font-size: 3.15rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-shadow: 1px 2px 5px #323232; }
-    @media all and (min-width: 760px) {
-      .home .header-text h1 {
-        margin-bottom: 1rem;
-        font-size: 3.85rem; } }
-  .home .header-text p {
-    font-size: 1.35rem;
-    font-family: quattrocento, sans-serif;
-    font-weight: 700;
-    margin: 1.5rem auto;
-    letter-spacing: 2px;
-    margin: 0;
-    text-shadow: 1px 2px 5px #323232; }
+.home .header-text h1 {
+  font-size: 3.15rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 1px 2px 5px #323232; }
+  @media all and (min-width: 760px) {
+    .home .header-text h1 {
+      margin-bottom: 1rem;
+      font-size: 3.85rem; } }
+
+.home .header-text p {
+  font-size: 1.35rem;
+  font-family: quattrocento, sans-serif;
+  font-weight: 700;
+  margin: 1.5rem auto;
+  letter-spacing: 2px;
+  margin: 0;
+  text-shadow: 1px 2px 5px #323232; }
 
 .home .navigation-button {
   height: 70px;
@@ -1425,7 +1421,7 @@ object {
 
 .page-id-21 .download {
   height: 70px;
-  width: 250px;
+  width: 275px;
   margin: 2rem auto;
   border: 2px solid #323232;
   font-size: 1.35rem;
