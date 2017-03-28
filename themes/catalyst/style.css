@@ -2628,6 +2628,8 @@ object {
       .page-id-18 .supporters-logo-container .sponsor-logo:nth-child(6) {
         height: 115px;
         filter: grayscale(80%) saturate(5); }
+  .page-id-18 .main-copy_container {
+    text-align: center; }
 
 /*--------------------------------------------------------------
 # Page Templates
