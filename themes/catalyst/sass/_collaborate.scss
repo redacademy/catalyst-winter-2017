@@ -281,9 +281,9 @@
             width: 70%;
         }
         .sponsor-logo {
-            height: 35px;
+            height: 40px;
             width: auto;
-            margin: 4%;
+            margin: 3% 5%;
             @include grayscale-image;
             @include media($desktop-width) {
                 margin: $base__space-unit 2.5rem;

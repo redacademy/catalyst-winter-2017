@@ -1091,7 +1091,7 @@ textarea {
     overflow: hidden; }
     @media all and (min-width: 760px) {
       .home .projects .image-wrapper {
-        height: 50vh; } }
+        height: 500px; } }
     .home .projects .image-wrapper img {
       width: auto;
       height: 100%;
@@ -2606,9 +2606,9 @@ object {
         padding: 0 0 3rem;
         width: 70%; } }
     .page-id-18 .supporters-logo-container .sponsor-logo {
-      height: 35px;
+      height: 40px;
       width: auto;
-      margin: 4%;
+      margin: 3% 5%;
       filter: grayscale(100%) invert(60%); }
       @media all and (min-width: 760px) {
         .page-id-18 .supporters-logo-container .sponsor-logo {
