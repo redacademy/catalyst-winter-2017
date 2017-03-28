@@ -38,14 +38,14 @@
     .job-post {
         margin: 0 10%;
         border-bottom: 1px solid black;
-        padding-bottom: 6rem;
+        padding-bottom: 2rem;
     }
     .job-post:last-child {
         border-bottom: none;
     }
     .job-title {
         font-weight: $font__bold;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         text-align: center;
         color: $color__text-main;
         text-transform: uppercase;
@@ -53,8 +53,11 @@
     }
     .role-container {
         font-family: $font__secondary;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         margin-bottom: 3rem;
+        @include media ($desktop-width){
+            font-size: 1.4rem;
+        }
         p{
             margin-top: 0;
         }
@@ -69,8 +72,11 @@
         width: 100%;
         max-width: 850px;
         margin: 0 auto;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         margin-bottom: 4rem;
+        @include media ($desktop-width){
+            font-size: 1.4rem;
+        }
         ul {
             margin-left: 0;
         }

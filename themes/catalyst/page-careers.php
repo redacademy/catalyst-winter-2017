@@ -20,7 +20,7 @@ get_header(); ?>
     ));
     foreach ( $posts as $post ) : ?>
 	<div class="job-post">
-		<h3 class='job-title'><?php echo CFS()->get( 'job_title' ); ?> </h3>
+		<h3 class='job-title'><?php echo esc_html(CFS()->get( 'job_title' ) ); ?> </h3>
 		<div class="role-container">
 			<p class="role">role:</p>
 			<?php echo CFS()->get( 'role' ); ?>
