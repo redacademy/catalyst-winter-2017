@@ -10,7 +10,7 @@
         position:absolute;
         left:0;
         top:0;
-        width:100%; 
+        width:100%;
         height:100%;
         display:inline-block;
         background: black;
@@ -25,10 +25,10 @@
             min-width: 100%;
             max-width: initial;
         }
-        
+
     }
     .header-text {
-        	@include header-text;
+        	// @include header-text;
         h1 {
             @include page-title;
         }
