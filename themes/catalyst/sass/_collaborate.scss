@@ -60,6 +60,7 @@
                 color: $color__text-main;
                 text-align: center;
                 text-transform: uppercase;
+                letter-spacing: 1.5px;
                 @include media($desktop-width) {
                     margin: 1.9rem 0 0.5rem;
                     font-size: 2rem;

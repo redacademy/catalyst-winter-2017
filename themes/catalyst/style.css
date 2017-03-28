@@ -2505,7 +2505,8 @@ object {
       font-weight: 700;
       color: #4A4A4A;
       text-align: center;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      letter-spacing: 1.5px; }
       @media all and (min-width: 760px) {
         .page-id-18 .content-container .partners-information-container .small-header {
           margin: 1.9rem 0 0.5rem;
