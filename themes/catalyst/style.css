@@ -484,17 +484,18 @@ table {
   font-weight: 700;
   color: #323232;
   line-height: 2.4rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
   @media all and (min-width: 760px) {
     .subheader-sm {
       max-width: none;
-      font-size: 2rem;
+      font-size: 1.85rem;
       line-height: 3.4rem; } }
 
 .subheader-lrg {
   max-width: 400px;
   margin: 0 auto;
-  font-size: 2.15rem;
+  font-size: 1.85rem;
   font-weight: 700;
   color: #323232;
   line-height: 2.4rem;
@@ -502,7 +503,7 @@ table {
   @media all and (min-width: 760px) {
     .subheader-lrg {
       max-width: none;
-      font-size: 3.2rem;
+      font-size: 3.15rem;
       line-height: 3.4rem; } }
 
 /*--------------------------------------------------------------
@@ -951,28 +952,24 @@ textarea {
     min-width: 100%;
     max-width: initial; }
 
-.home .header-text {
-  max-width: 900px;
-  color: white;
-  padding: 0 2rem;
-  line-height: 1; }
-  .home .header-text h1 {
-    font-size: 3.15rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-shadow: 1px 2px 5px #323232; }
-    @media all and (min-width: 760px) {
-      .home .header-text h1 {
-        margin-bottom: 1rem;
-        font-size: 3.85rem; } }
-  .home .header-text p {
-    font-size: 1.35rem;
-    font-family: quattrocento, sans-serif;
-    font-weight: 700;
-    margin: 1.5rem auto;
-    letter-spacing: 2px;
-    margin: 0;
-    text-shadow: 1px 2px 5px #323232; }
+.home .header-text h1 {
+  font-size: 3.15rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 1px 2px 5px #323232; }
+  @media all and (min-width: 760px) {
+    .home .header-text h1 {
+      margin-bottom: 1rem;
+      font-size: 3.85rem; } }
+
+.home .header-text p {
+  font-size: 1.35rem;
+  font-family: quattrocento, sans-serif;
+  font-weight: 700;
+  margin: 1.5rem auto;
+  letter-spacing: 2px;
+  margin: 0;
+  text-shadow: 1px 2px 5px #323232; }
 
 .home .navigation-button {
   height: 70px;
@@ -998,11 +995,11 @@ textarea {
     border: 2px solid white;
     cursor: pointer; }
 
-.home .catalyst-formula-copy,
-.home .formula-carousel {
+.home .catalyst-formula-copy {
   max-width: 1000px;
   padding-bottom: 2rem;
   margin: 2rem auto;
+  text-align: center;
   font-family: quattrocento, sans-serif; }
 
 .home .projects {
@@ -1127,12 +1124,12 @@ textarea {
         font-size: 1.5rem; } }
 
 .home .formula-carousel {
-  margin-bottom: 2rem;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
   .home .formula-carousel .formulas {
-    height: 270px;
     width: 270px;
     margin: 0 1rem;
+    padding-left: 3rem;
     display: block; }
     .home .formula-carousel .formulas div {
       height: 100%;
@@ -1144,7 +1141,7 @@ textarea {
     .home .formula-carousel .img:last-child {
       width: 77%; }
   .home .formula-carousel .fill {
-    margin-left: 1.5rem;
+    margin-left: 3rem;
     vertical-align: middle; }
     @media all and (min-width: 760px) {
       .home .formula-carousel .fill {
@@ -1162,7 +1159,10 @@ textarea {
       .home .formula-carousel:after {
         content: ''; } }
   .home .formula-carousel .formula-text {
-    display: none; }
+    width: 80%; }
+    @media all and (min-width: 760px) {
+      .home .formula-carousel .formula-text {
+        display: none; } }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1320,14 +1320,18 @@ object {
   text-shadow: 1px 2px 5px #323232; }
 
 .page-id-21 .intro-copy {
-  height: auto;
-  width: 100%;
-  margin: 0 auto;
-  padding: 2rem 0.85rem;
-  font-size: 1.25rem;
-  font-family: quattrocento, sans-serif;
-  text-align: center; }
+  width: 54%;
+  line-height: 26px; }
   @media all and (min-width: 760px) {
+    .page-id-21 .intro-copy {
+      height: auto;
+      width: 100%;
+      margin: 0 auto;
+      padding: 2rem 0.85rem;
+      font-size: 1.25rem;
+      font-family: quattrocento, sans-serif;
+      text-align: center; } }
+  @media all and (min-width: 760px) and (min-width: 760px) {
     .page-id-21 .intro-copy {
       padding: 2.75rem 0.85rem;
       width: 60%; } }
@@ -1338,16 +1342,18 @@ object {
 .page-id-21 h3 {
   text-align: center;
   padding: 0 10px;
-  font-size: 28px;
-  font-weight: 700;
   margin: auto;
-  line-height: 35px; }
+  line-height: 35px;
+  width: 450px;
+  font-size: 30px;
+  font-weight: 300; }
   @media all and (min-width: 760px) {
     .page-id-21 h3 {
-      font-size: 50px;
+      font-size: 40px;
+      font-weight: 700;
       line-height: 55px;
       margin-bottom: 50px;
-      width: 900px; } }
+      width: 700px; } }
 
 .page-id-21 .entry-header {
   visibility: hidden;
@@ -1391,59 +1397,66 @@ object {
     cursor: pointer; }
 
 .page-id-21 .download {
+  height: 70px;
+  width: 275px;
+  margin: 2rem auto;
+  border: 2px solid #323232;
+  font-size: 1.35rem;
+  color: #323232;
   font-weight: 700;
-  padding: 20px 50px;
   text-transform: uppercase;
-  border: 1px solid black;
   text-decoration: none;
-  color: black; }
-  @media all and (min-width: 760px) {
-    .page-id-21 .download {
-      border: 3px solid #323232; } }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
   .page-id-21 .download:hover {
-    border-color: #D9F1FF;
-    box-shadow: 1px 1px 5px #323232; }
-  .page-id-21 .download.active {
-    background-color: #D9F1FF; }
-
-.page-id-21 .download {
-  width: 300px;
-  margin: 0 auto;
-  padding: 5px 0;
-  font-weight: 700; }
+    border: 2px solid #D9F1FF;
+    box-shadow: 0px 2px 5px #323232; }
+  .page-id-21 .download:active {
+    background: #D9F1FF;
+    border: 2px solid white;
+    cursor: pointer; }
   .page-id-21 .download a {
     text-decoration: none;
     color: #323232; }
-
-.page-id-21 .mission-quote2 {
-  margin-bottom: 80px; }
-  @media all and (min-width: 760px) {
-    .page-id-21 .mission-quote2 {
-      margin-bottom: 0px; } }
 
 .page-id-21 .mission-quote,
 .page-id-21 .mission-quote2 {
   display: -ms-flexbox;
   display: flex;
-  height: 200px;
   font-weight: lighter;
   position: relative;
   -ms-flex-pack: center;
       justify-content: center;
   padding-top: 30px; }
+
+.page-id-21 .mission-quote {
+  height: 177px; }
   @media all and (min-width: 760px) {
-    .page-id-21 .mission-quote,
+    .page-id-21 .mission-quote {
+      height: 158px; } }
+
+.page-id-21 .mission-quote2 {
+  height: 208px;
+  margin-bottom: 80px; }
+  @media all and (min-width: 760px) {
     .page-id-21 .mission-quote2 {
-      font-size: 20px; } }
+      margin-bottom: 0px;
+      height: 195px; } }
 
 .page-id-21 .quote,
 .page-id-21 .quote2 {
   z-index: 1;
   margin-top: 67px;
   text-align: center;
-  font-size: 18px;
+  font-size: 25px;
+  font-weight: 100;
+  line-height: 28px;
   position: absolute;
-  width: 90%;
+  width: 80%;
   font-family: quattrocento, sans-serif;
   font-style: italic; }
   @media all and (min-width: 760px) {
@@ -1455,57 +1468,65 @@ object {
 .page-id-21 .quotation-left2 {
   background: url("../../images/icon/quotation.svg") no-repeat center;
   background-size: 250%;
-  width: 145px;
+  width: 100px;
   height: 130px;
   position: absolute;
-  right: 60%;
-  bottom: 32%; }
+  right: 79%;
+  top: 18%; }
   @media all and (min-width: 760px) {
     .page-id-21 .quotation-left,
     .page-id-21 .quotation-left2 {
-      right: 80%;
-      bottom: 25%; } }
+      right: 83%;
+      top: 20%; } }
+
+@media all and (min-width: 760px) {
+  .page-id-21 .quotation-left2 {
+    right: 86%; } }
 
 .page-id-21 .quotation-right,
 .page-id-21 .quotation-right2 {
   background: url("../../images/icon/quotation.svg") no-repeat center;
   background-size: 250%;
-  width: 145px;
+  width: 100px;
   height: 130px;
   transform: rotate(180deg);
   position: absolute;
-  left: 60%;
-  top: 53%; }
+  left: 79%;
+  top: 59%; }
   @media all and (min-width: 760px) {
     .page-id-21 .quotation-right,
     .page-id-21 .quotation-right2 {
-      left: 79%;
+      left: 83%;
       top: 36%; } }
 
 .page-id-21 .quotation-right2 {
   top: 94%; }
   @media all and (min-width: 760px) {
     .page-id-21 .quotation-right2 {
-      top: 51%; } }
+      top: 58%; } }
 
 .page-id-21 .robert {
-  margin-bottom: 60px;
-  text-align: center; }
+  text-align: center;
+  margin-top: 25px; }
   @media all and (min-width: 760px) {
     .page-id-21 .robert {
+      margin-top: 0px;
       font-size: 30px; } }
 
 .page-id-21 h4 {
+  font-size: 28px;
   font-weight: 700;
-  margin: 0; }
+  margin: 0 auto; }
   @media all and (min-width: 760px) {
     .page-id-21 h4 {
-      margin: 15px; } }
+      margin: 10px;
+      font-size: 25px; } }
 
 .page-id-21 .position {
   font-style: italic;
   font-weight: 600;
-  margin: 0; }
+  margin: 0;
+  font-size: 25px; }
 
 .page-id-21 .arrow {
   transform: rotate(90deg); }
@@ -1527,7 +1548,9 @@ object {
       margin-bottom: 0; } }
 
 .page-id-21 .mission-content {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 80px; }
   .page-id-21 .mission-content .arrow {
     margin-bottom: 10px; }
   @media all and (min-width: 760px) {
@@ -1566,12 +1589,16 @@ object {
 .page-id-21 .formula-p {
   font-family: quattrocento, sans-serif;
   width: 90%;
-  margin: auto; }
+  margin: auto;
+  margin-bottom: 50px; }
+  @media all and (min-width: 760px) {
+    .page-id-21 .formula-p {
+      width: 75%; } }
 
 .page-id-21 .formula-text1,
 .page-id-21 .formula-text2 {
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 20px;
+  line-height: 22px;
   font-weight: 100; }
   @media all and (min-width: 760px) {
     .page-id-21 .formula-text1,
@@ -1586,12 +1613,12 @@ object {
       padding-left: 20px; } }
 
 .page-id-21 .formula-carousel {
-  margin-bottom: 2rem;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
   .page-id-21 .formula-carousel .formulas {
-    height: 270px;
     width: 270px;
     margin: 0 1rem;
+    padding-left: 3rem;
     display: block; }
     .page-id-21 .formula-carousel .formulas div {
       height: 100%;
@@ -1603,7 +1630,7 @@ object {
     .page-id-21 .formula-carousel .img:last-child {
       width: 77%; }
   .page-id-21 .formula-carousel .fill {
-    margin-left: 1.5rem;
+    margin-left: 3rem;
     vertical-align: middle; }
     @media all and (min-width: 760px) {
       .page-id-21 .formula-carousel .fill {
@@ -1635,7 +1662,7 @@ object {
   margin-bottom: 5px; }
 
 .page-id-21 .end-content {
-  margin: 50px 0; }
+  margin-bottom: 100px; }
 
 .page-id-159 {
   height: 100%;
@@ -2130,7 +2157,8 @@ object {
       display: flex;
       width: 100%; }
       .page-id-19 .newsmedia-content .newsmedia-article {
-        width: 60%; }
+        width: 70%;
+        height: 100vh; }
       .page-id-19 .newsmedia-content .widget-area {
         width: 40%; } }
   .page-id-19 .widget-title {
@@ -2149,7 +2177,9 @@ object {
         height: auto;
         min-width: 100%;
         max-width: 105%; }
-    .page-id-19 .newsmedia-article .news {
+    .page-id-19 .newsmedia-article .newsmeida-article:first-child {
+      display: block; }
+    .page-id-19 .newsmedia-article .newsmeida-article:nth-child(2) {
       display: none; }
     @media all and (min-width: 760px) {
       .page-id-19 .newsmedia-article {
@@ -2197,6 +2227,7 @@ object {
     border: none;
     box-shadow: none;
     border-radius: 0;
+    background: #D9F1FF;
     padding: 0 !important; }
     .page-id-19 li.tweets_avatar:nth-child(2) {
       display: none; }
@@ -2211,7 +2242,8 @@ object {
   .page-id-19 .tweet_wrap {
     background: #D9F1FF;
     padding: 20px; }
-  .page-id-19 .tweet_data, .page-id-19 .times {
+  .page-id-19 .tweet_data,
+  .page-id-19 .times {
     padding: 0 60px; }
   .page-id-19 .tweet-actions a {
     padding: 5px;

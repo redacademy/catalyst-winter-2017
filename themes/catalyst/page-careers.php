@@ -10,7 +10,7 @@ get_header(); ?>
 
 <?php get_template_part( 'template-parts/hero-banner'); ?>
 
-<div class="blue-background">
+<div class="blue-background-header">
     <h2 class="subheader-lrg">job opportunities</h2>
 </div>
 <div class="job-container">

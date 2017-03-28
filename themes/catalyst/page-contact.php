@@ -23,7 +23,7 @@ get_header(); ?>
                     </p>
                 </header><!-- .page-header -->
             </div>
-            <div class="blue-background">
+            <div class="blue-background-header">
 			    <h2 class="subheader-sm">we would like to hear from you</h2>
 		    </div>
 			<?php while ( have_posts() ) : the_post(); ?>
