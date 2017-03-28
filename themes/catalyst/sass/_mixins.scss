@@ -18,8 +18,9 @@
 }
 
 @mixin page-title {
-	font-size: 3.15rem;
-	font-weight: $font__bold;
+	margin-bottom: 1.5rem;
+	font-size: 3.4rem;
+	font-weight: $font__semibold;
 	text-transform: uppercase;
 	@include header-text-shadow;
 	@include media($desktop-width) {
@@ -28,10 +29,11 @@
 	}
 }
 @mixin banner-text {
-	font-size: 1.35rem;
-  font-family: $font__secondary;
-  font-weight: $font__bold;
+	font-size: 1.4rem;
+  	font-family: $font__secondary;
+  	font-weight: $font__bold;
 	margin: $base__space-unit auto;
+	line-height: 1.65rem;
 	letter-spacing: 2px;
 	margin: 0;
 	@include header-text-shadow;
@@ -41,7 +43,7 @@
 	height: auto;
 	width: 100%;
 	margin: 0 auto;
-	padding: 2rem 0.85rem;
+	padding: 2rem 1rem 1rem;
 	font-size: 1.25rem;
 	font-family: $font__secondary;
 	text-align: center;

@@ -90,8 +90,8 @@
 		position: absolute;
 		right: 0%;
 		z-index: 1;
-		height: 100%;
-		width: 50%;
+		height: auto;
+		width: auto;
 		@include flex-row(nowrap, flex-end, baseline);
 		@include media($desktop-width) {
 			width: 80%;
@@ -161,13 +161,17 @@
 			line-height: 1.35rem;
 		}
 		li {
-			padding: 20px 0;
+			padding: 12px 0;
 			border-bottom: 1px solid white;
+
+			@include media ($desktop-width) {
+				padding: 20px 0;
+			}
 			a {
 				display: block;
 				text-decoration: none;
 				padding-left: 20px;
-				font-size: 1.2rem;
+				font-size: 0.95rem;
 				color: $color__header-main;
 				text-transform: uppercase;
 			}

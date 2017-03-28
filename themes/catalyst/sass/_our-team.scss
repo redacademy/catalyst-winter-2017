@@ -7,12 +7,22 @@
     }
     .header-text {
         @include header-text;
+        top: 4%;
+        @include media($desktop-width) {
+            top: 25%;
+        }
     }
     .entry-title {
         @include page-title;
     }
     .banner-text {
+        width: 95%;
         @include banner-text;
+
+        @include media($desktop-width) {
+            font-size: 1.75rem;
+            line-height: 2rem;
+        }
     }
 }
 
@@ -23,6 +33,10 @@
     // Exit button for staff profile popouts.
 .blue-background-header {
     position: relative;
+
+    h2 {
+        font-size: 2.4rem;
+    }
 }
 
 .staff-exit-button {
@@ -42,7 +56,9 @@
 // Buttons
 .enter-button,
 .exit-button {
-    @include popout-button(40px);
+    @include popout-button(45px);
+    font-size: 3.5rem;
+    font-weight: 300;
 }
 
 .enter-button {
@@ -52,17 +68,39 @@
 }
 
 .exit-button {
-    font-size: 2.5rem;
+    font-weight: 400;
     background: white;
-    padding-top: 0.6rem;
-    padding-left: 0.08rem;
+    padding-top: 0.7rem;
+    padding-left: 0.04rem;
     position: absolute;
+
+    span {
+        font-size: 2.05rem;
+    }
+}
+
+.name {
+    margin: 0 auto;
+    font-size: 1.25rem;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+}
+
+.job-title {
+    font-family: 'quattrocento';
+    max-width: 235px;
+    margin: 0.25rem auto;
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 1.25px;
 }
 
 .staff-profiles-wrapper,
 .board-profiles-wrapper,
 .advisors-profiles-wrapper {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     @include flex-column(nowrap, space-between, center);
     @include media($desktop-width) {
         width: 80%;
@@ -72,12 +110,12 @@
     .profile-popout {
         height: 0;
         width: 0;
-        padding-top: 3rem;
         background: $color__brand-blue;
-        font-weight: 200;
+        font-weight: 400;
         opacity: 0;
         overflow: hidden;
         transition: opacity 0.7s ease;
+        display: none;
 
         a {
             color: $color__text-main;
@@ -89,28 +127,34 @@
             }
         }
 
-        .center-column {
-            @include flex-column(nowrap, flex-start, center);
-            margin: 0 auto;
-
-            img {
-                width: 400px;
-            }
+        .left-quotation, .right-quotation {
+            height: 90px;
+            width: 120px;
+            background: url('../../images/icon/quotation-white.svg') no-repeat center;
+            background-size: 230%;
+            position: absolute;
         }
 
-        .left-column {
-            width: 40%;
-            margin-right: 10%;
-            float: left;
-            @include flex-column(nowrap, center, center);
-            img {
-                width: 225px;
-                @include media($desktop-width) {
-                    width: 95%;
-                }
-            }
+        .left-quotation {
+            left: 0;
+            top: 134%;
+        }
 
-            .quote {
+        .right-quotation {
+            right: 0;
+            top: 156%;
+            transform: rotate(180deg);
+        }
+
+        .quote {
+            margin-bottom: 2.5rem;
+            font-size: 1.15rem;
+            line-height: 1.4rem;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+
+            @include media($desktop-width) {
                 margin-bottom: 2.5rem;
                 font-size: 2.25rem;
                 line-height: 2.5rem;
@@ -118,7 +162,54 @@
             }
         }
 
+        .center-column {
+            @include flex-column(nowrap, flex-start, center);
+            margin: 0 auto;
+
+            img {
+                width: 290px;
+            }
+        }
+
+        .left-column {
+            width: 100%;
+            float: none;
+            @include flex-column(nowrap, center, center);
+            @include media($desktop-width) {
+                width: 40%;
+                margin-right: 10%;
+                float: left;
+            }
+            img {
+                width: 225px;
+                @include media($desktop-width) {
+                    width: 95%;
+                }
+            }
+
+            // .quote {
+            //     margin-bottom: 2.5rem;
+            //     font-size: 1.15rem;
+            //     line-height: 1.4rem;
+            //     text-align: center;
+            //     position: relative;
+
+            //     @include media($desktop-width) {
+            //         margin-bottom: 2.5rem;
+            //         font-size: 2.25rem;
+            //         line-height: 2.5rem;
+            //         text-align: center;
+            //     }
+            // }
+        }
+
         h3 {
+            margin: 0 auto;
+            font-size: 1.5rem;
+            font-family: quattrocento;
+            line-height: 1.75rem;
+            font-style: italic;
+            text-align: center;
             display: inline;
         }
 
@@ -127,14 +218,24 @@
             line-height: 1.5rem;
             display: inline;
 
+            p:first-child {
+                margin-bottom: 0;
+            }
+
             p:nth-last-of-type(2), h4 {
-                max-width: 50%;
-                float: right;
+                max-width: none;
+                float: none;
+
+                @include media($desktop-width) {
+                    max-width: 50%;
+                    float: right;
+                }
             }
 
             p:nth-last-of-type(2) {
                 margin-bottom: 0;
                 padding: $base__space-unit;
+                padding-bottom: 0;
                 background: white;
             }
 
@@ -176,11 +277,15 @@
         padding: 7% 7%;
         @include flex-column(nowrap, center, center);
         opacity: 1;
+
+        @include media($desktop-width) {
+            width: 85%;
+        }
     }
 
     .small-header {
-        margin: 2rem auto 1rem;
-        font-size: 2rem;
+        margin: 1.5rem auto 1rem;
+        font-size: 1.5rem;
         font-weight: $font__bold;
         text-align: center;
         text-transform: uppercase;
@@ -192,7 +297,7 @@
     .board-profiles-header {
         height: auto;
         width: 100%;
-        margin: 2rem auto 2.5rem;
+        margin: 2rem auto 1rem;
         position: relative;
         @include flex-row(nowrap, center, center);
         .small-header {
@@ -219,8 +324,10 @@
         width: 100%;
         .navigation-button {
             @include navigation-button;
+            margin: 1rem auto;
         }
     }
+
     .profile-preview {
         width: 100%;
         margin: 1rem 3rem;
@@ -230,7 +337,7 @@
             width: 30%;
         }
         .profile-image {
-            width: 215px;
+            width: 190px;
             border-radius: 50%;
             @include media($desktop-width) {
                 width: 95%;
@@ -239,25 +346,15 @@
                 box-shadow: 0 2px 8px #4990E2;
             }
         }
-        .name {
-            margin: 0.25rem auto;
-            font-size: 1.55rem;
-            font-weight: $font__bold;
-        }
-        .job-title {
-            max-width: 235px;
-            margin: 0.25rem auto;
-            font-size: 1.4rem;
-            text-align: center;
-            font-weight: $font__semibold;
-            font-style: italic;
-        }
     }
 }
 
 .advisors-profiles-wrapper {
+    margin-bottom: 2rem;
+    
     .small-header {
-        margin: 2rem auto;
+        margin: 2rem auto 1rem;
+        letter-spacing: 1.5px;
     }
     .profile-preview {
         width: 100%;
