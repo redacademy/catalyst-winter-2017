@@ -96,6 +96,9 @@
         font-family: $font__secondary;
         font-style: italic;
     }
+    .quote2 {
+        padding: 0 40px;
+    }
     .quotation-left,
     .quotation-left2 {
         background: url('../../images/icon/quotation.svg')no-repeat center;
@@ -103,16 +106,21 @@
         width: 100px;
         height: 130px;
         position: absolute;
-        right: 79%;
+    }
+    .quotation-left {
+        left: 7%;
         top: 18%;
         @include media($desktop-width) {
-            right: 83%;
+            left: 13%;
             top: 20%;
         }
     }
     .quotation-left2 {
+        left: 5%;
+        top: 18%;
         @include media($desktop-width) {
-            right: 86%;
+            left: 8%;
+            top: 20%;
         }
     }
     .quotation-right,
@@ -123,16 +131,20 @@
         height: 130px;
         transform: rotate(180deg);
         position: absolute;
-        left: 79%;
-        top: 59%;
+    }
+    .quotation-right {
+        right: 7%;
+        top: 54%;
         @include media($desktop-width) {
-            left: 83%;
+            left: 78%;
             top: 36%;
         }
     }
     .quotation-right2 {
-        top: 94%;
+        left: 79%;
+        top: 88%;
         @include media($desktop-width) {
+            left: 83%;
             top: 58%;
         }
     }
