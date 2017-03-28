@@ -2385,7 +2385,9 @@ object {
     max-width: 900px;
     color: white;
     padding: 0 2rem;
-    line-height: 1; }
+    line-height: 1;
+    max-width: 900px;
+    padding: 0 10px; }
   .page-id-18 .entry-title {
     margin-bottom: 1.5rem;
     font-size: 3.4rem;
@@ -2499,7 +2501,6 @@ object {
       margin-top: 3rem; }
     .page-id-18 .content-container .partners-information-container .small-subheader {
       margin: 0.5rem 0 1.5rem;
-      font-size: 1.1rem;
       font-weight: 700;
       text-transform: uppercase; }
       @media all and (min-width: 760px) {
@@ -2511,9 +2512,11 @@ object {
       margin: 0 0 2rem;
       padding-left: 0.75rem;
       list-style-type: none;
-      position: relative; }
+      position: relative;
+      font-size: 20px; }
       @media all and (min-width: 760px) {
         .page-id-18 .content-container .partners-information-container .collaborate-dashed-list {
+          font-size: 16px;
           height: auto;
           margin: 0;
           padding: 0.5rem 0.5rem 2.5rem 2rem;
@@ -2540,8 +2543,8 @@ object {
           .page-id-18 .content-container .partners-information-container .collaborate-dashed-list li {
             font-size: 1.4rem; } }
       .page-id-18 .content-container .partners-information-container .collaborate-dashed-list .key-graphic-1 {
-        height: 150px;
-        width: 84px;
+        height: 227px;
+        width: 109px;
         background: url("../../images/graphics/key.svg") no-repeat 50%;
         background-size: 100%;
         position: absolute;
@@ -2551,11 +2554,13 @@ object {
         transform: rotate(25deg); }
         @media all and (min-width: 760px) {
           .page-id-18 .content-container .partners-information-container .collaborate-dashed-list .key-graphic-1 {
+            height: 186px;
+            width: 88px;
             bottom: 27.25%;
             left: 4.5%; } }
       .page-id-18 .content-container .partners-information-container .collaborate-dashed-list .key-graphic-2 {
-        height: 95px;
-        width: 50px;
+        height: 100px;
+        width: 58px;
         background: url("../../images/graphics/key.svg") no-repeat;
         background-size: 100%;
         position: absolute;
@@ -2565,11 +2570,14 @@ object {
         transform: rotate(-25deg); }
         @media all and (min-width: 760px) {
           .page-id-18 .content-container .partners-information-container .collaborate-dashed-list .key-graphic-2 {
+            height: 135px;
+            width: 114px;
             bottom: 9%;
             left: 83.75%; } }
       .page-id-18 .content-container .partners-information-container .collaborate-dashed-list .dollar-sign-graphic-1 {
-        height: 105px;
-        width: 100px;
+        height: 129px;
+        width: 122px;
+        left: 0%;
         background: url("../../images/graphics/dollar-sign.svg") no-repeat;
         background-size: 100%;
         position: absolute;
@@ -2580,8 +2588,8 @@ object {
             bottom: 32%;
             left: 2%; } }
       .page-id-18 .content-container .partners-information-container .collaborate-dashed-list .dollar-sign-graphic-2 {
-        height: 67px;
-        width: 62px;
+        height: 87px;
+        width: 82px;
         background: url("../../images/graphics/dollar-sign.svg") no-repeat;
         background-size: 100%;
         position: absolute;
@@ -2605,10 +2613,16 @@ object {
         .page-id-18 .content-container .partners-information-container .partners-text {
           width: 330px;
           padding: 2rem 0 0;
-          transform: translateX(-1rem); } }
+          transform: translateX(-1rem);
+          font-size: 21px;
+          margin-top: 7.5rem; } }
     .page-id-18 .content-container .partners-information-container .partners-text-2 {
-      margin-top: 1.5rem;
+      margin-top: 2.8rem;
       padding-top: 0; }
+      @media all and (min-width: 760px) {
+        .page-id-18 .content-container .partners-information-container .partners-text-2 {
+          font-size: 21px;
+          margin-top: 7.5rem; } }
   .page-id-18 .infographic-container {
     height: auto;
     width: 100%;
