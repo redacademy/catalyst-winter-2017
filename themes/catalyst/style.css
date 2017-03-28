@@ -964,6 +964,9 @@ textarea {
     min-width: 100%;
     max-width: initial; }
 
+.home .blue-background-header {
+  margin-top: 1.5rem; }
+
 .home .header-text {
   max-width: 900px;
   color: white;
@@ -2317,7 +2320,7 @@ object {
     @media all and (min-width: 760px) {
       .page-id-18 .intro-copy {
         padding: 2.75rem 0.85rem;
-        width: 60%; } }
+        width: 65%; } }
   .page-id-18 .main-copy_container {
     height: auto;
     width: 100%;
@@ -2701,29 +2704,13 @@ object {
     font-size: 1rem;
     letter-spacing: 2px;
     text-shadow: 1px 2px 5px #323232; }
-  .page-id-7 .blue-background {
-    height: auto;
-    width: 100%;
-    margin: 2rem auto 0.75rem;
-    padding: 0.75rem 0.5rem;
-    background-color: #D9F1FF;
-    text-align: center;
-    line-height: 2.4rem; }
-    @media all and (min-width: 760px) {
-      .page-id-7 .blue-background {
-        margin: 2rem auto 1.5rem;
-        padding: 1rem 0.5rem;
-        line-height: 3.4rem; } }
-    .page-id-7 .blue-background .supporters-header {
-      font-size: 1.55rem; }
-      @media all and (min-width: 760px) {
-        .page-id-7 .blue-background .supporters-header {
-          font-size: 1.85rem; } }
+  .page-id-7 .blue-background-header {
+    margin-top: 1.5rem; }
   .page-id-7 .wpcf7 {
     padding: 3%;
     font-family: quattrocento, sans-serif; }
     .page-id-7 .wpcf7 form {
-      margin: 0 auto;
+      margin: 0 auto 2rem;
       background-color: #D9F1FF;
       padding: 0.5rem 1rem; }
       @media all and (min-width: 760px) {
@@ -3290,7 +3277,8 @@ object {
     text-shadow: 1px 2px 5px #323232;
     margin: 0 auto;
     color: white;
-    line-height: 1; }
+    line-height: 1;
+    padding: 0 2rem; }
     @media all and (min-width: 760px) {
       .page-id-252 .banner-text {
         margin-bottom: 1rem;
@@ -3305,7 +3293,8 @@ object {
     text-align: center;
     margin: 2rem auto; }
     .page-id-252 .thankyou-container .logo {
-      margin: 1rem 0.5rem; }
+      margin: 1rem 0.5rem;
+      margin-left: 3rem; }
   .page-id-252 .top-message {
     line-height: 1; }
   .page-id-252 .thanks {

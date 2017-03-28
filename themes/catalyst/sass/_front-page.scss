@@ -30,6 +30,9 @@
         }
 
     }
+    .blue-background-header {
+        margin-top: 1.5rem;
+    }
     .header-text {
         @include header-text;
         line-height: 1.2;
