@@ -1156,6 +1156,8 @@ textarea {
     width: 270px;
     padding-left: 3rem;
     display: block; }
+    .home .formula-carousel .formulas:last-child .fill {
+      display: none; }
     .home .formula-carousel .formulas div {
       height: 100%;
       display: -ms-flexbox;
@@ -1171,8 +1173,6 @@ textarea {
     @media all and (min-width: 760px) {
       .home .formula-carousel .fill {
         margin-left: 1rem; } }
-  .home .formula-carousel:last-child .fill {
-    display: none; }
   @media all and (min-width: 760px) {
     .home .formula-carousel {
       -ms-flex-pack: center;
@@ -1658,6 +1658,8 @@ object {
     width: 270px;
     padding-left: 3rem;
     display: block; }
+    .page-id-21 .formula-carousel .formulas:last-child .fill {
+      display: none; }
     .page-id-21 .formula-carousel .formulas div {
       height: 100%;
       display: -ms-flexbox;
@@ -1673,8 +1675,6 @@ object {
     @media all and (min-width: 760px) {
       .page-id-21 .formula-carousel .fill {
         margin-left: 1rem; } }
-  .page-id-21 .formula-carousel:last-child .fill {
-    display: none; }
   @media all and (min-width: 760px) {
     .page-id-21 .formula-carousel {
       -ms-flex-pack: center;
