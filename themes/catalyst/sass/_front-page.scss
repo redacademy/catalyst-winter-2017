@@ -1,6 +1,9 @@
 .home {
     .front-content {
         margin-bottom: 50px;
+        @include media ($desktop-width){
+            font-size: 1.2rem;
+        }
     }
     header {
         position: relative;
@@ -21,16 +24,18 @@
         min-width: 100%;
 
         img{
-            height: 100%;
+            height: 100vh;
             min-width: 100%;
             max-width: initial;
         }
 
     }
     .header-text {
-        	// @include header-text;
+        @include header-text;
+        line-height: 1.2;
         h1 {
             @include page-title;
+            margin: 0 0 1rem;
         }
         p {
             @include banner-text;
@@ -42,7 +47,7 @@
     }
     .catalyst-formula-copy {
         max-width: 1000px;
-        padding-bottom: 2rem;
+        padding: 0 2rem;
         margin: 2rem auto;
         text-align: center;
         font-family: $font__secondary;
@@ -51,9 +56,11 @@
         padding-top: 3rem;
         text-align: center;
         .our-projects-copy {
-            font-family: $font__secondary;
             max-width: 650px;
             margin: 2rem auto;
+            padding: 0 2rem;
+            text-align: center;
+            font-family: $font__secondary;
         }
         .project-name {
             font-weight: $font__bold;
@@ -78,6 +85,7 @@
         .quote {
             font-family: $font__secondary;
             font-style: italic;
+            margin-top: 0;
         }
 
 
@@ -180,14 +188,11 @@
             opacity: 1;
         }
         .team-catalyst-copy {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            text-align: center;
             font-family: $font__secondary;
-            width: 300px;
-            margin: 0 auto;
-            @include media($desktop-width){
-                max-width: 1000px;
-                width: 100%;
-                font-size: 1.2rem;
-            }
         }
         .small-subheader {
             font-weight: $font__bold;

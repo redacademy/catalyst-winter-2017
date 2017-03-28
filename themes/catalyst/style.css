@@ -937,6 +937,9 @@ textarea {
 
 .home .front-content {
   margin-bottom: 50px; }
+  @media all and (min-width: 760px) {
+    .home .front-content {
+      font-size: 1.2rem; } }
 
 .home header {
   position: relative; }
@@ -956,28 +959,34 @@ textarea {
   height: 100%;
   min-width: 100%; }
   .home .fp-carousel img {
-    height: 100%;
+    height: 100vh;
     min-width: 100%;
     max-width: initial; }
 
-.home .header-text h1 {
-  font-size: 3.15rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-shadow: 1px 2px 5px #323232; }
-  @media all and (min-width: 760px) {
-    .home .header-text h1 {
-      margin-bottom: 1rem;
-      font-size: 3.85rem; } }
-
-.home .header-text p {
-  font-size: 1.35rem;
-  font-family: quattrocento, sans-serif;
-  font-weight: 700;
-  margin: 1.5rem auto;
-  letter-spacing: 2px;
-  margin: 0;
-  text-shadow: 1px 2px 5px #323232; }
+.home .header-text {
+  max-width: 900px;
+  color: white;
+  padding: 0 2rem;
+  line-height: 1;
+  line-height: 1.2; }
+  .home .header-text h1 {
+    font-size: 3.15rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 5px #323232;
+    margin: 0 0 1rem; }
+    @media all and (min-width: 760px) {
+      .home .header-text h1 {
+        margin-bottom: 1rem;
+        font-size: 3.85rem; } }
+  .home .header-text p {
+    font-size: 1.35rem;
+    font-family: quattrocento, sans-serif;
+    font-weight: 700;
+    margin: 1.5rem auto;
+    letter-spacing: 2px;
+    margin: 0;
+    text-shadow: 1px 2px 5px #323232; }
 
 .home .navigation-button {
   height: 70px;
@@ -1005,7 +1014,7 @@ textarea {
 
 .home .catalyst-formula-copy {
   max-width: 1000px;
-  padding-bottom: 2rem;
+  padding: 0 2rem;
   margin: 2rem auto;
   text-align: center;
   font-family: quattrocento, sans-serif; }
@@ -1014,9 +1023,11 @@ textarea {
   padding-top: 3rem;
   text-align: center; }
   .home .projects .our-projects-copy {
-    font-family: quattrocento, sans-serif;
     max-width: 650px;
-    margin: 2rem auto; }
+    margin: 2rem auto;
+    padding: 0 2rem;
+    text-align: center;
+    font-family: quattrocento, sans-serif; }
   .home .projects .project-name {
     font-weight: 700; }
   .home .projects .project-location {
@@ -1033,7 +1044,8 @@ textarea {
     display: initial; }
   .home .projects .quote {
     font-family: quattrocento, sans-serif;
-    font-style: italic; }
+    font-style: italic;
+    margin-top: 0; }
   .home .projects .left-quotation-mark, .home .projects .right-quotation-mark {
     height: 60px;
     width: 85px;
@@ -1079,7 +1091,7 @@ textarea {
     overflow: hidden; }
     @media all and (min-width: 760px) {
       .home .projects .image-wrapper {
-        height: 500px; } }
+        height: 50vh; } }
     .home .projects .image-wrapper img {
       width: auto;
       height: 100%;
@@ -1112,14 +1124,11 @@ textarea {
   .home .team .is-selected {
     opacity: 1; }
   .home .team .team-catalyst-copy {
-    font-family: quattrocento, sans-serif;
-    width: 300px;
-    margin: 0 auto; }
-    @media all and (min-width: 760px) {
-      .home .team .team-catalyst-copy {
-        max-width: 1000px;
-        width: 100%;
-        font-size: 1.2rem; } }
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    text-align: center;
+    font-family: quattrocento, sans-serif; }
   .home .team .small-subheader {
     font-weight: 700;
     font-size: 1.3rem;
@@ -1136,7 +1145,6 @@ textarea {
   text-align: center; }
   .home .formula-carousel .formulas {
     width: 270px;
-    margin: 0 1rem;
     padding-left: 3rem;
     display: block; }
     .home .formula-carousel .formulas div {
@@ -1149,15 +1157,17 @@ textarea {
     .home .formula-carousel .img:last-child {
       width: 77%; }
   .home .formula-carousel .fill {
-    margin-left: 3rem;
+    margin-left: 2rem;
     vertical-align: middle; }
     @media all and (min-width: 760px) {
       .home .formula-carousel .fill {
-        margin-left: 0.85rem; } }
+        margin-left: 1rem; } }
   .home .formula-carousel:last-child .fill {
     display: none; }
   @media all and (min-width: 760px) {
     .home .formula-carousel {
+      -ms-flex-pack: center;
+          justify-content: center;
       display: -ms-flexbox;
       display: flex; } }
   .home .formula-carousel:after {
@@ -1625,7 +1635,6 @@ object {
   text-align: center; }
   .page-id-21 .formula-carousel .formulas {
     width: 270px;
-    margin: 0 1rem;
     padding-left: 3rem;
     display: block; }
     .page-id-21 .formula-carousel .formulas div {
@@ -1638,15 +1647,17 @@ object {
     .page-id-21 .formula-carousel .img:last-child {
       width: 77%; }
   .page-id-21 .formula-carousel .fill {
-    margin-left: 3rem;
+    margin-left: 2rem;
     vertical-align: middle; }
     @media all and (min-width: 760px) {
       .page-id-21 .formula-carousel .fill {
-        margin-left: 0.85rem; } }
+        margin-left: 1rem; } }
   .page-id-21 .formula-carousel:last-child .fill {
     display: none; }
   @media all and (min-width: 760px) {
     .page-id-21 .formula-carousel {
+      -ms-flex-pack: center;
+          justify-content: center;
       display: -ms-flexbox;
       display: flex; } }
   .page-id-21 .formula-carousel:after {

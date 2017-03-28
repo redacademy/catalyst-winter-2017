@@ -70,7 +70,6 @@
 		text-align: center;
 		.formulas {
 			width: 270px;
-			margin: 0 1rem;
 			padding-left: 3rem;
 			display: block;
 
@@ -88,16 +87,17 @@
 			}
 		}
 		.fill {
-			margin-left: 3rem;
+			margin-left: 2rem;
 			vertical-align: middle;
 			@include media($desktop-width) {
-				margin-left: 0.85rem;
+				margin-left: 1rem;
 			}
 		}
 		&:last-child .fill {
 			display: none;
 		}
 		@include media ($desktop-width) {
+			justify-content: center;
 			display: flex;
 		}
 		&:after {
