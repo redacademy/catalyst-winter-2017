@@ -66,12 +66,12 @@
 
 @mixin ourStory-carousel {
 	.formula-carousel {
-		margin-bottom: 2rem;
 		width: 100%;
+		text-align: center;
 		.formulas {
-			height: 270px;
 			width: 270px;
 			margin: 0 1rem;
+			padding-left: 3rem;
 			display: block;
 
 			& div {
@@ -88,7 +88,7 @@
 			}
 		}
 		.fill {
-			margin-left: 1.5rem;
+			margin-left: 3rem;
 			vertical-align: middle;
 			@include media($desktop-width) {
 				margin-left: 0.85rem;

@@ -488,13 +488,13 @@ table {
   @media all and (min-width: 760px) {
     .subheader-sm {
       max-width: none;
-      font-size: 2rem;
+      font-size: 1.85rem;
       line-height: 3.4rem; } }
 
 .subheader-lrg {
   max-width: 400px;
   margin: 0 auto;
-  font-size: 2.15rem;
+  font-size: 1.85rem;
   font-weight: 700;
   color: #323232;
   line-height: 2.4rem;
@@ -502,7 +502,7 @@ table {
   @media all and (min-width: 760px) {
     .subheader-lrg {
       max-width: none;
-      font-size: 3.2rem;
+      font-size: 3.15rem;
       line-height: 3.4rem; } }
 
 /*--------------------------------------------------------------
@@ -1024,11 +1024,11 @@ textarea {
     border: 2px solid white;
     cursor: pointer; }
 
-.home .catalyst-formula-copy,
-.home .formula-carousel {
+.home .catalyst-formula-copy {
   max-width: 1000px;
   padding-bottom: 2rem;
   margin: 2rem auto;
+  text-align: center;
   font-family: quattrocento, sans-serif; }
 
 .home .projects {
@@ -1153,12 +1153,12 @@ textarea {
         font-size: 1.5rem; } }
 
 .home .formula-carousel {
-  margin-bottom: 2rem;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
   .home .formula-carousel .formulas {
-    height: 270px;
     width: 270px;
     margin: 0 1rem;
+    padding-left: 3rem;
     display: block; }
     .home .formula-carousel .formulas div {
       height: 100%;
@@ -1170,7 +1170,7 @@ textarea {
     .home .formula-carousel .img:last-child {
       width: 77%; }
   .home .formula-carousel .fill {
-    margin-left: 1.5rem;
+    margin-left: 3rem;
     vertical-align: middle; }
     @media all and (min-width: 760px) {
       .home .formula-carousel .fill {
@@ -1188,7 +1188,10 @@ textarea {
       .home .formula-carousel:after {
         content: ''; } }
   .home .formula-carousel .formula-text {
-    display: none; }
+    width: 80%; }
+    @media all and (min-width: 760px) {
+      .home .formula-carousel .formula-text {
+        display: none; } }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1612,12 +1615,12 @@ object {
       padding-left: 20px; } }
 
 .page-id-21 .formula-carousel {
-  margin-bottom: 2rem;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
   .page-id-21 .formula-carousel .formulas {
-    height: 270px;
     width: 270px;
     margin: 0 1rem;
+    padding-left: 3rem;
     display: block; }
     .page-id-21 .formula-carousel .formulas div {
       height: 100%;
@@ -1629,7 +1632,7 @@ object {
     .page-id-21 .formula-carousel .img:last-child {
       width: 77%; }
   .page-id-21 .formula-carousel .fill {
-    margin-left: 1.5rem;
+    margin-left: 3rem;
     vertical-align: middle; }
     @media all and (min-width: 760px) {
       .page-id-21 .formula-carousel .fill {
