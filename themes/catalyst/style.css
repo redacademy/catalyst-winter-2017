@@ -700,7 +700,8 @@ textarea {
       -ms-flex-direction: column;
           flex-direction: column;
       margin-top: 40px;
-      list-style: none; }
+      list-style: none;
+      line-height: 1.35rem; }
     .container .hamburger-menu li {
       padding: 20px 0;
       border-bottom: 1px solid white; }

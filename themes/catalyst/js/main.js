@@ -1,28 +1,16 @@
 (function ($) {
 
-   
-
     var $crossIcon = $( '.cross' );
     var $hamburgerIcon = $( '.hamburger' );
     var $mobileMenu = $( '.mobile-menu' );
-    var $mobileMenuList = $( '#primary-menu' );
-    var $navList = $( '.list' );
-
-    var $heroBannerHeight = $('.hero-image-banner').height();
-
-    $(window).scroll(function(){
-        setTimeout(300, function() {
-            $heroBannerHeight = $('hero-image-banner').height();
-        });
-    });
 
     $($hamburgerIcon).click(function () {
-            // var $heroBannerHeight = $('.hero-image-banner').height();
+            var $heroBannerHeight = $('.hero-image-banner').height();
             var $navBarHeight = $('.site-header').height();
 
             $($hamburgerIcon).addClass('transparent').hide();
-            $($mobileMenu).css({'width': '60vw', 'height': $heroBannerHeight + $navBarHeight}).show().addClass('opaque');
-                $($crossIcon).addClass('opaque');
+            $($mobileMenu).css({'width': '60vw', 'height': $heroBannerHeight + $navBarHeight}).addClass('opaque');
+            $($crossIcon).addClass('opaque');
     });
 
     $($crossIcon).click(function () {
@@ -30,16 +18,11 @@
             $($crossIcon).removeClass('opaque');
             $($hamburgerIcon).removeClass('transparent').show();
             $($mobileMenu).removeClass('opaque');
-
-           
- 
     });
 
-    $('#timeline-Widget-0 li').css('background-color', 'red');
+    
 
     // Toggle profile popout when enter/exit buttons are clicked (Our Team page)
-
-    var $cvElements = $( '.cv' );
 
     var $staffEnterButtons = $( '.staff-enter-button' );
     var $boardEnterButtons = $( '.board-enter-button' );
