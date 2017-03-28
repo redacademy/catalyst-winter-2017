@@ -33,12 +33,12 @@
 
 							<div class="hamburger-menu">
 							<button class="hamburger">&#9776;</button>
-							<div class="list">
+							
 							<button class="cross">&#735;</button>
 							<div class="mobile-menu">
 								<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', ) ); ?>
 							</div>
-							</div>
+							
 						</div>
 					</div>
 				</nav><!-- #site-navigation -->

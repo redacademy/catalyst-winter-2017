@@ -1,28 +1,28 @@
 (function ($) {
 
-    $('.cross').hide();
-    $('.mobile-menu').hide();
-    $('.hamburger').click(function () {
-        $('.mobile-menu').slideToggle('slow', function () {
-            $('.hamburger').hide();
-            $('.cross').show();
-            $('.list').css('width', '60vw').show();
-        });
+    var $crossIcon = $( '.cross' );
+    var $hamburgerIcon = $( '.hamburger' );
+    var $mobileMenu = $( '.mobile-menu' );
+
+    $($hamburgerIcon).click(function () {
+            var $heroBannerHeight = $('.hero-image-banner').height();
+            var $navBarHeight = $('.site-header').height();
+
+            $($hamburgerIcon).addClass('transparent').hide();
+            $($mobileMenu).css({'width': '60vw', 'height': $heroBannerHeight + $navBarHeight}).addClass('opaque');
+            $($crossIcon).addClass('opaque');
     });
 
-    $('.cross').click(function () {
-        $('.mobile-menu').slideToggle('slow', function () {
-            $('.cross').hide();
-            $('.hamburger').show();
-            $('.list').hide();
-        });
+    $($crossIcon).click(function () {
+        
+            $($crossIcon).removeClass('opaque');
+            $($hamburgerIcon).removeClass('transparent').show();
+            $($mobileMenu).removeClass('opaque');
     });
 
-    $('#timeline-Widget-0 li').css('background-color', 'red');
+    
 
     // Toggle profile popout when enter/exit buttons are clicked (Our Team page)
-
-    var $cvElements = $( '.cv' );
 
     var $staffEnterButtons = $( '.staff-enter-button' );
     var $boardEnterButtons = $( '.board-enter-button' );
