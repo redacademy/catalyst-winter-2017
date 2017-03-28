@@ -29,7 +29,7 @@ get_header(); ?>
 			<p class="responsibilities">responsibilities:</p>
 			<?php echo CFS()->get( 'responsibilities' ); ?>
 		</div>
-		<a class='navigation-button' href="<?php echo get_home_url(); ?>/contact">Contact us</a>
+		<a class='navigation-button' href="<?php echo get_home_url(); ?>/our-story">Contact us</a>
 
 	</div>
 	<?php endforeach; ?>
