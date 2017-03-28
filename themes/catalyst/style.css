@@ -2318,15 +2318,16 @@ object {
       .page-id-18 .intro-copy {
         padding: 2.75rem 0.85rem;
         width: 60%; } }
-  .page-id-18 .main-copy {
+  .page-id-18 .main-copy_container {
     height: auto;
     width: 100%;
     margin: 0 auto;
     padding: 0.55rem 0;
     font-family: quattrocento, sans-serif;
+    text-align: center;
     text-align: center; }
     @media all and (min-width: 760px) {
-      .page-id-18 .main-copy {
+      .page-id-18 .main-copy_container {
         width: 75%;
         padding: 0.75rem auto; } }
   .page-id-18 .navigation-button {
@@ -2344,7 +2345,8 @@ object {
     -ms-flex-pack: center;
         justify-content: center;
     -ms-flex-align: center;
-        align-items: center; }
+        align-items: center;
+    margin-top: 5px; }
     .page-id-18 .navigation-button:hover {
       border: 2px solid #D9F1FF;
       box-shadow: 0px 2px 5px #323232; }
@@ -2591,9 +2593,9 @@ object {
           display: inline; } }
   .page-id-18 .supporters-logo-container {
     height: auto;
-    width: 85%;
+    width: 75%;
     margin: 0 auto;
-    padding: 4% 0 9%;
+    padding: 4% 9%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row wrap;
@@ -2605,28 +2607,61 @@ object {
     @media all and (min-width: 760px) {
       .page-id-18 .supporters-logo-container {
         padding: 0 0 3rem;
-        width: 70%; } }
+        width: 750px; } }
     .page-id-18 .supporters-logo-container .sponsor-logo {
-      height: 35px;
+      height: 40px;
       width: auto;
-      margin: 4%;
+      margin: 5%;
       filter: grayscale(100%) invert(60%); }
       @media all and (min-width: 760px) {
         .page-id-18 .supporters-logo-container .sponsor-logo {
+          height: 30px;
           margin: 1.5rem 2.5rem; } }
-      .page-id-18 .supporters-logo-container .sponsor-logo:nth-child(2) {
-        height: 60px; }
-      .page-id-18 .supporters-logo-container .sponsor-logo:nth-child(3) {
-        padding: 0.15rem; }
+      @media all and (min-width: 760px) {
+        .page-id-18 .supporters-logo-container .sponsor-logo:first-child {
+          margin: 3rem;
+          margin-bottom: 2rem; } }
+      @media all and (min-width: 760px) {
+        .page-id-18 .supporters-logo-container .sponsor-logo:nth-child(2) {
+          height: 50px;
+          margin: 3rem;
+          margin-bottom: 2rem; } }
+      @media all and (min-width: 760px) {
+        .page-id-18 .supporters-logo-container .sponsor-logo:nth-child(3) {
+          margin: 3rem;
+          margin-bottom: 2rem; } }
       .page-id-18 .supporters-logo-container .sponsor-logo:nth-child(4) {
-        height: 45px; }
+        filter: grayscale(100%) invert(10%); }
+        @media all and (min-width: 760px) {
+          .page-id-18 .supporters-logo-container .sponsor-logo:nth-child(4) {
+            height: 45px;
+            margin: 3rem;
+            margin-bottom: 2rem; } }
       .page-id-18 .supporters-logo-container .sponsor-logo:nth-child(5) {
-        filter: grayscale(100%) invert(15%); }
+        height: 35px; }
+        @media all and (min-width: 760px) {
+          .page-id-18 .supporters-logo-container .sponsor-logo:nth-child(5) {
+            margin: 1rem;
+            margin-left: 0;
+            filter: grayscale(100%) invert(15%); } }
       .page-id-18 .supporters-logo-container .sponsor-logo:nth-child(6) {
-        height: 115px;
-        filter: grayscale(80%) saturate(5); }
-  .page-id-18 .main-copy_container {
-    text-align: center; }
+        height: 100px;
+        filter: grayscale(100%) invert(1%); }
+        @media all and (min-width: 760px) {
+          .page-id-18 .supporters-logo-container .sponsor-logo:nth-child(6) {
+            margin: 1rem;
+            height: 110px;
+            filter: grayscale(80%) saturate(15%); } }
+      @media all and (min-width: 760px) {
+        .page-id-18 .supporters-logo-container .sponsor-logo:nth-child(7) {
+          margin: 1rem; } }
+      @media all and (min-width: 760px) {
+        .page-id-18 .supporters-logo-container .sponsor-logo:nth-child(8) {
+          margin: 1rem; } }
+      @media all and (min-width: 760px) {
+        .page-id-18 .supporters-logo-container .sponsor-logo:nth-child(9) {
+          margin: 1rem;
+          margin-right: 0; } }
 
 /*--------------------------------------------------------------
 # Page Templates
