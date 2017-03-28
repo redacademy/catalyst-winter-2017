@@ -17,11 +17,13 @@
     .intro-copy {
         @include intro-copy;
     }
-    .main-copy {
+    .main-copy_container {
         @include main-copy;
+        text-align: center;
     }
     .navigation-button {
         @include navigation-button();
+        margin-top: 5px;
     }
     .infographic-container+.navigation-button {
         margin: 3rem auto 6rem;
@@ -270,43 +272,85 @@
     }
     .supporters-logo-container {
         height: auto;
-        width: 85%;
+        width: 75%;
         margin: 0 auto;
-        padding: 4% 0 9%;
+        padding: 4% 9%;
         @include flex-row(wrap,
         center,
         center);
         @include media($desktop-width) {
             padding: 0 0 3rem;
-            width: 70%;
+            width: 750px;
         }
         .sponsor-logo {
             height: 40px;
             width: auto;
-            margin: 3% 5%;
+            margin: 5%;
             @include grayscale-image;
             @include media($desktop-width) {
+                height: 30px;
                 margin: $base__space-unit 2.5rem;
             }
+            &:first-child {
+                @include media($desktop-width) {
+                    margin: 3rem;
+                    margin-bottom: 2rem;
+                }
+            }
             &:nth-child(2) {
-                height: 60px;
+                @include media($desktop-width) {
+                    height: 50px;
+                    margin: 3rem;
+                    margin-bottom: 2rem;
+                }
             }
             &:nth-child(3) {
-                padding: 0.15rem;
+                @include media($desktop-width) {
+                    margin: 3rem;
+                    margin-bottom: 2rem;
+                }
             }
             &:nth-child(4) {
-                height: 45px;
+                filter: grayscale(100%) invert(10%);
+                @include media($desktop-width) {
+                    height: 45px;
+                    margin: 3rem;
+                    margin-bottom: 2rem;
+                }
             }
             &:nth-child(5) {
-                filter: grayscale(100%) invert(15%);
+                height: 35px;
+                @include media($desktop-width) {
+                    margin: 1rem;
+                    margin-left: 0;
+                    filter: grayscale(100%) invert(15%);
+                }
             }
             &:nth-child(6) {
-                height: 115px;
-                filter: grayscale(80%) saturate(5);
+                height: 100px;
+                filter: grayscale(100%) invert(1%);
+                @include media($desktop-width) {
+                    margin: 1rem;
+                    height: 110px;
+                    filter: grayscale(80%) saturate(15%);
+                }
+            }
+            &:nth-child(7) {
+                @include media($desktop-width) {
+                    margin: 1rem;
+                }
+            }
+            &:nth-child(8) {
+                @include media($desktop-width) {
+                    margin: 1rem;
+                }
+            }
+            &:nth-child(9) {
+                @include media($desktop-width) {
+                    margin: 1rem;
+                    margin-right: 0;
+                }
             }
         }
-    }
-    .main-copy_container {
-        text-align: center;
     }
 }
