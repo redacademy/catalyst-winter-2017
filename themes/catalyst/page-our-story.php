@@ -56,12 +56,12 @@ get_header(); ?>
 
 					<?php $image_title1 = esc_html( CFS()->get( 'image_title1' ) );
 					if ( !empty( $image_title1) ) :?>
-					<h5 class="position"><?php echo $image_title1; ?></h5>
+					<h5 class="income-title"><?php echo $image_title1; ?></h5>
 					<?php endif; ?>
 
 					<?php $image_text1 = esc_html( CFS()->get( 'image_text1' ) );
 					if ( !empty( $image_text1 ) ) :?>
-					<p class="mission-text"><?php echo $image_text1; ?></p>
+					<p class="mission-tex-p"><?php echo $image_text1; ?></p>
 					<?php endif; ?>
 
 				</div>
@@ -78,7 +78,7 @@ get_header(); ?>
 					<?php endif; ?>
 					<?php $image_text2 = esc_html( CFS()->get( 'image_text2' ) );
 					if ( !empty( $image_text2) ) :?>
-					<p class="mission-text"><?php echo $image_text2; ?></p>
+					<p class="mission-text-p"><?php echo $image_text2; ?></p>
 					<?php endif; ?>
 					</div>
 					</div>
@@ -88,7 +88,6 @@ get_header(); ?>
 					<div class="mission-image life">
 					<img src ="<?php echo esc_attr( CFS()->get( 'image3' ) ); ?>"/>
 					<div class="mission-text">
-
 					<?php $image_title3 = esc_html( CFS()->get( 'image_title3' ) );
 					if ( !empty( $image_title3 ) ) :?>
 					<h5><?php echo $image_title3; ?></h5>
@@ -96,7 +95,7 @@ get_header(); ?>
 
 					<?php $image_text3 = esc_html( CFS()->get( 'image_text3' ) );
 					if ( !empty( $image_text3 ) ) :?>
-					<p class="mission-text"><?php echo $image_text3; ?></p>
+					<p class="mission-text-p"><?php echo $image_text3; ?></p>
 					<?php endif; ?>
 
 					</div>

@@ -1471,17 +1471,13 @@ object {
   z-index: 1;
   margin-top: 67px;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 100;
   line-height: 28px;
   position: absolute;
   width: 80%;
   font-family: quattrocento, sans-serif;
   font-style: italic; }
-  @media all and (min-width: 760px) {
-    .page-id-21 .quote,
-    .page-id-21 .quote2 {
-      font-size: 20px; } }
 
 .page-id-21 .quotation-left,
 .page-id-21 .quotation-left2 {
@@ -1556,11 +1552,10 @@ object {
     margin: 0; }
 
 .page-id-21 .mission-text {
-  margin: 0 auto;
   font-size: 16px;
   font-family: quattrocento, sans-serif;
   width: 80%;
-  margin-bottom: 20px; }
+  margin: 20px auto; }
   @media all and (min-width: 760px) {
     .page-id-21 .mission-text {
       width: 96%;
@@ -1603,7 +1598,11 @@ object {
       font-weight: 700;
       font-size: 20px;
       text-transform: uppercase;
-      width: 100%; }
+      width: 100%;
+      margin-top: 5px; }
+  .page-id-21 .mission-content p {
+    width: 65%;
+    margin: 0 auto; }
 
 .page-id-21 .formula-p {
   font-family: quattrocento, sans-serif;

@@ -88,22 +88,14 @@
         z-index: 1;
         margin-top: 67px;
         text-align: center;
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 100;
         line-height: 28px;
         position: absolute;
         width: 80%;
         font-family: $font__secondary;
         font-style: italic;
-        @include media($desktop-width) {
-            font-size: 20px;
-        }
     }
-    // .quote2 {
-    //     @include media($desktop-width) {
-    //         padding-bottom: 100px;
-    //     }
-    // }
     .quotation-left,
     .quotation-left2 {
         background: url('../../images/icon/quotation.svg')no-repeat center;
@@ -177,11 +169,11 @@
         }
     }
     .mission-text {
-        margin: 0 auto;
+        // margin: 0 auto;
         font-size: 16px;
         font-family: $font__secondary;
         width: 80%;
-        margin-bottom: 20px;
+        margin: 20px auto;
         @include media($desktop-width) {
             width: 96%;
             margin-bottom: 0;
@@ -223,7 +215,12 @@
                 font-size: 20px;
                 text-transform: uppercase;
                 width: 100%;
+                margin-top: 5px;
             }
+        }
+        p {
+            width: 65%;
+            margin: 0 auto;
         }
     }
     .formula-p {
@@ -257,7 +254,6 @@
             font-size: 14px;
             line-height: 15px;
             padding-left: 26px;
-
             @include media($desktop-width) {
                 display: none;
             }
