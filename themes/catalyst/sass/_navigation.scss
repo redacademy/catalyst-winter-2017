@@ -161,19 +161,24 @@
 			line-height: 1.35rem;
 		}
 		li {
-			padding: 12px 0;
+			padding: 0;
 			border-bottom: 1px solid white;
 
 			@include media ($desktop-width) {
-				padding: 20px 0;
+				font-size: 1.85rem;
 			}
 			a {
 				display: block;
 				text-decoration: none;
-				padding-left: 20px;
+				padding: 12px 0 20px 12px;
 				font-size: 0.95rem;
 				color: $color__header-main;
 				text-transform: uppercase;
+
+				@include media($desktop-width) {
+					font-size: 1.25rem;
+					padding: 20px 0 20px 20px;
+				}
 			}
 			&:hover {
 				background-color: $color__brand-blue;
@@ -209,6 +214,7 @@
 			transition: opacity 0.3s ease;
 		}
 		.mobile-menu {
+			height: 0;
 			padding-top: 60px;
 			background-color: rgba(255, 255, 255, .8);
 			opacity: 0;

@@ -15,7 +15,7 @@
 			?>
 
 				<div class="left-column">
-					<img class="profile-image" src="<?php echo esc_url( CFS()->get('profile_image') ); ?>"/>
+					<img class="profile-image" src="<?php echo esc_attr( CFS()->get('profile_image') ); ?>"/>
 
 					<h4 class="name"><?php echo esc_html( CFS()->get('name') ); ?></h4>
 					<p class="job-title"><?php echo esc_html( CFS()->get('job_title') ); ?></p>

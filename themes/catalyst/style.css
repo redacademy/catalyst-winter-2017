@@ -704,18 +704,22 @@ textarea {
       list-style: none;
       line-height: 1.35rem; }
     .container .hamburger-menu li {
-      padding: 12px 0;
+      padding: 0;
       border-bottom: 1px solid white; }
       @media all and (min-width: 760px) {
         .container .hamburger-menu li {
-          padding: 20px 0; } }
+          font-size: 1.85rem; } }
       .container .hamburger-menu li a {
         display: block;
         text-decoration: none;
-        padding-left: 20px;
+        padding: 12px 0 20px 12px;
         font-size: 0.95rem;
         color: #323232;
         text-transform: uppercase; }
+        @media all and (min-width: 760px) {
+          .container .hamburger-menu li a {
+            font-size: 1.25rem;
+            padding: 20px 0 20px 20px; } }
       .container .hamburger-menu li:hover {
         background-color: #D9F1FF; }
     .container .hamburger-menu .hamburger {
@@ -746,6 +750,7 @@ textarea {
       opacity: 0;
       transition: opacity 0.3s ease; }
     .container .hamburger-menu .mobile-menu {
+      height: 0;
       padding-top: 60px;
       background-color: rgba(255, 255, 255, 0.8);
       opacity: 0;
@@ -938,6 +943,12 @@ textarea {
         .footer .company-info p {
           font-size: 20px;
           line-height: 30px; } }
+
+.home .hamburger-menu li {
+  padding: 0;
+  font-size: 1.85rem; }
+  .home .hamburger-menu li a {
+    padding: 20px 0; }
 
 .home .front-content {
   margin-bottom: 50px; }
@@ -1685,8 +1696,7 @@ object {
   .page-id-21 .formula-carousel .formula-text {
     width: 85%;
     font-size: 14px;
-    line-height: 15px;
-    padding-left: 26px; }
+    line-height: 15px; }
     @media all and (min-width: 760px) {
       .page-id-21 .formula-carousel .formula-text {
         display: none; } }
@@ -2265,7 +2275,7 @@ object {
       width: 100%; }
       .page-id-19 .newsmedia-content .newsmedia-article {
         width: 70%;
-        height: 100vh; }
+        height: 100%; }
       .page-id-19 .newsmedia-content .widget-area {
         width: 40%; } }
   .page-id-19 .widget-title {
