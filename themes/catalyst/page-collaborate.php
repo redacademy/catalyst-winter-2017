@@ -18,8 +18,11 @@ get_header(); ?>
 		</div>
 
 		<div class="content-container">
-			<p class="main-copy"><?php echo esc_html(  CFS()->get( 'main_copy' ) ); ?></p>
-
+			<div class="main-copy_container">
+			<p class="main-copy1"><?php echo esc_html(CFS()->get( 'main_copy1' ) ); ?></p>
+			<p class="main-copy2"><?php echo esc_html(CFS()->get( 'main_copy2' ) ); ?></p>
+			<p class="main-copy3"><?php echo esc_html(CFS()->get( 'main_copy3' ) ); ?></p>
+			</div>
 			<a class="navigation-button" href="#">Learn More</a>
 
 			<div class="partners-information-container">
