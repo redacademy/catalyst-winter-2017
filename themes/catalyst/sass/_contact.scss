@@ -20,33 +20,14 @@
         letter-spacing: 2px;
         @include header-text-shadow;
     }
-    
-    .blue-background {
-        height: auto;
-        width: 100%;
-        margin: 2rem auto 0.75rem;
-        padding: 0.75rem 0.5rem;
-        background-color: $color__brand-blue;
-        text-align: center;
-        line-height: 2.4rem;
-        @include media($desktop-width) {
-            margin: 2rem auto 1.5rem;
-            padding: 1rem 0.5rem;
-            line-height: 3.4rem;
-        }
-
-        .supporters-header {
-            font-size: 1.55rem;
-            @include media($desktop-width) {
-                font-size: 1.85rem;
-            }
-        }
+    .blue-background-header {
+        margin-top: 1.5rem;
     }
     .wpcf7 {
         padding: 3%;
         font-family: $font__secondary;
         form {
-            margin: 0 auto;
+            margin: 0 auto 2rem;
             background-color: $color__brand-blue;
             padding: 0.5rem 1rem;
             @include media($desktop-width) {
