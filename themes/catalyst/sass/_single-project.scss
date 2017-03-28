@@ -15,27 +15,34 @@
             font-size: 4rem;
             line-height: 1;
             margin-bottom: 1rem;
-            font-weight: $font__bold;
+            font-weight: $font__semibold;
+            letter-spacing: 1px;
         }
         .project-location {
             font-family: $font__secondary;
-            font-weight: $font__bold;
+            font-weight: $font__semibold;
             font-size: 1.3rem;
             margin-bottom: 0.3rem;
+            letter-spacing: 1px;
         }
         .project-status {
             font-family: $font__secondary;
-            font-weight: $font__bold;
+            font-weight: $font__semibold;
             font-size: 1.3rem;
+            letter-spacing: 1px;
+        }
+        .p-stat {
             text-transform: uppercase;
         }
     }
     .proj-content {
-        margin: 0 1.5rem;
+        padding: 0 1.5rem;
         font-family: $font__secondary;
         @include media($desktop-width) {
             max-width: 1000px;
-            margin: 0 auto;
+            margin: 0 auto 3rem;
+            padding: 0 2rem;
+            font-size: 1.2rem;
         }
         h3 {
             margin-bottom: 0;
@@ -171,6 +178,7 @@
             @include media ($desktop-width){
                 display: block;
                 margin: 0 auto;
+                font-size: 1.2rem;
             }
             span{
                 display: inline;
@@ -179,6 +187,7 @@
         }
         .project-name{
             font-weight: $font__bold;
+            
         }
         .project-location,
         .project-status {

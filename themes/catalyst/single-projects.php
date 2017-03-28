@@ -25,7 +25,7 @@
 
                     <?php $project_status = CFS()->get( 'project_status' );
                     if ( !empty( $project_status ) ) :?>
-                    <p class='project-status'>Status: <span class='project-status'><?php echo $project_status; ?></span></p>
+                    <p class='project-status'>Status: <span class='p-stat'><?php echo $project_status; ?></span></p>
                     <?php endif; ?>
                 </div>
             </div>
