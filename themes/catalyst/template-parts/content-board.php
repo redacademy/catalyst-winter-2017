@@ -23,7 +23,11 @@
 					<?php $quote = esc_html( CFS()->get('quote') ); 
 						if ( !empty( $quote ) ) : 
 					?>
-						<p class="quote"><?php echo $quote; ?></p>
+						<p class="quote">
+							<?php echo $quote; ?>
+							<div class="left-quotation"></div>
+							<div class="right-quotation"></div>
+						</p>
 					<?php endif; ?>
 				</div>
 
@@ -39,7 +43,11 @@
 					<?php $quote = esc_html( CFS()->get( 'quote' ) ); 
 						if ( !empty( $quote ) ) : 
 					?>
-						<p class="quote"><?php echo $quote; ?></p>
+						<p class="quote">
+							<?php echo $quote; ?>
+							<div class="left-quotation"></div>
+							<div class="right-quotation"></div>
+						</p>
 					<?php endif; ?>
 				</div>
 

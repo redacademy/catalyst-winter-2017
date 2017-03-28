@@ -3,6 +3,7 @@
     var $crossIcon = $( '.cross' );
     var $hamburgerIcon = $( '.hamburger' );
     var $mobileMenu = $( '.mobile-menu' );
+    
 
     $($hamburgerIcon).click(function () {
             var $heroBannerHeight = $('.hero-image-banner').height();
@@ -17,7 +18,7 @@
         
             $($crossIcon).removeClass('opaque');
             $($hamburgerIcon).removeClass('transparent').show();
-            $($mobileMenu).removeClass('opaque');
+            $($mobileMenu).removeClass('opaque').css('height', '0');
     });
 
     

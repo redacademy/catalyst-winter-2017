@@ -629,8 +629,8 @@ textarea {
     position: absolute;
     right: 0%;
     z-index: 1;
-    height: 100%;
-    width: 50%;
+    height: auto;
+    width: auto;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row nowrap;
@@ -704,13 +704,16 @@ textarea {
       list-style: none;
       line-height: 1.35rem; }
     .container .hamburger-menu li {
-      padding: 20px 0;
+      padding: 12px 0;
       border-bottom: 1px solid white; }
+      @media all and (min-width: 760px) {
+        .container .hamburger-menu li {
+          padding: 20px 0; } }
       .container .hamburger-menu li a {
         display: block;
         text-decoration: none;
         padding-left: 20px;
-        font-size: 1.2rem;
+        font-size: 0.95rem;
         color: #323232;
         text-transform: uppercase; }
       .container .hamburger-menu li:hover {
@@ -974,8 +977,9 @@ textarea {
   line-height: 1;
   line-height: 1.2; }
   .home .header-text h1 {
-    font-size: 3.15rem;
-    font-weight: 700;
+    margin-bottom: 1.5rem;
+    font-size: 3.4rem;
+    font-weight: 600;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232;
     margin: 0 0 1rem; }
@@ -984,10 +988,11 @@ textarea {
         margin-bottom: 1rem;
         font-size: 3.85rem; } }
   .home .header-text p {
-    font-size: 1.35rem;
+    font-size: 1.4rem;
     font-family: quattrocento, sans-serif;
     font-weight: 700;
     margin: 1.5rem auto;
+    line-height: 1.65rem;
     letter-spacing: 2px;
     margin: 0;
     text-shadow: 1px 2px 5px #323232; }
@@ -1323,8 +1328,9 @@ object {
   line-height: 1; }
 
 .page-id-21 .entry-title {
-  font-size: 3.15rem;
-  font-weight: 700;
+  margin-bottom: 1.5rem;
+  font-size: 3.4rem;
+  font-weight: 600;
   text-transform: uppercase;
   text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 760px) {
@@ -1333,10 +1339,11 @@ object {
       font-size: 3.85rem; } }
 
 .page-id-21 .banner-text {
-  font-size: 1.35rem;
+  font-size: 1.4rem;
   font-family: quattrocento, sans-serif;
   font-weight: 700;
   margin: 1.5rem auto;
+  line-height: 1.65rem;
   letter-spacing: 2px;
   margin: 0;
   text-shadow: 1px 2px 5px #323232; }
@@ -1349,7 +1356,7 @@ object {
       height: auto;
       width: 100%;
       margin: 0 auto;
-      padding: 2rem 0.85rem;
+      padding: 2rem 1rem 1rem;
       font-size: 1.25rem;
       font-family: quattrocento, sans-serif;
       text-align: center; } }
@@ -1708,10 +1715,15 @@ object {
     max-width: 900px;
     color: white;
     padding: 0 2rem;
-    line-height: 1; }
+    line-height: 1;
+    top: 4%; }
+    @media all and (min-width: 760px) {
+      .page-id-159 .header-text {
+        top: 25%; } }
   .page-id-159 .entry-title {
-    font-size: 3.15rem;
-    font-weight: 700;
+    margin-bottom: 1.5rem;
+    font-size: 3.4rem;
+    font-weight: 600;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 760px) {
@@ -1719,19 +1731,25 @@ object {
         margin-bottom: 1rem;
         font-size: 3.85rem; } }
   .page-id-159 .banner-text {
-    font-size: 1.35rem;
+    width: 95%;
+    font-size: 1.4rem;
     font-family: quattrocento, sans-serif;
     font-weight: 700;
     margin: 1.5rem auto;
+    line-height: 1.65rem;
     letter-spacing: 2px;
     margin: 0;
     text-shadow: 1px 2px 5px #323232; }
+    @media all and (min-width: 760px) {
+      .page-id-159 .banner-text {
+        font-size: 1.75rem;
+        line-height: 2rem; } }
 
 .intro-copy {
   height: auto;
   width: 100%;
   margin: 0 auto;
-  padding: 2rem 0.85rem;
+  padding: 2rem 1rem 1rem;
   font-size: 1.25rem;
   font-family: quattrocento, sans-serif;
   text-align: center; }
@@ -1742,6 +1760,8 @@ object {
 
 .blue-background-header {
   position: relative; }
+  .blue-background-header h2 {
+    font-size: 2.4rem; }
 
 .staff-exit-button {
   display: inline-block;
@@ -1780,8 +1800,8 @@ object {
 
 .enter-button,
 .exit-button {
-  height: 40px;
-  width: 40px;
+  height: 45px;
+  width: 45px;
   font-size: 3.2rem;
   font-weight: 400;
   margin: 0 auto;
@@ -1797,7 +1817,9 @@ object {
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  font-size: 3.5rem;
+  font-weight: 300; }
   .enter-button:hover,
   .exit-button:hover {
     cursor: pointer;
@@ -1812,16 +1834,34 @@ object {
     display: none; } }
 
 .exit-button {
-  font-size: 2.5rem;
+  font-weight: 400;
   background: white;
-  padding-top: 0.6rem;
-  padding-left: 0.08rem;
+  padding-top: 0.7rem;
+  padding-left: 0.04rem;
   position: absolute; }
+  .exit-button span {
+    font-size: 2.05rem; }
+
+.name {
+  margin: 0 auto;
+  font-size: 1.25rem;
+  font-weight: 900;
+  letter-spacing: 1.5px; }
+
+.job-title {
+  font-family: 'quattrocento';
+  max-width: 235px;
+  margin: 0.25rem auto;
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 1.25px; }
 
 .staff-profiles-wrapper,
 .board-profiles-wrapper,
 .advisors-profiles-wrapper {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: column nowrap;
@@ -1849,12 +1889,12 @@ object {
   .advisors-profiles-wrapper .profile-popout {
     height: 0;
     width: 0;
-    padding-top: 3rem;
     background: #D9F1FF;
-    font-weight: 200;
+    font-weight: 400;
     opacity: 0;
     overflow: hidden;
-    transition: opacity 0.7s ease; }
+    transition: opacity 0.7s ease;
+    display: none; }
     .staff-profiles-wrapper .profile-popout a,
     .board-profiles-wrapper .profile-popout a,
     .advisors-profiles-wrapper .profile-popout a {
@@ -1865,6 +1905,44 @@ object {
       .board-profiles-wrapper .profile-popout a:hover,
       .advisors-profiles-wrapper .profile-popout a:hover {
         color: #935E32; }
+    .staff-profiles-wrapper .profile-popout .left-quotation, .staff-profiles-wrapper .profile-popout .right-quotation,
+    .board-profiles-wrapper .profile-popout .left-quotation,
+    .board-profiles-wrapper .profile-popout .right-quotation,
+    .advisors-profiles-wrapper .profile-popout .left-quotation,
+    .advisors-profiles-wrapper .profile-popout .right-quotation {
+      height: 90px;
+      width: 120px;
+      background: url("../../images/icon/quotation-white.svg") no-repeat center;
+      background-size: 230%;
+      position: absolute; }
+    .staff-profiles-wrapper .profile-popout .left-quotation,
+    .board-profiles-wrapper .profile-popout .left-quotation,
+    .advisors-profiles-wrapper .profile-popout .left-quotation {
+      left: 0;
+      top: 134%; }
+    .staff-profiles-wrapper .profile-popout .right-quotation,
+    .board-profiles-wrapper .profile-popout .right-quotation,
+    .advisors-profiles-wrapper .profile-popout .right-quotation {
+      right: 0;
+      top: 156%;
+      transform: rotate(180deg); }
+    .staff-profiles-wrapper .profile-popout .quote,
+    .board-profiles-wrapper .profile-popout .quote,
+    .advisors-profiles-wrapper .profile-popout .quote {
+      margin-bottom: 2.5rem;
+      font-size: 1.15rem;
+      line-height: 1.4rem;
+      text-align: center;
+      position: relative;
+      z-index: 2; }
+      @media all and (min-width: 760px) {
+        .staff-profiles-wrapper .profile-popout .quote,
+        .board-profiles-wrapper .profile-popout .quote,
+        .advisors-profiles-wrapper .profile-popout .quote {
+          margin-bottom: 2.5rem;
+          font-size: 2.25rem;
+          line-height: 2.5rem;
+          text-align: center; } }
     .staff-profiles-wrapper .profile-popout .center-column,
     .board-profiles-wrapper .profile-popout .center-column,
     .advisors-profiles-wrapper .profile-popout .center-column {
@@ -1880,13 +1958,12 @@ object {
       .staff-profiles-wrapper .profile-popout .center-column img,
       .board-profiles-wrapper .profile-popout .center-column img,
       .advisors-profiles-wrapper .profile-popout .center-column img {
-        width: 400px; }
+        width: 290px; }
     .staff-profiles-wrapper .profile-popout .left-column,
     .board-profiles-wrapper .profile-popout .left-column,
     .advisors-profiles-wrapper .profile-popout .left-column {
-      width: 40%;
-      margin-right: 10%;
-      float: left;
+      width: 100%;
+      float: none;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-flow: column nowrap;
@@ -1895,6 +1972,13 @@ object {
           justify-content: center;
       -ms-flex-align: center;
           align-items: center; }
+      @media all and (min-width: 760px) {
+        .staff-profiles-wrapper .profile-popout .left-column,
+        .board-profiles-wrapper .profile-popout .left-column,
+        .advisors-profiles-wrapper .profile-popout .left-column {
+          width: 40%;
+          margin-right: 10%;
+          float: left; } }
       .staff-profiles-wrapper .profile-popout .left-column img,
       .board-profiles-wrapper .profile-popout .left-column img,
       .advisors-profiles-wrapper .profile-popout .left-column img {
@@ -1904,16 +1988,15 @@ object {
           .board-profiles-wrapper .profile-popout .left-column img,
           .advisors-profiles-wrapper .profile-popout .left-column img {
             width: 95%; } }
-      .staff-profiles-wrapper .profile-popout .left-column .quote,
-      .board-profiles-wrapper .profile-popout .left-column .quote,
-      .advisors-profiles-wrapper .profile-popout .left-column .quote {
-        margin-bottom: 2.5rem;
-        font-size: 2.25rem;
-        line-height: 2.5rem;
-        text-align: center; }
     .staff-profiles-wrapper .profile-popout h3,
     .board-profiles-wrapper .profile-popout h3,
     .advisors-profiles-wrapper .profile-popout h3 {
+      margin: 0 auto;
+      font-size: 1.5rem;
+      font-family: quattrocento;
+      line-height: 1.75rem;
+      font-style: italic;
+      text-align: center;
       display: inline; }
     .staff-profiles-wrapper .profile-popout article,
     .board-profiles-wrapper .profile-popout article,
@@ -1921,18 +2004,31 @@ object {
       font-size: 1.15rem;
       line-height: 1.5rem;
       display: inline; }
+      .staff-profiles-wrapper .profile-popout article p:first-child,
+      .board-profiles-wrapper .profile-popout article p:first-child,
+      .advisors-profiles-wrapper .profile-popout article p:first-child {
+        margin-bottom: 0; }
       .staff-profiles-wrapper .profile-popout article p:nth-last-of-type(2), .staff-profiles-wrapper .profile-popout article h4,
       .board-profiles-wrapper .profile-popout article p:nth-last-of-type(2),
       .board-profiles-wrapper .profile-popout article h4,
       .advisors-profiles-wrapper .profile-popout article p:nth-last-of-type(2),
       .advisors-profiles-wrapper .profile-popout article h4 {
-        max-width: 50%;
-        float: right; }
+        max-width: none;
+        float: none; }
+        @media all and (min-width: 760px) {
+          .staff-profiles-wrapper .profile-popout article p:nth-last-of-type(2), .staff-profiles-wrapper .profile-popout article h4,
+          .board-profiles-wrapper .profile-popout article p:nth-last-of-type(2),
+          .board-profiles-wrapper .profile-popout article h4,
+          .advisors-profiles-wrapper .profile-popout article p:nth-last-of-type(2),
+          .advisors-profiles-wrapper .profile-popout article h4 {
+            max-width: 50%;
+            float: right; } }
       .staff-profiles-wrapper .profile-popout article p:nth-last-of-type(2),
       .board-profiles-wrapper .profile-popout article p:nth-last-of-type(2),
       .advisors-profiles-wrapper .profile-popout article p:nth-last-of-type(2) {
         margin-bottom: 0;
         padding: 1.5rem;
+        padding-bottom: 0;
         background: white; }
       .staff-profiles-wrapper .profile-popout article h4,
       .board-profiles-wrapper .profile-popout article h4,
@@ -1976,11 +2072,16 @@ object {
     -ms-flex-align: center;
         align-items: center;
     opacity: 1; }
+    @media all and (min-width: 760px) {
+      .staff-profiles-wrapper .show-popout,
+      .board-profiles-wrapper .show-popout,
+      .advisors-profiles-wrapper .show-popout {
+        width: 85%; } }
   .staff-profiles-wrapper .small-header,
   .board-profiles-wrapper .small-header,
   .advisors-profiles-wrapper .small-header {
-    margin: 2rem auto 1rem;
-    font-size: 2rem;
+    margin: 1.5rem auto 1rem;
+    font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase; }
@@ -1995,7 +2096,7 @@ object {
   .advisors-profiles-wrapper .board-profiles-header {
     height: auto;
     width: 100%;
-    margin: 2rem auto 2.5rem;
+    margin: 2rem auto 1rem;
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -2046,7 +2147,8 @@ object {
       -ms-flex-pack: center;
           justify-content: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+      margin: 1rem auto; }
       .staff-profiles-wrapper .navigation-button-container .navigation-button:hover,
       .board-profiles-wrapper .navigation-button-container .navigation-button:hover,
       .advisors-profiles-wrapper .navigation-button-container .navigation-button:hover {
@@ -2073,7 +2175,7 @@ object {
     .staff-profiles-wrapper .profile-preview .profile-image,
     .board-profiles-wrapper .profile-preview .profile-image,
     .advisors-profiles-wrapper .profile-preview .profile-image {
-      width: 215px;
+      width: 190px;
       border-radius: 50%; }
       @media all and (min-width: 760px) {
         .staff-profiles-wrapper .profile-preview .profile-image,
@@ -2084,51 +2186,37 @@ object {
       .board-profiles-wrapper .profile-preview .profile-image:hover,
       .advisors-profiles-wrapper .profile-preview .profile-image:hover {
         box-shadow: 0 2px 8px #4990E2; }
-    .staff-profiles-wrapper .profile-preview .name,
-    .board-profiles-wrapper .profile-preview .name,
+
+.advisors-profiles-wrapper {
+  margin-bottom: 2rem; }
+  .advisors-profiles-wrapper .small-header {
+    margin: 2rem auto 1rem;
+    letter-spacing: 1.5px; }
+  .advisors-profiles-wrapper .profile-preview {
+    width: 100%;
+    margin: 1.25rem auto;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    @media all and (min-width: 1350px) {
+      .advisors-profiles-wrapper .profile-preview {
+        width: 20%; } }
     .advisors-profiles-wrapper .profile-preview .name {
-      margin: 0.25rem auto;
-      font-size: 1.55rem;
-      font-weight: 700; }
-    .staff-profiles-wrapper .profile-preview .job-title,
-    .board-profiles-wrapper .profile-preview .job-title,
+      margin: 0 auto; }
     .advisors-profiles-wrapper .profile-preview .job-title {
-      max-width: 235px;
-      margin: 0.25rem auto;
-      font-size: 1.4rem;
-      text-align: center;
-      font-weight: 600;
-      font-style: italic; }
-
-.advisors-profiles-wrapper .small-header {
-  margin: 2rem auto; }
-
-.advisors-profiles-wrapper .profile-preview {
-  width: 100%;
-  margin: 1.25rem auto;
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: column nowrap;
-      flex-flow: column nowrap;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center; }
-  @media all and (min-width: 1350px) {
-    .advisors-profiles-wrapper .profile-preview {
-      width: 20%; } }
-  .advisors-profiles-wrapper .profile-preview .name {
-    margin: 0 auto; }
-  .advisors-profiles-wrapper .profile-preview .job-title {
-    min-width: 130px;
-    margin: 0 auto; }
-  .advisors-profiles-wrapper .profile-preview:nth-child(4) .job-title {
-    width: 265px; }
-
-@media all and (min-width: 760px) {
-  .advisors-profiles-wrapper .navigation-button-container {
-    margin: 3rem auto 1rem; } }
+      min-width: 130px;
+      margin: 0 auto; }
+    .advisors-profiles-wrapper .profile-preview:nth-child(4) .job-title {
+      width: 265px; }
+  @media all and (min-width: 760px) {
+    .advisors-profiles-wrapper .navigation-button-container {
+      margin: 3rem auto 1rem; } }
 
 .page-id-19 {
   margin: 0 auto; }
@@ -2140,8 +2228,9 @@ object {
     padding: 0 2rem;
     line-height: 1; }
   .page-id-19 .entry-title {
-    font-size: 3.15rem;
-    font-weight: 700;
+    margin-bottom: 1.5rem;
+    font-size: 3.4rem;
+    font-weight: 600;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 760px) {
@@ -2149,10 +2238,11 @@ object {
         margin-bottom: 1rem;
         font-size: 3.85rem; } }
   .page-id-19 .banner-text {
-    font-size: 1.35rem;
+    font-size: 1.4rem;
     font-family: quattrocento, sans-serif;
     font-weight: 700;
     margin: 1.5rem auto;
+    line-height: 1.65rem;
     letter-spacing: 2px;
     margin: 0;
     text-shadow: 1px 2px 5px #323232; }
@@ -2303,8 +2393,9 @@ object {
     padding: 0 2rem;
     line-height: 1; }
   .page-id-18 .entry-title {
-    font-size: 3.15rem;
-    font-weight: 700;
+    margin-bottom: 1.5rem;
+    font-size: 3.4rem;
+    font-weight: 600;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 760px) {
@@ -2312,10 +2403,11 @@ object {
         margin-bottom: 1rem;
         font-size: 3.85rem; } }
   .page-id-18 .banner-text {
-    font-size: 1.35rem;
+    font-size: 1.4rem;
     font-family: quattrocento, sans-serif;
     font-weight: 700;
     margin: 1.5rem auto;
+    line-height: 1.65rem;
     letter-spacing: 2px;
     margin: 0;
     text-shadow: 1px 2px 5px #323232; }
@@ -2323,7 +2415,7 @@ object {
     height: auto;
     width: 100%;
     margin: 0 auto;
-    padding: 2rem 0.85rem;
+    padding: 2rem 1rem 1rem;
     font-size: 1.25rem;
     font-family: quattrocento, sans-serif;
     text-align: center; }
@@ -2694,8 +2786,9 @@ object {
     padding: 0 2rem;
     line-height: 1; }
   .page-id-7 .entry-title {
-    font-size: 3.15rem;
-    font-weight: 700;
+    margin-bottom: 1.5rem;
+    font-size: 3.4rem;
+    font-weight: 600;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 760px) {
@@ -2703,10 +2796,11 @@ object {
         margin-bottom: 1rem;
         font-size: 3.85rem; } }
   .page-id-7 .banner-text {
-    font-size: 1.35rem;
+    font-size: 1.4rem;
     font-family: quattrocento, sans-serif;
     font-weight: 700;
     margin: 1.5rem auto;
+    line-height: 1.65rem;
     letter-spacing: 2px;
     margin: 0;
     text-shadow: 1px 2px 5px #323232; }
@@ -2825,8 +2919,9 @@ object {
   line-height: 1; }
 
 .page-id-196 .entry-title {
-  font-size: 3.15rem;
-  font-weight: 700;
+  margin-bottom: 1.5rem;
+  font-size: 3.4rem;
+  font-weight: 600;
   text-transform: uppercase;
   text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 760px) {
@@ -2835,10 +2930,11 @@ object {
       font-size: 3.85rem; } }
 
 .page-id-196 .banner-text {
-  font-size: 1.35rem;
+  font-size: 1.4rem;
   font-family: quattrocento, sans-serif;
   font-weight: 700;
   margin: 1.5rem auto;
+  line-height: 1.65rem;
   letter-spacing: 2px;
   margin: 0;
   text-shadow: 1px 2px 5px #323232; }
@@ -2847,7 +2943,7 @@ object {
   height: auto;
   width: 100%;
   margin: 0 auto;
-  padding: 2rem 0.85rem;
+  padding: 2rem 1rem 1rem;
   font-size: 1.25rem;
   font-family: quattrocento, sans-serif;
   text-align: center; }
@@ -2954,8 +3050,9 @@ object {
   line-height: 1; }
 
 .page-id-195 .entry-title {
-  font-size: 3.15rem;
-  font-weight: 700;
+  margin-bottom: 1.5rem;
+  font-size: 3.4rem;
+  font-weight: 600;
   text-transform: uppercase;
   text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 760px) {
@@ -2964,10 +3061,11 @@ object {
       font-size: 3.85rem; } }
 
 .page-id-195 .banner-text {
-  font-size: 1.35rem;
+  font-size: 1.4rem;
   font-family: quattrocento, sans-serif;
   font-weight: 700;
   margin: 1.5rem auto;
+  line-height: 1.65rem;
   letter-spacing: 2px;
   margin: 0;
   text-shadow: 1px 2px 5px #323232; }
@@ -2976,7 +3074,7 @@ object {
   height: auto;
   width: 100%;
   margin: 0 auto;
-  padding: 2rem 0.85rem;
+  padding: 2rem 1rem 1rem;
   font-size: 1.25rem;
   font-family: quattrocento, sans-serif;
   text-align: center; }
@@ -3281,8 +3379,9 @@ object {
   .page-id-252 .entry-title {
     display: none; }
   .page-id-252 .banner-text {
-    font-size: 3.15rem;
-    font-weight: 700;
+    margin-bottom: 1.5rem;
+    font-size: 3.4rem;
+    font-weight: 600;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232;
     margin: 0 auto;
