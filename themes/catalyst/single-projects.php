@@ -13,17 +13,17 @@
 
             <div class="hero-image-banner">
                 <div class="header-text">
-                    <?php $project_name = CFS()->get( 'project_name' );
+                    <?php $project_name = esc_html( CFS()->get( 'project_name' ) );
                     if ( !empty( $project_name ) ) :?>
                     <p class='project-name'><?php echo $project_name; ?></p>
                     <?php endif; ?>
 
-                    <?php $project_location = CFS()->get( 'project_location' );
+                    <?php $project_location = esc_html( CFS()->get( 'project_location' ) );
                     if ( !empty( $project_location ) ) :?>
                     <p class='project-location'>Location: <?php echo $project_location; ?></p>
                     <?php endif; ?>
 
-                    <?php $project_status = CFS()->get( 'project_status' );
+                    <?php $project_status = esc_html( CFS()->get( 'project_status' ) );
                     if ( !empty( $project_status ) ) :?>
                     <p class='project-status'>Status: <span class='p-stat'><?php echo $project_status; ?></span></p>
                     <?php endif; ?>
@@ -66,12 +66,12 @@
                 <?php endif; ?>
 
                 <h3>Total Project Cost: </h3>
-                <?php $cost = CFS()->get( 'cost' );
+                <?php $cost = esc_html( CFS()->get( 'cost' ) );
                 if ( !empty( $cost ) ) :?>
                 <p><?php echo $cost; ?></p>
                 <?php endif; ?>
 
-                <?php $description = CFS()->get( 'description' );
+                <?php $description = esc_html( CFS()->get( 'description' ) );
                 if ( !empty( $description ) ) :?>
                 <p><?php echo $description; ?></p>
                 <?php endif; ?>
@@ -106,7 +106,7 @@
                 </div>
                 <?php endforeach; wp_reset_postdata(); ?>
         </div>
-        <a href="#" class="navigation-button">Collaborate with us</a>
+        <a href="<?php echo get_home_url(); ?>/contact" class="navigation-button">Collaborate with us</a>
         <?php endwhile; wp_reset_postdata(); ?>
     </section>
     <section>
