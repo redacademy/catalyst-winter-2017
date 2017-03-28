@@ -40,11 +40,11 @@
     .navigation-button{
         @include navigation-button();
     }
-    .catalyst-formula-copy,
-    .formula-carousel {
+    .catalyst-formula-copy {
         max-width: 1000px;
         padding-bottom: 2rem;
         margin: 2rem auto;
+        text-align: center;
         font-family: $font__secondary;
     }
     .projects {
@@ -203,7 +203,10 @@
     }
     @include ourStory-carousel{
         .formula-text{
-            display: none;
+            width: 80%;
+            @include media ($desktop-width){
+                display: none;
+            }
         }
     }
 }
