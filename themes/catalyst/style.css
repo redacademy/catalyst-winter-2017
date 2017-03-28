@@ -504,7 +504,7 @@ table {
   @media all and (min-width: 760px) {
     .subheader-lrg {
       max-width: none;
-      font-size: 3.15rem;
+      font-size: 2.15rem;
       line-height: 3.4rem; } }
 
 /*--------------------------------------------------------------
@@ -2968,14 +2968,14 @@ object {
 .page-id-196 .job-post {
   margin: 0 10%;
   border-bottom: 1px solid black;
-  padding-bottom: 6rem; }
+  padding-bottom: 2rem; }
 
 .page-id-196 .job-post:last-child {
   border-bottom: none; }
 
 .page-id-196 .job-title {
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-align: center;
   color: #4A4A4A;
   text-transform: uppercase;
@@ -2983,8 +2983,11 @@ object {
 
 .page-id-196 .role-container {
   font-family: quattrocento, sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-bottom: 3rem; }
+  @media all and (min-width: 760px) {
+    .page-id-196 .role-container {
+      font-size: 1.4rem; } }
   .page-id-196 .role-container p {
     margin-top: 0; }
 
@@ -2998,8 +3001,11 @@ object {
   width: 100%;
   max-width: 850px;
   margin: 0 auto;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-bottom: 4rem; }
+  @media all and (min-width: 760px) {
+    .page-id-196 .resp-container {
+      font-size: 1.4rem; } }
   .page-id-196 .resp-container ul {
     margin-left: 0; }
   .page-id-196 .resp-container p {
