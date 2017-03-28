@@ -21,18 +21,18 @@ get_header(); ?>
 
                 <?php $project_name = CFS()->get('project_name');
                 if ( !empty( $project_name ) ) : ?>
-                <h2 class="subheader-sm"><?php echo $project_name; ?></h2>
+                <h2 class="subheader-name"><?php echo $project_name; ?></h2>
                 <?php endif; ?>
                 <span class='break'>|</span>
 
-                <h2 class='subheader-sm'>Location:
+                <h2 class='subheader-sub'>Location:
                  <?php $project_location = CFS()->get( 'project_location' );
                 if ( !empty( $project_location ) ) : ?>
                 <span><?php echo $project_location; ?></span>
                 <?php endif; ?>
 
                 </h2><span class='break'>|</span>
-                <h2 class='subheader-sm'>Status:
+                <h2 class='subheader-sub'>Status:
                 <?php $project_status = CFS()->get( 'project_status' );
                 if ( !empty( $project_status ) ) :?>
                 <span class='status'><?php echo $project_status; ?></span>
