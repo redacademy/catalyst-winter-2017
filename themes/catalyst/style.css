@@ -1349,8 +1349,9 @@ object {
   text-shadow: 1px 2px 5px #323232; }
 
 .page-id-21 .intro-copy {
-  width: 54%;
-  line-height: 26px; }
+  width: 60%;
+  line-height: 26px;
+  margin-bottom: 30px; }
   @media all and (min-width: 760px) {
     .page-id-21 .intro-copy {
       height: auto;
@@ -1459,18 +1460,16 @@ object {
   font-weight: lighter;
   position: relative;
   -ms-flex-pack: center;
-      justify-content: center;
-  padding-top: 30px; }
+      justify-content: center; }
 
 .page-id-21 .mission-quote {
-  height: 177px; }
+  height: 160px; }
   @media all and (min-width: 760px) {
     .page-id-21 .mission-quote {
-      height: 158px; } }
+      height: 125px; } }
 
 .page-id-21 .mission-quote2 {
-  height: 208px;
-  margin-bottom: 80px; }
+  height: 253px; }
   @media all and (min-width: 760px) {
     .page-id-21 .mission-quote2 {
       margin-bottom: 0px;
@@ -1489,9 +1488,6 @@ object {
   font-family: quattrocento, sans-serif;
   font-style: italic; }
 
-.page-id-21 .quote2 {
-  padding: 0 40px; }
-
 .page-id-21 .quotation-left,
 .page-id-21 .quotation-left2 {
   background: url("../../images/icon/quotation.svg") no-repeat center;
@@ -1502,19 +1498,19 @@ object {
 
 .page-id-21 .quotation-left {
   left: 7%;
-  top: 18%; }
+  top: 0%; }
   @media all and (min-width: 760px) {
     .page-id-21 .quotation-left {
       left: 13%;
-      top: 20%; } }
+      top: 1%; } }
 
 .page-id-21 .quotation-left2 {
   left: 5%;
-  top: 18%; }
+  top: 1%; }
   @media all and (min-width: 760px) {
     .page-id-21 .quotation-left2 {
-      left: 8%;
-      top: 20%; } }
+      left: 5%;
+      top: 2%; } }
 
 .page-id-21 .quotation-right,
 .page-id-21 .quotation-right2 {
@@ -1527,30 +1523,29 @@ object {
 
 .page-id-21 .quotation-right {
   right: 7%;
-  top: 54%; }
+  top: 34%; }
   @media all and (min-width: 760px) {
     .page-id-21 .quotation-right {
       left: 78%;
       top: 36%; } }
 
 .page-id-21 .quotation-right2 {
-  left: 79%;
-  top: 88%; }
+  left: 82%;
+  top: 46%; }
   @media all and (min-width: 760px) {
     .page-id-21 .quotation-right2 {
-      left: 83%;
-      top: 58%; } }
+      left: 86%;
+      top: 44%; } }
 
 .page-id-21 .robert {
-  text-align: center;
-  margin-top: 25px; }
+  text-align: center; }
   @media all and (min-width: 760px) {
     .page-id-21 .robert {
       margin-top: 0px;
       font-size: 30px; } }
 
 .page-id-21 h4 {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 700;
   margin: 0 auto; }
   @media all and (min-width: 760px) {
@@ -1562,7 +1557,7 @@ object {
   font-style: italic;
   font-weight: 600;
   margin: 0;
-  font-size: 25px; }
+  font-size: 20px; }
 
 .page-id-21 .arrow {
   transform: rotate(90deg); }
