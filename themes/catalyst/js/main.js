@@ -278,7 +278,6 @@
         wrapAround: true,
         imagesLoaded: true,
         pageDots: false,
-        prevNextButtons: false,
     });
     $('.fp-carousel').flickity({
         contain: true,
