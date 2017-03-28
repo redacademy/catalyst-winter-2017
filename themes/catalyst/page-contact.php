@@ -13,13 +13,13 @@ get_header(); ?>
             <div class="hero-image-banner">
                 <header class="header-text">
                     <p class="entry-title">
-                        <?php echo CFS()->get( 'bannertext' ); ?>
+                        <?php echo esc_html( CFS()->get( 'bannertext' ) ); ?>
                     </p>
                     <p class="banner-text">
-                        <?php echo CFS()->get( 'address' ); ?>
+                        <?php echo esc_html( CFS()->get( 'address' ) ); ?>
                     </p>
                     <p class="banner-text-small">
-                        <?php echo CFS()->get( 'email' ); ?>
+                        <?php echo esc_html( CFS()->get( 'email' ) ); ?>
                     </p>
                 </header><!-- .page-header -->
             </div>
