@@ -17,27 +17,30 @@
             margin-bottom: 1rem;
             font-weight: $font__semibold;
             letter-spacing: 1px;
+            text-transform: uppercase;
         }
-        .project-location {
+        .project-location,
+        .project-status {
             font-family: $font__secondary;
             font-weight: $font__semibold;
             font-size: 1.3rem;
             margin-bottom: 0.3rem;
             letter-spacing: 1px;
-        }
-        .project-status {
-            font-family: $font__secondary;
-            font-weight: $font__semibold;
-            font-size: 1.3rem;
-            letter-spacing: 1px;
+            @include media($desktop-width){
+                font-size: 1.6rem;
+            }
         }
         .p-stat {
             text-transform: uppercase;
         }
     }
+    .blue-background-header {
+        margin-top: 1.5rem;
+    }
     .proj-content {
         padding: 0 1.5rem;
         font-family: $font__secondary;
+        line-height: 1.3;
         @include media($desktop-width) {
             max-width: 1000px;
             margin: 0 auto 3rem;
@@ -79,7 +82,7 @@
         }
     }
     .quote-carousel {
-        margin: 2rem 0;
+        padding: 2rem 0;
 
         .flickity-viewport {
             height: 300px !important;
@@ -88,7 +91,8 @@
     .quotes {
         text-align: center;
         margin: 0 1rem;
-        width: 85%;
+        width: 80%;
+        padding: 0 7%;
         font-style: italic;
 
         p {
@@ -101,9 +105,12 @@
         margin: 0;
         background: url('../../images/icon/quotation.svg') center;
         background-size: 275%;
-        position: relative;
+        position: absolute;
         z-index: -1;
         display: none;
+        @include media($desktop-width){
+            width: 60px;
+        }
     }
     .is-selected .left-quotation-mark, .is-selected .right-quotation-mark {
         display: inline-block;
@@ -114,33 +121,25 @@
     }
 
     .left-quotation-mark {
-        top: 10vh;
-        right: 37vw;
+        top: -12%;
+        right: 85%;
 
         @include media($desktop-width) {
-            right: 41vw;
-        }
-
-        @include media(1300px) {
-            right: 36vw;
+            top: 0%;
         }
     }
 
     .right-quotation-mark {
-        bottom: 21vh;
-        left: 35vw;
+        bottom: 15%;
+        left: 85%;
         transform: rotate(180deg);
-
         @include media($desktop-width) {
-            left: 41vw;
-        }
-
-        @include media(1300px) {
-            left: 36vw;
+            bottom: 20%
         }
     }
     .quote-text {
         margin-bottom: 2rem;
+        margin-top: 4rem;
         font-family: $font__secondary;
         font-weight: $font__bold;
     }
@@ -158,6 +157,9 @@
     }
     .navigation-button {
         @include navigation-button();
+    }
+    .arch-design {
+        margin-bottom: 5rem;
     }
     .other-post-gallery {
         margin: 2rem 0 3rem;
@@ -187,6 +189,7 @@
         }
         .project-name{
             font-weight: $font__bold;
+            margin-top: 1rem;
             
         }
         .project-location,

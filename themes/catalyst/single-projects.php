@@ -78,7 +78,7 @@
 
             </div>
     </section>
-    <section>
+    <section class='arch-design'>
         <div>
             <div class="blue-background-header">
                 <h2 class='subheader-sm'>Architectural design</h2>
