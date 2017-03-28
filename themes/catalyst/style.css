@@ -680,9 +680,10 @@ textarea {
         .container .desktop-menu #primary-menu a:hover {
           color: #00A4FF; }
   .container .hamburger-menu {
-    width: 60%;
+    width: 60vw;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
     display: flex;
     -ms-flex-flow: column nowrap;
         flex-flow: column nowrap;
@@ -693,10 +694,6 @@ textarea {
     .container .hamburger-menu .hamburger {
       margin-top: 27px;
       margin-right: 20px; }
-    .container .hamburger-menu .list {
-      width: 100%;
-      position: relative;
-      background-color: rgba(255, 255, 255, 0.8); }
     .container .hamburger-menu ul {
       display: -ms-flexbox;
       display: flex;
@@ -725,7 +722,8 @@ textarea {
       line-height: 22px;
       color: white;
       padding: 15px;
-      text-shadow: none; }
+      text-shadow: none;
+      transition: opacity 0.2s ease; }
     .container .hamburger-menu .cross {
       border: 1px solid #333345;
       border-radius: 0;
@@ -738,10 +736,19 @@ textarea {
       text-shadow: none;
       height: 30px;
       position: absolute;
-      right: 75%;
-      top: 10%; }
+      left: 0;
+      top: 28px;
+      opacity: 0;
+      transition: opacity 0.3s ease; }
     .container .hamburger-menu .mobile-menu {
-      padding-top: 60px; }
+      padding-top: 60px;
+      background-color: rgba(255, 255, 255, 0.8);
+      opacity: 0;
+      transition: opacity 0.2s ease; }
+    .container .hamburger-menu .opaque {
+      opacity: 1; }
+    .container .hamburger-menu .transparent {
+      opacity: 0; }
     @media all and (min-width: 1180px) {
       .container .hamburger-menu {
         display: none; } }

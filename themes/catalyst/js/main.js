@@ -1,21 +1,38 @@
 (function ($) {
 
-    $('.cross').hide();
-    $('.mobile-menu').hide();
-    $('.hamburger').click(function () {
-        $('.mobile-menu').slideToggle('slow', function () {
-            $('.hamburger').hide();
-            $('.cross').show();
-            $('.list').css('width', '60vw').show();
+   
+
+    var $crossIcon = $( '.cross' );
+    var $hamburgerIcon = $( '.hamburger' );
+    var $mobileMenu = $( '.mobile-menu' );
+    var $mobileMenuList = $( '#primary-menu' );
+    var $navList = $( '.list' );
+
+    var $heroBannerHeight = $('.hero-image-banner').height();
+
+    $(window).scroll(function(){
+        setTimeout(300, function() {
+            $heroBannerHeight = $('hero-image-banner').height();
         });
     });
 
-    $('.cross').click(function () {
-        $('.mobile-menu').slideToggle('slow', function () {
-            $('.cross').hide();
-            $('.hamburger').show();
-            $('.list').hide();
-        });
+    $($hamburgerIcon).click(function () {
+            // var $heroBannerHeight = $('.hero-image-banner').height();
+            var $navBarHeight = $('.site-header').height();
+
+            $($hamburgerIcon).addClass('transparent').hide();
+            $($mobileMenu).css({'width': '60vw', 'height': $heroBannerHeight + $navBarHeight}).show().addClass('opaque');
+                $($crossIcon).addClass('opaque');
+    });
+
+    $($crossIcon).click(function () {
+        
+            $($crossIcon).removeClass('opaque');
+            $($hamburgerIcon).removeClass('transparent').show();
+            $($mobileMenu).removeClass('opaque');
+
+           
+ 
     });
 
     $('#timeline-Widget-0 li').css('background-color', 'red');
