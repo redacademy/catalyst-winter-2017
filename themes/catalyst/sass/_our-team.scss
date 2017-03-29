@@ -7,9 +7,9 @@
     }
     .header-text {
         @include header-text;
-        top: 4%;
+        top: 25%;
         @include media($desktop-width) {
-            top: 25%;
+            top: 34%;
         }
     }
     .entry-title {
@@ -202,6 +202,9 @@
                 font-style: italic;
                 text-align: center;
                 display: inline-block;
+                @include media($desktop-width) {
+                    font-size: 2rem;
+                }
             }
 
             article {
@@ -325,7 +328,7 @@
             text-align: center;
             position: relative;
             @include media($desktop-width) {
-                width: 30%;
+                width: 24%;
             }
             .profile-image {
                 width: 190px;

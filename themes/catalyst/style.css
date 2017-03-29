@@ -1718,10 +1718,10 @@ object {
     color: white;
     padding: 0 2rem;
     line-height: 1;
-    top: 4%; }
+    top: 25%; }
     @media all and (min-width: 760px) {
       .page-id-159 .header-text {
-        top: 25%; } }
+        top: 34%; } }
   .page-id-159 .entry-title {
     margin-bottom: 1.5rem;
     font-size: 3.4rem;
@@ -2005,6 +2005,11 @@ object {
         font-style: italic;
         text-align: center;
         display: inline-block; }
+        @media all and (min-width: 760px) {
+          .page-id-159 .staff-profiles-wrapper .profile-popout h3,
+          .page-id-159 .board-profiles-wrapper .profile-popout h3,
+          .page-id-159 .advisors-profiles-wrapper .profile-popout h3 {
+            font-size: 2rem; } }
       .page-id-159 .staff-profiles-wrapper .profile-popout article,
       .page-id-159 .board-profiles-wrapper .profile-popout article,
       .page-id-159 .advisors-profiles-wrapper .profile-popout article {
@@ -2178,7 +2183,7 @@ object {
         .page-id-159 .staff-profiles-wrapper .profile-preview,
         .page-id-159 .board-profiles-wrapper .profile-preview,
         .page-id-159 .advisors-profiles-wrapper .profile-preview {
-          width: 30%; } }
+          width: 24%; } }
       .page-id-159 .staff-profiles-wrapper .profile-preview .profile-image,
       .page-id-159 .board-profiles-wrapper .profile-preview .profile-image,
       .page-id-159 .advisors-profiles-wrapper .profile-preview .profile-image {
