@@ -50,7 +50,7 @@
                 <h3>Catalyst Role: </h3>
                 <?php $cRole = wp_kses_post( CFS()->get( 'catalyst_role' ) );
                 if ( !empty( $cRole ) ) :?>
-                <p><?php echo $cRole; ?></p>
+                <?php echo $cRole; ?>
                 <?php endif; ?>
 
                 <h3>Partners: </h3>

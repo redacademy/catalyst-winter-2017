@@ -1046,6 +1046,7 @@ textarea {
     text-align: center;
     font-family: quattrocento, sans-serif; }
   .home .projects .project-name {
+    margin-top: 1rem;
     font-weight: 700; }
   .home .projects .project-location {
     font-family: quattrocento, sans-serif; }
@@ -2341,7 +2342,7 @@ object {
         margin: 0; }
       .page-id-19 .newsmedia-article .article-content h3 {
         margin: 8px 0;
-        font-family: 700; }
+        font-weight: 700; }
     .page-id-19 .newsmedia-article .hentry {
       font-size: 14px; }
       .page-id-19 .newsmedia-article .hentry p {
