@@ -18,7 +18,7 @@
 
 					<div class="company-info">
 							<div id="secondary" class="footer-widget-area" role="complementary">
-								<div class="footerLogo"></div>
+								<!--<div class="footerLogo"></div>-->
 								<?php if ( function_exists('dynamic_sidebar') || dynamic_sidebar('Footer') ) : ?>
 								<?php endif; ?>
 								<?php dynamic_sidebar( 'Footer' ); ?>
