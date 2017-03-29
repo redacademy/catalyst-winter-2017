@@ -13,12 +13,8 @@ get_header(); ?>
 
        <?php get_template_part( 'template-parts/hero-banner'); ?>
 
-        <?php
-        $video = CFS()->get('video');
-        if ( !empty( $video ) ) :
-        ?>
-        <div class="video"><?php echo $video; ?></div>
-        <?php endif; ?>
+        <div class="video"><?php echo CFS()->get( 'video' ); ?></div>
+
 
 <div class="blue-background-header">
     <h2 class="subheader-sm">link to other stories</h2>

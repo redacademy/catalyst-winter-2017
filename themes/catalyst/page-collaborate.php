@@ -39,11 +39,17 @@ get_header(); ?>
 						<li><span class="hyphen">- </span><?php echo esc_html( CFS()->get( 'partners_benefit_3' ) ); ?></li>
 						<li><span class="hyphen">- </span><?php echo esc_html( CFS()->get( 'partners_benefit_4' ) ); ?></li>
 						<div class="key-graphic-1"></div>
-
-						<?php $partners_copy_2 = CFS()->get( 'partners_copy' );
-						if ( !empty( $partners_copy_2 ) ) : ?>
-						<p class="partners-text partners-text-2"><?php echo $partners_copy_2; ?></p>
+						<div class="partners-text">
+						<?php $partners_copy_1 = esc_html( CFS()->get( 'partners_copy1' ));
+						if ( !empty( $partners_copy_1 ) ) : ?>
+						<p class="partners-text-1"><?php echo $partners_copy_1; ?></p>
 						<?php endif; ?>
+
+						<?php $partners_copy_2 = esc_html( CFS()->get( 'partners_copy2' ));
+						if ( !empty( $partners_copy_2 ) ) : ?>
+						<p class="partners-text-2"><?php echo $partners_copy_2; ?></p>
+						<?php endif; ?>
+						</div>
 						<div class="key-graphic-2"></div>
 					</ul>
 				</section>
@@ -60,11 +66,16 @@ get_header(); ?>
 						<li><span class="hyphen">- </span><?php echo esc_html( CFS()->get( 'investors_benefit_3' ) ); ?></li>
 						<li><span class="hyphen">- </span><?php echo esc_html( CFS()->get( 'investors_benefit_4' ) ); ?></li>
 						<div class="dollar-sign-graphic-1"></div>
-
-						<?php $investors_copy_2 = CFS()->get( 'investors_copy' );
-						if ( !empty( $investors_copy_2 ) ) : ?>
-						<p class="partners-text partners-text-2"><?php echo $investors_copy_2; ?></p>
+						<div class="partners-text">
+						<?php $investors_copy_1 = esc_html( CFS()->get( 'investors_copy1' ));
+						if ( !empty( $investors_copy_1 ) ) : ?>
+						<p class="partners-text-1"><?php echo $investors_copy_1; ?></p>
 						<?php endif; ?>
+						<?php $investors_copy_2 = esc_html( CFS()->get( 'investors_copy2' ));
+						if ( !empty( $investors_copy_2 ) ) : ?>
+						<p class="partners-text-2"><?php echo $investors_copy_2; ?></p>
+						<?php endif; ?>
+						</div>
 						<div class="dollar-sign-graphic-2"></div>
 					</ul>
 				</section>

@@ -111,8 +111,8 @@
                     }
                 }
                 .key-graphic-1 {
-                    height: 227px;
-                    width: 109px;
+                    height: 304px;
+                    width: 123px;
                     background: url("../../images/graphics/key.svg") no-repeat 50%;
                     background-size: 100%;
                     position: absolute;
@@ -123,30 +123,30 @@
                     @include media($desktop-width) {
                         height: 186px;
                         width: 88px;
-                        bottom: 27.25%;
+                        bottom: 27%;
                         left: 4.5%;
                     }
                 }
                 .key-graphic-2 {
-                    height: 100px;
-                    width: 58px;
+                    height: 135px;
+                    width: 71px;
                     background: url("../../images/graphics/key.svg") no-repeat;
                     background-size: 100%;
                     position: absolute;
-                    bottom: -3%;
-                    right: -1.25%;
+                    top: 88%;
+                    left: 85%;
                     z-index: -99999;
                     transform: rotate(-25deg);
                     @include media($desktop-width) {
-                        height: 135px;
-                        width: 114px;
-                        bottom: 9%;
-                        left: 83.75%;
+                        height: 185px;
+                        width: 56px;
+                        top: 80%;
+                        left: 88.75%;
                     }
                 }
                 .dollar-sign-graphic-1 {
-                    height: 129px;
-                    width: 122px;
+                    height: 171px;
+                    width: 138px;
                     left: 0%;
                     background: url("../../images/graphics/dollar-sign.svg") no-repeat;
                     background-size: 100%;
@@ -154,23 +154,27 @@
                     bottom: 13%;
                     z-index: -99999;
                     @include media($desktop-width) {
+                        height: 114px;
+                        width: 100px;
                         bottom: 32%;
                         left: 2%;
                     }
                 }
                 .dollar-sign-graphic-2 {
-                    height: 87px;
-                    width: 82px;
+                    height: 100px;
+                    width: 96px;
                     background: url("../../images/graphics/dollar-sign.svg") no-repeat;
                     background-size: 100%;
                     position: absolute;
-                    bottom: -1%;
-                    right: -2%;
+                    top: 90%;
+                    left: 79%;
                     z-index: -99999;
                     display: inline-block;
                     @include media($desktop-width) {
-                        bottom: 2%;
+                        top: 88%;
                         left: 81%;
+                        height: 105px;
+                        width: 70px;
                     }
                 }
             }
@@ -178,193 +182,193 @@
                 margin-top: 3.75rem;
             }
             .partners-text {
-                height: auto;
-                width: 100%;
-                margin: $base__space-unit auto;
-                font-weight: 100;
                 text-align: center;
-                @include media ($desktop-width) {
-                    width: 330px;
-                    padding: 2rem 0 0;
-                    transform: translateX(-1rem);
-                    font-size: 21px;
-                    margin-top: 7.5rem;
-                }
-            }
-            .partners-text-2 {
-                margin-top: 2.8rem;
-                padding-top: 0;
-                @include media ($desktop-width) {
-                    font-size: 21px;
-                    margin-top: 7.5rem;
+                margin-top: 56px;
+                line-height: 28px;
+                padding-right: 10px;
+                @include media($desktop-width) {
+                    font-size: 22px;
+                    width: 74%;
+                    margin: 0 auto;
+                    padding-top: 40px;
                 }
             }
         }
-    }
-    .infographic-container {
-        height: auto;
-        width: 100%;
-        padding: 0.5rem 0 1.5rem;
-        text-align: center;
-        @include flex-column(nowrap,
-        center,
-        center);
-        position: relative;
-        .business-model-diagram {
-            height: auto;
-            width: 95%;
-            @include media ($desktop-width) {
-                height: 530px;
-            }
-        }
-        .key-graphic-1 {
-            display: none;
-            @include media($desktop-width) {
-                width: 85px;
-                position: absolute;
-                top: 15%;
-                left: 16%;
-                opacity: .5;
-                transform: rotate(25deg);
-                display: inline;
-            }
-        }
-        .key-graphic-2 {
-            display: none;
-            @include media($desktop-width) {
-                width: 55px;
-                position: absolute;
-                top: 19.5%;
-                left: 18.75%;
-                transform: rotate(-25deg);
-                display: inline;
-            }
-        }
-        .dollar-sign-graphic-1 {
-            display: none;
-            @include media($desktop-width) {
-                position: absolute;
-                top: 14%;
-                right: 16%;
-                opacity: 0.5;
-                display: inline;
-            }
-        }
-        .dollar-sign-graphic-2 {
-            display: none;
-            @include media($desktop-width) {
-                width: 65px;
-                position: absolute;
-                top: 25%;
-                right: 19%;
-                display: inline;
-            }
-        }
-        .green-line-graphic-1 {
-            display: none;
-            @include media($desktop-width) {
-                height: auto;
-                width: 150px;
-                position: absolute;
-                top: 9.75rem;
-                left: 24.35%;
-                transform: rotate(-117deg);
-                display: inline;
-            }
-        }
-        .green-line-graphic-2 {
-            display: none;
-            @include media($desktop-width) {
-                height: auto;
-                width: 150px;
-                position: absolute;
-                top: 9.55rem;
-                left: 65.5%;
-                transform: rotate(-3deg);
-                display: inline;
-            }
+        .partners-text-2 {
+            // margin-top: 2.8rem;
+            // padding-top: 0;
+            // @include media ($desktop-width) {
+            //     font-size: 21px;
+            //     margin-top: 7.5rem;
+            // }
         }
     }
-    .supporters-logo-container {
+}
+
+.infographic-container {
+    height: auto;
+    width: 100%;
+    padding: 0.5rem 0 1.5rem;
+    text-align: center;
+    @include flex-column(nowrap,
+    center,
+    center);
+    position: relative;
+    .business-model-diagram {
         height: auto;
-        width: 75%;
-        margin: 0 auto;
-        padding: 4% 9%;
-        @include flex-row(wrap,
-        center,
-        center);
+        width: 95%;
+        @include media ($desktop-width) {
+            height: 530px;
+        }
+    }
+    .key-graphic-1 {
+        display: none;
         @include media($desktop-width) {
-            padding: 0 0 3rem;
-            width: 750px;
+            width: 85px;
+            position: absolute;
+            top: 15%;
+            left: 16%;
+            opacity: .5;
+            transform: rotate(25deg);
+            display: inline;
         }
-        .sponsor-logo {
-            height: 40px;
-            width: auto;
-            margin: 5%;
-            @include grayscale-image;
+    }
+    .key-graphic-2 {
+        display: none;
+        @include media($desktop-width) {
+            width: 55px;
+            position: absolute;
+            top: 19.5%;
+            left: 18.75%;
+            transform: rotate(-25deg);
+            display: inline;
+        }
+    }
+    .dollar-sign-graphic-1 {
+        display: none;
+        @include media($desktop-width) {
+            position: absolute;
+            top: 14%;
+            right: 16%;
+            opacity: 0.5;
+            display: inline;
+        }
+    }
+    .dollar-sign-graphic-2 {
+        display: none;
+        @include media($desktop-width) {
+            width: 65px;
+            position: absolute;
+            top: 25%;
+            right: 19%;
+            display: inline;
+        }
+    }
+    .green-line-graphic-1 {
+        display: none;
+        @include media($desktop-width) {
+            height: auto;
+            width: 150px;
+            position: absolute;
+            top: 9.75rem;
+            left: 24.35%;
+            transform: rotate(-117deg);
+            display: inline;
+        }
+    }
+    .green-line-graphic-2 {
+        display: none;
+        @include media($desktop-width) {
+            height: auto;
+            width: 150px;
+            position: absolute;
+            top: 9.55rem;
+            left: 65.5%;
+            transform: rotate(-3deg);
+            display: inline;
+        }
+    }
+}
+
+.supporters-logo-container {
+    height: auto;
+    width: 75%;
+    margin: 0 auto;
+    padding: 4% 9%;
+    @include flex-row(wrap,
+    center,
+    center);
+    @include media($desktop-width) {
+        padding: 0 0 3rem;
+        width: 750px;
+    }
+    .sponsor-logo {
+        height: 40px;
+        width: auto;
+        margin: 5%;
+        @include grayscale-image;
+        @include media($desktop-width) {
+            height: 30px;
+            margin: $base__space-unit 2.5rem;
+        }
+        &:first-child {
             @include media($desktop-width) {
-                height: 30px;
-                margin: $base__space-unit 2.5rem;
+                margin: 3rem;
+                margin-bottom: 2rem;
             }
-            &:first-child {
-                @include media($desktop-width) {
-                    margin: 3rem;
-                    margin-bottom: 2rem;
-                }
+        }
+        &:nth-child(2) {
+            @include media($desktop-width) {
+                height: 50px;
+                margin: 3rem;
+                margin-bottom: 2rem;
             }
-            &:nth-child(2) {
-                @include media($desktop-width) {
-                    height: 50px;
-                    margin: 3rem;
-                    margin-bottom: 2rem;
-                }
+        }
+        &:nth-child(3) {
+            @include media($desktop-width) {
+                margin: 3rem;
+                margin-bottom: 2rem;
             }
-            &:nth-child(3) {
-                @include media($desktop-width) {
-                    margin: 3rem;
-                    margin-bottom: 2rem;
-                }
+        }
+        &:nth-child(4) {
+            filter: grayscale(100%) invert(10%);
+            @include media($desktop-width) {
+                height: 45px;
+                margin: 3rem;
+                margin-bottom: 2rem;
             }
-            &:nth-child(4) {
-                filter: grayscale(100%) invert(10%);
-                @include media($desktop-width) {
-                    height: 45px;
-                    margin: 3rem;
-                    margin-bottom: 2rem;
-                }
+        }
+        &:nth-child(5) {
+            height: 35px;
+            @include media($desktop-width) {
+                margin: 1rem;
+                margin-left: 0;
+                filter: grayscale(100%) invert(15%);
             }
-            &:nth-child(5) {
-                height: 35px;
-                @include media($desktop-width) {
-                    margin: 1rem;
-                    margin-left: 0;
-                    filter: grayscale(100%) invert(15%);
-                }
+        }
+        &:nth-child(6) {
+            height: 100px;
+            filter: grayscale(100%) invert(1%);
+            @include media($desktop-width) {
+                margin: 1rem;
+                height: 110px;
+                filter: grayscale(80%) saturate(15%);
             }
-            &:nth-child(6) {
-                height: 100px;
-                filter: grayscale(100%) invert(1%);
-                @include media($desktop-width) {
-                    margin: 1rem;
-                    height: 110px;
-                    filter: grayscale(80%) saturate(15%);
-                }
+        }
+        &:nth-child(7) {
+            @include media($desktop-width) {
+                margin: 1rem;
             }
-            &:nth-child(7) {
-                @include media($desktop-width) {
-                    margin: 1rem;
-                }
+        }
+        &:nth-child(8) {
+            @include media($desktop-width) {
+                margin: 1rem;
             }
-            &:nth-child(8) {
-                @include media($desktop-width) {
-                    margin: 1rem;
-                }
-            }
-            &:nth-child(9) {
-                @include media($desktop-width) {
-                    margin: 1rem;
-                    margin-right: 0;
-                }
+        }
+        &:nth-child(9) {
+            @include media($desktop-width) {
+                margin: 1rem;
+                margin-right: 0;
             }
         }
     }
