@@ -41,9 +41,6 @@
     .widget-title {
         display: none;
     }
-    // .post-284{
-    //     display: block;
-    // }
     .newsmedia-article {
         padding: 0px 20px;
         .news {
@@ -112,6 +109,10 @@
             text-decoration: none;
             text-transform: uppercase;
             padding: 5px 15px;
+
+            &:hover {
+                color: $color__menu-active;
+            }
         }
     }
     li.tweets_avatar {

@@ -2360,6 +2360,8 @@ object {
       text-decoration: none;
       text-transform: uppercase;
       padding: 5px 15px; }
+      .page-id-19 .newsmedia-article .cfs-hyperlink:hover {
+        color: #935E32; }
   .page-id-19 li.tweets_avatar {
     border: none;
     box-shadow: none;
