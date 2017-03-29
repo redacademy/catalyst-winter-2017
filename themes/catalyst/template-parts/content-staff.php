@@ -10,7 +10,7 @@
 
 	<section class="staff-profile-popout profile-popout">
     
-			<?php $cvDescription = esc_html( CFS()->get('cvdescription') );
+			<?php $cvDescription = wp_kses_post( CFS()->get('cvdescription') );
 				if ( !empty( $cvDescription ) ) : 
 			?>
 
@@ -32,7 +32,7 @@
 					<?php endif; ?>
 				</div>
 
-			<?php $cvDescription = esc_html( CFS()->get('cvdescription') );
+			<?php $cvDescription = wp_kses_post( CFS()->get('cvdescription') );
 				elseif ( empty( $cvDescription ) ) : 
 			?>
 				<div class="center-column">
@@ -56,9 +56,10 @@
 
 			<h3 class="tagline clearfix"><?php echo esc_html( CFS()->get('tagline') ); ?></h3>
 
-			<?php $cvDescription = CFS()->get('cvdescription');
+			<?php $cvDescription = wp_kses_post( CFS()->get('cvdescription') );
 				if ( !empty( $cvDescription ) ) : 
 			?>
+
 			<article class="cv">
 				<?php echo $cvDescription; ?>
 			</article>

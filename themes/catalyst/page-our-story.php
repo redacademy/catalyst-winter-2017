@@ -117,7 +117,7 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/ourStory-carousel', 'projects carousel' ); ?>
 			</section>
 
-			<?php $pdf_download = CFS()->get( 'pdf_download' );
+			<?php $pdf_download = wp_kses_post( CFS()->get( 'pdf_download' ) );
 			if ( !empty( $pdf_download ) ) :?>
 			<div class="download"><?php echo $pdf_download; ?></div>
 			<?php endif; ?>
