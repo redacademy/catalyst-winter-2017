@@ -48,6 +48,7 @@
 	font-family: $font__secondary;
 	text-align: center;
 	@include media($desktop-width) {
+		font-size: 1.4rem;
 		padding: 2.75rem 0.85rem;
 		width: 65%;
 	}

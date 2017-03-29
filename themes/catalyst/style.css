@@ -1372,6 +1372,7 @@ object {
       text-align: center; } }
   @media all and (min-width: 760px) and (min-width: 760px) {
     .page-id-21 .intro-copy {
+      font-size: 1.4rem;
       padding: 2.75rem 0.85rem;
       width: 65%; } }
 
@@ -1757,6 +1758,7 @@ object {
     text-align: center; }
     @media all and (min-width: 760px) {
       .page-id-159 .intro-copy {
+        font-size: 1.4rem;
         padding: 2.75rem 0.85rem;
         width: 65%; } }
   .page-id-159 .blue-background-header {
@@ -2435,6 +2437,7 @@ object {
     text-align: center; }
     @media all and (min-width: 760px) {
       .page-id-18 .intro-copy {
+        font-size: 1.4rem;
         padding: 2.75rem 0.85rem;
         width: 65%; } }
   .page-id-18 .main-copy_container {
@@ -2980,6 +2983,7 @@ object {
   text-align: center; }
   @media all and (min-width: 760px) {
     .page-id-196 .intro-copy {
+      font-size: 1.4rem;
       padding: 2.75rem 0.85rem;
       width: 65%; } }
 
@@ -3119,6 +3123,7 @@ object {
   max-width: 850px; }
   @media all and (min-width: 760px) {
     .page-id-195 .intro-copy {
+      font-size: 1.4rem;
       padding: 2.75rem 0.85rem;
       width: 65%; } }
   @media all and (min-width: 760px) {
