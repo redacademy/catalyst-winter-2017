@@ -2556,8 +2556,8 @@ object {
           .page-id-18 .content-container .partners-information-container .collaborate-dashed-list li {
             font-size: 1.4rem; } }
       .page-id-18 .content-container .partners-information-container .collaborate-dashed-list .key-graphic-1 {
-        height: 227px;
-        width: 109px;
+        height: 304px;
+        width: 123px;
         background: url("../../images/graphics/key.svg") no-repeat 50%;
         background-size: 100%;
         position: absolute;
@@ -2569,27 +2569,27 @@ object {
           .page-id-18 .content-container .partners-information-container .collaborate-dashed-list .key-graphic-1 {
             height: 186px;
             width: 88px;
-            bottom: 27.25%;
+            bottom: 27%;
             left: 4.5%; } }
       .page-id-18 .content-container .partners-information-container .collaborate-dashed-list .key-graphic-2 {
-        height: 100px;
-        width: 58px;
+        height: 135px;
+        width: 71px;
         background: url("../../images/graphics/key.svg") no-repeat;
         background-size: 100%;
         position: absolute;
-        bottom: -3%;
-        right: -1.25%;
+        top: 88%;
+        left: 85%;
         z-index: -99999;
         transform: rotate(-25deg); }
         @media all and (min-width: 760px) {
           .page-id-18 .content-container .partners-information-container .collaborate-dashed-list .key-graphic-2 {
-            height: 135px;
-            width: 114px;
-            bottom: 9%;
-            left: 83.75%; } }
+            height: 185px;
+            width: 56px;
+            top: 80%;
+            left: 88.75%; } }
       .page-id-18 .content-container .partners-information-container .collaborate-dashed-list .dollar-sign-graphic-1 {
-        height: 129px;
-        width: 122px;
+        height: 171px;
+        width: 138px;
         left: 0%;
         background: url("../../images/graphics/dollar-sign.svg") no-repeat;
         background-size: 100%;
@@ -2598,196 +2598,193 @@ object {
         z-index: -99999; }
         @media all and (min-width: 760px) {
           .page-id-18 .content-container .partners-information-container .collaborate-dashed-list .dollar-sign-graphic-1 {
+            height: 114px;
+            width: 100px;
             bottom: 32%;
             left: 2%; } }
       .page-id-18 .content-container .partners-information-container .collaborate-dashed-list .dollar-sign-graphic-2 {
-        height: 87px;
-        width: 82px;
+        height: 100px;
+        width: 96px;
         background: url("../../images/graphics/dollar-sign.svg") no-repeat;
         background-size: 100%;
         position: absolute;
-        bottom: -1%;
-        right: -2%;
+        top: 90%;
+        left: 79%;
         z-index: -99999;
         display: inline-block; }
         @media all and (min-width: 760px) {
           .page-id-18 .content-container .partners-information-container .collaborate-dashed-list .dollar-sign-graphic-2 {
-            bottom: 2%;
-            left: 81%; } }
+            top: 88%;
+            left: 81%;
+            height: 105px;
+            width: 70px; } }
     .page-id-18 .content-container .partners-information-container li + .partners-text {
       margin-top: 3.75rem; }
     .page-id-18 .content-container .partners-information-container .partners-text {
-      height: auto;
-      width: 100%;
-      margin: 1.5rem auto;
-      font-weight: 100;
-      text-align: center; }
+      text-align: center;
+      margin-top: 56px;
+      line-height: 28px;
+      padding-right: 10px; }
       @media all and (min-width: 760px) {
         .page-id-18 .content-container .partners-information-container .partners-text {
-          width: 330px;
-          padding: 2rem 0 0;
-          transform: translateX(-1rem);
-          font-size: 21px;
-          margin-top: 7.5rem; } }
-    .page-id-18 .content-container .partners-information-container .partners-text-2 {
-      margin-top: 2.8rem;
-      padding-top: 0; }
-      @media all and (min-width: 760px) {
-        .page-id-18 .content-container .partners-information-container .partners-text-2 {
-          font-size: 21px;
-          margin-top: 7.5rem; } }
-  .page-id-18 .infographic-container {
+          font-size: 22px;
+          width: 74%;
+          margin: 0 auto;
+          padding-top: 40px; } }
+
+.infographic-container {
+  height: auto;
+  width: 100%;
+  padding: 0.5rem 0 1.5rem;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  position: relative; }
+  .infographic-container .business-model-diagram {
     height: auto;
-    width: 100%;
-    padding: 0.5rem 0 1.5rem;
-    text-align: center;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: column nowrap;
-        flex-flow: column nowrap;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center;
-    position: relative; }
-    .page-id-18 .infographic-container .business-model-diagram {
-      height: auto;
-      width: 95%; }
-      @media all and (min-width: 760px) {
-        .page-id-18 .infographic-container .business-model-diagram {
-          height: 530px; } }
-    .page-id-18 .infographic-container .key-graphic-1 {
-      display: none; }
-      @media all and (min-width: 760px) {
-        .page-id-18 .infographic-container .key-graphic-1 {
-          width: 85px;
-          position: absolute;
-          top: 15%;
-          left: 16%;
-          opacity: .5;
-          transform: rotate(25deg);
-          display: inline; } }
-    .page-id-18 .infographic-container .key-graphic-2 {
-      display: none; }
-      @media all and (min-width: 760px) {
-        .page-id-18 .infographic-container .key-graphic-2 {
-          width: 55px;
-          position: absolute;
-          top: 19.5%;
-          left: 18.75%;
-          transform: rotate(-25deg);
-          display: inline; } }
-    .page-id-18 .infographic-container .dollar-sign-graphic-1 {
-      display: none; }
-      @media all and (min-width: 760px) {
-        .page-id-18 .infographic-container .dollar-sign-graphic-1 {
-          position: absolute;
-          top: 14%;
-          right: 16%;
-          opacity: 0.5;
-          display: inline; } }
-    .page-id-18 .infographic-container .dollar-sign-graphic-2 {
-      display: none; }
-      @media all and (min-width: 760px) {
-        .page-id-18 .infographic-container .dollar-sign-graphic-2 {
-          width: 65px;
-          position: absolute;
-          top: 25%;
-          right: 19%;
-          display: inline; } }
-    .page-id-18 .infographic-container .green-line-graphic-1 {
-      display: none; }
-      @media all and (min-width: 760px) {
-        .page-id-18 .infographic-container .green-line-graphic-1 {
-          height: auto;
-          width: 150px;
-          position: absolute;
-          top: 9.75rem;
-          left: 24.35%;
-          transform: rotate(-117deg);
-          display: inline; } }
-    .page-id-18 .infographic-container .green-line-graphic-2 {
-      display: none; }
-      @media all and (min-width: 760px) {
-        .page-id-18 .infographic-container .green-line-graphic-2 {
-          height: auto;
-          width: 150px;
-          position: absolute;
-          top: 9.55rem;
-          left: 65.5%;
-          transform: rotate(-3deg);
-          display: inline; } }
-  .page-id-18 .supporters-logo-container {
-    height: auto;
-    width: 75%;
-    margin: 0 auto;
-    padding: 4% 9%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: row wrap;
-        flex-flow: row wrap;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center; }
+    width: 95%; }
     @media all and (min-width: 760px) {
-      .page-id-18 .supporters-logo-container {
-        padding: 0 0 3rem;
-        width: 750px; } }
-    .page-id-18 .supporters-logo-container .sponsor-logo {
-      height: 40px;
-      width: auto;
-      margin: 5%;
-      filter: grayscale(100%) invert(60%); }
+      .infographic-container .business-model-diagram {
+        height: 530px; } }
+  .infographic-container .key-graphic-1 {
+    display: none; }
+    @media all and (min-width: 760px) {
+      .infographic-container .key-graphic-1 {
+        width: 85px;
+        position: absolute;
+        top: 15%;
+        left: 16%;
+        opacity: .5;
+        transform: rotate(25deg);
+        display: inline; } }
+  .infographic-container .key-graphic-2 {
+    display: none; }
+    @media all and (min-width: 760px) {
+      .infographic-container .key-graphic-2 {
+        width: 55px;
+        position: absolute;
+        top: 19.5%;
+        left: 18.75%;
+        transform: rotate(-25deg);
+        display: inline; } }
+  .infographic-container .dollar-sign-graphic-1 {
+    display: none; }
+    @media all and (min-width: 760px) {
+      .infographic-container .dollar-sign-graphic-1 {
+        position: absolute;
+        top: 14%;
+        right: 16%;
+        opacity: 0.5;
+        display: inline; } }
+  .infographic-container .dollar-sign-graphic-2 {
+    display: none; }
+    @media all and (min-width: 760px) {
+      .infographic-container .dollar-sign-graphic-2 {
+        width: 65px;
+        position: absolute;
+        top: 25%;
+        right: 19%;
+        display: inline; } }
+  .infographic-container .green-line-graphic-1 {
+    display: none; }
+    @media all and (min-width: 760px) {
+      .infographic-container .green-line-graphic-1 {
+        height: auto;
+        width: 150px;
+        position: absolute;
+        top: 9.75rem;
+        left: 24.35%;
+        transform: rotate(-117deg);
+        display: inline; } }
+  .infographic-container .green-line-graphic-2 {
+    display: none; }
+    @media all and (min-width: 760px) {
+      .infographic-container .green-line-graphic-2 {
+        height: auto;
+        width: 150px;
+        position: absolute;
+        top: 9.55rem;
+        left: 65.5%;
+        transform: rotate(-3deg);
+        display: inline; } }
+
+.supporters-logo-container {
+  height: auto;
+  width: 75%;
+  margin: 0 auto;
+  padding: 4% 9%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  @media all and (min-width: 760px) {
+    .supporters-logo-container {
+      padding: 0 0 3rem;
+      width: 750px; } }
+  .supporters-logo-container .sponsor-logo {
+    height: 40px;
+    width: auto;
+    margin: 5%;
+    filter: grayscale(100%) invert(60%); }
+    @media all and (min-width: 760px) {
+      .supporters-logo-container .sponsor-logo {
+        height: 30px;
+        margin: 1.5rem 2.5rem; } }
+    @media all and (min-width: 760px) {
+      .supporters-logo-container .sponsor-logo:first-child {
+        margin: 3rem;
+        margin-bottom: 2rem; } }
+    @media all and (min-width: 760px) {
+      .supporters-logo-container .sponsor-logo:nth-child(2) {
+        height: 50px;
+        margin: 3rem;
+        margin-bottom: 2rem; } }
+    @media all and (min-width: 760px) {
+      .supporters-logo-container .sponsor-logo:nth-child(3) {
+        margin: 3rem;
+        margin-bottom: 2rem; } }
+    .supporters-logo-container .sponsor-logo:nth-child(4) {
+      filter: grayscale(100%) invert(10%); }
       @media all and (min-width: 760px) {
-        .page-id-18 .supporters-logo-container .sponsor-logo {
-          height: 30px;
-          margin: 1.5rem 2.5rem; } }
-      @media all and (min-width: 760px) {
-        .page-id-18 .supporters-logo-container .sponsor-logo:first-child {
+        .supporters-logo-container .sponsor-logo:nth-child(4) {
+          height: 45px;
           margin: 3rem;
           margin-bottom: 2rem; } }
+    .supporters-logo-container .sponsor-logo:nth-child(5) {
+      height: 35px; }
       @media all and (min-width: 760px) {
-        .page-id-18 .supporters-logo-container .sponsor-logo:nth-child(2) {
-          height: 50px;
-          margin: 3rem;
-          margin-bottom: 2rem; } }
-      @media all and (min-width: 760px) {
-        .page-id-18 .supporters-logo-container .sponsor-logo:nth-child(3) {
-          margin: 3rem;
-          margin-bottom: 2rem; } }
-      .page-id-18 .supporters-logo-container .sponsor-logo:nth-child(4) {
-        filter: grayscale(100%) invert(10%); }
-        @media all and (min-width: 760px) {
-          .page-id-18 .supporters-logo-container .sponsor-logo:nth-child(4) {
-            height: 45px;
-            margin: 3rem;
-            margin-bottom: 2rem; } }
-      .page-id-18 .supporters-logo-container .sponsor-logo:nth-child(5) {
-        height: 35px; }
-        @media all and (min-width: 760px) {
-          .page-id-18 .supporters-logo-container .sponsor-logo:nth-child(5) {
-            margin: 1rem;
-            margin-left: 0;
-            filter: grayscale(100%) invert(15%); } }
-      .page-id-18 .supporters-logo-container .sponsor-logo:nth-child(6) {
-        height: 100px;
-        filter: grayscale(100%) invert(1%); }
-        @media all and (min-width: 760px) {
-          .page-id-18 .supporters-logo-container .sponsor-logo:nth-child(6) {
-            margin: 1rem;
-            height: 110px;
-            filter: grayscale(80%) saturate(15%); } }
-      @media all and (min-width: 760px) {
-        .page-id-18 .supporters-logo-container .sponsor-logo:nth-child(7) {
-          margin: 1rem; } }
-      @media all and (min-width: 760px) {
-        .page-id-18 .supporters-logo-container .sponsor-logo:nth-child(8) {
-          margin: 1rem; } }
-      @media all and (min-width: 760px) {
-        .page-id-18 .supporters-logo-container .sponsor-logo:nth-child(9) {
+        .supporters-logo-container .sponsor-logo:nth-child(5) {
           margin: 1rem;
-          margin-right: 0; } }
+          margin-left: 0;
+          filter: grayscale(100%) invert(15%); } }
+    .supporters-logo-container .sponsor-logo:nth-child(6) {
+      height: 100px;
+      filter: grayscale(100%) invert(1%); }
+      @media all and (min-width: 760px) {
+        .supporters-logo-container .sponsor-logo:nth-child(6) {
+          margin: 1rem;
+          height: 110px;
+          filter: grayscale(80%) saturate(15%); } }
+    @media all and (min-width: 760px) {
+      .supporters-logo-container .sponsor-logo:nth-child(7) {
+        margin: 1rem; } }
+    @media all and (min-width: 760px) {
+      .supporters-logo-container .sponsor-logo:nth-child(8) {
+        margin: 1rem; } }
+    @media all and (min-width: 760px) {
+      .supporters-logo-container .sponsor-logo:nth-child(9) {
+        margin: 1rem;
+        margin-right: 0; } }
 
 /*--------------------------------------------------------------
 # Page Templates
