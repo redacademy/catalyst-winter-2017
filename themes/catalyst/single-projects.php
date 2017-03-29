@@ -36,31 +36,37 @@
 
             <div class="proj-content">
                 <h3>Structure: </h3>
-                <?php $structure = CFS()->get( 'structure' );
+                <?php $structure = wp_kses_post(CFS()->get( 'structure' ) );
                 if ( !empty( $structure ) ) :?>
                 <?php echo $structure; ?>
                 <?php endif; ?>
 
                 <h3>Status: </h3>
-                <?php $status = CFS()->get( 'status' );
+                <?php $status = wp_kses_post(CFS()->get( 'status' ) );
                 if ( !empty( $status ) ) :?>
                 <p><?php echo $status; ?></p>
                 <?php endif; ?>
 
+                <h3>Catalyst Role: </h3>
+                <?php $cRole = wp_kses_post( CFS()->get( 'catalyst_role' ) );
+                if ( !empty( $cRole ) ) :?>
+                <p><?php echo $cRole; ?></p>
+                <?php endif; ?>
+
                 <h3>Partners: </h3>
-                <?php $partners = CFS()->get( 'partners' );
+                <?php $partners = wp_kses_post( CFS()->get( 'partners' ) );
                 if ( !empty( $partners ) ) :?>
                 <?php echo $partners; ?>
                 <?php endif; ?>
 
                 <h3>Financing/Grants: </h3>
-                <?php $financing_grants = CFS()->get( 'financing_grants' );
+                <?php $financing_grants = wp_kses_post( CFS()->get( 'financing_grants' ) );
                 if ( !empty( $financing_grants ) ) :?>
                 <?php echo $financing_grants; ?>
                 <?php endif; ?>
 
                 <h3>Affordability: </h3>
-                <?php $affordability = CFS()->get( 'affordability' );
+                <?php $affordability = wp_kses_post( CFS()->get( 'affordability' ) );
                 if ( !empty( $affordability ) ) :?>
                 <?php echo $affordability; ?>
                 <?php endif; ?>
