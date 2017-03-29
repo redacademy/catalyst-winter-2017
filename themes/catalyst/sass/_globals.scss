@@ -1,6 +1,6 @@
 .hero-image-banner {
 	height: 45vh;
-    position: relative;
+    // position: relative;
     min-width: 100%;
     @include flex-column(nowrap, center, center);
     @include media($desktop-width) {
