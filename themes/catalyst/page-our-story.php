@@ -14,17 +14,13 @@ get_header(); ?>
 
 			<section class="catalyst-mission">
 
-  				<?php $content_title1 = esc_html( CFS()->get('content_title1') );
-                if ( !empty( $content_title1 ) ) :?>
-				<div class="blue-background-header">
-                	<h2 class='subheader-lrg'><?php echo $content_title1; ?></h2>
-				</div>
-                <?php endif; ?>
 
-				<?php $our_mission = esc_html( CFS()->get( 'our_mission' ) );
-                if ( !empty( $our_mission ) ) :?>
-                <h3 class='status'><?php echo $our_mission; ?></h3>
-                <?php endif; ?>
+				<div class="blue-background-header">
+                	<h2 class='subheader-lrg'><?php echo esc_html( CFS()->get('content_title1')); ?></h2>
+				</div>
+
+                <h3 class='status'><?php echo esc_html( CFS()->get( 'our_mission' ) ); ?></h3>
+
 
 				<div class="mission-quote">
 					<div class="quotation-left"></div>
@@ -104,25 +100,18 @@ get_header(); ?>
 			</section>
 
 			<section class="formula">
-			<?php $content_title2 = esc_html( CFS()->get( 'content_title2' ) );
-			if ( !empty( $content_title2 ) ) :?>
+
 			<div class="blue-background-header">
-
-				<h2 class='subheader-lrg'><?php echo $content_title2; ?></h2>
-
+				<h2 class='subheader-lrg'><?php echo esc_html( CFS()->get( 'content_title2' ) ); ?></h2>
 			</div>
-			<?php endif; ?>
+
 
 				<div class="formula-p">
-					<?php $formula_text1 = esc_html( CFS()->get( 'formula_text1' ) );
-					if ( !empty( $formula_text1 ) ) :?>
-					<p class="formula-text1"><?php echo $formula_text1; ?></p>
-					<?php endif; ?>
 
-					<?php $formula_text2 = esc_html( CFS()->get( 'formula_text2' ) );
-					if ( !empty( $formula_text2 ) ) :?>
-					<p class="formula-text2"><?php echo $formula_text2; ?></p>
-					<?php endif; ?>
+				<p class="formula-text1"><?php echo esc_html( CFS()->get( 'formula_text1' ) ); ?></p>
+
+				<p class="formula-text2"><?php echo esc_html( CFS()->get( 'formula_text2' ) ); ?></p>
+
 				</div>
 
 				<?php get_template_part( 'template-parts/ourStory-carousel', 'projects carousel' ); ?>
