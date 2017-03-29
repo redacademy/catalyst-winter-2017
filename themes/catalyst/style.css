@@ -585,7 +585,10 @@ textarea {
   width: 50%; }
 
 .site-header {
-  height: 100px; }
+  height: 85px; }
+  @media all and (min-width: 760px) {
+    .site-header {
+      height: 65px; } }
 
 .container {
   display: -ms-flexbox;
@@ -607,23 +610,20 @@ textarea {
   .container .header-logo {
     background: url("../../images/full-logo.svg") no-repeat;
     background-size: 100%;
-    margin: 15px auto;
+    margin: 0;
+    margin-top: 7px;
     display: -ms-flexbox;
     display: flex;
-    width: 145px;
-    height: 60px;
+    width: 161px;
+    height: 66px;
     text-align: center;
     overflow: hidden;
     text-indent: 193%; }
-    @media all and (min-width: 760px) {
+    @media all and (min-width: 1180px) {
       .container .header-logo {
-        margin: 20px auto;
-        width: 110px; } }
-    @media all and (min-width: 845px) {
-      .container .header-logo {
-        height: 100px;
-        margin: 15px auto;
-        width: 145px; } }
+        height: 80px;
+        width: 123px;
+        margin-top: 10px; } }
   .container .top-menu {
     position: absolute;
     right: 0%;
@@ -658,7 +658,7 @@ textarea {
       -ms-flex-pack: end;
           justify-content: flex-end;
       margin: 0 auto;
-      padding-top: 45px;
+      padding-top: 35px;
       padding-right: 5%;
       list-style: none; }
       .container .desktop-menu #primary-menu ul {
@@ -692,7 +692,7 @@ textarea {
     -ms-flex-align: end;
         align-items: flex-end; }
     .container .hamburger-menu .hamburger {
-      margin-top: 27px;
+      margin-top: 5px;
       margin-right: 20px; }
     .container .hamburger-menu ul {
       display: -ms-flexbox;
