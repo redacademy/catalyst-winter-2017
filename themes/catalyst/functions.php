@@ -56,7 +56,7 @@ add_action( 'after_setup_theme', 'catalyst_content_width', 0 );
  */
 function catalyst_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html( 'Sidebar' ),
+		'name'          => esc_html( 'Twitter-widget' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -99,7 +99,7 @@ function catalyst_scripts() {
 
 	wp_enqueue_style( 'fontAwesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.4.0');
 	wp_enqueue_script( 'catalyst-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
-	
+
 	wp_enqueue_script( 'catalyst', get_template_directory_uri() . '/build/js/main.min.js', array('jquery'), false, true);
 
 	wp_localize_script( 'catalyst', 'api_vars', array(
