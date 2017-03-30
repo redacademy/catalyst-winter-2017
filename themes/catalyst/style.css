@@ -463,9 +463,6 @@ table {
     position: absolute;
     text-align: center; }
 
-.body:not(.home) .menu-menu-1-container {
-  max-height: 45vh; }
-
 .formulas:last-child .fill {
   display: none; }
 
@@ -2848,7 +2845,8 @@ object {
     max-width: 900px;
     color: white;
     padding: 0 2rem;
-    line-height: 1; }
+    line-height: 1;
+    top: 15%; }
   .page-id-7 .entry-title {
     margin-bottom: 1.5rem;
     font-size: 3.4rem;
@@ -2868,7 +2866,9 @@ object {
     line-height: 1.75rem;
     letter-spacing: 2px;
     margin: 0 auto;
-    text-shadow: 1px 2px 5px #323232; }
+    text-shadow: 1px 2px 5px #323232;
+    width: 95%;
+    font-size: 1.2rem; }
   .page-id-7 .banner-text-small {
     font-size: 1rem;
     letter-spacing: 2px;
