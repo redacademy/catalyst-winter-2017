@@ -155,7 +155,7 @@
     }
     .robert {
         text-align: center;
-        // margin-top: 25px;
+
         @include media($desktop-width) {
             margin-top: 0px;
             font-size: 30px;
