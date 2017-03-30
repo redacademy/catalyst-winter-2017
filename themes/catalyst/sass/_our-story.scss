@@ -9,12 +9,7 @@
         @include banner-text;
     }
     .intro-copy {
-        width: 60%;
-        line-height: 26px;
-        margin-bottom: 30px;
-        @include media($desktop-width) {
-            @include intro-copy;
-        }
+        @include intro-copy;
     }
     .site-content {
         text-align: center;

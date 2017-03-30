@@ -1358,19 +1358,14 @@ object {
   text-shadow: 1px 2px 5px #323232; }
 
 .page-id-21 .intro-copy {
-  width: 60%;
-  line-height: 26px;
-  margin-bottom: 30px; }
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem 1rem;
+  font-size: 1.25rem;
+  font-family: quattrocento, sans-serif;
+  text-align: center; }
   @media all and (min-width: 760px) {
-    .page-id-21 .intro-copy {
-      height: auto;
-      width: 100%;
-      margin: 0 auto;
-      padding: 2rem 1rem 1rem;
-      font-size: 1.25rem;
-      font-family: quattrocento, sans-serif;
-      text-align: center; } }
-  @media all and (min-width: 760px) and (min-width: 760px) {
     .page-id-21 .intro-copy {
       font-size: 1.4rem;
       padding: 2.75rem 0.85rem;
