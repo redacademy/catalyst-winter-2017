@@ -2139,6 +2139,7 @@ object {
     .page-id-159 .advisors-profiles-wrapper .board-profiles-header {
       height: auto;
       width: 100%;
+      max-width: 950px;
       margin: 2rem auto 1rem;
       position: relative;
       display: -ms-flexbox;
@@ -2166,8 +2167,7 @@ object {
         .page-id-159 .board-profiles-wrapper .board-profiles-header .board-exit-button span,
         .page-id-159 .advisors-profiles-wrapper .board-profiles-header .board-exit-button span {
           position: relative;
-          bottom: 2px;
-          right: 1px;
+          bottom: 1px;
           font-size: 2.05rem; }
     .page-id-159 .staff-profiles-wrapper .navigation-button-container,
     .page-id-159 .board-profiles-wrapper .navigation-button-container,
