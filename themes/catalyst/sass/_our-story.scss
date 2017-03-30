@@ -20,6 +20,7 @@
         margin: auto;
         line-height: 35px;
         width: 450px;
+        max-width: 100%;
         font-size: 30px;
         font-weight: 300;
         @include media($desktop-width) {
@@ -144,10 +145,10 @@
         }
     }
     .quotation-right2 {
-        left: 82%;
-        top: 46%;
+        left: 70%;
+        top: 78%;
         @include media($desktop-width) {
-            left: 86%;
+            left: 83%;
             top: 44%;
         }
         @include media(1200px) {
@@ -155,10 +156,11 @@
         }
     }
     .robert {
+        margin: 3.5rem auto;
         text-align: center;
 
         @include media($desktop-width) {
-            margin-top: 0px;
+            margin: 2rem auto;
             font-size: 30px;
         }
     }

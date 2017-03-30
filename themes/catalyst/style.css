@@ -463,6 +463,9 @@ table {
     position: absolute;
     text-align: center; }
 
+.body:not(.home) .menu-menu-1-container {
+  max-height: 45vh; }
+
 .formulas:last-child .fill {
   display: none; }
 
@@ -999,7 +1002,7 @@ textarea {
         margin-bottom: 1rem;
         font-size: 3.85rem; } }
   .home .header-text p {
-    width: 80%;
+    width: 90%;
     font-size: 1.4rem;
     font-family: quattrocento, sans-serif;
     font-weight: 700;
@@ -1365,7 +1368,7 @@ object {
       font-size: 3.85rem; } }
 
 .page-id-21 .banner-text {
-  width: 80%;
+  width: 90%;
   font-size: 1.4rem;
   font-family: quattrocento, sans-serif;
   font-weight: 700;
@@ -1398,6 +1401,7 @@ object {
   margin: auto;
   line-height: 35px;
   width: 450px;
+  max-width: 100%;
   font-size: 30px;
   font-weight: 300; }
   @media all and (min-width: 760px) {
@@ -1560,21 +1564,22 @@ object {
       left: 74%; } }
 
 .page-id-21 .quotation-right2 {
-  left: 82%;
-  top: 46%; }
+  left: 70%;
+  top: 78%; }
   @media all and (min-width: 760px) {
     .page-id-21 .quotation-right2 {
-      left: 86%;
+      left: 83%;
       top: 44%; } }
   @media all and (min-width: 1200px) {
     .page-id-21 .quotation-right2 {
       top: 36%; } }
 
 .page-id-21 .robert {
+  margin: 3.5rem auto;
   text-align: center; }
   @media all and (min-width: 760px) {
     .page-id-21 .robert {
-      margin-top: 0px;
+      margin: 2rem auto;
       font-size: 30px; } }
 
 .page-id-21 h4 {
@@ -1747,10 +1752,10 @@ object {
     color: white;
     padding: 0 2rem;
     line-height: 1;
-    top: 25%; }
+    top: 10%; }
     @media all and (min-width: 760px) {
       .page-id-159 .header-text {
-        top: 34%; } }
+        top: 25%; } }
   .page-id-159 .entry-title {
     margin-bottom: 1.5rem;
     font-size: 3.4rem;
@@ -1763,7 +1768,7 @@ object {
         font-size: 3.85rem; } }
   .page-id-159 .banner-text {
     width: 95%;
-    width: 80%;
+    width: 90%;
     font-size: 1.4rem;
     font-family: quattrocento, sans-serif;
     font-weight: 700;
@@ -2280,7 +2285,7 @@ object {
         margin-bottom: 1rem;
         font-size: 3.85rem; } }
   .page-id-19 .banner-text {
-    width: 80%;
+    width: 90%;
     font-size: 1.4rem;
     font-family: quattrocento, sans-serif;
     font-weight: 700;
@@ -2450,7 +2455,7 @@ object {
         margin-bottom: 1rem;
         font-size: 3.85rem; } }
   .page-id-18 .banner-text {
-    width: 80%;
+    width: 90%;
     font-size: 1.4rem;
     font-family: quattrocento, sans-serif;
     font-weight: 700;
@@ -2855,7 +2860,7 @@ object {
         margin-bottom: 1rem;
         font-size: 3.85rem; } }
   .page-id-7 .banner-text {
-    width: 80%;
+    width: 90%;
     font-size: 1.4rem;
     font-family: quattrocento, sans-serif;
     font-weight: 700;
@@ -2997,7 +3002,7 @@ object {
       font-size: 3.85rem; } }
 
 .page-id-196 .banner-text {
-  width: 80%;
+  width: 90%;
   font-size: 1.4rem;
   font-family: quattrocento, sans-serif;
   font-weight: 700;
@@ -3138,7 +3143,7 @@ object {
       font-size: 3.85rem; } }
 
 .page-id-195 .banner-text {
-  width: 80%;
+  width: 90%;
   font-size: 1.4rem;
   font-family: quattrocento, sans-serif;
   font-weight: 700;

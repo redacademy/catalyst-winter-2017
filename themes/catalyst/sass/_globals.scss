@@ -14,6 +14,13 @@
     }
 }
 
+.body:not(.home) {
+	
+	.menu-menu-1-container {
+		max-height: 45vh;
+	}
+}
+
 .formulas:last-child {
 	.fill {
 		display: none;
