@@ -17,7 +17,7 @@ get_header(); ?>
 
 
 <div class="blue-background-header">
-    <h2 class="subheader-sm">link to other stories</h2>
+    <h2 class="subheader-sm">more stories</h2>
 </div>
 <div class="newsmedia-content">
     <?php get_sidebar(); ?>
