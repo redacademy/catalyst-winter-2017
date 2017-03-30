@@ -23,7 +23,7 @@ get_header(); ?>
 			<p class="main-copy2"><?php echo esc_html(CFS()->get( 'main_copy2' ) ); ?></p>
 			<p class="main-copy3"><?php echo esc_html(CFS()->get( 'main_copy3' ) ); ?></p>
 			</div>
-			<a class="navigation-button" href="#">Learn More</a>
+			<a class="navigation-button" href="<?php echo get_home_url(); ?>/our-story">Learn More</a>
 
 			<div class="partners-information-container">
 				<section class="non-profit-information partners-information">
