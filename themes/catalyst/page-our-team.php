@@ -31,7 +31,7 @@ get_header(); ?>
                     <?php get_template_part( 'template-parts/content', 'staff' ); ?>
                 <?php endforeach; wp_reset_postdata(); ?>
                 <div class="navigation-button-container">
-                    <a class="navigation-button" href="<?php echo get_home_url(); ?>/careers">Join Our Team</a>
+                    <a class="navigation-button" href="<?php echo get_home_url(); ?>/collaborate">Join Our Team</a>
                 </div>
             </div>
 
