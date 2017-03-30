@@ -46,6 +46,22 @@ function catalyst_hero_image_css() {
     }
     add_action( 'wp_enqueue_scripts', 'catalyst_hero_image_css' );
 
+function catalyst_project_image_css() {
+    if ( is_front_page()  === false ) {
+
+        $url = CFS()->get ( 'pBanner');
+
+        $project_image_css = ".project-image-banner{
+            background: linear-gradient( to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100% ),
+            url({$url}) no-repeat center bottom;
+            background-size: cover, cover;
+        }";
+
+        wp_add_inline_style( 'catalyst-style', $project_image_css );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'catalyst_project_image_css' );
+
 
 function flexible_widget_titles( $widget_title ) {
 

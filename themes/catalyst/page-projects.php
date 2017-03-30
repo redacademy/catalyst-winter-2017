@@ -40,7 +40,7 @@ get_header(); ?>
                 </h2>
             </div>
             <div class="img-container">
-                <img class='project-image' src='<?php echo esc_attr( CFS()->get('heroimage') ); ?>'>
+                <img class='project-image' src='<?php echo esc_attr( CFS()->get('pBanner') ); ?>'>
             </div>
             <a href="<?php the_permalink(); ?>" class="navigation-button">Learn More</a>
         </div>
