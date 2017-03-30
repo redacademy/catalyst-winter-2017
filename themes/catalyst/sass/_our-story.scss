@@ -216,9 +216,8 @@
         }
         .mission-image {
             width: 100%;
-            display: flex;
-            flex-wrap: wrap;
             margin: 0 auto;
+            @include flex-column(nowrap, flex-start, center);
             @include media($desktop-width) {
                 width: 25%;
             }
