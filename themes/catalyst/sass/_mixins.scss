@@ -29,13 +29,14 @@
 	}
 }
 @mixin banner-text {
+	width: 80%;
 	font-size: 1.4rem;
   	font-family: $font__secondary;
   	font-weight: $font__bold;
 	margin: $base__space-unit auto;
 	line-height: 1.65rem;
 	letter-spacing: 2px;
-	margin: 0;
+	margin: 0 auto;
 	@include header-text-shadow;
 }
 

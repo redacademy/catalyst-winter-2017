@@ -996,13 +996,14 @@ textarea {
         margin-bottom: 1rem;
         font-size: 3.85rem; } }
   .home .header-text p {
+    width: 80%;
     font-size: 1.4rem;
     font-family: quattrocento, sans-serif;
     font-weight: 700;
     margin: 1.5rem auto;
     line-height: 1.65rem;
     letter-spacing: 2px;
-    margin: 0;
+    margin: 0 auto;
     text-shadow: 1px 2px 5px #323232; }
 
 .home .navigation-button {
@@ -1361,13 +1362,14 @@ object {
       font-size: 3.85rem; } }
 
 .page-id-21 .banner-text {
+  width: 80%;
   font-size: 1.4rem;
   font-family: quattrocento, sans-serif;
   font-weight: 700;
   margin: 1.5rem auto;
   line-height: 1.65rem;
   letter-spacing: 2px;
-  margin: 0;
+  margin: 0 auto;
   text-shadow: 1px 2px 5px #323232; }
 
 .page-id-21 .intro-copy {
@@ -1753,13 +1755,14 @@ object {
         font-size: 3.85rem; } }
   .page-id-159 .banner-text {
     width: 95%;
+    width: 80%;
     font-size: 1.4rem;
     font-family: quattrocento, sans-serif;
     font-weight: 700;
     margin: 1.5rem auto;
     line-height: 1.65rem;
     letter-spacing: 2px;
-    margin: 0;
+    margin: 0 auto;
     text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 760px) {
       .page-id-159 .banner-text {
@@ -2269,13 +2272,14 @@ object {
         margin-bottom: 1rem;
         font-size: 3.85rem; } }
   .page-id-19 .banner-text {
+    width: 80%;
     font-size: 1.4rem;
     font-family: quattrocento, sans-serif;
     font-weight: 700;
     margin: 1.5rem auto;
     line-height: 1.65rem;
     letter-spacing: 2px;
-    margin: 0;
+    margin: 0 auto;
     text-shadow: 1px 2px 5px #323232; }
   .page-id-19 .entry-header {
     display: none; }
@@ -2438,13 +2442,14 @@ object {
         margin-bottom: 1rem;
         font-size: 3.85rem; } }
   .page-id-18 .banner-text {
+    width: 80%;
     font-size: 1.4rem;
     font-family: quattrocento, sans-serif;
     font-weight: 700;
     margin: 1.5rem auto;
     line-height: 1.65rem;
     letter-spacing: 2px;
-    margin: 0;
+    margin: 0 auto;
     text-shadow: 1px 2px 5px #323232; }
   .page-id-18 .intro-copy {
     height: auto;
@@ -2842,13 +2847,14 @@ object {
         margin-bottom: 1rem;
         font-size: 3.85rem; } }
   .page-id-7 .banner-text {
+    width: 80%;
     font-size: 1.4rem;
     font-family: quattrocento, sans-serif;
     font-weight: 700;
     margin: 1.5rem auto;
     line-height: 1.65rem;
     letter-spacing: 2px;
-    margin: 0;
+    margin: 0 auto;
     text-shadow: 1px 2px 5px #323232; }
   .page-id-7 .banner-text-small {
     font-size: 1rem;
@@ -2983,13 +2989,14 @@ object {
       font-size: 3.85rem; } }
 
 .page-id-196 .banner-text {
+  width: 80%;
   font-size: 1.4rem;
   font-family: quattrocento, sans-serif;
   font-weight: 700;
   margin: 1.5rem auto;
   line-height: 1.65rem;
   letter-spacing: 2px;
-  margin: 0;
+  margin: 0 auto;
   text-shadow: 1px 2px 5px #323232; }
 
 .page-id-196 .intro-copy {
@@ -3122,13 +3129,14 @@ object {
       font-size: 3.85rem; } }
 
 .page-id-195 .banner-text {
+  width: 80%;
   font-size: 1.4rem;
   font-family: quattrocento, sans-serif;
   font-weight: 700;
   margin: 1.5rem auto;
   line-height: 1.65rem;
   letter-spacing: 2px;
-  margin: 0;
+  margin: 0 auto;
   text-shadow: 1px 2px 5px #323232; }
 
 .page-id-195 .intro-copy {
