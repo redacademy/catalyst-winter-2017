@@ -2892,6 +2892,8 @@ object {
           -ms-flex-pack: justify;
               justify-content: space-between;
           padding: 0.5rem 2rem; } }
+      .page-id-7 .wpcf7 form span.wpcf7-not-valid-tip {
+        margin-top: 0.75rem; }
       @media all and (min-width: 760px) {
         .page-id-7 .wpcf7 form p:nth-child(2),
         .page-id-7 .wpcf7 form p:nth-child(3),
