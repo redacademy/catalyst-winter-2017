@@ -9,6 +9,9 @@
     .header-text {
         @include header-text;
         top: 15%;
+        @include media($desktop-width) {
+            top: 35%;
+        }
     }
     .entry-title {
         @include page-title;

@@ -2847,6 +2847,9 @@ object {
     padding: 0 2rem;
     line-height: 1;
     top: 15%; }
+    @media all and (min-width: 760px) {
+      .page-id-7 .header-text {
+        top: 35%; } }
   .page-id-7 .entry-title {
     margin-bottom: 1.5rem;
     font-size: 3.4rem;
