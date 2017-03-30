@@ -3037,7 +3037,8 @@ object {
 .page-id-196 .job-container {
   width: 100%;
   max-width: 1000px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  line-height: 1.75rem; }
 
 .page-id-196 .job-post {
   margin: 0 10%;
