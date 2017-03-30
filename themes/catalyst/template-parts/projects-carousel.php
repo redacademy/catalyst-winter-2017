@@ -16,7 +16,7 @@
         $id = get_the_id(); ?>
         <div class="other-proj-wrapper">
             <div class="image-wrapper">
-                <a href="<?php echo get_permalink() ?>"><img src='<?php echo esc_attr( CFS()->get('heroimage', $id) ); ?>' /></a>
+                <a href="<?php echo get_permalink() ?>"><img src='<?php echo esc_attr( CFS()->get('pBanner', $id) ); ?>' /></a>
             </div>
 
             <p class='project-name'><?php echo esc_html( CFS()->get('project_name', $id) ); ?></p>
