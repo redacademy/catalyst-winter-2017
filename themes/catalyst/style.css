@@ -1004,7 +1004,7 @@ textarea {
     font-family: quattrocento, sans-serif;
     font-weight: 700;
     margin: 1.5rem auto;
-    line-height: 1.65rem;
+    line-height: 1.75rem;
     letter-spacing: 2px;
     margin: 0 auto;
     text-shadow: 1px 2px 5px #323232; }
@@ -1370,7 +1370,7 @@ object {
   font-family: quattrocento, sans-serif;
   font-weight: 700;
   margin: 1.5rem auto;
-  line-height: 1.65rem;
+  line-height: 1.75rem;
   letter-spacing: 2px;
   margin: 0 auto;
   text-shadow: 1px 2px 5px #323232; }
@@ -1630,11 +1630,15 @@ object {
         transform: rotate(0deg); } }
   .page-id-21 .mission-content .mission-image {
     width: 100%;
+    margin: 0 auto;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin: 0 auto; }
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-align: center;
+        align-items: center; }
     @media all and (min-width: 760px) {
       .page-id-21 .mission-content .mission-image {
         width: 25%; } }
@@ -1763,7 +1767,7 @@ object {
     font-family: quattrocento, sans-serif;
     font-weight: 700;
     margin: 1.5rem auto;
-    line-height: 1.65rem;
+    line-height: 1.75rem;
     letter-spacing: 2px;
     margin: 0 auto;
     text-shadow: 1px 2px 5px #323232; }
@@ -2280,7 +2284,7 @@ object {
     font-family: quattrocento, sans-serif;
     font-weight: 700;
     margin: 1.5rem auto;
-    line-height: 1.65rem;
+    line-height: 1.75rem;
     letter-spacing: 2px;
     margin: 0 auto;
     text-shadow: 1px 2px 5px #323232; }
@@ -2450,7 +2454,7 @@ object {
     font-family: quattrocento, sans-serif;
     font-weight: 700;
     margin: 1.5rem auto;
-    line-height: 1.65rem;
+    line-height: 1.75rem;
     letter-spacing: 2px;
     margin: 0 auto;
     text-shadow: 1px 2px 5px #323232; }
@@ -2855,7 +2859,7 @@ object {
     font-family: quattrocento, sans-serif;
     font-weight: 700;
     margin: 1.5rem auto;
-    line-height: 1.65rem;
+    line-height: 1.75rem;
     letter-spacing: 2px;
     margin: 0 auto;
     text-shadow: 1px 2px 5px #323232; }
@@ -2997,7 +3001,7 @@ object {
   font-family: quattrocento, sans-serif;
   font-weight: 700;
   margin: 1.5rem auto;
-  line-height: 1.65rem;
+  line-height: 1.75rem;
   letter-spacing: 2px;
   margin: 0 auto;
   text-shadow: 1px 2px 5px #323232; }
@@ -3138,7 +3142,7 @@ object {
   font-family: quattrocento, sans-serif;
   font-weight: 700;
   margin: 1.5rem auto;
-  line-height: 1.65rem;
+  line-height: 1.75rem;
   letter-spacing: 2px;
   margin: 0 auto;
   text-shadow: 1px 2px 5px #323232; }
