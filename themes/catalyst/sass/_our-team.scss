@@ -7,7 +7,7 @@
     }
     .header-text {
         @include header-text;
-        top: 10%;
+        top: 15%;
         @include media($desktop-width) {
             top: 25%;
         }
