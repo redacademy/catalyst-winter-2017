@@ -1,10 +1,8 @@
 .single-projects {
-
     h3,
     p {
         color: $color__text-main;
     }
-
     .hero-image-banner {
         p {
             color: #fff;
@@ -26,7 +24,7 @@
             font-size: 1.3rem;
             margin-bottom: 0.3rem;
             letter-spacing: 1px;
-            @include media($desktop-width){
+            @include media($desktop-width) {
                 font-size: 1.6rem;
             }
         }
@@ -70,7 +68,7 @@
         opacity: 0.5;
         height: 300px;
         overflow: hidden;
-        @include media ($desktop-width){
+        @include media ($desktop-width) {
             width: 50%;
             height: 500px;
         }
@@ -83,7 +81,6 @@
     }
     .quote-carousel {
         padding: 2rem 0;
-
     }
     .quotes {
         text-align: center;
@@ -91,12 +88,12 @@
         width: 80%;
         padding: 0 7%;
         font-style: italic;
-
         p {
             height: auto;
         }
     }
-    .left-quotation-mark, .right-quotation-mark {
+    .left-quotation-mark,
+    .right-quotation-mark {
         height: 120px;
         width: 85px;
         margin: 0;
@@ -105,27 +102,25 @@
         position: absolute;
         z-index: -1;
         display: none;
-        @include media($desktop-width){
+        @include media($desktop-width) {
             width: 60px;
         }
     }
-    .is-selected .left-quotation-mark, .is-selected .right-quotation-mark {
+    .is-selected .left-quotation-mark,
+    .is-selected .right-quotation-mark {
         display: inline-block;
     }
-
-    .other-proj-wrapper .left-quotation-mark, .other-proj-wrapper .right-quotation-mark {
+    .other-proj-wrapper .left-quotation-mark,
+    .other-proj-wrapper .right-quotation-mark {
         display: none;
     }
-
     .left-quotation-mark {
         top: -12%;
         right: 85%;
-
         @include media($desktop-width) {
             top: 0%;
         }
     }
-
     .right-quotation-mark {
         bottom: 15%;
         left: 85%;
@@ -174,30 +169,29 @@
         .project-location,
         .project-status {
             display: none;
-            @include media ($desktop-width){
+            @include media ($desktop-width) {
                 display: block;
                 margin: 0 auto;
                 font-size: 1.2rem;
             }
-            span{
+            span {
                 display: inline;
                 text-transform: uppercase;
             }
         }
-        .project-name{
+        .project-name {
             font-weight: $font__bold;
             margin-top: 1rem;
-            
         }
         .project-location,
         .project-status {
             font-family: $font__secondary;
         }
     }
-    .image-wrapper{
+    .image-wrapper {
         height: 300px;
         overflow: hidden;
-        @include media ($desktop-width){
+        @include media ($desktop-width) {
             height: 500px;
         }
         img {
@@ -210,7 +204,7 @@
     .is-selected {
         opacity: 1;
     }
-    .quotes-wrapper{
+    .quotes-wrapper {
         display: none;
     }
 }

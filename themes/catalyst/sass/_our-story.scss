@@ -110,6 +110,9 @@
             left: 13%;
             top: 1%;
         }
+        @include media(1200px) {
+            left: 18%;
+        }
     }
     .quotation-left2 {
         left: 5%;
@@ -135,6 +138,9 @@
             left: 78%;
             top: 36%;
         }
+        @include media(1200px) {
+            left: 74%;
+        }
     }
     .quotation-right2 {
         left: 82%;
@@ -142,6 +148,9 @@
         @include media($desktop-width) {
             left: 86%;
             top: 44%;
+        }
+        @include media(1200px) {
+            top: 36%
         }
     }
     .robert {

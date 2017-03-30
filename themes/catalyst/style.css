@@ -480,7 +480,7 @@ table {
 .subheader-sm {
   max-width: 400px;
   margin: 0 auto;
-  font-size: 1.25rem;
+  font-size: 1.8rem;
   font-weight: 600;
   color: #323232;
   line-height: 2.4rem;
@@ -503,7 +503,7 @@ table {
   @media all and (min-width: 760px) {
     .subheader-lrg {
       max-width: none;
-      font-size: 2.15rem;
+      font-size: 3.15rem;
       line-height: 3.4rem; } }
 
 /*--------------------------------------------------------------
@@ -1064,7 +1064,8 @@ textarea {
     font-family: quattrocento, sans-serif;
     font-style: italic;
     margin-top: 0; }
-  .home .projects .left-quotation-mark, .home .projects .right-quotation-mark {
+  .home .projects .left-quotation-mark,
+  .home .projects .right-quotation-mark {
     height: 60px;
     width: 85px;
     background: url("../../images/icon/quotation.svg") center;
@@ -1072,15 +1073,27 @@ textarea {
     position: relative;
     z-index: -1;
     display: none; }
-  .home .projects .is-selected .left-quotation-mark, .home .projects .is-selected .right-quotation-mark {
+  .home .projects .is-selected .left-quotation-mark,
+  .home .projects .is-selected .right-quotation-mark {
     display: inline-block; }
   .home .projects .left-quotation-mark {
-    top: 11vh;
-    right: 36vw; }
+    top: 6vh;
+    right: 33vw; }
+    @media all and (min-width: 760px) {
+      .home .projects .left-quotation-mark {
+        top: 10vh;
+        right: 27vw; } }
   .home .projects .right-quotation-mark {
-    bottom: 22vh;
-    left: 35vw;
+    bottom: 9vh;
+    left: 33vw;
     transform: rotate(180deg); }
+    @media all and (min-width: 760px) {
+      .home .projects .right-quotation-mark {
+        bottom: 12vh;
+        left: 27vw; } }
+    @media all and (min-width: 1200px) {
+      .home .projects .right-quotation-mark {
+        bottom: 9vh; } }
   .home .projects .quote-text {
     margin-bottom: 2rem; }
   .home .projects .person {
@@ -1508,6 +1521,9 @@ object {
     .page-id-21 .quotation-left {
       left: 13%;
       top: 1%; } }
+  @media all and (min-width: 1200px) {
+    .page-id-21 .quotation-left {
+      left: 18%; } }
 
 .page-id-21 .quotation-left2 {
   left: 5%;
@@ -1533,6 +1549,9 @@ object {
     .page-id-21 .quotation-right {
       left: 78%;
       top: 36%; } }
+  @media all and (min-width: 1200px) {
+    .page-id-21 .quotation-right {
+      left: 74%; } }
 
 .page-id-21 .quotation-right2 {
   left: 82%;
@@ -1541,6 +1560,9 @@ object {
     .page-id-21 .quotation-right2 {
       left: 86%;
       top: 44%; } }
+  @media all and (min-width: 1200px) {
+    .page-id-21 .quotation-right2 {
+      top: 36%; } }
 
 .page-id-21 .robert {
   text-align: center; }
@@ -3286,7 +3308,8 @@ object {
   .single-projects .quotes p {
     height: auto; }
 
-.single-projects .left-quotation-mark, .single-projects .right-quotation-mark {
+.single-projects .left-quotation-mark,
+.single-projects .right-quotation-mark {
   height: 120px;
   width: 85px;
   margin: 0;
@@ -3296,13 +3319,16 @@ object {
   z-index: -1;
   display: none; }
   @media all and (min-width: 760px) {
-    .single-projects .left-quotation-mark, .single-projects .right-quotation-mark {
+    .single-projects .left-quotation-mark,
+    .single-projects .right-quotation-mark {
       width: 60px; } }
 
-.single-projects .is-selected .left-quotation-mark, .single-projects .is-selected .right-quotation-mark {
+.single-projects .is-selected .left-quotation-mark,
+.single-projects .is-selected .right-quotation-mark {
   display: inline-block; }
 
-.single-projects .other-proj-wrapper .left-quotation-mark, .single-projects .other-proj-wrapper .right-quotation-mark {
+.single-projects .other-proj-wrapper .left-quotation-mark,
+.single-projects .other-proj-wrapper .right-quotation-mark {
   display: none; }
 
 .single-projects .left-quotation-mark {

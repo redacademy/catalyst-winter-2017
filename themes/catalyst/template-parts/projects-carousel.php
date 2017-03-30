@@ -23,21 +23,25 @@
             <p class='project-location'>Location: <?php echo esc_html( CFS()->get('project_location', $id) ); ?></p>
             <p class='project-status'>Status: <span><?php echo esc_html( CFS()->get('project_status', $id) ); ?></span></p>
 
-            <div class="left-quotation-mark"></div>
+
             <div class="quotes-wrapper">
                 <?php $quotes_array = CFS()->get('quotes_gallery', $id);
                 $first_quotes_object = array_slice($quotes_array,0,1);
-                
+
                 if ( !empty( $quotes_array ) ) : ?>
                     <?php foreach ($first_quotes_object as $quote) : ?>
-                        <p class="quote"><?php echo esc_html( $quote['quotes'] ); ?></p> 
-                        <p class="person"> <?php echo esc_html( $quote['person'] ); ?></p> 
+                        <div class="quote">
+                        <div class="left-quotation-mark"></div>
+                        <p><?php echo esc_html( $quote['quotes'] ); ?></p>
+                         <div class="right-quotation-mark"></div>
+                        </div>
+                        <p class="person"> <?php echo esc_html( $quote['person'] ); ?></p>
                         <p class="line"> <?php echo esc_html( $quote['line2'] ); ?></p>
-                        <p class="line"> <?php echo esc_html( $quote['line1'] ); ?></p> 
+                        <p class="line"> <?php echo esc_html( $quote['line1'] ); ?></p>
                     <?php endforeach; wp_reset_postdata(); ?>
                 <?php endif; ?>
             </div>
-            <div class="right-quotation-mark"></div>
+
         </div>
 
     <?php endforeach; wp_reset_postdata();?>
