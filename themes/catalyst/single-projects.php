@@ -11,7 +11,7 @@
     <section>
         <?php while ( have_posts() ) : the_post(); ?>
 
-            <div class="hero-image-banner">
+            <div class="project-image-banner">
                 <div class="header-text">
                     <?php $project_name = esc_html( CFS()->get( 'project_name' ) );
                     if ( !empty( $project_name ) ) :?>

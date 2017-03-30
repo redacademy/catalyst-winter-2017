@@ -441,7 +441,8 @@ table {
   margin: 0 0 1.5rem;
   width: 100%; }
 
-.hero-image-banner {
+.hero-image-banner,
+.project-image-banner {
   height: 45vh;
   min-width: 100%;
   display: -ms-flexbox;
@@ -453,9 +454,11 @@ table {
   -ms-flex-align: center;
       align-items: center; }
   @media all and (min-width: 760px) {
-    .hero-image-banner {
+    .hero-image-banner,
+    .project-image-banner {
       height: 70vh; } }
-  .hero-image-banner .header-text {
+  .hero-image-banner .header-text,
+  .project-image-banner .header-text {
     width: 100%;
     position: absolute;
     text-align: center; }
@@ -3238,12 +3241,12 @@ object {
 .single-projects p {
   color: #4A4A4A; }
 
-.single-projects .hero-image-banner p {
+.single-projects .project-image-banner p {
   color: #fff;
   margin: 0;
   text-shadow: -2px 2px 5px #000; }
 
-.single-projects .hero-image-banner .project-name {
+.single-projects .project-image-banner .project-name {
   font-size: 4rem;
   line-height: 1;
   margin-bottom: 1rem;
@@ -3251,19 +3254,19 @@ object {
   letter-spacing: 1px;
   text-transform: uppercase; }
 
-.single-projects .hero-image-banner .project-location,
-.single-projects .hero-image-banner .project-status {
+.single-projects .project-image-banner .project-location,
+.single-projects .project-image-banner .project-status {
   font-family: quattrocento, sans-serif;
   font-weight: 600;
   font-size: 1.3rem;
   margin-bottom: 0.3rem;
   letter-spacing: 1px; }
   @media all and (min-width: 760px) {
-    .single-projects .hero-image-banner .project-location,
-    .single-projects .hero-image-banner .project-status {
+    .single-projects .project-image-banner .project-location,
+    .single-projects .project-image-banner .project-status {
       font-size: 1.6rem; } }
 
-.single-projects .hero-image-banner .p-stat {
+.single-projects .project-image-banner .p-stat {
   text-transform: uppercase; }
 
 .single-projects .blue-background-header {
