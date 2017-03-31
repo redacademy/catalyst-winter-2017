@@ -7,20 +7,20 @@
     var $mobileMenu = $('.mobile-menu');
     
 
-    $($hamburgerIcon).click(function () {
+    $hamburgerIcon.click(function () {
             var $heroBannerHeight = $('.hero-image-banner').height();
             var $navBarHeight = $('.site-header').height();
 
-            $($hamburgerIcon).addClass('transparent').hide();
-            $($mobileMenu).css({'width': '60vw', 'height': 'auto'}).addClass('opaque');
-            $($crossIcon).addClass('opaque').show();
+            $hamburgerIcon.addClass('transparent').hide();
+            $mobileMenu.css({'width': '60vw', 'height': 'auto'}).addClass('opaque');
+            $crossIcon.addClass('opaque').show();
     });
 
-    $($crossIcon).click(function () {
+    $crossIcon.click(function () {
         
-            $($crossIcon).removeClass('opaque').hide();
-            $($hamburgerIcon).removeClass('transparent').show();
-            $($mobileMenu).removeClass('opaque').css('height', '0');
+            $crossIcon.removeClass('opaque').hide();
+            $hamburgerIcon.removeClass('transparent').show();
+            $mobileMenu.removeClass('opaque').css('width', '0');
     });
 
     

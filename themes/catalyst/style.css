@@ -754,7 +754,7 @@ textarea {
       transition: opacity 0.3s ease; }
     .container .hamburger-menu .mobile-menu {
       height: 0;
-      padding-top: 60px;
+      margin-top: 80px;
       background-color: rgba(255, 255, 255, 0.8);
       opacity: 0;
       transition: opacity 0.2s ease; }
