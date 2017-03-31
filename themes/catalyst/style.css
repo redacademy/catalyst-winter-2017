@@ -2140,6 +2140,7 @@ object {
         .page-id-159 .staff-profiles-wrapper .small-header,
         .page-id-159 .board-profiles-wrapper .small-header,
         .page-id-159 .advisors-profiles-wrapper .small-header {
+          font-size: 2rem;
           width: 100%;
           margin: 3rem auto 2.5rem; } }
     .page-id-159 .staff-profiles-wrapper .board-profiles-header,
@@ -2163,7 +2164,7 @@ object {
       .page-id-159 .advisors-profiles-wrapper .board-profiles-header .small-header {
         height: auto;
         width: auto;
-        margin: 0; }
+        margin: 0 0 2rem; }
       .page-id-159 .staff-profiles-wrapper .board-profiles-header .board-exit-button,
       .page-id-159 .board-profiles-wrapper .board-profiles-header .board-exit-button,
       .page-id-159 .advisors-profiles-wrapper .board-profiles-header .board-exit-button {
