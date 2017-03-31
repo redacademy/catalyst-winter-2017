@@ -7,10 +7,6 @@
     }
     .header-text {
         @include header-text;
-        top: 15%;
-        @include media($desktop-width) {
-            top: 25%;
-        }
     }
     .entry-title {
         @include page-title;

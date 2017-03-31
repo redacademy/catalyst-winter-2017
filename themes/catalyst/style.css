@@ -460,7 +460,6 @@ table {
   .hero-image-banner .header-text,
   .project-image-banner .header-text {
     width: 100%;
-    position: absolute;
     text-align: center; }
 
 .formulas:last-child .fill {
@@ -625,14 +624,16 @@ textarea {
     @media all and (min-width: 1180px) {
       .container .header-logo {
         height: 80px;
-        width: 123px;
-        margin-top: 10px; } }
+        width: 167px;
+        margin-top: 10px;
+        position: relative;
+        z-index: -1; } }
   .container .top-menu {
     position: absolute;
     right: 0%;
     z-index: 1;
     height: auto;
-    width: auto;
+    width: 50%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row nowrap;
@@ -714,7 +715,7 @@ textarea {
       .container .hamburger-menu li a {
         display: block;
         text-decoration: none;
-        padding: 12px 0 20px 12px;
+        padding: 12px 0 15px 12px;
         font-size: 0.95rem;
         color: #323232;
         text-transform: uppercase; }
@@ -748,7 +749,7 @@ textarea {
       height: 30px;
       position: absolute;
       left: 0;
-      top: 28px;
+      top: 18px;
       opacity: 0;
       transition: opacity 0.3s ease; }
     .container .hamburger-menu .mobile-menu {
@@ -971,7 +972,7 @@ textarea {
   opacity: 0.15; }
 
 .home .fp-carousel {
-  height: 100%;
+  height: 69%;
   min-width: 100%; }
   .home .fp-carousel img {
     height: 100vh;
@@ -986,9 +987,11 @@ textarea {
   color: white;
   padding: 0 2rem;
   line-height: 1;
+  position: relative;
+  bottom: 35%;
   line-height: 1.2; }
   .home .header-text h1 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
     font-size: 3.4rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -1354,7 +1357,7 @@ object {
   line-height: 1; }
 
 .page-id-21 .entry-title {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   font-size: 3.4rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -1748,13 +1751,9 @@ object {
     max-width: 900px;
     color: white;
     padding: 0 2rem;
-    line-height: 1;
-    top: 12%; }
-    @media all and (min-width: 760px) {
-      .page-id-159 .header-text {
-        top: 25%; } }
+    line-height: 1; }
   .page-id-159 .entry-title {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
     font-size: 3.4rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -2272,7 +2271,7 @@ object {
     padding: 0 2rem;
     line-height: 1; }
   .page-id-19 .entry-title {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
     font-size: 3.4rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -2442,11 +2441,12 @@ object {
     max-width: 900px;
     padding: 0 10px; }
   .page-id-18 .entry-title {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
     font-size: 3.4rem;
     font-weight: 600;
     text-transform: uppercase;
-    text-shadow: 1px 2px 5px #323232; }
+    text-shadow: 1px 2px 5px #323232;
+    font-size: 3.25rem; }
     @media all and (min-width: 760px) {
       .page-id-18 .entry-title {
         margin-bottom: 1rem;
@@ -2829,10 +2829,6 @@ object {
         margin: 1rem;
         margin-right: 0; } }
 
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
-/* Front page */
 .page-id-7 {
   text-align: center;
   height: 100%;
@@ -2845,13 +2841,9 @@ object {
     max-width: 900px;
     color: white;
     padding: 0 2rem;
-    line-height: 1;
-    top: 15%; }
-    @media all and (min-width: 760px) {
-      .page-id-7 .header-text {
-        top: 35%; } }
+    line-height: 1; }
   .page-id-7 .entry-title {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
     font-size: 3.4rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -2996,7 +2988,7 @@ object {
   line-height: 1; }
 
 .page-id-196 .entry-title {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   font-size: 3.4rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -3137,7 +3129,7 @@ object {
   max-width: 750px; }
 
 .page-id-195 .entry-title {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   font-size: 3.4rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -3482,7 +3474,7 @@ object {
   .page-id-252 .entry-title {
     display: none; }
   .page-id-252 .banner-text {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
     font-size: 3.4rem;
     font-weight: 600;
     text-transform: uppercase;

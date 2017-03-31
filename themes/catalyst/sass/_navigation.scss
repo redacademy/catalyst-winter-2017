@@ -80,15 +80,12 @@
 		text-align: center;
 		overflow: hidden;
 		text-indent: 193%;
-		// @include media($desktop-width) {
-		// 	height: 80px;
-		// 	width: 123px;
-		// 	margin-top: 10px;
-		// }
 		@include media(1180px) {
 			height: 80px;
-			width: 123px;
+			width: 167px;
 			margin-top: 10px;
+			position: relative;
+			z-index: -1;
 		}
 	}
 	.top-menu {
@@ -96,7 +93,7 @@
 		right: 0%;
 		z-index: 1;
 		height: auto;
-		width: auto;
+		width: 50%;
 		@include flex-row(nowrap,
 		flex-end,
 		baseline);
@@ -178,7 +175,7 @@
 			a {
 				display: block;
 				text-decoration: none;
-				padding: 12px 0 20px 12px;
+				padding: 12px 0 15px 12px;
 				font-size: 0.95rem;
 				color: $color__header-main;
 				text-transform: uppercase;
@@ -216,7 +213,7 @@
 			height: 30px;
 			position: absolute;
 			left: 0;
-			top: 28px;
+			top: 18px;
 			opacity: 0;
 			transition: opacity 0.3s ease;
 		}
