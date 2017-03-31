@@ -1401,7 +1401,7 @@ object {
 
 .page-id-21 h3 {
   text-align: center;
-  padding: 0 10px;
+  padding: 25px 10px 10px;
   margin: auto;
   line-height: 35px;
   width: 450px;
@@ -1505,7 +1505,9 @@ object {
   @media all and (min-width: 760px) {
     .page-id-21 .mission-quote2 {
       margin-bottom: 0px;
-      height: 195px; } }
+      height: 195px; }
+      .page-id-21 .mission-quote2 p {
+        margin-bottom: 0; } }
 
 .page-id-21 .quote,
 .page-id-21 .quote2 {
@@ -1579,7 +1581,7 @@ object {
       top: 36%; } }
 
 .page-id-21 .robert {
-  margin: 3.5rem auto;
+  margin: 2rem auto;
   text-align: center; }
   @media all and (min-width: 760px) {
     .page-id-21 .robert {

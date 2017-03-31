@@ -16,7 +16,7 @@
     }
     h3 {
         text-align: center;
-        padding: 0 10px;
+        padding: 25px 10px 10px;
         margin: auto;
         line-height: 35px;
         width: 450px;
@@ -75,10 +75,13 @@
     }
     .mission-quote2 {
         height: 253px;
-        // margin-bottom: 80px;
         @include media($desktop-width) {
             margin-bottom: 0px;
             height: 195px;
+
+            p {
+                margin-bottom: 0;
+            }
         }
     }
     .quote,
@@ -94,9 +97,6 @@
         font-family: $font__secondary;
         font-style: italic;
     }
-    // .quote2 {
-    //     padding: 0 40px;
-    // }
     .quotation-left,
     .quotation-left2 {
         background: url('../../images/icon/quotation.svg')no-repeat center;
@@ -156,7 +156,7 @@
         }
     }
     .robert {
-        margin: 3.5rem auto;
+        margin: 2rem auto;
         text-align: center;
 
         @include media($desktop-width) {
