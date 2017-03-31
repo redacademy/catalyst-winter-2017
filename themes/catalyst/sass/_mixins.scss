@@ -74,8 +74,11 @@
 		text-align: center;
 		.formulas {
 			width: 270px;
-			padding-left: 3rem;
+			padding-left: 5%;
 			display: block;
+			@include media(1100px) {
+				padding-left: 1.5%;
+			}
 
 			&:last-child .fill {
 				display: none;

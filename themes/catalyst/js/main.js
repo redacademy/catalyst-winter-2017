@@ -149,8 +149,8 @@
 
     function scrollToPopout($thisPopout, $sectionHeader) {
         $('html, body').animate({
-            scrollTop: ( $thisPopout.offset().top - ( $sectionHeader.height() * 2.5 ) )
-        }, 200);
+            scrollTop: ( $thisPopout.offset().top - ( $sectionHeader.height() * 2 ) )
+        }, 50);
     }
 
     // Scroll to last viewed profile after popout is closed
@@ -288,8 +288,8 @@
         imagesLoaded: true,
         pageDots: false,
         prevNextButtons: false,
-        autoPlay: 2000,
-        draggable: false
+        autoPlay: 7500,
+        draggable: false,
     });
 
     //flickity single projects

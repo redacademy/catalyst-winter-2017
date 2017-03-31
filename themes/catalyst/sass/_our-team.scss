@@ -331,9 +331,10 @@
                 border-radius: 50%;
                 @include media($desktop-width) {
                     width: 95%;
-                }
-                &:hover {
-                    box-shadow: 0 2px 8px #4990E2;
+                    
+                    &:hover {
+                        box-shadow: 0 2px 8px #4990E2;
+                    }
                 }
             }
         }

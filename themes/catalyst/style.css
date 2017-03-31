@@ -1148,6 +1148,9 @@ textarea {
       .home .team .member {
         margin: 0 5rem;
         max-width: 25%; } }
+    .home .team .member img {
+      border-radius: 50%;
+      box-shadow: 0 2px 8px #D9F1FF; }
     .home .team .member p {
       margin: 0; }
     .home .team .member .member-name {
@@ -1181,8 +1184,11 @@ textarea {
   text-align: center; }
   .home .formula-carousel .formulas {
     width: 270px;
-    padding-left: 3rem;
+    padding-left: 5%;
     display: block; }
+    @media all and (min-width: 1100px) {
+      .home .formula-carousel .formulas {
+        padding-left: 1.5%; } }
     .home .formula-carousel .formulas:last-child .fill {
       display: none; }
     .home .formula-carousel .formulas div {
@@ -1691,8 +1697,11 @@ object {
   text-align: center; }
   .page-id-21 .formula-carousel .formulas {
     width: 270px;
-    padding-left: 3rem;
+    padding-left: 5%;
     display: block; }
+    @media all and (min-width: 1100px) {
+      .page-id-21 .formula-carousel .formulas {
+        padding-left: 1.5%; } }
     .page-id-21 .formula-carousel .formulas:last-child .fill {
       display: none; }
     .page-id-21 .formula-carousel .formulas div {
@@ -2223,11 +2232,11 @@ object {
           .page-id-159 .staff-profiles-wrapper .profile-preview .profile-image,
           .page-id-159 .board-profiles-wrapper .profile-preview .profile-image,
           .page-id-159 .advisors-profiles-wrapper .profile-preview .profile-image {
-            width: 95%; } }
-        .page-id-159 .staff-profiles-wrapper .profile-preview .profile-image:hover,
-        .page-id-159 .board-profiles-wrapper .profile-preview .profile-image:hover,
-        .page-id-159 .advisors-profiles-wrapper .profile-preview .profile-image:hover {
-          box-shadow: 0 2px 8px #4990E2; }
+            width: 95%; }
+            .page-id-159 .staff-profiles-wrapper .profile-preview .profile-image:hover,
+            .page-id-159 .board-profiles-wrapper .profile-preview .profile-image:hover,
+            .page-id-159 .advisors-profiles-wrapper .profile-preview .profile-image:hover {
+              box-shadow: 0 2px 8px #4990E2; } }
   .page-id-159 .advisors-profiles-wrapper {
     margin-bottom: 2rem; }
     .page-id-159 .advisors-profiles-wrapper .small-header {
