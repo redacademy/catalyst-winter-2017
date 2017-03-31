@@ -1578,7 +1578,8 @@ object {
       top: 44%; } }
   @media all and (min-width: 1200px) {
     .page-id-21 .quotation-right2 {
-      top: 36%; } }
+      top: 36%;
+      left: 86%; } }
 
 .page-id-21 .robert {
   margin: 2rem auto;
