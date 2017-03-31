@@ -974,8 +974,8 @@ textarea {
   min-width: 100%; }
   .home .fp-carousel img {
     height: 100vh;
-    min-width: 100%;
-    max-width: initial; }
+    width: initial;
+    max-width: none; }
 
 .home .blue-background-header {
   margin-top: 1.5rem; }
