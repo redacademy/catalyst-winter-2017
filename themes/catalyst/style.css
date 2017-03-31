@@ -997,7 +997,7 @@ textarea {
     margin: 0 0 1rem; }
     @media all and (min-width: 760px) {
       .home .header-text h1 {
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         font-size: 3.85rem; } }
   .home .header-text p {
     width: 90%;
@@ -1368,7 +1368,7 @@ object {
   text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 760px) {
     .page-id-21 .entry-title {
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
       font-size: 3.85rem; } }
 
 .page-id-21 .banner-text {
@@ -1767,7 +1767,7 @@ object {
     text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 760px) {
       .page-id-159 .entry-title {
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         font-size: 3.85rem; } }
   .page-id-159 .banner-text {
     width: 95%;
@@ -2286,7 +2286,7 @@ object {
     text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 760px) {
       .page-id-19 .entry-title {
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         font-size: 3.85rem; } }
   .page-id-19 .banner-text {
     width: 90%;
@@ -2457,7 +2457,7 @@ object {
     font-size: 3.25rem; }
     @media all and (min-width: 760px) {
       .page-id-18 .entry-title {
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         font-size: 3.85rem; } }
   .page-id-18 .banner-text {
     width: 90%;
@@ -2858,7 +2858,7 @@ object {
     text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 760px) {
       .page-id-7 .entry-title {
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         font-size: 3.85rem; } }
   .page-id-7 .banner-text {
     width: 90%;
@@ -2871,7 +2871,11 @@ object {
     margin: 0 auto;
     text-shadow: 1px 2px 5px #323232;
     width: 95%;
+    max-width: 650px;
     font-size: 1.2rem; }
+    @media all and (min-width: 760px) {
+      .page-id-7 .banner-text {
+        font-size: 1.5rem; } }
   .page-id-7 .banner-text-small {
     font-size: 1rem;
     letter-spacing: 2px;
@@ -3003,7 +3007,7 @@ object {
   text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 760px) {
     .page-id-196 .entry-title {
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
       font-size: 3.85rem; } }
 
 .page-id-196 .banner-text {
@@ -3144,7 +3148,7 @@ object {
   text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 760px) {
     .page-id-195 .entry-title {
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
       font-size: 3.85rem; } }
 
 .page-id-195 .banner-text {
@@ -3493,7 +3497,7 @@ object {
     padding: 0 2rem; }
     @media all and (min-width: 760px) {
       .page-id-252 .banner-text {
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         font-size: 3.85rem; } }
     @media all and (min-width: 760px) {
       .page-id-252 .banner-text {

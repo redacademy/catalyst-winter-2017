@@ -24,7 +24,7 @@
 	text-transform: uppercase;
 	@include header-text-shadow;
 	@include media($desktop-width) {
-		margin-bottom: 1rem;
+		margin-bottom: 2rem;
 		font-size: 3.85rem;
 	}
 }
