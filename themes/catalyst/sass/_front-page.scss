@@ -25,7 +25,7 @@
         display: inline-block;
     }
     .fp-carousel {
-        height: 69%;
+        height: 100%;
         min-width: 100%;
         img {
             height: 100vh;
@@ -38,8 +38,8 @@
     }
     .header-text {
         @include header-text;
-        position: relative;
-        bottom: 35%;
+        padding: 0;
+        position: absolute;
         line-height: 1.2;
         h1 {
             @include page-title;

@@ -112,7 +112,7 @@
                 </div>
                 <?php endforeach; wp_reset_postdata(); ?>
         </div>
-        <a href="<?php echo get_home_url(); ?>/contact" class="navigation-button">Collaborate with us</a>
+        <a href="<?php echo get_home_url(); ?>/collaborate" class="navigation-button">Collaborate with us</a>
         <?php endwhile; wp_reset_postdata(); ?>
     </section>
     <section>
