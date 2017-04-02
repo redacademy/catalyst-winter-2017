@@ -39,7 +39,7 @@ get_header(); ?>
                 };
                 ?>
                 <div class="article-content">
-                <p class="date"><?php echo get_the_date("m d, Y", $newsarticle->ID) ?></p>
+                <p class="date"><?php echo get_the_date("m, d, Y", $newsarticle->ID) ?></p>
                 <h3><?php echo get_the_title($newsarticle->ID) ?></h3>
                 <?php echo get_template_part( 'template-parts/content', 'newsmedia'); ?>
                 </div>

@@ -75,6 +75,7 @@
         font-size: 1.25rem;
         font-weight: 900;
         letter-spacing: 1.5px;
+        z-index: 2;
     }
 
     .job-title {
@@ -86,6 +87,7 @@
         font-weight: 600;
         font-style: italic;
         letter-spacing: 1.25px;
+        z-index: 2;
     }
 
     .staff-profiles-wrapper,
@@ -124,14 +126,28 @@
                 background: url('../../images/icon/quotation-white.svg') no-repeat center;
                 background-size: 170%;
                 position: absolute;
+                z-index: 0;
             }
 
             .left-quotation {
                 left: -10%;
                 top: 54%;
                 @include media($desktop-width) {
-                    left: -8%;
+                    left: -20%;
+                    top: 31%;
+                }
+                @include media(800px) {
+                    top: 34%;
+                }
+                @include media (900px) {
                     top: 40%;
+                }
+                @include media(960px) {
+                    top: 43%;
+                }
+                @include media(1100px) {
+                    left: -8%;
+                    top: 45%;
                 }
             }
 
@@ -156,9 +172,12 @@
 
                 @include media($desktop-width) {
                     margin-bottom: 2.5rem;
-                    font-size: 1.65rem;
+                    font-size: 1.35rem;
                     line-height: 2rem;
                     text-align: center;
+                }
+                @include media(1100px) {
+                    font-size: 1.65rem;
                 }
             }
 

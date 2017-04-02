@@ -967,7 +967,8 @@ textarea {
   top: 0;
   width: 100%;
   height: 100%;
-  display: inline-block; }
+  display: inline-block;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%); }
 
 .home .fp-carousel {
   height: 100%;
@@ -1882,7 +1883,8 @@ object {
     margin: 0 auto;
     font-size: 1.25rem;
     font-weight: 900;
-    letter-spacing: 1.5px; }
+    letter-spacing: 1.5px;
+    z-index: 2; }
   .page-id-159 .job-title {
     font-family: 'quattrocento';
     max-width: 235px;
@@ -1891,7 +1893,8 @@ object {
     text-align: center;
     font-weight: 600;
     font-style: italic;
-    letter-spacing: 1.25px; }
+    letter-spacing: 1.25px;
+    z-index: 2; }
   .page-id-159 .staff-profiles-wrapper,
   .page-id-159 .board-profiles-wrapper,
   .page-id-159 .advisors-profiles-wrapper {
@@ -1948,7 +1951,8 @@ object {
         width: 120px;
         background: url("../../images/icon/quotation-white.svg") no-repeat center;
         background-size: 170%;
-        position: absolute; }
+        position: absolute;
+        z-index: 0; }
       .page-id-159 .staff-profiles-wrapper .profile-popout .left-quotation,
       .page-id-159 .board-profiles-wrapper .profile-popout .left-quotation,
       .page-id-159 .advisors-profiles-wrapper .profile-popout .left-quotation {
@@ -1958,8 +1962,29 @@ object {
           .page-id-159 .staff-profiles-wrapper .profile-popout .left-quotation,
           .page-id-159 .board-profiles-wrapper .profile-popout .left-quotation,
           .page-id-159 .advisors-profiles-wrapper .profile-popout .left-quotation {
-            left: -8%;
+            left: -20%;
+            top: 31%; } }
+        @media all and (min-width: 800px) {
+          .page-id-159 .staff-profiles-wrapper .profile-popout .left-quotation,
+          .page-id-159 .board-profiles-wrapper .profile-popout .left-quotation,
+          .page-id-159 .advisors-profiles-wrapper .profile-popout .left-quotation {
+            top: 34%; } }
+        @media all and (min-width: 900px) {
+          .page-id-159 .staff-profiles-wrapper .profile-popout .left-quotation,
+          .page-id-159 .board-profiles-wrapper .profile-popout .left-quotation,
+          .page-id-159 .advisors-profiles-wrapper .profile-popout .left-quotation {
             top: 40%; } }
+        @media all and (min-width: 960px) {
+          .page-id-159 .staff-profiles-wrapper .profile-popout .left-quotation,
+          .page-id-159 .board-profiles-wrapper .profile-popout .left-quotation,
+          .page-id-159 .advisors-profiles-wrapper .profile-popout .left-quotation {
+            top: 43%; } }
+        @media all and (min-width: 1100px) {
+          .page-id-159 .staff-profiles-wrapper .profile-popout .left-quotation,
+          .page-id-159 .board-profiles-wrapper .profile-popout .left-quotation,
+          .page-id-159 .advisors-profiles-wrapper .profile-popout .left-quotation {
+            left: -8%;
+            top: 45%; } }
       .page-id-159 .staff-profiles-wrapper .profile-popout .right-quotation,
       .page-id-159 .board-profiles-wrapper .profile-popout .right-quotation,
       .page-id-159 .advisors-profiles-wrapper .profile-popout .right-quotation {
@@ -1987,9 +2012,14 @@ object {
           .page-id-159 .board-profiles-wrapper .profile-popout .quote,
           .page-id-159 .advisors-profiles-wrapper .profile-popout .quote {
             margin-bottom: 2.5rem;
-            font-size: 1.65rem;
+            font-size: 1.35rem;
             line-height: 2rem;
             text-align: center; } }
+        @media all and (min-width: 1100px) {
+          .page-id-159 .staff-profiles-wrapper .profile-popout .quote,
+          .page-id-159 .board-profiles-wrapper .profile-popout .quote,
+          .page-id-159 .advisors-profiles-wrapper .profile-popout .quote {
+            font-size: 1.65rem; } }
       .page-id-159 .staff-profiles-wrapper .profile-popout .center-column,
       .page-id-159 .board-profiles-wrapper .profile-popout .center-column,
       .page-id-159 .advisors-profiles-wrapper .profile-popout .center-column {
