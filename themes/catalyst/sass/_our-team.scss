@@ -139,15 +139,14 @@
                 @include media(800px) {
                     top: 34%;
                 }
-                @include media (900px) {
-                    top: 40%;
-                }
-                @include media(960px) {
-                    top: 43%;
+                
+                @include media(1000px) {
+                    left: -8%;
+                    top: 36%;
                 }
                 @include media(1100px) {
-                    left: -8%;
-                    top: 45%;
+                    left: -10%;
+                    top: 43%;
                 }
             }
 
@@ -171,12 +170,14 @@
                 z-index: 2;
 
                 @include media($desktop-width) {
+                    max-width: 230px;
                     margin-bottom: 2.5rem;
                     font-size: 1.35rem;
                     line-height: 2rem;
                     text-align: center;
                 }
                 @include media(1100px) {
+                    max-width: none;
                     font-size: 1.65rem;
                 }
             }
@@ -232,11 +233,11 @@
                 }
 
                 p:nth-last-of-type(2), h4 {
-                    max-width: none;
+                    width: 100%;
                     float: none;
 
                     @include media($desktop-width) {
-                        max-width: 50%;
+        
                         float: right;
                     }
                 }
