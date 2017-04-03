@@ -957,9 +957,6 @@ textarea {
     .home .front-content {
       font-size: 1.2rem; } }
 
-.home header {
-  position: relative; }
-
 .home .fp-carousel:after {
   content: '';
   position: absolute;
@@ -987,8 +984,10 @@ textarea {
   padding: 0 2rem;
   line-height: 1;
   padding: 0;
+  line-height: 1.2;
   position: absolute;
-  line-height: 1.2; }
+  top: 50vh;
+  left: 18vw; }
   .home .header-text h1 {
     margin-bottom: 1.25rem;
     font-size: 3.4rem;

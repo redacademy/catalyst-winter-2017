@@ -12,9 +12,6 @@
             font-size: 1.2rem;
         }
     }
-    header {
-        position: relative;
-    }
     .fp-carousel:after {
         content: '';
         position: absolute;
@@ -40,8 +37,10 @@
     .header-text {
         @include header-text;
         padding: 0;
-        position: absolute;
         line-height: 1.2;
+        position: absolute;
+        top: 50vh;
+        left: 18vw;
         h1 {
             @include page-title;
             margin: 0 0 1rem;
