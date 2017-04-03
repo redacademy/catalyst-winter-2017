@@ -441,6 +441,9 @@ table {
   margin: 0 0 1.5rem;
   width: 100%; }
 
+body {
+  overflow: hidden; }
+
 .hero-image-banner,
 .project-image-banner {
   height: 45vh;
@@ -461,6 +464,9 @@ table {
   .project-image-banner .header-text {
     width: 100%;
     text-align: center; }
+
+.hero-image-banner {
+  width: 100vw; }
 
 .formulas:last-child .fill {
   display: none; }
@@ -708,7 +714,8 @@ textarea {
       line-height: 1.35rem; }
     .container .hamburger-menu li {
       padding: 0;
-      border-bottom: 1px solid white; }
+      border-bottom: 1px solid white;
+      transition: all 0.2s ease; }
       @media all and (min-width: 760px) {
         .container .hamburger-menu li {
           font-size: 1.85rem; } }
@@ -757,6 +764,7 @@ textarea {
       margin-top: 80px;
       background-color: rgba(255, 255, 255, 0.8);
       opacity: 0;
+      overflow: hidden;
       transition: opacity 0.2s ease; }
     .container .hamburger-menu .opaque {
       opacity: 1; }
@@ -949,7 +957,7 @@ textarea {
   padding: 0;
   font-size: 1.85rem; }
   .home .hamburger-menu li a {
-    padding: 20px 0; }
+    padding: 20px 0 20px 10px; }
 
 .home .front-content {
   margin-bottom: 50px; }
@@ -986,8 +994,9 @@ textarea {
   padding: 0;
   line-height: 1.2;
   position: absolute;
-  top: 50vh;
-  left: 18vw; }
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, 0%); }
   .home .header-text h1 {
     margin-bottom: 1.25rem;
     font-size: 3.4rem;

@@ -1,7 +1,10 @@
+body {
+	overflow: hidden;
+}
+
 .hero-image-banner,
 .project-image-banner {
 	height: 45vh;
-    // position: relative;
     min-width: 100%;
     @include flex-column(nowrap, center, center);
     @include media($desktop-width) {
@@ -11,6 +14,10 @@
         width: 100%;
         text-align: center;
     }
+}
+
+.hero-image-banner {
+	width: 100vw;
 }
 
 .formulas:last-child {
