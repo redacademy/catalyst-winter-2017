@@ -441,9 +441,6 @@ table {
   margin: 0 0 1.5rem;
   width: 100%; }
 
-body {
-  overflow: hidden; }
-
 .hero-image-banner,
 .project-image-banner {
   height: 45vh;
