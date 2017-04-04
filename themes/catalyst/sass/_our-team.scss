@@ -14,10 +14,6 @@
     .banner-text {
         width: 95%;
         @include banner-text;
-        @include media($desktop-width) {
-            font-size: 1.75rem;
-            line-height: 2rem;
-        }
     }
 
     .intro-copy {

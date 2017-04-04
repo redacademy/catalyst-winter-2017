@@ -1523,7 +1523,6 @@ object {
   font-size: 20px;
   font-weight: 100;
   line-height: 28px;
-  position: absolute;
   width: 80%;
   font-family: quattrocento, sans-serif;
   font-style: italic; }
@@ -1789,10 +1788,6 @@ object {
     letter-spacing: 2px;
     margin: 0 auto;
     text-shadow: 1px 2px 5px #323232; }
-    @media all and (min-width: 760px) {
-      .page-id-159 .banner-text {
-        font-size: 1.75rem;
-        line-height: 2rem; } }
   .page-id-159 .intro-copy {
     height: auto;
     width: 100%;
@@ -2350,7 +2345,8 @@ object {
     -ms-flex-pack: center;
         justify-content: center;
     -ms-flex-align: center;
-        align-items: center; }
+        align-items: center;
+    display: block; }
     .page-id-19 .navigation-button:hover {
       border: 2px solid #D9F1FF;
       box-shadow: 0px 2px 5px #323232; }
