@@ -8,9 +8,7 @@
     
 
     $hamburgerIcon.click(function () {
-            var $heroBannerHeight = $('.hero-image-banner').height();
-            var $navBarHeight = $('.site-header').height();
-
+        
             $hamburgerIcon.addClass('transparent').hide();
             $mobileMenu.css({'width': '60vw', 'height': 'auto'}).addClass('opaque');
             $crossIcon.addClass('opaque').show();

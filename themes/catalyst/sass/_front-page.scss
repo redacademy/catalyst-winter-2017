@@ -3,7 +3,7 @@
         padding: 0;
         font-size: 1.85rem;
         & a {
-            padding: 20px 0;
+            padding: 20px 0 20px 10px;
         }
     }
     .front-content {
@@ -11,9 +11,6 @@
         @include media ($desktop-width) {
             font-size: 1.2rem;
         }
-    }
-    header {
-        position: relative;
     }
     .fp-carousel:after {
         content: '';
@@ -23,6 +20,7 @@
         width: 100%;
         height: 100%;
         display: inline-block;
+        background: linear-gradient( to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100% );
     }
     .fp-carousel {
         height: 100%;
@@ -39,8 +37,11 @@
     .header-text {
         @include header-text;
         padding: 0;
-        position: absolute;
         line-height: 1.2;
+        position: absolute;
+        top: 45%;
+        left: 50% ;
+        transform: translate(-50%, 0%);
         h1 {
             @include page-title;
             margin: 0 0 1rem;
