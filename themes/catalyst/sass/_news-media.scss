@@ -19,6 +19,7 @@
     }
     .navigation-button {
         @include navigation-button();
+        display: block;
     }
     .newsmedia-content {
         .widget-area {
