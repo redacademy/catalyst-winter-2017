@@ -92,7 +92,7 @@
 		.img {
 			vertical-align: middle;
 			width: 85%;
-			
+
 			&:last-child {
 				width: 77%;
 			}
@@ -150,7 +150,7 @@
 @mixin navigation-button($font-color: $color__header-main) {
 	height: 70px;
 	width: 275px;
-	margin: 2rem auto;
+	margin: 3rem auto;
 	border: 2px solid $font-color;
 	font-size: 1.35rem;
 	color: $font-color;

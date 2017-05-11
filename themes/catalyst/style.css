@@ -706,7 +706,7 @@ textarea {
       display: flex;
       -ms-flex-direction: column;
           flex-direction: column;
-      margin-top: 40px;
+      margin-top: 5px;
       list-style: none;
       line-height: 1.35rem; }
     .container .hamburger-menu li {
@@ -950,6 +950,13 @@ textarea {
           font-size: 20px;
           line-height: 30px; } }
 
+.home p {
+  font-size: 1.25rem; }
+  @media all and (min-width: 760px) {
+    .home p {
+      font-size: 1.4rem;
+      line-height: 1.75rem; } }
+
 .home .hamburger-menu li {
   padding: 0;
   font-size: 1.85rem; }
@@ -1019,7 +1026,7 @@ textarea {
 .home .navigation-button {
   height: 70px;
   width: 275px;
-  margin: 2rem auto;
+  margin: 3rem auto;
   border: 2px solid #323232;
   font-size: 1.35rem;
   color: #323232;
@@ -1046,6 +1053,10 @@ textarea {
   margin: 2rem auto;
   text-align: center;
   font-family: quattrocento, sans-serif; }
+  @media all and (min-width: 760px) {
+    .home .catalyst-formula-copy {
+      margin: 4rem auto;
+      line-height: 1.75rem; } }
 
 .home .projects {
   padding-top: 3rem;
@@ -1056,6 +1067,10 @@ textarea {
     padding: 0 2rem;
     text-align: center;
     font-family: quattrocento, sans-serif; }
+    @media all and (min-width: 760px) {
+      .home .projects .our-projects-copy {
+        margin: 4rem auto;
+        line-height: 1.75rem; } }
   .home .projects .project-name {
     margin-top: 1rem;
     font-weight: 700; }
@@ -1077,26 +1092,31 @@ textarea {
     margin-top: 0; }
   .home .projects .left-quotation-mark,
   .home .projects .right-quotation-mark {
-    height: 60px;
-    width: 85px;
+    height: 50px;
+    width: 65px;
     background: url("../../images/icon/quotation.svg") center;
     background-size: 275%;
     position: relative;
     z-index: -1;
     display: none; }
+    @media all and (min-width: 760px) {
+      .home .projects .left-quotation-mark,
+      .home .projects .right-quotation-mark {
+        height: 60px;
+        width: 85px; } }
   .home .projects .is-selected .left-quotation-mark,
   .home .projects .is-selected .right-quotation-mark {
     display: inline-block; }
   .home .projects .left-quotation-mark {
-    top: 6vh;
-    right: 33vw; }
+    top: 8vh;
+    right: 40vw; }
     @media all and (min-width: 760px) {
       .home .projects .left-quotation-mark {
         top: 10vh;
         right: 27vw; } }
   .home .projects .right-quotation-mark {
-    bottom: 9vh;
-    left: 33vw;
+    bottom: 8vh;
+    left: 40vw;
     transform: rotate(180deg); }
     @media all and (min-width: 760px) {
       .home .projects .right-quotation-mark {
@@ -1130,6 +1150,7 @@ textarea {
       margin: 0; }
   .home .projects .image-wrapper {
     height: 300px;
+    margin-bottom: 1.5rem;
     overflow: hidden; }
     @media all and (min-width: 760px) {
       .home .projects .image-wrapper {
@@ -1174,6 +1195,10 @@ textarea {
     padding: 0 2rem;
     text-align: center;
     font-family: quattrocento, sans-serif; }
+    @media all and (min-width: 760px) {
+      .home .team .team-catalyst-copy {
+        margin: 4rem auto;
+        line-height: 1.75rem; } }
   .home .team .small-subheader {
     font-weight: 700;
     font-size: 1.3rem;
@@ -1183,7 +1208,7 @@ textarea {
     @media all and (min-width: 760px) {
       .home .team .small-subheader {
         width: 100%;
-        font-size: 1.5rem; } }
+        font-size: 2rem; } }
 
 .home .formula-carousel {
   width: 100%;
@@ -1443,7 +1468,7 @@ object {
 .page-id-21 .navigation-button {
   height: 70px;
   width: 275px;
-  margin: 2rem auto;
+  margin: 3rem auto;
   border: 2px solid #323232;
   font-size: 1.35rem;
   color: #323232;
@@ -1467,7 +1492,7 @@ object {
 .page-id-21 .download {
   height: 70px;
   width: 275px;
-  margin: 2rem auto;
+  margin: 3rem auto;
   border: 2px solid #323232;
   font-size: 1.35rem;
   color: #323232;
@@ -2033,7 +2058,8 @@ object {
         .page-id-159 .staff-profiles-wrapper .profile-popout .center-column img,
         .page-id-159 .board-profiles-wrapper .profile-popout .center-column img,
         .page-id-159 .advisors-profiles-wrapper .profile-popout .center-column img {
-          width: 290px; }
+          width: 290px;
+          border-radius: 50%; }
       .page-id-159 .staff-profiles-wrapper .profile-popout .left-column,
       .page-id-159 .board-profiles-wrapper .profile-popout .left-column,
       .page-id-159 .advisors-profiles-wrapper .profile-popout .left-column {
@@ -2058,7 +2084,8 @@ object {
         .page-id-159 .staff-profiles-wrapper .profile-popout .left-column img,
         .page-id-159 .board-profiles-wrapper .profile-popout .left-column img,
         .page-id-159 .advisors-profiles-wrapper .profile-popout .left-column img {
-          width: 225px; }
+          width: 225px;
+          border-radius: 50%; }
           @media all and (min-width: 760px) {
             .page-id-159 .staff-profiles-wrapper .profile-popout .left-column img,
             .page-id-159 .board-profiles-wrapper .profile-popout .left-column img,
@@ -2217,7 +2244,7 @@ object {
       .page-id-159 .advisors-profiles-wrapper .navigation-button-container .navigation-button {
         height: 70px;
         width: 275px;
-        margin: 2rem auto;
+        margin: 3rem auto;
         border: 2px solid #323232;
         font-size: 1.35rem;
         color: #323232;
@@ -2333,7 +2360,7 @@ object {
   .page-id-19 .navigation-button {
     height: 70px;
     width: 275px;
-    margin: 2rem auto;
+    margin: 3rem auto;
     border: 2px solid #323232;
     font-size: 1.35rem;
     color: #323232;
@@ -2528,7 +2555,7 @@ object {
   .page-id-18 .navigation-button {
     height: 70px;
     width: 275px;
-    margin: 2rem auto;
+    margin: 3rem auto;
     border: 2px solid #323232;
     font-size: 1.35rem;
     color: #323232;
@@ -3143,7 +3170,7 @@ object {
 .page-id-196 .navigation-button {
   height: 70px;
   width: 275px;
-  margin: 2rem auto;
+  margin: 3rem auto;
   border: 2px solid #323232;
   font-size: 1.35rem;
   color: #323232;
@@ -3261,7 +3288,7 @@ object {
 .page-id-195 .navigation-button {
   height: 70px;
   width: 275px;
-  margin: 2rem auto;
+  margin: 3rem auto;
   border: 2px solid #323232;
   font-size: 1.35rem;
   color: #323232;
@@ -3430,7 +3457,7 @@ object {
 .single-projects .navigation-button {
   height: 70px;
   width: 275px;
-  margin: 2rem auto;
+  margin: 3rem auto;
   border: 2px solid #323232;
   font-size: 1.35rem;
   color: #323232;
@@ -3566,6 +3593,7 @@ object {
 
 .error404 .site-content {
   height: 80vh;
+  width: 100vw;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;

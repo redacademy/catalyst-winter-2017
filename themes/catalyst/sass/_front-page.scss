@@ -1,4 +1,12 @@
 .home {
+
+    p {
+        font-size: 1.25rem;
+        @include media ($desktop-width) {
+            font-size: $font__desktop-size;
+            line-height: $line-height-desktop;
+        }
+    }
     .hamburger-menu li {
         padding: 0;
         font-size: 1.85rem;
@@ -59,6 +67,10 @@
         margin: 2rem auto;
         text-align: center;
         font-family: $font__secondary;
+        @include media ($desktop-width) {
+            margin: 4rem auto;
+            line-height: $line-height-desktop;
+        }
     }
     .projects {
         padding-top: 3rem;
@@ -69,6 +81,10 @@
             padding: 0 2rem;
             text-align: center;
             font-family: $font__secondary;
+            @include media ($desktop-width) {
+                margin: 4rem auto;
+                line-height: $line-height-desktop;
+            }
         }
         .project-name {
             margin-top: 1rem;
@@ -98,29 +114,33 @@
         }
         .left-quotation-mark,
         .right-quotation-mark {
-            height: 60px;
-            width: 85px;
+            height: 50px;
+            width: 65px;
             background: url('../../images/icon/quotation.svg') center;
             background-size: 275%;
             position: relative;
             z-index: -1;
             display: none;
+            @include media ($desktop-width) {
+                height: 60px;
+                width: 85px;
+            }
         }
         .is-selected .left-quotation-mark,
         .is-selected .right-quotation-mark {
             display: inline-block;
         }
         .left-quotation-mark {
-            top: 6vh;
-            right: 33vw;
+            top: 8vh;
+            right: 40vw;
             @include media ($desktop-width) {
                 top: 10vh;
                 right: 27vw;
             }
         }
         .right-quotation-mark {
-            bottom: 9vh;
-            left: 33vw;
+            bottom: 8vh;
+            left: 40vw;
             transform: rotate(180deg);
             @include media ($desktop-width) {
                 bottom: 12vh;
@@ -160,6 +180,7 @@
         }
         .image-wrapper {
             height: 300px;
+            margin-bottom: $base__space-unit;
             overflow: hidden;
             @include media ($desktop-width) {
                 height: 500px;
@@ -213,6 +234,10 @@
             padding: 0 2rem;
             text-align: center;
             font-family: $font__secondary;
+            @include media ($desktop-width) {
+                margin: 4rem auto;
+                line-height: $line-height-desktop;
+            }
         }
         .small-subheader {
             font-weight: $font__bold;
@@ -222,7 +247,7 @@
             text-transform: uppercase;
             @include media($desktop-width) {
                 width: 100%;
-                font-size: 1.5rem;
+                font-size: 2rem;
             }
         }
     }

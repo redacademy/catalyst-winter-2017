@@ -135,7 +135,7 @@
                 @include media(800px) {
                     top: 34%;
                 }
-                
+
                 @include media(1000px) {
                     left: -8%;
                     top: 36%;
@@ -184,6 +184,7 @@
 
                 img {
                     width: 290px;
+                    border-radius: 50%;
                 }
             }
 
@@ -199,6 +200,7 @@
                 }
                 img {
                     width: 225px;
+                    border-radius: 50%;
                     @include media($desktop-width) {
                         width: 95%;
                     }
@@ -233,7 +235,7 @@
                     float: none;
 
                     @include media($desktop-width) {
-        
+
                         float: right;
                     }
                 }
@@ -359,7 +361,7 @@
 
     .advisors-profiles-wrapper {
         margin-bottom: 2rem;
-        
+
         .small-header {
             margin: 2rem auto 1rem;
             letter-spacing: 1.5px;
