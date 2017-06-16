@@ -7,24 +7,26 @@
         line-height: $line-height-desktop;
     }
     .header-text {
-        @include header-text;
+        padding: 0 1rem;
     }
     .entry-title {
-        @include page-title;
+        font-size: 2.5rem;
+        @include media($desktop-width){
+            font-size: 4rem;
+        }
     }
     .banner-text {
-        @include banner-text;
-        width: 95%;
-        max-width: 650px;
-        font-size: 1.2rem;
-        @include media($desktop-width) {
-            font-size: 1.5rem;
+        font-size: 0.9rem;
+        margin: 0;
+        @include media($desktop-width){
+            font-size: 1rem;
         }
     }
     .banner-text-small {
-        font-size: 1rem;
-        letter-spacing: 2px;
-        @include header-text-shadow;
+        font-size: 0.9rem;
+        @include media($desktop-width){
+            font-size: 1rem;
+        }
     }
     .blue-background-header {
         margin-top: 1.5rem;
@@ -129,7 +131,7 @@
             padding-left: 1rem;
             padding-top: 1rem;
             width: 100%;
-            height: 70vh;
+            height: 30vh;
             border: none;
             font-style: italic;
         }
