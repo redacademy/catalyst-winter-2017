@@ -3358,7 +3358,13 @@ object {
   margin: 0 0.5rem;
   opacity: 0.5;
   height: 300px;
-  overflow: hidden; }
+  overflow: hidden;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
   @media all and (min-width: 760px) {
     .single-projects .images {
       width: 50%;
@@ -3366,8 +3372,7 @@ object {
   .single-projects .images img {
     width: auto;
     height: 100%;
-    max-width: none;
-    min-width: 100%; }
+    max-width: none; }
 
 .single-projects .quote-carousel {
   padding: 2rem 0; }

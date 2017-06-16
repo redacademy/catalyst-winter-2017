@@ -69,6 +69,9 @@
         opacity: 0.5;
         height: 300px;
         overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         @include media ($desktop-width) {
             width: 50%;
             height: 500px;
@@ -77,7 +80,6 @@
             width: auto;
             height: 100%;
             max-width: none;
-            min-width: 100%;
         }
     }
     .quote-carousel {
