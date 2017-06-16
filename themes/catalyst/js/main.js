@@ -292,11 +292,12 @@
     });
 
     //flickity single projects
-    $('.img-carousel').flickity({
-        contain: true,
-        wrapAround: true,
-        imagesLoaded: true,
-        pageDots: false,
+    $('.img-carousel').owlCarousel({
+        items : 1,
+        loop : true,
+        dots : false,
+        nav : true,
+        navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
     });
     $('.quote-carousel').flickity({
         contain: true,

@@ -84,18 +84,18 @@
 
             </div>
     </section>
-    <section class='arch-design'>
+    <section class='design'>
         <div>
             <div class="blue-background-header">
                 <h2 class='subheader-sm'>Architectural design</h2>
             </div>
         </div>
-        <div class="img-carousel">
+        <div id="owl" class="img-carousel owl-carousel owl-theme">
 
             <?php $gallery_images = CFS()->get('gallery_images');
             foreach ($gallery_images as $image) : ?>
                 <div class="images">
-                    <?php echo '<img src="'.$image['image'].'"/>'; ?>
+                    <img src="<?php echo $image['image']; ?>"/>
                 </div>
             <?php endforeach; wp_reset_postdata(); ?>
         </div>
@@ -115,7 +115,7 @@
         <a href="<?php echo get_home_url(); ?>/collaborate" class="navigation-button">Collaborate with us</a>
         <?php endwhile; wp_reset_postdata(); ?>
     </section>
-    <section>
+    <section class="others">
         <div class="blue-background-header">
             <h2 class='subheader-sm'>Other Projects</h2>
         </div>

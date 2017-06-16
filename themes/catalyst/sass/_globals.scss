@@ -67,3 +67,34 @@
 		line-height: 3.4rem;
 	}
 }
+
+#owl .owl-nav [class*=owl-] {
+	color: #FFF;
+    font-size: 14px;
+    margin: 5px;
+    padding: 1rem;
+    height: 10px;
+    width: 10px;
+    background: rgba(0, 0, 0, 0.63);
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	i {
+		color: #fff;
+	}
+}
+.owl-nav {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 1rem;
+	transform: translate(-50%, -50%);
+	@include media($desktop-width){
+		padding: 0 3rem;
+	}
+}
