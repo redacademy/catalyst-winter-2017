@@ -8,9 +8,12 @@
 ?>
 
 <div class="other-post-gallery">
-    <?php $posts = get_posts( array(
+    <?php 
+    $postid = get_the_ID();
+    $posts = get_posts( array(
         'post_type' => 'projects',
         'order' => 'ASC',
+        'post__not_in'=> array($postid),
     ));
     foreach ( $posts as $post ) :
         $id = get_the_id(); ?>
