@@ -281,14 +281,13 @@
         imagesLoaded: true,
         pageDots: false,
     });
+    
     $('.fp-carousel').flickity({
-        contain: true,
-        wrapAround: true,
         imagesLoaded: true,
-        pageDots: false,
+        pageDots: false, 
         prevNextButtons: false,
         autoPlay: 7500,
-        draggable: false,
+        draggable: false, 
     });
 
     //flickity single projects

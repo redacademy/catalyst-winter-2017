@@ -5,7 +5,9 @@
     <header class="hero-image-banner">
         <div class="fp-carousel"><?php $banner_array = CFS()->get('fp_gallery');
             foreach ($banner_array as $image) : ?>
-                <img class="fp-image" src='<?php echo esc_attr( $image['fp_images'] ); ?>'/>
+                <div class="fp-img-container">
+                    <img class="fp-image" src='<?php echo esc_attr( $image['fp_images'] ); ?>'/>
+                </div>
             <?php endforeach ?>
         </div>
         <div class="header-text">
