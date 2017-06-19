@@ -359,9 +359,15 @@ select,
 textarea {
   color: #4A4A4A;
   font-family: muli, sans-serif;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.4rem; }
+  line-height: 1.5rem;
+  font-size: 16px; }
+  @media all and (min-width: 760px) {
+    body,
+    button,
+    input,
+    select,
+    textarea {
+      line-height: 2.05rem; } }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -388,8 +394,7 @@ big {
 --------------------------------------------------------------*/
 html {
   box-sizing: border-box;
-  font-size: 16px;
-  font-size: 1rem; }
+  font-size: 16px; }
 
 *,
 *:before,
@@ -471,14 +476,14 @@ table {
 .blue-background-header {
   height: auto;
   width: 100%;
-  margin: 0 auto 0.75rem;
+  margin: 0 auto 1.5rem;
   padding: 0.75rem 0.5rem;
   background-color: #D9F1FF;
   text-align: center;
   line-height: 2.4rem; }
   @media all and (min-width: 760px) {
     .blue-background-header {
-      margin: 0 auto 1.5rem;
+      margin: 0 auto 2.5rem;
       padding: 1rem 0.5rem;
       line-height: 3.4rem; } }
 
@@ -500,7 +505,7 @@ table {
 .subheader-lrg {
   max-width: 400px;
   margin: 0 auto;
-  font-size: 1.85rem;
+  font-size: 2rem;
   font-weight: 600;
   color: #323232;
   line-height: 2.4rem;
@@ -652,7 +657,7 @@ textarea {
     visibility: hidden;
     height: 0;
     width: 100%; }
-    @media all and (min-width: 1180px) {
+    @media all and (min-width: 1260px) {
       .container .desktop-menu {
         visibility: visible;
         height: 100%; } }
@@ -674,7 +679,7 @@ textarea {
         overflow: hidden;
         list-style: none; }
       .container .desktop-menu #primary-menu li {
-        padding: 0 12px; }
+        padding: 0 18px; }
       .container .desktop-menu #primary-menu li.current-menu-item a {
         color: #935E32; }
       .container .desktop-menu #primary-menu a {
@@ -777,17 +782,18 @@ textarea {
   text-align: center;
   width: 100%;
   height: auto;
-  padding-top: 10px; }
+  padding-top: 10px;
+  padding-bottom: 10px; }
   @media all and (min-width: 760px) {
     .footer {
+      padding-bottom: 15px;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       -ms-flex-pack: center;
           justify-content: center;
-      width: 100%;
-      height: 120px; } }
+      width: 100%; } }
   .footer .footer-title {
     display: -ms-flexbox;
     display: flex;
@@ -819,7 +825,7 @@ textarea {
   .footer #text-2 p {
     width: auto;
     font-weight: 700;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     text-transform: uppercase;
     display: inline-block; }
     @media all and (min-width: 760px) {
@@ -827,7 +833,7 @@ textarea {
         font-size: 1.05rem; } }
     @media all and (min-width: 1100px) {
       .footer #text-2 p {
-        font-size: 1.4rem; } }
+        font-size: 1.2rem; } }
   .footer #text-3 {
     margin-top: 5px;
     font-family: quattrocento, sans-serif; }
@@ -837,15 +843,11 @@ textarea {
   .footer #text-3 p, .footer #text-4 p {
     color: #4A4A4A;
     font-size: 0.75rem;
-    font-weight: 100;
-    line-height: 0.85rem; }
+    font-weight: 100; }
     @media all and (min-width: 760px) {
       .footer #text-3 p, .footer #text-4 p {
-        font-size: 0.9rem; } }
-    @media all and (min-width: 1100px) {
-      .footer #text-3 p, .footer #text-4 p {
-        font-size: 1.2rem;
-        line-height: 1.2rem; } }
+        font-size: 1rem;
+        line-height: 1.35rem; } }
   .footer .sns-icon {
     margin: 0 0.5rem;
     padding-bottom: 0.5rem;
@@ -891,13 +893,12 @@ textarea {
         height: 40px;
         width: 40px; } }
   .footer .page-link {
+    height: 0;
     visibility: hidden;
-    height: 10px;
-    text-transform: uppercase;
-    font-size: 12px; }
+    text-transform: uppercase; }
     @media all and (min-width: 760px) {
       .footer .page-link {
-        font-size: 15px;
+        font-size: 0.85rem;
         height: auto;
         width: 20%;
         margin: auto 0;
@@ -909,8 +910,9 @@ textarea {
             flex-wrap: wrap;
         -ms-flex-pack: center;
             justify-content: center; } }
-    @media all and (min-width: 900px) {
+    @media all and (min-width: 1100px) {
       .footer .page-link {
+        font-size: 1rem;
         padding-left: 3rem; } }
     .footer .page-link a {
       text-decoration: none;
@@ -932,30 +934,14 @@ textarea {
     .footer .company-info span {
       font-style: italic; }
     .footer .company-info p {
-      font-size: 10px;
-      font-weight: 100;
-      line-height: 12px;
       margin: 0 auto; }
-      @media all and (min-width: 760px) {
-        .footer .company-info p {
-          font-size: 14px;
-          line-height: 15px; } }
-      @media all and (min-width: 900px) {
-        .footer .company-info p {
-          width: 100%;
-          font-size: 16px;
-          line-height: 24px; } }
-      @media all and (min-width: 1120px) {
-        .footer .company-info p {
-          font-size: 20px;
-          line-height: 30px; } }
 
 .home p {
-  font-size: 1.25rem; }
+  font-size: 1.2rem; }
   @media all and (min-width: 760px) {
     .home p {
-      font-size: 1.4rem;
-      line-height: 1.75rem; } }
+      font-size: 1.5rem;
+      line-height: 2.05rem; } }
 
 .home .hamburger-menu li {
   padding: 0;
@@ -1005,26 +991,30 @@ textarea {
   left: 50%;
   transform: translate(-50%, 0%); }
   .home .header-text h1 {
-    margin-bottom: 1.25rem;
+    margin-bottom: 2rem;
     font-size: 3.4rem;
     font-weight: 600;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232;
-    margin: 0 0 1rem; }
+    width: 400px;
+    margin: 0 auto 2rem; }
     @media all and (min-width: 760px) {
       .home .header-text h1 {
-        margin-bottom: 2rem;
-        font-size: 3.85rem; } }
+        font-size: 3.85rem;
+        line-height: 4.25rem; } }
   .home .header-text p {
     width: 90%;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-family: quattrocento, sans-serif;
     font-weight: 700;
     margin: 1.5rem auto;
-    line-height: 1.75rem;
+    line-height: 2.05rem;
     letter-spacing: 2px;
     margin: 0 auto;
     text-shadow: 1px 2px 5px #323232; }
+    @media all and (min-width: 760px) {
+      .home .header-text p {
+        font-size: 1.5rem; } }
 
 .home .navigation-button {
   height: 70px;
@@ -1051,7 +1041,7 @@ textarea {
     cursor: pointer; }
 
 .home .catalyst-formula-copy {
-  max-width: 1000px;
+  max-width: 650px;
   padding: 0 2rem;
   margin: 2rem auto;
   text-align: center;
@@ -1059,7 +1049,10 @@ textarea {
   @media all and (min-width: 760px) {
     .home .catalyst-formula-copy {
       margin: 4rem auto;
-      line-height: 1.75rem; } }
+      line-height: 2.05rem; } }
+  @media all and (min-width: 1200px) {
+    .home .catalyst-formula-copy {
+      max-width: 860px; } }
 
 .home .projects {
   padding-top: 3rem;
@@ -1073,10 +1066,16 @@ textarea {
     @media all and (min-width: 760px) {
       .home .projects .our-projects-copy {
         margin: 4rem auto;
-        line-height: 1.75rem; } }
+        line-height: 2.05rem; } }
+    @media all and (min-width: 1200px) {
+      .home .projects .our-projects-copy {
+        max-width: 860px; } }
   .home .projects .project-name {
-    margin-top: 1rem;
+    margin: 0.75rem 0 0.5rem;
     font-weight: 700; }
+    @media all and (min-width: 760px) {
+      .home .projects .project-name {
+        margin: 1.15rem 0 1.35rem; } }
   .home .projects .project-location {
     font-family: quattrocento, sans-serif; }
   .home .projects .project-status {
@@ -1092,42 +1091,50 @@ textarea {
   .home .projects .quote {
     font-family: quattrocento, sans-serif;
     font-style: italic;
-    margin-top: 0; }
+    margin-top: 0;
+    position: relative; }
+    .home .projects .quote p {
+      font-size: 1.5rem;
+      line-height: 2.2rem; }
+      @media all and (min-width: 760px) {
+        .home .projects .quote p {
+          font-size: 2rem;
+          line-height: 2.75rem; } }
+    .home .projects .quote .quote-target {
+      height: 0;
+      width: 0;
+      position: relative; }
   .home .projects .left-quotation-mark,
   .home .projects .right-quotation-mark {
-    height: 50px;
-    width: 65px;
+    height: 36px;
+    width: 50px;
     background: url("../../images/icon/quotation.svg") center;
     background-size: 275%;
-    position: relative;
+    position: absolute;
     z-index: -1;
     display: none; }
     @media all and (min-width: 760px) {
       .home .projects .left-quotation-mark,
       .home .projects .right-quotation-mark {
-        height: 60px;
-        width: 85px; } }
+        height: 50px;
+        width: 75px; } }
   .home .projects .is-selected .left-quotation-mark,
   .home .projects .is-selected .right-quotation-mark {
     display: inline-block; }
   .home .projects .left-quotation-mark {
-    top: 8vh;
-    right: 40vw; }
+    top: -10px;
+    left: -20px; }
     @media all and (min-width: 760px) {
       .home .projects .left-quotation-mark {
-        top: 10vh;
-        right: 27vw; } }
+        top: -22px;
+        left: -40px; } }
   .home .projects .right-quotation-mark {
-    bottom: 8vh;
-    left: 40vw;
+    bottom: -10px;
+    right: 5px;
     transform: rotate(180deg); }
     @media all and (min-width: 760px) {
       .home .projects .right-quotation-mark {
-        bottom: 12vh;
-        left: 27vw; } }
-    @media all and (min-width: 1200px) {
-      .home .projects .right-quotation-mark {
-        bottom: 9vh; } }
+        right: -20px; } }
   .home .projects .quote-text {
     margin-bottom: 2rem; }
   .home .projects .person {
@@ -1145,7 +1152,6 @@ textarea {
     @media all and (min-width: 760px) {
       .home .projects .other-proj-wrapper {
         width: 50%; } }
-    .home .projects .other-proj-wrapper .project-name,
     .home .projects .other-proj-wrapper .project-location,
     .home .projects .other-proj-wrapper .project-status,
     .home .projects .other-proj-wrapper .person,
@@ -1193,7 +1199,7 @@ textarea {
   .home .team .is-selected {
     opacity: 1; }
   .home .team .team-catalyst-copy {
-    max-width: 900px;
+    max-width: 650px;
     margin: 2rem auto;
     padding: 0 2rem;
     text-align: center;
@@ -1201,10 +1207,14 @@ textarea {
     @media all and (min-width: 760px) {
       .home .team .team-catalyst-copy {
         margin: 4rem auto;
-        line-height: 1.75rem; } }
+        line-height: 2.05rem; } }
+    @media all and (min-width: 1200px) {
+      .home .team .team-catalyst-copy {
+        max-width: 860px; } }
   .home .team .small-subheader {
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
     width: 300px;
     margin: 2rem auto;
     text-transform: uppercase; }
@@ -1276,7 +1286,6 @@ textarea {
     color: #4A4A4A;
     display: block;
     font-size: 14px;
-    font-size: 0.875rem;
     font-weight: bold;
     height: auto;
     left: 5px;
@@ -1388,6 +1397,12 @@ object {
 .gallery-caption {
   display: block; }
 
+.page-id-21 p {
+  font-size: 1.2rem; }
+  @media all and (min-width: 760px) {
+    .page-id-21 p {
+      font-size: 1.5rem; } }
+
 .page-id-21 .header-text {
   max-width: 900px;
   color: white;
@@ -1395,40 +1410,46 @@ object {
   line-height: 1; }
 
 .page-id-21 .entry-title {
-  margin-bottom: 1.25rem;
+  margin-bottom: 2rem;
   font-size: 3.4rem;
   font-weight: 600;
   text-transform: uppercase;
   text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 760px) {
     .page-id-21 .entry-title {
-      margin-bottom: 2rem;
-      font-size: 3.85rem; } }
+      font-size: 3.85rem;
+      line-height: 4.25rem; } }
 
 .page-id-21 .banner-text {
   width: 90%;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-family: quattrocento, sans-serif;
   font-weight: 700;
   margin: 1.5rem auto;
-  line-height: 1.75rem;
+  line-height: 2.05rem;
   letter-spacing: 2px;
   margin: 0 auto;
   text-shadow: 1px 2px 5px #323232; }
+  @media all and (min-width: 760px) {
+    .page-id-21 .banner-text {
+      font-size: 1.5rem; } }
 
 .page-id-21 .intro-copy {
   height: auto;
   width: 100%;
+  max-width: 650px;
   margin: 0 auto;
   padding: 2rem 1rem 1rem;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-family: quattrocento, sans-serif;
   text-align: center; }
   @media all and (min-width: 760px) {
     .page-id-21 .intro-copy {
-      font-size: 1.4rem;
-      padding: 2.75rem 0.85rem;
-      width: 65%; } }
+      font-size: 1.5rem;
+      padding: 2.75rem 0.85rem; } }
+  @media all and (min-width: 1200px) {
+    .page-id-21 .intro-copy {
+      max-width: 860px; } }
 
 .page-id-21 .site-content {
   text-align: center; }
@@ -1450,23 +1471,6 @@ object {
       margin-bottom: 30px;
       padding: 20px 0 0;
       width: 700px; } }
-
-.page-id-21 .entry-header {
-  visibility: hidden;
-  height: 1px; }
-
-.page-id-21 .top-text {
-  text-align: center;
-  font-size: 20px;
-  margin: 30px auto;
-  width: 280px;
-  font-weight: 100;
-  line-height: 25px; }
-  @media all and (min-width: 760px) {
-    .page-id-21 .top-text {
-      width: 100%;
-      font-size: 22px;
-      font-weight: lighter; } }
 
 .page-id-21 .navigation-button {
   height: 70px;
@@ -1519,6 +1523,13 @@ object {
     text-decoration: none;
     color: #323232; }
 
+.page-id-21 .mission-copy {
+  max-width: 650px;
+  margin: 0 auto; }
+  @media all and (min-width: 760px) {
+    .page-id-21 .mission-copy {
+      max-width: 860px; } }
+
 .page-id-21 .mission-quote,
 .page-id-21 .mission-quote2 {
   display: -ms-flexbox;
@@ -1529,17 +1540,18 @@ object {
       justify-content: center; }
 
 .page-id-21 .mission-quote {
-  height: 160px; }
-  @media all and (min-width: 760px) {
-    .page-id-21 .mission-quote {
-      height: 125px; } }
+  height: auto;
+  position: relative; }
+  .page-id-21 .mission-quote .quote-target {
+    height: 0;
+    width: 0;
+    position: relative; }
 
 .page-id-21 .mission-quote2 {
-  height: 253px; }
+  height: auto; }
   @media all and (min-width: 760px) {
     .page-id-21 .mission-quote2 {
-      margin-bottom: 0px;
-      height: 195px; }
+      margin-bottom: 0px; }
       .page-id-21 .mission-quote2 p {
         margin-bottom: 0; } }
 
@@ -1548,71 +1560,101 @@ object {
   z-index: 1;
   margin-top: 67px;
   text-align: center;
-  font-size: 20px;
+  font-size: 1.7rem;
+  line-height: 2.2rem;
   font-weight: 100;
-  line-height: 28px;
   width: 80%;
   font-family: quattrocento, sans-serif;
   font-style: italic; }
+  @media all and (min-width: 760px) {
+    .page-id-21 .quote,
+    .page-id-21 .quote2 {
+      font-size: 2.4rem;
+      line-height: 2.75rem; } }
 
 .page-id-21 .quotation-left,
 .page-id-21 .quotation-left2 {
   background: url("../../images/icon/quotation.svg") no-repeat center;
   background-size: 250%;
-  width: 100px;
-  height: 130px;
+  height: 36px;
+  width: 50px;
   position: absolute; }
+  @media all and (min-width: 760px) {
+    .page-id-21 .quotation-left,
+    .page-id-21 .quotation-left2 {
+      height: 50px;
+      width: 75px; } }
 
 .page-id-21 .quotation-left {
-  left: 7%;
-  top: 0%; }
-  @media all and (min-width: 760px) {
+  top: 55px;
+  left: 25px; }
+  @media all and (min-width: 670px) {
     .page-id-21 .quotation-left {
-      left: 13%;
-      top: 1%; } }
+      left: 35px; } }
+  @media all and (min-width: 1000px) {
+    .page-id-21 .quotation-left {
+      left: 65px; } }
   @media all and (min-width: 1200px) {
     .page-id-21 .quotation-left {
-      left: 18%; } }
+      left: 80px; } }
 
 .page-id-21 .quotation-left2 {
-  left: 5%;
-  top: 1%; }
+  top: 55px;
+  left: 27px; }
   @media all and (min-width: 760px) {
     .page-id-21 .quotation-left2 {
-      left: 5%;
-      top: 2%; } }
+      top: 50px;
+      left: 35px; } }
+  @media all and (min-width: 1260px) {
+    .page-id-21 .quotation-left2 {
+      left: 110px; } }
 
 .page-id-21 .quotation-right,
 .page-id-21 .quotation-right2 {
   background: url("../../images/icon/quotation.svg") no-repeat center;
   background-size: 250%;
-  width: 100px;
-  height: 130px;
+  height: 36px;
+  width: 50px;
   transform: rotate(180deg);
   position: absolute; }
+  @media all and (min-width: 760px) {
+    .page-id-21 .quotation-right,
+    .page-id-21 .quotation-right2 {
+      height: 50px;
+      width: 75px; } }
 
 .page-id-21 .quotation-right {
-  right: 7%;
-  top: 34%; }
+  top: 140px;
+  right: 50px; }
+  @media all and (min-width: 630px) {
+    .page-id-21 .quotation-right {
+      top: 110px;
+      right: 55px; } }
   @media all and (min-width: 760px) {
     .page-id-21 .quotation-right {
-      left: 78%;
-      top: 36%; } }
-  @media all and (min-width: 1200px) {
+      top: 150px; } }
+  @media all and (min-width: 863px) {
     .page-id-21 .quotation-right {
-      left: 74%; } }
+      top: 135px;
+      right: 70px; } }
+  @media all and (min-width: 960px) {
+    .page-id-21 .quotation-right {
+      top: 125px;
+      right: 130px; } }
 
 .page-id-21 .quotation-right2 {
-  left: 70%;
-  top: 78%; }
+  bottom: 10px;
+  right: 27px; }
+  @media all and (min-width: 515px) {
+    .page-id-21 .quotation-right2 {
+      right: 45px; } }
   @media all and (min-width: 760px) {
     .page-id-21 .quotation-right2 {
-      left: 83%;
-      top: 44%; } }
-  @media all and (min-width: 1200px) {
+      bottom: -10px;
+      right: 70px; } }
+  @media all and (min-width: 1260px) {
     .page-id-21 .quotation-right2 {
-      top: 36%;
-      left: 86%; } }
+      right: 120px; } }
 
 .page-id-21 .robert {
   margin: 2rem auto;
@@ -1704,29 +1746,30 @@ object {
 
 .page-id-21 .formula-p {
   font-family: quattrocento, sans-serif;
-  width: 90%;
+  max-width: 650px;
   margin: auto;
   margin-bottom: 50px; }
-  @media all and (min-width: 760px) {
+  @media all and (min-width: 1200px) {
     .page-id-21 .formula-p {
-      width: 75%; } }
+      max-width: 860px; } }
 
 .page-id-21 .formula-text1,
 .page-id-21 .formula-text2 {
-  font-size: 20px;
-  line-height: 22px;
+  margin: 2.5rem auto;
+  font-size: 1.2rem;
   font-weight: 100; }
   @media all and (min-width: 760px) {
     .page-id-21 .formula-text1,
     .page-id-21 .formula-text2 {
-      font-size: 24px;
-      line-height: 28px; } }
+      font-size: 1.5rem; } }
 
 .page-id-21 .formula-carousel {
   font-family: quattrocento, sans-serif; }
   @media all and (min-width: 760px) {
     .page-id-21 .formula-carousel {
       padding-left: 20px; } }
+  .page-id-21 .formula-carousel .flickity-prev-next-button {
+    display: none; }
 
 .page-id-21 .formula-carousel {
   width: 100%;
@@ -1788,47 +1831,53 @@ object {
   width: 100%; }
   @media all and (min-width: 760px) {
     .page-id-159 {
-      font-size: 1.4rem;
-      line-height: 1.75rem; } }
+      font-size: 1.5rem;
+      line-height: 2.05rem; } }
   .page-id-159 .header-text {
     max-width: 900px;
     color: white;
     padding: 0 2rem;
     line-height: 1; }
   .page-id-159 .entry-title {
-    margin-bottom: 1.25rem;
+    margin-bottom: 2rem;
     font-size: 3.4rem;
     font-weight: 600;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 760px) {
       .page-id-159 .entry-title {
-        margin-bottom: 2rem;
-        font-size: 3.85rem; } }
+        font-size: 3.85rem;
+        line-height: 4.25rem; } }
   .page-id-159 .banner-text {
     width: 95%;
     width: 90%;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-family: quattrocento, sans-serif;
     font-weight: 700;
     margin: 1.5rem auto;
-    line-height: 1.75rem;
+    line-height: 2.05rem;
     letter-spacing: 2px;
     margin: 0 auto;
     text-shadow: 1px 2px 5px #323232; }
+    @media all and (min-width: 760px) {
+      .page-id-159 .banner-text {
+        font-size: 1.5rem; } }
   .page-id-159 .intro-copy {
     height: auto;
     width: 100%;
+    max-width: 650px;
     margin: 0 auto;
     padding: 2rem 1rem 1rem;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-family: quattrocento, sans-serif;
     text-align: center; }
     @media all and (min-width: 760px) {
       .page-id-159 .intro-copy {
-        font-size: 1.4rem;
-        padding: 2.75rem 0.85rem;
-        width: 65%; } }
+        font-size: 1.5rem;
+        padding: 2.75rem 0.85rem; } }
+    @media all and (min-width: 1200px) {
+      .page-id-159 .intro-copy {
+        max-width: 860px; } }
   .page-id-159 .blue-background-header {
     position: relative;
     font-size: 2.4rem; }
@@ -1872,7 +1921,7 @@ object {
     width: 45px;
     font-size: 3.2rem;
     font-weight: 400;
-    margin: 0 auto;
+    margin: 1rem auto;
     border: 3px solid #323232;
     border-radius: 100%;
     padding: 0 0 9px 1px;
@@ -2339,25 +2388,28 @@ object {
     padding: 0 2rem;
     line-height: 1; }
   .page-id-19 .entry-title {
-    margin-bottom: 1.25rem;
+    margin-bottom: 2rem;
     font-size: 3.4rem;
     font-weight: 600;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 760px) {
       .page-id-19 .entry-title {
-        margin-bottom: 2rem;
-        font-size: 3.85rem; } }
+        font-size: 3.85rem;
+        line-height: 4.25rem; } }
   .page-id-19 .banner-text {
     width: 90%;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-family: quattrocento, sans-serif;
     font-weight: 700;
     margin: 1.5rem auto;
-    line-height: 1.75rem;
+    line-height: 2.05rem;
     letter-spacing: 2px;
     margin: 0 auto;
     text-shadow: 1px 2px 5px #323232; }
+    @media all and (min-width: 760px) {
+      .page-id-19 .banner-text {
+        font-size: 1.5rem; } }
   .page-id-19 .entry-header {
     display: none; }
   .page-id-19 .navigation-button {
@@ -2500,8 +2552,8 @@ object {
   width: 100%; }
   @media all and (min-width: 760px) {
     .page-id-18 {
-      font-size: 1.4rem;
-      line-height: 1.75rem; } }
+      font-size: 1.5rem;
+      line-height: 2.05rem; } }
   .page-id-18 .header-text {
     max-width: 900px;
     color: white;
@@ -2510,7 +2562,7 @@ object {
     max-width: 900px;
     padding: 0 10px; }
   .page-id-18 .entry-title {
-    margin-bottom: 1.25rem;
+    margin-bottom: 2rem;
     font-size: 3.4rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -2518,43 +2570,53 @@ object {
     font-size: 3.25rem; }
     @media all and (min-width: 760px) {
       .page-id-18 .entry-title {
-        margin-bottom: 2rem;
-        font-size: 3.85rem; } }
+        font-size: 3.85rem;
+        line-height: 4.25rem; } }
   .page-id-18 .banner-text {
     width: 90%;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-family: quattrocento, sans-serif;
     font-weight: 700;
     margin: 1.5rem auto;
-    line-height: 1.75rem;
+    line-height: 2.05rem;
     letter-spacing: 2px;
     margin: 0 auto;
     text-shadow: 1px 2px 5px #323232; }
+    @media all and (min-width: 760px) {
+      .page-id-18 .banner-text {
+        font-size: 1.5rem; } }
   .page-id-18 .intro-copy {
     height: auto;
     width: 100%;
+    max-width: 650px;
     margin: 0 auto;
     padding: 2rem 1rem 1rem;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-family: quattrocento, sans-serif;
     text-align: center; }
     @media all and (min-width: 760px) {
       .page-id-18 .intro-copy {
-        font-size: 1.4rem;
-        padding: 2.75rem 0.85rem;
-        width: 65%; } }
+        font-size: 1.5rem;
+        padding: 2.75rem 0.85rem; } }
+    @media all and (min-width: 1200px) {
+      .page-id-18 .intro-copy {
+        max-width: 860px; } }
   .page-id-18 .main-copy_container {
     height: auto;
-    width: 100%;
+    max-width: 650px;
     margin: 0 auto;
     padding: 0.55rem 0;
     font-family: quattrocento, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
     text-align: center;
     text-align: center; }
     @media all and (min-width: 760px) {
       .page-id-18 .main-copy_container {
-        width: 75%;
-        padding: 0.75rem auto; } }
+        max-width: 860px;
+        padding: 0.75rem auto;
+        font-size: 1.5rem;
+        line-height: 2.05rem; } }
   .page-id-18 .navigation-button {
     height: 70px;
     width: 275px;
@@ -2666,7 +2728,7 @@ object {
           bottom: 0.2rem; }
         @media all and (min-width: 760px) {
           .page-id-18 .content-container .partners-information-container .collaborate-dashed-list li {
-            font-size: 1.4rem; } }
+            font-size: 1.5rem; } }
       .page-id-18 .content-container .partners-information-container .collaborate-dashed-list .key-graphic-1 {
         height: 304px;
         width: 123px;
@@ -2904,8 +2966,8 @@ object {
   width: 100%; }
   @media all and (min-width: 760px) {
     .page-id-7 {
-      font-size: 1.4rem;
-      line-height: 1.75rem; } }
+      font-size: 1.5rem;
+      line-height: 2.05rem; } }
   .page-id-7 .header-text {
     padding: 0 1rem; }
   .page-id-7 .entry-title {
@@ -3044,40 +3106,46 @@ object {
   line-height: 1; }
 
 .page-id-196 .entry-title {
-  margin-bottom: 1.25rem;
+  margin-bottom: 2rem;
   font-size: 3.4rem;
   font-weight: 600;
   text-transform: uppercase;
   text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 760px) {
     .page-id-196 .entry-title {
-      margin-bottom: 2rem;
-      font-size: 3.85rem; } }
+      font-size: 3.85rem;
+      line-height: 4.25rem; } }
 
 .page-id-196 .banner-text {
   width: 90%;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-family: quattrocento, sans-serif;
   font-weight: 700;
   margin: 1.5rem auto;
-  line-height: 1.75rem;
+  line-height: 2.05rem;
   letter-spacing: 2px;
   margin: 0 auto;
   text-shadow: 1px 2px 5px #323232; }
+  @media all and (min-width: 760px) {
+    .page-id-196 .banner-text {
+      font-size: 1.5rem; } }
 
 .page-id-196 .intro-copy {
   height: auto;
   width: 100%;
+  max-width: 650px;
   margin: 0 auto;
   padding: 2rem 1rem 1rem;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-family: quattrocento, sans-serif;
   text-align: center; }
   @media all and (min-width: 760px) {
     .page-id-196 .intro-copy {
-      font-size: 1.4rem;
-      padding: 2.75rem 0.85rem;
-      width: 65%; } }
+      font-size: 1.5rem;
+      padding: 2.75rem 0.85rem; } }
+  @media all and (min-width: 1200px) {
+    .page-id-196 .intro-copy {
+      max-width: 860px; } }
 
 .page-id-196 .page-header-container {
   background-color: #D9F1FF;
@@ -3100,7 +3168,7 @@ object {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  line-height: 1.75rem; }
+  line-height: 2.05rem; }
 
 .page-id-196 .job-post {
   margin: 0 10%;
@@ -3185,41 +3253,47 @@ object {
   max-width: 750px; }
 
 .page-id-195 .entry-title {
-  margin-bottom: 1.25rem;
+  margin-bottom: 2rem;
   font-size: 3.4rem;
   font-weight: 600;
   text-transform: uppercase;
   text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 760px) {
     .page-id-195 .entry-title {
-      margin-bottom: 2rem;
-      font-size: 3.85rem; } }
+      font-size: 3.85rem;
+      line-height: 4.25rem; } }
 
 .page-id-195 .banner-text {
   width: 90%;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-family: quattrocento, sans-serif;
   font-weight: 700;
   margin: 1.5rem auto;
-  line-height: 1.75rem;
+  line-height: 2.05rem;
   letter-spacing: 2px;
   margin: 0 auto;
   text-shadow: 1px 2px 5px #323232; }
+  @media all and (min-width: 760px) {
+    .page-id-195 .banner-text {
+      font-size: 1.5rem; } }
 
 .page-id-195 .intro-copy {
   height: auto;
   width: 100%;
+  max-width: 650px;
   margin: 0 auto;
   padding: 2rem 1rem 1rem;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-family: quattrocento, sans-serif;
   text-align: center;
   max-width: 850px; }
   @media all and (min-width: 760px) {
     .page-id-195 .intro-copy {
-      font-size: 1.4rem;
-      padding: 2.75rem 0.85rem;
-      width: 65%; } }
+      font-size: 1.5rem;
+      padding: 2.75rem 0.85rem; } }
+  @media all and (min-width: 1200px) {
+    .page-id-195 .intro-copy {
+      max-width: 860px; } }
   @media all and (min-width: 760px) {
     .page-id-195 .intro-copy {
       width: 100%; } }
@@ -3345,7 +3419,7 @@ object {
     font-weight: 700; }
   .single-projects .proj-content p {
     margin-top: 0;
-    font-size: 1.4rem; }
+    font-size: 1.5rem; }
 
 .single-projects .gallery {
   text-align: center;
@@ -3530,12 +3604,12 @@ object {
   width: 100%; }
   @media all and (min-width: 760px) {
     .page-id-252 {
-      font-size: 1.4rem;
-      line-height: 1.75rem; } }
+      font-size: 1.5rem;
+      line-height: 2.05rem; } }
   .page-id-252 .entry-title {
     display: none; }
   .page-id-252 .banner-text {
-    margin-bottom: 1.25rem;
+    margin-bottom: 2rem;
     font-size: 3.4rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -3546,8 +3620,8 @@ object {
     padding: 0 2rem; }
     @media all and (min-width: 760px) {
       .page-id-252 .banner-text {
-        margin-bottom: 2rem;
-        font-size: 3.85rem; } }
+        font-size: 3.85rem;
+        line-height: 4.25rem; } }
     @media all and (min-width: 760px) {
       .page-id-252 .banner-text {
         max-width: 900px;

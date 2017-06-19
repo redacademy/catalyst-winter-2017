@@ -8,7 +8,7 @@
 ?>
 
 <div class="other-post-gallery">
-    <?php 
+    <?php
     $postid = get_the_ID();
     $posts = get_posts( array(
         'post_type' => 'projects',
@@ -34,10 +34,16 @@
                 if ( !empty( $quotes_array ) ) : ?>
                     <?php foreach ($first_quotes_object as $quote) : ?>
                         <div class="quote">
-                        <div class="left-quotation-mark"></div>
-                        <p><?php echo esc_html( $quote['quotes'] ); ?></p>
-                         <div class="right-quotation-mark"></div>
+                            <div class="left-quotation-mark"></div>
+
+                            <p>
+                                <?php echo esc_html( $quote['quotes'] ); ?>
+                                <span class="quote-target">
+                                    <div class="right-quotation-mark"></div>
+                                </span>
+                            </p>
                         </div>
+
                         <p class="person"> <?php echo esc_html( $quote['person'] ); ?></p>
                         <p class="line"> <?php echo esc_html( $quote['line2'] ); ?></p>
                         <p class="line"> <?php echo esc_html( $quote['line1'] ); ?></p>

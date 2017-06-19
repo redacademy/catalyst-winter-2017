@@ -1,7 +1,6 @@
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {
 	font-size: ($sizeValue * 16) * 1px;
-	font-size: $sizeValue * 1rem;
 }
 
 // Text decoration
@@ -18,53 +17,63 @@
 }
 
 @mixin page-title {
-	margin-bottom: 1.25rem;
+	margin-bottom: 2rem;
 	font-size: 3.4rem;
 	font-weight: $font__semibold;
 	text-transform: uppercase;
 	@include header-text-shadow;
 	@include media($desktop-width) {
-		margin-bottom: 2rem;
 		font-size: 3.85rem;
+		line-height: 4.25rem;
 	}
 }
 @mixin banner-text {
 	width: 90%;
-	font-size: 1.4rem;
-  	font-family: $font__secondary;
-  	font-weight: $font__bold;
+	font-size: 1.6rem;
+	font-family: $font__secondary;
+	font-weight: $font__bold;
 	margin: $base__space-unit auto;
 	line-height: $line-height-desktop;
 	letter-spacing: 2px;
 	margin: 0 auto;
 	@include header-text-shadow;
+	@include media($desktop-width) {
+		font-size: $font__desktop-size;
+	}
 }
 
 @mixin intro-copy {
 	height: auto;
 	width: 100%;
+	max-width: 650px;
 	margin: 0 auto;
 	padding: 2rem 1rem 1rem;
-	font-size: 1.25rem;
+	font-size: $font__mobile-size;
 	font-family: $font__secondary;
 	text-align: center;
 	@include media($desktop-width) {
-		font-size: 1.4rem;
+		font-size: $font__desktop-size;
 		padding: 2.75rem 0.85rem;
-		width: 65%;
+	}
+	@include media(1200px) {
+		max-width: 860px;
 	}
 }
 
 @mixin main-copy {
 	height: auto;
-	width: 100%;
+	max-width: 650px;
 	margin: 0 auto;
 	padding: 0.55rem 0;
 	font-family: $font__secondary;
+	font-size: $font__mobile-size;
+	line-height: $line-height-body;
 	text-align: center;
 	@include media($desktop-width) {
-		width: 75%;
+		max-width: 860px;
 		padding: 0.75rem auto;
+		font-size: $font__desktop-size;
+		line-height: $line-height-desktop;
 	}
 }
 
@@ -176,7 +185,7 @@
 	width: $size;
 	font-size: 3.2rem;
 	font-weight: 400;
-	margin: 0 auto;
+	margin: 1rem auto;
 	border: 3px solid $color__header-main;
 	border-radius: 100%;
 	padding: 0 0 9px 1px;

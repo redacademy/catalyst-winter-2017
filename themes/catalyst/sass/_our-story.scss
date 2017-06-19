@@ -1,4 +1,10 @@
 .page-id-21 {
+    p {
+        font-size: $font__mobile-size;
+        @include media ($desktop-width) {
+            font-size: $font__desktop-size;
+        }
+    }
     .header-text {
         @include header-text;
     }
@@ -32,23 +38,6 @@
             width: 700px;
         }
     }
-    .entry-header {
-        visibility: hidden;
-        height: 1px;
-    }
-    .top-text {
-        text-align: center;
-        font-size: 20px;
-        margin: 30px auto;
-        width: 280px;
-        font-weight: 100;
-        line-height: 25px;
-        @include media($desktop-width) {
-            width: 100%;
-            font-size: 22px;
-            font-weight: lighter;
-        }
-    }
     .navigation-button {
         @include navigation-button();
     }
@@ -59,26 +48,34 @@
             color: $color__header-main;
         }
     }
+    .mission-copy {
+        max-width: 650px;
+        margin: 0 auto;
+        @include media($desktop-width) {
+            max-width: 860px;
+        }
+    }
     .mission-quote,
     .mission-quote2 {
         display: flex;
         font-weight: lighter;
         position: relative;
         justify-content: center;
-        // padding-top: 30px;
     }
     .mission-quote {
-        height: 160px;
-        @include media($desktop-width) {
-            height: 125px;
+        height: auto;
+        position: relative;
+
+        .quote-target {
+            height: 0;
+            width: 0;
+            position: relative;
         }
     }
     .mission-quote2 {
-        height: 253px;
+        height: auto;
         @include media($desktop-width) {
             margin-bottom: 0px;
-            height: 195px;
-
             p {
                 margin-bottom: 0;
             }
@@ -89,70 +86,97 @@
         z-index: 1;
         margin-top: 67px;
         text-align: center;
-        font-size: 20px;
+        font-size: 1.7rem;
+        line-height: 2.2rem;
         font-weight: 100;
-        line-height: 28px;
         width: 80%;
         font-family: $font__secondary;
         font-style: italic;
+        @include media($desktop-width) {
+            font-size: 2.4rem;
+            line-height: 2.75rem;
+        }
     }
     .quotation-left,
     .quotation-left2 {
         background: url('../../images/icon/quotation.svg')no-repeat center;
         background-size: 250%;
-        width: 100px;
-        height: 130px;
+        height: 36px;
+        width: 50px;
         position: absolute;
+        @include media ($desktop-width) {
+            height: 50px;
+            width: 75px;
+        }
     }
     .quotation-left {
-        left: 7%;
-        top: 0%;
-        @include media($desktop-width) {
-            left: 13%;
-            top: 1%;
+        top: 55px;
+        left: 25px;
+        @include media(670px) {
+            left: 35px;
+        }
+        @include media(1000px) {
+            left: 65px;
         }
         @include media(1200px) {
-            left: 18%;
+            left: 80px;
         }
     }
     .quotation-left2 {
-        left: 5%;
-        top: 1%;
+        top: 55px;
+        left: 27px;
         @include media($desktop-width) {
-            left: 5%;
-            top: 2%;
+            top: 50px;
+            left: 35px;
+        }
+        @include media(1260px) {
+            left: 110px;
         }
     }
     .quotation-right,
     .quotation-right2 {
         background: url('../../images/icon/quotation.svg')no-repeat center;
         background-size: 250%;
-        width: 100px;
-        height: 130px;
+        height: 36px;
+        width: 50px;
         transform: rotate(180deg);
         position: absolute;
+        @include media ($desktop-width) {
+            height: 50px;
+            width: 75px;
+        }
     }
     .quotation-right {
-        right: 7%;
-        top: 34%;
-        @include media($desktop-width) {
-            left: 78%;
-            top: 36%;
+        top: 140px;
+        right: 50px;
+        @include media(630px) {
+            top: 110px;
+            right: 55px;
         }
-        @include media(1200px) {
-            left: 74%;
+        @include media($desktop-width) {
+            top: 150px;
+        }
+        @include media(863px) {
+            top: 135px;
+            right: 70px;
+        }
+        @include media(960px) {
+            top: 125px;
+            right: 130px;
         }
     }
     .quotation-right2 {
-        left: 70%;
-        top: 78%;
-        @include media($desktop-width) {
-            left: 83%;
-            top: 44%;
+        bottom: 10px;
+        right: 27px;
+        @include media(515px) {
+            right: 45px;
         }
-        @include media(1200px) {
-            top: 36%;
-            left: 86%;
+        @include media($desktop-width) {
+            bottom: -10px;
+            right: 70px;
+        }
+        @include media(1260px) {
+            right: 120px;
         }
     }
     .robert {
@@ -244,27 +268,29 @@
     }
     .formula-p {
         font-family: $font__secondary;
-        width: 90%;
+        max-width: 650px;
         margin: auto;
         margin-bottom: 50px;
-        @include media($desktop-width) {
-            width: 75%;
+        @include media(1200px) {
+            max-width: 860px;
         }
     }
     .formula-text1,
     .formula-text2 {
-        font-size: 20px;
-        line-height: 22px;
+        margin: 2.5rem auto;
+        font-size: $font__mobile-size;
         font-weight: 100;
         @include media($desktop-width) {
-            font-size: 24px;
-            line-height: 28px;
+            font-size: $font__desktop-size;
         }
     }
     .formula-carousel {
         font-family: $font__secondary;
         @include media($desktop-width) {
             padding-left: 20px;
+        }
+        .flickity-prev-next-button {
+            display: none;
         }
     }
     @include ourStory-carousel {

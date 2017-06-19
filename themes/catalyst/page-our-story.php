@@ -19,18 +19,20 @@ get_header(); ?>
                 	<h2 class='subheader-lrg'><?php echo esc_html( CFS()->get('content_title1')); ?></h2>
 				</div>
 
-                <h3 class='status'><?php echo esc_html( CFS()->get( 'our_mission' ) ); ?></h3>
+        <p class='mission-copy'><?php echo esc_html( CFS()->get( 'our_mission' ) ); ?></p>
 
 
 				<div class="mission-quote">
 					<div class="quotation-left"></div>
 
 					<?php $quotation1 = esc_html( CFS()->get( 'quotation1' ) );
-					if ( !empty( $quotation1) ) :?>
-					<p class='quote'><?php echo $quotation1; ?></p>
-					<?php endif; ?>
+						if ( !empty( $quotation1) ) :?>
+							<p class='quote'>
+								<?php echo $quotation1; ?>
+							</p>
 
-					<div class="quotation-right"></div>
+							<div class="quotation-right"></div>
+					<?php endif; ?>
 				</div>
 				<div class="robert">
 

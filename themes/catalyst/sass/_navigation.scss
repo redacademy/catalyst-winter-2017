@@ -105,7 +105,7 @@
 		visibility: hidden;
 		height: 0;
 		width: 100%;
-		@include media(1180px) {
+		@include media(1260px) {
 			visibility: visible;
 			height: 100%;
 		}
@@ -127,7 +127,7 @@
 				list-style: none;
 			}
 			li {
-				padding: 0 12px;
+				padding: 0 18px;
 			}
 			li.current-menu-item {
 				a {

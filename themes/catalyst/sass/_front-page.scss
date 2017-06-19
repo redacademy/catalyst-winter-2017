@@ -1,7 +1,6 @@
 .home {
-
     p {
-        font-size: 1.25rem;
+        font-size: $font__mobile-size;
         @include media ($desktop-width) {
             font-size: $font__desktop-size;
             line-height: $line-height-desktop;
@@ -55,7 +54,8 @@
         transform: translate(-50%, 0%);
         h1 {
             @include page-title;
-            margin: 0 0 1rem;
+            width: 400px;
+            margin: 0 auto 2rem;
         }
         p {
             @include banner-text;
@@ -65,7 +65,7 @@
         @include navigation-button();
     }
     .catalyst-formula-copy {
-        max-width: 1000px;
+        max-width: 650px;
         padding: 0 2rem;
         margin: 2rem auto;
         text-align: center;
@@ -73,6 +73,9 @@
         @include media ($desktop-width) {
             margin: 4rem auto;
             line-height: $line-height-desktop;
+        }
+        @include media(1200px) {
+            max-width: 860px;
         }
     }
     .projects {
@@ -88,10 +91,16 @@
                 margin: 4rem auto;
                 line-height: $line-height-desktop;
             }
+            @include media(1200px) {
+                max-width: 860px;
+            }
         }
         .project-name {
-            margin-top: 1rem;
+            margin: 0.75rem 0 0.5rem;
             font-weight: $font__bold;
+            @include media($desktop-width) {
+                margin: 1.15rem 0 1.35rem;
+            }
         }
         .project-location {
             font-family: $font__secondary;
@@ -114,19 +123,34 @@
             font-family: $font__secondary;
             font-style: italic;
             margin-top: 0;
+            position: relative;
+
+            p {
+                font-size: 1.5rem;
+                line-height: 2.2rem;
+                @include media($desktop-width) {
+                    font-size: 2rem;
+                    line-height: 2.75rem;
+                }
+            }
+            .quote-target {
+                height: 0;
+                width: 0;
+                position: relative;
+            }
         }
         .left-quotation-mark,
         .right-quotation-mark {
-            height: 50px;
-            width: 65px;
+            height: 36px;
+            width: 50px;
             background: url('../../images/icon/quotation.svg') center;
             background-size: 275%;
-            position: relative;
+            position: absolute;
             z-index: -1;
             display: none;
             @include media ($desktop-width) {
-                height: 60px;
-                width: 85px;
+                height: 50px;
+                width: 75px;
             }
         }
         .is-selected .left-quotation-mark,
@@ -134,23 +158,19 @@
             display: inline-block;
         }
         .left-quotation-mark {
-            top: 8vh;
-            right: 40vw;
+            top: -10px;
+            left: -20px;
             @include media ($desktop-width) {
-                top: 10vh;
-                right: 27vw;
+                top: -22px;
+                left: -40px;
             }
         }
         .right-quotation-mark {
-            bottom: 8vh;
-            left: 40vw;
+            bottom: -10px;
+            right: 5px;
             transform: rotate(180deg);
             @include media ($desktop-width) {
-                bottom: 12vh;
-                left: 27vw;
-            }
-            @include media (1200px) {
-                bottom: 9vh;
+                right: -20px;
             }
         }
         .quote-text {
@@ -173,7 +193,6 @@
             @include media ($desktop-width) {
                 width: 50%;
             }
-            .project-name,
             .project-location,
             .project-status,
             .person,
@@ -232,7 +251,7 @@
             opacity: 1;
         }
         .team-catalyst-copy {
-            max-width: 900px;
+            max-width: 650px;
             margin: 2rem auto;
             padding: 0 2rem;
             text-align: center;
@@ -241,10 +260,14 @@
                 margin: 4rem auto;
                 line-height: $line-height-desktop;
             }
+            @include media(1200px) {
+                max-width: 860px;
+            }
         }
         .small-subheader {
             font-weight: $font__bold;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
+            line-height: 1.8rem;
             width: 300px;
             margin: 2rem auto;
             text-transform: uppercase;

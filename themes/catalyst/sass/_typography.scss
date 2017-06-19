@@ -9,8 +9,11 @@ select,
 textarea {
 	color: $color__text-main;
 	font-family: $font__main;
-	@include font-size(1);
 	line-height: $line-height-body;
+	@include font-size(1);
+	@include media($desktop-width) {
+		line-height: $line-height-desktop;
+	}
 }
 
 /* Headings */
