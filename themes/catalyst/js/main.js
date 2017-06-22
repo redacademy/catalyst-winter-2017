@@ -289,7 +289,6 @@
         autoPlay: 7500,
         draggable: false, 
     });
-
     //flickity single projects
     $('.img-carousel').flickity({
         contain: true,
