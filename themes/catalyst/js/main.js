@@ -317,5 +317,24 @@
         imagesLoaded: true,
         pageDots: false,
     });
-
+        
+    //rent chart height
+    $(window).on('load', function() {
+        var $chartHeight = $('.rows').outerHeight();
+        console.log($chartHeight+100);
+        $('.rent-chart-container').css('height', $chartHeight);
+    });
+    
+    //add classes to selections and corresponding images 
+    $('.selection p').each(function(i) {
+        $(this).addClass('select'+(i+1));
+    });
+    $('.floorplan-img-container img').each(function(i) {
+        $(this).addClass('select'+(i+1));
+    });
+    
+    $('.selection p').on('click',function(){
+        var $homeSelect = $(this).attr('class');
+        $('.floorplan-img-container .'+$homeSelect).css('display', 'none');
+    })
 })(jQuery);
