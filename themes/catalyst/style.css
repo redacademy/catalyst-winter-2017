@@ -487,21 +487,6 @@ table {
       padding: 1rem 0.5rem;
       line-height: 3.4rem; } }
 
-.subheader-sm {
-  max-width: 400px;
-  margin: 0 auto;
-  font-size: 2rem;
-  font-weight: 600;
-  color: #323232;
-  line-height: 2.4rem;
-  text-transform: uppercase;
-  text-align: center; }
-  @media all and (min-width: 760px) {
-    .subheader-sm {
-      max-width: none;
-      font-size: 1.85rem;
-      line-height: 3.4rem; } }
-
 .subheader-lrg {
   max-width: 400px;
   margin: 0 auto;

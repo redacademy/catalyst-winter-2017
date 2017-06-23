@@ -31,7 +31,7 @@
             </div>
 
             <div class="blue-background-header">
-                <h2 class='subheader-sm'>Project details</h2>
+                <h2 class='subheader-lrg'>Project details</h2>
             </div>
 
             <div class="proj-content">
@@ -87,7 +87,7 @@
     <section class='arch-design'>
         <div>
             <div class="blue-background-header">
-                <h2 class='subheader-sm'>Architectural design</h2>
+                <h2 class='subheader-lrg'>Architectural design</h2>
             </div>
         </div>
         <div class="img-carousel">
@@ -117,7 +117,7 @@
     </section>
     <section>
         <div class="blue-background-header">
-            <h2 class='subheader-sm'>Other Projects</h2>
+            <h2 class='subheader-lrg'>Other Projects</h2>
         </div>
         <?php get_template_part( 'template-parts/projects-carousel', 'projects carousel' ); ?>
     </section>

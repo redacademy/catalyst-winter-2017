@@ -87,7 +87,7 @@ get_header(); ?>
 		</div>
 		<a class="navigation-button" href="<?php echo get_home_url() ; ?>/contact">Contact Us</a>
 			<div class="blue-background-header">
-				<h2 class="subheader-sm supporters-header">Our Supporters</h2>
+				<h2 class="subheader-lrg supporters-header">Our Supporters</h2>
 			</div>
 		<div class="supporters-logo-container">
 			<?php

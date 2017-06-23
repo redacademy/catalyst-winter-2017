@@ -15,7 +15,7 @@ get_header(); ?>
 </section>
 <section class="about">
     <div class="blue-background-header">
-        <h2 class='subheader-sm'>About Project</h2>
+        <h2 class='subheader-lrg'>About Project</h2>
     </div>
     <div class="wrapper">
         <div class="about-text">
@@ -25,7 +25,7 @@ get_header(); ?>
 </section>
 <section class="floorplan">
     <div class="blue-background-header">
-        <h2 class='subheader-sm'>Floor Plans</h2>
+        <h2 class='subheader-lrg'>Floor Plans</h2>
     </div>
     <div class="wrapper">
         <div class="floorplan-container">
@@ -61,7 +61,7 @@ get_header(); ?>
 </section>
 <section class="rent">
     <div class="blue-background-header">
-        <h2 class='subheader-sm'>Rent</h2>
+        <h2 class='subheader-lrg'>Rent</h2>
     </div>
     <div class="wrapper">
         <div class="rent-text">
@@ -128,7 +128,7 @@ get_header(); ?>
 </section>
 <section class="contact">
     <div class="blue-background-header">
-        <h2 class='subheader-sm'>Contact</h2>
+        <h2 class='subheader-lrg'>Contact</h2>
     </div>
     <div class="wrapper">
         <div class="contact-text">

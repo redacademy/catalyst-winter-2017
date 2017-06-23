@@ -37,21 +37,6 @@
 	}
 }
 
-.subheader-sm {
-	max-width: 400px;
-	margin: 0 auto;
-	font-size: 2rem;
-	font-weight: $font__semibold;
-	color: $color__header-main;
-	line-height: 2.4rem;
-	text-transform: uppercase;
-	text-align: center;
-	@include media($desktop-width) {
-		max-width: none;
-		font-size: 1.85rem;
-		line-height: 3.4rem;
-	}
-}
 
 .subheader-lrg {
 	max-width: 400px;
