@@ -11,19 +11,16 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
             <div class="hero-image-banner">
-                
-            </div>
 			<div class="header-text">
-                    <p class="entry-title">
-                        <?php echo esc_html( CFS()->get( 'bannertext' ) ); ?>
-                    </p>
-                    <p class="banner-text">
-                        <?php echo esc_html( CFS()->get( 'address' ) ); ?>
-                    </p>
-                    <p class="banner-text-small">
-                        <?php echo esc_html( CFS()->get( 'email' ) ); ?>
-                    </p>
-                </div><!-- .page-header -->
+				<p class="entry-title">
+					<?php echo esc_html( CFS()->get( 'bannertext' ) ); ?>
+				</p>
+				<p class="banner-text">
+					<?php echo esc_html( CFS()->get( 'address' ) ); ?>
+				</p>
+			</div><!-- .page-header -->
+            </div>
+
             <div class="blue-background-header">
 			    <h2 class="subheader-lrg">we would like to hear from you</h2>
 		    </div>
