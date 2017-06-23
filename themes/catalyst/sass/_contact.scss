@@ -32,6 +32,11 @@
     .blue-background-header {
         margin-top: 1.5rem;
     }
+    .renters-redirect {
+        padding: 0 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
     .wpcf7 {
         padding: 3%;
         font-family: $font__secondary;
@@ -148,5 +153,9 @@
             margin: 0 auto 1.5rem;
             text-transform: uppercase;
         }
+    }
+    .navigation-button {
+        @include navigation-button();
+        margin-top: 5px;
     }
 }

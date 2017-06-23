@@ -24,6 +24,10 @@ get_header(); ?>
             <div class="blue-background-header">
 			    <h2 class="subheader-lrg">we would like to hear from you</h2>
 		    </div>
+			<div class="renters-redirect">
+				<?php echo CFS()->get('contact_renters'); ?>
+				<a class="navigation-button" href="<?php echo get_home_url(); ?>/rent">Renters</a>
+			</div>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<div class="entry-content">

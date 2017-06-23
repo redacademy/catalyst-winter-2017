@@ -2973,6 +2973,10 @@ object {
         font-size: 1rem; } }
   .page-id-7 .blue-background-header {
     margin-top: 1.5rem; }
+  .page-id-7 .renters-redirect {
+    padding: 0 2rem;
+    max-width: 1200px;
+    margin: 0 auto; }
   .page-id-7 .wpcf7 {
     padding: 3%;
     font-family: quattrocento, sans-serif; }
@@ -3080,6 +3084,30 @@ object {
       font-style: normal;
       margin: 0 auto 1.5rem;
       text-transform: uppercase; }
+  .page-id-7 .navigation-button {
+    height: 70px;
+    width: 275px;
+    margin: 3rem auto;
+    border: 2px solid #323232;
+    font-size: 1.35rem;
+    color: #323232;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    margin-top: 5px; }
+    .page-id-7 .navigation-button:hover {
+      border: 2px solid #D9F1FF;
+      box-shadow: 0px 2px 5px #323232; }
+    .page-id-7 .navigation-button:active {
+      background: #D9F1FF;
+      border: 2px solid white;
+      cursor: pointer; }
 
 .page-id-196 #content {
   width: 100%; }
