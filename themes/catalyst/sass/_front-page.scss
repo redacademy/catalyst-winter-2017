@@ -54,7 +54,6 @@
         transform: translate(-50%, 0%);
         h1 {
             @include page-title;
-            width: 400px;
             margin: 0 auto 2rem;
         }
         p {
