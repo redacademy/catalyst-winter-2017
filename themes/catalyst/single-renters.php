@@ -9,7 +9,7 @@
 
 <section class="banner">
     <div>
-        <img src="" alt="">
+        <img src="<?php echo CFS()->get('rent_logo'); ?>" alt="">
     </div>
 </section>
 <section class="about">

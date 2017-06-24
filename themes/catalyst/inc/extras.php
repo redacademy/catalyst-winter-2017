@@ -62,6 +62,23 @@ function catalyst_project_image_css() {
 }
 add_action( 'wp_enqueue_scripts', 'catalyst_project_image_css' );
 
+function catalyst_renters_banner() {
+    if ( CFS()->get( 'renters_banner') ) {
+
+        $url = CFS()->get( 'renters_banner');
+
+        $renters_banner = ".banner div{
+            background: linear-gradient( to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100% ),
+            url({$url}) no-repeat center bottom;
+            background-size: cover, cover;
+            height: 80vh;
+        }";
+
+        wp_add_inline_style( 'catalyst-style', $renters_banner );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'catalyst_renters_banner' );
+
 
 function flexible_widget_titles( $widget_title ) {
 

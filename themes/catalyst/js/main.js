@@ -321,7 +321,6 @@
     //rent chart height
     $(window).on('load', function() {
         var $chartHeight = $('.rows').outerHeight();
-        console.log($chartHeight+100);
         $('.rent-chart-container').css('height', $chartHeight);
     });
     
@@ -333,8 +332,19 @@
         $(this).addClass('select'+(i+1));
     });
     
+    //display floorplans on click
     $('.selection p').on('click',function(){
-        var $homeSelect = $(this).attr('class');
-        $('.floorplan-img-container .'+$homeSelect).css('display', 'none');
+        if (screen.width < 760){
+            var $mobileImgToggle = $(this).next('.floorplan-img');
+            $('.selection img').css('display', 'none');
+            $($mobileImgToggle).animate({height: 'toggle'});
+        }
+        else {
+            var $homeSelect = $(this).attr('class');
+            $('.selection img').css('display', 'none');
+            $('.floorplan-img-container img').css('display', 'none');
+            $('.floorplan-img-container .'+$homeSelect).animate({height: 'toggle'});
+        }
     })
+
 })(jQuery);

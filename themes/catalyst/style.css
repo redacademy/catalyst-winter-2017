@@ -3616,8 +3616,22 @@ object {
   margin-bottom: 3rem; }
 
 .single-renters .wrapper {
-  max-width: 1000px;
-  padding: 0 2rem; }
+  max-width: 1200px;
+  padding: 0 2rem;
+  margin: 0 auto; }
+
+.single-renters .banner div {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 40vh; }
+
+.single-renters .about .wrapper {
+  max-width: 900px; }
 
 @media all and (min-width: 760px) {
   .single-renters .about .about-text {
@@ -3633,20 +3647,37 @@ object {
     .single-renters .floorplan .floorplan-selection {
       width: 35%; } }
   .single-renters .floorplan .floorplan-selection div {
-    background-color: lightgray;
     margin-bottom: 1rem; }
   .single-renters .floorplan .floorplan-selection p {
+    background-color: lightgray;
     padding: 1rem 1rem;
-    margin: 0; }
+    margin: 0;
+    text-align: center; }
     @media all and (min-width: 760px) {
       .single-renters .floorplan .floorplan-selection p {
         padding: 0.5rem 1rem; } }
+  .single-renters .floorplan .floorplan-selection .selection img {
+    display: none;
+    width: 100%; }
+  .single-renters .floorplan .floorplan-selection .selection:first-child img {
+    display: inline; }
+    @media all and (min-width: 760px) {
+      .single-renters .floorplan .floorplan-selection .selection:first-child img {
+        display: none; } }
 
-@media all and (min-width: 760px) {
-  .single-renters .floorplan .floorplan-img-container {
-    width: 65%;
-    margin-left: 1rem;
-    border: 1px solid #000; } }
+.single-renters .floorplan .floorplan-img-container {
+  display: none; }
+  @media all and (min-width: 760px) {
+    .single-renters .floorplan .floorplan-img-container {
+      display: block;
+      width: 65%;
+      min-height: 450px;
+      margin-left: 1rem; } }
+  .single-renters .floorplan .floorplan-img-container img {
+    display: none;
+    width: 100%; }
+  .single-renters .floorplan .floorplan-img-container img:first-child {
+    display: inline; }
 
 .single-renters .rent .rent-chart-container {
   position: relative;
@@ -3655,6 +3686,9 @@ object {
 .single-renters .rent .rows {
   border: 0.5px solid #000;
   position: absolute; }
+  @media all and (min-width: 760px) {
+    .single-renters .rent .rows {
+      position: initial; } }
 
 .single-renters .rent .row-head {
   font-weight: bold; }
@@ -3678,10 +3712,25 @@ object {
 .single-renters .rent .rent-row li:first-child, .single-renters .rent .rent-row li:nth-child(2) {
   width: 150px;
   border: 0.5px solid #000; }
+  @media all and (min-width: 760px) {
+    .single-renters .rent .rent-row li:first-child, .single-renters .rent .rent-row li:nth-child(2) {
+      width: 100%;
+      -ms-flex: 1;
+          flex: 1; } }
 
 .single-renters .rent .rent-row li:nth-child(3), .single-renters .rent .rent-row li:nth-child(4) {
   width: 200px;
   border: 0.5px solid #000; }
+  @media all and (min-width: 760px) {
+    .single-renters .rent .rent-row li:nth-child(3), .single-renters .rent .rent-row li:nth-child(4) {
+      width: 100%;
+      -ms-flex: 1;
+          flex: 1; } }
+
+@media all and (min-width: 760px) {
+  .single-renters .rent .rent-row li:nth-child(3) {
+    -ms-flex: 1.5;
+        flex: 1.5; } }
 
 .single-renters .rent .row li {
   padding: 1rem 0; }
@@ -3716,6 +3765,9 @@ object {
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center; }
+
+.single-renters .contact form label {
+  width: 100%; }
 
 .page-id-252 {
   height: 100%;

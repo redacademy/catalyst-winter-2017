@@ -3,10 +3,23 @@
         margin-bottom: 3rem;
     }
     .wrapper {
-        max-width: 1000px;
+        max-width: 1200px;
         padding: 0 2rem;
+        margin: 0 auto;
+    }
+    .banner {
+        div {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            height: 40vh;
+        }
     }
     .about {
+        .wrapper {
+            max-width: 900px;
+        }
         @include media($desktop-width){
             .about-text {
                 text-align: center;
@@ -23,22 +36,42 @@
                 width: 35%;
             }
             div {
-                background-color: lightgray;
                 margin-bottom: 1rem;
             }
             p {
+                background-color: lightgray;
                 padding: 1rem 1rem;
                 margin: 0;
+                text-align: center;
                 @include media($desktop-width){
                     padding: 0.5rem 1rem;
                 }
             }
+            .selection img {
+                display: none;
+                width: 100%;
+            }
+            .selection:first-child img {
+                display: inline;
+                @include media($desktop-width){
+                    display: none;
+                }
+            }
         }
-        @include media($desktop-width){
-            .floorplan-img-container {
+        .floorplan-img-container {
+            display: none;
+            @include media($desktop-width){
+                display: block;
                 width: 65%;
+                min-height: 450px;
                 margin-left: 1rem;
-                border: 1px solid #000;
+            }
+            img {
+                display: none;
+                width: 100%;
+            }
+            img:first-child {
+                display: inline;
             }
         }
     }
@@ -50,6 +83,9 @@
         .rows{
             border: 0.5px solid #000;
             position: absolute;
+            @include media($desktop-width){
+                position: initial;
+            }
         }
         .row-head {
             font-weight: bold;
@@ -70,10 +106,23 @@
             li:first-child, li:nth-child(2) {
                 width: 150px;
                 border: 0.5px solid #000;
+                @include media($desktop-width){
+                    width: 100%;
+                    flex: 1;
+                }
             }
             li:nth-child(3), li:nth-child(4) {
                 width: 200px;
                 border: 0.5px solid #000;
+                @include media($desktop-width){
+                    width: 100%;
+                    flex: 1;
+                }
+            }
+            @include media($desktop-width){
+                li:nth-child(3){
+                    flex: 1.5;
+                }
             }
         }
         .row {
@@ -112,6 +161,9 @@
                 justify-content: center;
                 flex-direction: column;
                 align-items: center;
+            }
+            label {
+                width: 100%;
             }
         }
     }
