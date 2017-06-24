@@ -498,7 +498,7 @@ table {
   @media all and (min-width: 760px) {
     .subheader-lrg {
       max-width: none;
-      font-size: 3.15rem;
+      font-size: 2.5rem;
       line-height: 3.4rem; } }
 
 /*--------------------------------------------------------------
@@ -3737,7 +3737,11 @@ object {
   display: none; }
 
 .single-renters section {
+  line-height: 1.5;
   margin-bottom: 3rem; }
+
+.single-renters a {
+  color: #777777; }
 
 .single-renters .wrapper {
   max-width: 1200px;
@@ -3773,7 +3777,8 @@ object {
   .single-renters .floorplan .floorplan-selection div {
     margin-bottom: 1rem; }
   .single-renters .floorplan .floorplan-selection p {
-    background-color: lightgray;
+    background-color: #efefef;
+    border: 1px solid #e3e3e3;
     padding: 1rem 1rem;
     margin: 0;
     text-align: center; }
@@ -3814,9 +3819,6 @@ object {
     .single-renters .rent .rows {
       position: initial; } }
 
-.single-renters .rent .row-head {
-  font-weight: bold; }
-
 .single-renters .rent .rent-row ul {
   display: -ms-flexbox;
   display: flex;
@@ -3855,6 +3857,13 @@ object {
   .single-renters .rent .rent-row li:nth-child(3) {
     -ms-flex: 1.5;
         flex: 1.5; } }
+
+.single-renters .rent .rent-row:nth-child(even) {
+  background-color: #ededed; }
+
+.single-renters .rent .rent-row.row-head {
+  font-weight: bold;
+  background-color: #c8c8c8; }
 
 .single-renters .rent .row li {
   padding: 1rem 0; }

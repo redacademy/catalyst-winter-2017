@@ -1,6 +1,10 @@
 .single-renters {
     section {
+        line-height: 1.5;
         margin-bottom: 3rem;
+    }
+    a {
+        color: #777777;
     }
     .wrapper {
         max-width: 1200px;
@@ -39,7 +43,8 @@
                 margin-bottom: 1rem;
             }
             p {
-                background-color: lightgray;
+                background-color: #efefef;
+                border: 1px solid #e3e3e3;
                 padding: 1rem 1rem;
                 margin: 0;
                 text-align: center;
@@ -87,9 +92,6 @@
                 position: initial;
             }
         }
-        .row-head {
-            font-weight: bold;
-        }
         .rent-row {
             ul {
                 display: flex;
@@ -111,6 +113,7 @@
                     flex: 1;
                 }
             }
+
             li:nth-child(3), li:nth-child(4) {
                 width: 200px;
                 border: 0.5px solid #000;
@@ -124,6 +127,13 @@
                     flex: 1.5;
                 }
             }
+        }
+        .rent-row:nth-child(even){
+            background-color: #ededed;
+        }
+        .rent-row.row-head {
+            font-weight: bold;
+            background-color: #c8c8c8;
         }
         .row {
             li {
