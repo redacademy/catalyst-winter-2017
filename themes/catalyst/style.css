@@ -3756,7 +3756,7 @@ object {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  height: 40vh; }
+  min-height: 40vh; }
 
 .single-renters .about .wrapper {
   max-width: 900px; }

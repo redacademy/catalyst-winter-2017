@@ -33,13 +33,25 @@
                 foreach ($homes as $home) : ?>
                     <div class="selection">
                         <p><?php echo $home['home_type']; ?></p>
-                        <img class="floorplan-img" src="<?php echo $home['floorplan_img']; ?>" alt="">
+                        <?php if (CFS()->get('home_document')) : ?>
+                            <a href="<?php echo CFS()->get('home_document'); ?>">
+                                <img class="floorplan-img" src="<?php echo $home['floorplan_img']; ?>" alt="">
+                            </a>
+                        <?php else : ?>
+                            <img class="floorplan-img" src="<?php echo $home['floorplan_img']; ?>" alt="">
+                        <?php endif; ?>
                     </div>
                 <?php endforeach; wp_reset_postdata(); ?>
             </div>
             <div class="floorplan-img-container">
                 <?php foreach ($homes as $home) : ?>
-                    <img src="<?php echo $home['floorplan_img']; ?>" alt="">
+                    <?php if (CFS()->get('home_document')) : ?>
+                        <a href="<?php echo CFS()->get('home_document'); ?>">
+                            <img src="<?php echo $home['floorplan_img']; ?>" alt="">
+                        </a>
+                    <?php else : ?>
+                        <img src="<?php echo $home['floorplan_img']; ?>" alt="">
+                    <?php endif; ?>
                 <?php endforeach; wp_reset_postdata(); ?>
             </div>
         </div>
