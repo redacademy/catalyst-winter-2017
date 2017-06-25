@@ -15,7 +15,6 @@
         width: 95%;
         @include banner-text;
     }
-
     .intro-copy {
         @include intro-copy;
     }
@@ -24,6 +23,46 @@
     .blue-background-header {
         position: relative;
         font-size: 2.4rem;
+
+        h2 {
+            font-size: 1.6rem;
+
+            @include media($desktop-width) {
+                font-size: 2rem;
+            }
+        }
+    }
+    // Buttons
+    .enter-button,
+    .exit-button {
+        @include popout-button();
+        font-weight: 300;
+
+        span {
+            font-size: 2.5rem;
+
+            @include media($desktop-width) {
+                font-size: 3.05rem;
+            }
+        }
+    }
+
+    .enter-button {
+        @include media($desktop-width) {
+            display: none;
+        }
+
+        span {
+            position: relative;
+            bottom: 4px;
+            left: 0.5px;
+        }
+    }
+
+    .exit-button {
+        font-weight: 400;
+        background: white;
+        position: absolute;
     }
 
     .staff-exit-button {
@@ -31,38 +70,34 @@
         position: absolute;
         top: 25%;
         right: 5%;
-        @include exit-popout-button(40px, #FFF);
+        @include exit-popout-button(#FFF);
 
         span {
-            font-size: 2.15rem;
+            font-size: 1.5rem;
+            position: relative;
+            left: 0.5px;
+
+            @include media($desktop-width) {
+                font-size: 2.05rem;
+            }
+        }
+    }
+
+    .board-exit-button {
+        margin: 0px;
+        position: absolute;
+        top: 18%;
+        right: 5%;
+
+        span {
+            font-size: 1.5rem;
             position: relative;
             bottom: 1px;
-        }
-    }
+            left: 0.5px;
 
-    // Buttons
-    .enter-button,
-    .exit-button {
-        @include popout-button(45px);
-        font-size: 3.5rem;
-        font-weight: 300;
-    }
-
-    .enter-button {
-        @include media($desktop-width) {
-            display: none;
-        }
-    }
-
-    .exit-button {
-        font-weight: 400;
-        background: white;
-        padding-top: 0.7rem;
-        padding-left: 0.04rem;
-        position: absolute;
-
-        span {
-            font-size: 2.05rem;
+            @include media($desktop-width) {
+                font-size: 2.05rem;
+            }
         }
     }
 
@@ -290,19 +325,6 @@
                 width: 950px;
             }
         }
-
-        // .small-header {
-        //     // margin: 1.5rem auto 1rem;
-        //     // font-size: 1.5rem;
-        //     // font-weight: $font__bold;
-        //     // text-align: center;
-        //     // text-transform: uppercase;
-        //     // @include media($desktop-width) {
-        //     //     font-size: 2rem;
-        //     //     width: 100%;
-        //     //     margin: 3rem auto 2.5rem;
-        //     // }
-        // }
         .board-profiles-header {
             height: auto;
             width: 100%;
@@ -314,18 +336,6 @@
                 height: auto;
                 width: auto;
                 margin: 0 0 2rem;
-            }
-            .board-exit-button {
-                margin: 0px;
-                position: absolute;
-                top: 18%;
-                right: 5%;
-
-                span {
-                    position: relative;
-                    bottom: 1px;
-                    font-size: 2.05rem;
-                }
             }
         }
         // Profile preview styles
@@ -378,7 +388,7 @@
         text-align: center;
         font-family: $font__secondary;
         @include media ($desktop-width) {
-            margin: 4rem auto;
+            margin: 4rem auto 3rem;
             line-height: $line-height-desktop;
         }
         @include media(1200px) {
