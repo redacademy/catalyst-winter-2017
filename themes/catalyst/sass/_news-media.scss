@@ -28,6 +28,7 @@
         }
         @include media($desktop-width) {
             display: flex;
+            justify-content: space-around;
             width: 100%;
             .newsmedia-article {
                 width: 70%;
@@ -42,7 +43,12 @@
         display: none;
     }
     .newsmedia-article {
+        margin: 0 auto;
+        max-width: 700px;
         padding: 0px 20px;
+        h3 {
+            line-height: 1.7rem;
+        }
         .news {
             background-color: $color__brand-blue;
             padding-bottom: 20px;
@@ -53,22 +59,14 @@
             width: 100%;
             overflow: hidden;
             img {
-                height: auto;
-                min-width: 100%;
-                max-width: 105%;
+                height: 100%;
+                object-fit: cover;
             }
         }
-        .newsmeida-article:first-child {
-            display: block;
-        }
-         .newsmeida-article:nth-child(2){
-            display: none;
-        }
-        @include media($desktop-width) {
+        @include media(400px) {
             @include flex-row(wrap, space-around);
             .news {
                 height: auto;
-                // min-height: 390px;
                 width: 48%;
                 display: block;
             }
@@ -84,6 +82,7 @@
             overflow: hidden;
             p {
                 margin: 0;
+                line-height: 1.5rem;
             }
             h3 {
                 margin: 8px 0;
