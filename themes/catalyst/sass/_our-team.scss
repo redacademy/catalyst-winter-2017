@@ -93,7 +93,7 @@
         @include flex-column(nowrap, space-between, center);
         @include media($desktop-width) {
             width: 80%;
-            margin: 0 auto 3.25rem;
+            margin: 0 auto 5rem;
             @include flex-row(wrap, center, flex-start);
         }
         .profile-popout {
@@ -291,18 +291,18 @@
             }
         }
 
-        .small-header {
-            margin: 1.5rem auto 1rem;
-            font-size: 1.5rem;
-            font-weight: $font__bold;
-            text-align: center;
-            text-transform: uppercase;
-            @include media($desktop-width) {
-                font-size: 2rem;
-                width: 100%;
-                margin: 3rem auto 2.5rem;
-            }
-        }
+        // .small-header {
+        //     // margin: 1.5rem auto 1rem;
+        //     // font-size: 1.5rem;
+        //     // font-weight: $font__bold;
+        //     // text-align: center;
+        //     // text-transform: uppercase;
+        //     // @include media($desktop-width) {
+        //     //     font-size: 2rem;
+        //     //     width: 100%;
+        //     //     margin: 3rem auto 2.5rem;
+        //     // }
+        // }
         .board-profiles-header {
             height: auto;
             width: 100%;
@@ -359,13 +359,35 @@
         }
     }
 
+    .small-header {
+        margin: 1.5rem auto 1rem;
+        font-size: 1.5rem;
+        font-weight: $font__bold;
+        text-align: center;
+        text-transform: uppercase;
+        @include media($desktop-width) {
+            font-size: 2rem;
+            width: 100%;
+            margin: 3rem auto 2.5rem;
+        }
+    }
+    .advisors-copy {
+        max-width: 650px;
+        padding: 0 2rem;
+        margin: 2rem auto;
+        text-align: center;
+        font-family: $font__secondary;
+        @include media ($desktop-width) {
+            margin: 4rem auto;
+            line-height: $line-height-desktop;
+        }
+        @include media(1200px) {
+            max-width: 860px;
+        }
+    }
+
     .advisors-profiles-wrapper {
         margin-bottom: 2rem;
-
-        .small-header {
-            margin: 2rem auto 1rem;
-            letter-spacing: 1.5px;
-        }
         .profile-preview {
             width: 100%;
             margin: 1.25rem auto;

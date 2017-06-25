@@ -1973,7 +1973,7 @@ object {
       .page-id-159 .board-profiles-wrapper,
       .page-id-159 .advisors-profiles-wrapper {
         width: 80%;
-        margin: 0 auto 3.25rem;
+        margin: 0 auto 5rem;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-flow: row wrap;
@@ -2221,21 +2221,6 @@ object {
         .page-id-159 .board-profiles-wrapper .show-popout,
         .page-id-159 .advisors-profiles-wrapper .show-popout {
           width: 950px; } }
-    .page-id-159 .staff-profiles-wrapper .small-header,
-    .page-id-159 .board-profiles-wrapper .small-header,
-    .page-id-159 .advisors-profiles-wrapper .small-header {
-      margin: 1.5rem auto 1rem;
-      font-size: 1.5rem;
-      font-weight: 700;
-      text-align: center;
-      text-transform: uppercase; }
-      @media all and (min-width: 760px) {
-        .page-id-159 .staff-profiles-wrapper .small-header,
-        .page-id-159 .board-profiles-wrapper .small-header,
-        .page-id-159 .advisors-profiles-wrapper .small-header {
-          font-size: 2rem;
-          width: 100%;
-          margin: 3rem auto 2.5rem; } }
     .page-id-159 .staff-profiles-wrapper .board-profiles-header,
     .page-id-159 .board-profiles-wrapper .board-profiles-header,
     .page-id-159 .advisors-profiles-wrapper .board-profiles-header {
@@ -2331,11 +2316,32 @@ object {
             .page-id-159 .board-profiles-wrapper .profile-preview .profile-image:hover,
             .page-id-159 .advisors-profiles-wrapper .profile-preview .profile-image:hover {
               box-shadow: 0 2px 8px #4990E2; } }
+  .page-id-159 .small-header {
+    margin: 1.5rem auto 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase; }
+    @media all and (min-width: 760px) {
+      .page-id-159 .small-header {
+        font-size: 2rem;
+        width: 100%;
+        margin: 3rem auto 2.5rem; } }
+  .page-id-159 .advisors-copy {
+    max-width: 650px;
+    padding: 0 2rem;
+    margin: 2rem auto;
+    text-align: center;
+    font-family: quattrocento, sans-serif; }
+    @media all and (min-width: 760px) {
+      .page-id-159 .advisors-copy {
+        margin: 4rem auto;
+        line-height: 2.05rem; } }
+    @media all and (min-width: 1200px) {
+      .page-id-159 .advisors-copy {
+        max-width: 860px; } }
   .page-id-159 .advisors-profiles-wrapper {
     margin-bottom: 2rem; }
-    .page-id-159 .advisors-profiles-wrapper .small-header {
-      margin: 2rem auto 1rem;
-      letter-spacing: 1.5px; }
     .page-id-159 .advisors-profiles-wrapper .profile-preview {
       width: 100%;
       margin: 1.25rem auto;
