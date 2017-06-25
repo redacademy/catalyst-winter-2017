@@ -18,5 +18,5 @@
 $intro_copy = CFS()->get( 'intro_copy' );
     if ( !empty( $intro_copy ) ) :
 ?>
-    <p class="intro-copy"><?php echo $intro_copy; ?></p>
+    <p class="intro-copy"><?php echo esc_html($intro_copy); ?></p>
 <?php endif; ?>
