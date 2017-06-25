@@ -20,13 +20,20 @@
     .intro-copy {
         @include intro-copy;
     }
-    .main-copy_container {
+    .main-copy-container {
+        margin-bottom: 1.5rem;
+
+        @include media ($desktop-width) {
+            margin-bottom: 3rem;
+        }
+    }
+    .main-copy1, .main-copy2, .main-copy3 {
         @include main-copy;
         text-align: center;
     }
     .navigation-button {
         @include navigation-button();
-        margin-top: 5px;
+        margin-top: 0;
     }
     .infographic-container+.navigation-button {
         margin: 3rem auto 6rem;
@@ -40,13 +47,16 @@
     .content-container {
         padding: 0 1rem;
         .partners-information-container {
+            margin: 3rem auto;
             @include media($desktop-width) {
                 @include flex-row(wrap, space-between, baseline);
+                margin: 5rem auto;
                 padding: 0 7rem 0 9rem;
+
             }
             .partners-information {
                 height: auto;
-                margin: 0 0 4rem;
+                margin: 0 0 2rem;
                 @include media($desktop-width) {
                     width: 490px;
                     margin: 0 auto;
@@ -63,145 +73,23 @@
                 text-transform: uppercase;
                 letter-spacing: 1.5px;
                 @include media($desktop-width) {
-                    margin: 1.9rem 0 0.5rem;
+                    margin: 2rem 0 1.5rem;
                     font-size: 2rem;
                     padding-left: 7%;
-                    text-align: left;
                 }
             }
-            li+.small-subheader {
-                margin-top: 3rem;
-            }
-            .small-subheader {
-                margin: 0.5rem 0 1.5rem;
-                font-weight: $font__bold;
-                text-transform: uppercase;
-                @include media($desktop-width) {
-                    font-size: 1.45rem;
-                    margin-bottom: 2rem;
-                }
-            }
-            .collaborate-dashed-list {
-                font-family: $font__secondary;
-                margin: 0 0 2rem;
-                padding-left: 0.75rem;
-                list-style-type: none;
-                position: relative;
-                font-size: 20px;
-                @include media($desktop-width) {
-                    font-size: 16px;
-                    height: auto;
-                    margin: 0;
-                    padding: 0.5rem 0.5rem 2.5rem 2rem;
-                    border: 5px solid $color__brand-blue;
-                    display: inline-block;
-                }
-                li {
-                    margin: 1.5rem 0;
-                    @include flex-row(nowrap, flex-start, baseline);
-                    .hyphen {
-                        height: 100%;
-                        padding-right: 0.5rem;
-                        font-size: 0.85rem;
-                        font-weight: $font__bold;
-                        position: relative;
-                        bottom: 0.2rem;
-                    }
-                    @include media($desktop-width) {
-                        font-size: $font__desktop-size;
-                    }
-                }
-                .key-graphic-1 {
-                    height: 304px;
-                    width: 123px;
-                    background: url("../../images/graphics/key.svg") no-repeat 50%;
-                    background-size: 100%;
-                    position: absolute;
-                    bottom: 1.25%;
-                    left: -4%;
-                    z-index: -99999;
-                    transform: rotate(25deg);
-                    @include media($desktop-width) {
-                        height: 186px;
-                        width: 88px;
-                        bottom: 27%;
-                        left: 4.5%;
-                    }
-                }
-                .key-graphic-2 {
-                    height: 135px;
-                    width: 71px;
-                    background: url("../../images/graphics/key.svg") no-repeat;
-                    background-size: 100%;
-                    position: absolute;
-                    top: 88%;
-                    left: 85%;
-                    z-index: -99999;
-                    transform: rotate(-25deg);
-                    @include media($desktop-width) {
-                        height: 185px;
-                        width: 56px;
-                        top: 80%;
-                        left: 88.75%;
-                    }
-                }
-                .dollar-sign-graphic-1 {
-                    height: 171px;
-                    width: 138px;
-                    left: 0%;
-                    background: url("../../images/graphics/dollar-sign.svg") no-repeat;
-                    background-size: 100%;
-                    position: absolute;
-                    bottom: 13%;
-                    z-index: -99999;
-                    @include media($desktop-width) {
-                        height: 114px;
-                        width: 100px;
-                        bottom: 32%;
-                        left: 2%;
-                    }
-                }
-                .dollar-sign-graphic-2 {
-                    height: 100px;
-                    width: 96px;
-                    background: url("../../images/graphics/dollar-sign.svg") no-repeat;
-                    background-size: 100%;
-                    position: absolute;
-                    top: 90%;
-                    left: 79%;
-                    z-index: -99999;
-                    display: inline-block;
-                    @include media($desktop-width) {
-                        top: 88%;
-                        left: 81%;
-                        height: 105px;
-                        width: 70px;
-                    }
-                }
-            }
-            li+.partners-text {
-                margin-top: 3.75rem;
-            }
-            .partners-text {
+            .partners-copy, .investors-copy {
+                @include main-copy;
                 text-align: center;
-                margin-top: 56px;
-                line-height: 28px;
-                padding-right: 10px;
+            }
+
+            .partners-copy:nth-child(3), .investors-copy:nth-child(3) {
+                margin-bottom: 1.5rem;
+
                 @include media($desktop-width) {
-                    font-size: 22px;
-                    width: 74%;
-                    margin: 0 auto;
-                    padding-top: 40px;
+                    margin-bottom: 3rem;
                 }
             }
-        }
-        .partners-text-2 {
-            // margin-top: 2.8rem;
-            // padding-top: 0;
-            // @include media ($desktop-width) {
-            //     font-size: 21px;
-            //     margin-top: 7.5rem;
-            // }
         }
     }
 }

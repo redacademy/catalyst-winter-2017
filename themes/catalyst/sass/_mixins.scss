@@ -72,10 +72,12 @@
 	line-height: $line-height-body;
 	text-align: center;
 	@include media($desktop-width) {
-		max-width: 860px;
 		padding: 0.75rem auto;
 		font-size: $font__desktop-size;
 		line-height: $line-height-desktop;
+	}
+	@include media(1200px) {
+		max-width: 860px;
 	}
 }
 
