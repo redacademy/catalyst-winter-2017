@@ -2718,8 +2718,7 @@ object {
         @media all and (min-width: 760px) {
           .page-id-18 .content-container .partners-information-container .small-header {
             margin: 2rem 0 1.5rem;
-            font-size: 2rem;
-            padding-left: 7%; } }
+            font-size: 2rem; } }
       .page-id-18 .content-container .partners-information-container .partners-copy, .page-id-18 .content-container .partners-information-container .investors-copy {
         height: auto;
         max-width: 650px;
