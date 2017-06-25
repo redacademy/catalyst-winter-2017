@@ -17,28 +17,30 @@
 }
 
 @mixin page-title {
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 	font-size: 3.4rem;
 	font-weight: $font__semibold;
 	text-transform: uppercase;
 	@include header-text-shadow;
 	@include media($desktop-width) {
+		margin-bottom: 2rem;
 		font-size: 3.85rem;
 		line-height: 4.25rem;
 	}
 }
 @mixin banner-text {
 	width: 90%;
-	font-size: 1.6rem;
+	font-size: 1.25rem;
 	font-family: $font__secondary;
 	font-weight: $font__bold;
 	margin: $base__space-unit auto;
-	line-height: $line-height-desktop;
+	line-height: 1.75rem;
 	letter-spacing: 2px;
 	margin: 0 auto;
 	@include header-text-shadow;
 	@include media($desktop-width) {
 		font-size: $font__desktop-size;
+		line-height: $line-height-desktop;
 	}
 }
 

@@ -73,13 +73,18 @@
 		background: url('../../images/full-logo.svg')no-repeat;
 		background-size: 100%;
 		margin: 0;
-		margin-top: 7px;
+		margin-top: 18px;
 		display: flex;
-		width: 161px;
-		height: 66px;
+		width: 125px;
+		height: 52px;
 		text-align: center;
 		overflow: hidden;
 		text-indent: 193%;
+		@include media (480px) {
+			width: 161px;
+			height: 66px;
+			margin-top: 7px;
+		}
 		@include media(1180px) {
 			height: 80px;
 			width: 167px;
