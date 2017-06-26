@@ -33,7 +33,7 @@ get_header(); ?>
                 <?php
                 $img = get_the_post_thumbnail($newsarticle->ID);
                 if(!empty($img)){
-                echo "<div class='article-thumb' style='height:150px'>".$img."</div>";
+                echo "<div class='article-thumb' style='height:200px'>".$img."</div>";
                 }else{
                     echo " <div class='article-thumb' style='height:0px'></div>";
                 };
