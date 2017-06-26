@@ -1534,7 +1534,9 @@ object {
 
 .page-id-21 .mission-quote {
   height: auto;
-  position: relative; }
+  position: relative;
+  max-width: 1500px;
+  margin: 0 auto; }
   .page-id-21 .mission-quote .quote-target {
     height: 0;
     width: 0;
@@ -1632,8 +1634,8 @@ object {
       right: 70px; } }
   @media all and (min-width: 960px) {
     .page-id-21 .quotation-right {
-      top: 125px;
-      right: 130px; } }
+      top: 70px;
+      right: 78px; } }
 
 .page-id-21 .quotation-right2 {
   bottom: 10px;
@@ -1818,6 +1820,10 @@ object {
 
 .page-id-21 .end-content {
   margin-bottom: 100px; }
+
+.page-id-21 .end-content-quote {
+  max-width: 1500px;
+  margin: 0 auto; }
 
 .page-id-159 {
   height: 100%;
