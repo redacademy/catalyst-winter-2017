@@ -65,7 +65,8 @@
     .mission-quote {
         height: auto;
         position: relative;
-
+        max-width: 1500px;
+        margin: 0 auto;
         .quote-target {
             height: 0;
             width: 0;
@@ -161,8 +162,8 @@
             right: 70px;
         }
         @include media(960px) {
-            top: 125px;
-            right: 130px;
+            top: 70px;
+            right: 78px;
         }
     }
     .quotation-right2 {
@@ -182,7 +183,6 @@
     .robert {
         margin: 2rem auto;
         text-align: center;
-
         @include media($desktop-width) {
             margin: 2rem auto;
             font-size: 30px;
@@ -244,7 +244,9 @@
         .mission-image {
             width: 100%;
             margin: 0 auto;
-            @include flex-column(nowrap, flex-start, center);
+            @include flex-column(nowrap,
+            flex-start,
+            center);
             @include media($desktop-width) {
                 width: 25%;
             }
@@ -310,5 +312,9 @@
     }
     .end-content {
         margin-bottom: 100px;
+    }
+    .end-content-quote {
+        max-width: 1500px;
+        margin: 0 auto;
     }
 }
