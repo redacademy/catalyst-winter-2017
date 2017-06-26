@@ -2402,7 +2402,9 @@ object {
 .page-id-19 {
   margin: 0 auto; }
   .page-id-19 .entry-content p {
-    font-weight: 300; }
+    font-weight: 300;
+    height: 48git px;
+    overflow: hidden; }
   .page-id-19 .header-text {
     max-width: 900px;
     color: white;
@@ -2571,6 +2573,12 @@ object {
     .page-id-19 .video iframe {
       width: 90%;
       height: 500px; }
+      @media all and (min-width: 1200px) {
+        .page-id-19 .video iframe {
+          height: 700px; } }
+      @media all and (min-width: 1500px) {
+        .page-id-19 .video iframe {
+          height: 900px; } }
 
 .page-id-18 {
   height: 100%;
