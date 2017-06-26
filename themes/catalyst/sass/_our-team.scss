@@ -352,6 +352,9 @@
             margin: 1rem 3rem;
             text-align: center;
             position: relative;
+            // @include media() {
+            //     width: 30%;
+            // }
             @include media($desktop-width) {
                 width: 24%;
             }

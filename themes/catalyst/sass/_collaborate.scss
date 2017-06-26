@@ -57,7 +57,7 @@
             .partners-information {
                 height: auto;
                 margin: 0 0 2rem;
-                @include media($desktop-width) {
+               @include media($desktop-width) {
                     width: 490px;
                     margin: 0 auto;
                     display: inline-block;
