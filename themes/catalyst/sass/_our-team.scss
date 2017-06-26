@@ -352,9 +352,7 @@
             margin: 1rem 3rem;
             text-align: center;
             position: relative;
-            // @include media() {
-            //     width: 30%;
-            // }
+
             @include media($desktop-width) {
                 width: 24%;
             }
@@ -406,6 +404,9 @@
             margin: 1.25rem auto;
             position: relative;
             @include flex-column(nowrap, center, center);
+              @include media(900px) {
+                width: 30%;
+            }
             @include media(1350px) {
                 width: 20%;
             }

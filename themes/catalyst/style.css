@@ -2385,6 +2385,9 @@ object {
           justify-content: center;
       -ms-flex-align: center;
           align-items: center; }
+      @media all and (min-width: 900px) {
+        .page-id-159 .advisors-profiles-wrapper .profile-preview {
+          width: 30%; } }
       @media all and (min-width: 1350px) {
         .page-id-159 .advisors-profiles-wrapper .profile-preview {
           width: 20%; } }
