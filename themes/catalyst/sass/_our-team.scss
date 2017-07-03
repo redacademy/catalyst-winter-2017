@@ -152,64 +152,48 @@
             }
 
             .left-quotation, .right-quotation {
-                height: 90px;
-                width: 120px;
+                height: 30px;
+                width: 50px;
                 background: url('../../images/icon/quotation-white.svg') no-repeat center;
-                background-size: 170%;
+                background-size: 275%;
                 position: absolute;
-                z-index: 0;
+                z-index: 1;
             }
 
             .left-quotation {
-                left: -10%;
-                top: 54%;
-                @include media($desktop-width) {
-                    left: -20%;
-                    top: 31%;
-                }
-                @include media(800px) {
-                    top: 34%;
-                }
-
-                @include media(1000px) {
-                    left: -8%;
-                    top: 36%;
-                }
-                @include media(1100px) {
-                    left: -10%;
-                    top: 43%;
-                }
+                top: 20px;
+                left: -25px;
             }
-
             .right-quotation {
-                right: -7%;
-                top: 74%;
+                top: 81%;
+                right: 5%;
                 transform: rotate(180deg);
                 @include media($desktop-width) {
-                    right: -10%;
-                    top: 84%;
-                }
-            }
-
-            .quote {
-                margin-bottom: 2.5rem;
-                font-size: 1.15rem;
-                font-weight: 300;
-                line-height: 1.4rem;
-                text-align: center;
-                position: relative;
-                z-index: 2;
-
-                @include media($desktop-width) {
-                    max-width: 230px;
-                    margin-bottom: 2.5rem;
-                    font-size: 1.35rem;
-                    line-height: 2rem;
-                    text-align: center;
+                    top: 88%;
+                    right: 2%;
                 }
                 @include media(1100px) {
-                    max-width: none;
-                    font-size: 1.65rem;
+                    top: 86%;
+                    right: -10%;
+                }
+            }
+            .quote-container {
+                position: relative;
+            }
+            .quote {
+                max-width: 390px;
+                margin-bottom: 2.5rem;
+                font-size: 1.5rem;
+                font-weight: 300;
+                line-height: 2.25rem;
+                text-align: center;
+                position: relative;
+                z-index: 100000;
+
+                @include media($desktop-width) {
+                    max-width: 260px;
+                    margin-bottom: 2.5rem;
+                    text-align: center;
                 }
             }
 
@@ -389,7 +373,7 @@
         text-align: center;
         font-family: $font__secondary;
         @include media ($desktop-width) {
-            margin: 4rem auto 3rem;
+            margin: 3rem auto 3rem;
             line-height: $line-height-desktop;
         }
         @include media(1200px) {
