@@ -185,7 +185,7 @@
         }
     });
 
-    // Load more posts on when user clicks button on news & media page.
+    // Load more posts when user clicks button on news & media page.
 
     var $postsContainer = $( '.newsmedia-article' );
     var $loadPostsButton = $( '#load-more-button' );
@@ -196,8 +196,8 @@
         var formattedDate = addLeadingZero( myDate.getDate() ) + ', ' + ( '0' + ( myDate.getMonth() + 1 ) ).slice( -2 ) + ', ' + myDate.getFullYear();
         return formattedDate;
     }
-    function addLeadingZero( date ) {
 
+    function addLeadingZero( date ) {
         if ( date < 10 ) {
             date = '0' + date;
             return date;
@@ -227,8 +227,10 @@
         return articleThumbContainer;
     }
 
-    function constructArticleElement( articleID, articleThumbContainer, articleContent ) {
-        var articleElement = '<article class="news" id="' + articleID + '">';
+    function constructArticleElement( post, articleID, articleThumbContainer, articleContent ) {
+        var articleElement = post.better_featured_image
+                                ? '<article class="news" id="' + articleID + '">'
+                                : '<article class="news no-image" id="' + articleID + '">'
 
         if ( articleThumbContainer ) {
             articleElement += articleThumbContainer;
@@ -257,6 +259,7 @@
 
                     var constructedArticleElement =
                         constructArticleElement(
+                            post,
                             articleID,
                             constructArticleThumbnail( post ),
                             constructArticleContent( formattedDate, articleTitle, articleExcerpt )
@@ -281,13 +284,13 @@
         imagesLoaded: true,
         pageDots: false,
     });
-    
+
     $('.fp-carousel').flickity({
         imagesLoaded: true,
-        pageDots: false, 
+        pageDots: false,
         prevNextButtons: false,
         autoPlay: 7500,
-        draggable: false, 
+        draggable: false,
     });
     //flickity single projects
     $('.img-carousel').flickity({
@@ -317,21 +320,21 @@
         imagesLoaded: true,
         pageDots: false,
     });
-        
+
     //rent chart height
     $(window).on('load', function() {
         var $chartHeight = $('.rows').outerHeight();
         $('.rent-chart-container').css('height', $chartHeight);
     });
-    
-    //add classes to selections and corresponding images 
+
+    //add classes to selections and corresponding images
     $('.selection p').each(function(i) {
         $(this).addClass('select'+(i+1));
     });
     $('.floorplan-img-container img').each(function(i) {
         $(this).addClass('select'+(i+1));
     });
-    
+
     //display floorplans on click
     $('.selection p').on('click',function(){
         if (screen.width < 760){

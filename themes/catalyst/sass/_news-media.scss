@@ -25,7 +25,7 @@
     }
     .newsmedia-content {
         .widget-area {
-            margin-top: 10px;
+            margin: 10px auto 0;
             padding: 0 20px;
         }
         @include media($desktop-width) {
@@ -56,12 +56,17 @@
             padding-bottom: 20px;
             margin: 10px 0;
         }
+
+        .news.no-image {
+            width: 98%;
+        }
         .article-thumb {
-            height: 235px;
+            height: 200px;
             width: 100%;
             overflow: hidden;
             img {
                 height: 100%;
+                min-width: 100%;
                 object-fit: cover;
             }
         }
@@ -72,10 +77,10 @@
                 width: 48%;
                 display: block;
             }
-            .news:nth-child(5n + 1) {
-                width: 98%;
-                display: block;
-            }
+            // .news:nth-child(5n + 1) {
+            //     width: 98%;
+            //     display: block;
+            // }
         }
         .article-content {
             padding: 5px 15px;
