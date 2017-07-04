@@ -3216,8 +3216,7 @@ object {
   max-width: 900px;
   color: white;
   padding: 0 2rem;
-  line-height: 1;
-  max-width: 750px; }
+  line-height: 1; }
 
 .page-id-195 .entry-title {
   margin-bottom: 1rem;
@@ -3254,8 +3253,7 @@ object {
   padding: 2rem 1rem 1rem;
   font-size: 1.2rem;
   font-family: quattrocento, sans-serif;
-  text-align: center;
-  max-width: 850px; }
+  text-align: center; }
   @media all and (min-width: 760px) {
     .page-id-195 .intro-copy {
       font-size: 1.5rem;

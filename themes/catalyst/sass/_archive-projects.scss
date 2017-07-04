@@ -1,7 +1,6 @@
 .page-id-195 {
     .header-text {
         @include header-text;
-        max-width: 750px;
     }
     .entry-title {
         @include page-title;
@@ -13,7 +12,6 @@
 
     .intro-copy {
         @include intro-copy;
-        max-width: 850px;
         @include media ($desktop-width){
             width: 100%
         }
