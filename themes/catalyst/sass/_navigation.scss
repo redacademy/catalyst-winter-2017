@@ -69,6 +69,11 @@
 			width: 20%;
 		}
 	}
+	.header-text {
+		height: 0;
+		width: 0;
+		overflow: hidden;
+	}
 	.header-logo {
 		background: url('../../images/full-logo.svg')no-repeat;
 		background-size: 100%;

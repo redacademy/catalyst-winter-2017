@@ -24,7 +24,7 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<div class="container">
 						<div class="logo">
-							<a href="<?php  echo esc_url( home_url( '/' ) ); ?>"><h1 class="header-logo">Catalyst Logo</h1></a>
+							<a class="header-logo" href="<?php  echo esc_url( home_url( '/' ) ); ?>"><h1 class="header-text">Catalyst Logo</h1></a>
 						</div>
 							<div class="top-menu">
 							<div class="desktop-menu">
@@ -33,12 +33,12 @@
 
 							<div class="hamburger-menu">
 							<button class="hamburger">&#9776;</button>
-							
+
 							<button class="cross">&#735;</button>
 							<div class="mobile-menu">
 								<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', ) ); ?>
 							</div>
-							
+
 						</div>
 					</div>
 				</nav><!-- #site-navigation -->
