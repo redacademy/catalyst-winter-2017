@@ -1979,7 +1979,7 @@ object {
     .page-id-159 .staff-exit-button span {
       font-size: 1.5rem;
       position: relative;
-      left: 0.5px; }
+      bottom: 0.5px; }
       @media all and (min-width: 760px) {
         .page-id-159 .staff-exit-button span {
           font-size: 2.05rem; } }
@@ -2166,9 +2166,10 @@ object {
       .page-id-159 .staff-profiles-wrapper .profile-popout h3,
       .page-id-159 .board-profiles-wrapper .profile-popout h3,
       .page-id-159 .advisors-profiles-wrapper .profile-popout h3 {
-        width: 50%;
+        width: 85%;
         margin: 0 auto;
         font-size: 1.5rem;
+        line-height: 2rem;
         font-family: quattrocento;
         line-height: 1.75rem;
         font-style: italic;
@@ -2178,7 +2179,9 @@ object {
           .page-id-159 .staff-profiles-wrapper .profile-popout h3,
           .page-id-159 .board-profiles-wrapper .profile-popout h3,
           .page-id-159 .advisors-profiles-wrapper .profile-popout h3 {
-            font-size: 2rem; } }
+            width: 50%;
+            font-size: 2rem;
+            line-height: 2.3rem; } }
       .page-id-159 .staff-profiles-wrapper .profile-popout article,
       .page-id-159 .board-profiles-wrapper .profile-popout article,
       .page-id-159 .advisors-profiles-wrapper .profile-popout article {

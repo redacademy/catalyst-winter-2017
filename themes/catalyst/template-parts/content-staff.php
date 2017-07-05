@@ -26,8 +26,6 @@
 						<div class="quote-container">
 							<p class="quote">
 								<?php echo $quote; ?>
-								<!--<div class="left-quotation"></div>
-								<div class="right-quotation"></div>-->
 							</p>
 								<div class="left-quotation"></div>
 								<div class="right-quotation"></div>
