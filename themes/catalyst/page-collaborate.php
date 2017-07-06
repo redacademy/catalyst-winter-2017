@@ -41,17 +41,17 @@ get_header(); ?>
 					<h2 class="subheader-lrg">Non-Profit Partners</h2>
 				</div>
 
-				<?php $partners_copy1 = CFS() -> get('partners_copy1');
-				if (!empty( $partners_copy1 )) : ?>
+				<?php $non_profit_copy1 = CFS() -> get('non_profit_copy1');
+				if (!empty( $non_profit_copy1 )) : ?>
 				<p class="partners-copy">
-					<?php echo esc_html( $partners_copy1 ); ?>
+					<?php echo esc_html( $non_profit_copy1 ); ?>
 				</p>
 				<?php endif; ?>
 
-				<?php $partners_copy2 = CFS() -> get('partners_copy2');
-				if (!empty( $partners_copy2 )) : ?>
+				<?php $non_profit_copy2 = CFS() -> get('non_profit_copy2');
+				if (!empty( $non_profit_copy2 )) : ?>
 				<p class="partners-copy">
-					<?php echo esc_html( $partners_copy2 ); ?>
+					<?php echo esc_html( $non_profit_copy2 ); ?>
 				</p>
 				<?php endif; ?>
 
