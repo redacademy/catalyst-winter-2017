@@ -78,6 +78,7 @@ get_header(); ?>
 				<?php endif; ?>
 
 				<a class="navigation-button" href="<?php echo get_home_url(); ?>/investor">Learn More</a>
+
 			</section>
 		</div>
 
