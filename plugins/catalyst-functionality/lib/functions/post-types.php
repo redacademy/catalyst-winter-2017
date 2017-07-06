@@ -42,7 +42,7 @@ function projects_cpt() {
 		'label'                 => 'Project',
 		'description'           => 'projects list',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions'),		
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions'),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
@@ -450,7 +450,7 @@ function renters_cpt() {
 		'label'                 => 'Renter',
 		'description'           => 'renters list',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions'),		
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions'),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
@@ -469,3 +469,5 @@ function renters_cpt() {
 
 }
 add_action( 'init', 'renters_cpt', 0 );
+
+
