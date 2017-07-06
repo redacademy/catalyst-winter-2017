@@ -55,7 +55,7 @@ get_header(); ?>
 				</p>
 				<?php endif; ?>
 
-				<a class="navigation-button" href="<?php echo get_home_url(); ?>/our-story">Learn More</a>
+				<a class="navigation-button" href="<?php echo get_home_url(); ?>/non-profit">Learn More</a>
 			</section>
 
 			<section class="investors-information partners-information">
@@ -77,7 +77,7 @@ get_header(); ?>
 				</p>
 				<?php endif; ?>
 
-				<a class="navigation-button" href="<?php echo get_home_url(); ?>/our-story">Learn More</a>
+				<a class="navigation-button" href="<?php echo get_home_url(); ?>/investor">Learn More</a>
 			</section>
 		</div>
 
