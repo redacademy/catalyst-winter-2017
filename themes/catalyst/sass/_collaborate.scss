@@ -30,11 +30,16 @@
         }
     }
     .main-copy-text {
-        @include main-copy;
         margin-bottom: 1rem;
 
         @include media ($desktop-width) {
             margin-bottom: 2rem;
+        }
+
+        & p {
+            @include main-copy;
+            margin: 0 auto;
+            text-align: center;
         }
     }
     .main-copy1, .main-copy2, .main-copy3 {
@@ -67,10 +72,10 @@
             margin: 0 0 $base__space-unit;
         }
         .navigation-button{
-            margin: 0 auto 2rem;
+            margin: 2rem auto 2rem;
 
             @include media($desktop-width) {
-                margin: 0 auto 3rem;
+                margin: 3rem auto 3rem;
             }
         }
         .small-header {
@@ -87,7 +92,7 @@
                 font-size: 2rem;
             }
         }
-        .partners-copy, .investors-copy {
+        .partners-information p {
             @include main-copy;
             text-align: center;
         }
