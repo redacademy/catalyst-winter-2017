@@ -493,7 +493,8 @@ table {
 
 .hero-image-banner,
 .project-image-banner {
-  height: 45vh;
+  height: auto;
+  min-height: 45vh;
   min-width: 100%;
   display: -ms-flexbox;
   display: flex;
@@ -506,7 +507,7 @@ table {
   @media all and (min-width: 760px) {
     .hero-image-banner,
     .project-image-banner {
-      height: 70vh; } }
+      min-height: 70vh; } }
   .hero-image-banner .header-text,
   .project-image-banner .header-text {
     width: 100%;
@@ -2679,15 +2680,37 @@ object {
       .page-id-18 .intro-copy {
         max-width: 860px; } }
   .page-id-18 .main-copy-container {
+    height: auto;
+    width: 100%;
+    margin: 0 0 2rem; }
+    .page-id-18 .main-copy-container .navigation-button {
+      margin: 0 auto 5rem; }
+  .page-id-18 .main-copy-text {
+    height: auto;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: quattrocento, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.75rem;
+    text-align: center;
     margin-bottom: 1.5rem; }
     @media all and (min-width: 760px) {
-      .page-id-18 .main-copy-container {
+      .page-id-18 .main-copy-text {
+        padding: 0.75rem auto;
+        font-size: 1.5rem;
+        line-height: 2.25rem; } }
+    @media all and (min-width: 1200px) {
+      .page-id-18 .main-copy-text {
+        max-width: 860px; } }
+    @media all and (min-width: 760px) {
+      .page-id-18 .main-copy-text {
         margin-bottom: 3rem; } }
   .page-id-18 .main-copy1, .page-id-18 .main-copy2, .page-id-18 .main-copy3 {
     height: auto;
     max-width: 650px;
     margin: 0 auto;
-    padding: 0.55rem 0;
+    padding: 1rem;
     font-family: quattrocento, sans-serif;
     font-size: 1.2rem;
     line-height: 1.75rem;
@@ -2732,66 +2755,56 @@ object {
     @media all and (min-width: 760px) {
       .page-id-18 .supporters-header {
         font-size: 1.85rem; } }
-  .page-id-18 .content-container {
-    padding: 0 1rem; }
-    .page-id-18 .content-container .partners-information-container {
-      margin: 3rem auto; }
+  .page-id-18 .partners-information-container {
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-align: center;
+        align-items: center; }
+    .page-id-18 .partners-information-container .partners-information {
+      height: auto;
+      width: 100%;
+      margin: 0 0 2rem; }
+    .page-id-18 .partners-information-container .small-header {
+      margin-top: 4rem;
+      margin-bottom: 1.25rem;
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: #4A4A4A;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1.5px; }
       @media all and (min-width: 760px) {
-        .page-id-18 .content-container .partners-information-container {
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-flow: row wrap;
-              flex-flow: row wrap;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-          -ms-flex-align: baseline;
-              align-items: baseline;
-          margin: 5rem auto;
-          padding: 0 4rem; } }
-      .page-id-18 .content-container .partners-information-container .partners-information {
-        height: auto;
-        margin: 0 0 2rem; }
-        @media all and (min-width: 760px) {
-          .page-id-18 .content-container .partners-information-container .partners-information {
-            width: 490px;
-            margin: 0 auto;
-            display: inline-block; } }
-      .page-id-18 .content-container .partners-information-container .small-header {
-        margin-top: 4rem;
-        margin-bottom: 1.25rem;
-        font-size: 1.75rem;
-        font-weight: 700;
-        color: #4A4A4A;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 1.5px; }
-        @media all and (min-width: 760px) {
-          .page-id-18 .content-container .partners-information-container .small-header {
-            margin: 2rem 0 1.5rem;
-            font-size: 2rem; } }
-      .page-id-18 .content-container .partners-information-container .partners-copy, .page-id-18 .content-container .partners-information-container .investors-copy {
-        height: auto;
-        max-width: 650px;
-        margin: 0 auto;
-        padding: 0.55rem 0;
-        font-family: quattrocento, sans-serif;
-        font-size: 1.2rem;
-        line-height: 1.75rem;
-        text-align: center;
-        text-align: center; }
-        @media all and (min-width: 760px) {
-          .page-id-18 .content-container .partners-information-container .partners-copy, .page-id-18 .content-container .partners-information-container .investors-copy {
-            padding: 0.75rem auto;
-            font-size: 1.5rem;
-            line-height: 2.25rem; } }
-        @media all and (min-width: 1200px) {
-          .page-id-18 .content-container .partners-information-container .partners-copy, .page-id-18 .content-container .partners-information-container .investors-copy {
-            max-width: 860px; } }
-      .page-id-18 .content-container .partners-information-container .partners-copy:nth-child(3), .page-id-18 .content-container .partners-information-container .investors-copy:nth-child(3) {
-        margin-bottom: 1.5rem; }
-        @media all and (min-width: 760px) {
-          .page-id-18 .content-container .partners-information-container .partners-copy:nth-child(3), .page-id-18 .content-container .partners-information-container .investors-copy:nth-child(3) {
-            margin-bottom: 3rem; } }
+        .page-id-18 .partners-information-container .small-header {
+          margin: 2rem 0 1.5rem;
+          font-size: 2rem; } }
+    .page-id-18 .partners-information-container .partners-copy, .page-id-18 .partners-information-container .investors-copy {
+      height: auto;
+      max-width: 650px;
+      margin: 0 auto;
+      padding: 1rem;
+      font-family: quattrocento, sans-serif;
+      font-size: 1.2rem;
+      line-height: 1.75rem;
+      text-align: center;
+      text-align: center; }
+      @media all and (min-width: 760px) {
+        .page-id-18 .partners-information-container .partners-copy, .page-id-18 .partners-information-container .investors-copy {
+          padding: 0.75rem auto;
+          font-size: 1.5rem;
+          line-height: 2.25rem; } }
+      @media all and (min-width: 1200px) {
+        .page-id-18 .partners-information-container .partners-copy, .page-id-18 .partners-information-container .investors-copy {
+          max-width: 860px; } }
+    .page-id-18 .partners-information-container .partners-copy:nth-child(3), .page-id-18 .partners-information-container .investors-copy:nth-child(3) {
+      margin-bottom: 1.5rem; }
+      @media all and (min-width: 760px) {
+        .page-id-18 .partners-information-container .partners-copy:nth-child(3), .page-id-18 .partners-information-container .investors-copy:nth-child(3) {
+          margin-bottom: 3rem; } }
 
 .infographic-container {
   height: auto;

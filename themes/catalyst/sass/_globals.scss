@@ -1,10 +1,11 @@
 .hero-image-banner,
 .project-image-banner {
-	height: 45vh;
+	height: auto;
+	min-height: 45vh;
     min-width: 100%;
     @include flex-column(nowrap, center, center);
     @include media($desktop-width) {
-        height: 70vh;
+        min-height: 70vh;
     }
     .header-text {
         width: 100%;
