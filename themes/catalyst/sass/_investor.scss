@@ -1,14 +1,41 @@
-
-.page-id-455 {
-    h1 {
+.page-id-455{
+   h1 {
         display: none;
+    }
+    h2{
+        max-width: 819px;
+    }
+    p{
+        font-family: $font__secondary;
+        @include media($desktop-width) {
+           font-size: 24px;
+        }
+    }
+    ul{
+        margin: 0;
+        padding-left: 20px;
+       @include media($desktop-width) {
+           font-size: 24px;
+        }
+
     }
     .blue-background-header {
         margin: 0 auto;
-        margin-top: 15px;
+        margin-top: 1rem;
+        @include media(700px) {
+           margin-top: 2.75rem;
+        }
     }
     .investor-list,
     .investor-p {
         padding: 1rem 1rem 1rem;
+         max-width: 860px;
+               margin: 0 auto;
+           @include media(700px) {
+            padding: 2.75rem .85rem;
+            }
+    }
+    .investor-p {
+        margin-bottom: 50px;
     }
 }

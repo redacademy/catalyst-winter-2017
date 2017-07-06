@@ -16,17 +16,17 @@ get_header(); ?>
 		<div class="blue-background-header">
 			<h2 class="subheader-lrg"><?php echo esc_html(CFS()->get( 'main_title' ) ); ?></h2>
 		</div>
-		<div><?php echo CFS()->get( 'main_copy' ); ?></div>
+		<div class="investor-list"><?php echo CFS()->get( 'main_copy' ); ?></div>
 
 		<div class="blue-background-header">
 			<h2 class="subheader-lrg"><?php echo esc_html(CFS()->get( 'second_title' ) ); ?></h2>
 		</div>
-		<div><?php echo CFS()->get( 'second_copy' ); ?></div>
+		<div class="investor-p"><?php echo CFS()->get( 'second_copy' ); ?></div>
 
 		<div class="blue-background-header">
 			<h2 class="subheader-lrg"><?php echo esc_html(CFS()->get( 'third_title' ) ); ?></h2>
 		</div>
-			<div><?php echo CFS()->get( 'third_copy' ); ?></div>
+			<div class="investor-p"><?php echo CFS()->get( 'third_copy' ); ?></div>
 
 
 	</main><!-- #main -->
