@@ -2681,14 +2681,6 @@ object {
       .page-id-18 .main-copy-container {
         margin: 0 0 4rem; } }
   .page-id-18 .main-copy-text {
-    height: auto;
-    max-width: 650px;
-    margin: 0 auto;
-    padding: 1rem;
-    font-family: asap, sans-serif;
-    font-size: 1.2rem;
-    line-height: 1.75rem;
-    text-align: center;
     margin-bottom: 1rem; }
     @media all and (min-width: 760px) {
       .page-id-18 .main-copy-text {
@@ -2698,7 +2690,7 @@ object {
       max-width: 650px;
       margin: 0 auto;
       padding: 1rem;
-      font-family: quattrocento, sans-serif;
+      font-family: asap, sans-serif;
       font-size: 1.2rem;
       line-height: 1.75rem;
       text-align: center;
@@ -2971,6 +2963,45 @@ object {
       .supporters-logo-container .sponsor-logo:nth-child(9) {
         margin: 1rem;
         margin-right: 0; } }
+
+.page-id-455 h1 {
+  display: none; }
+
+.page-id-455 h2 {
+  max-width: 819px; }
+
+.page-id-455 p {
+  font-family: asap, sans-serif; }
+  @media all and (min-width: 760px) {
+    .page-id-455 p {
+      font-size: 24px; } }
+
+.page-id-455 ul {
+  margin: 0;
+  padding-left: 20px; }
+  @media all and (min-width: 760px) {
+    .page-id-455 ul {
+      font-size: 24px; } }
+
+.page-id-455 .blue-background-header {
+  margin: 0 auto;
+  margin-top: 1rem; }
+  @media all and (min-width: 700px) {
+    .page-id-455 .blue-background-header {
+      margin-top: 2.75rem; } }
+
+.page-id-455 .investor-list,
+.page-id-455 .investor-p {
+  padding: 1rem 1rem 1rem;
+  max-width: 860px;
+  margin: 0 auto; }
+  @media all and (min-width: 700px) {
+    .page-id-455 .investor-list,
+    .page-id-455 .investor-p {
+      padding: 2.75rem .85rem; } }
+
+.page-id-455 .investor-p {
+  margin-bottom: 50px; }
 
 .page-id-451 h1 {
   display: none; }
