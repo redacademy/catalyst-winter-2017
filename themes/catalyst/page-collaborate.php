@@ -18,16 +18,11 @@ get_header(); ?>
 				<h2 class="subheader-lrg">Non-Profit Partners &amp; Investors</h2>
 			</div>
 
-			<?php
-				$mainCopy1 = CFS()->get( 'main_copy1' );
-				$mainCopy2 = CFS()->get( 'main_copy2' );
-				$mainCopy3 = CFS()->get( 'main_copy3' );
-			?>
-
 			<div class="main-copy-text">
-				<p class="main-copy1"><?php if( !empty( $mainCopy1 ) ) { echo esc_html( $mainCopy1 ); } ?></p>
-				<p class="main-copy2"><?php if( !empty( $mainCopy2 ) ) { echo esc_html( $mainCopy2 ); } ?></p>
-				<p class="main-copy3"><?php if( !empty( $mainCopy3 ) ) { echo esc_html( $mainCopy3 ); } ?></p>
+				<?php $mainCopy1 = CFS()->get( 'main_copy1' );
+				if( !empty( $mainCopy1 ) ) : ?>
+					<?php echo $mainCopy1; ?>
+				<?php endif; ?>
 			</div>
 
 			<div class="infographic-container">
@@ -41,18 +36,9 @@ get_header(); ?>
 					<h2 class="subheader-lrg">Non-Profit Partners</h2>
 				</div>
 
-				<?php $partners_copy1 = CFS() -> get('partners_copy1');
-				if (!empty( $partners_copy1 )) : ?>
-				<p class="partners-copy">
-					<?php echo esc_html( $partners_copy1 ); ?>
-				</p>
-				<?php endif; ?>
-
-				<?php $partners_copy2 = CFS() -> get('partners_copy2');
-				if (!empty( $partners_copy2 )) : ?>
-				<p class="partners-copy">
-					<?php echo esc_html( $partners_copy2 ); ?>
-				</p>
+				<?php $non_profit_copy1 = CFS() -> get('non_profit_copy1');
+				if (!empty( $non_profit_copy1 )) : ?>
+					<?php echo $non_profit_copy1; ?>
 				<?php endif; ?>
 
 				<a class="navigation-button" href="<?php echo get_home_url(); ?>/non-profit">Learn More</a>
@@ -65,16 +51,7 @@ get_header(); ?>
 
 				<?php $investors_copy1 = CFS() -> get('investors_copy1');
 				if (!empty( $investors_copy1 )) : ?>
-				<p class="investors-copy">
-					<?php echo esc_html( $investors_copy1 ); ?>
-				</p>
-				<?php endif; ?>
-
-				<?php $investors_copy2 = CFS() -> get('investors_copy2');
-				if (!empty( $investors_copy2 )) : ?>
-				<p class="investors-copy">
-					<?php echo esc_html( $investors_copy2 ); ?>
-				</p>
+					<?php echo $investors_copy1; ?>
 				<?php endif; ?>
 
 				<a class="navigation-button" href="<?php echo get_home_url(); ?>/investor">Learn More</a>
