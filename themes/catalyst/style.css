@@ -2263,41 +2263,6 @@ object {
         font-size: 1.15rem;
         line-height: 1.5rem;
         display: inline; }
-        .page-id-159 .staff-profiles-wrapper .profile-popout article p:first-child,
-        .page-id-159 .board-profiles-wrapper .profile-popout article p:first-child,
-        .page-id-159 .advisors-profiles-wrapper .profile-popout article p:first-child {
-          margin-bottom: 0; }
-        .page-id-159 .staff-profiles-wrapper .profile-popout article p:nth-last-of-type(2), .page-id-159 .staff-profiles-wrapper .profile-popout article h4,
-        .page-id-159 .board-profiles-wrapper .profile-popout article p:nth-last-of-type(2),
-        .page-id-159 .board-profiles-wrapper .profile-popout article h4,
-        .page-id-159 .advisors-profiles-wrapper .profile-popout article p:nth-last-of-type(2),
-        .page-id-159 .advisors-profiles-wrapper .profile-popout article h4 {
-          width: 100%;
-          float: none; }
-          @media all and (min-width: 760px) {
-            .page-id-159 .staff-profiles-wrapper .profile-popout article p:nth-last-of-type(2), .page-id-159 .staff-profiles-wrapper .profile-popout article h4,
-            .page-id-159 .board-profiles-wrapper .profile-popout article p:nth-last-of-type(2),
-            .page-id-159 .board-profiles-wrapper .profile-popout article h4,
-            .page-id-159 .advisors-profiles-wrapper .profile-popout article p:nth-last-of-type(2),
-            .page-id-159 .advisors-profiles-wrapper .profile-popout article h4 {
-              float: right; } }
-        .page-id-159 .staff-profiles-wrapper .profile-popout article p:nth-last-of-type(2),
-        .page-id-159 .board-profiles-wrapper .profile-popout article p:nth-last-of-type(2),
-        .page-id-159 .advisors-profiles-wrapper .profile-popout article p:nth-last-of-type(2) {
-          margin-bottom: 0;
-          padding: 1.5rem;
-          background: white; }
-        .page-id-159 .staff-profiles-wrapper .profile-popout article h4,
-        .page-id-159 .board-profiles-wrapper .profile-popout article h4,
-        .page-id-159 .advisors-profiles-wrapper .profile-popout article h4 {
-          margin-top: 0;
-          padding: 1.5rem;
-          background: white;
-          clear: right; }
-          .page-id-159 .staff-profiles-wrapper .profile-popout article h4 + p,
-          .page-id-159 .board-profiles-wrapper .profile-popout article h4 + p,
-          .page-id-159 .advisors-profiles-wrapper .profile-popout article h4 + p {
-            clear: both; }
         .page-id-159 .staff-profiles-wrapper .profile-popout article ul,
         .page-id-159 .board-profiles-wrapper .profile-popout article ul,
         .page-id-159 .advisors-profiles-wrapper .profile-popout article ul {
