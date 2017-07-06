@@ -29,7 +29,10 @@ get_header(); ?>
 				<p class="main-copy2"><?php if( !empty( $mainCopy2 ) ) { echo esc_html( $mainCopy2 ); } ?></p>
 				<p class="main-copy3"><?php if( !empty( $mainCopy3 ) ) { echo esc_html( $mainCopy3 ); } ?></p>
 			</div>
-			<a class="navigation-button" href="<?php echo get_home_url(); ?>/our-story">Learn More</a>
+
+			<div class="infographic-container">
+				<img class="business-model-diagram" src="<?php echo esc_attr( get_the_post_thumbnail_url() ); ?>">
+			</div>
 		</section>
 
 		<div class="partners-information-container">
