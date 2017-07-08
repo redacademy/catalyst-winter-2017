@@ -34,7 +34,7 @@
 							<div class="hamburger-menu">
 							<button class="hamburger">&#9776;</button>
 
-							<button class="cross">&#735;</button>
+							<button class="cross"><div>&#735;</div></button>
 							<div class="mobile-menu">
 								<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', ) ); ?>
 							</div>

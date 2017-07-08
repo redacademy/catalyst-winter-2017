@@ -693,18 +693,9 @@ textarea {
     text-align: center;
     overflow: hidden;
     text-indent: 193%; }
-    @media all and (min-width: 480px) {
+    @media all and (min-width: 760px) {
       .container .header-logo {
-        width: 161px;
-        height: 66px;
-        margin-top: 7px; } }
-    @media all and (min-width: 1180px) {
-      .container .header-logo {
-        height: 80px;
-        width: 167px;
-        margin-top: 10px;
-        position: relative;
-        z-index: -1; } }
+        margin-top: 10px; } }
   .container .top-menu {
     position: absolute;
     right: 0%;
@@ -754,7 +745,7 @@ textarea {
       .container .desktop-menu #primary-menu a {
         text-transform: uppercase;
         color: #323232;
-        font-size: 1rem;
+        font-size: 1.1rem;
         text-decoration: none; }
         .container .desktop-menu #primary-menu a:active {
           color: #935E32; }
@@ -772,6 +763,9 @@ textarea {
         justify-content: flex-start;
     -ms-flex-align: end;
         align-items: flex-end; }
+    @media all and (min-width: 1260px) {
+      .container .hamburger-menu {
+        display: none; } }
     .container .hamburger-menu .hamburger {
       margin-top: 5px;
       margin-right: 20px;
@@ -796,6 +790,11 @@ textarea {
       margin-top: 5px;
       list-style: none;
       line-height: 1.35rem; }
+      @media all and (min-width: 760px) {
+        .container .hamburger-menu ul {
+          margin-top: 0; } }
+    .container .hamburger-menu li:last-child {
+      border-bottom: 0; }
     .container .hamburger-menu li {
       padding: 0;
       border-bottom: 1px solid white;
@@ -806,14 +805,14 @@ textarea {
       .container .hamburger-menu li a {
         display: block;
         text-decoration: none;
-        padding: 12px 0 15px 12px;
+        padding: 8px 0 8px 12px;
         font-size: 0.95rem;
         color: #323232;
         text-transform: uppercase; }
         @media all and (min-width: 760px) {
           .container .hamburger-menu li a {
             font-size: 1.25rem;
-            padding: 20px 0 20px 20px; } }
+            padding: 15px 0 15px 20px; } }
       .container .hamburger-menu li:hover {
         background-color: #D9F1FF; }
     .container .hamburger-menu .cross {
@@ -832,6 +831,9 @@ textarea {
       top: 18px;
       opacity: 0;
       transition: opacity 0.3s ease; }
+      .container .hamburger-menu .cross div {
+        height: 25px;
+        width: 25px; }
     .container .hamburger-menu .mobile-menu {
       height: 0;
       margin-top: 80px;
@@ -843,9 +845,6 @@ textarea {
       opacity: 1; }
     .container .hamburger-menu .transparent {
       opacity: 0; }
-    @media all and (min-width: 1180px) {
-      .container .hamburger-menu {
-        display: none; } }
 
 .footer {
   margin: 0 auto;

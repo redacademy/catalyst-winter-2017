@@ -85,17 +85,8 @@
 		text-align: center;
 		overflow: hidden;
 		text-indent: 193%;
-		@include media (480px) {
-			width: 161px;
-			height: 66px;
-			margin-top: 7px;
-		}
-		@include media(1180px) {
-			height: 80px;
-			width: 167px;
+		@include media ($desktop-width) {
 			margin-top: 10px;
-			position: relative;
-			z-index: -1;
 		}
 	}
 	.top-menu {
@@ -147,7 +138,7 @@
 			a {
 				text-transform: uppercase;
 				color: $color__header-main;
-				font-size: 1rem;
+				font-size: 1.1rem;
 				text-decoration: none;
 				&:active {
 					color: $color__menu-active;
@@ -165,6 +156,9 @@
 		@include flex-column(nowrap,
 		flex-start,
 		flex-end);
+		@include media(1260px) {
+			display: none;
+		}
 		.hamburger {
 			margin-top: 5px;
 			margin-right: 20px;
@@ -189,6 +183,13 @@
 			margin-top: 5px;
 			list-style: none;
 			line-height: 1.35rem;
+
+			@include media( $desktop-width ) {
+				margin-top: 0;
+			}
+		}
+		li:last-child {
+			border-bottom: 0;
 		}
 		li {
 			padding: 0;
@@ -200,13 +201,13 @@
 			a {
 				display: block;
 				text-decoration: none;
-				padding: 12px 0 15px 12px;
+				padding: 8px 0 8px 12px;
 				font-size: 0.95rem;
 				color: $color__header-main;
 				text-transform: uppercase;
 				@include media($desktop-width) {
 					font-size: 1.25rem;
-					padding: 20px 0 20px 20px;
+					padding: 15px 0 15px 20px;
 				}
 			}
 			&:hover {
@@ -229,6 +230,11 @@
 			top: 18px;
 			opacity: 0;
 			transition: opacity 0.3s ease;
+
+			div {
+				height: 25px;
+    		width: 25px;
+			}
 		}
 		.mobile-menu {
 			height: 0;
@@ -243,9 +249,6 @@
 		}
 		.transparent {
 			opacity: 0;
-		}
-		@include media(1180px) {
-			display: none;
 		}
 	}
 }
