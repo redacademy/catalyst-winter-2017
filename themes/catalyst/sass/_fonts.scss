@@ -284,12 +284,12 @@
 
 @font-face {
     font-family: 'asap';
-    src: url('asap-bold-webfont.eot');
-    src: url('asap-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('asap-bold-webfont.woff2') format('woff2'),
-         url('asap-bold-webfont.woff') format('woff'),
-         url('asap-bold-webfont.ttf') format('truetype'),
-         url('asap-bold-webfont.svg#asapbold') format('svg');
+    src: url('../../fonts/asap-bold-webfont.eot');
+    src: url('../../fonts/asap-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/asap-bold-webfont.woff2') format('woff2'),
+         url('../../fonts/asap-bold-webfont.woff') format('woff'),
+         url('../../fonts/asap-bold-webfont.ttf') format('truetype'),
+         url('../../fonts/asap-bold-webfont.svg#asapbold') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -297,26 +297,12 @@
 
 @font-face {
     font-family: 'asap';
-    src: url('asap-bolditalic-webfont.eot');
-    src: url('asap-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('asap-bolditalic-webfont.woff2') format('woff2'),
-         url('asap-bolditalic-webfont.woff') format('woff'),
-         url('asap-bolditalic-webfont.ttf') format('truetype'),
-         url('asap-bolditalic-webfont.svg#asapbold_italic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-@font-face {
-    font-family: 'asap';
-    src: url('asap-italic-webfont.eot');
-    src: url('asap-italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('asap-italic-webfont.woff2') format('woff2'),
-         url('asap-italic-webfont.woff') format('woff'),
-         url('asap-italic-webfont.ttf') format('truetype'),
-         url('asap-italic-webfont.svg#asapitalic') format('svg');
+    src: url('../../fonts/asap-bolditalic-webfont.eot');
+    src: url('../../fonts/asap-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/asap-bolditalic-webfont.woff2') format('woff2'),
+         url('../../fonts/asap-bolditalic-webfont.woff') format('woff'),
+         url('../../fonts/asap-bolditalic-webfont.ttf') format('truetype'),
+         url('../../fonts/asap-bolditalic-webfont.svg#asapbold_italic') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -325,12 +311,12 @@
 
 @font-face {
     font-family: 'asap';
-    src: url('asap-medium-webfont.eot');
-    src: url('asap-medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('asap-medium-webfont.woff2') format('woff2'),
-         url('asap-medium-webfont.woff') format('woff'),
-         url('asap-medium-webfont.ttf') format('truetype'),
-         url('asap-medium-webfont.svg#asapmedium') format('svg');
+    src: url('../../fonts/asap-italic-webfont.eot');
+    src: url('../../fonts/asap-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/asap-italic-webfont.woff2') format('woff2'),
+         url('../../fonts/asap-italic-webfont.woff') format('woff'),
+         url('../../fonts/asap-italic-webfont.ttf') format('truetype'),
+         url('../../fonts/asap-italic-webfont.svg#asapitalic') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -339,12 +325,26 @@
 
 @font-face {
     font-family: 'asap';
-    src: url('asap-mediumitalic-webfont.eot');
-    src: url('asap-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('asap-mediumitalic-webfont.woff2') format('woff2'),
-         url('asap-mediumitalic-webfont.woff') format('woff'),
-         url('asap-mediumitalic-webfont.ttf') format('truetype'),
-         url('asap-mediumitalic-webfont.svg#asapmedium_italic') format('svg');
+    src: url('../../fonts/asap-medium-webfont.eot');
+    src: url('../../fonts/asap-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/asap-medium-webfont.woff2') format('woff2'),
+         url('../../fonts/asap-medium-webfont.woff') format('woff'),
+         url('../../fonts/asap-medium-webfont.ttf') format('truetype'),
+         url('../../fonts/asap-medium-webfont.svg#asapmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'asap';
+    src: url('../../fonts/asap-mediumitalic-webfont.eot');
+    src: url('../../fonts/asap-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/asap-mediumitalic-webfont.woff2') format('woff2'),
+         url('../../fonts/asap-mediumitalic-webfont.woff') format('woff'),
+         url('../../fonts/asap-mediumitalic-webfont.ttf') format('truetype'),
+         url('../../fonts/asap-mediumitalic-webfont.svg#asapmedium_italic') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -352,12 +352,12 @@
 
 @font-face {
     font-family: 'asap';
-    src: url('asap-regular-webfont.eot');
-    src: url('asap-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('asap-regular-webfont.woff2') format('woff2'),
-         url('asap-regular-webfont.woff') format('woff'),
-         url('asap-regular-webfont.ttf') format('truetype'),
-         url('asap-regular-webfont.svg#asapregular') format('svg');
+    src: url('../../fonts/asap-regular-webfont.eot');
+    src: url('../../fonts/asap-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/asap-regular-webfont.woff2') format('woff2'),
+         url('../../fonts/asap-regular-webfont.woff') format('woff'),
+         url('../../fonts/asap-regular-webfont.ttf') format('truetype'),
+         url('../../fonts/asap-regular-webfont.svg#asapregular') format('svg');
     font-weight: normal;
     font-style: normal;
 

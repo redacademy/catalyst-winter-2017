@@ -1,14 +1,23 @@
-.page-id-451{
-  h1 {
+.page-id-486{
+    .hero-image-banner {
+        margin-bottom: 2rem;
+        @include media($desktop-width) {
+            margin-bottom: 3rem;
+        }
+    }
+    h1 {
         display: none;
     }
     h2{
-        max-width: 819px;
+        max-width: 900px;
     }
-    p{
+    p, li{
         font-family: $font__secondary;
+        font-size: $font__mobile-size;
+        line-height: $line-height-body;
         @include media($desktop-width) {
-           font-size: 24px;
+           font-size: $font__desktop-size;
+           line-height: $line-height-desktop;
         }
     }
     ul{
@@ -19,23 +28,20 @@
         }
 
     }
-    .blue-background-header {
-        margin: 0 auto;
-        margin-top: 1rem;
-        @include media(700px) {
-           margin-top: 2.75rem;
-        }
-    }
     .investor-list,
     .investor-p {
-        padding: 1rem 1rem 1rem;
-         max-width: 860px;
-               margin: 0 auto;
-           @include media(700px) {
-            padding: 2.75rem .85rem;
-            }
+        padding: 0 2rem;
+        max-width: 650px;
+        margin: 0 auto;
+        @include media(700px) {
+            max-width: 860px;
+        }
     }
-    .investor-p {
-        margin-bottom: 50px;
+    .investor-p, .investor-list {
+        margin-bottom: 2rem;
+
+        @include media($desktop-width) {
+            margin-bottom: 3rem;
+        }
     }
 }
