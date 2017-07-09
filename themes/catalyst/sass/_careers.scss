@@ -66,7 +66,6 @@
     .role {
         text-transform: uppercase;
         font-weight: $font__bold;
-        margin-bottom: 0;
     }
     .resp-container {
         font-family: $font__secondary;
@@ -88,7 +87,13 @@
     .responsibilities {
         text-transform: uppercase;
         font-weight: $font__bold;
-        margin-bottom: 0;
+    }
+    .role, .responsibilities {
+        margin-bottom: 0.5rem;
+
+        @include media( $desktop-width ) {
+            margin-bottom: 0.8rem;
+        }
     }
     .navigation-button {
         @include navigation-button();

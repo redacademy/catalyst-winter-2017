@@ -48,17 +48,15 @@
 
         <div class="team">
             <div class="blue-background-header">
-                <h2 class='subheader-lrg'>team catalyst</h2>
-            </div>        
+                <?php $team_catalyst_subheader = esc_html( CFS()->get( 'team_catalyst_subheader' ) );
+                if ( !empty( $team_catalyst_subheader ) ) :?>
+                <h2 class="subheader-lrg"><?php echo $team_catalyst_subheader; ?></h3>
+                <?php endif; ?>
+            </div>
 
             <?php $team_catalyst_copy = esc_html( CFS()->get( 'team_catalyst_copy' ) );
             if ( !empty( $team_catalyst_copy ) ) :?>
             <p class="team-catalyst-copy"><?php echo $team_catalyst_copy; ?></p>
-            <?php endif; ?>
-
-            <?php $team_catalyst_subheader = esc_html( CFS()->get( 'team_catalyst_subheader' ) );
-            if ( !empty( $team_catalyst_subheader ) ) :?>
-            <h3 class="small-subheader"><?php echo $team_catalyst_subheader; ?></h3>
             <?php endif; ?>
 
             <div class="member-carousel">

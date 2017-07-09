@@ -573,7 +573,7 @@ table {
   @media all and (min-width: 760px) {
     .subheader-lrg {
       max-width: none;
-      font-size: 2.4rem;
+      font-size: 2.25rem;
       line-height: 3.4rem; } }
 
 /*--------------------------------------------------------------
@@ -1483,10 +1483,14 @@ object {
   display: block; }
 
 .page-id-21 p {
+  font-family: asap, sans-serif;
   font-size: 1.2rem; }
   @media all and (min-width: 760px) {
     .page-id-21 p {
       font-size: 1.5rem; } }
+
+.page-id-21 .mission-copy, .page-id-21 .formula-p {
+  padding: 0 1rem; }
 
 .page-id-21 .header-text {
   max-width: 900px;
@@ -1628,37 +1632,46 @@ object {
 
 .page-id-21 .mission-quote {
   height: auto;
-  position: relative;
-  max-width: 1500px;
-  margin: 0 auto; }
+  max-width: 320px;
+  margin: 0 auto;
+  position: relative; }
+  @media all and (min-width: 600px) {
+    .page-id-21 .mission-quote {
+      max-width: 450px; } }
+  @media all and (min-width: 760px) {
+    .page-id-21 .mission-quote {
+      max-width: 600px; } }
   .page-id-21 .mission-quote .quote-target {
     height: 0;
     width: 0;
     position: relative; }
 
 .page-id-21 .mission-quote2 {
-  height: auto; }
+  height: auto;
+  max-width: 320px;
+  margin: 0 auto; }
+  @media all and (min-width: 600px) {
+    .page-id-21 .mission-quote2 {
+      max-width: 460px; } }
   @media all and (min-width: 760px) {
     .page-id-21 .mission-quote2 {
-      margin-bottom: 0px; }
-      .page-id-21 .mission-quote2 p {
-        margin-bottom: 0; } }
+      max-width: 610px; } }
 
 .page-id-21 .quote,
 .page-id-21 .quote2 {
   z-index: 1;
-  margin-top: 67px;
+  margin-top: 3rem;
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   line-height: 2.2rem;
   font-weight: 100;
-  width: 80%;
+  width: 100%;
   font-family: asap, sans-serif;
   font-style: italic; }
   @media all and (min-width: 760px) {
     .page-id-21 .quote,
     .page-id-21 .quote2 {
-      font-size: 2.4rem;
+      font-size: 2rem;
       line-height: 2.75rem; } }
 
 .page-id-21 .quotation-left,
@@ -1675,28 +1688,22 @@ object {
       width: 75px; } }
 
 .page-id-21 .quotation-left {
-  top: 55px;
-  left: 25px; }
-  @media all and (min-width: 670px) {
+  top: 43px;
+  left: -30px; }
+  @media all and (min-width: 600px) {
     .page-id-21 .quotation-left {
-      left: 35px; } }
-  @media all and (min-width: 1000px) {
+      left: -10px; } }
+  @media all and (min-width: 760px) {
     .page-id-21 .quotation-left {
-      left: 65px; } }
-  @media all and (min-width: 1200px) {
-    .page-id-21 .quotation-left {
-      left: 80px; } }
+      left: -30px; } }
 
 .page-id-21 .quotation-left2 {
-  top: 55px;
-  left: 27px; }
+  top: 45px;
+  left: -25px; }
   @media all and (min-width: 760px) {
     .page-id-21 .quotation-left2 {
-      top: 50px;
-      left: 35px; } }
-  @media all and (min-width: 1260px) {
-    .page-id-21 .quotation-left2 {
-      left: 110px; } }
+      top: 40px;
+      left: -30px; } }
 
 .page-id-21 .quotation-right,
 .page-id-21 .quotation-right2 {
@@ -1713,45 +1720,37 @@ object {
       width: 75px; } }
 
 .page-id-21 .quotation-right {
-  top: 140px;
-  right: 50px; }
-  @media all and (min-width: 630px) {
+  top: 125px;
+  right: 13px; }
+  @media all and (min-width: 600px) {
     .page-id-21 .quotation-right {
-      top: 110px;
-      right: 55px; } }
+      top: 87px;
+      right: -31px; } }
   @media all and (min-width: 760px) {
     .page-id-21 .quotation-right {
-      top: 150px; } }
-  @media all and (min-width: 863px) {
-    .page-id-21 .quotation-right {
-      top: 135px;
-      right: 70px; } }
-  @media all and (min-width: 960px) {
-    .page-id-21 .quotation-right {
-      top: 70px;
-      right: 78px; } }
+      top: 100px;
+      right: -60px; } }
 
 .page-id-21 .quotation-right2 {
-  bottom: 10px;
-  right: 27px; }
-  @media all and (min-width: 515px) {
+  bottom: 17px;
+  right: 12px; }
+  @media all and (min-width: 600px) {
     .page-id-21 .quotation-right2 {
-      right: 45px; } }
+      right: 5px; } }
   @media all and (min-width: 760px) {
     .page-id-21 .quotation-right2 {
-      bottom: -10px;
-      right: 70px; } }
-  @media all and (min-width: 1260px) {
-    .page-id-21 .quotation-right2 {
-      right: 120px; } }
+      bottom: 10px;
+      right: -30px; } }
 
 .page-id-21 .robert {
-  margin: 2rem auto;
+  margin: 0 auto;
   text-align: center; }
   @media all and (min-width: 760px) {
     .page-id-21 .robert {
       margin: 2rem auto;
       font-size: 30px; } }
+  .page-id-21 .robert h4, .page-id-21 .robert p {
+    font-family: roboto_slab, serif; }
 
 .page-id-21 h4 {
   font-size: 20px;
@@ -1788,8 +1787,8 @@ object {
 
 .page-id-21 .mission-content {
   text-align: center;
-  margin-bottom: 100px;
-  margin-top: 80px; }
+  margin-bottom: 3rem;
+  margin-top: 3rem; }
   .page-id-21 .mission-content .arrow {
     margin-bottom: 10px; }
   @media all and (min-width: 760px) {
@@ -1830,8 +1829,8 @@ object {
       width: 100%;
       margin-top: 5px; }
   .page-id-21 .mission-content p {
-    width: 65%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    font-size: 1.2rem; }
 
 .page-id-21 .formula-p {
   font-family: asap, sans-serif;
@@ -3348,8 +3347,7 @@ object {
 
 .page-id-196 .role {
   text-transform: uppercase;
-  font-weight: 800;
-  margin-bottom: 0; }
+  font-weight: 800; }
 
 .page-id-196 .resp-container {
   font-family: asap, sans-serif;
@@ -3368,8 +3366,13 @@ object {
 
 .page-id-196 .responsibilities {
   text-transform: uppercase;
-  font-weight: 800;
-  margin-bottom: 0; }
+  font-weight: 800; }
+
+.page-id-196 .role, .page-id-196 .responsibilities {
+  margin-bottom: 0.5rem; }
+  @media all and (min-width: 760px) {
+    .page-id-196 .role, .page-id-196 .responsibilities {
+      margin-bottom: 0.8rem; } }
 
 .page-id-196 .navigation-button {
   height: 70px;

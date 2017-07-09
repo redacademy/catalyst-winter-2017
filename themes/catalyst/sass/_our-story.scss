@@ -1,9 +1,13 @@
 .page-id-21 {
     p {
+        font-family: $font__secondary;
         font-size: $font__mobile-size;
         @include media ($desktop-width) {
             font-size: $font__desktop-size;
         }
+    }
+    .mission-copy, .formula-p {
+        padding: 0 1rem;
     }
     .header-text {
         @include header-text;
@@ -64,9 +68,17 @@
     }
     .mission-quote {
         height: auto;
-        position: relative;
-        max-width: 1500px;
+        max-width: 320px;
         margin: 0 auto;
+        position: relative;
+
+        @include media( 600px ) {
+            max-width: 450px;
+        }
+
+        @include media( $desktop-width ) {
+            max-width: 600px;
+        }
         .quote-target {
             height: 0;
             width: 0;
@@ -75,26 +87,28 @@
     }
     .mission-quote2 {
         height: auto;
-        @include media($desktop-width) {
-            margin-bottom: 0px;
-            p {
-                margin-bottom: 0;
-            }
+        max-width: 320px;
+        margin: 0 auto;
+        @include media(600px) {
+            max-width: 460px;
+        }
+        @include media( $desktop-width ) {
+            max-width: 610px;
         }
     }
     .quote,
     .quote2 {
         z-index: 1;
-        margin-top: 67px;
+        margin-top: 3rem;
         text-align: center;
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         line-height: 2.2rem;
         font-weight: 100;
-        width: 80%;
+        width: 100%;
         font-family: $font__secondary;
         font-style: italic;
         @include media($desktop-width) {
-            font-size: 2.4rem;
+            font-size: 2rem;
             line-height: 2.75rem;
         }
     }
@@ -111,27 +125,21 @@
         }
     }
     .quotation-left {
-        top: 55px;
-        left: 25px;
-        @include media(670px) {
-            left: 35px;
+        top: 43px;
+        left: -30px;
+        @include media( 600px ) {
+            left: -10px;
         }
-        @include media(1000px) {
-            left: 65px;
-        }
-        @include media(1200px) {
-            left: 80px;
+        @include media( $desktop-width ) {
+            left: -30px;
         }
     }
     .quotation-left2 {
-        top: 55px;
-        left: 27px;
+        top: 45px;
+        left: -25px;
         @include media($desktop-width) {
-            top: 50px;
-            left: 35px;
-        }
-        @include media(1260px) {
-            left: 110px;
+            top: 40px;
+            left: -30px;
         }
     }
     .quotation-right,
@@ -148,44 +156,38 @@
         }
     }
     .quotation-right {
-        top: 140px;
-        right: 50px;
-        @include media(630px) {
-            top: 110px;
-            right: 55px;
+        top: 125px;
+        right: 13px;
+        @include media ( 600px ) {
+            top: 87px;
+            right: -31px;
         }
         @include media($desktop-width) {
-            top: 150px;
-        }
-        @include media(863px) {
-            top: 135px;
-            right: 70px;
-        }
-        @include media(960px) {
-            top: 70px;
-            right: 78px;
+            top: 100px;
+            right: -60px;
         }
     }
     .quotation-right2 {
-        bottom: 10px;
-        right: 27px;
-        @include media(515px) {
-            right: 45px;
+        bottom: 17px;
+        right: 12px;
+        @include media ( 600px ) {
+            right: 5px;
         }
         @include media($desktop-width) {
-            bottom: -10px;
-            right: 70px;
-        }
-        @include media(1260px) {
-            right: 120px;
+            bottom: 10px;
+            right: -30px;
         }
     }
     .robert {
-        margin: 2rem auto;
+        margin: 0 auto;
         text-align: center;
         @include media($desktop-width) {
             margin: 2rem auto;
             font-size: 30px;
+        }
+
+        h4, p {
+            font-family: $font__main;
         }
     }
     h4 {
@@ -225,8 +227,8 @@
     }
     .mission-content {
         text-align: center;
-        margin-bottom: 100px;
-        margin-top: 80px;
+        margin-bottom: 3rem;
+        margin-top: 3rem;
         .arrow {
             margin-bottom: 10px;
         }
@@ -264,8 +266,8 @@
             }
         }
         p {
-            width: 65%;
             margin: 0 auto;
+            font-size: 1.2rem;
         }
     }
     .formula-p {
