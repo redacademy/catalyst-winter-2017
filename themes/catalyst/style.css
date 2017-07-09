@@ -1151,14 +1151,15 @@ textarea {
   .home .projects .project-name {
     margin: 0.75rem 0 0.5rem;
     font-weight: 800; }
-    @media all and (min-width: 760px) {
-      .home .projects .project-name {
-        margin: 1.15rem 0 1.35rem; } }
   .home .projects .project-name, .home .projects .project-location, .home .projects .project-status {
     font-family: roboto_slab, serif;
     font-weight: 800; }
   .home .projects .project-status {
-    max-width: 450px; }
+    max-width: 350px;
+    margin: 0.5rem auto; }
+    @media all and (min-width: 760px) {
+      .home .projects .project-status {
+        max-width: 450px; } }
     .home .projects .project-status span {
       text-transform: uppercase; }
   .home .projects .quotes-wrapper {
@@ -1209,19 +1210,19 @@ textarea {
   .home .projects .is-selected .right-quotation-mark {
     display: inline-block; }
   .home .projects .left-quotation-mark {
-    top: -6px;
-    left: -8px; }
+    top: -7px;
+    left: -25px; }
     @media all and (min-width: 760px) {
       .home .projects .left-quotation-mark {
         top: -11px;
-        left: -30px; } }
+        left: -60px; } }
   .home .projects .right-quotation-mark {
-    bottom: -10px;
-    right: -8px;
+    bottom: -7px;
+    right: -25px;
     transform: rotate(180deg); }
     @media all and (min-width: 760px) {
       .home .projects .right-quotation-mark {
-        right: -20px; } }
+        right: -50px; } }
   .home .projects .quote-text {
     margin-bottom: 2rem; }
   .home .projects .person, .home .projects .line {
@@ -1241,7 +1242,7 @@ textarea {
     .home .projects .other-proj-wrapper .project-status,
     .home .projects .other-proj-wrapper .person,
     .home .projects .other-proj-wrapper .line {
-      margin: 0; }
+      margin: 0 auto; }
   .home .projects .image-wrapper {
     height: 300px;
     margin-bottom: 1.5rem;
