@@ -54,7 +54,7 @@ get_header(); ?>
 					<?php echo $investors_copy1; ?>
 				<?php endif; ?>
 
-				<a class="navigation-button" href="<?php echo get_home_url(); ?>/investor">Learn More</a>
+				<a class="navigation-button" href="<?php echo get_home_url(); ?>/investors">Learn More</a>
 
 			</section>
 		</div>
