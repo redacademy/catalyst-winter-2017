@@ -101,7 +101,7 @@ function staff_cpt() {
 		'label'                 => 'Staff',
 		'description'           => 'Staff list',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'revisions' ),
+		'supports'              => array( 'title', 'revisions', 'custom-fields' ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,

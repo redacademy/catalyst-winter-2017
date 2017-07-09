@@ -80,5 +80,3 @@ get_header(); ?>
 			<?php endif; ?>
 
 	</section><!-- #post-## -->
-
-<?php get_footer(); ?>

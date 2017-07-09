@@ -51,14 +51,16 @@ get_header(); ?>
                 <?php endforeach; wp_reset_postdata(); ?>
             </div>
 
-            <h3 class="small-header">Advisors</h3>
-
-            <?php $advisors_copy = CFS() -> get('advisors_copy');
-                if( !empty( $advisors_copy ) ) : ?>
-                    <p class="advisors-copy"><?php echo esc_html( $advisors_copy ); ?></p>
-                <?php endif; ?>
-
             <div class="advisors-profiles-wrapper">
+                <h3 class="small-header">Advisors</h3>
+
+                <?php $advisors_copy = CFS() -> get('advisors_copy'); ?>
+
+                <div class="advisors-copy-container">
+                    <?php if( !empty( $advisors_copy ) ) : ?>
+                        <p class="advisors-copy"><?php echo esc_html( $advisors_copy ); ?></p>
+                    <?php endif; ?>
+                </div>
 
                 <?php
                     $args = array( 'post_type' => 'advisors', 'order' => 'ASC', 'numberposts' => -1 );

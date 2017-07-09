@@ -18,367 +18,373 @@
     .intro-copy {
         @include intro-copy;
     }
+}
+// Exit button for staff profile popouts.
+.blue-background-header {
+    position: relative;
+    font-size: 2.4rem;
 
-        // Exit button for staff profile popouts.
-    .blue-background-header {
+    h2 {
+        font-size: 1.6rem;
+
+        @include media($desktop-width) {
+            font-size: 2rem;
+        }
+    }
+}
+// Buttons
+.enter-button,
+.exit-button {
+    @include popout-button();
+    font-weight: 400;
+
+    span {
+        font-size: 2.5rem;
+
+        @include media($desktop-width) {
+            font-size: 3.05rem;
+        }
+    }
+}
+
+.enter-button {
+    @include media($desktop-width) {
+        display: none;
+    }
+
+    span {
         position: relative;
-        font-size: 2.4rem;
-
-        h2 {
-            font-size: 1.6rem;
-
-            @include media($desktop-width) {
-                font-size: 2rem;
-            }
-        }
+        bottom: 2.5px;
+        left: 0.5px;
+        font-weight: $font__bold;
     }
-    // Buttons
-    .enter-button,
-    .exit-button {
-        @include popout-button();
-        font-weight: 300;
+}
 
-        span {
-            font-size: 2.5rem;
+.exit-button {
+    font-weight: 400;
+    background: white;
+    position: absolute;
+}
 
-            @include media($desktop-width) {
-                font-size: 3.05rem;
-            }
-        }
-    }
+.staff-exit-button {
+    display: inline-block;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    @include exit-popout-button(#FFF);
 
-    .enter-button {
+    span {
+        font-size: 1.5rem;
+        position: relative;
+        bottom: 0.5px;
+
         @include media($desktop-width) {
-            display: none;
-        }
-
-        span {
-            position: relative;
-            bottom: 2.5px;
-            left: 0.5px;
-            font-weight: 800;
+            font-size: 2.05rem;
         }
     }
+}
 
-    .exit-button {
+.board-exit-button {
+    margin: 0px;
+    position: absolute;
+    top: 18%;
+    right: 5%;
+
+    span {
+        font-size: 1.5rem;
+        position: relative;
+        bottom: 1px;
+        left: 0.5px;
+
+        @include media($desktop-width) {
+            font-size: 2.05rem;
+        }
+    }
+}
+
+.name {
+    margin: 0 auto;
+    font-family: $font__secondary;
+    font-size: 1.25rem;
+    letter-spacing: 1.5px;
+    z-index: 2;
+}
+
+.job-title {
+    font-family: 'quattrocento';
+    max-width: 235px;
+    margin: 0.25rem auto;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    text-align: center;
+    font-weight: $font__semibold;
+    font-style: italic;
+    letter-spacing: 1.25px;
+    z-index: 2;
+}
+
+.staff-profiles-wrapper,
+.board-profiles-wrapper,
+.advisors-profiles-wrapper {
+    margin-bottom: 2rem;
+    @include flex-column(nowrap, space-between, center);
+    @include media($desktop-width) {
+        width: 80%;
+        margin: 0 auto 5rem;
+        @include flex-row(wrap, center, flex-start);
+    }
+    .profile-popout {
+        height: 0;
+        width: 0;
+        background: $color__brand-blue;
         font-weight: 400;
-        background: white;
-        position: absolute;
-    }
+        opacity: 0;
+        overflow: hidden;
+        transition: opacity 0.7s ease;
+        display: none;
 
-    .staff-exit-button {
-        display: inline-block;
-        position: absolute;
-        top: 25%;
-        right: 5%;
-        @include exit-popout-button(#FFF);
+        a {
+            color: $color__text-main;
+            font-weight: $font__bold;
+            text-decoration: none;
 
-        span {
+            &:hover {
+                color: $color__menu-active;
+            }
+        }
+
+        .left-quotation, .right-quotation {
+            height: 30px;
+            width: 50px;
+            background: url('../../images/icon/quotation-white.svg') no-repeat center;
+            background-size: 275%;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .left-quotation {
+            top: 20px;
+            left: -25px;
+        }
+        .right-quotation {
+            top: 81%;
+            right: 5%;
+            transform: rotate(180deg);
+            @include media($desktop-width) {
+                top: 88%;
+                right: 2%;
+            }
+            @include media(1100px) {
+                top: 86%;
+                right: -14%;
+            }
+        }
+        .quote-container {
+            position: relative;
+        }
+        .quote {
+            max-width: 345px;
+            margin-bottom: 2.5rem;
             font-size: 1.5rem;
-            position: relative;
-            bottom: 0.5px;
-
-            @include media($desktop-width) {
-                font-size: 2.05rem;
-            }
-        }
-    }
-
-    .board-exit-button {
-        margin: 0px;
-        position: absolute;
-        top: 18%;
-        right: 5%;
-
-        span {
-            font-size: 1.5rem;
-            position: relative;
-            bottom: 1px;
-            left: 0.5px;
-
-            @include media($desktop-width) {
-                font-size: 2.05rem;
-            }
-        }
-    }
-
-    .name {
-        margin: 0 auto;
-        font-family: $font__secondary;
-        font-size: 1.25rem;
-        letter-spacing: 1.5px;
-        z-index: 2;
-    }
-
-    .job-title {
-        font-family: 'quattrocento';
-        max-width: 235px;
-        margin: 0.25rem auto;
-        font-size: 1.1rem;
-        text-align: center;
-        font-weight: 600;
-        font-style: italic;
-        letter-spacing: 1.25px;
-        z-index: 2;
-    }
-
-    .staff-profiles-wrapper,
-    .board-profiles-wrapper,
-    .advisors-profiles-wrapper {
-        margin-bottom: 2rem;
-        @include flex-column(nowrap, space-between, center);
-        @include media($desktop-width) {
-            width: 80%;
-            margin: 0 auto 5rem;
-            @include flex-row(wrap, center, flex-start);
-        }
-        .profile-popout {
-            height: 0;
-            width: 0;
-            background: $color__brand-blue;
-            font-weight: 400;
-            opacity: 0;
-            overflow: hidden;
-            transition: opacity 0.7s ease;
-            display: none;
-
-            a {
-                color: $color__text-main;
-                font-weight: bold;
-                text-decoration: none;
-
-                &:hover {
-                    color: $color__menu-active;
-                }
-            }
-
-            .left-quotation, .right-quotation {
-                height: 30px;
-                width: 50px;
-                background: url('../../images/icon/quotation-white.svg') no-repeat center;
-                background-size: 275%;
-                position: absolute;
-                z-index: 1;
-            }
-
-            .left-quotation {
-                top: 20px;
-                left: -20px;
-            }
-            .right-quotation {
-                top: 81%;
-                right: 5%;
-                transform: rotate(180deg);
-                @include media($desktop-width) {
-                    top: 88%;
-                    right: 2%;
-                }
-                @include media(1100px) {
-                    top: 86%;
-                    right: -10%;
-                }
-            }
-            .quote-container {
-                position: relative;
-            }
-            .quote {
-                max-width: 345px;
-                margin-bottom: 2.5rem;
-                font-size: 1.5rem;
-                font-weight: 300;
-                line-height: 2.25rem;
-                text-align: center;
-                position: relative;
-                z-index: 100000;
-
-                @include media($desktop-width) {
-                    max-width: 260px;
-                    margin-bottom: 2.5rem;
-                    text-align: center;
-                }
-            }
-
-            .center-column {
-                @include flex-column(nowrap, flex-start, center);
-                margin: 0 auto;
-
-                img {
-                    width: 290px;
-                    border-radius: 50%;
-                }
-            }
-
-            .left-column {
-                width: 100%;
-                float: none;
-                position: relative;
-                @include flex-column(nowrap, center, center);
-                @include media($desktop-width) {
-                    width: 40%;
-                    margin-right: 10%;
-                    float: left;
-                }
-                img {
-                    width: 225px;
-                    border-radius: 50%;
-                    @include media($desktop-width) {
-                        width: 95%;
-                    }
-                }
-            }
-
-            h3 {
-                width: 85%;
-                margin: 0 auto;
-                font-size: 1.5rem;
-                line-height: 2rem;
-                font-family: quattrocento;
-                line-height: 1.75rem;
-                font-style: italic;
-                text-align: center;
-                display: inline-block;
-                @include media($desktop-width) {
-                    width: 50%;
-                    font-size: 2rem;
-                    line-height: 2.3rem;
-                }
-            }
-
-            article {
-                font-size: 1.15rem;
-                line-height: 1.5rem;
-                display: inline;
-                ul {
-                    margin: 0;
-                    padding: 0;
-                    list-style: none;
-
-                    & li::before {
-                        content: "-";
-                        margin-right: 0.5rem;
-                        display: inline;
-                    }
-
-                }
-            }
-        }
-        // Toggle-able classes for hiding and showing team member profiles, and greying-out content.
-
-        .translucent {
-            opacity: 0.5;
-        }
-
-        .show-popout {
-            height: 100%;
-            width: 100%;
-            padding: 7% 7%;
-            @include flex-column(nowrap, center, center);
-            opacity: 1;
-
-            @include media($desktop-width) {
-                width: 950px;
-            }
-        }
-        .board-profiles-header {
-            height: auto;
-            width: 100%;
-            max-width: 950px;
-            margin: 2rem auto 1rem;
-            position: relative;
-            @include flex-row(nowrap, center, center);
-            .small-header {
-                height: auto;
-                width: auto;
-                margin: 0 0 2rem;
-            }
-        }
-        // Profile preview styles
-        .navigation-button-container {
-            width: 100%;
-            .navigation-button {
-                @include navigation-button;
-                margin: 1rem auto;
-            }
-        }
-
-        .profile-preview {
-            width: 100%;
-            margin: 1rem 3rem;
+            font-weight: $font__bold;
+            font-style: italic;
+            line-height: 2.25rem;
             text-align: center;
             position: relative;
+            z-index: 100000;
 
             @include media($desktop-width) {
-                width: 24%;
+                max-width: 260px;
+                margin-bottom: 2.5rem;
+                text-align: center;
             }
-            .profile-image {
-                width: 190px;
+        }
+
+        .center-column {
+            @include flex-column(nowrap, flex-start, center);
+            margin: 0 auto;
+
+            img {
+                width: 290px;
+                border-radius: 50%;
+            }
+        }
+
+        .left-column {
+            width: 100%;
+            float: none;
+            position: relative;
+            @include flex-column(nowrap, center, center);
+            @include media($desktop-width) {
+                width: 40%;
+                margin-right: 10%;
+                float: left;
+            }
+            img {
+                width: 225px;
                 border-radius: 50%;
                 @include media($desktop-width) {
                     width: 95%;
-
-                    &:hover {
-                        box-shadow: 0 2px 8px #4990E2;
-                    }
                 }
             }
         }
-    }
 
-    .small-header {
-        margin: 1.5rem auto 1rem;
-        font-size: 1.5rem;
-        font-weight: $font__bold;
-        text-align: center;
-        text-transform: uppercase;
-        @include media($desktop-width) {
-            font-size: 2rem;
-            width: 100%;
-            margin: 3rem auto 2.5rem;
-        }
-    }
-    .advisors-copy {
-        max-width: 650px;
-        padding: 0 2rem;
-        margin: 2rem auto;
-        text-align: center;
-        font-family: $font__secondary;
-        @include media ($desktop-width) {
-            margin: 3rem auto 3rem;
-            line-height: $line-height-desktop;
-        }
-        @include media(1200px) {
-            max-width: 860px;
-        }
-    }
-
-    .advisors-profiles-wrapper {
-        margin-bottom: 2rem;
-        .profile-preview {
-            width: 100%;
-            margin: 1.25rem auto;
-            position: relative;
-            @include flex-column(nowrap, center, center);
-              @include media(900px) {
-                width: 30%;
-            }
-            @include media(1350px) {
-                width: 20%;
-            }
-            .name {
-                margin: 0 auto;
-            }
-            .job-title {
-                min-width: 130px;
-                margin: 0 auto;
-            }
-            &:nth-child(4) .job-title {
-                width: 265px;
-            }
-        }
-        .navigation-button-container {
+        h3 {
+            width: 85%;
+            margin: 0 auto;
+            margin-bottom: $base__space-unit;
+            font-size: 1.5rem;
+            line-height: 2rem;
+            font-family: quattrocento;
+            line-height: 1.75rem;
+            font-style: italic;
+            text-align: center;
+            display: inline-block;
             @include media($desktop-width) {
-                margin: 3rem auto 1rem;
+                width: 50%;
+                font-size: 2rem;
+                line-height: 2.3rem;
+            }
+        }
+
+        article {
+            font-size: $font__mobile-size;
+            font-weight: $font__bold;
+            line-height: $line-height-body;
+            display: inline;
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+
+                & li::before {
+                    content: "-";
+                    margin-right: 0.5rem;
+                    display: inline;
+                }
+
+            }
+        }
+    }
+    // Toggle-able classes for hiding and showing team member profiles, and greying-out content.
+
+    .translucent {
+        opacity: 0.5;
+    }
+
+    .show-popout {
+        height: 100%;
+        width: 100%;
+        padding: 3% 5%;
+        @include flex-column(nowrap, center, center);
+        opacity: 1;
+
+        @include media($desktop-width) {
+            width: 950px;
+        }
+    }
+    .board-profiles-header {
+        height: auto;
+        width: 100%;
+        max-width: 950px;
+        margin: 2rem auto 1rem;
+        position: relative;
+        @include flex-row(nowrap, center, center);
+        .small-header {
+            height: auto;
+            width: auto;
+            margin: 0 0 2rem;
+        }
+    }
+    // Profile preview styles
+    .navigation-button-container {
+        width: 100%;
+        .navigation-button {
+            @include navigation-button;
+        }
+    }
+
+    .profile-preview {
+        width: 100%;
+        margin: 1rem 3rem;
+        text-align: center;
+        position: relative;
+
+        @include media($desktop-width) {
+            width: 24%;
+        }
+        .profile-image {
+            width: 190px;
+            border-radius: 50%;
+            @include media($desktop-width) {
+                width: 95%;
+
+                &:hover {
+                    box-shadow: 0 2px 8px #4990E2;
+                }
             }
         }
     }
 }
+
+.small-header {
+    margin: 1.5rem auto 1rem;
+    font-size: 1.5rem;
+    font-weight: $font__bold;
+    text-align: center;
+    text-transform: uppercase;
+    @include media($desktop-width) {
+        font-size: 2rem;
+        width: 100%;
+        margin: 3rem auto 2.5rem;
+    }
+}
+.advisors-copy-container {
+    width: 100%;
+}
+.advisors-copy {
+    max-width: 650px;
+    padding: 0 2rem;
+    margin: 0 auto 2rem;
+    text-align: center;
+    font-family: $font__secondary;
+    @include media ($desktop-width) {
+        margin: 0 auto 3rem;
+        line-height: $line-height-desktop;
+    }
+    @include media(1200px) {
+        max-width: 860px;
+    }
+}
+
+.advisors-profiles-wrapper {
+    margin-bottom: 2rem;
+    .profile-preview {
+        width: 100%;
+        margin: 1.25rem auto;
+        position: relative;
+        @include flex-column(nowrap, center, center);
+            @include media(900px) {
+            width: 30%;
+        }
+        @include media(1350px) {
+            width: 20%;
+        }
+        .name {
+            margin: 0 auto;
+        }
+        .job-title {
+            min-width: 130px;
+            margin: 0 auto;
+        }
+        &:nth-child(4) .job-title {
+            width: 265px;
+        }
+    }
+    .navigation-button-container {
+        @include media($desktop-width) {
+            margin: 3rem auto 1rem;
+        }
+    }
+}
+
