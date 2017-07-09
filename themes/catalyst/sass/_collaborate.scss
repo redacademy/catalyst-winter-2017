@@ -195,7 +195,7 @@
 
 .supporters-logo-container {
     height: auto;
-    width: 75%;
+    width: 90%;
     margin: 0 auto;
     padding: 4% 9%;
     @include flex-row(wrap,
@@ -203,15 +203,13 @@
     center);
     @include media($desktop-width) {
         padding: 0 0 3rem;
-        width: 750px;
     }
     .sponsor-logo {
-        height: 40px;
+        height: 50px;
         width: auto;
         margin: 5%;
-        @include grayscale-image;
         @include media($desktop-width) {
-            height: 30px;
+            height: 65px;
             margin: $base__space-unit 2.5rem;
         }
         &:first-child {
@@ -221,13 +219,14 @@
             }
         }
         &:nth-child(2) {
+            height: 70px;
             @include media($desktop-width) {
-                height: 50px;
                 margin: 3rem;
                 margin-bottom: 2rem;
             }
         }
         &:nth-child(3) {
+            @include grayscale-image;
             @include media($desktop-width) {
                 margin: 3rem;
                 margin-bottom: 2rem;
@@ -236,7 +235,8 @@
         &:nth-child(4) {
             filter: grayscale(100%) invert(10%);
             @include media($desktop-width) {
-                height: 45px;
+                height: 90px;
+                width: auto;
                 margin: 3rem;
                 margin-bottom: 2rem;
             }
@@ -244,18 +244,16 @@
         &:nth-child(5) {
             height: 35px;
             @include media($desktop-width) {
-                margin: 1rem;
-                margin-left: 0;
-                filter: grayscale(100%) invert(15%);
+                // filter: grayscale(100%) invert(15%);
             }
         }
         &:nth-child(6) {
             height: 100px;
-            filter: grayscale(100%) invert(1%);
+            // filter: grayscale(100%) invert(1%);
             @include media($desktop-width) {
                 margin: 1rem;
-                height: 110px;
-                filter: grayscale(80%) saturate(15%);
+                height: 140px;
+                // filter: grayscale(80%) saturate(15%);
             }
         }
         &:nth-child(7) {
@@ -265,7 +263,9 @@
         }
         &:nth-child(8) {
             @include media($desktop-width) {
-                margin: 1rem;
+                height: 50px;
+                width: auto;
+                margin: 3rem;
             }
         }
         &:nth-child(9) {
