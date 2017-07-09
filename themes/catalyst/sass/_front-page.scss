@@ -46,7 +46,6 @@
     }
     .header-text {
         @include header-text;
-        padding: 0;
         line-height: 1.2;
         position: absolute;
         top: 45%;
@@ -184,15 +183,13 @@
         .quote-text {
             margin-bottom: 2rem;
         }
-        .person {
+        .person, .line {
+            font-size: $font__desktop-size;
             font-weight: $font__bold;
-            font-size: 1.3rem;
             margin: 0;
         }
         .line {
-            font-weight: $font__semibold;
             font-style: italic;
-            margin: 0;
         }
         .other-proj-wrapper {
             width: 85%;

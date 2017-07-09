@@ -138,7 +138,8 @@
 			a {
 				text-transform: uppercase;
 				color: $color__header-main;
-				font-size: 1.1rem;
+				font-size: 1rem;
+				font-weight: 800;
 				text-decoration: none;
 				&:active {
 					color: $color__menu-active;
@@ -201,8 +202,9 @@
 			a {
 				display: block;
 				text-decoration: none;
-				padding: 8px 0 8px 12px;
-				font-size: 0.95rem;
+				padding: 12px 0 12px 12px;
+				font-size: 1rem;
+				font-weight: 800;
 				color: $color__header-main;
 				text-transform: uppercase;
 				@include media($desktop-width) {
@@ -233,7 +235,12 @@
 
 			div {
 				height: 25px;
-    		width: 25px;
+				width: 23px;
+				line-height: 0;
+				position: relative;
+				top: 24px;
+				right: 2px;
+				font-size: 5rem;
 			}
 		}
 		.mobile-menu {
