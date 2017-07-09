@@ -119,10 +119,19 @@
             display: initial;
         }
         .quote {
+            max-width: 340px;
+            margin: 0 auto;
             font-family: $font__secondary;
             font-style: italic;
             margin-top: 0;
             position: relative;
+
+            @include media( 455px ) {
+                max-width: 400px;
+            }
+            @include media( $desktop-width ) {
+                max-width: none;
+            }
 
             p {
                 font-size: 1.5rem;
@@ -157,16 +166,16 @@
             display: inline-block;
         }
         .left-quotation-mark {
-            top: -10px;
-            left: -20px;
+            top: -6px;
+            left: -8px;
             @include media ($desktop-width) {
-                top: -22px;
-                left: -40px;
+                top: -11px;
+                left: -30px;
             }
         }
         .right-quotation-mark {
             bottom: -10px;
-            right: 5px;
+            right: -8px;
             transform: rotate(180deg);
             @include media ($desktop-width) {
                 right: -20px;

@@ -1160,10 +1160,18 @@ textarea {
   .home .projects .is-selected .quotes-wrapper {
     display: initial; }
   .home .projects .quote {
+    max-width: 340px;
+    margin: 0 auto;
     font-family: asap, sans-serif;
     font-style: italic;
     margin-top: 0;
     position: relative; }
+    @media all and (min-width: 455px) {
+      .home .projects .quote {
+        max-width: 400px; } }
+    @media all and (min-width: 760px) {
+      .home .projects .quote {
+        max-width: none; } }
     .home .projects .quote p {
       font-size: 1.5rem;
       line-height: 2.2rem; }
@@ -1193,15 +1201,15 @@ textarea {
   .home .projects .is-selected .right-quotation-mark {
     display: inline-block; }
   .home .projects .left-quotation-mark {
-    top: -10px;
-    left: -20px; }
+    top: -6px;
+    left: -8px; }
     @media all and (min-width: 760px) {
       .home .projects .left-quotation-mark {
-        top: -22px;
-        left: -40px; } }
+        top: -11px;
+        left: -30px; } }
   .home .projects .right-quotation-mark {
     bottom: -10px;
-    right: 5px;
+    right: -8px;
     transform: rotate(180deg); }
     @media all and (min-width: 760px) {
       .home .projects .right-quotation-mark {
