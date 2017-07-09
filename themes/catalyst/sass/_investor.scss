@@ -11,7 +11,7 @@
     h2{
         max-width: 900px;
     }
-    p, li{
+    p{
         font-family: $font__secondary;
         font-size: $font__mobile-size;
         line-height: $line-height-body;
@@ -28,13 +28,21 @@
         }
 
     }
+    .site-main li {
+        font-size: $font__mobile-size;
+        font-family: $font__secondary;
+
+        @include media ( $desktop-width ) {
+            font-size: $font__desktop-size;
+        }
+    }
     .investor-list,
     .investor-p,
     .investor-p li {
         padding: 0 2rem;
         max-width: 650px;
         margin: 0 auto;
-        @include media(700px) {
+        @include media(1200px) {
             max-width: 860px;
         }
     }

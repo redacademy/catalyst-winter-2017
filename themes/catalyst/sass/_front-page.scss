@@ -33,8 +33,9 @@
         width: 100%;
         img {
             height: 100vh;
-            width: initial;
             max-width: none;
+            min-width: 100vw;
+            max-height: none;
         }
     }
     .fp-img-container {
@@ -100,11 +101,12 @@
                 margin: 1.15rem 0 1.35rem;
             }
         }
-        .project-location {
-            font-family: $font__secondary;
+        .project-name, .project-location, .project-status {
+            font-family: $font__main;
+            font-weight: 800;
         }
         .project-status {
-            font-family: $font__secondary;
+            max-width: 450px;
             span {
                 text-transform: uppercase;
             }
