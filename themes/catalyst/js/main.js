@@ -206,12 +206,13 @@
         }
     }
 
-    function constructArticleContent( formattedDate, articleTitle, articleExcerpt ) {
+    function constructArticleContent( formattedDate, articleTitle, articleLink ) {
 
         var articleContent = '<div class="article-content" >';
             articleContent += '<p class="date" >' + formattedDate + '</p>';
             articleContent += '<h3>' + articleTitle + '</h3>';
-            articleContent += '<div class="entry-content">' + articleExcerpt + '</div></div>';
+            articleContent += '</div>';
+            articleContent += '<a class="cfs-hyperlink" href=' + articleLink + '><span class="text">Read More</span></a>';
 
         return articleContent;
     }
@@ -251,18 +252,19 @@
 
             if ( renderedArticles < data.length && renderedArticles < 20 ) {
                 $.each( newPosts, function( i, post )  {
+                    console.log(post);
                     var myDate = new Date( post.date );
                     var formattedDate = formatDate( myDate );
                     var articleID = post.id;
                     var articleTitle = post.title.rendered;
-                    var articleExcerpt = post.excerpt.rendered;
+                    var articleLink = post.link;
 
                     var constructedArticleElement =
                         constructArticleElement(
                             post,
                             articleID,
                             constructArticleThumbnail( post ),
-                            constructArticleContent( formattedDate, articleTitle, articleExcerpt )
+                            constructArticleContent( formattedDate, articleTitle, articleLink )
                         );
 
                     $postsContainer.append( constructedArticleElement );

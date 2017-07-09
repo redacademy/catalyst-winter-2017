@@ -16,7 +16,7 @@ get_header(); ?>
 
 
 				<div class="blue-background-header">
-                	<h2 class='subheader-lrg'><?php echo esc_html( CFS()->get('content_title1')); ?></h2>
+        	<h2 class='subheader-lrg'><?php echo esc_html( CFS()->get('content_title1')); ?></h2>
 				</div>
 
         <p class='mission-copy'><?php echo esc_html( CFS()->get( 'our_mission' ) ); ?></p>

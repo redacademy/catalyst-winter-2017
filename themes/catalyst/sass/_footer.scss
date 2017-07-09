@@ -45,6 +45,7 @@
         }
         p {
             width: auto;
+            font-family: $font__secondary;
             font-weight: $font__bold;
             font-size: 0.85rem;
             text-transform: uppercase;
@@ -155,18 +156,6 @@
         position: relative;
         width: 100%;
         margin: auto;
-        // @include media($desktop-width) {
-        //     width: 310px;
-        // }
-        // @include media(670px) {
-        //     width: 380px;
-        // }
-        // @include media(800px) {
-        //     width: 457px;
-        // }
-        // @include media(1120px) {
-        //     width: 535px;
-        // }
     }
     .company-info {
         margin-bottom: 5px;
