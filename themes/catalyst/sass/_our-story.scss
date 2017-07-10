@@ -69,15 +69,11 @@
     .mission-quote {
         height: auto;
         max-width: 320px;
-        margin: 0 auto;
+        margin: $base__space-unit auto 1rem;
         position: relative;
-
-        @include media( 600px ) {
-            max-width: 450px;
-        }
-
         @include media( $desktop-width ) {
-            max-width: 600px;
+            max-width: none;
+            margin: 3rem auto 2rem;
         }
         .quote-target {
             height: 0;
@@ -93,14 +89,18 @@
             max-width: 460px;
         }
         @include media( $desktop-width ) {
-            max-width: 610px;
+            max-width: 630px;
         }
     }
     .q-text-container {
         position: relative;
+        @include media( $desktop-width ) {
+            width: 630px;
+        }
     }
     .quote,
     .quote2 {
+        display: inline;
         z-index: 1;
         margin: 1.5rem 0;
         text-align: center;
@@ -129,19 +129,19 @@
         }
     }
     .quotation-left {
-        top: 10px;
-        left: 10px;
+        top: -5px;
+        left: -30px;
         @include media( $desktop-width ) {
-            top: 0;
-            left: -15px;
+            top: -10px;
+            left: -40px;
         }
     }
     .quotation-left2 {
-        top: 10px;
-        left: 10px;
+        top: 20px;
+        left: -25px;
         @include media($desktop-width) {
-            top: 0;
-            left: 0;
+            top: 10px;
+            left: -20px;
         }
     }
     .quotation-right,
@@ -158,19 +158,19 @@
         }
     }
     .quotation-right {
-        bottom: 10px;
-        right: 10px;
+        bottom: -8px;
+        right: -5px;
         @include media($desktop-width) {
-            bottom: 20px;
+            bottom: -15px;
             right: -15px;
         }
     }
     .quotation-right2 {
-        bottom: 17px;
-        right: 12px;
+        bottom: 15px;
+        right: -15px;
         @include media($desktop-width) {
-            bottom: 0;
-            right: 0;
+            bottom: 8px;
+            right: -10px;
         }
     }
     .robert {
