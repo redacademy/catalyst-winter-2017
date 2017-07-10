@@ -23,16 +23,18 @@ get_header(); ?>
 
 
 				<div class="mission-quote">
-					<div class="quotation-left"></div>
-
-					<?php $quotation1 = esc_html( CFS()->get( 'quotation1' ) );
-						if ( !empty( $quotation1) ) :?>
-							<p class='quote'>
-								<?php echo $quotation1; ?>
-							</p>
-
-							<div class="quotation-right"></div>
-					<?php endif; ?>
+					
+					<div class="q-text-container">
+						<div class="quotation-left"></div>
+						<?php $quotation1 = esc_html( CFS()->get( 'quotation1' ) );
+							if ( !empty( $quotation1) ) :?>
+								<p class='quote'>
+									<?php echo $quotation1; ?>
+								</p>
+						<?php endif; ?>
+						<div class="quotation-right"></div>
+					</div>
+					
 				</div>
 				<div class="robert">
 

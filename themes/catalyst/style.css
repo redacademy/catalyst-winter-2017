@@ -543,7 +543,8 @@ table {
     text-align: center; }
 
 .hero-image-banner {
-  width: 100vw; }
+  width: 100vw;
+  padding-bottom: 1rem; }
 
 .formulas:last-child .fill {
   display: none; }
@@ -1663,17 +1664,21 @@ object {
     .page-id-21 .mission-quote2 {
       max-width: 610px; } }
 
+.page-id-21 .q-text-container {
+  position: relative; }
+
 .page-id-21 .quote,
 .page-id-21 .quote2 {
   z-index: 1;
-  margin-top: 3rem;
+  margin: 1.5rem 0;
   text-align: center;
   font-size: 1.5rem;
   line-height: 2.2rem;
   font-weight: 100;
   width: 100%;
   font-family: asap, sans-serif;
-  font-style: italic; }
+  font-style: italic;
+  padding: 0 0.5rem; }
   @media all and (min-width: 760px) {
     .page-id-21 .quote,
     .page-id-21 .quote2 {
@@ -1694,22 +1699,20 @@ object {
       width: 75px; } }
 
 .page-id-21 .quotation-left {
-  top: 43px;
-  left: -30px; }
-  @media all and (min-width: 600px) {
-    .page-id-21 .quotation-left {
-      left: -10px; } }
+  top: 10px;
+  left: 10px; }
   @media all and (min-width: 760px) {
     .page-id-21 .quotation-left {
-      left: -30px; } }
+      top: 0;
+      left: -15px; } }
 
 .page-id-21 .quotation-left2 {
-  top: 45px;
-  left: -25px; }
+  top: 10px;
+  left: 10px; }
   @media all and (min-width: 760px) {
     .page-id-21 .quotation-left2 {
-      top: 40px;
-      left: -30px; } }
+      top: 0;
+      left: 0; } }
 
 .page-id-21 .quotation-right,
 .page-id-21 .quotation-right2 {
@@ -1726,27 +1729,20 @@ object {
       width: 75px; } }
 
 .page-id-21 .quotation-right {
-  top: 125px;
-  right: 13px; }
-  @media all and (min-width: 600px) {
-    .page-id-21 .quotation-right {
-      top: 87px;
-      right: -31px; } }
+  bottom: 10px;
+  right: 10px; }
   @media all and (min-width: 760px) {
     .page-id-21 .quotation-right {
-      top: 100px;
-      right: -60px; } }
+      bottom: 20px;
+      right: -15px; } }
 
 .page-id-21 .quotation-right2 {
   bottom: 17px;
   right: 12px; }
-  @media all and (min-width: 600px) {
-    .page-id-21 .quotation-right2 {
-      right: 5px; } }
   @media all and (min-width: 760px) {
     .page-id-21 .quotation-right2 {
-      bottom: 10px;
-      right: -30px; } }
+      bottom: 0;
+      right: 0; } }
 
 .page-id-21 .robert {
   margin: 0 auto;
