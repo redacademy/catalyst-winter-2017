@@ -161,16 +161,16 @@
         bottom: 10px;
         right: 10px;
         @include media($desktop-width) {
-            bottom: 20px;
-            right: -15px;
+            bottom: 25px;
+            right: -10px;
         }
     }
     .quotation-right2 {
         bottom: 17px;
         right: 12px;
         @include media($desktop-width) {
-            bottom: 0;
-            right: 0;
+            bottom: 25px;
+            right: 15px;
         }
     }
     .robert {

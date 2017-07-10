@@ -1,4 +1,5 @@
-.page-id-415 {
+.page-id-415,
+.page-id-441 {
     .header-text {
         @include header-text;
         max-width: 750px;
@@ -64,6 +65,9 @@
     .project-image {
         width: 100%;
         max-width: 1000px;
+        @include media($desktop-width){
+            width: 50%;
+        }
     }
     .navigation-button {
         @include navigation-button();
