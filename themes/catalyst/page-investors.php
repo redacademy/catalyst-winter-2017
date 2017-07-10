@@ -33,6 +33,8 @@ get_header(); ?>
 		<?php endif; ?>
 
 		<?php get_template_part( 'template-parts/content', 'sponsors'); ?>
+
+		<?php get_template_part( 'template-parts/investor-carousel' ); ?>
 	</main><!-- #main -->
 </div><!-- #primary -->
 

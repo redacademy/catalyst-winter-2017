@@ -1,0 +1,140 @@
+.testimonials {
+    margin-bottom: 3rem;
+
+    @include media( $desktop-width ) {
+        margin-bottom: 4rem;
+    }
+}
+.flickity-prev-next-button {
+  display: none;
+}
+.quotes-wrapper {
+    margin: 2rem auto 0;
+    width: 85%;
+    display: none;
+
+
+    @include media( $desktop-width ) {
+        width: 100%;
+        margin: 3rem auto;
+    }
+}
+.is-selected .quotes-wrapper {
+    display: block;
+}
+.quote, .person, .line {
+    text-align: center;
+}
+.quote {
+    max-width: 340px;
+    margin: 0 auto;
+    font-family: $font__secondary;
+    font-style: italic;
+    margin-top: 0;
+    position: relative;
+
+    @include media( 455px ) {
+        max-width: 400px;
+    }
+    @include media( $desktop-width ) {
+        max-width: 520px;
+    }
+
+    p {
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        @include media($desktop-width) {
+            font-size: 2rem;
+            line-height: 2.75rem;
+        }
+    }
+    .quote-target {
+        height: 0;
+        width: 0;
+        position: relative;
+    }
+}
+.left-quotation-mark,
+.right-quotation-mark {
+    height: 36px;
+    width: 50px;
+    background: url('../../images/icon/quotation.svg') center;
+    background-size: 275%;
+    position: absolute;
+    z-index: -1;
+    display: none;
+    @include media ($desktop-width) {
+        height: 50px;
+        width: 75px;
+    }
+}
+.is-selected .left-quotation-mark,
+.is-selected .right-quotation-mark {
+    display: inline-block;
+}
+.left-quotation-mark {
+    top: -7px;
+    left: -25px;
+        @include media ($desktop-width) {
+        top: -11px;
+        left: -40px;
+    }
+}
+.right-quotation-mark {
+    bottom: -7px;
+    right: -25px;
+    transform: rotate(180deg);
+    @include media ($desktop-width) {
+        right: -40px;
+    }
+    @include media( 900px ) {
+        bottom: -16px;
+        right: -25px;
+    }
+}
+.quote-text {
+    margin-bottom: 2rem;
+}
+.person, .line {
+    font-size: $font__desktop-size;
+    font-weight: $font__bold;
+    margin: 0;
+}
+.line {
+    font-style: italic;
+}
+.other-proj-wrapper {
+    width: 85%;
+    margin: 0 0.5rem;
+    opacity: 0.5;
+    @include media ($desktop-width) {
+        width: 50%;
+    }
+    .project-location,
+    .project-status,
+    .person,
+    .line {
+        margin: 0 auto;
+    }
+}
+.image-wrapper {
+    height: 300px;
+    margin-bottom: $base__space-unit;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    @include media ($desktop-width) {
+        height: 400px;
+    }
+    img {
+        width: auto;
+        height: 100%;
+        max-width: none;
+    }
+}
+.is-selected {
+    opacity: 1;
+}
+

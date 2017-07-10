@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying non-profit testimonials carousel.
+ * Template part for displaying investors testimonials carousel.
  *
  * @package Catalyst_Theme
  */
@@ -9,7 +9,7 @@
 <?php
     $postid = get_the_ID();
     $posts = get_posts( array(
-        'post_type' => 'np_testimonials',
+        'post_type' => 'inv_testimonials',
         'order' => 'ASC',
     )); ?>
 
