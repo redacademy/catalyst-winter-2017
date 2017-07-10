@@ -677,7 +677,7 @@ textarea {
     height: 100%; }
     @media all and (min-width: 760px) {
       .container .logo {
-        width: 20%; } }
+        width: 150px; } }
   .container .header-text {
     height: 0;
     width: 0;
@@ -713,12 +713,12 @@ textarea {
         align-items: baseline; }
     @media all and (min-width: 760px) {
       .container .top-menu {
-        width: 80%; } }
+        width: 100%; } }
   .container .desktop-menu {
     visibility: hidden;
     height: 0;
     width: 100%; }
-    @media all and (min-width: 1260px) {
+    @media all and (min-width: 1290px) {
       .container .desktop-menu {
         visibility: visible;
         height: 100%; } }
@@ -732,7 +732,6 @@ textarea {
           justify-content: flex-end;
       margin: 0 auto;
       padding-top: 35px;
-      padding-right: 5%;
       list-style: none; }
       .container .desktop-menu #primary-menu ul {
         height: 70%;
@@ -765,7 +764,7 @@ textarea {
         justify-content: flex-start;
     -ms-flex-align: end;
         align-items: flex-end; }
-    @media all and (min-width: 1260px) {
+    @media all and (min-width: 1290px) {
       .container .hamburger-menu {
         display: none; } }
     .container .hamburger-menu .hamburger {
@@ -783,7 +782,7 @@ textarea {
       transition: opacity 0.2s ease; }
       @media all and (min-width: 760px) {
         .container .hamburger-menu .hamburger {
-          bottom: 6px; } }
+          bottom: 10px; } }
     .container .hamburger-menu ul {
       display: -ms-flexbox;
       display: flex;
@@ -836,7 +835,7 @@ textarea {
       margin-right: 20px;
       position: absolute;
       right: 0;
-      top: 15px;
+      top: 11px;
       opacity: 0;
       transition: opacity 0.3s ease; }
       .container .hamburger-menu .cross div {
