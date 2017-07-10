@@ -66,7 +66,7 @@
 		padding-left: 20px;
 		height: 100%;
 		@include media($desktop-width) {
-			width: 20%;
+			width: 150px;
 		}
 	}
 	.header-text {
@@ -99,14 +99,14 @@
 		flex-end,
 		baseline);
 		@include media($desktop-width) {
-			width: 80%;
+			width: 85%;
 		}
 	}
 	.desktop-menu {
 		visibility: hidden;
 		height: 0;
 		width: 100%;
-		@include media(1260px) {
+		@include media(1290px) {
 			visibility: visible;
 			height: 100%;
 		}
@@ -119,7 +119,6 @@
 			justify-content: flex-end;
 			margin: 0 auto;
 			padding-top: 35px;
-			padding-right: 5%;
 			list-style: none;
 			ul {
 				height: 70%;
@@ -157,7 +156,7 @@
 		@include flex-column(nowrap,
 		flex-start,
 		flex-end);
-		@include media(1260px) {
+		@include media(1290px) {
 			display: none;
 		}
 		.hamburger {
@@ -175,7 +174,7 @@
 			transition: opacity 0.2s ease;
 
 			@include media($desktop-width) {
-				bottom: 8px;
+				bottom: 10px;
 			}
 		}
 		ul {
@@ -184,7 +183,10 @@
 			margin-top: 5px;
 			list-style: none;
 			line-height: 1.35rem;
-
+			margin: 0;
+			text-align: right;
+			padding: 0;
+			padding-right: 1rem;
 			@include media( $desktop-width ) {
 				margin-top: 0;
 			}
@@ -202,14 +204,14 @@
 			a {
 				display: block;
 				text-decoration: none;
-				padding: 12px 0 12px 12px;
+				padding: 12px 12px 12px;
 				font-size: 1rem;
 				font-weight: 800;
 				color: $color__header-main;
 				text-transform: uppercase;
 				@include media($desktop-width) {
 					font-size: 1.25rem;
-					padding: 15px 0 15px 20px;
+					padding: 15px 20px 15px;
 				}
 			}
 			&:hover {
@@ -224,12 +226,13 @@
 			font-size: 66px;
 			line-height: 20px;
 			color: white;
-			padding: 26px 17px;;
+			padding: 26px 17px;
 			text-shadow: none;
 			height: 30px;
+			margin-right: 20px;
 			position: absolute;
-			left: 0;
-			top: 18px;
+			right: 0;
+			top: 15px;
 			opacity: 0;
 			transition: opacity 0.3s ease;
 
@@ -244,12 +247,19 @@
 			}
 		}
 		.mobile-menu {
+			display: none;
 			height: 0;
-			margin-top: 80px;
+			margin-top: 85px;
 			background-color: rgba(255, 255, 255, .8);
 			opacity: 0;
 			overflow: hidden;
 			transition: opacity 0.2s ease;
+			width: 60vw;
+			height: auto;
+			@include media($desktop-width){
+				width: 40vw;
+				margin-top: 80px;
+			}
 		}
 		.opaque {
 			opacity: 1;

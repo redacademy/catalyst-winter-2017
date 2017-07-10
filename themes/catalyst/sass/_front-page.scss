@@ -7,7 +7,7 @@
         }
     }
     .hamburger-menu li {
-        padding: 0;
+        padding: 0 12px;
         font-size: 1.85rem;
         & a {
             padding: 20px 0 20px 10px;
@@ -218,6 +218,12 @@
             overflow: hidden;
             @include media ($desktop-width) {
                 height: 500px;
+            }
+            a {
+                height: 300px;
+                @include media($desktop-width){
+                    height: 500px;
+                }
             }
             img {
                 width: auto;
