@@ -22,7 +22,7 @@
     }
     .about {
         .wrapper {
-            max-width: 900px;
+            max-width: 860px;
         }
         @include media($desktop-width){
             .about-text {
