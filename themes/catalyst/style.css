@@ -543,8 +543,7 @@ table {
     text-align: center; }
 
 .hero-image-banner {
-  width: 100vw;
-  padding-bottom: 1rem; }
+  width: 100vw; }
 
 .formulas:last-child .fill {
   display: none; }
