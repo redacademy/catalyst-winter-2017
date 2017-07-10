@@ -3154,6 +3154,137 @@ object {
     .page-id-486 .investor-p, .page-id-486 .investor-list {
       margin-bottom: 3rem; } }
 
+.page-id-486 .testimonials {
+  margin-bottom: 3rem; }
+  @media all and (min-width: 760px) {
+    .page-id-486 .testimonials {
+      margin-bottom: 5rem; } }
+
+.page-id-486 .quotes-wrapper {
+  margin: 2rem auto 0;
+  width: 85%;
+  display: none; }
+  @media all and (min-width: 760px) {
+    .page-id-486 .quotes-wrapper {
+      width: 100%;
+      margin: 3rem auto; } }
+
+.page-id-486 .is-selected .quotes-wrapper {
+  display: block; }
+
+.page-id-486 .quote, .page-id-486 .person, .page-id-486 .line {
+  text-align: center; }
+
+.page-id-486 .quote {
+  max-width: 340px;
+  margin: 0 auto;
+  font-family: asap, sans-serif;
+  font-style: italic;
+  margin-top: 0;
+  position: relative; }
+  @media all and (min-width: 455px) {
+    .page-id-486 .quote {
+      max-width: 400px; } }
+  @media all and (min-width: 760px) {
+    .page-id-486 .quote {
+      max-width: 520px; } }
+  .page-id-486 .quote p {
+    font-size: 1.5rem;
+    line-height: 2.2rem; }
+    @media all and (min-width: 760px) {
+      .page-id-486 .quote p {
+        font-size: 2rem;
+        line-height: 2.75rem; } }
+  .page-id-486 .quote .quote-target {
+    height: 0;
+    width: 0;
+    position: relative; }
+
+.page-id-486 .left-quotation-mark,
+.page-id-486 .right-quotation-mark {
+  height: 36px;
+  width: 50px;
+  background: url("../../images/icon/quotation.svg") center;
+  background-size: 275%;
+  position: absolute;
+  z-index: -1;
+  display: none; }
+  @media all and (min-width: 760px) {
+    .page-id-486 .left-quotation-mark,
+    .page-id-486 .right-quotation-mark {
+      height: 50px;
+      width: 75px; } }
+
+.page-id-486 .is-selected .left-quotation-mark,
+.page-id-486 .is-selected .right-quotation-mark {
+  display: inline-block; }
+
+.page-id-486 .left-quotation-mark {
+  top: -7px;
+  left: -25px; }
+  @media all and (min-width: 760px) {
+    .page-id-486 .left-quotation-mark {
+      top: -11px;
+      left: -40px; } }
+
+.page-id-486 .right-quotation-mark {
+  bottom: -7px;
+  right: -25px;
+  transform: rotate(180deg); }
+  @media all and (min-width: 760px) {
+    .page-id-486 .right-quotation-mark {
+      right: -40px; } }
+  @media all and (min-width: 900px) {
+    .page-id-486 .right-quotation-mark {
+      bottom: -16px; } }
+
+.page-id-486 .quote-text {
+  margin-bottom: 2rem; }
+
+.page-id-486 .person, .page-id-486 .line {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0; }
+
+.page-id-486 .line {
+  font-style: italic; }
+
+.page-id-486 .other-proj-wrapper {
+  width: 85%;
+  margin: 0 0.5rem;
+  opacity: 0.5; }
+  @media all and (min-width: 760px) {
+    .page-id-486 .other-proj-wrapper {
+      width: 50%; } }
+  .page-id-486 .other-proj-wrapper .project-location,
+  .page-id-486 .other-proj-wrapper .project-status,
+  .page-id-486 .other-proj-wrapper .person,
+  .page-id-486 .other-proj-wrapper .line {
+    margin: 0 auto; }
+
+.page-id-486 .image-wrapper {
+  height: 300px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  @media all and (min-width: 760px) {
+    .page-id-486 .image-wrapper {
+      height: 400px; } }
+  .page-id-486 .image-wrapper img {
+    width: auto;
+    height: 100%;
+    max-width: none; }
+
+.page-id-486 .is-selected {
+  opacity: 1; }
+
 .page-id-7 {
   text-align: center;
   height: 100%;
