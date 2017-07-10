@@ -219,6 +219,12 @@
             @include media ($desktop-width) {
                 height: 500px;
             }
+            a {
+                height: 300px;
+                @include media($desktop-width){
+                    height: 500px;
+                }
+            }
             img {
                 width: auto;
                 height: 100%;

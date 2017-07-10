@@ -847,6 +847,7 @@ textarea {
         right: 2px;
         font-size: 5rem; }
     .container .hamburger-menu .mobile-menu {
+      display: none;
       height: 0;
       margin-top: 80px;
       background-color: rgba(255, 255, 255, 0.8);
@@ -1081,7 +1082,7 @@ textarea {
   transform: translate(-50%, 0%); }
   .home .header-text h1 {
     margin-bottom: 1rem;
-    font-size: 3.4rem;
+    font-size: 2.5rem;
     font-weight: 600;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232;
@@ -1265,6 +1266,11 @@ textarea {
     @media all and (min-width: 760px) {
       .home .projects .image-wrapper {
         height: 500px; } }
+    .home .projects .image-wrapper a {
+      height: 300px; }
+      @media all and (min-width: 760px) {
+        .home .projects .image-wrapper a {
+          height: 500px; } }
     .home .projects .image-wrapper img {
       width: auto;
       height: 100%;
@@ -1516,7 +1522,7 @@ object {
 
 .page-id-21 .entry-title {
   margin-bottom: 1rem;
-  font-size: 3.4rem;
+  font-size: 2.5rem;
   font-weight: 600;
   text-transform: uppercase;
   text-shadow: 1px 2px 5px #323232; }
@@ -1943,7 +1949,7 @@ object {
     line-height: 1; }
   .page-id-159 .entry-title {
     margin-bottom: 1rem;
-    font-size: 3.4rem;
+    font-size: 2.5rem;
     font-weight: 600;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232; }
@@ -2660,7 +2666,7 @@ object {
     line-height: 1; }
   .page-id-19 .entry-title {
     margin-bottom: 1rem;
-    font-size: 3.4rem;
+    font-size: 2.5rem;
     font-weight: 600;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232; }
@@ -2846,7 +2852,7 @@ object {
     padding: 0 10px; }
   .page-id-18 .entry-title {
     margin-bottom: 1rem;
-    font-size: 3.4rem;
+    font-size: 2.5rem;
     font-weight: 600;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232;
@@ -3187,7 +3193,7 @@ object {
   line-height: 1; }
   .page-id-483 .header-text h1 {
     margin-bottom: 1rem;
-    font-size: 3.4rem;
+    font-size: 2.5rem;
     font-weight: 600;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232; }
@@ -3268,7 +3274,7 @@ object {
   line-height: 1; }
   .page-id-486 .header-text h1 {
     margin-bottom: 1rem;
-    font-size: 3.4rem;
+    font-size: 2.5rem;
     font-weight: 600;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232; }
@@ -3484,7 +3490,7 @@ object {
     line-height: 1; }
   .page-id-7 .entry-title {
     margin-bottom: 1rem;
-    font-size: 3.4rem;
+    font-size: 2.5rem;
     font-weight: 600;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232; }
@@ -3682,7 +3688,7 @@ object {
 
 .page-id-196 .entry-title {
   margin-bottom: 1rem;
-  font-size: 3.4rem;
+  font-size: 2.5rem;
   font-weight: 600;
   text-transform: uppercase;
   text-shadow: 1px 2px 5px #323232; }
@@ -3834,7 +3840,7 @@ object {
 
 .page-id-195 .entry-title {
   margin-bottom: 1rem;
-  font-size: 3.4rem;
+  font-size: 2.5rem;
   font-weight: 600;
   text-transform: uppercase;
   text-shadow: 1px 2px 5px #323232; }
@@ -3959,7 +3965,7 @@ object {
 
 .page-id-415 .entry-title {
   margin-bottom: 1rem;
-  font-size: 3.4rem;
+  font-size: 2.5rem;
   font-weight: 600;
   text-transform: uppercase;
   text-shadow: 1px 2px 5px #323232; }
@@ -4492,7 +4498,7 @@ object {
     display: none; }
   .page-id-252 .banner-text {
     margin-bottom: 1rem;
-    font-size: 3.4rem;
+    font-size: 2.5rem;
     font-weight: 600;
     text-transform: uppercase;
     text-shadow: 1px 2px 5px #323232;
