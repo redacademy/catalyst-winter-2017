@@ -10,7 +10,7 @@
     $hamburgerIcon.click(function () {
 
             $hamburgerIcon.addClass('transparent').hide();
-            $mobileMenu.addClass('opaque');
+            $mobileMenu.addClass('opaque').css('display', 'block');
             $crossIcon.addClass('opaque').show();
     });
 
@@ -18,7 +18,7 @@
 
             $crossIcon.removeClass('opaque').hide();
             $hamburgerIcon.removeClass('transparent').show();
-            $mobileMenu.removeClass('opaque');
+            $mobileMenu.removeClass('opaque').css('display', 'none');
     });
 
 

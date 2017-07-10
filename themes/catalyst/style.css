@@ -835,7 +835,7 @@ textarea {
       margin-right: 20px;
       position: absolute;
       right: 0;
-      top: 11px;
+      top: 15px;
       opacity: 0;
       transition: opacity 0.3s ease; }
       .container .hamburger-menu .cross div {
