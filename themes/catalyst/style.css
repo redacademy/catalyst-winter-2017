@@ -783,7 +783,7 @@ textarea {
       transition: opacity 0.2s ease; }
       @media all and (min-width: 760px) {
         .container .hamburger-menu .hamburger {
-          bottom: 8px; } }
+          bottom: 6px; } }
     .container .hamburger-menu ul {
       display: -ms-flexbox;
       display: flex;
@@ -791,7 +791,11 @@ textarea {
           flex-direction: column;
       margin-top: 5px;
       list-style: none;
-      line-height: 1.35rem; }
+      line-height: 1.35rem;
+      margin: 0;
+      text-align: right;
+      padding: 0;
+      padding-right: 1rem; }
       @media all and (min-width: 760px) {
         .container .hamburger-menu ul {
           margin-top: 0; } }
@@ -807,7 +811,7 @@ textarea {
       .container .hamburger-menu li a {
         display: block;
         text-decoration: none;
-        padding: 12px 0 12px 12px;
+        padding: 12px 12px 12px;
         font-size: 1rem;
         font-weight: 800;
         color: #323232;
@@ -815,7 +819,7 @@ textarea {
         @media all and (min-width: 760px) {
           .container .hamburger-menu li a {
             font-size: 1.25rem;
-            padding: 15px 0 15px 20px; } }
+            padding: 15px 20px 15px; } }
       .container .hamburger-menu li:hover {
         background-color: #D9F1FF; }
     .container .hamburger-menu .cross {
@@ -826,12 +830,13 @@ textarea {
       font-size: 66px;
       line-height: 20px;
       color: white;
-      padding: 25px 20px;
+      padding: 26px 17px;
       text-shadow: none;
       height: 30px;
+      margin-right: 20px;
       position: absolute;
-      left: 0;
-      top: 18px;
+      right: 0;
+      top: 15px;
       opacity: 0;
       transition: opacity 0.3s ease; }
       .container .hamburger-menu .cross div {
@@ -848,7 +853,12 @@ textarea {
       background-color: rgba(255, 255, 255, 0.8);
       opacity: 0;
       overflow: hidden;
-      transition: opacity 0.2s ease; }
+      transition: opacity 0.2s ease;
+      width: 60vw;
+      height: auto; }
+      @media all and (min-width: 760px) {
+        .container .hamburger-menu .mobile-menu {
+          width: 40vw; } }
     .container .hamburger-menu .opaque {
       opacity: 1; }
     .container .hamburger-menu .transparent {

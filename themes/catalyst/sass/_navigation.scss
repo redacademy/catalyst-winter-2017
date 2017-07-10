@@ -175,7 +175,7 @@
 			transition: opacity 0.2s ease;
 
 			@include media($desktop-width) {
-				bottom: 8px;
+				bottom: 6px;
 			}
 		}
 		ul {
@@ -184,7 +184,10 @@
 			margin-top: 5px;
 			list-style: none;
 			line-height: 1.35rem;
-
+			margin: 0;
+			text-align: right;
+			padding: 0;
+			padding-right: 1rem;
 			@include media( $desktop-width ) {
 				margin-top: 0;
 			}
@@ -202,14 +205,14 @@
 			a {
 				display: block;
 				text-decoration: none;
-				padding: 12px 0 12px 12px;
+				padding: 12px 12px 12px;
 				font-size: 1rem;
 				font-weight: 800;
 				color: $color__header-main;
 				text-transform: uppercase;
 				@include media($desktop-width) {
 					font-size: 1.25rem;
-					padding: 15px 0 15px 20px;
+					padding: 15px 20px 15px;
 				}
 			}
 			&:hover {
@@ -224,12 +227,13 @@
 			font-size: 66px;
 			line-height: 20px;
 			color: white;
-			padding: 25px 20px;
+			padding: 26px 17px;
 			text-shadow: none;
 			height: 30px;
+			margin-right: 20px;
 			position: absolute;
-			left: 0;
-			top: 18px;
+			right: 0;
+			top: 15px;
 			opacity: 0;
 			transition: opacity 0.3s ease;
 
@@ -250,6 +254,11 @@
 			opacity: 0;
 			overflow: hidden;
 			transition: opacity 0.2s ease;
+			width: 60vw;
+			height: auto;
+			@include media($desktop-width){
+				width: 40vw;
+			}
 		}
 		.opaque {
 			opacity: 1;
