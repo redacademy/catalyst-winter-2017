@@ -980,6 +980,7 @@ textarea {
         height: auto;
         width: 20%;
         margin: auto 0;
+        padding-top: 0.5rem;
         padding-bottom: 0.75rem;
         visibility: visible;
         display: -ms-flexbox;
@@ -1164,11 +1165,15 @@ textarea {
     .home .projects .project-status span {
       text-transform: uppercase; }
   .home .projects .quotes-wrapper {
-    margin: 0 auto;
+    margin: 3rem auto 0;
     width: 85%;
     display: none; }
+    @media all and (min-width: 760px) {
+      .home .projects .quotes-wrapper {
+        margin: 5rem auto 0;
+        width: 100%; } }
   .home .projects .is-selected .quotes-wrapper {
-    display: initial; }
+    display: block; }
   .home .projects .quote {
     max-width: 340px;
     margin: 0 auto;
@@ -1215,8 +1220,7 @@ textarea {
     left: -25px; }
     @media all and (min-width: 760px) {
       .home .projects .left-quotation-mark {
-        top: -11px;
-        left: -60px; } }
+        left: -56px; } }
   .home .projects .right-quotation-mark {
     bottom: -7px;
     right: -25px;
@@ -1979,7 +1983,10 @@ object {
   position: relative;
   font-size: 2.4rem; }
   .blue-background-header h2 {
-    font-size: 1.6rem; }
+    font-size: 1.4rem; }
+    @media all and (min-width: 400px) {
+      .blue-background-header h2 {
+        font-size: 1.6rem; } }
     @media all and (min-width: 760px) {
       .blue-background-header h2 {
         font-size: 2rem; } }
@@ -2043,7 +2050,7 @@ object {
 .staff-exit-button {
   display: inline-block;
   position: absolute;
-  top: 25%;
+  top: 23%;
   right: 5%;
   height: 35px;
   width: 35px;
@@ -2073,12 +2080,13 @@ object {
       height: 45px;
       width: 45px; } }
   .staff-exit-button span {
-    font-size: 1.5rem;
+    font-size: 4rem;
     position: relative;
-    bottom: 0.5px; }
+    top: 19px; }
     @media all and (min-width: 760px) {
       .staff-exit-button span {
-        font-size: 2.05rem; } }
+        font-size: 5.5rem;
+        top: 26px; } }
 
 .board-exit-button {
   margin: 0px;
@@ -2086,13 +2094,14 @@ object {
   top: 18%;
   right: 5%; }
   .board-exit-button span {
-    font-size: 1.5rem;
+    font-size: 4rem;
     position: relative;
-    bottom: 1px;
-    left: 0.5px; }
+    top: 19px; }
     @media all and (min-width: 760px) {
       .board-exit-button span {
-        font-size: 2.05rem; } }
+        font-size: 5.5rem;
+        top: 26.5px;
+        right: 0.5px; } }
 
 .name {
   margin: 0 auto;
@@ -2104,7 +2113,7 @@ object {
 .job-title {
   font-family: 'quattrocento';
   max-width: 235px;
-  margin: 0.25rem auto;
+  margin: 0.25rem auto 1.5rem;
   font-size: 1.1rem;
   line-height: 1.4rem;
   text-align: center;
@@ -2174,18 +2183,23 @@ object {
     .staff-profiles-wrapper .profile-popout .left-quotation,
     .board-profiles-wrapper .profile-popout .left-quotation,
     .advisors-profiles-wrapper .profile-popout .left-quotation {
-      top: 20px;
+      top: 0px;
       left: -20px; }
       @media all and (min-width: 760px) {
         .staff-profiles-wrapper .profile-popout .left-quotation,
         .board-profiles-wrapper .profile-popout .left-quotation,
         .advisors-profiles-wrapper .profile-popout .left-quotation {
-          left: -30px; } }
+          left: -20px; } }
+      @media all and (min-width: 1000px) {
+        .staff-profiles-wrapper .profile-popout .left-quotation,
+        .board-profiles-wrapper .profile-popout .left-quotation,
+        .advisors-profiles-wrapper .profile-popout .left-quotation {
+          left: -40px; } }
     .staff-profiles-wrapper .profile-popout .right-quotation,
     .board-profiles-wrapper .profile-popout .right-quotation,
     .advisors-profiles-wrapper .profile-popout .right-quotation {
-      bottom: 35px;
-      right: -25px;
+      bottom: 20px;
+      right: -16px;
       transform: rotate(180deg); }
       @media all and (min-width: 1100px) {
         .staff-profiles-wrapper .profile-popout .right-quotation,
@@ -2195,12 +2209,13 @@ object {
     .staff-profiles-wrapper .profile-popout .quote-container,
     .board-profiles-wrapper .profile-popout .quote-container,
     .advisors-profiles-wrapper .profile-popout .quote-container {
-      position: relative; }
+      position: relative;
+      max-width: 90%; }
     .staff-profiles-wrapper .profile-popout .quote,
     .board-profiles-wrapper .profile-popout .quote,
     .advisors-profiles-wrapper .profile-popout .quote {
       max-width: 345px;
-      margin-bottom: 2.5rem;
+      margin-bottom: 1.5rem;
       font-size: 1.5rem;
       font-weight: 800;
       font-style: italic;
@@ -2466,6 +2481,167 @@ object {
   @media all and (min-width: 760px) {
     .advisors-profiles-wrapper .navigation-button-container {
       margin: 3rem auto 1rem; } }
+
+.preview-container {
+  margin-bottom: 2rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center; }
+  @media all and (min-width: 760px) {
+    .preview-container {
+      width: 80%;
+      margin: 0 auto 5rem;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: start;
+          align-items: flex-start; } }
+
+.advisors-template-default .center-column {
+  margin: 5rem auto;
+  text-align: center; }
+
+.staff-template-default .profile-popout, .board-template-default .profile-popout {
+  height: 100%;
+  width: 100%;
+  margin: 4rem auto;
+  padding: 3% 5%;
+  background: #D9F1FF;
+  font-weight: 400;
+  opacity: 1;
+  overflow: hidden;
+  transition: opacity 0.7s ease;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  @media all and (min-width: 760px) {
+    .staff-template-default .profile-popout, .board-template-default .profile-popout {
+      width: 950px;
+      display: block; } }
+  .staff-template-default .profile-popout a, .board-template-default .profile-popout a {
+    color: #4A4A4A;
+    font-weight: 800;
+    text-decoration: none; }
+    .staff-template-default .profile-popout a:hover, .board-template-default .profile-popout a:hover {
+      color: #935E32; }
+  .staff-template-default .profile-popout .left-quotation, .staff-template-default .profile-popout .right-quotation, .board-template-default .profile-popout .left-quotation, .board-template-default .profile-popout .right-quotation {
+    height: 30px;
+    width: 50px;
+    background: url("../../images/icon/quotation-white.svg") no-repeat center;
+    background-size: 275%;
+    position: absolute;
+    z-index: 1; }
+  .staff-template-default .profile-popout .left-quotation, .board-template-default .profile-popout .left-quotation {
+    top: 0px;
+    left: -20px; }
+    @media all and (min-width: 760px) {
+      .staff-template-default .profile-popout .left-quotation, .board-template-default .profile-popout .left-quotation {
+        left: -20px; } }
+    @media all and (min-width: 1000px) {
+      .staff-template-default .profile-popout .left-quotation, .board-template-default .profile-popout .left-quotation {
+        left: -40px; } }
+  .staff-template-default .profile-popout .right-quotation, .board-template-default .profile-popout .right-quotation {
+    bottom: 35px;
+    right: -16px;
+    transform: rotate(180deg); }
+    @media all and (min-width: 1100px) {
+      .staff-template-default .profile-popout .right-quotation, .board-template-default .profile-popout .right-quotation {
+        right: -35px; } }
+  .staff-template-default .profile-popout .quote-container, .board-template-default .profile-popout .quote-container {
+    position: relative;
+    max-width: 90%; }
+  .staff-template-default .profile-popout .quote, .board-template-default .profile-popout .quote {
+    max-width: 345px;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 2.25rem;
+    text-align: center;
+    position: relative;
+    z-index: 100000; }
+    @media all and (min-width: 760px) {
+      .staff-template-default .profile-popout .quote, .board-template-default .profile-popout .quote {
+        max-width: 260px;
+        margin-bottom: 2.5rem;
+        text-align: center; } }
+  .staff-template-default .profile-popout .center-column, .board-template-default .profile-popout .center-column {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-align: center;
+        align-items: center;
+    margin: 0 auto; }
+    .staff-template-default .profile-popout .center-column img, .board-template-default .profile-popout .center-column img {
+      width: 290px;
+      border-radius: 50%; }
+  .staff-template-default .profile-popout .left-column, .board-template-default .profile-popout .left-column {
+    width: 100%;
+    float: none;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    @media all and (min-width: 760px) {
+      .staff-template-default .profile-popout .left-column, .board-template-default .profile-popout .left-column {
+        width: 40%;
+        margin-right: 10%;
+        float: left; } }
+    .staff-template-default .profile-popout .left-column img, .board-template-default .profile-popout .left-column img {
+      width: 225px;
+      border-radius: 50%; }
+      @media all and (min-width: 760px) {
+        .staff-template-default .profile-popout .left-column img, .board-template-default .profile-popout .left-column img {
+          width: 95%; } }
+  .staff-template-default .profile-popout h3, .board-template-default .profile-popout h3 {
+    width: 100%;
+    margin: 1.5rem auto;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-family: quattrocento;
+    line-height: 1.75rem;
+    font-style: italic;
+    text-align: center;
+    display: inline-block; }
+    @media all and (min-width: 760px) {
+      .staff-template-default .profile-popout h3, .board-template-default .profile-popout h3 {
+        width: 50%;
+        font-size: 2rem;
+        line-height: 2.3rem; } }
+  .staff-template-default .profile-popout article, .board-template-default .profile-popout article {
+    font-size: 1.2rem;
+    font-weight: 800;
+    line-height: 1.75rem;
+    display: inline; }
+    .staff-template-default .profile-popout article ul, .board-template-default .profile-popout article ul {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+      .staff-template-default .profile-popout article ul li::before, .board-template-default .profile-popout article ul li::before {
+        content: "-";
+        margin-right: 0.5rem;
+        display: inline; }
 
 .page-id-19 {
   margin: 0 auto; }

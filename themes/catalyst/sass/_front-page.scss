@@ -114,12 +114,16 @@
             }
         }
         .quotes-wrapper {
-            margin: 0 auto;
+            margin: 3rem auto 0;
             width: 85%;
             display: none;
+            @include media( $desktop-width ) {
+                margin: 5rem auto 0;
+                width: 100%;
+            }
         }
         .is-selected .quotes-wrapper {
-            display: initial;
+            display: block;
         }
         .quote {
             max-width: 340px;
@@ -172,8 +176,7 @@
             top: -7px;
             left: -25px;
             @include media ($desktop-width) {
-                top: -11px;
-                left: -60px;
+                left: -56px;
             }
         }
         .right-quotation-mark {

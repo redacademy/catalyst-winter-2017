@@ -7,14 +7,7 @@
 
 get_header(); ?>
 
-	<section class="staff-profile-preview profile-preview">
-		<img class="profile-image" src="<?php echo CFS()->get('profile_image'); ?>"/>
-
-		<h4 class="name"><?php echo esc_html( CFS()->get('name') ); ?></h4>
-		<p class="job-title"><?php echo esc_html( CFS()->get('job_title') ); ?></p>
-		<button class="staff-enter-button enter-button" type="button"><span>+</span></button>
-	</section>
-
+<main class="preview-container">
 	<section class="staff-profile-popout profile-popout">
 
 			<?php $cvDescription = wp_kses_post( CFS()->get('cvdescription') );
@@ -80,3 +73,6 @@ get_header(); ?>
 			<?php endif; ?>
 
 	</section><!-- #post-## -->
+</main>
+
+<?php get_footer(); ?>

@@ -25,8 +25,11 @@
     font-size: 2.4rem;
 
     h2 {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
 
+        @include media( 400px ) {
+            font-size: 1.6rem;
+        }
         @include media($desktop-width) {
             font-size: 2rem;
         }
@@ -69,17 +72,17 @@
 .staff-exit-button {
     display: inline-block;
     position: absolute;
-    top: 25%;
+    top: 23%;
     right: 5%;
     @include exit-popout-button(#FFF);
 
     span {
-        font-size: 1.5rem;
+        font-size: 4rem;
         position: relative;
-        bottom: 0.5px;
-
+        top: 19px;
         @include media($desktop-width) {
-            font-size: 2.05rem;
+            font-size: 5.5rem;
+            top: 26px;
         }
     }
 }
@@ -91,13 +94,13 @@
     right: 5%;
 
     span {
-        font-size: 1.5rem;
+        font-size: 4rem;
         position: relative;
-        bottom: 1px;
-        left: 0.5px;
-
+        top: 19px;
         @include media($desktop-width) {
-            font-size: 2.05rem;
+            font-size: 5.5rem;
+            top: 26.5px;
+            right: 0.5px;
         }
     }
 }
@@ -113,7 +116,7 @@
 .job-title {
     font-family: 'quattrocento';
     max-width: 235px;
-    margin: 0.25rem auto;
+    margin: 0.25rem auto 1.5rem;
     font-size: 1.1rem;
     line-height: 1.4rem;
     text-align: center;
@@ -163,16 +166,19 @@
         }
 
         .left-quotation {
-            top: 20px;
+            top: 0px;
             left: -20px;
 
             @include media( $desktop-width ) {
-                left: -30px;
+                left: -20px;
+            }
+            @include media( 1000px ) {
+                left: -40px;
             }
         }
         .right-quotation {
-            bottom: 35px;
-            right: -25px;
+            bottom: 20px;
+            right: -16px;
             transform: rotate(180deg);
             @include media(1100px) {
                 right: -35px;
@@ -180,10 +186,11 @@
         }
         .quote-container {
             position: relative;
+            max-width: 90%;
         }
         .quote {
             max-width: 345px;
-            margin-bottom: 2.5rem;
+            margin-bottom: $base__space-unit;
             font-size: 1.5rem;
             font-weight: $font__bold;
             font-style: italic;
@@ -385,4 +392,3 @@
         }
     }
 }
-

@@ -16,7 +16,7 @@ get_header(); ?>
             <div class="content-wrapper">
             <div class="blue-background-header">
                 <h2 class="subheader-lrg">Meet Team Catalyst</h2>
-                <button class="staff-exit-button exit-button" type="button"><span>X</span></button>
+                <button class="staff-exit-button exit-button" type="button"><span>&#735;</span></button>
             </div>
 
             <div class="staff-profiles-wrapper">
@@ -38,7 +38,7 @@ get_header(); ?>
             <div class="board-profiles-wrapper">
                 <div class="board-profiles-header">
                     <h3 class="small-header">Board</h3>
-                    <button class="board-exit-button exit-button" type="button"><span>X</span></button>
+                    <button class="board-exit-button exit-button" type="button"><span>&#735;</span></button>
                 </div>
 
                 <?php
