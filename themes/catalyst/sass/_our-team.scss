@@ -164,19 +164,18 @@
 
         .left-quotation {
             top: 20px;
-            left: -25px;
+            left: -20px;
+
+            @include media( $desktop-width ) {
+                left: -30px;
+            }
         }
         .right-quotation {
-            top: 81%;
-            right: 5%;
+            bottom: 35px;
+            right: -25px;
             transform: rotate(180deg);
-            @include media($desktop-width) {
-                top: 88%;
-                right: 2%;
-            }
             @include media(1100px) {
-                top: 86%;
-                right: -14%;
+                right: -35px;
             }
         }
         .quote-container {
@@ -230,9 +229,8 @@
         }
 
         h3 {
-            width: 85%;
-            margin: 0 auto;
-            margin-bottom: $base__space-unit;
+            width: 100%;
+            margin: $base__space-unit auto;
             font-size: 1.5rem;
             line-height: 2rem;
             font-family: quattrocento;
