@@ -5,8 +5,14 @@
             margin-bottom: 3rem;
         }
     }
-    h1 {
-        display: none;
+    .header-text {
+        @include header-text;
+        h1 {
+            @include page-title;
+        }
+        p {
+            @include banner-text;
+        }
     }
     h2{
         max-width: 900px;

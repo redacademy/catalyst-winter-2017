@@ -3000,8 +3000,36 @@ object {
     .page-id-483 .hero-image-banner {
       margin-bottom: 3rem; } }
 
-.page-id-483 h1 {
-  display: none; }
+.page-id-483 .header-text {
+  max-width: 900px;
+  color: white;
+  padding: 0 1rem;
+  line-height: 1; }
+  .page-id-483 .header-text h1 {
+    margin-bottom: 1rem;
+    font-size: 3.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 5px #323232; }
+    @media all and (min-width: 760px) {
+      .page-id-483 .header-text h1 {
+        margin-bottom: 2rem;
+        font-size: 3.85rem;
+        line-height: 4.25rem; } }
+  .page-id-483 .header-text p {
+    width: 90%;
+    font-size: 1.25rem;
+    font-family: asap, sans-serif;
+    font-weight: 800;
+    margin: 1.5rem auto;
+    line-height: 1.75rem;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    text-shadow: 1px 2px 5px #323232; }
+    @media all and (min-width: 760px) {
+      .page-id-483 .header-text p {
+        font-size: 1.5rem;
+        line-height: 2.25rem; } }
 
 .page-id-483 h2 {
   max-width: 900px; }
@@ -3053,8 +3081,36 @@ object {
     .page-id-486 .hero-image-banner {
       margin-bottom: 3rem; } }
 
-.page-id-486 h1 {
-  display: none; }
+.page-id-486 .header-text {
+  max-width: 900px;
+  color: white;
+  padding: 0 1rem;
+  line-height: 1; }
+  .page-id-486 .header-text h1 {
+    margin-bottom: 1rem;
+    font-size: 3.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 5px #323232; }
+    @media all and (min-width: 760px) {
+      .page-id-486 .header-text h1 {
+        margin-bottom: 2rem;
+        font-size: 3.85rem;
+        line-height: 4.25rem; } }
+  .page-id-486 .header-text p {
+    width: 90%;
+    font-size: 1.25rem;
+    font-family: asap, sans-serif;
+    font-weight: 800;
+    margin: 1.5rem auto;
+    line-height: 1.75rem;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    text-shadow: 1px 2px 5px #323232; }
+    @media all and (min-width: 760px) {
+      .page-id-486 .header-text p {
+        font-size: 1.5rem;
+        line-height: 2.25rem; } }
 
 .page-id-486 h2 {
   max-width: 900px; }
