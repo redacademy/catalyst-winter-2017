@@ -99,21 +99,21 @@
                 </div>
             <?php endforeach; wp_reset_postdata(); ?>
         </div>
-        <div class="quote-carousel">
-            <?php $quotes_gallery = CFS()->get('quotes_gallery');
-            foreach ($quotes_gallery as $quotes) : ?>
-                <div class="quotes">
-                    <div class="q-text-container">
-                        <div class="left-quotation-mark"></div>
-                        <?php echo '<p class="quote-text"> '.$quotes['quotes'].'</p>'; ?>
-                        <div class="right-quotation-mark"></div>
+            <div class="quote-carousel">
+                <?php $quotes_gallery = CFS()->get('quotes_gallery');
+                foreach ($quotes_gallery as $quotes) : ?>
+                    <div class="quotes">
+                        <div class="q-text-container">
+                            <div class="left-quotation-mark"></div>
+                            <?php echo '<p class="quote-text"> '.$quotes['quotes'].'</p>'; ?>
+                            <div class="right-quotation-mark"></div>
+                        </div>
+                        <?php echo '<p class="person"> '.$quotes['person'].'</p>';
+                        echo '<p class="line"> '.$quotes['line1'].'</p>';
+                        echo '<p class="line"> '.$quotes['line2'].'</p>'; ?>
                     </div>
-                    <?php echo '<p class="person"> '.$quotes['person'].'</p>';
-                    echo '<p class="line"> '.$quotes['line1'].'</p>';
-                    echo '<p class="line"> '.$quotes['line2'].'</p>'; ?>
-                </div>
-                <?php endforeach; wp_reset_postdata(); ?>
-        </div>
+                    <?php endforeach; wp_reset_postdata(); ?>
+            </div>
         <a href="<?php echo get_home_url(); ?>/collaborate" class="navigation-button">Collaborate with us</a>
         <?php endwhile; wp_reset_postdata(); ?>
     </section>

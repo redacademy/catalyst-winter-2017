@@ -28,12 +28,17 @@ get_header(); ?>
 
 			<div class="renters-redirect">
 
-				<p class="intro-copy">
-					<?php $intro_copy = esc_html( CFS()->get('contact_renters') ); ?>
+				<div class="intro-copy">
+					<?php $intro_copy = esc_html( CFS()->get('contact_main_copy') ); ?>
 					<?php if( !empty( $intro_copy ) ) : ?>
-						<?php echo $intro_copy; ?>
+						<p><?php echo $intro_copy; ?></p>
 					<?php endif; ?>
-				</p>
+
+					<?php $renter_copy = esc_html( CFS()->get('contact_renters') ); ?>
+					<?php if( !empty( $renter_copy ) ) : ?>
+						<p><?php echo $renter_copy; ?></p>
+					<?php endif; ?>
+				</div>
 
 				<a class="navigation-button" href="<?php echo get_home_url(); ?>/rent">Renters</a>
 			</div>
@@ -41,13 +46,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<div class="entry-content">
-		            <?php the_content(); ?>
-		            <?php
-			            wp_link_pages( array(
-                            'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-                            'after'  => '</div>',
-			            ) );
-		            ?>
+					<?php echo do_shortcode('[contact-form-7 id="6" title="Contact form 1"]') ?>
 	            </div><!-- .entry-content -->
 
 			<?php endwhile; // End of the loop. ?>
