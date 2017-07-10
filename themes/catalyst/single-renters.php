@@ -111,7 +111,7 @@
             <?php echo CFS()->get('contact_copy'); ?>
         </div>
         <div class="contact-form">
-            <?php echo do_shortcode('[contact-form-7 id="417" title="Renters Contact"]'); ?>
+            <?php echo do_shortcode('[contact-form-7 id="505" title="Renters Contact"]'); ?>
         </div>
     </div>
 </section>

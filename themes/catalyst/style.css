@@ -1550,7 +1550,7 @@ object {
 .page-id-21 .intro-copy {
   height: auto;
   width: 100%;
-  max-width: 650px;
+  max-width: 700px;
   margin: 0 auto;
   padding: 2rem 1rem 2rem;
   font-size: 1.2rem;
@@ -1976,7 +1976,7 @@ object {
   .page-id-159 .intro-copy {
     height: auto;
     width: 100%;
-    max-width: 650px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 2rem 1rem 2rem;
     font-size: 1.2rem;
@@ -2879,7 +2879,7 @@ object {
   .page-id-18 .intro-copy {
     height: auto;
     width: 100%;
-    max-width: 650px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 2rem 1rem 2rem;
     font-size: 1.2rem;
@@ -3524,7 +3524,7 @@ object {
   .page-id-7 .intro-copy {
     height: auto;
     width: 100%;
-    max-width: 650px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 2rem 1rem 2rem;
     font-size: 1.2rem;
@@ -3542,7 +3542,7 @@ object {
       .page-id-7 .intro-copy {
         padding-top: 0; } }
   .page-id-7 .renters-redirect {
-    padding: 0 2rem;
+    padding: 0 1rem;
     max-width: 1200px;
     margin: 0 auto; }
   .page-id-7 .wpcf7 {
@@ -3600,15 +3600,14 @@ object {
           -ms-flex-pack: center;
               justify-content: center; } }
       .page-id-7 .wpcf7 .radio input {
-        width: 1rem;
-        transform: scale(1.3); }
+        width: 1rem; }
       .page-id-7 .wpcf7 .radio .wpcf7-list-item {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-align: center;
             align-items: center; }
       .page-id-7 .wpcf7 .radio .wpcf7-list-item-label {
-        font-size: 1.1rem;
+        font-size: 1rem;
         text-transform: uppercase;
         margin-left: 1rem; }
     .page-id-7 .wpcf7 .other-option {
@@ -3716,7 +3715,7 @@ object {
 .page-id-196 .intro-copy {
   height: auto;
   width: 100%;
-  max-width: 650px;
+  max-width: 700px;
   margin: 0 auto;
   padding: 2rem 1rem 2rem;
   font-size: 1.2rem;
@@ -3868,7 +3867,7 @@ object {
 .page-id-195 .intro-copy {
   height: auto;
   width: 100%;
-  max-width: 650px;
+  max-width: 700px;
   margin: 0 auto;
   padding: 2rem 1rem 2rem;
   font-size: 1.2rem;
@@ -3999,7 +3998,7 @@ object {
 .page-id-441 .intro-copy {
   height: auto;
   width: 100%;
-  max-width: 650px;
+  max-width: 700px;
   margin: 0 auto;
   padding: 2rem 1rem 2rem;
   font-size: 1.2rem;
@@ -4358,7 +4357,7 @@ object {
 
 .single-renters .wrapper {
   max-width: 1200px;
-  padding: 0 2rem;
+  padding: 0 1rem;
   margin: 0 auto; }
 
 .single-renters .banner div {
