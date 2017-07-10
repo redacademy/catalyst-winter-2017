@@ -2210,7 +2210,7 @@ object {
     .staff-profiles-wrapper .profile-popout .right-quotation,
     .board-profiles-wrapper .profile-popout .right-quotation,
     .advisors-profiles-wrapper .profile-popout .right-quotation {
-      bottom: 20px;
+      bottom: 35px;
       right: -16px;
       transform: rotate(180deg); }
       @media all and (min-width: 1100px) {
