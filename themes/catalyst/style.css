@@ -1655,14 +1655,12 @@ object {
 .page-id-21 .mission-quote {
   height: auto;
   max-width: 320px;
-  margin: 0 auto;
+  margin: 1.5rem auto 1rem;
   position: relative; }
-  @media all and (min-width: 600px) {
-    .page-id-21 .mission-quote {
-      max-width: 450px; } }
   @media all and (min-width: 760px) {
     .page-id-21 .mission-quote {
-      max-width: 600px; } }
+      max-width: none;
+      margin: 3rem auto 2rem; } }
   .page-id-21 .mission-quote .quote-target {
     height: 0;
     width: 0;
@@ -1677,13 +1675,17 @@ object {
       max-width: 460px; } }
   @media all and (min-width: 760px) {
     .page-id-21 .mission-quote2 {
-      max-width: 610px; } }
+      max-width: 630px; } }
 
 .page-id-21 .q-text-container {
   position: relative; }
+  @media all and (min-width: 760px) {
+    .page-id-21 .q-text-container {
+      width: 630px; } }
 
 .page-id-21 .quote,
 .page-id-21 .quote2 {
+  display: inline;
   z-index: 1;
   margin: 1.5rem 0;
   text-align: center;
@@ -1714,20 +1716,20 @@ object {
       width: 75px; } }
 
 .page-id-21 .quotation-left {
-  top: 10px;
-  left: 10px; }
+  top: -5px;
+  left: -30px; }
   @media all and (min-width: 760px) {
     .page-id-21 .quotation-left {
-      top: 0;
-      left: -15px; } }
+      top: -10px;
+      left: -40px; } }
 
 .page-id-21 .quotation-left2 {
-  top: 10px;
-  left: 10px; }
+  top: 20px;
+  left: -25px; }
   @media all and (min-width: 760px) {
     .page-id-21 .quotation-left2 {
-      top: 0;
-      left: 0; } }
+      top: 10px;
+      left: -20px; } }
 
 .page-id-21 .quotation-right,
 .page-id-21 .quotation-right2 {
@@ -1744,20 +1746,20 @@ object {
       width: 75px; } }
 
 .page-id-21 .quotation-right {
-  bottom: 10px;
-  right: 10px; }
+  bottom: -8px;
+  right: -5px; }
   @media all and (min-width: 760px) {
     .page-id-21 .quotation-right {
-      bottom: 20px;
+      bottom: -15px;
       right: -15px; } }
 
 .page-id-21 .quotation-right2 {
-  bottom: 17px;
-  right: 12px; }
+  bottom: 15px;
+  right: -15px; }
   @media all and (min-width: 760px) {
     .page-id-21 .quotation-right2 {
-      bottom: 0;
-      right: 0; } }
+      bottom: 8px;
+      right: -10px; } }
 
 .page-id-21 .robert {
   margin: 0 auto;
