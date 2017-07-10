@@ -103,12 +103,15 @@
             height: auto;
         }
     }
+    .q-text-container {
+        position: relative;
+    }
     .left-quotation-mark,
     .right-quotation-mark {
         height: 120px;
         width: 85px;
         margin: 0;
-        background: url('../../images/icon/quotation.svg') center;
+        background: url('../../images/icon/quotation.svg') center no-repeat;
         background-size: 275%;
         position: absolute;
         z-index: -1;
@@ -126,18 +129,18 @@
         display: none;
     }
     .left-quotation-mark {
-        top: -12%;
-        right: 85%;
+        top: -50px;
+        left: -25px;
         @include media($desktop-width) {
-            top: 0%;
+            left: 0;
         }
     }
     .right-quotation-mark {
-        bottom: 15%;
-        left: 85%;
+        bottom: -50px;
+        right: -25px;
         transform: rotate(180deg);
         @include media($desktop-width) {
-            bottom: 20%
+            right: 0;
         }
     }
     .quote-text {

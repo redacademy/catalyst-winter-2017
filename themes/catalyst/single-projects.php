@@ -103,12 +103,14 @@
             <?php $quotes_gallery = CFS()->get('quotes_gallery');
             foreach ($quotes_gallery as $quotes) : ?>
                 <div class="quotes">
-                    <div class="left-quotation-mark"></div>
-                    <?php echo '<p class="quote-text"> '.$quotes['quotes'].'</p>';
-                    echo '<p class="person"> '.$quotes['person'].'</p>';
+                    <div class="q-text-container">
+                        <div class="left-quotation-mark"></div>
+                        <?php echo '<p class="quote-text"> '.$quotes['quotes'].'</p>'; ?>
+                        <div class="right-quotation-mark"></div>
+                    </div>
+                    <?php echo '<p class="person"> '.$quotes['person'].'</p>';
                     echo '<p class="line"> '.$quotes['line1'].'</p>';
                     echo '<p class="line"> '.$quotes['line2'].'</p>'; ?>
-                    <div class="right-quotation-mark"></div>
                 </div>
                 <?php endforeach; wp_reset_postdata(); ?>
         </div>

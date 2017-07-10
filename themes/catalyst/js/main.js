@@ -307,7 +307,7 @@
         imagesLoaded: true,
         pageDots: false,
         prevNextButtons: false,
-        autoPlay: 4000,
+        // autoPlay: 4000,
     });
     //flickity ourstory template part
     $('.formula-carousel').flickity({
