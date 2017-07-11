@@ -35,16 +35,15 @@
             </div>
 
             <div class="proj-content">
+                <?php $description = esc_html( CFS()->get( 'description' ) );
+                if ( $description ) :?>
+                    <p><?php echo $description; ?></p>
+                <?php endif; ?>
+
                 <?php $structure = wp_kses_post(CFS()->get( 'structure' ) );
                 if ( $structure ) :?>
                     <h3>Structure: </h3>
                     <?php echo $structure; ?>
-                <?php endif; ?>
-
-                <?php $status = wp_kses_post(CFS()->get( 'status' ) );
-                if ( $status ) :?>
-                    <h3>Status: </h3>
-                    <p><?php echo $status; ?></p>
                 <?php endif; ?>
 
                 <?php $cRole = wp_kses_post( CFS()->get( 'catalyst_role' ) );
@@ -76,12 +75,6 @@
                     <h3>Total Project Cost: </h3>
                     <p><?php echo $cost; ?></p>
                 <?php endif; ?>
-
-                <?php $description = esc_html( CFS()->get( 'description' ) );
-                if ( $description ) :?>
-                    <p><?php echo $description; ?></p>
-                <?php endif; ?>
-
             </div>
     </section>
     <section class='arch-design'>
