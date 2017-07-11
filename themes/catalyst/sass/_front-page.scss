@@ -67,7 +67,7 @@
         max-width: 650px;
         padding: 0 2rem;
         margin: 2rem auto;
-        text-align: center;
+        text-align: $body-text-align;
         font-family: $font__secondary;
         @include media ($desktop-width) {
             margin: 4rem auto;
@@ -84,7 +84,7 @@
             max-width: 650px;
             margin: 2rem auto;
             padding: 0 2rem;
-            text-align: center;
+            text-align: $body-text-align;
             font-family: $font__secondary;
             @include media ($desktop-width) {
                 margin: 4rem auto;
@@ -269,7 +269,7 @@
             max-width: 650px;
             margin: 2rem auto;
             padding: 0 2rem;
-            text-align: center;
+            text-align: $body-text-align;
             font-family: $font__secondary;
             @include media ($desktop-width) {
                 margin: 4rem auto;

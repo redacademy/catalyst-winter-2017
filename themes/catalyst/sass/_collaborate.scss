@@ -39,7 +39,7 @@
         & p {
             @include main-copy;
             margin: 0 auto;
-            text-align: center;
+            text-align: $body-text-align;
         }
     }
     .main-copy1, .main-copy2, .main-copy3 {
@@ -94,7 +94,7 @@
         }
         .partners-information p {
             @include main-copy;
-            text-align: center;
+            text-align: $body-text-align;
         }
 
         .partners-copy:nth-child(3), .investors-copy:nth-child(3) {

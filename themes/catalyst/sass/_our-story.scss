@@ -53,11 +53,9 @@
         }
     }
     .mission-copy {
-        max-width: 650px;
+        display: inline;
         margin: 0 auto;
-        @include media($desktop-width) {
-            max-width: 860px;
-        }
+        text-align: $body-text-align;
     }
     .mission-quote,
     .mission-quote2 {
@@ -276,6 +274,7 @@
         margin: 2.5rem auto;
         font-size: $font__mobile-size;
         font-weight: 100;
+        text-align: $body-text-align;
         @include media($desktop-width) {
             font-size: $font__desktop-size;
         }

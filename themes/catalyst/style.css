@@ -574,6 +574,9 @@ table {
       font-size: 2.25rem;
       line-height: 3.4rem; } }
 
+.left-align {
+  text-align: left; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -1132,7 +1135,7 @@ textarea {
   max-width: 650px;
   padding: 0 2rem;
   margin: 2rem auto;
-  text-align: center;
+  text-align: left;
   font-family: asap, sans-serif; }
   @media all and (min-width: 760px) {
     .home .catalyst-formula-copy {
@@ -1149,7 +1152,7 @@ textarea {
     max-width: 650px;
     margin: 2rem auto;
     padding: 0 2rem;
-    text-align: center;
+    text-align: left;
     font-family: asap, sans-serif; }
     @media all and (min-width: 760px) {
       .home .projects .our-projects-copy {
@@ -1304,7 +1307,7 @@ textarea {
     max-width: 650px;
     margin: 2rem auto;
     padding: 0 2rem;
-    text-align: center;
+    text-align: left;
     font-family: asap, sans-serif; }
     @media all and (min-width: 760px) {
       .home .team .team-catalyst-copy {
@@ -1632,11 +1635,9 @@ object {
     color: #323232; }
 
 .page-id-21 .mission-copy {
-  max-width: 650px;
-  margin: 0 auto; }
-  @media all and (min-width: 760px) {
-    .page-id-21 .mission-copy {
-      max-width: 860px; } }
+  display: inline;
+  margin: 0 auto;
+  text-align: left; }
 
 .page-id-21 .mission-quote,
 .page-id-21 .mission-quote2 {
@@ -1856,7 +1857,8 @@ object {
 .page-id-21 .formula-text2 {
   margin: 2.5rem auto;
   font-size: 1.2rem;
-  font-weight: 100; }
+  font-weight: 100;
+  text-align: left; }
   @media all and (min-width: 760px) {
     .page-id-21 .formula-text1,
     .page-id-21 .formula-text2 {
@@ -2912,7 +2914,7 @@ object {
       line-height: 1.75rem;
       text-align: center;
       margin: 0 auto;
-      text-align: center; }
+      text-align: left; }
       @media all and (min-width: 760px) {
         .page-id-18 .main-copy-text p {
           padding: 0.75rem auto;
@@ -3011,7 +3013,7 @@ object {
       font-size: 1.2rem;
       line-height: 1.75rem;
       text-align: center;
-      text-align: center; }
+      text-align: left; }
       @media all and (min-width: 760px) {
         .page-id-18 .partners-information-container .partners-information p {
           padding: 0.75rem auto;
