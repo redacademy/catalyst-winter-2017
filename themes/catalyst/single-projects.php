@@ -35,25 +35,28 @@
             </div>
 
             <div class="proj-content">
-                <?php $description = esc_html( CFS()->get( 'description' ) );
-                if ( $description ) :?>
-                    <p><?php echo $description; ?></p>
+                <?php $client = esc_html( CFS()->get( 'project_client' ) );
+                if ( $client ) :?>
+                    <h3>Client: <p><?php echo $client; ?></p></h3>
                 <?php endif; ?>
 
-                <?php $structure = wp_kses_post(CFS()->get( 'structure' ) );
-                if ( $structure ) :?>
-                    <h3>Structure: <?php echo $structure; ?></h3>
+                <?php $description = esc_html( CFS()->get( 'description' ) );
+                if ( $description ) :?>
+                    <h3>Description: <p><?php echo $description; ?></p></h3>
                 <?php endif; ?>
 
                 <?php $cRole = CFS()->get( 'catalyst_role' );
-                
                 foreach ( $cRole as $key => $label ) :
                     if ( !($label === 'none') ) : ?>
                         <h3>Catalyst Role: <span><?php echo $label; ?></span></h3>
                     <?php endif;
                 endforeach; wp_reset_postdata(); ?>
-                
-                
+
+                <?php $affordability = wp_kses_post( CFS()->get( 'affordability' ) );
+                if ( $affordability ) :?>
+                    <h3>Affordability: </h3>
+                    <?php echo $affordability; ?>
+                <?php endif; ?>
 
                 <?php $partners = wp_kses_post( CFS()->get( 'partners' ) );
                 if ( $partners ) :?>
@@ -66,16 +69,9 @@
                     <?php echo $financing_grants; ?>
                 <?php endif; ?>
 
-                <?php $affordability = wp_kses_post( CFS()->get( 'affordability' ) );
-                if ( $affordability ) :?>
-                    <h3>Affordability: </h3>
-                    <?php echo $affordability; ?>
-                <?php endif; ?>
-
                 <?php $cost = esc_html( CFS()->get( 'cost' ) );
                 if ( $cost ) :?>
                     <h3>Total Project Cost: <span><?php echo $cost; ?></span></h3>
-                    
                 <?php endif; ?>
             </div>
     </section>
