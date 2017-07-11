@@ -45,10 +45,15 @@
                     <h3>Structure: <?php echo $structure; ?></h3>
                 <?php endif; ?>
 
-                <?php $cRole = wp_kses_post( CFS()->get( 'catalyst_role' ) );
-                if ( $cRole ) :?>
-                    <h3>Catalyst Role: <span><?php echo $cRole; ?></span></h3>
-                <?php endif; ?>
+                <?php $cRole = CFS()->get( 'catalyst_role' );
+                
+                foreach ( $cRole as $key => $label ) :
+                    if ( !($label === 'none') ) : ?>
+                        <h3>Catalyst Role: <span><?php echo $label; ?></span></h3>
+                    <?php endif;
+                endforeach; wp_reset_postdata(); ?>
+                
+                
 
                 <?php $partners = wp_kses_post( CFS()->get( 'partners' ) );
                 if ( $partners ) :?>
