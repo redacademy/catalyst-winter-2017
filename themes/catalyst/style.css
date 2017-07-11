@@ -1163,7 +1163,7 @@ textarea {
   .home .projects .project-name {
     margin: 0.75rem 0 0.5rem;
     font-weight: 700; }
-  .home .projects .project-name, .home .projects .project-location, .home .projects .project-status {
+  .home .projects .project-name {
     font-family: roboto_slab, serif;
     font-weight: 800; }
   .home .projects .project-status {
