@@ -441,7 +441,7 @@ textarea {
     input,
     select,
     textarea {
-      line-height: 2.25rem; } }
+      line-height: 1.75rem; } }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -554,13 +554,11 @@ table {
   margin: 0 auto 1.5rem;
   padding: 0.75rem 1rem;
   background-color: #D9F1FF;
-  text-align: center;
-  line-height: 2.4rem; }
+  text-align: center; }
   @media all and (min-width: 760px) {
     .blue-background-header {
       margin: 0 auto 2.5rem;
-      padding: 1rem 1.5rem;
-      line-height: 3.4rem; } }
+      padding: 1rem 1.5rem; } }
 
 .subheader-lrg {
   max-width: 400px;
@@ -1030,7 +1028,7 @@ textarea {
   @media all and (min-width: 760px) {
     .home p {
       font-size: 1.5rem;
-      line-height: 2.25rem; } }
+      line-height: 1.75rem; } }
 
 .home .hamburger-menu li {
   padding: 0 12px;
@@ -1104,7 +1102,7 @@ textarea {
     @media all and (min-width: 760px) {
       .home .header-text p {
         font-size: 1.5rem;
-        line-height: 2.25rem; } }
+        line-height: 2.5rem; } }
 
 .home .navigation-button {
   height: 70px;
@@ -1139,7 +1137,7 @@ textarea {
   @media all and (min-width: 760px) {
     .home .catalyst-formula-copy {
       margin: 4rem auto;
-      line-height: 2.25rem; } }
+      line-height: 1.75rem; } }
   @media all and (min-width: 1200px) {
     .home .catalyst-formula-copy {
       max-width: 860px; } }
@@ -1156,7 +1154,7 @@ textarea {
     @media all and (min-width: 760px) {
       .home .projects .our-projects-copy {
         margin: 4rem auto;
-        line-height: 2.25rem; } }
+        line-height: 1.75rem; } }
     @media all and (min-width: 1200px) {
       .home .projects .our-projects-copy {
         max-width: 860px; } }
@@ -1311,7 +1309,7 @@ textarea {
     @media all and (min-width: 760px) {
       .home .team .team-catalyst-copy {
         margin: 4rem auto;
-        line-height: 2.25rem; } }
+        line-height: 1.75rem; } }
     @media all and (min-width: 1200px) {
       .home .team .team-catalyst-copy {
         max-width: 860px; } }
@@ -1542,7 +1540,7 @@ object {
   @media all and (min-width: 760px) {
     .page-id-21 .banner-text {
       font-size: 1.5rem;
-      line-height: 2.25rem; } }
+      line-height: 2.5rem; } }
 
 .page-id-21 .intro-copy {
   height: auto;
@@ -1696,8 +1694,7 @@ object {
   @media all and (min-width: 760px) {
     .page-id-21 .quote,
     .page-id-21 .quote2 {
-      font-size: 2rem;
-      line-height: 2.75rem; } }
+      font-size: 2rem; } }
 
 .page-id-21 .quotation-left,
 .page-id-21 .quotation-left2 {
@@ -1713,16 +1710,16 @@ object {
       width: 75px; } }
 
 .page-id-21 .quotation-left {
-  top: -5px;
-  left: -30px; }
+  top: -12px;
+  left: 10px; }
   @media all and (min-width: 760px) {
     .page-id-21 .quotation-left {
       top: -10px;
       left: -40px; } }
 
 .page-id-21 .quotation-left2 {
-  top: 20px;
-  left: -25px; }
+  top: 10px;
+  left: 10px; }
   @media all and (min-width: 760px) {
     .page-id-21 .quotation-left2 {
       top: 10px;
@@ -1743,8 +1740,8 @@ object {
       width: 75px; } }
 
 .page-id-21 .quotation-right {
-  bottom: -8px;
-  right: -5px; }
+  bottom: 0px;
+  right: 10px; }
   @media all and (min-width: 760px) {
     .page-id-21 .quotation-right {
       bottom: -15px;
@@ -1752,7 +1749,7 @@ object {
 
 .page-id-21 .quotation-right2 {
   bottom: 15px;
-  right: -15px; }
+  right: 10px; }
   @media all and (min-width: 760px) {
     .page-id-21 .quotation-right2 {
       bottom: 8px;
@@ -1774,12 +1771,10 @@ object {
   margin: 0 auto; }
   @media all and (min-width: 760px) {
     .page-id-21 h4 {
-      margin: 10px;
       font-size: 25px; } }
 
 .page-id-21 .position {
   font-style: italic;
-  font-weight: 600;
   margin: 0;
   font-size: 20px; }
 
@@ -1940,7 +1935,7 @@ object {
   @media all and (min-width: 760px) {
     .page-id-159 {
       font-size: 1.5rem;
-      line-height: 2.25rem; } }
+      line-height: 1.75rem; } }
   .page-id-159 .header-text {
     max-width: 900px;
     color: white;
@@ -1971,7 +1966,7 @@ object {
     @media all and (min-width: 760px) {
       .page-id-159 .banner-text {
         font-size: 1.5rem;
-        line-height: 2.25rem; } }
+        line-height: 2.5rem; } }
   .page-id-159 .intro-copy {
     height: auto;
     width: 100%;
@@ -2310,7 +2305,6 @@ object {
     .board-profiles-wrapper .profile-popout article,
     .advisors-profiles-wrapper .profile-popout article {
       font-size: 1.2rem;
-      font-weight: 700;
       line-height: 1.75rem;
       display: inline; }
       .staff-profiles-wrapper .profile-popout article ul,
@@ -2455,7 +2449,7 @@ object {
   @media all and (min-width: 760px) {
     .advisors-copy {
       margin: 0 auto 3rem;
-      line-height: 2.25rem; } }
+      line-height: 1.75rem; } }
   @media all and (min-width: 1200px) {
     .advisors-copy {
       max-width: 860px; } }
@@ -2689,7 +2683,7 @@ object {
     @media all and (min-width: 760px) {
       .page-id-19 .banner-text {
         font-size: 1.5rem;
-        line-height: 2.25rem; } }
+        line-height: 2.5rem; } }
   .page-id-19 .entry-header {
     display: none; }
   .page-id-19 .navigation-button {
@@ -2846,7 +2840,7 @@ object {
   @media all and (min-width: 760px) {
     .page-id-18 {
       font-size: 1.5rem;
-      line-height: 2.25rem; } }
+      line-height: 1.75rem; } }
   .page-id-18 .header-text {
     max-width: 900px;
     color: white;
@@ -2879,7 +2873,7 @@ object {
     @media all and (min-width: 760px) {
       .page-id-18 .banner-text {
         font-size: 1.5rem;
-        line-height: 2.25rem; } }
+        line-height: 2.5rem; } }
   .page-id-18 .intro-copy {
     height: auto;
     width: 100%;
@@ -2923,7 +2917,7 @@ object {
         .page-id-18 .main-copy-text p {
           padding: 0.75rem auto;
           font-size: 1.5rem;
-          line-height: 2.25rem; } }
+          line-height: 1.75rem; } }
       @media all and (min-width: 1200px) {
         .page-id-18 .main-copy-text p {
           max-width: 860px; } }
@@ -2941,7 +2935,7 @@ object {
       .page-id-18 .main-copy1, .page-id-18 .main-copy2, .page-id-18 .main-copy3 {
         padding: 0.75rem auto;
         font-size: 1.5rem;
-        line-height: 2.25rem; } }
+        line-height: 1.75rem; } }
     @media all and (min-width: 1200px) {
       .page-id-18 .main-copy1, .page-id-18 .main-copy2, .page-id-18 .main-copy3 {
         max-width: 860px; } }
@@ -3022,7 +3016,7 @@ object {
         .page-id-18 .partners-information-container .partners-information p {
           padding: 0.75rem auto;
           font-size: 1.5rem;
-          line-height: 2.25rem; } }
+          line-height: 1.75rem; } }
       @media all and (min-width: 1200px) {
         .page-id-18 .partners-information-container .partners-information p {
           max-width: 860px; } }
@@ -3219,7 +3213,7 @@ object {
     @media all and (min-width: 760px) {
       .page-id-483 .header-text p {
         font-size: 1.5rem;
-        line-height: 2.25rem; } }
+        line-height: 2.5rem; } }
 
 .page-id-483 h2 {
   max-width: 900px; }
@@ -3231,7 +3225,7 @@ object {
   @media all and (min-width: 760px) {
     .page-id-483 p {
       font-size: 1.5rem;
-      line-height: 2.25rem; } }
+      line-height: 1.75rem; } }
 
 .page-id-483 ul {
   margin: 0;
@@ -3300,7 +3294,7 @@ object {
     @media all and (min-width: 760px) {
       .page-id-486 .header-text p {
         font-size: 1.5rem;
-        line-height: 2.25rem; } }
+        line-height: 2.5rem; } }
 
 .page-id-486 h2 {
   max-width: 900px; }
@@ -3312,7 +3306,7 @@ object {
   @media all and (min-width: 760px) {
     .page-id-486 p {
       font-size: 1.5rem;
-      line-height: 2.25rem; } }
+      line-height: 1.75rem; } }
 
 .page-id-486 ul {
   margin: 0;
@@ -3486,7 +3480,7 @@ object {
   @media all and (min-width: 760px) {
     .page-id-7 {
       font-size: 1.5rem;
-      line-height: 2.25rem; } }
+      line-height: 1.75rem; } }
   .page-id-7 .header-text {
     max-width: 900px;
     color: white;
@@ -3517,7 +3511,7 @@ object {
     @media all and (min-width: 760px) {
       .page-id-7 .banner-text {
         font-size: 1.5rem;
-        line-height: 2.25rem; } }
+        line-height: 2.5rem; } }
   .page-id-7 .banner-text-small {
     font-size: 0.9rem; }
     @media all and (min-width: 760px) {
@@ -3714,7 +3708,7 @@ object {
   @media all and (min-width: 760px) {
     .page-id-196 .banner-text {
       font-size: 1.5rem;
-      line-height: 2.25rem; } }
+      line-height: 2.5rem; } }
 
 .page-id-196 .intro-copy {
   height: auto;
@@ -3754,7 +3748,7 @@ object {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  line-height: 2.25rem; }
+  line-height: 1.75rem; }
 
 .page-id-196 .job-post {
   margin: 0 10%;
@@ -3866,7 +3860,7 @@ object {
   @media all and (min-width: 760px) {
     .page-id-195 .banner-text {
       font-size: 1.5rem;
-      line-height: 2.25rem; } }
+      line-height: 2.5rem; } }
 
 .page-id-195 .intro-copy {
   height: auto;
@@ -3895,8 +3889,7 @@ object {
   margin-bottom: 6rem; }
 
 .page-id-195 .subheader-name {
-  margin: 0;
-  line-height: 1.5; }
+  margin: 0; }
   @media all and (min-width: 760px) {
     .page-id-195 .subheader-name {
       display: inline-block; } }
@@ -3988,7 +3981,7 @@ object {
   @media all and (min-width: 760px) {
     .page-id-441 .banner-text {
       font-size: 1.5rem;
-      line-height: 2.25rem; } }
+      line-height: 2.5rem; } }
 
 .page-id-441 .intro-copy {
   height: auto;
@@ -4486,7 +4479,7 @@ object {
   @media all and (min-width: 760px) {
     .page-id-252 {
       font-size: 1.5rem;
-      line-height: 2.25rem; } }
+      line-height: 1.75rem; } }
   .page-id-252 .entry-title {
     display: none; }
   .page-id-252 .banner-text {

@@ -40,7 +40,7 @@
 	@include header-text-shadow;
 	@include media($desktop-width) {
 		font-size: $font__desktop-size;
-		line-height: $line-height-desktop;
+		line-height: $line-height-intro;
 	}
 }
 

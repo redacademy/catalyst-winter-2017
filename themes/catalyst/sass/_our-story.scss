@@ -105,7 +105,7 @@
         margin: 1.5rem 0;
         text-align: center;
         font-size: 1.5rem;
-        line-height: 2.2rem;
+        line-height: $line-height-quotes;
         font-weight: 100;
         width: 100%;
         font-family: $font__secondary;
@@ -113,7 +113,6 @@
         padding: 0 0.5rem;
         @include media($desktop-width) {
             font-size: 2rem;
-            line-height: 2.75rem;
         }
     }
     .quotation-left,
@@ -129,16 +128,16 @@
         }
     }
     .quotation-left {
-        top: -5px;
-        left: -30px;
+        top: -12px;
+        left: 10px;
         @include media( $desktop-width ) {
             top: -10px;
             left: -40px;
         }
     }
     .quotation-left2 {
-        top: 20px;
-        left: -25px;
+        top: 10px;
+        left: 10px;
         @include media($desktop-width) {
             top: 10px;
             left: -20px;
@@ -158,8 +157,8 @@
         }
     }
     .quotation-right {
-        bottom: -8px;
-        right: -5px;
+        bottom: 0px;
+        right: 10px;
         @include media($desktop-width) {
             bottom: -15px;
             right: -15px;
@@ -167,7 +166,7 @@
     }
     .quotation-right2 {
         bottom: 15px;
-        right: -15px;
+        right: 10px;
         @include media($desktop-width) {
             bottom: 8px;
             right: -10px;
@@ -190,13 +189,11 @@
         font-weight: $font__bold;
         margin: 0 auto;
         @include media($desktop-width) {
-            margin: 10px;
             font-size: 25px;
         }
     }
     .position {
         font-style: italic;
-        font-weight: $font__semibold;
         margin: 0;
         font-size: 20px;
     }
