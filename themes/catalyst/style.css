@@ -399,14 +399,14 @@ th {
   font-family: 'roboto_slab';
   src: url("../../fonts/robotoslab-bold-webfont.eot");
   src: url("../../fonts/robotoslab-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/robotoslab-bold-webfont.woff2") format("woff2"), url("../../fonts/robotoslab-bold-webfont.woff") format("woff"), url("../../fonts/robotoslab-bold-webfont.ttf") format("truetype"), url("../../fonts/robotoslab-bold-webfont.svg#roboto_slabbold") format("svg");
-  font-weight: normal;
+  font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: 'roboto_slab';
   src: url("../../fonts/robotoslab-light-webfont.eot");
   src: url("../../fonts/robotoslab-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/robotoslab-light-webfont.woff2") format("woff2"), url("../../fonts/robotoslab-light-webfont.woff") format("woff"), url("../../fonts/robotoslab-light-webfont.ttf") format("truetype"), url("../../fonts/robotoslab-light-webfont.svg#roboto_slablight") format("svg");
-  font-weight: normal;
+  font-weight: 300;
   font-style: normal; }
 
 @font-face {
@@ -420,7 +420,7 @@ th {
   font-family: 'roboto_slab';
   src: url("../../fonts/robotoslab-thin-webfont.eot");
   src: url("../../fonts/robotoslab-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/robotoslab-thin-webfont.woff2") format("woff2"), url("../../fonts/robotoslab-thin-webfont.woff") format("woff"), url("../../fonts/robotoslab-thin-webfont.ttf") format("truetype"), url("../../fonts/robotoslab-thin-webfont.svg#roboto_slabthin") format("svg");
-  font-weight: normal;
+  font-weight: 100;
   font-style: normal; }
 
 /*--------------------------------------------------------------
@@ -566,7 +566,7 @@ table {
   max-width: 400px;
   margin: 0 auto;
   font-size: 1.85rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #323232;
   line-height: 2.4rem;
   text-transform: uppercase; }
@@ -811,7 +811,6 @@ textarea {
         text-decoration: none;
         padding: 12px 12px 12px;
         font-size: 1rem;
-        font-weight: 800;
         color: #323232;
         text-transform: uppercase; }
         @media all and (min-width: 760px) {
@@ -913,7 +912,7 @@ textarea {
   .footer #text-2 p {
     width: auto;
     font-family: asap, sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 0.85rem;
     text-transform: uppercase;
     display: inline-block; }
@@ -1083,8 +1082,8 @@ textarea {
   .home .header-text h1 {
     margin-bottom: 1rem;
     font-size: 2.5rem;
-    font-weight: 600;
     text-transform: uppercase;
+    font-weight: 400;
     text-shadow: 1px 2px 5px #323232;
     margin: 0 auto 2rem; }
     @media all and (min-width: 760px) {
@@ -1096,7 +1095,7 @@ textarea {
     width: 90%;
     font-size: 1.25rem;
     font-family: asap, sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     margin: 1.5rem auto;
     line-height: 1.75rem;
     letter-spacing: 2px;
@@ -1114,7 +1113,7 @@ textarea {
   border: 2px solid #323232;
   font-size: 1.35rem;
   color: #323232;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
   display: -ms-flexbox;
@@ -1163,7 +1162,7 @@ textarea {
         max-width: 860px; } }
   .home .projects .project-name {
     margin: 0.75rem 0 0.5rem;
-    font-weight: 800; }
+    font-weight: 700; }
   .home .projects .project-name, .home .projects .project-location, .home .projects .project-status {
     font-family: roboto_slab, serif;
     font-weight: 800; }
@@ -1243,7 +1242,7 @@ textarea {
     margin-bottom: 2rem; }
   .home .projects .person, .home .projects .line {
     font-size: 1.5rem;
-    font-weight: 800;
+    font-weight: 700;
     margin: 0; }
   .home .projects .line {
     font-style: italic; }
@@ -1298,7 +1297,7 @@ textarea {
       margin: 0; }
     .home .team .member .member-name {
       font-size: 1.4rem;
-      font-weight: 800; }
+      font-weight: 700; }
     .home .team .member .position {
       font-style: italic;
       font-size: 1.2rem;
@@ -1319,7 +1318,7 @@ textarea {
       .home .team .team-catalyst-copy {
         max-width: 860px; } }
   .home .team .small-subheader {
-    font-weight: 800;
+    font-weight: 700;
     font-size: 1.5rem;
     line-height: 1.8rem;
     width: 300px;
@@ -1523,8 +1522,8 @@ object {
 .page-id-21 .entry-title {
   margin-bottom: 1rem;
   font-size: 2.5rem;
-  font-weight: 600;
   text-transform: uppercase;
+  font-weight: 400;
   text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 760px) {
     .page-id-21 .entry-title {
@@ -1536,7 +1535,7 @@ object {
   width: 90%;
   font-size: 1.25rem;
   font-family: asap, sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   margin: 1.5rem auto;
   line-height: 1.75rem;
   letter-spacing: 2px;
@@ -1579,7 +1578,7 @@ object {
   @media all and (min-width: 760px) {
     .page-id-21 h3 {
       font-size: 40px;
-      font-weight: 800;
+      font-weight: 700;
       line-height: 55px;
       margin-bottom: 30px;
       padding: 20px 0 0;
@@ -1592,7 +1591,7 @@ object {
   border: 2px solid #323232;
   font-size: 1.35rem;
   color: #323232;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
   display: -ms-flexbox;
@@ -1616,7 +1615,7 @@ object {
   border: 2px solid #323232;
   font-size: 1.35rem;
   color: #323232;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
   display: -ms-flexbox;
@@ -1773,7 +1772,7 @@ object {
 
 .page-id-21 h4 {
   font-size: 20px;
-  font-weight: 800;
+  font-weight: 700;
   margin: 0 auto; }
   @media all and (min-width: 760px) {
     .page-id-21 h4 {
@@ -1842,7 +1841,7 @@ object {
       height: 180px; }
     .page-id-21 .mission-content .mission-image h5 {
       font-family: asap, sans-serif;
-      font-weight: 800;
+      font-weight: 700;
       font-size: 20px;
       text-transform: uppercase;
       width: 100%;
@@ -1952,8 +1951,8 @@ object {
   .page-id-159 .entry-title {
     margin-bottom: 1rem;
     font-size: 2.5rem;
-    font-weight: 600;
     text-transform: uppercase;
+    font-weight: 400;
     text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 760px) {
       .page-id-159 .entry-title {
@@ -1965,7 +1964,7 @@ object {
     width: 90%;
     font-size: 1.25rem;
     font-family: asap, sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     margin: 1.5rem auto;
     line-height: 1.75rem;
     letter-spacing: 2px;
@@ -2052,7 +2051,7 @@ object {
 .enter-button span {
   position: relative;
   bottom: 2.5px;
-  font-weight: 800; }
+  font-weight: 700; }
 
 .exit-button {
   font-weight: 400;
@@ -2175,7 +2174,7 @@ object {
     .board-profiles-wrapper .profile-popout a,
     .advisors-profiles-wrapper .profile-popout a {
       color: #4A4A4A;
-      font-weight: 800;
+      font-weight: 700;
       text-decoration: none; }
       .staff-profiles-wrapper .profile-popout a:hover,
       .board-profiles-wrapper .profile-popout a:hover,
@@ -2229,7 +2228,7 @@ object {
       max-width: 345px;
       margin-bottom: 1.5rem;
       font-size: 1.5rem;
-      font-weight: 800;
+      font-weight: 700;
       font-style: italic;
       line-height: 2.25rem;
       text-align: center;
@@ -2313,7 +2312,7 @@ object {
     .board-profiles-wrapper .profile-popout article,
     .advisors-profiles-wrapper .profile-popout article {
       font-size: 1.2rem;
-      font-weight: 800;
+      font-weight: 700;
       line-height: 1.75rem;
       display: inline; }
       .staff-profiles-wrapper .profile-popout article ul,
@@ -2387,7 +2386,7 @@ object {
       border: 2px solid #323232;
       font-size: 1.35rem;
       color: #323232;
-      font-weight: 800;
+      font-weight: 700;
       text-transform: uppercase;
       text-decoration: none;
       display: -ms-flexbox;
@@ -2437,7 +2436,7 @@ object {
 .small-header {
   margin: 1.5rem auto 1rem;
   font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase; }
   @media all and (min-width: 760px) {
@@ -2545,7 +2544,7 @@ object {
       display: block; } }
   .staff-template-default .profile-popout a, .board-template-default .profile-popout a {
     color: #4A4A4A;
-    font-weight: 800;
+    font-weight: 700;
     text-decoration: none; }
     .staff-template-default .profile-popout a:hover, .board-template-default .profile-popout a:hover {
       color: #935E32; }
@@ -2579,7 +2578,7 @@ object {
     max-width: 345px;
     margin-bottom: 1.5rem;
     font-size: 1.5rem;
-    font-weight: 800;
+    font-weight: 700;
     font-style: italic;
     line-height: 2.25rem;
     text-align: center;
@@ -2643,7 +2642,7 @@ object {
         line-height: 2.3rem; } }
   .staff-template-default .profile-popout article, .board-template-default .profile-popout article {
     font-size: 1.2rem;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1.75rem;
     display: inline; }
     .staff-template-default .profile-popout article ul, .board-template-default .profile-popout article ul {
@@ -2671,8 +2670,8 @@ object {
   .page-id-19 .entry-title {
     margin-bottom: 1rem;
     font-size: 2.5rem;
-    font-weight: 600;
     text-transform: uppercase;
+    font-weight: 400;
     text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 760px) {
       .page-id-19 .entry-title {
@@ -2683,7 +2682,7 @@ object {
     width: 90%;
     font-size: 1.25rem;
     font-family: asap, sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     margin: 1.5rem auto;
     line-height: 1.75rem;
     letter-spacing: 2px;
@@ -2702,7 +2701,7 @@ object {
     border: 2px solid #323232;
     font-size: 1.35rem;
     color: #323232;
-    font-weight: 800;
+    font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
     display: -ms-flexbox;
@@ -2785,7 +2784,7 @@ object {
         line-height: 1.5rem; }
       .page-id-19 .newsmedia-article .article-content h3 {
         margin: 8px 0;
-        font-weight: 800; }
+        font-weight: 700; }
     .page-id-19 .newsmedia-article .hentry {
       font-size: 14px; }
       .page-id-19 .newsmedia-article .hentry p {
@@ -2797,7 +2796,7 @@ object {
       font-weight: 300; }
     .page-id-19 .newsmedia-article .cfs-hyperlink {
       color: #4A4A4A;
-      font-weight: 800;
+      font-weight: 700;
       text-decoration: none;
       text-transform: uppercase;
       padding: 5px 15px; }
@@ -2860,8 +2859,8 @@ object {
   .page-id-18 .entry-title {
     margin-bottom: 1rem;
     font-size: 2.5rem;
-    font-weight: 600;
     text-transform: uppercase;
+    font-weight: 400;
     text-shadow: 1px 2px 5px #323232;
     font-size: 3.25rem; }
     @media all and (min-width: 760px) {
@@ -2873,7 +2872,7 @@ object {
     width: 90%;
     font-size: 1.25rem;
     font-family: asap, sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     margin: 1.5rem auto;
     line-height: 1.75rem;
     letter-spacing: 2px;
@@ -2955,7 +2954,7 @@ object {
     border: 2px solid #323232;
     font-size: 1.35rem;
     color: #323232;
-    font-weight: 800;
+    font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
     display: -ms-flexbox;
@@ -3002,7 +3001,7 @@ object {
       margin-top: 4rem;
       margin-bottom: 1.25rem;
       font-size: 1.75rem;
-      font-weight: 800;
+      font-weight: 700;
       color: #4A4A4A;
       text-align: center;
       text-transform: uppercase;
@@ -3201,8 +3200,8 @@ object {
   .page-id-483 .header-text h1 {
     margin-bottom: 1rem;
     font-size: 2.5rem;
-    font-weight: 600;
     text-transform: uppercase;
+    font-weight: 400;
     text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 760px) {
       .page-id-483 .header-text h1 {
@@ -3213,7 +3212,7 @@ object {
     width: 90%;
     font-size: 1.25rem;
     font-family: asap, sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     margin: 1.5rem auto;
     line-height: 1.75rem;
     letter-spacing: 2px;
@@ -3282,8 +3281,8 @@ object {
   .page-id-486 .header-text h1 {
     margin-bottom: 1rem;
     font-size: 2.5rem;
-    font-weight: 600;
     text-transform: uppercase;
+    font-weight: 400;
     text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 760px) {
       .page-id-486 .header-text h1 {
@@ -3294,7 +3293,7 @@ object {
     width: 90%;
     font-size: 1.25rem;
     font-family: asap, sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     margin: 1.5rem auto;
     line-height: 1.75rem;
     letter-spacing: 2px;
@@ -3440,7 +3439,7 @@ object {
 
 .person, .line {
   font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 700;
   margin: 0; }
 
 .line {
@@ -3498,8 +3497,8 @@ object {
   .page-id-7 .entry-title {
     margin-bottom: 1rem;
     font-size: 2.5rem;
-    font-weight: 600;
     text-transform: uppercase;
+    font-weight: 400;
     text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 760px) {
       .page-id-7 .entry-title {
@@ -3511,7 +3510,7 @@ object {
     width: 90%;
     font-size: 1.25rem;
     font-family: asap, sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     margin: 1.5rem auto;
     line-height: 1.75rem;
     letter-spacing: 2px;
@@ -3650,7 +3649,7 @@ object {
     .page-id-7 .wpcf7 .wpcf7-submit {
       width: 200px;
       font-family: roboto_slab, serif;
-      font-weight: 800;
+      font-weight: 700;
       background-color: #fff;
       border: 2px solid #323232;
       font-size: 1rem;
@@ -3665,7 +3664,7 @@ object {
     border: 2px solid #323232;
     font-size: 1.35rem;
     color: #323232;
-    font-weight: 800;
+    font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
     display: -ms-flexbox;
@@ -3695,8 +3694,8 @@ object {
 .page-id-196 .entry-title {
   margin-bottom: 1rem;
   font-size: 2.5rem;
-  font-weight: 600;
   text-transform: uppercase;
+  font-weight: 400;
   text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 760px) {
     .page-id-196 .entry-title {
@@ -3708,7 +3707,7 @@ object {
   width: 90%;
   font-size: 1.25rem;
   font-family: asap, sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   margin: 1.5rem auto;
   line-height: 1.75rem;
   letter-spacing: 2px;
@@ -3747,7 +3746,7 @@ object {
       align-items: center; }
 
 .page-id-196 .page-title {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 1.8rem;
   color: #323232;
   text-transform: uppercase;
@@ -3768,7 +3767,7 @@ object {
   border-bottom: none; }
 
 .page-id-196 .job-title {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 1.5rem;
   text-align: center;
   color: #4A4A4A;
@@ -3787,7 +3786,7 @@ object {
 
 .page-id-196 .role {
   text-transform: uppercase;
-  font-weight: 800; }
+  font-weight: 700; }
 
 .page-id-196 .resp-container {
   font-family: asap, sans-serif;
@@ -3806,7 +3805,7 @@ object {
 
 .page-id-196 .responsibilities {
   text-transform: uppercase;
-  font-weight: 800; }
+  font-weight: 700; }
 
 .page-id-196 .role, .page-id-196 .responsibilities {
   margin-bottom: 0.5rem; }
@@ -3821,7 +3820,7 @@ object {
   border: 2px solid #323232;
   font-size: 1.35rem;
   color: #323232;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
   display: -ms-flexbox;
@@ -3847,8 +3846,8 @@ object {
 .page-id-195 .entry-title {
   margin-bottom: 1rem;
   font-size: 2.5rem;
-  font-weight: 600;
   text-transform: uppercase;
+  font-weight: 400;
   text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 760px) {
     .page-id-195 .entry-title {
@@ -3860,7 +3859,7 @@ object {
   width: 90%;
   font-size: 1.25rem;
   font-family: asap, sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   margin: 1.5rem auto;
   line-height: 1.75rem;
   letter-spacing: 2px;
@@ -3945,7 +3944,7 @@ object {
   border: 2px solid #323232;
   font-size: 1.35rem;
   color: #323232;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
   display: -ms-flexbox;
@@ -3972,8 +3971,8 @@ object {
 .page-id-441 .entry-title {
   margin-bottom: 1rem;
   font-size: 2.5rem;
-  font-weight: 600;
   text-transform: uppercase;
+  font-weight: 400;
   text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 760px) {
     .page-id-441 .entry-title {
@@ -3985,7 +3984,7 @@ object {
   width: 90%;
   font-size: 1.25rem;
   font-family: asap, sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   margin: 1.5rem auto;
   line-height: 1.75rem;
   letter-spacing: 2px;
@@ -4074,7 +4073,7 @@ object {
   border: 2px solid #323232;
   font-size: 1.35rem;
   color: #323232;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
   display: -ms-flexbox;
@@ -4140,7 +4139,7 @@ object {
       line-height: 1.75rem; } }
   .single-projects .proj-content h3 {
     margin-bottom: 0.5rem;
-    font-weight: 800; }
+    font-weight: 700; }
   .single-projects .proj-content ul {
     margin: 1.5rem auto; }
   .single-projects .proj-content li {
@@ -4236,10 +4235,10 @@ object {
   margin-bottom: 2rem;
   margin-top: 4rem;
   font-family: asap, sans-serif;
-  font-weight: 800; }
+  font-weight: 700; }
 
 .single-projects .person {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 1.3rem;
   margin: 0;
   color: #4A4A4A; }
@@ -4257,7 +4256,7 @@ object {
   border: 2px solid #323232;
   font-size: 1.35rem;
   color: #323232;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
   display: -ms-flexbox;
@@ -4306,7 +4305,7 @@ object {
       display: inline;
       text-transform: uppercase; }
   .single-projects .other-proj-wrapper .project-name {
-    font-weight: 800;
+    font-weight: 700;
     margin-top: 1rem; }
   .single-projects .other-proj-wrapper .project-location,
   .single-projects .other-proj-wrapper .project-status {
@@ -4474,7 +4473,7 @@ object {
 .single-renters .contact .wpcf7-submit {
   width: 200px;
   font-family: roboto_slab, serif;
-  font-weight: 800;
+  font-weight: 700;
   background-color: #fff;
   border: 2px solid #323232;
   font-size: 1rem;
@@ -4508,8 +4507,8 @@ object {
   .page-id-252 .banner-text {
     margin-bottom: 1rem;
     font-size: 2.5rem;
-    font-weight: 600;
     text-transform: uppercase;
+    font-weight: 400;
     text-shadow: 1px 2px 5px #323232;
     margin: 0 auto;
     color: white;
@@ -4535,7 +4534,7 @@ object {
   .page-id-252 .top-message {
     line-height: 1; }
   .page-id-252 .thanks {
-    font-weight: 800;
+    font-weight: 700;
     font-size: 2rem;
     text-transform: uppercase;
     margin: 0; }

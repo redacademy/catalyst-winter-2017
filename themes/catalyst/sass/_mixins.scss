@@ -19,8 +19,8 @@
 @mixin page-title {
 	margin-bottom: 1rem;
 	font-size: 2.5rem;
-	font-weight: $font__semibold;
 	text-transform: uppercase;
+	font-weight: $font__normal;
 	@include header-text-shadow;
 	@include media($desktop-width) {
 		margin-bottom: 2rem;
