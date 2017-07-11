@@ -55,3 +55,14 @@
 .left-align {
 	text-align: left;
 }
+
+.infographic-container {
+	padding: 0 1rem;
+}
+.infographic-img {
+	overflow: auto;
+    width: 100%;
+	img {
+		min-width: 768px;
+	}
+}

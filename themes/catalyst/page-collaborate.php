@@ -26,7 +26,9 @@ get_header(); ?>
 			</div>
 
 			<div class="infographic-container">
-				<img class="business-model-diagram" src="<?php echo esc_attr( get_the_post_thumbnail_url() ); ?>">
+				<div class="infographic-img">
+					<img src="<?php echo CFS()->get('infographic_img'); ?>" alt="">
+				</div>
 			</div>
 		</section>
 

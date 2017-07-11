@@ -26,8 +26,12 @@
             if ( !empty( $catalyst_formula_copy ) ) :?>
             <p class="catalyst-formula-copy"><?php echo $catalyst_formula_copy; ?></p>
             <?php endif; ?>
+            <div class="infographic-container">
+                <div class="infographic-img">
+                    <img src="<?php echo CFS()->get('infographic_img'); ?>" alt="">
+                </div>
+            </div>
 
-            <?php get_template_part( 'template-parts/ourStory-carousel', 'projects carousel' ); ?>
             <a class="navigation-button" href="<?php echo get_home_url(); ?>/our-story">learn more</a>
         </div>
 

@@ -577,6 +577,15 @@ table {
 .left-align {
   text-align: left; }
 
+.infographic-container {
+  padding: 0 1rem; }
+
+.infographic-img {
+  overflow: auto;
+  width: 100%; }
+  .infographic-img img {
+    min-width: 768px; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -3027,89 +3036,6 @@ object {
       @media all and (min-width: 760px) {
         .page-id-18 .partners-information-container .partners-copy:nth-child(3), .page-id-18 .partners-information-container .investors-copy:nth-child(3) {
           margin-bottom: 3rem; } }
-
-.infographic-container {
-  height: auto;
-  width: 100%;
-  padding: 0.5rem 0 1.5rem;
-  text-align: center;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: column nowrap;
-      flex-flow: column nowrap;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  position: relative; }
-  .infographic-container .business-model-diagram {
-    height: auto;
-    width: 80%;
-    max-width: 650px; }
-    @media all and (min-width: 760px) {
-      .infographic-container .business-model-diagram {
-        height: 530px; } }
-  .infographic-container .key-graphic-1 {
-    display: none; }
-    @media all and (min-width: 760px) {
-      .infographic-container .key-graphic-1 {
-        width: 85px;
-        position: absolute;
-        top: 15%;
-        left: 16%;
-        opacity: .5;
-        transform: rotate(25deg);
-        display: inline; } }
-  .infographic-container .key-graphic-2 {
-    display: none; }
-    @media all and (min-width: 760px) {
-      .infographic-container .key-graphic-2 {
-        width: 55px;
-        position: absolute;
-        top: 19.5%;
-        left: 18.75%;
-        transform: rotate(-25deg);
-        display: inline; } }
-  .infographic-container .dollar-sign-graphic-1 {
-    display: none; }
-    @media all and (min-width: 760px) {
-      .infographic-container .dollar-sign-graphic-1 {
-        position: absolute;
-        top: 14%;
-        right: 16%;
-        opacity: 0.5;
-        display: inline; } }
-  .infographic-container .dollar-sign-graphic-2 {
-    display: none; }
-    @media all and (min-width: 760px) {
-      .infographic-container .dollar-sign-graphic-2 {
-        width: 65px;
-        position: absolute;
-        top: 25%;
-        right: 19%;
-        display: inline; } }
-  .infographic-container .green-line-graphic-1 {
-    display: none; }
-    @media all and (min-width: 760px) {
-      .infographic-container .green-line-graphic-1 {
-        height: auto;
-        width: 150px;
-        position: absolute;
-        top: 9.75rem;
-        left: 24.35%;
-        transform: rotate(-117deg);
-        display: inline; } }
-  .infographic-container .green-line-graphic-2 {
-    display: none; }
-    @media all and (min-width: 760px) {
-      .infographic-container .green-line-graphic-2 {
-        height: auto;
-        width: 150px;
-        position: absolute;
-        top: 9.55rem;
-        left: 65.5%;
-        transform: rotate(-3deg);
-        display: inline; } }
 
 .supporters-logo-container {
   height: auto;
