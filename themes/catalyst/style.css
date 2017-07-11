@@ -4098,7 +4098,6 @@ object {
   font-size: 4rem;
   line-height: 1;
   margin-bottom: 1rem;
-  font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase; }
 
@@ -4283,17 +4282,13 @@ object {
   @media all and (min-width: 760px) {
     .single-projects .other-proj-wrapper {
       width: 50%; } }
-  .single-projects .other-proj-wrapper .project-name,
-  .single-projects .other-proj-wrapper .project-location,
-  .single-projects .other-proj-wrapper .project-status {
-    display: none; }
-    @media all and (min-width: 760px) {
-      .single-projects .other-proj-wrapper .project-name,
-      .single-projects .other-proj-wrapper .project-location,
-      .single-projects .other-proj-wrapper .project-status {
-        display: block;
-        margin: 0 auto;
-        font-size: 1.2rem; } }
+  @media all and (min-width: 760px) {
+    .single-projects .other-proj-wrapper .project-name,
+    .single-projects .other-proj-wrapper .project-location,
+    .single-projects .other-proj-wrapper .project-status {
+      display: block;
+      margin: 0 auto;
+      font-size: 1.2rem; } }
   .single-projects .other-proj-wrapper .project-name {
     font-weight: 700;
     margin-top: 1rem; }

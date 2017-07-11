@@ -13,7 +13,6 @@
             font-size: 4rem;
             line-height: 1;
             margin-bottom: 1rem;
-            font-weight: $font__semibold;
             letter-spacing: 1px;
             text-transform: uppercase;
         }
@@ -182,7 +181,6 @@
         .project-name,
         .project-location,
         .project-status {
-            display: none;
             @include media ($desktop-width) {
                 display: block;
                 margin: 0 auto;
