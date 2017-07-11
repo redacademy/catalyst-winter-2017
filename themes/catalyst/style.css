@@ -4228,17 +4228,25 @@ object {
   margin-bottom: 2rem;
   margin-top: 4rem;
   font-family: asap, sans-serif;
-  font-weight: 700; }
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2.2rem; }
+  @media all and (min-width: 760px) {
+    .single-projects .quote-text {
+      font-size: 2rem;
+      line-height: 2.75rem; } }
 
 .single-projects .person {
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin: 0;
-  color: #4A4A4A; }
+  color: #4A4A4A;
+  font-style: normal; }
 
 .single-projects .line {
-  font-weight: 600;
+  font-weight: 400;
   font-style: italic;
+  font-size: 1.3rem;
   margin: 0;
   color: #4A4A4A; }
 
