@@ -9,196 +9,216 @@
 
     $hamburgerIcon.click(function () {
 
-            $hamburgerIcon.addClass('transparent').hide();
-            $mobileMenu.css({'width': '60vw', 'height': 'auto'}).addClass('opaque');
-            $crossIcon.addClass('opaque').show();
+        $hamburgerIcon.addClass('transparent').hide();
+        $mobileMenu.css({
+            'width': '60vw',
+            'height': 'auto'
+        }).addClass('opaque');
+        $crossIcon.addClass('opaque').show();
     });
 
     $crossIcon.click(function () {
 
-            $crossIcon.removeClass('opaque').hide();
-            $hamburgerIcon.removeClass('transparent').show();
-            $mobileMenu.removeClass('opaque').css('width', '0');
+        $crossIcon.removeClass('opaque').hide();
+        $hamburgerIcon.removeClass('transparent').show();
+        $mobileMenu.removeClass('opaque').css('width', '0');
     });
 
 
 
     // Toggle profile popout when enter/exit buttons are clicked (Our Team page)
 
-    var $staffEnterButtons = $( '.staff-enter-button' );
-    var $boardEnterButtons = $( '.board-enter-button' );
-    var $staffExitButton = $( '.staff-exit-button' );
-    var $boardExitButton = $( '.board-exit-button' );
+    var $staffEnterButtons = $('.staff-enter-button');
+    var $boardEnterButtons = $('.board-enter-button');
+    var $staffExitButton = $('.staff-exit-button');
+    var $boardExitButton = $('.board-exit-button');
 
     $staffExitButton.hide();
     $boardExitButton.hide();
 
-    var $staffProfilePreviews = $( '.staff-profile-preview' );
-    var $boardProfilePreviews = $( '.board-profile-preview' );
+    var $staffProfilePreviews = $('.staff-profile-preview');
+    var $boardProfilePreviews = $('.board-profile-preview');
 
-    var $staffProfileImages = $( '.staff-profile-preview > .profile-image' );
-    var $boardProfileImages = $( '.board-profile-preview > .profile-image' );
+    var $staffProfileImages = $('.staff-profile-preview > .profile-image');
+    var $boardProfileImages = $('.board-profile-preview > .profile-image');
 
-    var $staffProfilePopouts = $( '.staff-profile-popout' );
-    var $boardProfilePopouts = $( '.board-profile-popout' );
+    var $staffProfilePopouts = $('.staff-profile-popout');
+    var $boardProfilePopouts = $('.board-profile-popout');
 
-    var $staffProfilesWrapper = $( '.staff-profiles-wrapper' );
-    var $staffProfilesHeader = $( '.staff-profiles-wrapper > .small-header:nth-child(1)' );
-    var $catalystTeamHeader = $( '.our-team-header' );
+    var $staffProfilesWrapper = $('.staff-profiles-wrapper');
+    var $staffProfilesHeader = $('.staff-profiles-wrapper > .small-header:nth-child(1)');
+    var $catalystTeamHeader = $('.our-team-header');
 
-    var $boardProfilesWrapper = $( '.board-profiles-wrapper' );
-    var $boardProfilesHeader = $( '.board-profiles-header' );
+    var $boardProfilesWrapper = $('.board-profiles-wrapper');
+    var $boardProfilesHeader = $('.board-profiles-header');
 
-    var $advisorsProfilesWrapper = $( '.advisors-profiles-wrapper' );
-    var $introCopy = $( '.intro-copy' );
+    var $advisorsProfilesWrapper = $('.advisors-profiles-wrapper');
+    var $introCopy = $('.intro-copy');
 
 
     // Function to show staff popouts.
 
     function showStaffPopout($targetArray) {
-        $targetArray.on('click', function(){
+        $('.blue-background-header').hide();
 
-            var targetIndex = jQuery.inArray( this, $targetArray );
+        $targetArray.on('click', function () {
+
+            var targetIndex = jQuery.inArray(this, $targetArray);
             var thisPopout = $staffProfilePopouts[targetIndex];
-            thisPopout = $( thisPopout );
+            thisPopout = $(thisPopout);
 
             // Grey-out the rest of the page content.
-
-            $boardProfilesWrapper.animate({opacity: 0.25}, 130);
-            $advisorsProfilesWrapper.animate({opacity: 0.25}, 130);
-            $introCopy.animate({opacity: 0.25}, 130);
+            $('.blue-background-header').show();
+            $boardProfilesWrapper.animate({
+                opacity: 0.25
+            }, 130);
+            $advisorsProfilesWrapper.animate({
+                opacity: 0.25
+            }, 130);
+            $introCopy.animate({
+                opacity: 0.25
+            }, 130);
 
             // Clear the active profiles section of inactive profiles and show only the active profile popout.
 
             $staffProfilesHeader.hide();
             $staffProfilePreviews.hide();
             $staffProfilePopouts.hide();
-            $staffProfilesWrapper.css( 'margin-top', '-0.75rem' );
+            $staffProfilesWrapper.css('margin-top', '-0.75rem');
 
-            thisPopout.show().addClass( 'show-popout' );
-            scrollToPopout( thisPopout, $catalystTeamHeader );
+            thisPopout.show().addClass('show-popout');
+            scrollToPopout(thisPopout, $catalystTeamHeader);
             $staffExitButton.show(130);
 
-            hideStaffPopout( thisPopout );
+            hideStaffPopout(thisPopout);
+        });
+        $targetArray.off('click', function () {
+            $('.blue-background-header').hide();
         });
     }
 
     // Function to show board profile popouts.
 
-    function showBoardPopout( $targetArray ) {
-        $targetArray.on( 'click', function() {
-            var targetIndex = jQuery.inArray( this, $targetArray );
+    function showBoardPopout($targetArray) {
+        $targetArray.on('click', function () {
+            var targetIndex = jQuery.inArray(this, $targetArray);
             var thisPopout = $boardProfilePopouts[targetIndex];
-            thisPopout = $( thisPopout );
+            thisPopout = $(thisPopout);
 
             // Grey-out the rest of the page content.
 
-            $staffProfilesWrapper.animate( {opacity: 0.25}, 130 );
-            $advisorsProfilesWrapper.animate( {opacity: 0.25}, 130 );
-            $introCopy.animate( {opacity: 0.25}, 130 );
+            $staffProfilesWrapper.animate({
+                opacity: 0.25
+            }, 130);
+            $advisorsProfilesWrapper.animate({
+                opacity: 0.25
+            }, 130);
+            $introCopy.animate({
+                opacity: 0.25
+            }, 130);
 
             // Clear the active profiles section of inactive profiles and show only the active profile popout.
 
-            $boardProfilesHeader.addClass( 'blue-background-header' ).css( 'margin-bottom', '0' );
+            $boardProfilesHeader.addClass('blue-background-header').css('margin-bottom', '3rem');
             $boardProfilePreviews.hide();
             $boardProfilePopouts.hide();
-            thisPopout.show().addClass( 'show-popout' );
-            scrollToPopout( thisPopout, $boardProfilesHeader );
+            thisPopout.show().addClass('show-popout');
+            scrollToPopout(thisPopout, $boardProfilesHeader);
             $boardExitButton.show();
 
-            hideBoardPopout( thisPopout );
+            hideBoardPopout(thisPopout);
         });
     }
 
     // FUnction to hide staff profile popouts.
 
-    function hideStaffPopout( $thisPopout ) {
+    function hideStaffPopout($thisPopout) {
         $staffExitButton.click(function () {
             $staffExitButton.hide();
-            $thisPopout.removeClass( 'show-popout' ).addClass( 'translucent' );
-            $staffProfilesWrapper.css( 'margin-top', '0' );
+            $thisPopout.removeClass('show-popout').addClass('translucent');
+            $staffProfilesWrapper.css('margin-top', '0');
             $staffProfilePreviews.show();
             $staffProfilesHeader.show();
-            $boardProfilesWrapper.css( 'opacity', '1' );
-            $advisorsProfilesWrapper.css( 'opacity', '1' );
-            $introCopy.css( 'opacity', '1' );
+            $boardProfilesWrapper.css('opacity', '1');
+            $advisorsProfilesWrapper.css('opacity', '1');
+            $introCopy.css('opacity', '1');
 
-            scrollToProfile( $thisPopout );
+            scrollToProfile($thisPopout);
         });
     }
 
     // FUnction to hide board profile popouts.
 
     function hideBoardPopout($thisPopout) {
-        $boardExitButton.click(function(){
+        $boardExitButton.click(function () {
             $boardExitButton.hide();
-            $thisPopout.removeClass( 'show-popout' ).addClass( 'translucent' );
-            $boardProfilesHeader.removeClass( 'blue-background-header' );
+            $thisPopout.removeClass('show-popout').addClass('translucent');
+            $boardProfilesHeader.removeClass('blue-background-header');
             $boardProfilePreviews.show();
-            $staffProfilesWrapper.css( 'opacity', '1' );
-            $advisorsProfilesWrapper.css( 'opacity', '1' );
-            $introCopy.css( 'opacity', '1' );
+            $staffProfilesWrapper.css('opacity', '1');
+            $advisorsProfilesWrapper.css('opacity', '1');
+            $introCopy.css('opacity', '1');
 
-            scrollToProfile( $thisPopout );
+            scrollToProfile($thisPopout);
         });
     }
 
     // Scroll to opened popout when it is opened
 
-    function scrollToPopout( $thisPopout, $sectionHeader ) {
-        $( 'html, body' ).animate({
-            scrollTop: ( $thisPopout.offset().top - ( $sectionHeader.height() * 2 ) )
+    function scrollToPopout($thisPopout, $sectionHeader) {
+        $('html, body').animate({
+            scrollTop: ($thisPopout.offset().top - ($sectionHeader.height() * 2))
         }, 50);
     }
 
     // Scroll to last viewed profile after popout is closed
 
-    function scrollToProfile( $thisPopout ) {
+    function scrollToProfile($thisPopout) {
         $('html, body').animate({
-            scrollTop: ( $thisPopout.prev().offset().top - ( $thisPopout.prev().height() / 2 ) )
+            scrollTop: ($thisPopout.prev().offset().top - ($thisPopout.prev().height() / 2))
         }, 0);
     }
 
     // On page load, set the open popouts functions to target either 'enter-button' (mobile) or 'profile-image' (desktop).
 
-    if ( $( window ).width() < 760 ) {
-        showStaffPopout( $staffEnterButtons );
-        showBoardPopout( $boardEnterButtons )
+    if ($(window).width() < 760) {
+        showStaffPopout($staffEnterButtons);
+        showBoardPopout($boardEnterButtons)
     } else {
-        showStaffPopout( $staffProfileImages );
-        showBoardPopout( $boardProfileImages );
+        showStaffPopout($staffProfileImages);
+        showBoardPopout($boardProfileImages);
     }
 
     // On window resize, set the appropriate open popout function and kill the one that is not being used.
 
-    $( window ).resize( function(){
-        if ( $( window ).width() < 760 ) {
-            $staffProfileImages.off( 'click' );
-            $boardProfileImages.off( 'click' );
-            showStaffPopout( $staffEnterButtons );
-            showBoardPopout( $boardEnterButtons );
+    $(window).resize(function () {
+        if ($(window).width() < 760) {
+            $staffProfileImages.off('click');
+            $boardProfileImages.off('click');
+            showStaffPopout($staffEnterButtons);
+            showBoardPopout($boardEnterButtons);
         } else {
             $staffEnterButtons.off('click');
-            $boardEnterButtons.off( 'click' );
-            showStaffPopout( $staffProfileImages );
-            showBoardPopout( $boardProfileImages );
+            $boardEnterButtons.off('click');
+            showStaffPopout($staffProfileImages);
+            showBoardPopout($boardProfileImages);
         }
     });
 
     // Load more posts when user clicks button on news & media page.
 
-    var $postsContainer = $( '.newsmedia-article' );
-    var $loadPostsButton = $( '#load-more-button' );
+    var $postsContainer = $('.newsmedia-article');
+    var $loadPostsButton = $('#load-more-button');
     var renderedArticles = 5;
     var apiLink = api_vars.ajax_url + 'news/?&_embed=true';
 
-    function formatDate( myDate ) {
-        var formattedDate = addLeadingZero( myDate.getDate() ) + ', ' + ( '0' + ( myDate.getMonth() + 1 ) ).slice( -2 ) + ', ' + myDate.getFullYear();
+    function formatDate(myDate) {
+        var formattedDate = addLeadingZero(myDate.getDate()) + ', ' + ('0' + (myDate.getMonth() + 1)).slice(-2) + ', ' + myDate.getFullYear();
         return formattedDate;
     }
 
-    function addLeadingZero( date ) {
-        if ( date < 10 ) {
+    function addLeadingZero(date) {
+        if (date < 10) {
             date = '0' + date;
             return date;
         } else {
@@ -206,18 +226,18 @@
         }
     }
 
-    function constructArticleContent( formattedDate, articleTitle, articleExcerpt ) {
+    function constructArticleContent(formattedDate, articleTitle, articleExcerpt) {
 
         var articleContent = '<div class="article-content" >';
-            articleContent += '<p class="date" >' + formattedDate + '</p>';
-            articleContent += '<h3>' + articleTitle + '</h3>';
-            articleContent += '<div class="entry-content">' + articleExcerpt + '</div></div>';
+        articleContent += '<p class="date" >' + formattedDate + '</p>';
+        articleContent += '<h3>' + articleTitle + '</h3>';
+        articleContent += '<div class="entry-content">' + articleExcerpt + '</div></div>';
 
         return articleContent;
     }
 
-    function constructArticleThumbnail( post ) {
-        if ( post.better_featured_image !== null ) {
+    function constructArticleThumbnail(post) {
+        if (post.better_featured_image !== null) {
             var articleThumb = '<img src="' + post.better_featured_image.source_url + '" />';
             var articleThumbContainer = '<div class="article-thumb">' + articleThumb + '</div>';
         } else {
@@ -227,32 +247,32 @@
         return articleThumbContainer;
     }
 
-    function constructArticleElement( post, articleID, articleThumbContainer, articleContent ) {
-        var articleElement = post.better_featured_image
-                                ? '<article class="news" id="' + articleID + '">'
-                                : '<article class="news no-image" id="' + articleID + '">'
+    function constructArticleElement(post, articleID, articleThumbContainer, articleContent) {
+        var articleElement = post.better_featured_image ?
+            '<article class="news" id="' + articleID + '">' :
+            '<article class="news no-image" id="' + articleID + '">'
 
-        if ( articleThumbContainer ) {
+        if (articleThumbContainer) {
             articleElement += articleThumbContainer;
         }
 
-            articleElement += articleContent;
-            articleElement += '</article>';
+        articleElement += articleContent;
+        articleElement += '</article>';
 
-            return articleElement;
+        return articleElement;
     }
 
-    $loadPostsButton.click(function( event ){
+    $loadPostsButton.click(function (event) {
         event.preventDefault();
 
-        $.get(apiLink, function( data ){
+        $.get(apiLink, function (data) {
 
-            var newPosts = data.slice( ( data.length - renderedArticles ) - renderedArticles, ( data.length - renderedArticles ) );
+            var newPosts = data.slice((data.length - renderedArticles) - renderedArticles, (data.length - renderedArticles));
 
-            if ( renderedArticles < data.length && renderedArticles < 20 ) {
-                $.each( newPosts, function( i, post )  {
-                    var myDate = new Date( post.date );
-                    var formattedDate = formatDate( myDate );
+            if (renderedArticles < data.length && renderedArticles < 20) {
+                $.each(newPosts, function (i, post) {
+                    var myDate = new Date(post.date);
+                    var formattedDate = formatDate(myDate);
                     var articleID = post.id;
                     var articleTitle = post.title.rendered;
                     var articleExcerpt = post.excerpt.rendered;
@@ -261,11 +281,11 @@
                         constructArticleElement(
                             post,
                             articleID,
-                            constructArticleThumbnail( post ),
-                            constructArticleContent( formattedDate, articleTitle, articleExcerpt )
+                            constructArticleThumbnail(post),
+                            constructArticleContent(formattedDate, articleTitle, articleExcerpt)
                         );
 
-                    $postsContainer.append( constructedArticleElement );
+                    $postsContainer.append(constructedArticleElement);
                     renderedArticles += 5;
                 });
             }
@@ -273,9 +293,9 @@
     });
 
     //send user to thank you page on form submission
-    document.addEventListener( 'wpcf7mailsent', function() {
+    document.addEventListener('wpcf7mailsent', function () {
         location = 'http://google.com/';
-    }, false );
+    }, false);
 
     //flickity frontpage
     $('.member-carousel').flickity({
@@ -322,31 +342,34 @@
     });
 
     //rent chart height
-    $(window).on('load', function() {
+    $(window).on('load', function () {
         var $chartHeight = $('.rows').outerHeight();
         $('.rent-chart-container').css('height', $chartHeight);
     });
 
     //add classes to selections and corresponding images
-    $('.selection p').each(function(i) {
-        $(this).addClass('select'+(i+1));
+    $('.selection p').each(function (i) {
+        $(this).addClass('select' + (i + 1));
     });
-    $('.floorplan-img-container img').each(function(i) {
-        $(this).addClass('select'+(i+1));
+    $('.floorplan-img-container img').each(function (i) {
+        $(this).addClass('select' + (i + 1));
     });
 
     //display floorplans on click
-    $('.selection p').on('click',function(){
-        if (screen.width < 760){
+    $('.selection p').on('click', function () {
+        if (screen.width < 760) {
             var $mobileImgToggle = $(this).next('.floorplan-img');
             $('.selection img').css('display', 'none');
-            $($mobileImgToggle).animate({height: 'toggle'});
-        }
-        else {
+            $($mobileImgToggle).animate({
+                height: 'toggle'
+            });
+        } else {
             var $homeSelect = $(this).attr('class');
             $('.selection img').css('display', 'none');
             $('.floorplan-img-container img').css('display', 'none');
-            $('.floorplan-img-container .'+$homeSelect).animate({height: 'toggle'});
+            $('.floorplan-img-container .' + $homeSelect).animate({
+                height: 'toggle'
+            });
         }
     })
 

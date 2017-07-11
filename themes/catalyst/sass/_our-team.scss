@@ -17,6 +17,7 @@
     }
     .intro-copy {
         @include intro-copy;
+        text-align: left;
     }
 
         // Exit button for staff profile popouts.
@@ -247,6 +248,7 @@
                 font-size: 1.15rem;
                 line-height: 1.5rem;
                 display: inline;
+                font-family: $font__secondary;
                 ul {
                     margin: 0;
                     padding: 0;
@@ -281,7 +283,7 @@
         .board-profiles-header {
             height: auto;
             width: 100%;
-            max-width: 950px;
+            // max-width: 950px;
             margin: 2rem auto 1rem;
             position: relative;
             @include flex-row(nowrap, center, center);

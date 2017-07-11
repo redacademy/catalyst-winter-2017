@@ -1951,7 +1951,8 @@ object {
     padding: 2rem 1rem 2rem;
     font-size: 1.2rem;
     font-family: asap, sans-serif;
-    text-align: center; }
+    text-align: center;
+    text-align: left; }
     @media all and (min-width: 760px) {
       .page-id-159 .intro-copy {
         font-size: 1.5rem;
@@ -2261,7 +2262,8 @@ object {
       .page-id-159 .advisors-profiles-wrapper .profile-popout article {
         font-size: 1.15rem;
         line-height: 1.5rem;
-        display: inline; }
+        display: inline;
+        font-family: asap, sans-serif; }
         .page-id-159 .staff-profiles-wrapper .profile-popout article ul,
         .page-id-159 .board-profiles-wrapper .profile-popout article ul,
         .page-id-159 .advisors-profiles-wrapper .profile-popout article ul {
@@ -2303,7 +2305,6 @@ object {
     .page-id-159 .advisors-profiles-wrapper .board-profiles-header {
       height: auto;
       width: 100%;
-      max-width: 950px;
       margin: 2rem auto 1rem;
       position: relative;
       display: -ms-flexbox;
