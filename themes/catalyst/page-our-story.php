@@ -121,11 +121,6 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/ourStory-carousel', 'projects carousel' ); ?>
 			</section>
 
-			<?php $pdf_download = wp_kses_post( CFS()->get( 'pdf_download' ) );
-			if ( !empty( $pdf_download ) ) :?>
-			<div class="download"><?php echo $pdf_download; ?></div>
-			<?php endif; ?>
-
 			<section class="end-content">
 				<div class="end-content-quote">
 				<div class="mission-quote2">
