@@ -1172,8 +1172,6 @@ textarea {
     @media all and (min-width: 760px) {
       .home .projects .project-status {
         max-width: 450px; } }
-    .home .projects .project-status span {
-      text-transform: uppercase; }
   .home .projects .quotes-wrapper {
     margin: 3rem auto 0;
     width: 85%;
@@ -3923,9 +3921,6 @@ object {
       font-weight: 500;
       margin: 0 0.5rem; } }
 
-.page-id-195 .status {
-  text-transform: uppercase; }
-
 .page-id-195 .img-container {
   margin: 2rem 2rem 3rem; }
   @media all and (min-width: 760px) {
@@ -4299,11 +4294,6 @@ object {
         display: block;
         margin: 0 auto;
         font-size: 1.2rem; } }
-    .single-projects .other-proj-wrapper .project-name span,
-    .single-projects .other-proj-wrapper .project-location span,
-    .single-projects .other-proj-wrapper .project-status span {
-      display: inline;
-      text-transform: uppercase; }
   .single-projects .other-proj-wrapper .project-name {
     font-weight: 700;
     margin-top: 1rem; }

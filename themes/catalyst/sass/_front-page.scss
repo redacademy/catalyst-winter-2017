@@ -109,9 +109,6 @@
             @include media( $desktop-width ) {
                 max-width: 450px;
             }
-            span {
-                text-transform: uppercase;
-            }
         }
         .quotes-wrapper {
             margin: 3rem auto 0;

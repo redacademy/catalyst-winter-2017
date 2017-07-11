@@ -29,7 +29,7 @@ get_header(); ?>
                 <span><?php echo $project_location; ?></span>
                 <?php endif; ?>
 
-                </h2><span class='break'>|</span>
+                </h2><span class='break'>-</span>
                 <h2 class='subheader-sub'>Status:
                 <?php $project_status = esc_html( CFS()->get( 'project_status' ) );
                 if ( !empty( $project_status ) ) :?>

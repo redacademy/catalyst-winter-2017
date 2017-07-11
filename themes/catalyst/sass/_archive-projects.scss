@@ -49,9 +49,6 @@
             margin: 0 0.5rem;
         }
     }
-    .status {
-        text-transform: uppercase;
-    }
     .img-container {
         margin: 2rem 2rem 3rem;
         @include media($desktop-width) {
