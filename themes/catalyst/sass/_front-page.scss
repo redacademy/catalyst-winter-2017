@@ -7,7 +7,7 @@
         }
     }
     .hamburger-menu li {
-        padding: 0;
+        padding: 0 12px;
         font-size: 1.85rem;
         & a {
             padding: 20px 0 20px 10px;
@@ -33,8 +33,9 @@
         width: 100%;
         img {
             height: 100vh;
-            width: initial;
             max-width: none;
+            min-width: 100vw;
+            max-height: none;
         }
     }
     .fp-img-container {
@@ -46,7 +47,6 @@
     }
     .header-text {
         @include header-text;
-        padding: 0;
         line-height: 1.2;
         position: absolute;
         top: 45%;
@@ -67,7 +67,7 @@
         max-width: 650px;
         padding: 0 2rem;
         margin: 2rem auto;
-        text-align: center;
+        text-align: $body-text-align;
         font-family: $font__secondary;
         @include media ($desktop-width) {
             margin: 4rem auto;
@@ -84,7 +84,7 @@
             max-width: 650px;
             margin: 2rem auto;
             padding: 0 2rem;
-            text-align: center;
+            text-align: $body-text-align;
             font-family: $font__secondary;
             @include media ($desktop-width) {
                 margin: 4rem auto;
@@ -97,32 +97,45 @@
         .project-name {
             margin: 0.75rem 0 0.5rem;
             font-weight: $font__bold;
-            @include media($desktop-width) {
-                margin: 1.15rem 0 1.35rem;
-            }
         }
-        .project-location {
-            font-family: $font__secondary;
+        .project-name {
+            font-family: $font__main;
+            font-weight: 800;
         }
         .project-status {
-            font-family: $font__secondary;
-            span {
-                text-transform: uppercase;
+            max-width: 350px;
+            margin: 0.5rem auto;
+
+            @include media( $desktop-width ) {
+                max-width: 450px;
             }
         }
         .quotes-wrapper {
-            margin: 0 auto;
+            margin: 3rem auto 0;
             width: 85%;
             display: none;
+            @include media( $desktop-width ) {
+                margin: 5rem auto 0;
+                width: 100%;
+            }
         }
         .is-selected .quotes-wrapper {
-            display: initial;
+            display: block;
         }
         .quote {
+            max-width: 340px;
+            margin: 0 auto;
             font-family: $font__secondary;
             font-style: italic;
             margin-top: 0;
             position: relative;
+
+            @include media( 455px ) {
+                max-width: 400px;
+            }
+            @include media( $desktop-width ) {
+                max-width: none;
+            }
 
             p {
                 font-size: 1.5rem;
@@ -157,33 +170,30 @@
             display: inline-block;
         }
         .left-quotation-mark {
-            top: -10px;
-            left: -20px;
+            top: -7px;
+            left: -25px;
             @include media ($desktop-width) {
-                top: -22px;
-                left: -40px;
+                left: -56px;
             }
         }
         .right-quotation-mark {
-            bottom: -10px;
-            right: 5px;
+            bottom: -7px;
+            right: -25px;
             transform: rotate(180deg);
             @include media ($desktop-width) {
-                right: -20px;
+                right: -50px;
             }
         }
         .quote-text {
             margin-bottom: 2rem;
         }
-        .person {
+        .person, .line {
+            font-size: $font__desktop-size;
             font-weight: $font__bold;
-            font-size: 1.3rem;
             margin: 0;
         }
         .line {
-            font-weight: $font__semibold;
             font-style: italic;
-            margin: 0;
         }
         .other-proj-wrapper {
             width: 85%;
@@ -196,7 +206,7 @@
             .project-status,
             .person,
             .line {
-                margin: 0;
+                margin: 0 auto;
             }
         }
         .image-wrapper {
@@ -205,6 +215,12 @@
             overflow: hidden;
             @include media ($desktop-width) {
                 height: 500px;
+            }
+            a {
+                height: 300px;
+                @include media($desktop-width){
+                    height: 500px;
+                }
             }
             img {
                 width: auto;
@@ -253,7 +269,7 @@
             max-width: 650px;
             margin: 2rem auto;
             padding: 0 2rem;
-            text-align: center;
+            text-align: $body-text-align;
             font-family: $font__secondary;
             @include media ($desktop-width) {
                 margin: 4rem auto;

@@ -101,7 +101,7 @@ function staff_cpt() {
 		'label'                 => 'Staff',
 		'description'           => 'Staff list',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'revisions' ),
+		'supports'              => array( 'title', 'revisions', 'custom-fields' ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
@@ -420,14 +420,14 @@ function renters_cpt() {
 	$labels = array(
 		'name'                  => 'Renters',
 		'singular_name'         => 'Renter',
-		'menu_name'             => 'Renters',
+		'menu_name'             => 'Renters Info',
 		'name_admin_bar'        => 'Renters',
 		'archives'              => 'Renter Archives',
 		'attributes'            => 'Renter Attributes',
 		'parent_item_colon'     => 'Parent Item:',
-		'all_items'             => 'All Renters',
+		'all_items'             => 'All Projects',
 		'add_new_item'          => 'Add New Item',
-		'add_new'               => 'Add New Renter',
+		'add_new'               => 'Add New Project',
 		'new_item'              => 'New Renter',
 		'edit_item'             => 'Edit Renter',
 		'update_item'           => 'Update Renter',
@@ -469,5 +469,117 @@ function renters_cpt() {
 
 }
 add_action( 'init', 'renters_cpt', 0 );
+
+// Register Custom Post Type
+function np_testimonials() {
+
+	$labels = array(
+		'name'                  => _x( 'Non-Profit Testimonials', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Non-Profit Testimonial', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Non-Profit Testimonials', 'text_domain' ),
+		'name_admin_bar'        => __( 'Non-Profit Testimonials', 'text_domain' ),
+		'archives'              => __( 'Non-Profit Testimonial Archives', 'text_domain' ),
+		'attributes'            => __( 'Non-Profit Testimonial Attributes', 'text_domain' ),
+		'parent_item_colon'     => __( 'Parent Item:', 'text_domain' ),
+		'all_items'             => __( 'All Testimonials', 'text_domain' ),
+		'add_new_item'          => __( 'Add New Testimonial', 'text_domain' ),
+		'add_new'               => __( 'Add New Testimonial', 'text_domain' ),
+		'new_item'              => __( 'New Testimonial', 'text_domain' ),
+		'edit_item'             => __( 'Edit Testimonial', 'text_domain' ),
+		'update_item'           => __( 'Update Testimonial', 'text_domain' ),
+		'view_item'             => __( 'View Testimonial', 'text_domain' ),
+		'view_items'            => __( 'View Testimonial', 'text_domain' ),
+		'search_items'          => __( 'Search Testimonial', 'text_domain' ),
+		'not_found'             => __( 'Testimonial Not found', 'text_domain' ),
+		'not_found_in_trash'    => __( 'Testimonial Not found in Trash', 'text_domain' ),
+		'featured_image'        => __( 'Featured Image', 'text_domain' ),
+		'set_featured_image'    => __( 'Set featured image', 'text_domain' ),
+		'remove_featured_image' => __( 'Remove featured image', 'text_domain' ),
+		'use_featured_image'    => __( 'Use as featured image', 'text_domain' ),
+		'insert_into_item'      => __( 'Insert into testimonial', 'text_domain' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this item', 'text_domain' ),
+		'items_list'            => __( 'Testimonials list', 'text_domain' ),
+		'items_list_navigation' => __( 'Tesimonials list navigation', 'text_domain' ),
+		'filter_items_list'     => __( 'Filter testimonials list', 'text_domain' ),
+	);
+	$args = array(
+		'label'                 => __( 'Non-Profit Testimonial', 'text_domain' ),
+		'description'           => __( 'Testimonials from non-profit partners', 'text_domain' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'author', 'custom-fields', 'post-formats', ),
+		'taxonomies'            => array( 'category', 'post_tag' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => true,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'post',
+	);
+	register_post_type( 'np_testimonials', $args );
+
+}
+add_action( 'init', 'np_testimonials', 0 );
+
+// Register Custom Post Type
+function inv_testimonials() {
+
+	$labels = array(
+		'name'                  => _x( 'Investor Testimonials', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Investor Testimonial', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Investor Testimonials', 'text_domain' ),
+		'name_admin_bar'        => __( 'Investor Testimonials', 'text_domain' ),
+		'archives'              => __( 'Investor Testimonial Archives', 'text_domain' ),
+		'attributes'            => __( 'Investor Testimonial Attributes', 'text_domain' ),
+		'parent_item_colon'     => __( 'Parent Item:', 'text_domain' ),
+		'all_items'             => __( 'All Testimonials', 'text_domain' ),
+		'add_new_item'          => __( 'Add New Testimonial', 'text_domain' ),
+		'add_new'               => __( 'Add New Testimonial', 'text_domain' ),
+		'new_item'              => __( 'New Testimonial', 'text_domain' ),
+		'edit_item'             => __( 'Edit Testimonial', 'text_domain' ),
+		'update_item'           => __( 'Update Testimonial', 'text_domain' ),
+		'view_item'             => __( 'View Testimonial', 'text_domain' ),
+		'view_items'            => __( 'View Testimonial', 'text_domain' ),
+		'search_items'          => __( 'Search Testimonial', 'text_domain' ),
+		'not_found'             => __( 'Testimonial Not found', 'text_domain' ),
+		'not_found_in_trash'    => __( 'Testimonial Not found in Trash', 'text_domain' ),
+		'featured_image'        => __( 'Featured Image', 'text_domain' ),
+		'set_featured_image'    => __( 'Set featured image', 'text_domain' ),
+		'remove_featured_image' => __( 'Remove featured image', 'text_domain' ),
+		'use_featured_image'    => __( 'Use as featured image', 'text_domain' ),
+		'insert_into_item'      => __( 'Insert into testimonial', 'text_domain' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this item', 'text_domain' ),
+		'items_list'            => __( 'Testimonials list', 'text_domain' ),
+		'items_list_navigation' => __( 'Tesimonials list navigation', 'text_domain' ),
+		'filter_items_list'     => __( 'Filter testimonials list', 'text_domain' ),
+	);
+	$args = array(
+		'label'                 => __( 'Investor Testimonials', 'text_domain' ),
+		'description'           => __( 'Testimonials from investor partners', 'text_domain' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'author', 'custom-fields', 'post-formats', ),
+		'taxonomies'            => array( 'category', 'post_tag' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => true,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'post',
+	);
+	register_post_type( 'inv_testimonials', $args );
+
+}
+add_action( 'init', 'inv_testimonials', 0 );
 
 

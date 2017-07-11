@@ -16,7 +16,7 @@ get_header(); ?>
             <div class="content-wrapper">
             <div class="blue-background-header">
                 <h2 class="subheader-lrg">Meet Team Catalyst</h2>
-                <button class="staff-exit-button exit-button" type="button"><span>X</span></button>
+                <button class="staff-exit-button exit-button" type="button"><span>&#735;</span></button>
             </div>
 
             <div class="staff-profiles-wrapper">
@@ -38,7 +38,7 @@ get_header(); ?>
             <div class="board-profiles-wrapper">
                 <div class="board-profiles-header">
                     <h3 class="small-header">Board</h3>
-                    <button class="board-exit-button exit-button" type="button"><span>X</span></button>
+                    <button class="board-exit-button exit-button" type="button"><span>&#735;</span></button>
                 </div>
 
                 <?php
@@ -51,14 +51,16 @@ get_header(); ?>
                 <?php endforeach; wp_reset_postdata(); ?>
             </div>
 
-            <h3 class="small-header">Advisors</h3>
-
-            <?php $advisors_copy = CFS() -> get('advisors_copy');
-                if( !empty( $advisors_copy ) ) : ?>
-                    <p class="advisors-copy"><?php echo esc_html( $advisors_copy ); ?></p>
-                <?php endif; ?>
-
             <div class="advisors-profiles-wrapper">
+                <h3 class="small-header">Advisors</h3>
+
+                <?php $advisors_copy = CFS() -> get('advisors_copy'); ?>
+
+                <div class="advisors-copy-container">
+                    <?php if( !empty( $advisors_copy ) ) : ?>
+                        <p class="advisors-copy"><?php echo esc_html( $advisors_copy ); ?></p>
+                    <?php endif; ?>
+                </div>
 
                 <?php
                     $args = array( 'post_type' => 'advisors', 'order' => 'ASC', 'numberposts' => -1 );

@@ -31,12 +31,17 @@ $font__secondary: asap, sans-serif;
 $font__bold: 700;
 $font__semibold: 600;
 $font__light: 300;
+$font__normal: 400;
 
 $font__mobile-size: 1.2rem;
 $font__desktop-size: 1.5rem;
 
 $line-height-body: 1.75rem;
-$line-height-desktop: 2.25rem;
+$line-height-desktop: 1.75rem;
+$line-height-intro: 2.5rem;
+$line-height-quotes: 2.2rem;
+
+$body-text-align: left;
 
 // Media query screen widths
 

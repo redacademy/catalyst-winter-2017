@@ -1,9 +1,13 @@
 .page-id-21 {
     p {
+        font-family: $font__secondary;
         font-size: $font__mobile-size;
         @include media ($desktop-width) {
             font-size: $font__desktop-size;
         }
+    }
+    .mission-copy, .formula-p {
+        padding: 0 1rem;
     }
     .header-text {
         @include header-text;
@@ -49,11 +53,9 @@
         }
     }
     .mission-copy {
-        max-width: 650px;
+        display: inline;
         margin: 0 auto;
-        @include media($desktop-width) {
-            max-width: 860px;
-        }
+        text-align: $body-text-align;
     }
     .mission-quote,
     .mission-quote2 {
@@ -64,9 +66,13 @@
     }
     .mission-quote {
         height: auto;
+        max-width: 320px;
+        margin: $base__space-unit auto 1rem;
         position: relative;
-        max-width: 1500px;
-        margin: 0 auto;
+        @include media( $desktop-width ) {
+            max-width: none;
+            margin: 3rem auto 2rem;
+        }
         .quote-target {
             height: 0;
             width: 0;
@@ -75,27 +81,36 @@
     }
     .mission-quote2 {
         height: auto;
-        @include media($desktop-width) {
-            margin-bottom: 0px;
-            p {
-                margin-bottom: 0;
-            }
+        max-width: 320px;
+        margin: 0 auto;
+        @include media(600px) {
+            max-width: 460px;
+        }
+        @include media( $desktop-width ) {
+            max-width: 630px;
+        }
+    }
+    .q-text-container {
+        position: relative;
+        @include media( $desktop-width ) {
+            width: 630px;
         }
     }
     .quote,
     .quote2 {
+        display: inline;
         z-index: 1;
-        margin-top: 67px;
+        margin: 1.5rem 0;
         text-align: center;
-        font-size: 1.7rem;
-        line-height: 2.2rem;
+        font-size: 1.5rem;
+        line-height: $line-height-quotes;
         font-weight: 100;
-        width: 80%;
+        width: 100%;
         font-family: $font__secondary;
         font-style: italic;
+        padding: 0 0.5rem;
         @include media($desktop-width) {
-            font-size: 2.4rem;
-            line-height: 2.75rem;
+            font-size: 2rem;
         }
     }
     .quotation-left,
@@ -111,27 +126,19 @@
         }
     }
     .quotation-left {
-        top: 55px;
-        left: 25px;
-        @include media(670px) {
-            left: 35px;
-        }
-        @include media(1000px) {
-            left: 65px;
-        }
-        @include media(1200px) {
-            left: 80px;
+        top: -12px;
+        left: 10px;
+        @include media( $desktop-width ) {
+            top: -10px;
+            left: -40px;
         }
     }
     .quotation-left2 {
-        top: 55px;
-        left: 27px;
+        top: 10px;
+        left: 10px;
         @include media($desktop-width) {
-            top: 50px;
-            left: 35px;
-        }
-        @include media(1260px) {
-            left: 110px;
+            top: 10px;
+            left: -20px;
         }
     }
     .quotation-right,
@@ -148,44 +155,31 @@
         }
     }
     .quotation-right {
-        top: 140px;
-        right: 50px;
-        @include media(630px) {
-            top: 110px;
-            right: 55px;
-        }
+        bottom: 0px;
+        right: 10px;
         @include media($desktop-width) {
-            top: 150px;
-        }
-        @include media(863px) {
-            top: 135px;
-            right: 70px;
-        }
-        @include media(960px) {
-            top: 70px;
-            right: 78px;
+            bottom: -15px;
+            right: -15px;
         }
     }
     .quotation-right2 {
-        bottom: 10px;
-        right: 27px;
-        @include media(515px) {
-            right: 45px;
-        }
+        bottom: 15px;
+        right: 10px;
         @include media($desktop-width) {
-            bottom: -10px;
-            right: 70px;
-        }
-        @include media(1260px) {
-            right: 120px;
+            bottom: 8px;
+            right: -10px;
         }
     }
     .robert {
-        margin: 2rem auto;
+        margin: 0 auto;
         text-align: center;
         @include media($desktop-width) {
             margin: 2rem auto;
             font-size: 30px;
+        }
+
+        h4, p {
+            font-family: $font__main;
         }
     }
     h4 {
@@ -193,13 +187,11 @@
         font-weight: $font__bold;
         margin: 0 auto;
         @include media($desktop-width) {
-            margin: 10px;
             font-size: 25px;
         }
     }
     .position {
         font-style: italic;
-        font-weight: $font__semibold;
         margin: 0;
         font-size: 20px;
     }
@@ -225,8 +217,8 @@
     }
     .mission-content {
         text-align: center;
-        margin-bottom: 100px;
-        margin-top: 80px;
+        margin-bottom: 3rem;
+        margin-top: 3rem;
         .arrow {
             margin-bottom: 10px;
         }
@@ -264,8 +256,8 @@
             }
         }
         p {
-            width: 65%;
             margin: 0 auto;
+            font-size: 1.2rem;
         }
     }
     .formula-p {
@@ -282,6 +274,7 @@
         margin: 2.5rem auto;
         font-size: $font__mobile-size;
         font-weight: 100;
+        text-align: $body-text-align;
         @include media($desktop-width) {
             font-size: $font__desktop-size;
         }

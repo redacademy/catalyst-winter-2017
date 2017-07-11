@@ -8,7 +8,7 @@
     }
     .wrapper {
         max-width: 1200px;
-        padding: 0 2rem;
+        padding: 0 1rem;
         margin: 0 auto;
     }
     .banner {
@@ -22,7 +22,7 @@
     }
     .about {
         .wrapper {
-            max-width: 900px;
+            max-width: 860px;
         }
         @include media($desktop-width){
             .about-text {

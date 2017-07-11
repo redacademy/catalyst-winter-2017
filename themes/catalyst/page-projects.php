@@ -23,15 +23,13 @@ get_header(); ?>
                 if ( !empty( $project_name ) ) : ?>
                 <h2 class="subheader-name"><?php echo $project_name; ?></h2>
                 <?php endif; ?>
-                <span class='break'>|</span>
-
-                <h2 class='subheader-sub'>Location:
+                <h2 class='subheader-sub'>
                  <?php $project_location = esc_html( CFS()->get( 'project_location' ) );
                 if ( !empty( $project_location ) ) : ?>
                 <span><?php echo $project_location; ?></span>
                 <?php endif; ?>
 
-                </h2><span class='break'>|</span>
+                </h2><span class='break'>-</span>
                 <h2 class='subheader-sub'>Status:
                 <?php $project_status = esc_html( CFS()->get( 'project_status' ) );
                 if ( !empty( $project_status ) ) :?>

@@ -31,6 +31,13 @@ get_header(); ?>
 		if( !empty( $third_copy ) ) : ?>
 			<div class="investor-p"><?php echo $third_copy; ?></div>
 		<?php endif; ?>
+
+		<?php $supporters = CFS()->get('supporters_activate');
+		if ($supporters === 1) :
+			get_template_part( 'template-parts/content', 'sponsors'); 
+		endif; ?>
+
+		<?php get_template_part( 'template-parts/investor-carousel' ); ?>
 	</main><!-- #main -->
 </div><!-- #primary -->
 

@@ -24,7 +24,6 @@
     }
     .subheader-name {
         margin: 0;
-        line-height: 1.5;
         @include media ($desktop-width){
             display: inline-block;
         }
@@ -48,9 +47,6 @@
             font-weight: 500;
             margin: 0 0.5rem;
         }
-    }
-    .status {
-        text-transform: uppercase;
     }
     .img-container {
         margin: 2rem 2rem 3rem;

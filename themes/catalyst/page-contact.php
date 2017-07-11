@@ -10,34 +10,43 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-            <div class="hero-image-banner">
-			<div class="header-text">
-				<p class="entry-title">
-					<?php echo esc_html( CFS()->get( 'bannertext' ) ); ?>
-				</p>
-				<p class="banner-text">
-					<?php echo esc_html( CFS()->get( 'address' ) ); ?>
-				</p>
-			</div><!-- .page-header -->
-            </div>
+      <div class="hero-image-banner">
+				<div class="header-text">
+					<p class="entry-title">
+						<?php echo esc_html( CFS()->get( 'bannertext' ) ); ?>
+					</p>
 
-            <div class="blue-background-header">
-			    <h2 class="subheader-lrg">we would like to hear from you</h2>
-		    </div>
+					<p class="banner-text">
+						<?php echo esc_html( CFS()->get( 'address' ) ); ?>
+					</p>
+				</div><!-- .page-header -->
+      </div>
+
+      <div class="blue-background-header">
+			  <h2 class="subheader-lrg">we would like to hear from you</h2>
+		  </div>
+
 			<div class="renters-redirect">
-				<?php echo CFS()->get('contact_renters'); ?>
+
+				<div class="intro-copy">
+					<?php $intro_copy = esc_html( CFS()->get('contact_main_copy') ); ?>
+					<?php if( !empty( $intro_copy ) ) : ?>
+						<p><?php echo $intro_copy; ?></p>
+					<?php endif; ?>
+
+					<?php $renter_copy = esc_html( CFS()->get('contact_renters') ); ?>
+					<?php if( !empty( $renter_copy ) ) : ?>
+						<p><?php echo $renter_copy; ?></p>
+					<?php endif; ?>
+				</div>
+
 				<a class="navigation-button" href="<?php echo get_home_url(); ?>/rent">Renters</a>
 			</div>
+
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<div class="entry-content">
-		            <?php the_content(); ?>
-		            <?php
-			            wp_link_pages( array(
-                            'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-                            'after'  => '</div>',
-			            ) );
-		            ?>
+					<?php echo do_shortcode('[contact-form-7 id="6" title="Contact form 1"]') ?>
 	            </div><!-- .entry-content -->
 
 			<?php endwhile; // End of the loop. ?>

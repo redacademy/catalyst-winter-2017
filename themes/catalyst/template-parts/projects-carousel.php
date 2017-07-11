@@ -23,7 +23,7 @@
             </div>
 
             <p class='project-name'><?php echo esc_html( CFS()->get('project_name', $id) ); ?></p>
-            <p class='project-location'>Location: <?php echo esc_html( CFS()->get('project_location', $id) ); ?></p>
+            <p class='project-location'><?php echo esc_html( CFS()->get('project_location', $id) ); ?></p>
             <p class='project-status'>Status: <span><?php echo esc_html( CFS()->get('project_status', $id) ); ?></span></p>
 
 

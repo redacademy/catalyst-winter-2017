@@ -44,8 +44,6 @@ get_header(); ?>
                                 <p class="date"><?php echo get_the_date("m, d, Y", $newsarticle->ID) ?></p>
 
                                 <h3><?php echo get_the_title($newsarticle->ID) ?></h3>
-
-                                <?php echo get_template_part( 'template-parts/content', 'newsmedia'); ?>
                             </div>
 
                             <?php echo CFS()->get('link', $newsarticle->ID); ?>
@@ -53,20 +51,13 @@ get_header(); ?>
                     <?php }else { ;?>
                         <article id="post-<?php echo $newsarticle->ID ?>" class="news no-image">
                             <?php
-                                $img = get_the_post_thumbnail($newsarticle->ID);
-                                if(!empty($img)){
-                                    echo "<div class='article-thumb'>".$img."</div>";
-                                }else{
-                                    echo " <div class='article-thumb' style='height:0px'></div>";
-                                };
+                                echo " <div class='article-thumb' style='height:0px'></div>";
                             ?>
 
                             <div class="article-content">
                                 <p class="date"><?php echo get_the_date("m, d, Y", $newsarticle->ID) ?></p>
 
                                 <h3><?php echo get_the_title($newsarticle->ID) ?></h3>
-
-                                <?php echo get_template_part( 'template-parts/content', 'newsmedia'); ?>
                             </div>
 
                             <?php echo CFS()->get('link', $newsarticle->ID); ?>

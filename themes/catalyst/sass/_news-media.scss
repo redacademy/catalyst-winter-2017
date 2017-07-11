@@ -1,4 +1,7 @@
 .page-id-19 {
+    #load-more-button {
+        display: none;
+    }
     margin: 0 auto;
     .entry-content {
         p {
@@ -49,7 +52,10 @@
         max-width: 700px;
         padding: 0px 20px;
         h3 {
-            line-height: 1.7rem;
+            line-height: 1.4rem;
+            @include media( $desktop-width ) {
+                line-height: 1.7rem;
+            }
         }
         .news {
             background-color: $color__brand-blue;
@@ -59,6 +65,10 @@
 
         .news.no-image {
             width: 98%;
+
+            .article-content {
+                height: auto;
+            }
         }
         .article-thumb {
             height: 200px;
@@ -77,15 +87,11 @@
                 width: 48%;
                 display: block;
             }
-            // .news:nth-child(5n + 1) {
-            //     width: 98%;
-            //     display: block;
-            // }
         }
         .article-content {
             padding: 5px 15px;
             margin-bottom: 10px;
-            height: 180px;
+            height: 130px;
             overflow: hidden;
             p {
                 margin: 0;

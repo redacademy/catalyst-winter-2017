@@ -9,19 +9,29 @@
 
     $hamburgerIcon.click(function () {
 
+
         $hamburgerIcon.addClass('transparent').hide();
         $mobileMenu.css({
             'width': '60vw',
             'height': 'auto'
         }).addClass('opaque');
         $crossIcon.addClass('opaque').show();
+
+            $hamburgerIcon.addClass('transparent').hide();
+            $mobileMenu.addClass('opaque').css('display', 'block');
+            $crossIcon.addClass('opaque').show();
+
     });
 
     $crossIcon.click(function () {
-
         $crossIcon.removeClass('opaque').hide();
         $hamburgerIcon.removeClass('transparent').show();
         $mobileMenu.removeClass('opaque').css('width', '0');
+
+            $crossIcon.removeClass('opaque').hide();
+            $hamburgerIcon.removeClass('transparent').show();
+            $mobileMenu.removeClass('opaque').css('display', 'none');
+
     });
 
 
@@ -233,6 +243,15 @@
         articleContent += '<h3>' + articleTitle + '</h3>';
         articleContent += '<div class="entry-content">' + articleExcerpt + '</div></div>';
 
+    function constructArticleContent( formattedDate, articleTitle, articleLink ) {
+
+        var articleContent = '<div class="article-content" >';
+            articleContent += '<p class="date" >' + formattedDate + '</p>';
+            articleContent += '<h3>' + articleTitle + '</h3>';
+            articleContent += '</div>';
+            articleContent += '<a class="cfs-hyperlink" href=' + articleLink + '><span class="text">Read More</span></a>';
+
+
         return articleContent;
     }
 
@@ -273,16 +292,28 @@
                 $.each(newPosts, function (i, post) {
                     var myDate = new Date(post.date);
                     var formattedDate = formatDate(myDate);
+
+            if ( renderedArticles < data.length && renderedArticles < 20 ) {
+                $.each( newPosts, function( i, post )  {
+                    console.log(post);
+                    var myDate = new Date( post.date );
+                    var formattedDate = formatDate( myDate );
+
                     var articleID = post.id;
                     var articleTitle = post.title.rendered;
-                    var articleExcerpt = post.excerpt.rendered;
+                    var articleLink = post.link;
 
                     var constructedArticleElement =
                         constructArticleElement(
                             post,
                             articleID,
+
                             constructArticleThumbnail(post),
                             constructArticleContent(formattedDate, articleTitle, articleExcerpt)
+
+                            constructArticleThumbnail( post ),
+                            constructArticleContent( formattedDate, articleTitle, articleLink )
+
                         );
 
                     $postsContainer.append(constructedArticleElement);

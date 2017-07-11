@@ -31,6 +31,8 @@ get_header(); ?>
 		if( !empty( $third_copy ) ) : ?>
 			<div class="investor-p"><?php echo $third_copy; ?></div>
 		<?php endif; ?>
+
+		<?php get_template_part( 'template-parts/non-profit-carousel' ); ?>
 	</main><!-- #main -->
 </div><!-- #primary -->
 
