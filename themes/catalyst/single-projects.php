@@ -42,20 +42,17 @@
 
                 <?php $structure = wp_kses_post(CFS()->get( 'structure' ) );
                 if ( $structure ) :?>
-                    <h3>Structure: </h3>
-                    <?php echo $structure; ?>
+                    <h3>Structure: <?php echo $structure; ?></h3>
                 <?php endif; ?>
 
                 <?php $cRole = wp_kses_post( CFS()->get( 'catalyst_role' ) );
                 if ( $cRole ) :?>
-                    <h3>Catalyst Role: </h3>
-                    <?php echo $cRole; ?>
+                    <h3>Catalyst Role: <span><?php echo $cRole; ?></span></h3>
                 <?php endif; ?>
 
                 <?php $partners = wp_kses_post( CFS()->get( 'partners' ) );
                 if ( $partners ) :?>
-                    <h3>Partners: </h3>
-                    <?php echo $partners; ?>
+                    <h3>Partners: <?php echo $partners; ?></h3>
                 <?php endif; ?>
 
                 <?php $financing_grants = wp_kses_post( CFS()->get( 'financing_grants' ) );
@@ -72,8 +69,8 @@
 
                 <?php $cost = esc_html( CFS()->get( 'cost' ) );
                 if ( $cost ) :?>
-                    <h3>Total Project Cost: </h3>
-                    <p><?php echo $cost; ?></p>
+                    <h3>Total Project Cost: <span><?php echo $cost; ?></span></h3>
+                    
                 <?php endif; ?>
             </div>
     </section>

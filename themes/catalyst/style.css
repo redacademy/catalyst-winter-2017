@@ -4126,6 +4126,13 @@ object {
   .single-projects .proj-content h3 {
     margin-bottom: 0.5rem;
     font-weight: 700; }
+    .single-projects .proj-content h3 span {
+      font-size: 1.3rem;
+      font-weight: 400; }
+    .single-projects .proj-content h3 p {
+      display: inline;
+      font-size: 1.3rem;
+      font-weight: 400; }
   .single-projects .proj-content ul {
     margin: 1.5rem auto; }
   .single-projects .proj-content li {
