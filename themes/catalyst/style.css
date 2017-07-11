@@ -634,6 +634,9 @@ textarea {
   float: left;
   width: 100%; }
 
+.menu-menu-1-container {
+  font-family: asap, sans-serif; }
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
