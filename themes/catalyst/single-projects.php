@@ -14,17 +14,17 @@
             <div class="project-image-banner">
                 <div class="header-text">
                     <?php $project_name = esc_html( CFS()->get( 'project_name' ) );
-                    if ( !empty( $project_name ) ) :?>
+                    if ( $project_name ) :?>
                     <p class='project-name'><?php echo $project_name; ?></p>
                     <?php endif; ?>
 
                     <?php $project_location = esc_html( CFS()->get( 'project_location' ) );
-                    if ( !empty( $project_location ) ) :?>
+                    if ( $project_location ) :?>
                     <p class='project-location'>Location: <?php echo $project_location; ?></p>
                     <?php endif; ?>
 
                     <?php $project_status = esc_html( CFS()->get( 'project_status' ) );
-                    if ( !empty( $project_status ) ) :?>
+                    if ( $project_status ) :?>
                     <p class='project-status'>Status: <span class='p-stat'><?php echo $project_status; ?></span></p>
                     <?php endif; ?>
                 </div>
@@ -35,51 +35,51 @@
             </div>
 
             <div class="proj-content">
-                <h3>Structure: </h3>
                 <?php $structure = wp_kses_post(CFS()->get( 'structure' ) );
-                if ( !empty( $structure ) ) :?>
-                <?php echo $structure; ?>
+                if ( $structure ) :?>
+                    <h3>Structure: </h3>
+                    <?php echo $structure; ?>
                 <?php endif; ?>
 
-                <h3>Status: </h3>
                 <?php $status = wp_kses_post(CFS()->get( 'status' ) );
-                if ( !empty( $status ) ) :?>
-                <p><?php echo $status; ?></p>
+                if ( $status ) :?>
+                    <h3>Status: </h3>
+                    <p><?php echo $status; ?></p>
                 <?php endif; ?>
 
-                <h3>Catalyst Role: </h3>
                 <?php $cRole = wp_kses_post( CFS()->get( 'catalyst_role' ) );
-                if ( !empty( $cRole ) ) :?>
-                <?php echo $cRole; ?>
+                if ( $cRole ) :?>
+                    <h3>Catalyst Role: </h3>
+                    <?php echo $cRole; ?>
                 <?php endif; ?>
 
-                <h3>Partners: </h3>
                 <?php $partners = wp_kses_post( CFS()->get( 'partners' ) );
-                if ( !empty( $partners ) ) :?>
-                <?php echo $partners; ?>
+                if ( $partners ) :?>
+                    <h3>Partners: </h3>
+                    <?php echo $partners; ?>
                 <?php endif; ?>
 
-                <h3>Financing/Grants: </h3>
                 <?php $financing_grants = wp_kses_post( CFS()->get( 'financing_grants' ) );
-                if ( !empty( $financing_grants ) ) :?>
-                <?php echo $financing_grants; ?>
+                if ( $financing_grants ) :?>
+                    <h3>Financing/Grants: </h3>
+                    <?php echo $financing_grants; ?>
                 <?php endif; ?>
 
-                <h3>Affordability: </h3>
                 <?php $affordability = wp_kses_post( CFS()->get( 'affordability' ) );
-                if ( !empty( $affordability ) ) :?>
-                <?php echo $affordability; ?>
+                if ( $affordability ) :?>
+                    <h3>Affordability: </h3>
+                    <?php echo $affordability; ?>
                 <?php endif; ?>
 
-                <h3>Total Project Cost: </h3>
                 <?php $cost = esc_html( CFS()->get( 'cost' ) );
-                if ( !empty( $cost ) ) :?>
-                <p><?php echo $cost; ?></p>
+                if ( $cost ) :?>
+                    <h3>Total Project Cost: </h3>
+                    <p><?php echo $cost; ?></p>
                 <?php endif; ?>
 
                 <?php $description = esc_html( CFS()->get( 'description' ) );
-                if ( !empty( $description ) ) :?>
-                <p><?php echo $description; ?></p>
+                if ( $description ) :?>
+                    <p><?php echo $description; ?></p>
                 <?php endif; ?>
 
             </div>
