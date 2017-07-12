@@ -57,7 +57,12 @@
 }
 
 .infographic-container {
+	margin: 2rem auto;
 	padding: 0 1rem;
+
+	@include media( $desktop-width ) {
+		margin: 3rem auto;
+	}
 }
 .infographic-img {
 	overflow: auto;

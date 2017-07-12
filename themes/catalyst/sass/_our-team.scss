@@ -57,8 +57,9 @@
 
     span {
         position: relative;
-        bottom: 2.5px;
-        font-weight: $font__bold;
+        bottom: 3px;
+        left: 0.5px;
+        font-weight: 300;
     }
 }
 
@@ -78,10 +79,11 @@
     span {
         font-size: 4rem;
         position: relative;
-        top: 19px;
+        top: 20px;
         @include media($desktop-width) {
             font-size: 5.5rem;
-            top: 26px;
+            top: 27px;
+            right: 0.5px;
         }
     }
 }
@@ -95,11 +97,11 @@
     span {
         font-size: 4rem;
         position: relative;
-        top: 19px;
+        top: 20px;
         @include media($desktop-width) {
             font-size: 5.5rem;
-            top: 26.5px;
-            right: 0.5px;
+            top: 27px;
+            left: 0.5px;
         }
     }
 }
@@ -176,9 +178,12 @@
             }
         }
         .right-quotation {
-            bottom: 35px;
+            bottom: 20px;
             right: -16px;
             transform: rotate(180deg);
+            @include media($desktop-width) {
+                bottom: 35px;
+            }
             @include media(1100px) {
                 right: -35px;
             }

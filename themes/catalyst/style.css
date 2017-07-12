@@ -578,7 +578,11 @@ table {
   text-align: left; }
 
 .infographic-container {
+  margin: 2rem auto;
   padding: 0 1rem; }
+  @media all and (min-width: 760px) {
+    .infographic-container {
+      margin: 3rem auto; } }
 
 .infographic-img {
   overflow: auto;
@@ -2066,8 +2070,9 @@ object {
 
 .enter-button span {
   position: relative;
-  bottom: 2.5px;
-  font-weight: 700; }
+  bottom: 3px;
+  left: 0.5px;
+  font-weight: 300; }
 
 .exit-button {
   font-weight: 400;
@@ -2109,11 +2114,12 @@ object {
   .staff-exit-button span {
     font-size: 4rem;
     position: relative;
-    top: 19px; }
+    top: 20px; }
     @media all and (min-width: 760px) {
       .staff-exit-button span {
         font-size: 5.5rem;
-        top: 26px; } }
+        top: 27px;
+        right: 0.5px; } }
 
 .board-exit-button {
   margin: 0px;
@@ -2123,12 +2129,12 @@ object {
   .board-exit-button span {
     font-size: 4rem;
     position: relative;
-    top: 19px; }
+    top: 20px; }
     @media all and (min-width: 760px) {
       .board-exit-button span {
         font-size: 5.5rem;
-        top: 26.5px;
-        right: 0.5px; } }
+        top: 27px;
+        left: 0.5px; } }
 
 .name {
   margin: 0 auto;
@@ -2225,9 +2231,14 @@ object {
     .staff-profiles-wrapper .profile-popout .right-quotation,
     .board-profiles-wrapper .profile-popout .right-quotation,
     .advisors-profiles-wrapper .profile-popout .right-quotation {
-      bottom: 35px;
+      bottom: 20px;
       right: -16px;
       transform: rotate(180deg); }
+      @media all and (min-width: 760px) {
+        .staff-profiles-wrapper .profile-popout .right-quotation,
+        .board-profiles-wrapper .profile-popout .right-quotation,
+        .advisors-profiles-wrapper .profile-popout .right-quotation {
+          bottom: 35px; } }
       @media all and (min-width: 1100px) {
         .staff-profiles-wrapper .profile-popout .right-quotation,
         .board-profiles-wrapper .profile-popout .right-quotation,
