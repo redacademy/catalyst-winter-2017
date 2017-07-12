@@ -349,6 +349,10 @@
 
 .advisors-profiles-wrapper {
     margin-bottom: 2rem;
+    a {
+        text-decoration: none;
+        color: $color__text-main;
+    }
     .profile-preview {
         width: 100%;
         margin: 1.25rem auto;

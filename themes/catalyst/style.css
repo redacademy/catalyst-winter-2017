@@ -2475,6 +2475,9 @@ object {
 
 .advisors-profiles-wrapper {
   margin-bottom: 2rem; }
+  .advisors-profiles-wrapper a {
+    text-decoration: none;
+    color: #4A4A4A; }
   .advisors-profiles-wrapper .profile-preview {
     width: 100%;
     margin: 1.25rem auto;
