@@ -21,21 +21,22 @@ get_header(); ?>
 
         <p class='mission-copy'><?php echo esc_html( CFS()->get( 'our_mission' ) ); ?></p>
 
+				<?php $quotation1 = esc_html( CFS()->get( 'quotation1' ) );
+						if ( !empty( $quotation1) ) :?>
+							<div class="mission-quote">
+								<div class="q-text-container">
+									<div class="quotation-left"></div>
 
-				<div class="mission-quote">
-					
-					<div class="q-text-container">
-						<div class="quotation-left"></div>
-						<?php $quotation1 = esc_html( CFS()->get( 'quotation1' ) );
-							if ( !empty( $quotation1) ) :?>
-								<p class='quote'>
-									<?php echo $quotation1; ?>
-								</p>
+											<p class='quote'>
+												<?php echo $quotation1; ?>
+											</p>
+
+									<div class="quotation-right"></div>
+								</div>
+
+							</div>
 						<?php endif; ?>
-						<div class="quotation-right"></div>
-					</div>
-					
-				</div>
+
 				<div class="robert">
 
 				<?php $text_area1 = esc_html( CFS()->get( 'text_area1' ) );

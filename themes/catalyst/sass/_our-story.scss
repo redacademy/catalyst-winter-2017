@@ -53,9 +53,18 @@
         }
     }
     .mission-copy {
-        display: inline;
-        margin: 0 auto;
+        max-width: 650px;
+        padding: 0 2rem;
+        margin: 2rem auto;
         text-align: $body-text-align;
+        font-family: $font__secondary;
+        @include media ($desktop-width) {
+            margin: 4rem auto;
+            line-height: $line-height-desktop;
+        }
+        @include media(1200px) {
+            max-width: 860px;
+        }
     }
     .mission-quote,
     .mission-quote2 {

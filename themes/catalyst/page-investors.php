@@ -11,7 +11,7 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 
-<?php get_template_part( 'template-parts/hero-banner'); ?>
+		<?php get_template_part( 'template-parts/hero-banner'); ?>
 
 		<div class="blue-background-header">
 			<h2 class="subheader-lrg"><?php echo esc_html(CFS()->get( 'main_title' ) ); ?></h2>
@@ -34,7 +34,7 @@ get_header(); ?>
 
 		<?php $supporters = CFS()->get('supporters_activate');
 		if ($supporters === 1) :
-			get_template_part( 'template-parts/content', 'sponsors'); 
+			get_template_part( 'template-parts/content', 'sponsors');
 		endif; ?>
 
 		<?php get_template_part( 'template-parts/investor-carousel' ); ?>

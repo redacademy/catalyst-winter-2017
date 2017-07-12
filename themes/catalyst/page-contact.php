@@ -10,17 +10,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-      <div class="hero-image-banner">
-				<div class="header-text">
-					<p class="entry-title">
-						<?php echo esc_html( CFS()->get( 'bannertext' ) ); ?>
-					</p>
-
-					<p class="banner-text">
-						<?php echo esc_html( CFS()->get( 'address' ) ); ?>
-					</p>
-				</div><!-- .page-header -->
-      </div>
+      <?php get_template_part( 'template-parts/hero-banner'); ?>
 
       <div class="blue-background-header">
 			  <h2 class="subheader-lrg">we would like to hear from you</h2>

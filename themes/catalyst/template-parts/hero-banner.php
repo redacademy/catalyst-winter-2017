@@ -2,12 +2,17 @@
 <header>
     <div class="hero-image-banner">
     <div class="header-text">
-    <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
     <?php
-    $bannertext = CFS()->get( 'bannertext' );
-    if ( !empty( $bannertext ) ) :
+    $page_heading = esc_html( CFS()->get( 'page_heading' ) );
+    if ( !empty( $page_heading ) ) :
     ?>
-    <p class="banner-text"><?php echo $bannertext; ?></p>
+    <h1 class="entry-title"><?php echo $page_heading; ?> </h1>
+    <?php endif; ?>
+    <?php
+    $banner_text = esc_html( CFS()->get( 'banner_text' ) );
+    if ( !empty( $banner_text ) ) :
+    ?>
+    <p class="banner-text"><?php echo $banner_text; ?></p>
     <?php endif; ?>
     </div>
     </div>

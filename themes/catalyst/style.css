@@ -1647,9 +1647,18 @@ object {
     color: #323232; }
 
 .page-id-21 .mission-copy {
-  display: inline;
-  margin: 0 auto;
-  text-align: left; }
+  max-width: 650px;
+  padding: 0 2rem;
+  margin: 2rem auto;
+  text-align: left;
+  font-family: asap, sans-serif; }
+  @media all and (min-width: 760px) {
+    .page-id-21 .mission-copy {
+      margin: 4rem auto;
+      line-height: 1.75rem; } }
+  @media all and (min-width: 1200px) {
+    .page-id-21 .mission-copy {
+      max-width: 860px; } }
 
 .page-id-21 .mission-quote,
 .page-id-21 .mission-quote2 {

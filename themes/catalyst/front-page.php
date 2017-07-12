@@ -11,9 +11,11 @@
             <?php endforeach ?>
         </div>
         <div class="header-text">
-            <h1>we improve the quality of peoples lives</h1>
-            <p>We build communities.</p>
-            <p>We use real estate to affect social change.</p>
+            <?php $page_heading = esc_html( CFS()->get( 'fp_page_heading' ) ); ?>
+            <?php $banner_text = esc_html( CFS()->get( 'fp_banner_text' ) ); ?>
+
+            <h1><?php echo $page_heading; ?></h1>
+            <p><?php echo $banner_text; ?></p>
         </div>
     </header>
     <div class="front-content">
