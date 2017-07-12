@@ -21,7 +21,8 @@
     <div class="front-content">
         <div class="formula">
             <div class="blue-background-header">
-                <h2 class='subheader-lrg'>the catalyst formula</h2>
+                <?php $formula_subheader = esc_html( CFS()->get( 'formula_subheader' ) ); ?>
+                <h2 class='subheader-lrg'><?php echo $formula_subheader; ?></h2>
             </div>
 
             <?php $catalyst_formula_copy = esc_html( CFS()->get( 'catalyst_formula_copy' ) );
@@ -40,7 +41,8 @@
 
         <div class="projects">
             <div class="blue-background-header">
-                <h2 class='subheader-lrg'>our projects</h2>
+                <?php $projects_subheader = esc_html( CFS()->get( 'projects_subheader' ) ); ?>
+                <h2 class='subheader-lrg'><?php echo $projects_subheader; ?></h2>
             </div>
 
             <?php $our_projects_copy = CFS()->get( 'our_projects_copy' );
