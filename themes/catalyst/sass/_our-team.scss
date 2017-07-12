@@ -17,6 +17,7 @@
     }
     .intro-copy {
         @include intro-copy;
+        text-align: left;
     }
 }
 // Exit button for staff profile popouts.
@@ -239,6 +240,23 @@
             }
         }
 
+
+            article {
+                font-size: 1.15rem;
+                line-height: 1.5rem;
+                display: inline;
+                font-family: $font__secondary;
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+
+                    & li::before {
+                        content: "-";
+                        margin-right: 0.5rem;
+                        display: inline;
+                    }
+
         h3 {
             width: 100%;
             margin: $base__space-unit auto;
@@ -255,6 +273,7 @@
                 line-height: 2.3rem;
             }
         }
+
 
         article {
             font-size: $font__mobile-size;
@@ -300,8 +319,21 @@
         @include flex-row(nowrap, center, center);
         .small-header {
             height: auto;
+
+            width: 100%;
+            // max-width: 950px;
+            margin: 2rem auto 1rem;
+            position: relative;
+            @include flex-row(nowrap, center, center);
+            .small-header {
+                height: auto;
+                width: auto;
+                margin: 0 0 2rem;
+            }
+
             width: auto;
             margin: 0 0 2rem;
+
         }
     }
     // Profile preview styles

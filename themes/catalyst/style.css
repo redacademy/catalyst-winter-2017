@@ -2002,7 +2002,8 @@ object {
     padding: 2rem 1rem 2rem;
     font-size: 1.2rem;
     font-family: asap, sans-serif;
-    text-align: center; }
+    text-align: center;
+    text-align: left; }
     @media all and (min-width: 760px) {
       .page-id-159 .intro-copy {
         font-size: 1.5rem;
@@ -2393,6 +2394,253 @@ object {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center; }
+
+    .page-id-159 .staff-exit-button:hover {
+      cursor: pointer;
+      color: #00A4FF;
+      border-color: #00A4FF; }
+    .page-id-159 .staff-exit-button:focus {
+      outline: none; }
+    @media all and (min-width: 760px) {
+      .page-id-159 .staff-exit-button {
+        height: 45px;
+        width: 45px; } }
+    .page-id-159 .staff-exit-button span {
+      font-size: 1.5rem;
+      position: relative;
+      bottom: 0.5px; }
+      @media all and (min-width: 760px) {
+        .page-id-159 .staff-exit-button span {
+          font-size: 2.05rem; } }
+  .page-id-159 .board-exit-button {
+    margin: 0px;
+    position: absolute;
+    top: 18%;
+    right: 5%; }
+    .page-id-159 .board-exit-button span {
+      font-size: 1.5rem;
+      position: relative;
+      bottom: 1px;
+      left: 0.5px; }
+      @media all and (min-width: 760px) {
+        .page-id-159 .board-exit-button span {
+          font-size: 2.05rem; } }
+  .page-id-159 .name {
+    margin: 0 auto;
+    font-size: 1.25rem;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    z-index: 2; }
+  .page-id-159 .job-title {
+    font-family: 'quattrocento';
+    max-width: 235px;
+    margin: 0.25rem auto;
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 1.25px;
+    z-index: 2; }
+  .page-id-159 .staff-profiles-wrapper,
+  .page-id-159 .board-profiles-wrapper,
+  .page-id-159 .advisors-profiles-wrapper {
+    margin-bottom: 2rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center; }
+    @media all and (min-width: 760px) {
+      .page-id-159 .staff-profiles-wrapper,
+      .page-id-159 .board-profiles-wrapper,
+      .page-id-159 .advisors-profiles-wrapper {
+        width: 80%;
+        margin: 0 auto 5rem;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: start;
+            align-items: flex-start; } }
+    .page-id-159 .staff-profiles-wrapper .profile-popout,
+    .page-id-159 .board-profiles-wrapper .profile-popout,
+    .page-id-159 .advisors-profiles-wrapper .profile-popout {
+      height: 0;
+      width: 0;
+      background: #D9F1FF;
+      font-weight: 400;
+      opacity: 0;
+      overflow: hidden;
+      transition: opacity 0.7s ease;
+      display: none; }
+      .page-id-159 .staff-profiles-wrapper .profile-popout a,
+      .page-id-159 .board-profiles-wrapper .profile-popout a,
+      .page-id-159 .advisors-profiles-wrapper .profile-popout a {
+        color: #4A4A4A;
+        font-weight: bold;
+        text-decoration: none; }
+        .page-id-159 .staff-profiles-wrapper .profile-popout a:hover,
+        .page-id-159 .board-profiles-wrapper .profile-popout a:hover,
+        .page-id-159 .advisors-profiles-wrapper .profile-popout a:hover {
+          color: #935E32; }
+      .page-id-159 .staff-profiles-wrapper .profile-popout .left-quotation, .page-id-159 .staff-profiles-wrapper .profile-popout .right-quotation,
+      .page-id-159 .board-profiles-wrapper .profile-popout .left-quotation,
+      .page-id-159 .board-profiles-wrapper .profile-popout .right-quotation,
+      .page-id-159 .advisors-profiles-wrapper .profile-popout .left-quotation,
+      .page-id-159 .advisors-profiles-wrapper .profile-popout .right-quotation {
+        height: 30px;
+        width: 50px;
+        background: url("../../images/icon/quotation-white.svg") no-repeat center;
+        background-size: 275%;
+        position: absolute;
+        z-index: 1; }
+      .page-id-159 .staff-profiles-wrapper .profile-popout .left-quotation,
+      .page-id-159 .board-profiles-wrapper .profile-popout .left-quotation,
+      .page-id-159 .advisors-profiles-wrapper .profile-popout .left-quotation {
+        top: 20px;
+        left: -35px; }
+      .page-id-159 .staff-profiles-wrapper .profile-popout .right-quotation,
+      .page-id-159 .board-profiles-wrapper .profile-popout .right-quotation,
+      .page-id-159 .advisors-profiles-wrapper .profile-popout .right-quotation {
+        top: 81%;
+        right: 5%;
+        transform: rotate(180deg); }
+        @media all and (min-width: 760px) {
+          .page-id-159 .staff-profiles-wrapper .profile-popout .right-quotation,
+          .page-id-159 .board-profiles-wrapper .profile-popout .right-quotation,
+          .page-id-159 .advisors-profiles-wrapper .profile-popout .right-quotation {
+            top: 88%;
+            right: 2%; } }
+        @media all and (min-width: 1100px) {
+          .page-id-159 .staff-profiles-wrapper .profile-popout .right-quotation,
+          .page-id-159 .board-profiles-wrapper .profile-popout .right-quotation,
+          .page-id-159 .advisors-profiles-wrapper .profile-popout .right-quotation {
+            top: 86%;
+            right: -10%; } }
+      .page-id-159 .staff-profiles-wrapper .profile-popout .quote-container,
+      .page-id-159 .board-profiles-wrapper .profile-popout .quote-container,
+      .page-id-159 .advisors-profiles-wrapper .profile-popout .quote-container {
+        position: relative; }
+      .page-id-159 .staff-profiles-wrapper .profile-popout .quote,
+      .page-id-159 .board-profiles-wrapper .profile-popout .quote,
+      .page-id-159 .advisors-profiles-wrapper .profile-popout .quote {
+        max-width: 345px;
+        margin-bottom: 2.5rem;
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 2.25rem;
+        text-align: center;
+        position: relative;
+        z-index: 100000; }
+        @media all and (min-width: 760px) {
+          .page-id-159 .staff-profiles-wrapper .profile-popout .quote,
+          .page-id-159 .board-profiles-wrapper .profile-popout .quote,
+          .page-id-159 .advisors-profiles-wrapper .profile-popout .quote {
+            max-width: 260px;
+            margin-bottom: 2.5rem;
+            text-align: center; } }
+      .page-id-159 .staff-profiles-wrapper .profile-popout .center-column,
+      .page-id-159 .board-profiles-wrapper .profile-popout .center-column,
+      .page-id-159 .advisors-profiles-wrapper .profile-popout .center-column {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+        -ms-flex-align: center;
+            align-items: center;
+        margin: 0 auto; }
+        .page-id-159 .staff-profiles-wrapper .profile-popout .center-column img,
+        .page-id-159 .board-profiles-wrapper .profile-popout .center-column img,
+        .page-id-159 .advisors-profiles-wrapper .profile-popout .center-column img {
+          width: 290px;
+          border-radius: 50%; }
+      .page-id-159 .staff-profiles-wrapper .profile-popout .left-column,
+      .page-id-159 .board-profiles-wrapper .profile-popout .left-column,
+      .page-id-159 .advisors-profiles-wrapper .profile-popout .left-column {
+        width: 100%;
+        float: none;
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center; }
+        @media all and (min-width: 760px) {
+          .page-id-159 .staff-profiles-wrapper .profile-popout .left-column,
+          .page-id-159 .board-profiles-wrapper .profile-popout .left-column,
+          .page-id-159 .advisors-profiles-wrapper .profile-popout .left-column {
+            width: 40%;
+            margin-right: 10%;
+            float: left; } }
+        .page-id-159 .staff-profiles-wrapper .profile-popout .left-column img,
+        .page-id-159 .board-profiles-wrapper .profile-popout .left-column img,
+        .page-id-159 .advisors-profiles-wrapper .profile-popout .left-column img {
+          width: 225px;
+          border-radius: 50%; }
+          @media all and (min-width: 760px) {
+            .page-id-159 .staff-profiles-wrapper .profile-popout .left-column img,
+            .page-id-159 .board-profiles-wrapper .profile-popout .left-column img,
+            .page-id-159 .advisors-profiles-wrapper .profile-popout .left-column img {
+              width: 95%; } }
+      .page-id-159 .staff-profiles-wrapper .profile-popout h3,
+      .page-id-159 .board-profiles-wrapper .profile-popout h3,
+      .page-id-159 .advisors-profiles-wrapper .profile-popout h3 {
+        width: 85%;
+        margin: 0 auto;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-family: quattrocento;
+        line-height: 1.75rem;
+        font-style: italic;
+        text-align: center;
+        display: inline-block; }
+        @media all and (min-width: 760px) {
+          .page-id-159 .staff-profiles-wrapper .profile-popout h3,
+          .page-id-159 .board-profiles-wrapper .profile-popout h3,
+          .page-id-159 .advisors-profiles-wrapper .profile-popout h3 {
+            width: 50%;
+            font-size: 2rem;
+            line-height: 2.3rem; } }
+      .page-id-159 .staff-profiles-wrapper .profile-popout article,
+      .page-id-159 .board-profiles-wrapper .profile-popout article,
+      .page-id-159 .advisors-profiles-wrapper .profile-popout article {
+        font-size: 1.15rem;
+        line-height: 1.5rem;
+        display: inline;
+        font-family: asap, sans-serif; }
+        .page-id-159 .staff-profiles-wrapper .profile-popout article ul,
+        .page-id-159 .board-profiles-wrapper .profile-popout article ul,
+        .page-id-159 .advisors-profiles-wrapper .profile-popout article ul {
+          margin: 0;
+          padding: 0;
+          list-style: none; }
+          .page-id-159 .staff-profiles-wrapper .profile-popout article ul li::before,
+          .page-id-159 .board-profiles-wrapper .profile-popout article ul li::before,
+          .page-id-159 .advisors-profiles-wrapper .profile-popout article ul li::before {
+            content: "-";
+            margin-right: 0.5rem;
+            display: inline; }
+    .page-id-159 .staff-profiles-wrapper .translucent,
+    .page-id-159 .board-profiles-wrapper .translucent,
+    .page-id-159 .advisors-profiles-wrapper .translucent {
+      opacity: 0.5; }
+    .page-id-159 .staff-profiles-wrapper .show-popout,
+    .page-id-159 .board-profiles-wrapper .show-popout,
+    .page-id-159 .advisors-profiles-wrapper .show-popout {
+      height: 100%;
+      width: 100%;
+      padding: 7% 7%;
+
     .staff-profiles-wrapper .board-profiles-header .small-header,
     .board-profiles-wrapper .board-profiles-header .small-header,
     .advisors-profiles-wrapper .board-profiles-header .small-header {
@@ -2415,6 +2663,7 @@ object {
       font-weight: 700;
       text-transform: uppercase;
       text-decoration: none;
+
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: center;
@@ -2469,6 +2718,10 @@ object {
     .small-header {
       font-size: 2rem;
       width: 100%;
+
+      margin: 2rem auto 1rem;
+      position: relative;
+
       margin: 3rem auto 2.5rem; } }
 
 .advisors-copy-container {
@@ -2533,6 +2786,7 @@ object {
     .preview-container {
       width: 80%;
       margin: 0 auto 5rem;
+
       display: -ms-flexbox;
       display: flex;
       -ms-flex-flow: row wrap;
