@@ -64,7 +64,7 @@
 
             // Grey-out the rest of the page content.
 
-            $boardProfilesWrapper.animate({opacity: 0.25}, 130);
+            $boardProfilesWrapper.hide();
             $advisorsProfilesWrapper.animate({opacity: 0.25}, 130);
             $introCopy.animate({opacity: 0.25}, 130);
 
@@ -93,20 +93,20 @@
 
             // Grey-out the rest of the page content.
 
-            $staffProfilesWrapper.animate( {opacity: 0.25}, 130 );
+            $staffProfilesWrapper.hide();
             $advisorsProfilesWrapper.animate( {opacity: 0.25}, 130 );
             $introCopy.animate( {opacity: 0.25}, 130 );
 
             // Clear the active profiles section of inactive profiles and show only the active profile popout.
 
-            $boardProfilesHeader.addClass( 'blue-background-header' ).css( 'margin-bottom', '0' );
+            $boardProfilesHeader.hide();
             $boardProfilePreviews.hide();
             $boardProfilePopouts.hide();
             thisPopout.show().addClass( 'show-popout' );
             scrollToPopout( thisPopout, $boardProfilesHeader );
-            $boardExitButton.show();
+            $staffExitButton.show(130);
 
-            hideBoardPopout( thisPopout );
+            hideStaffPopout( thisPopout );
         });
     }
 
@@ -118,24 +118,11 @@
             $thisPopout.removeClass( 'show-popout' ).addClass( 'translucent' );
             $staffProfilesWrapper.css( 'margin-top', '0' );
             $staffProfilePreviews.show();
-            $staffProfilesHeader.show();
-            $boardProfilesWrapper.css( 'opacity', '1' );
-            $advisorsProfilesWrapper.css( 'opacity', '1' );
-            $introCopy.css( 'opacity', '1' );
-
-            scrollToProfile( $thisPopout );
-        });
-    }
-
-    // FUnction to hide board profile popouts.
-
-    function hideBoardPopout($thisPopout) {
-        $boardExitButton.click(function(){
-            $boardExitButton.hide();
-            $thisPopout.removeClass( 'show-popout' ).addClass( 'translucent' );
-            $boardProfilesHeader.removeClass( 'blue-background-header' );
             $boardProfilePreviews.show();
-            $staffProfilesWrapper.css( 'opacity', '1' );
+            $staffProfilesHeader.show();
+            $boardProfilesHeader.show();
+            $boardProfilesWrapper.show();
+            $staffProfilesWrapper.show();
             $advisorsProfilesWrapper.css( 'opacity', '1' );
             $introCopy.css( 'opacity', '1' );
 

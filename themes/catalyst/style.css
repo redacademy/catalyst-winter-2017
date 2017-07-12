@@ -2114,27 +2114,12 @@ object {
   .staff-exit-button span {
     font-size: 4rem;
     position: relative;
-    top: 20px; }
+    top: 20.5px; }
     @media all and (min-width: 760px) {
       .staff-exit-button span {
         font-size: 5.5rem;
         top: 27px;
         right: 0.5px; } }
-
-.board-exit-button {
-  margin: 0px;
-  position: absolute;
-  top: 18%;
-  right: 5%; }
-  .board-exit-button span {
-    font-size: 4rem;
-    position: relative;
-    top: 20px; }
-    @media all and (min-width: 760px) {
-      .board-exit-button span {
-        font-size: 5.5rem;
-        top: 27px;
-        left: 0.5px; } }
 
 .name {
   margin: 0 auto;

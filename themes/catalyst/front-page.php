@@ -51,7 +51,7 @@
             <?php endif; ?>
 
             <?php get_template_part( 'template-parts/projects-carousel', 'projects carousel' ); ?>
-            <a class="navigation-button" href="<?php echo get_home_url(); ?>/projects">view more projects</a>
+            <a class="navigation-button" href="<?php echo get_home_url(); ?>/projects">more projects</a>
         </div>
 
         <div class="team">

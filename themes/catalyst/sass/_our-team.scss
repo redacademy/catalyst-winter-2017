@@ -79,29 +79,11 @@
     span {
         font-size: 4rem;
         position: relative;
-        top: 20px;
+        top: 20.5px;
         @include media($desktop-width) {
             font-size: 5.5rem;
             top: 27px;
             right: 0.5px;
-        }
-    }
-}
-
-.board-exit-button {
-    margin: 0px;
-    position: absolute;
-    top: 18%;
-    right: 5%;
-
-    span {
-        font-size: 4rem;
-        position: relative;
-        top: 20px;
-        @include media($desktop-width) {
-            font-size: 5.5rem;
-            top: 27px;
-            left: 0.5px;
         }
     }
 }
