@@ -691,9 +691,6 @@ textarea {
     display: flex;
     padding-left: 20px;
     height: 100%; }
-    @media all and (min-width: 760px) {
-      .container .logo {
-        width: 150px; } }
   .container .header-text {
     height: 0;
     width: 0;
@@ -701,18 +698,15 @@ textarea {
   .container .header-logo {
     background: url("../../images/full-logo.svg") no-repeat;
     background-size: 100%;
+    width: 160px;
+    height: 68px;
     margin: 0;
-    margin-top: 18px;
+    margin-top: 10px;
     display: -ms-flexbox;
     display: flex;
-    width: 125px;
-    height: 52px;
     text-align: center;
     overflow: hidden;
     text-indent: 193%; }
-    @media all and (min-width: 760px) {
-      .container .header-logo {
-        margin-top: 10px; } }
   .container .top-menu {
     position: absolute;
     right: 0%;
@@ -787,7 +781,7 @@ textarea {
       margin-top: 5px;
       margin-right: 20px;
       position: relative;
-      bottom: 2px;
+      bottom: 3px;
       border: 1px solid #333345;
       border-radius: 0;
       background: #333345;
@@ -796,9 +790,6 @@ textarea {
       color: white;
       padding: 15px;
       transition: opacity 0.2s ease; }
-      @media all and (min-width: 760px) {
-        .container .hamburger-menu .hamburger {
-          bottom: 10px; } }
     .container .hamburger-menu ul {
       display: -ms-flexbox;
       display: flex;
