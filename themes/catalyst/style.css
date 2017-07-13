@@ -1715,14 +1715,15 @@ object {
   text-align: center;
   font-size: 1.5rem;
   line-height: 2.2rem;
-  font-weight: 100;
+  font-weight: 700;
   font-family: asap, sans-serif;
   font-style: italic;
   padding: 0 0.5rem; }
   @media all and (min-width: 760px) {
     .page-id-21 .quote,
     .page-id-21 .quote2 {
-      font-size: 2rem; } }
+      font-size: 2rem;
+      line-height: 2.75rem; } }
 
 .page-id-21 .quotation-left,
 .page-id-21 .quotation-left2 {

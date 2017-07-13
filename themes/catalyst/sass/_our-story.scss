@@ -117,12 +117,13 @@
         text-align: center;
         font-size: 1.5rem;
         line-height: $line-height-quotes;
-        font-weight: 100;
+        font-weight: $font__bold;
         font-family: $font__secondary;
         font-style: italic;
         padding: 0 0.5rem;
         @include media($desktop-width) {
             font-size: 2rem;
+            line-height: $line-height-quotes-desktop;
         }
     }
     .quotation-left,
