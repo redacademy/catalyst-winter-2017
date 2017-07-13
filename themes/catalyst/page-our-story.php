@@ -72,11 +72,14 @@ get_header(); ?>
 
 				</div>
 
+				<?php $infographic2 = CFS()->get( 'infographic_img2' );
+				if( !empty( $infographic2 ) ): ?>
 				<div class="infographic-container">
 					<div class="infographic-img">
 						<img src="<?php echo CFS()->get('infographic_img2'); ?>" alt="">
 					</div>
 				</div>
+				<?php endif; ?>
 			</section>
 
 			<section class="end-content">

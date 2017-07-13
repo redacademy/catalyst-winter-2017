@@ -106,16 +106,25 @@
         font-style: italic;
         p {
             height: auto;
-            
+
         }
     }
     .q-text-container {
+        max-width: 400px;
+        margin: 0 auto;
         position: relative;
+
+        @include media( $desktop-width ) {
+            max-width: 540px;
+        }
+        @include media( 900px ) {
+            max-width: 720px;
+        }
     }
     .left-quotation-mark,
     .right-quotation-mark {
-        height: 120px;
-        width: 85px;
+        height: 36px;
+        width: 50px;
         margin: 0;
         background: url('../../images/icon/quotation.svg') center no-repeat;
         background-size: 275%;
@@ -123,7 +132,8 @@
         z-index: -1;
         display: none;
         @include media($desktop-width) {
-            width: 60px;
+            height: 50px;
+            width: 75px;
         }
     }
     .is-selected .left-quotation-mark,
@@ -135,18 +145,21 @@
         display: none;
     }
     .left-quotation-mark {
-        top: -50px;
-        left: -25px;
+        top: -7px;
+        left: -20px;
         @include media($desktop-width) {
-            left: 0;
+           left: -56px;
         }
     }
     .right-quotation-mark {
-        bottom: -50px;
-        right: -25px;
+        bottom: -7px;
+        right: -20px;
         transform: rotate(180deg);
         @include media($desktop-width) {
-            right: 0;
+            right: -50px;
+        }
+        @include media( 1070px ) {
+            bottom: -14px;
         }
     }
     .quote-text {

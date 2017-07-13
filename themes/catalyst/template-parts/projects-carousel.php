@@ -45,8 +45,8 @@
                         </div>
 
                         <p class="person"> <?php echo esc_html( $quote['person'] ); ?></p>
-                        <p class="line"> <?php echo esc_html( $quote['line2'] ); ?></p>
                         <p class="line"> <?php echo esc_html( $quote['line1'] ); ?></p>
+                        <p class="line"> <?php echo esc_html( $quote['line2'] ); ?></p>
                     <?php endforeach; wp_reset_postdata(); ?>
                 <?php endif; ?>
             </div>

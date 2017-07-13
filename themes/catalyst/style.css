@@ -1203,6 +1203,7 @@ textarea {
     max-width: 340px;
     margin: 0 auto;
     font-family: asap, sans-serif;
+    font-weight: 700;
     font-style: italic;
     margin-top: 0;
     position: relative; }
@@ -1255,12 +1256,18 @@ textarea {
         right: -50px; } }
   .home .projects .quote-text {
     margin-bottom: 2rem; }
+  .home .projects .person {
+    font-weight: 700;
+    margin: 0;
+    color: #4A4A4A;
+    font-style: normal; }
   .home .projects .person, .home .projects .line {
     font-size: 1.5rem;
-    font-weight: 700;
     margin: 0; }
   .home .projects .line {
-    font-style: italic; }
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 400; }
   .home .projects .other-proj-wrapper {
     width: 85%;
     margin: 0 0.5rem;
@@ -4125,12 +4132,20 @@ object {
     height: auto; }
 
 .single-projects .q-text-container {
+  max-width: 400px;
+  margin: 0 auto;
   position: relative; }
+  @media all and (min-width: 760px) {
+    .single-projects .q-text-container {
+      max-width: 540px; } }
+  @media all and (min-width: 900px) {
+    .single-projects .q-text-container {
+      max-width: 720px; } }
 
 .single-projects .left-quotation-mark,
 .single-projects .right-quotation-mark {
-  height: 120px;
-  width: 85px;
+  height: 36px;
+  width: 50px;
   margin: 0;
   background: url("../../images/icon/quotation.svg") center no-repeat;
   background-size: 275%;
@@ -4140,7 +4155,8 @@ object {
   @media all and (min-width: 760px) {
     .single-projects .left-quotation-mark,
     .single-projects .right-quotation-mark {
-      width: 60px; } }
+      height: 50px;
+      width: 75px; } }
 
 .single-projects .is-selected .left-quotation-mark,
 .single-projects .is-selected .right-quotation-mark {
@@ -4151,19 +4167,22 @@ object {
   display: none; }
 
 .single-projects .left-quotation-mark {
-  top: -50px;
-  left: -25px; }
+  top: -7px;
+  left: -20px; }
   @media all and (min-width: 760px) {
     .single-projects .left-quotation-mark {
-      left: 0; } }
+      left: -56px; } }
 
 .single-projects .right-quotation-mark {
-  bottom: -50px;
-  right: -25px;
+  bottom: -7px;
+  right: -20px;
   transform: rotate(180deg); }
   @media all and (min-width: 760px) {
     .single-projects .right-quotation-mark {
-      right: 0; } }
+      right: -50px; } }
+  @media all and (min-width: 1070px) {
+    .single-projects .right-quotation-mark {
+      bottom: -14px; } }
 
 .single-projects .quote-text {
   margin-bottom: 2rem;
