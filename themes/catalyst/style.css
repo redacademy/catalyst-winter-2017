@@ -631,6 +631,18 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+/* sub menu */
+#primary-menu .sub-menu {
+  display: none; }
+
+#primary-menu li:hover > .sub-menu {
+  display: block; }
+
+@media all and (min-width: 760px) {
+  #primary-menu .menu-item-has-children {
+    text-align: right;
+    background-color: rgba(255, 255, 255, 0.8); } }
+
 /* Menus */
 .main-navigation {
   clear: both;

@@ -2,6 +2,22 @@
 # Navigation
 --------------------------------------------------------------*/
 
+/* sub menu */
+#primary-menu .sub-menu {
+    display: none;
+
+}
+
+#primary-menu li:hover > .sub-menu {
+    display: block;
+}
+
+#primary-menu .menu-item-has-children {
+	@include media($desktop-width) {
+		text-align: right;
+		background-color: hsla(0,0%,100%,.8);
+	}
+}
 
 /* Menus */
 
