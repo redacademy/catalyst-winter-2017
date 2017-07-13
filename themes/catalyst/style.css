@@ -1666,12 +1666,25 @@ object {
 
 .page-id-21 .mission-quote,
 .page-id-21 .mission-quote2 {
+  max-width: 320px;
   display: -ms-flexbox;
   display: flex;
   font-weight: lighter;
   position: relative;
   -ms-flex-pack: center;
       justify-content: center; }
+  @media all and (min-width: 480px) {
+    .page-id-21 .mission-quote,
+    .page-id-21 .mission-quote2 {
+      max-width: 460px; } }
+  @media all and (min-width: 760px) {
+    .page-id-21 .mission-quote,
+    .page-id-21 .mission-quote2 {
+      max-width: 650px; } }
+  @media all and (min-width: 1200px) {
+    .page-id-21 .mission-quote,
+    .page-id-21 .mission-quote2 {
+      max-width: 860px; } }
 
 .page-id-21 .mission-quote {
   height: auto;
@@ -1680,7 +1693,6 @@ object {
   position: relative; }
   @media all and (min-width: 760px) {
     .page-id-21 .mission-quote {
-      max-width: none;
       margin: 3rem auto 2rem; } }
   .page-id-21 .mission-quote .quote-target {
     height: 0;
@@ -1689,14 +1701,7 @@ object {
 
 .page-id-21 .mission-quote2 {
   height: auto;
-  max-width: 320px;
   margin: 0 auto; }
-  @media all and (min-width: 600px) {
-    .page-id-21 .mission-quote2 {
-      max-width: 460px; } }
-  @media all and (min-width: 760px) {
-    .page-id-21 .mission-quote2 {
-      max-width: 630px; } }
 
 .page-id-21 .q-text-container {
   position: relative; }
@@ -1713,7 +1718,6 @@ object {
   font-size: 1.5rem;
   line-height: 2.2rem;
   font-weight: 100;
-  width: 100%;
   font-family: asap, sans-serif;
   font-style: italic;
   padding: 0 0.5rem; }
@@ -1744,8 +1748,8 @@ object {
       left: -40px; } }
 
 .page-id-21 .quotation-left2 {
-  top: 10px;
-  left: 10px; }
+  top: 18px;
+  left: 5px; }
   @media all and (min-width: 760px) {
     .page-id-21 .quotation-left2 {
       top: 10px;
@@ -1775,7 +1779,7 @@ object {
 
 .page-id-21 .quotation-right2 {
   bottom: 15px;
-  right: 10px; }
+  right: 0px; }
   @media all and (min-width: 760px) {
     .page-id-21 .quotation-right2 {
       bottom: 8px;

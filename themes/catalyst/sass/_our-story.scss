@@ -68,18 +68,29 @@
     }
     .mission-quote,
     .mission-quote2 {
+        max-width: 320px;
         display: flex;
         font-weight: lighter;
         position: relative;
         justify-content: center;
+
+        @include media( 480px ) {
+            max-width: 460px;
+        }
+        @include media( $desktop-width ) {
+            max-width: 650px;
+        }
+        @include media( 1200px ) {
+            max-width: 860px;
+        }
     }
     .mission-quote {
         height: auto;
         max-width: 320px;
         margin: $base__space-unit auto 1rem;
         position: relative;
+
         @include media( $desktop-width ) {
-            max-width: none;
             margin: 3rem auto 2rem;
         }
         .quote-target {
@@ -90,14 +101,7 @@
     }
     .mission-quote2 {
         height: auto;
-        max-width: 320px;
         margin: 0 auto;
-        @include media(600px) {
-            max-width: 460px;
-        }
-        @include media( $desktop-width ) {
-            max-width: 630px;
-        }
     }
     .q-text-container {
         position: relative;
@@ -114,7 +118,6 @@
         font-size: 1.5rem;
         line-height: $line-height-quotes;
         font-weight: 100;
-        width: 100%;
         font-family: $font__secondary;
         font-style: italic;
         padding: 0 0.5rem;
@@ -143,8 +146,8 @@
         }
     }
     .quotation-left2 {
-        top: 10px;
-        left: 10px;
+        top: 18px;
+        left: 5px;
         @include media($desktop-width) {
             top: 10px;
             left: -20px;
@@ -173,7 +176,7 @@
     }
     .quotation-right2 {
         bottom: 15px;
-        right: 10px;
+        right: 0px;
         @include media($desktop-width) {
             bottom: 8px;
             right: -10px;
