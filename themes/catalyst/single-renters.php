@@ -17,7 +17,7 @@
         <h2 class='subheader-lrg'>About <?php echo CFS()->get('project_name'); ?></h2>
     </div>
     <div class="wrapper">
-        <div class="about-text">
+        <div class="about-text page-copy">
             <?php echo CFS()->get('about_copy'); ?>
         </div>
     </div>
@@ -55,7 +55,7 @@
                 <?php endforeach; wp_reset_postdata(); ?>
             </div>
         </div>
-        <div class="floorplan-text">
+        <div class="floorplan-text page-copy">
             <?php echo CFS()->get('floorplan_copy'); ?>
         </div>
     </div>
@@ -65,7 +65,7 @@
         <h2 class='subheader-lrg'>Rent</h2>
     </div>
     <div class="wrapper">
-        <div class="rent-text">
+        <div class="rent-text page-copy">
             <?php echo CFS()->get('rent_copy'); ?>
         </div>
         <div class="rent-chart-container">
@@ -95,7 +95,7 @@
         </div>
         <?php $furtherInfo = CFS()->get('further_info');
         if($furtherInfo) : ?>
-        <div class="more-info">
+        <div class="more-info page-copy">
             <h3>Further Information</h3>
             <?php echo CFS()->get('further_info'); ?>
         </div>
@@ -107,7 +107,7 @@
         <h2 class='subheader-lrg'>Contact</h2>
     </div>
     <div class="wrapper">
-        <div class="contact-text">
+        <div class="contact-text page-copy">
             <?php echo CFS()->get('contact_copy'); ?>
         </div>
         <div class="contact-form">

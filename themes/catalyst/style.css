@@ -2463,7 +2463,7 @@ object {
   max-width: 650px;
   padding: 0 2rem;
   margin: 0 auto 2rem;
-  text-align: center;
+  text-align: left;
   font-family: asap, sans-serif; }
   @media all and (min-width: 760px) {
     .advisors-copy {
@@ -4263,7 +4263,9 @@ object {
   margin-bottom: 3rem; }
 
 .single-renters a {
-  color: #777777; }
+  color: #935E32; }
+  .single-renters a:hover {
+    color: #00A4FF; }
 
 .single-renters .wrapper {
   max-width: 1200px;
@@ -4391,7 +4393,10 @@ object {
   padding: 1rem 0; }
 
 .single-renters .rent .more-info h3 {
-  margin-bottom: 0; }
+  margin-bottom: 0.5rem; }
+  @media all and (min-width: 760px) {
+    .single-renters .rent .more-info h3 {
+      margin-bottom: 0.75rem; } }
 
 .single-renters .rent .more-info p {
   margin: 0; }
@@ -4423,6 +4428,22 @@ object {
 
 .single-renters .contact form label {
   width: 100%; }
+
+.single-renters .page-copy {
+  max-width: 650px;
+  padding: 0 2rem;
+  margin: 2rem auto;
+  text-align: left;
+  font-size: 1.2rem;
+  font-family: asap, sans-serif; }
+  @media all and (min-width: 760px) {
+    .single-renters .page-copy {
+      margin: 4rem auto;
+      font-size: 1.5rem;
+      line-height: 1.75rem; } }
+  @media all and (min-width: 1200px) {
+    .single-renters .page-copy {
+      max-width: 860px; } }
 
 .page-id-252 {
   height: 100%;

@@ -4,7 +4,11 @@
         margin-bottom: 3rem;
     }
     a {
-        color: #777777;
+        color: $color__menu-active;
+
+        &:hover {
+            color: $color__menu-hover;
+        }
     }
     .wrapper {
         max-width: 1200px;
@@ -142,7 +146,11 @@
         }
         .more-info {
             h3 {
-                margin-bottom: 0;
+                margin-bottom: 0.5rem;
+
+                @include media( $desktop-width ) {
+                    margin-bottom: 0.75rem;
+                }
             }
             p {
                 margin: 0;
@@ -177,5 +185,20 @@
             }
         }
     }
-
+    .page-copy {
+        max-width: 650px;
+        padding: 0 2rem;
+        margin: 2rem auto;
+        text-align: $body-text-align;
+        font-size: 1.2rem;
+        font-family: $font__secondary;
+        @include media ($desktop-width) {
+            margin: 4rem auto;
+            font-size: 1.5rem;
+            line-height: $line-height-desktop;
+        }
+        @include media(1200px) {
+            max-width: 860px;
+        }
+    }
 }

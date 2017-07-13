@@ -336,7 +336,7 @@
     max-width: 650px;
     padding: 0 2rem;
     margin: 0 auto 2rem;
-    text-align: center;
+    text-align: left;
     font-family: $font__secondary;
     @include media ($desktop-width) {
         margin: 0 auto 3rem;
