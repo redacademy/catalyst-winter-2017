@@ -78,8 +78,12 @@
         }
     }
     .projects {
-        padding-top: 3rem;
+        padding-bottom: 1rem;
         text-align: center;
+
+        @include media( $desktop-width ) {
+            padding-top: 2rem;
+        }
         .our-projects-copy {
             max-width: 650px;
             margin: 2rem auto;

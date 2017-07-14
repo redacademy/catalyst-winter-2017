@@ -54,7 +54,7 @@
             <a class="navigation-button" href="<?php echo get_home_url(); ?>/projects">more projects</a>
         </div>
 
-        <div class="team">
+        <!--<div class="team">
             <div class="blue-background-header">
                 <?php $team_catalyst_subheader = esc_html( CFS()->get( 'team_catalyst_subheader' ) );
                 if ( !empty( $team_catalyst_subheader ) ) :?>
@@ -68,7 +68,7 @@
             <?php endif; ?>
 
             <a class="navigation-button" href="<?php echo get_home_url(); ?>/our-team">Meet Our Team</a>
-        </div>
+        </div>-->
     </div>
 </section>
 

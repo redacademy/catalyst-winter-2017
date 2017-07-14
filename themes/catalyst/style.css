@@ -433,7 +433,7 @@ select,
 textarea {
   color: #4A4A4A;
   font-family: roboto_slab, serif;
-  line-height: 1.75rem;
+  line-height: 1.9rem;
   font-size: 16px; }
   @media all and (min-width: 760px) {
     body,
@@ -441,7 +441,7 @@ textarea {
     input,
     select,
     textarea {
-      line-height: 1.75rem; } }
+      line-height: 2.15rem; } }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -641,7 +641,7 @@ textarea {
       margin: 0;
       padding: 0 1.5rem; }
       #primary-menu li:hover > .sub-menu li {
-        padding: 0.5rem 0; } }
+        padding: 0.5rem 0 0 1.5rem; } }
 
 #primary-menu .menu-item-has-children {
   text-align: right;
@@ -1056,7 +1056,7 @@ textarea {
   @media all and (min-width: 760px) {
     .home p {
       font-size: 1.5rem;
-      line-height: 1.75rem; } }
+      line-height: 2.15rem; } }
 
 .home .hamburger-menu li {
   padding: 0 12px;
@@ -1108,7 +1108,6 @@ textarea {
   .home .header-text h1 {
     margin-bottom: 1rem;
     font-size: 2.5rem;
-    text-transform: uppercase;
     font-weight: 400;
     text-shadow: 1px 2px 5px #323232;
     margin: 0 auto 2rem; }
@@ -1165,14 +1164,17 @@ textarea {
   @media all and (min-width: 760px) {
     .home .catalyst-formula-copy {
       margin: 4rem auto;
-      line-height: 1.75rem; } }
+      line-height: 2.15rem; } }
   @media all and (min-width: 1200px) {
     .home .catalyst-formula-copy {
       max-width: 860px; } }
 
 .home .projects {
-  padding-top: 3rem;
+  padding-bottom: 1rem;
   text-align: center; }
+  @media all and (min-width: 760px) {
+    .home .projects {
+      padding-top: 2rem; } }
   .home .projects .our-projects-copy {
     max-width: 650px;
     margin: 2rem auto;
@@ -1182,7 +1184,7 @@ textarea {
     @media all and (min-width: 760px) {
       .home .projects .our-projects-copy {
         margin: 4rem auto;
-        line-height: 1.75rem; } }
+        line-height: 2.15rem; } }
     @media all and (min-width: 1200px) {
       .home .projects .our-projects-copy {
         max-width: 860px; } }
@@ -1344,7 +1346,7 @@ textarea {
     @media all and (min-width: 760px) {
       .home .team .team-catalyst-copy {
         margin: 4rem auto;
-        line-height: 1.75rem; } }
+        line-height: 2.15rem; } }
     @media all and (min-width: 1200px) {
       .home .team .team-catalyst-copy {
         max-width: 860px; } }
@@ -1553,7 +1555,6 @@ object {
 .page-id-21 .entry-title {
   margin-bottom: 1rem;
   font-size: 2.5rem;
-  text-transform: uppercase;
   font-weight: 400;
   text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 760px) {
@@ -1675,7 +1676,7 @@ object {
   @media all and (min-width: 760px) {
     .page-id-21 .mission-copy {
       margin: 4rem auto;
-      line-height: 1.75rem; } }
+      line-height: 2.15rem; } }
   @media all and (min-width: 1200px) {
     .page-id-21 .mission-copy {
       max-width: 860px; } }
@@ -1983,7 +1984,7 @@ object {
   @media all and (min-width: 760px) {
     .page-id-159 {
       font-size: 1.5rem;
-      line-height: 1.75rem; } }
+      line-height: 2.15rem; } }
   .page-id-159 .header-text {
     max-width: 900px;
     color: white;
@@ -1992,7 +1993,6 @@ object {
   .page-id-159 .entry-title {
     margin-bottom: 1rem;
     font-size: 2.5rem;
-    text-transform: uppercase;
     font-weight: 400;
     text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 760px) {
@@ -2345,7 +2345,7 @@ object {
     .board-profiles-wrapper .profile-popout article,
     .advisors-profiles-wrapper .profile-popout article {
       font-size: 1.2rem;
-      line-height: 1.75rem;
+      line-height: 1.9rem;
       display: inline; }
       .staff-profiles-wrapper .profile-popout article ul,
       .board-profiles-wrapper .profile-popout article ul,
@@ -2489,7 +2489,7 @@ object {
   @media all and (min-width: 760px) {
     .advisors-copy {
       margin: 0 auto 3rem;
-      line-height: 1.75rem; } }
+      line-height: 2.15rem; } }
   @media all and (min-width: 1200px) {
     .advisors-copy {
       max-width: 860px; } }
@@ -2678,7 +2678,7 @@ object {
   .staff-template-default .profile-popout article, .board-template-default .profile-popout article {
     font-size: 1.2rem;
     font-weight: 700;
-    line-height: 1.75rem;
+    line-height: 1.9rem;
     display: inline; }
     .staff-template-default .profile-popout article ul, .board-template-default .profile-popout article ul {
       margin: 0;
@@ -2705,7 +2705,6 @@ object {
   .page-id-19 .entry-title {
     margin-bottom: 1rem;
     font-size: 2.5rem;
-    text-transform: uppercase;
     font-weight: 400;
     text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 760px) {
@@ -2883,7 +2882,7 @@ object {
   @media all and (min-width: 760px) {
     .page-id-18 {
       font-size: 1.5rem;
-      line-height: 1.75rem; } }
+      line-height: 2.15rem; } }
   .page-id-18 .header-text {
     max-width: 900px;
     color: white;
@@ -2894,7 +2893,6 @@ object {
   .page-id-18 .entry-title {
     margin-bottom: 1rem;
     font-size: 2.5rem;
-    text-transform: uppercase;
     font-weight: 400;
     text-shadow: 1px 2px 5px #323232;
     font-size: 3.25rem; }
@@ -2952,7 +2950,7 @@ object {
       padding: 1rem;
       font-family: asap, sans-serif;
       font-size: 1.2rem;
-      line-height: 1.75rem;
+      line-height: 1.9rem;
       text-align: center;
       margin: 0 auto;
       text-align: left; }
@@ -2960,7 +2958,7 @@ object {
         .page-id-18 .main-copy-text p {
           padding: 0.75rem auto;
           font-size: 1.5rem;
-          line-height: 1.75rem; } }
+          line-height: 2.15rem; } }
       @media all and (min-width: 1200px) {
         .page-id-18 .main-copy-text p {
           max-width: 860px; } }
@@ -2971,14 +2969,14 @@ object {
     padding: 1rem;
     font-family: asap, sans-serif;
     font-size: 1.2rem;
-    line-height: 1.75rem;
+    line-height: 1.9rem;
     text-align: center;
     text-align: center; }
     @media all and (min-width: 760px) {
       .page-id-18 .main-copy1, .page-id-18 .main-copy2, .page-id-18 .main-copy3 {
         padding: 0.75rem auto;
         font-size: 1.5rem;
-        line-height: 1.75rem; } }
+        line-height: 2.15rem; } }
     @media all and (min-width: 1200px) {
       .page-id-18 .main-copy1, .page-id-18 .main-copy2, .page-id-18 .main-copy3 {
         max-width: 860px; } }
@@ -3052,14 +3050,14 @@ object {
       padding: 1rem;
       font-family: asap, sans-serif;
       font-size: 1.2rem;
-      line-height: 1.75rem;
+      line-height: 1.9rem;
       text-align: center;
       text-align: left; }
       @media all and (min-width: 760px) {
         .page-id-18 .partners-information-container .partners-information p {
           padding: 0.75rem auto;
           font-size: 1.5rem;
-          line-height: 1.75rem; } }
+          line-height: 2.15rem; } }
       @media all and (min-width: 1200px) {
         .page-id-18 .partners-information-container .partners-information p {
           max-width: 860px; } }
@@ -3152,7 +3150,6 @@ object {
   .page-id-483 .header-text h1 {
     margin-bottom: 1rem;
     font-size: 2.5rem;
-    text-transform: uppercase;
     font-weight: 400;
     text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 760px) {
@@ -3181,11 +3178,11 @@ object {
 .page-id-483 p {
   font-family: asap, sans-serif;
   font-size: 1.2rem;
-  line-height: 1.75rem; }
+  line-height: 1.9rem; }
   @media all and (min-width: 760px) {
     .page-id-483 p {
       font-size: 1.5rem;
-      line-height: 1.75rem; } }
+      line-height: 2.15rem; } }
 
 .page-id-483 ul {
   margin: 0;
@@ -3233,7 +3230,6 @@ object {
   .page-id-486 .header-text h1 {
     margin-bottom: 1rem;
     font-size: 2.5rem;
-    text-transform: uppercase;
     font-weight: 400;
     text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 760px) {
@@ -3262,11 +3258,11 @@ object {
 .page-id-486 p {
   font-family: asap, sans-serif;
   font-size: 1.2rem;
-  line-height: 1.75rem; }
+  line-height: 1.9rem; }
   @media all and (min-width: 760px) {
     .page-id-486 p {
       font-size: 1.5rem;
-      line-height: 1.75rem; } }
+      line-height: 2.15rem; } }
 
 .page-id-486 ul {
   margin: 0;
@@ -3440,7 +3436,7 @@ object {
   @media all and (min-width: 760px) {
     .page-id-7 {
       font-size: 1.5rem;
-      line-height: 1.75rem; } }
+      line-height: 2.15rem; } }
   .page-id-7 .header-text {
     max-width: 900px;
     color: white;
@@ -3449,7 +3445,6 @@ object {
   .page-id-7 .entry-title {
     margin-bottom: 1rem;
     font-size: 2.5rem;
-    text-transform: uppercase;
     font-weight: 400;
     text-shadow: 1px 2px 5px #323232; }
     @media all and (min-width: 760px) {
@@ -3646,7 +3641,6 @@ object {
 .page-id-196 .entry-title {
   margin-bottom: 1rem;
   font-size: 2.5rem;
-  text-transform: uppercase;
   font-weight: 400;
   text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 760px) {
@@ -3708,7 +3702,7 @@ object {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  line-height: 1.75rem; }
+  line-height: 2.15rem; }
 
 .page-id-196 .job-post {
   margin: 0 10%;
@@ -3798,7 +3792,6 @@ object {
 .page-id-195 .entry-title {
   margin-bottom: 1rem;
   font-size: 2.5rem;
-  text-transform: uppercase;
   font-weight: 400;
   text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 760px) {
@@ -3919,7 +3912,6 @@ object {
 .page-id-441 .entry-title {
   margin-bottom: 1rem;
   font-size: 2.5rem;
-  text-transform: uppercase;
   font-weight: 400;
   text-shadow: 1px 2px 5px #323232; }
   @media all and (min-width: 760px) {
@@ -4473,7 +4465,7 @@ object {
     .single-renters .page-copy {
       margin: 4rem auto;
       font-size: 1.5rem;
-      line-height: 1.75rem; } }
+      line-height: 2.15rem; } }
   @media all and (min-width: 1200px) {
     .single-renters .page-copy {
       max-width: 860px; } }
@@ -4484,13 +4476,12 @@ object {
   @media all and (min-width: 760px) {
     .page-id-252 {
       font-size: 1.5rem;
-      line-height: 1.75rem; } }
+      line-height: 2.15rem; } }
   .page-id-252 .entry-title {
     display: none; }
   .page-id-252 .banner-text {
     margin-bottom: 1rem;
     font-size: 2.5rem;
-    text-transform: uppercase;
     font-weight: 400;
     text-shadow: 1px 2px 5px #323232;
     margin: 0 auto;
