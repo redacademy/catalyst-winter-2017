@@ -10,12 +10,23 @@
 
 #primary-menu li:hover > .sub-menu {
     display: block;
+
+		@include media( $desktop-width ) {
+			margin: 0;
+			padding: 0 $base__space-unit;
+
+			li {
+				padding: 0.5rem 0;
+			}
+		}
 }
 
 #primary-menu .menu-item-has-children {
-	@include media($desktop-width) {
-		text-align: right;
-		background-color: hsla(0,0%,100%,.8);
+	text-align: right;
+	background-color: transparent;
+
+	&:hover, &:focus {
+		background-color: rgba(255, 255, 255, .95);
 	}
 }
 
@@ -145,7 +156,7 @@
 			}
 			li.current-menu-item {
 				a {
-					color: $color__menu-active;
+					color: $color__menu-hover;
 				}
 			}
 			a {
@@ -155,10 +166,10 @@
 				font-weight: 800;
 				text-decoration: none;
 				&:active {
-					color: $color__menu-active;
+					color: $color__menu-hover;
 				}
 				&:hover {
-					color: $color__menu-hover;
+					color: $color__menu-active;
 				}
 			}
 		}
@@ -259,7 +270,7 @@
 			display: none;
 			height: 0;
 			margin-top: 85px;
-			background-color: rgba(255, 255, 255, .8);
+			background-color: rgba(255, 255, 255, .95);
 			opacity: 0;
 			overflow: hidden;
 			transition: opacity 0.2s ease;

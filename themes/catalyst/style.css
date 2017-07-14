@@ -578,8 +578,7 @@ table {
   text-align: left; }
 
 .infographic-container {
-  margin: 2rem auto;
-  padding: 0 1rem; }
+  margin: 2rem auto; }
   @media all and (min-width: 760px) {
     .infographic-container {
       margin: 3rem auto; } }
@@ -637,11 +636,18 @@ textarea {
 
 #primary-menu li:hover > .sub-menu {
   display: block; }
+  @media all and (min-width: 760px) {
+    #primary-menu li:hover > .sub-menu {
+      margin: 0;
+      padding: 0 1.5rem; }
+      #primary-menu li:hover > .sub-menu li {
+        padding: 0.5rem 0; } }
 
-@media all and (min-width: 760px) {
-  #primary-menu .menu-item-has-children {
-    text-align: right;
-    background-color: rgba(255, 255, 255, 0.8); } }
+#primary-menu .menu-item-has-children {
+  text-align: right;
+  background-color: transparent; }
+  #primary-menu .menu-item-has-children:hover, #primary-menu .menu-item-has-children:focus {
+    background-color: rgba(255, 255, 255, 0.95); }
 
 /* Menus */
 .main-navigation {
@@ -763,7 +769,7 @@ textarea {
       .container .desktop-menu #primary-menu li {
         padding: 0 18px; }
       .container .desktop-menu #primary-menu li.current-menu-item a {
-        color: #935E32; }
+        color: #00A4FF; }
       .container .desktop-menu #primary-menu a {
         text-transform: uppercase;
         color: #323232;
@@ -771,9 +777,9 @@ textarea {
         font-weight: 800;
         text-decoration: none; }
         .container .desktop-menu #primary-menu a:active {
-          color: #935E32; }
-        .container .desktop-menu #primary-menu a:hover {
           color: #00A4FF; }
+        .container .desktop-menu #primary-menu a:hover {
+          color: #935E32; }
   .container .hamburger-menu {
     width: 60vw;
     display: -ms-flexbox;
@@ -868,7 +874,7 @@ textarea {
       display: none;
       height: 0;
       margin-top: 85px;
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color: rgba(255, 255, 255, 0.95);
       opacity: 0;
       overflow: hidden;
       transition: opacity 0.2s ease;
