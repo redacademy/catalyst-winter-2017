@@ -560,6 +560,9 @@ table {
       margin: 0 auto 2.5rem;
       padding: 1rem 1.5rem; } }
 
+.blue-background-header:first-child {
+  margin-top: 1.5rem; }
+
 .subheader-lrg {
   max-width: 400px;
   margin: 0 auto;
@@ -1104,9 +1107,6 @@ textarea {
 .home .fp-img-container {
   width: 100%;
   height: 100vh; }
-
-.home .blue-background-header {
-  margin-top: 1.5rem; }
 
 .home .header-text {
   max-width: 900px;
