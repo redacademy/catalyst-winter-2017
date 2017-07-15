@@ -123,6 +123,7 @@
         height: 0;
         width: 0;
         background: $color__brand-blue;
+        font-family: $font__secondary;
         font-weight: 400;
         opacity: 0;
         overflow: hidden;
@@ -153,10 +154,10 @@
             left: -20px;
 
             @include media( $desktop-width ) {
-                left: -20px;
+                left: -25px;
             }
             @include media( 1000px ) {
-                left: -40px;
+                left: -45px;
             }
         }
         .right-quotation {
@@ -167,7 +168,7 @@
                 bottom: 35px;
             }
             @include media(1100px) {
-                right: -35px;
+                right: -20px;
             }
         }
         .quote-container {
@@ -188,7 +189,7 @@
             @include media($desktop-width) {
                 max-width: 260px;
                 margin-bottom: 2.5rem;
-                text-align: center;
+                text-align: left;
             }
         }
 
@@ -226,7 +227,7 @@
             margin: $base__space-unit auto;
             font-size: 1.5rem;
             line-height: 2rem;
-            font-family: quattrocento;
+            font-family: $font__main;
             line-height: 1.75rem;
             font-style: italic;
             text-align: center;
@@ -234,7 +235,7 @@
             @include media($desktop-width) {
                 width: 50%;
                 font-size: 2rem;
-                line-height: 2.3rem;
+                line-height: 2.5rem;
             }
         }
 
@@ -363,9 +364,6 @@
         }
         @include media(1350px) {
             width: 20%;
-        }
-        .name {
-            margin: 0 auto;
         }
         .job-title {
             min-width: 130px;

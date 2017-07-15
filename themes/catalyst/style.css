@@ -632,16 +632,13 @@ textarea {
 --------------------------------------------------------------*/
 /* sub menu */
 #primary-menu .sub-menu {
-  display: none; }
+  display: none;
+  transition: all 850 ease; }
 
 #primary-menu li:hover > .sub-menu {
   display: block; }
-  @media all and (min-width: 760px) {
-    #primary-menu li:hover > .sub-menu {
-      margin: 0;
-      padding: 0 1.5rem; }
-      #primary-menu li:hover > .sub-menu li {
-        padding: 0.5rem 0 0 1.5rem; } }
+  #primary-menu li:hover > .sub-menu li {
+    padding: 0.5rem 0 0 1.5rem; }
 
 #primary-menu .menu-item-has-children {
   text-align: right;
@@ -766,6 +763,10 @@ textarea {
         padding-top: 45px;
         overflow: hidden;
         list-style: none; }
+      .container .desktop-menu #primary-menu .sub-menu {
+        height: auto;
+        padding: 1.5rem;
+        padding-left: 2.5rem; }
       .container .desktop-menu #primary-menu li {
         padding: 0 18px; }
       .container .desktop-menu #primary-menu li.current-menu-item a {
@@ -799,7 +800,7 @@ textarea {
       margin-top: 5px;
       margin-right: 20px;
       position: relative;
-      bottom: 3px;
+      bottom: 4px;
       border: 1px solid #333345;
       border-radius: 0;
       background: #333345;
@@ -1063,6 +1064,9 @@ textarea {
   font-size: 1.85rem; }
   .home .hamburger-menu li a {
     padding: 20px 0 20px 10px; }
+
+.home .hamburger-menu .sub-menu li a {
+  padding-right: 12px; }
 
 .home .front-content {
   margin-bottom: 50px; }
@@ -2193,6 +2197,7 @@ object {
     height: 0;
     width: 0;
     background: #D9F1FF;
+    font-family: asap, sans-serif;
     font-weight: 400;
     opacity: 0;
     overflow: hidden;
@@ -2228,12 +2233,12 @@ object {
         .staff-profiles-wrapper .profile-popout .left-quotation,
         .board-profiles-wrapper .profile-popout .left-quotation,
         .advisors-profiles-wrapper .profile-popout .left-quotation {
-          left: -20px; } }
+          left: -25px; } }
       @media all and (min-width: 1000px) {
         .staff-profiles-wrapper .profile-popout .left-quotation,
         .board-profiles-wrapper .profile-popout .left-quotation,
         .advisors-profiles-wrapper .profile-popout .left-quotation {
-          left: -40px; } }
+          left: -45px; } }
     .staff-profiles-wrapper .profile-popout .right-quotation,
     .board-profiles-wrapper .profile-popout .right-quotation,
     .advisors-profiles-wrapper .profile-popout .right-quotation {
@@ -2249,7 +2254,7 @@ object {
         .staff-profiles-wrapper .profile-popout .right-quotation,
         .board-profiles-wrapper .profile-popout .right-quotation,
         .advisors-profiles-wrapper .profile-popout .right-quotation {
-          right: -35px; } }
+          right: -20px; } }
     .staff-profiles-wrapper .profile-popout .quote-container,
     .board-profiles-wrapper .profile-popout .quote-container,
     .advisors-profiles-wrapper .profile-popout .quote-container {
@@ -2273,7 +2278,7 @@ object {
         .advisors-profiles-wrapper .profile-popout .quote {
           max-width: 260px;
           margin-bottom: 2.5rem;
-          text-align: center; } }
+          text-align: left; } }
     .staff-profiles-wrapper .profile-popout .center-column,
     .board-profiles-wrapper .profile-popout .center-column,
     .advisors-profiles-wrapper .profile-popout .center-column {
@@ -2329,7 +2334,7 @@ object {
       margin: 1.5rem auto;
       font-size: 1.5rem;
       line-height: 2rem;
-      font-family: quattrocento;
+      font-family: roboto_slab, serif;
       line-height: 1.75rem;
       font-style: italic;
       text-align: center;
@@ -2340,7 +2345,7 @@ object {
         .advisors-profiles-wrapper .profile-popout h3 {
           width: 50%;
           font-size: 2rem;
-          line-height: 2.3rem; } }
+          line-height: 2.5rem; } }
     .staff-profiles-wrapper .profile-popout article,
     .board-profiles-wrapper .profile-popout article,
     .advisors-profiles-wrapper .profile-popout article {
@@ -2517,8 +2522,6 @@ object {
     @media all and (min-width: 1350px) {
       .advisors-profiles-wrapper .profile-preview {
         width: 20%; } }
-    .advisors-profiles-wrapper .profile-preview .name {
-      margin: 0 auto; }
     .advisors-profiles-wrapper .profile-preview .job-title {
       min-width: 130px;
       margin: 0 auto; }

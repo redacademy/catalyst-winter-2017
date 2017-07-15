@@ -5,20 +5,16 @@
 /* sub menu */
 #primary-menu .sub-menu {
     display: none;
+		transition: all 850 ease;
 
 }
 
 #primary-menu li:hover > .sub-menu {
     display: block;
 
-		@include media( $desktop-width ) {
-			margin: 0;
-			padding: 0 $base__space-unit;
-
-			li {
-				padding: 0.5rem 0 0 1.5rem;
-			}
-		}
+	li {
+		padding: 0.5rem 0 0 1.5rem;
+	}
 }
 
 #primary-menu .menu-item-has-children {
@@ -151,6 +147,11 @@
 				overflow: hidden;
 				list-style: none;
 			}
+			.sub-menu {
+				height: auto;
+				padding: $base__space-unit;
+				padding-left: 2.5rem;
+			}
 			li {
 				padding: 0 18px;
 			}
@@ -188,7 +189,7 @@
 			margin-top: 5px;
 			margin-right: 20px;
 			position: relative;
-			bottom: 3px;
+			bottom: 4px;
 			border: 1px solid #333345;
 			border-radius: 0;
 			background: #333345;
