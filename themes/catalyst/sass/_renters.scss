@@ -1,6 +1,5 @@
 .single-renters {
     section {
-        line-height: 1.5;
         margin-bottom: 3rem;
     }
     a {
@@ -192,6 +191,7 @@
         text-align: $body-text-align;
         font-size: 1.2rem;
         font-family: $font__secondary;
+        line-height: $line-height-body;
         @include media ($desktop-width) {
             margin: 4rem auto;
             font-size: 1.5rem;

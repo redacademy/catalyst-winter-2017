@@ -1,4 +1,9 @@
 .single-projects {
+    line-height: $line-height-body;
+
+    @include media( $desktop-width ) {
+        line-height: $line-height-body;
+    }
     h3,
     p {
         color: $color__text-main;
@@ -10,11 +15,8 @@
             text-shadow: -2px 2px 5px #000;
         }
         .project-name {
-            font-size: 4rem;
-            line-height: 1;
-            margin-bottom: 1rem;
-            letter-spacing: 1px;
-            text-transform: uppercase;
+            @include page-title;
+            padding: 0 1rem;
         }
         .project-location,
         .project-status {
@@ -23,6 +25,7 @@
             font-size: 1.3rem;
             margin-bottom: 0.3rem;
             letter-spacing: 1px;
+            padding: 0 1rem;
             @include media($desktop-width) {
                 font-size: 1.6rem;
             }
@@ -35,7 +38,7 @@
         padding: 0 1.5rem;
         font-size: 1.15rem;
         font-family: $font__secondary;
-        line-height: 1.5;
+        // line-height: 1.5;
         @include media($desktop-width) {
             max-width: 1000px;
             margin: 0 auto 3rem;
@@ -47,12 +50,12 @@
             margin-bottom: 0.5rem;
             font-weight: $font__bold;
             span {
-                font-size: 1.3rem;
+                font-size: $font__mobile-size;
                 font-weight: $font__normal;
             }
             p {
                 display: inline;
-                font-size: 1.3rem;
+                font-size: $font__mobile-size;
                 font-weight: $font__normal;
             }
         }
@@ -101,12 +104,10 @@
     .quotes {
         text-align: center;
         margin: 0 1rem;
-        width: 80%;
-        padding: 0 7%;
+        width: 85%;
         font-style: italic;
         p {
             height: auto;
-
         }
     }
     .q-text-container {
@@ -121,6 +122,17 @@
             max-width: 720px;
         }
     }
+    .quote-text {
+        line-height: $line-height-body;
+
+        @include media( $desktop-width ) {
+            line-height: $line-height-desktop;
+        }
+    }
+    .person, .line {
+        line-height: $line-height-body;
+    }
+
     .left-quotation-mark,
     .right-quotation-mark {
         height: 36px;

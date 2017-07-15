@@ -19,6 +19,7 @@
 @mixin page-title {
 	margin-bottom: 1rem;
 	font-size: 2.5rem;
+	line-height: 2.75rem;
 	font-weight: $font__normal;
 	@include header-text-shadow;
 	@include media($desktop-width) {
