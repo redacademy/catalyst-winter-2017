@@ -18,12 +18,12 @@ get_header(); ?>
 				<h2 class="subheader-lrg">Non-Profit Partners &amp; Investors</h2>
 			</div>
 
-			<div class="main-copy-text">
-				<?php $mainCopy1 = CFS()->get( 'main_copy1' );
-				if( !empty( $mainCopy1 ) ) : ?>
-					<?php echo $mainCopy1; ?>
-				<?php endif; ?>
-			</div>
+			<?php $mainCopy1 = CFS()->get( 'main_copy1' );
+			if( !empty( $mainCopy1 ) ) : ?>
+				<div class="main-copy-text">
+						<?php echo $mainCopy1; ?>
+				</div>
+			<?php endif; ?>
 
 			<div class="infographic-container">
 				<div class="infographic-img">

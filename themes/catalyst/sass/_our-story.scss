@@ -69,6 +69,7 @@
     .mission-quote,
     .mission-quote2 {
         max-width: 320px;
+        margin: $base__space-unit auto 1rem;
         display: flex;
         font-weight: lighter;
         position: relative;
@@ -79,6 +80,7 @@
         }
         @include media( $desktop-width ) {
             max-width: 650px;
+            margin: 3rem auto $base__space-unit;
         }
         @include media( 1200px ) {
             max-width: 860px;
@@ -87,12 +89,7 @@
     .mission-quote {
         height: auto;
         max-width: 320px;
-        margin: $base__space-unit auto 1rem;
         position: relative;
-
-        @include media( $desktop-width ) {
-            margin: 3rem auto 2rem;
-        }
         .quote-target {
             height: 0;
             width: 0;
@@ -101,7 +98,6 @@
     }
     .mission-quote2 {
         height: auto;
-        margin: 0 auto;
     }
     .q-text-container {
         position: relative;

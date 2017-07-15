@@ -19,16 +19,25 @@
         </div>
     </header>
     <div class="front-content">
+
+        <?php $intro_copy = esc_html( CFS()->get( 'intro_copy' ) );
+        if ( !empty( $intro_copy ) ) :?>
+            <p class="intro-copy"><?php echo $intro_copy; ?></p>
+        <?php endif; ?>
+
         <div class="formula">
-            <div class="blue-background-header">
-                <?php $formula_subheader = esc_html( CFS()->get( 'formula_subheader' ) ); ?>
-                <h2 class='subheader-lrg'><?php echo $formula_subheader; ?></h2>
-            </div>
+            <?php $formula_subheader = esc_html( CFS()->get( 'formula_subheader' ) );
+            if( !empty( $formula_subheader ) ): ?>
+                <div class="blue-background-header">
+                    <h2 class='subheader-lrg'><?php echo $formula_subheader; ?></h2>
+                </div>
+            <?php endif; ?>
 
             <?php $catalyst_formula_copy = esc_html( CFS()->get( 'catalyst_formula_copy' ) );
             if ( !empty( $catalyst_formula_copy ) ) :?>
-            <p class="catalyst-formula-copy"><?php echo $catalyst_formula_copy; ?></p>
+                <p class="catalyst-formula-copy"><?php echo $catalyst_formula_copy; ?></p>
             <?php endif; ?>
+
             <div class="infographic-container">
                 <div class="infographic-img">
                     <img src="<?php echo CFS()->get('infographic_img'); ?>" alt="">

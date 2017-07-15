@@ -577,15 +577,11 @@ table {
 .left-align {
   text-align: left; }
 
-.infographic-container {
-  margin: 2rem auto; }
-  @media all and (min-width: 760px) {
-    .infographic-container {
-      margin: 3rem auto; } }
-
 .infographic-img {
-  overflow: auto;
-  width: 100%; }
+  overflow-y: hidden;
+  overflow-x: scroll;
+  width: 100%;
+  line-height: 0; }
   .infographic-img img {
     min-width: 768px; }
 
@@ -1059,6 +1055,23 @@ textarea {
       font-size: 1.5rem;
       line-height: 2.15rem; } }
 
+.home .intro-copy {
+  height: auto;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1rem 2rem;
+  font-size: 1.2rem;
+  font-family: asap, sans-serif;
+  text-align: center; }
+  @media all and (min-width: 760px) {
+    .home .intro-copy {
+      font-size: 1.5rem;
+      padding: 2.75rem 0.85rem; } }
+  @media all and (min-width: 1200px) {
+    .home .intro-copy {
+      max-width: 860px; } }
+
 .home .hamburger-menu li {
   padding: 0 12px;
   font-size: 1.85rem; }
@@ -1069,10 +1082,7 @@ textarea {
   padding-right: 12px; }
 
 .home .front-content {
-  margin-bottom: 50px; }
-  @media all and (min-width: 760px) {
-    .home .front-content {
-      font-size: 1.2rem; } }
+  margin-bottom: 2rem; }
 
 .home .fp-carousel:after {
   content: '';
@@ -1688,6 +1698,7 @@ object {
 .page-id-21 .mission-quote,
 .page-id-21 .mission-quote2 {
   max-width: 320px;
+  margin: 1.5rem auto 1rem;
   display: -ms-flexbox;
   display: flex;
   font-weight: lighter;
@@ -1701,7 +1712,8 @@ object {
   @media all and (min-width: 760px) {
     .page-id-21 .mission-quote,
     .page-id-21 .mission-quote2 {
-      max-width: 650px; } }
+      max-width: 650px;
+      margin: 3rem auto 1.5rem; } }
   @media all and (min-width: 1200px) {
     .page-id-21 .mission-quote,
     .page-id-21 .mission-quote2 {
@@ -1710,19 +1722,14 @@ object {
 .page-id-21 .mission-quote {
   height: auto;
   max-width: 320px;
-  margin: 1.5rem auto 1rem;
   position: relative; }
-  @media all and (min-width: 760px) {
-    .page-id-21 .mission-quote {
-      margin: 3rem auto 2rem; } }
   .page-id-21 .mission-quote .quote-target {
     height: 0;
     width: 0;
     position: relative; }
 
 .page-id-21 .mission-quote2 {
-  height: auto;
-  margin: 0 auto; }
+  height: auto; }
 
 .page-id-21 .q-text-container {
   position: relative; }
@@ -2144,7 +2151,7 @@ object {
       .staff-exit-button span {
         font-size: 5.5rem;
         top: 27px;
-        right: 0.5px; } }
+        right: 0.3px; } }
 
 .name {
   margin: 0 auto;
@@ -2936,11 +2943,9 @@ object {
         max-width: 860px; } }
   .page-id-18 .main-copy-container {
     height: auto;
-    width: 100%;
-    margin: 0 0 3rem; }
-    @media all and (min-width: 760px) {
-      .page-id-18 .main-copy-container {
-        margin: 0 0 4rem; } }
+    width: 100%; }
+    .page-id-18 .main-copy-container .blue-background-header {
+      margin: 0 auto; }
   .page-id-18 .main-copy-text {
     margin-bottom: 1rem; }
     @media all and (min-width: 760px) {

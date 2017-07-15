@@ -20,13 +20,13 @@
     .intro-copy {
         @include intro-copy;
     }
+
     .main-copy-container{
         height: auto;
         width: 100%;
-        margin: 0 0 3rem;
 
-        @include media($desktop-width) {
-            margin: 0 0 4rem;
+        .blue-background-header {
+            margin: 0 auto;
         }
     }
     .main-copy-text {
