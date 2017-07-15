@@ -29,9 +29,7 @@
 /* Menus */
 
 .main-navigation {
-	clear: both;
 	display: block;
-	float: left;
 	width: 100%;
 }
 
@@ -73,10 +71,7 @@
 }
 
 .site-header {
-	height: 85px;
-	@include media($desktop-width) {
-		height: 65px;
-	}
+	height: 80px;
 }
 
 .container {
@@ -270,7 +265,7 @@
 		.mobile-menu {
 			display: none;
 			height: 0;
-			margin-top: 85px;
+			margin-top: 80px;
 			background-color: rgba(255, 255, 255, .95);
 			opacity: 0;
 			overflow: hidden;
@@ -279,7 +274,6 @@
 			height: auto;
 			@include media($desktop-width){
 				width: 40vw;
-				margin-top: 80px;
 			}
 		}
 		.opaque {

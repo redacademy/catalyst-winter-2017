@@ -18,6 +18,13 @@
         justify-content: center;
         min-width: 358px;
     }
+    .textwidget {
+        line-height: 1rem;
+
+        @include media( $desktop-width ) {
+            line-height: 1.5rem;
+        }
+    }
     #text-2 .textwidget::before {
         content: " ";
         height: 23px;
@@ -78,7 +85,7 @@
     }
     .sns-icon {
         margin: 0 0.5rem;
-        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;

@@ -52,7 +52,7 @@
         @include header-text;
         line-height: 1.2;
         position: absolute;
-        top: 45%;
+        top: 50%;
         left: 50% ;
         transform: translate(-50%, 0%);
         h1 {
@@ -119,11 +119,10 @@
         }
         .quotes-wrapper {
             margin: 3rem auto 0;
-            width: 85%;
+            width: 100%;
             display: none;
             @include media( $desktop-width ) {
                 margin: 5rem auto 0;
-                width: 100%;
             }
         }
         .is-selected .quotes-wrapper {
@@ -178,15 +177,15 @@
             display: inline-block;
         }
         .left-quotation-mark {
-            top: -7px;
-            left: -25px;
+            top: -6px;
+            left: -20px;
             @include media ($desktop-width) {
                 left: -56px;
             }
         }
         .right-quotation-mark {
-            bottom: -7px;
-            right: -25px;
+            bottom: -6px;
+            right: -20px;
             transform: rotate(180deg);
             @include media ($desktop-width) {
                 right: -50px;
