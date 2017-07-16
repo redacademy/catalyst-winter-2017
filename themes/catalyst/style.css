@@ -560,9 +560,6 @@ table {
       margin: 0 auto 2.5rem;
       padding: 1rem 1.5rem; } }
 
-.blue-background-header:first-child {
-  margin-top: 1.5rem; }
-
 .subheader-lrg {
   max-width: 400px;
   margin: 0 auto;
@@ -1611,6 +1608,9 @@ object {
 
 .page-id-21 .site-content {
   text-align: center; }
+
+.page-id-21 .catalyst-mission .blue-background-header {
+  margin-top: 1.5rem; }
 
 .page-id-21 h3 {
   text-align: center;
