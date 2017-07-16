@@ -16,7 +16,7 @@ get_header(); ?>
 
 
 				<div class="blue-background-header">
-        	<h2 class='subheader-lrg'><?php echo esc_html( CFS()->get('content_title1')); ?></h2>
+        	<h2 class='subheader-lrg'><?php echo esc_html( CFS()->get('subheading1')); ?></h2>
 				</div>
 
         <p class='mission-copy'><?php echo esc_html( CFS()->get( 'our_mission' ) ); ?></p>
@@ -39,14 +39,14 @@ get_header(); ?>
 
 				<div class="robert">
 
-				<?php $text_area1 = esc_html( CFS()->get( 'text_area1' ) );
-				if ( !empty( $text_area1) ) :?>
-				<h4><?php echo $text_area1; ?></h4>
+				<?php $person1 = esc_html( CFS()->get( 'person1' ) );
+				if ( !empty( $person1) ) :?>
+				<h4><?php echo $person1; ?></h4>
 				<?php endif; ?>
 
-				<?php $text_area2 = esc_html( CFS()->get( 'text_area2' ) );
-				if ( !empty( $text_area2) ) :?>
-				<p class="position"><?php echo $text_area2; ?></p>
+				<?php $role2 = esc_html( CFS()->get( 'role1' ) );
+				if ( !empty( $role2) ) :?>
+				<p class="position"><?php echo $role2; ?></p>
 				<?php endif; ?>
 
 				</div>
@@ -60,7 +60,7 @@ get_header(); ?>
 			<section class="formula">
 
 			<div class="blue-background-header">
-				<h2 class='subheader-lrg'><?php echo esc_html( CFS()->get( 'content_title2' ) ); ?></h2>
+				<h2 class='subheader-lrg'><?php echo esc_html( CFS()->get( 'subheading2' ) ); ?></h2>
 			</div>
 
 
@@ -93,12 +93,12 @@ get_header(); ?>
 					<div class="quotation-right2"></div>
 				</div>
 				<div class="robert">
-					<?php $text_area1 = esc_html( CFS()->get( 'text_area1' ) );
+					<?php $text_area1 = esc_html( CFS()->get( 'person2' ) );
 					if ( !empty( $text_area1 ) ) :?>
 					<h4><?php echo $text_area1; ?></h4>
 					<?php endif; ?>
 
-					<?php $text_area2 = esc_html( CFS()->get( 'text_area2' ) );
+					<?php $text_area2 = esc_html( CFS()->get( 'role2' ) );
 					if ( !empty( $text_area2 ) ) :?>
 					<p class="position"><?php echo $text_area2; ?></p>
 					<?php endif; ?>
