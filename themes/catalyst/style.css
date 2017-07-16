@@ -4433,6 +4433,11 @@ object {
 .single-renters .rent .more-info p {
   margin: 0; }
 
+.single-renters .contact .contact-form {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 2rem; }
+
 .single-renters .contact input {
   width: 100%; }
 

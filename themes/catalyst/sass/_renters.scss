@@ -157,6 +157,11 @@
         }
     }
     .contact {
+        .contact-form {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
         input {
             width: 100%;
         }
