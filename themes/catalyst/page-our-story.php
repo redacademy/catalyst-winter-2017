@@ -14,42 +14,15 @@ get_header(); ?>
 
 			<section class="catalyst-mission">
 
-
+				<?php $subheading1 = CFS()->get( 'subheading1' );
+				if( !empty( $subheading1 ) ) : ?>
 				<div class="blue-background-header">
         	<h2 class='subheader-lrg'><?php echo esc_html( CFS()->get('subheading1')); ?></h2>
 				</div>
+				<?php endif; ?>
 
         <p class='mission-copy'><?php echo esc_html( CFS()->get( 'our_mission' ) ); ?></p>
 
-				<?php $quotation1 = esc_html( CFS()->get( 'quotation1' ) );
-						if ( !empty( $quotation1) ) :?>
-							<div class="mission-quote">
-								<div class="q-text-container">
-									<div class="quotation-left"></div>
-
-											<p class='quote'>
-												<?php echo $quotation1; ?>
-											</p>
-
-									<div class="quotation-right"></div>
-								</div>
-
-							</div>
-						<?php endif; ?>
-
-				<div class="robert">
-
-				<?php $person1 = esc_html( CFS()->get( 'person1' ) );
-				if ( !empty( $person1) ) :?>
-				<h4><?php echo $person1; ?></h4>
-				<?php endif; ?>
-
-				<?php $role2 = esc_html( CFS()->get( 'role1' ) );
-				if ( !empty( $role2) ) :?>
-				<p class="position"><?php echo $role2; ?></p>
-				<?php endif; ?>
-
-				</div>
 				<div class="infographic-container">
 					<div class="infographic-img">
 						<img src="<?php echo CFS()->get('infographic_img1'); ?>" alt="">
@@ -59,18 +32,22 @@ get_header(); ?>
 
 			<section class="formula">
 
-			<div class="blue-background-header">
-				<h2 class='subheader-lrg'><?php echo esc_html( CFS()->get( 'subheading2' ) ); ?></h2>
-			</div>
-
+				<div class="blue-background-header">
+					<h2 class='subheader-lrg'><?php echo esc_html( CFS()->get( 'subheading2' ) ); ?></h2>
+				</div>
 
 				<div class="formula-p">
+					<p class="formula-text1"><?php echo esc_html( CFS()->get( 'formula_text1' ) ); ?></p>
 
-				<p class="formula-text1"><?php echo esc_html( CFS()->get( 'formula_text1' ) ); ?></p>
-
-				<p class="formula-text2"><?php echo esc_html( CFS()->get( 'formula_text2' ) ); ?></p>
-
+					<p class="formula-text2"><?php echo esc_html( CFS()->get( 'formula_text2' ) ); ?></p>
 				</div>
+
+				<?php $subheading3 = esc_html( CFS()->get( 'subheading3' ) );
+				if( !empty( $subheading3 ) ) :?>
+					<div class="blue-background-header infographic-header">
+						<h2 class='subheader-lrg'><?php echo $subheading3; ?></h2>
+					</div>
+				<?php endif; ?>
 
 				<?php $infographic2 = CFS()->get( 'infographic_img2' );
 				if( !empty( $infographic2 ) ): ?>
