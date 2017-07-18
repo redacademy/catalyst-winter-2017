@@ -168,7 +168,7 @@
                 bottom: 35px;
             }
             @include media(1100px) {
-                right: -20px;
+                right: -23px;
             }
         }
         .quote-container {
@@ -277,7 +277,6 @@
     .board-profiles-header {
         height: auto;
         width: 100%;
-        max-width: 950px;
         margin: 2rem auto 1rem;
         position: relative;
         @include flex-row(nowrap, center, center);

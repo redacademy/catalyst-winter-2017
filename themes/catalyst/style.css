@@ -2268,7 +2268,7 @@ object {
         .staff-profiles-wrapper .profile-popout .right-quotation,
         .board-profiles-wrapper .profile-popout .right-quotation,
         .advisors-profiles-wrapper .profile-popout .right-quotation {
-          right: -20px; } }
+          right: -23px; } }
     .staff-profiles-wrapper .profile-popout .quote-container,
     .board-profiles-wrapper .profile-popout .quote-container,
     .advisors-profiles-wrapper .profile-popout .quote-container {
@@ -2407,7 +2407,6 @@ object {
   .advisors-profiles-wrapper .board-profiles-header {
     height: auto;
     width: 100%;
-    max-width: 950px;
     margin: 2rem auto 1rem;
     position: relative;
     display: -ms-flexbox;
