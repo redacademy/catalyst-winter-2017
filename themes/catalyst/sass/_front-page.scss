@@ -91,7 +91,7 @@
             text-align: $body-text-align;
             font-family: $font__secondary;
             @include media ($desktop-width) {
-                margin: 4rem auto;
+                margin: 3rem auto;
                 line-height: $line-height-desktop;
             }
             @include media(1200px) {

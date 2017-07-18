@@ -55,7 +55,7 @@
 	text-align: center;
 	@include media($desktop-width) {
 		font-size: $font__desktop-size;
-		padding: 2.75rem 0.85rem;
+		padding: 3rem 1rem;
 	}
 	@include media(1200px) {
 		max-width: 860px;

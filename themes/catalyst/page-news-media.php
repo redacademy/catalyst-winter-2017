@@ -12,8 +12,6 @@ get_header(); ?>
     <main id="main" class="site-main" role="main">
         <?php get_template_part( 'template-parts/hero-banner'); ?>
 
-        <div class="video"><?php echo CFS()->get( 'video' ); ?></div>
-
         <?php $subheading1 = esc_html( CFS()->get( 'subheading1' ) );
         if( !empty( $subheading1 ) ): ?>
         <div class="blue-background-header">
@@ -44,13 +42,14 @@ get_header(); ?>
                             ?>
 
                             <div class="article-content">
-                                <p class="date"><?php echo get_the_date("m, d, Y", $newsarticle->ID) ?></p>
+                                <p class="date"><?php echo get_the_date("m.d.Y", $newsarticle->ID) ?></p>
 
                                 <h3><?php echo get_the_title($newsarticle->ID) ?></h3>
                             </div>
 
                             <?php echo CFS()->get('link', $newsarticle->ID); ?>
                         </article>
+
                     <?php }else { ;?>
                         <article id="post-<?php echo $newsarticle->ID ?>" class="news no-image">
                             <?php
@@ -58,7 +57,7 @@ get_header(); ?>
                             ?>
 
                             <div class="article-content">
-                                <p class="date"><?php echo get_the_date("m, d, Y", $newsarticle->ID) ?></p>
+                                <p class="date"><?php echo get_the_date("m.d.Y", $newsarticle->ID) ?></p>
 
                                 <h3><?php echo get_the_title($newsarticle->ID) ?></h3>
                             </div>
@@ -67,10 +66,10 @@ get_header(); ?>
                         </article>
                     <?php };?>
                 <?php endforeach; ?>
+
+                <div class="video"><?php echo CFS()->get( 'video' ); ?></div>
             </div>
         </div>
-
-        <button id="load-more-button" class="navigation-button">load more</button>
     </main> <!--#main -->
 </div> <!--#primary -->
 

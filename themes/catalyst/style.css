@@ -1068,7 +1068,7 @@ textarea {
   @media all and (min-width: 760px) {
     .home .intro-copy {
       font-size: 1.5rem;
-      padding: 2.75rem 0.85rem; } }
+      padding: 3rem 1rem; } }
   @media all and (min-width: 1200px) {
     .home .intro-copy {
       max-width: 860px; } }
@@ -1196,7 +1196,7 @@ textarea {
     font-family: asap, sans-serif; }
     @media all and (min-width: 760px) {
       .home .projects .our-projects-copy {
-        margin: 4rem auto;
+        margin: 3rem auto;
         line-height: 2rem; } }
     @media all and (min-width: 1200px) {
       .home .projects .our-projects-copy {
@@ -1603,7 +1603,7 @@ object {
   @media all and (min-width: 760px) {
     .page-id-21 .intro-copy {
       font-size: 1.5rem;
-      padding: 2.75rem 0.85rem; } }
+      padding: 3rem 1rem; } }
   @media all and (min-width: 1200px) {
     .page-id-21 .intro-copy {
       max-width: 860px; } }
@@ -2066,7 +2066,7 @@ object {
     @media all and (min-width: 760px) {
       .page-id-159 .intro-copy {
         font-size: 1.5rem;
-        padding: 2.75rem 0.85rem; } }
+        padding: 3rem 1rem; } }
     @media all and (min-width: 1200px) {
       .page-id-159 .intro-copy {
         max-width: 860px; } }
@@ -2790,6 +2790,8 @@ object {
       background: #D9F1FF;
       border: 2px solid white;
       cursor: pointer; }
+  .page-id-19 .blue-background-header {
+    margin-top: 1.5rem; }
   .page-id-19 .newsmedia-content .widget-area {
     margin: 10px auto 0;
     padding: 0 20px; }
@@ -2902,17 +2904,6 @@ object {
     border-radius: 20px; }
   .page-id-19 .light .tweets-intent-data {
     border-top: none; }
-  .page-id-19 .video {
-    text-align: center; }
-    .page-id-19 .video iframe {
-      width: 90%;
-      height: 500px; }
-      @media all and (min-width: 1200px) {
-        .page-id-19 .video iframe {
-          height: 700px; } }
-      @media all and (min-width: 1500px) {
-        .page-id-19 .video iframe {
-          height: 900px; } }
 
 .page-id-18 {
   height: 100%;
@@ -2966,7 +2957,7 @@ object {
     @media all and (min-width: 760px) {
       .page-id-18 .intro-copy {
         font-size: 1.5rem;
-        padding: 2.75rem 0.85rem; } }
+        padding: 3rem 1rem; } }
     @media all and (min-width: 1200px) {
       .page-id-18 .intro-copy {
         max-width: 860px; } }
@@ -3527,7 +3518,7 @@ object {
     @media all and (min-width: 760px) {
       .page-id-7 .intro-copy {
         font-size: 1.5rem;
-        padding: 2.75rem 0.85rem; } }
+        padding: 3rem 1rem; } }
     @media all and (min-width: 1200px) {
       .page-id-7 .intro-copy {
         max-width: 860px; } }
@@ -3717,7 +3708,7 @@ object {
   @media all and (min-width: 760px) {
     .page-id-196 .intro-copy {
       font-size: 1.5rem;
-      padding: 2.75rem 0.85rem; } }
+      padding: 3rem 1rem; } }
   @media all and (min-width: 1200px) {
     .page-id-196 .intro-copy {
       max-width: 860px; } }
@@ -3869,7 +3860,7 @@ object {
   @media all and (min-width: 760px) {
     .page-id-195 .intro-copy {
       font-size: 1.5rem;
-      padding: 2.75rem 0.85rem; } }
+      padding: 3rem 1rem; } }
   @media all and (min-width: 1200px) {
     .page-id-195 .intro-copy {
       max-width: 860px; } }
@@ -3991,7 +3982,7 @@ object {
   @media all and (min-width: 760px) {
     .page-id-441 .intro-copy {
       font-size: 1.5rem;
-      padding: 2.75rem 0.85rem; } }
+      padding: 3rem 1rem; } }
   @media all and (min-width: 1200px) {
     .page-id-441 .intro-copy {
       max-width: 860px; } }

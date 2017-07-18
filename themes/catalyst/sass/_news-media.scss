@@ -26,6 +26,9 @@
         @include navigation-button();
         display: block;
     }
+    .blue-background-header {
+        margin-top: 1.5rem;
+    }
     .newsmedia-content {
         .widget-area {
             margin: 10px auto 0;
@@ -160,18 +163,5 @@
     }
     .light .tweets-intent-data {
         border-top: none;
-    }
-    .video {
-        text-align: center;
-        iframe {
-            width: 90%;
-            height: 500px;
-            @include media(1200px) {
-                height: 700px;
-            }
-            @include media(1500px) {
-                height: 900px;
-            }
-        }
     }
 }
