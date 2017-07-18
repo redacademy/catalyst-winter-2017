@@ -1556,7 +1556,7 @@ object {
     .page-id-21 p {
       font-size: 1.5rem; } }
 
-.page-id-21 .mission-copy, .page-id-21 .formula-p {
+.page-id-21 .mission-copy {
   padding: 0 1rem; }
 
 .page-id-21 .header-text {
@@ -1615,8 +1615,8 @@ object {
 .page-id-21 .catalyst-mission .blue-background-header {
   margin-top: 1.5rem; }
 
-.page-id-21 .infographic-header {
-  margin-bottom: 0; }
+.page-id-21 .infographic-container {
+  margin-bottom: 3rem; }
 
 .page-id-21 h3 {
   text-align: center;
@@ -1695,7 +1695,7 @@ object {
   font-family: asap, sans-serif; }
   @media all and (min-width: 760px) {
     .page-id-21 .mission-copy {
-      margin: 4rem auto;
+      margin: 2.5rem auto;
       line-height: 2rem; } }
   @media all and (min-width: 1200px) {
     .page-id-21 .mission-copy {
@@ -1703,7 +1703,7 @@ object {
 
 .page-id-21 .mission-quote,
 .page-id-21 .mission-quote2 {
-  max-width: 320px;
+  max-width: 340px;
   margin: 1.5rem auto 1rem;
   display: -ms-flexbox;
   display: flex;
@@ -1719,7 +1719,7 @@ object {
     .page-id-21 .mission-quote,
     .page-id-21 .mission-quote2 {
       max-width: 650px;
-      margin: 3rem auto 1.5rem; } }
+      margin: 0 auto 1.5rem; } }
   @media all and (min-width: 1200px) {
     .page-id-21 .mission-quote,
     .page-id-21 .mission-quote2 {
@@ -1727,7 +1727,6 @@ object {
 
 .page-id-21 .mission-quote {
   height: auto;
-  max-width: 320px;
   position: relative; }
   .page-id-21 .mission-quote .quote-target {
     height: 0;
@@ -1815,6 +1814,9 @@ object {
 .page-id-21 .quotation-right2 {
   bottom: 15px;
   right: 0px; }
+  @media all and (min-width: 480px) {
+    .page-id-21 .quotation-right2 {
+      right: -15px; } }
   @media all and (min-width: 760px) {
     .page-id-21 .quotation-right2 {
       bottom: 8px;
@@ -1842,9 +1844,6 @@ object {
   font-style: italic;
   margin: 0;
   font-size: 20px; }
-
-.page-id-21 .arrow {
-  transform: rotate(90deg); }
 
 .page-id-21 .rent {
   margin: 0; }
@@ -1911,8 +1910,7 @@ object {
 .page-id-21 .formula-p {
   font-family: asap, sans-serif;
   max-width: 650px;
-  margin: auto;
-  margin-bottom: 50px; }
+  margin: auto; }
   @media all and (min-width: 1200px) {
     .page-id-21 .formula-p {
       max-width: 860px; } }
@@ -1920,6 +1918,7 @@ object {
 .page-id-21 .formula-text1,
 .page-id-21 .formula-text2 {
   margin: 2.5rem auto;
+  padding: 0 2rem;
   font-size: 1.2rem;
   font-weight: 100;
   text-align: left; }
@@ -1927,6 +1926,29 @@ object {
     .page-id-21 .formula-text1,
     .page-id-21 .formula-text2 {
       font-size: 1.5rem; } }
+
+.page-id-21 .collaborate-text {
+  height: auto;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: asap, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  text-align: center;
+  text-align: left;
+  padding: 0; }
+  @media all and (min-width: 760px) {
+    .page-id-21 .collaborate-text {
+      padding: 0.75rem auto;
+      font-size: 1.5rem;
+      line-height: 2rem; } }
+  @media all and (min-width: 1200px) {
+    .page-id-21 .collaborate-text {
+      max-width: 860px; } }
+  .page-id-21 .collaborate-text p {
+    margin: 2.5rem auto;
+    padding: 0 2rem; }
 
 .page-id-21 .formula-carousel {
   font-family: asap, sans-serif; }

@@ -23,11 +23,6 @@ get_header(); ?>
 
         <p class='mission-copy'><?php echo esc_html( CFS()->get( 'our_mission' ) ); ?></p>
 
-				<div class="infographic-container">
-					<div class="infographic-img">
-						<img src="<?php echo CFS()->get('infographic_img1'); ?>" alt="">
-					</div>
-				</div>
 			</section>
 
 			<section class="formula">
@@ -42,12 +37,31 @@ get_header(); ?>
 					<p class="formula-text2"><?php echo esc_html( CFS()->get( 'formula_text2' ) ); ?></p>
 				</div>
 
+				<div class="infographic-container">
+					<div class="infographic-img">
+						<img src="<?php echo CFS()->get( 'infographic_img1' ); ?>" alt="">
+					</div>
+				</div>
+
 				<?php $subheading3 = esc_html( CFS()->get( 'subheading3' ) );
 				if( !empty( $subheading3 ) ) :?>
-					<div class="blue-background-header infographic-header">
+					<div class="blue-background-header">
 						<h2 class='subheader-lrg'><?php echo $subheading3; ?></h2>
 					</div>
 				<?php endif; ?>
+
+				<div class="collaborate-text">
+						<?php $collaborate_text1 = CFS()->get( 'collaborate_text_1' );
+						$collaborate_text2 = CFS()->get( 'collaborate_text_2' );
+
+						if( !empty( $collaborate_text1 ) ) : ?>
+							<p><?php echo $collaborate_text1; ?></p>
+						<?php endif; ?>
+
+						<?php if( !empty( $collaborate_text2 ) ) : ?>
+							<p><?php echo $collaborate_text2; ?></p>
+						<?php endif; ?>
+				</div>
 
 				<?php $infographic2 = CFS()->get( 'infographic_img2' );
 				if( !empty( $infographic2 ) ): ?>

@@ -6,7 +6,7 @@
             font-size: $font__desktop-size;
         }
     }
-    .mission-copy, .formula-p {
+    .mission-copy {
         padding: 0 1rem;
     }
     .header-text {
@@ -27,8 +27,8 @@
     .catalyst-mission .blue-background-header {
         margin-top: $base__space-unit;
     }
-    .infographic-header {
-        margin-bottom: 0;
+    .infographic-container {
+        margin-bottom: 3rem;
     }
     h3 {
         text-align: center;
@@ -65,7 +65,7 @@
         text-align: $body-text-align;
         font-family: $font__secondary;
         @include media ($desktop-width) {
-            margin: 4rem auto;
+            margin: 2.5rem auto;
             line-height: $line-height-desktop;
         }
         @include media(1200px) {
@@ -74,7 +74,7 @@
     }
     .mission-quote,
     .mission-quote2 {
-        max-width: 320px;
+        max-width: 340px;
         margin: $base__space-unit auto 1rem;
         display: flex;
         font-weight: lighter;
@@ -86,7 +86,7 @@
         }
         @include media( $desktop-width ) {
             max-width: 650px;
-            margin: 3rem auto $base__space-unit;
+            margin: 0 auto $base__space-unit;
         }
         @include media( 1200px ) {
             max-width: 860px;
@@ -94,7 +94,6 @@
     }
     .mission-quote {
         height: auto;
-        max-width: 320px;
         position: relative;
         .quote-target {
             height: 0;
@@ -180,6 +179,9 @@
     .quotation-right2 {
         bottom: 15px;
         right: 0px;
+        @include media( 480px ) {
+            right: -15px;
+        }
         @include media($desktop-width) {
             bottom: 8px;
             right: -10px;
@@ -210,9 +212,6 @@
         margin: 0;
         font-size: 20px;
     }
-    .arrow {
-        transform: rotate(90deg);
-    }
     .rent {
         margin: 0;
         .rent-title {
@@ -220,7 +219,6 @@
         }
     }
     .mission-text {
-        // margin: 0 auto;
         font-size: 16px;
         font-family: $font__secondary;
         width: 80%;
@@ -279,7 +277,6 @@
         font-family: $font__secondary;
         max-width: 650px;
         margin: auto;
-        margin-bottom: 50px;
         @include media(1200px) {
             max-width: 860px;
         }
@@ -287,11 +284,22 @@
     .formula-text1,
     .formula-text2 {
         margin: 2.5rem auto;
+        padding: 0 2rem;
         font-size: $font__mobile-size;
         font-weight: 100;
         text-align: $body-text-align;
         @include media($desktop-width) {
             font-size: $font__desktop-size;
+        }
+    }
+    .collaborate-text {
+        @include main-copy;
+        text-align: left;
+        padding: 0;
+
+        p {
+            margin: 2.5rem auto;
+            padding: 0 2rem;
         }
     }
     .formula-carousel {
