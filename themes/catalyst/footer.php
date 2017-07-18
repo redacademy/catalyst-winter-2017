@@ -13,7 +13,7 @@
 				<div class="footer">
 					<div class="page-link">
 					<a href="<?php echo get_home_url(); ?>/careers">careers</a>
-					<a href="<?php echo get_home_url(); ?>/news-media">news & media</a>
+					<a href="<?php echo get_home_url(); ?>/news-media">news + media</a>
 					</div>
 
 					<div class="company-info">
