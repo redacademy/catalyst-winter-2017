@@ -14,9 +14,12 @@ get_header(); ?>
 
         <div class="video"><?php echo CFS()->get( 'video' ); ?></div>
 
+        <?php $subheading1 = esc_html( CFS()->get( 'subheading1' ) );
+        if( !empty( $subheading1 ) ): ?>
         <div class="blue-background-header">
-            <h2 class="subheader-lrg">more stories</h2>
+            <h2 class="subheader-lrg"><?php echo $subheading1; ?></h2>
         </div>
+        <?php endif; ?>
 
         <div class="newsmedia-content">
             <?php get_sidebar(); ?>
