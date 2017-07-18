@@ -35,20 +35,25 @@
             </div>
 
             <div class="proj-content">
-                <?php $client = esc_html( CFS()->get( 'project_client' ) );
-                if ( $client ) :?>
-                    <h3>Client: <p><?php echo $client; ?></p></h3>
-                <?php endif; ?>
-
                 <?php $description = esc_html( CFS()->get( 'description' ) );
                 if ( $description ) :?>
                     <h3>Description: <p><?php echo $description; ?></p></h3>
                 <?php endif; ?>
 
+                <?php $partners = wp_kses_post( CFS()->get( 'partners' ) );
+                if ( $partners ) :?>
+                    <h3>Partners: <?php echo $partners; ?></h3>
+                <?php endif; ?>
+
+                <?php $client = esc_html( CFS()->get( 'project_client' ) );
+                if ( $client ) :?>
+                    <h3>Client: <p><?php echo $client; ?></p></h3>
+                <?php endif; ?>
+
                 <?php $cRole = CFS()->get( 'catalyst_role' );
                 foreach ( $cRole as $key => $label ) :
                     if ( !($label === 'none') ) : ?>
-                        <h3>Catalyst Role: <span><?php echo $label; ?></span></h3>
+                        <h3>Catalyst Role: <p><?php echo $label; ?></p></h3>
                     <?php endif;
                 endforeach; wp_reset_postdata(); ?>
 
@@ -56,11 +61,6 @@
                 if ( $affordability ) :?>
                     <h3>Affordability: </h3>
                     <?php echo $affordability; ?>
-                <?php endif; ?>
-
-                <?php $partners = wp_kses_post( CFS()->get( 'partners' ) );
-                if ( $partners ) :?>
-                    <h3>Partners: <?php echo $partners; ?></h3>
                 <?php endif; ?>
 
                 <?php $financing_grants = wp_kses_post( CFS()->get( 'financing_grants' ) );
@@ -71,7 +71,7 @@
 
                 <?php $cost = esc_html( CFS()->get( 'cost' ) );
                 if ( $cost ) :?>
-                    <h3>Total Project Cost: <span><?php echo $cost; ?></span></h3>
+                    <h3>Total Project Cost: <p><?php echo $cost; ?></p></h3>
                 <?php endif; ?>
             </div>
     </section>

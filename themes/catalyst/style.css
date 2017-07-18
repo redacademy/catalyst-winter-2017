@@ -4072,6 +4072,20 @@ object {
   .single-projects h3,
   .single-projects p {
     color: #4A4A4A; }
+  .single-projects .project-image-banner .header-text {
+    width: 90%;
+    font-size: 1.25rem;
+    font-family: asap, sans-serif;
+    font-weight: 700;
+    margin: 1.5rem auto;
+    line-height: 1.75rem;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    text-shadow: 1px 2px 5px #323232; }
+    @media all and (min-width: 760px) {
+      .single-projects .project-image-banner .header-text {
+        font-size: 1.5rem;
+        line-height: 2.5rem; } }
   .single-projects .project-image-banner p {
     color: #fff;
     margin: 0;
@@ -4103,16 +4117,18 @@ object {
   .single-projects .blue-background-header {
     margin-top: 1.5rem; }
   .single-projects .proj-content {
-    padding: 0 1.5rem;
-    font-size: 1.15rem;
+    max-width: 650px;
+    padding: 0 2rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
     font-family: asap, sans-serif; }
     @media all and (min-width: 760px) {
       .single-projects .proj-content {
-        max-width: 1000px;
+        max-width: 860px;
         margin: 0 auto 3rem;
         padding: 0 2rem;
-        font-size: 1.3rem;
-        line-height: 1.75rem; } }
+        font-size: 1.5rem;
+        line-height: 2rem; } }
     .single-projects .proj-content h3 {
       margin-bottom: 0.5rem;
       font-weight: 700; }
@@ -4123,6 +4139,9 @@ object {
         display: inline;
         font-size: 1.2rem;
         font-weight: 400; }
+        @media all and (min-width: 760px) {
+          .single-projects .proj-content h3 p {
+            font-size: 1.5rem; } }
     .single-projects .proj-content ul {
       margin: 1.5rem auto; }
     .single-projects .proj-content li {
