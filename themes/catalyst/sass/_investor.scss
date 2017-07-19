@@ -59,4 +59,14 @@
             margin-bottom: 3rem;
         }
     }
+    .investor-p:last-child {
+        margin-bottom: 4rem;
+
+        @include media( $desktop-width ) {
+            margin-bottom: 5rem;
+        }
+    }
+    .navigation-button {
+        @include navigation-button;
+    }
 }

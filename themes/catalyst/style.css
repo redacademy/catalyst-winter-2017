@@ -3032,6 +3032,8 @@ object {
       background: #D9F1FF;
       border: 2px solid white;
       cursor: pointer; }
+  .page-id-18 .infographic-container {
+    margin: 3rem 0; }
   .page-id-18 .infographic-container + .navigation-button {
     margin: 3rem auto 6rem; }
   .page-id-18 .supporters-header {
@@ -3245,6 +3247,36 @@ object {
     .page-id-483 .investor-p, .page-id-483 .investor-list {
       margin-bottom: 3rem; } }
 
+.page-id-483 .investor-p:last-child {
+  margin-bottom: 4rem; }
+  @media all and (min-width: 760px) {
+    .page-id-483 .investor-p:last-child {
+      margin-bottom: 5rem; } }
+
+.page-id-483 .navigation-button {
+  height: 70px;
+  width: 275px;
+  margin: 3rem auto;
+  border: 2px solid #323232;
+  font-size: 1.35rem;
+  color: #323232;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .page-id-483 .navigation-button:hover {
+    border: 2px solid #D9F1FF;
+    box-shadow: 0px 2px 5px #323232; }
+  .page-id-483 .navigation-button:active {
+    background: #D9F1FF;
+    border: 2px solid white;
+    cursor: pointer; }
+
 .page-id-486 .hero-image-banner {
   margin-bottom: 2rem; }
   @media all and (min-width: 760px) {
@@ -3323,6 +3355,36 @@ object {
   @media all and (min-width: 760px) {
     .page-id-486 .investor-p, .page-id-486 .investor-list {
       margin-bottom: 3rem; } }
+
+.page-id-486 .investor-p:last-child {
+  margin-bottom: 4rem; }
+  @media all and (min-width: 760px) {
+    .page-id-486 .investor-p:last-child {
+      margin-bottom: 5rem; } }
+
+.page-id-486 .navigation-button {
+  height: 70px;
+  width: 275px;
+  margin: 3rem auto;
+  border: 2px solid #323232;
+  font-size: 1.35rem;
+  color: #323232;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .page-id-486 .navigation-button:hover {
+    border: 2px solid #D9F1FF;
+    box-shadow: 0px 2px 5px #323232; }
+  .page-id-486 .navigation-button:active {
+    background: #D9F1FF;
+    border: 2px solid white;
+    cursor: pointer; }
 
 .testimonials {
   margin-bottom: 3rem; }

@@ -50,6 +50,9 @@
         @include navigation-button();
         margin-top: 0;
     }
+    .infographic-container {
+        margin: 3rem 0;
+    }
     .infographic-container+.navigation-button {
         margin: 3rem auto 6rem;
     }

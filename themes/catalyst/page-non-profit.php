@@ -12,10 +12,6 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 
 <?php get_template_part( 'template-parts/hero-banner'); ?>
-
-		<div class="blue-background-header">
-			<h2 class="subheader-lrg"><?php echo esc_html(CFS()->get( 'main_title' ) ); ?></h2>
-		</div>
 		<div class="investor-list"><?php echo wp_kses_post( CFS()->get( 'main_copy' ) ); ?></div>
 
 		<div class="blue-background-header">
@@ -29,7 +25,12 @@ get_header(); ?>
 
 		<?php $third_copy = wp_kses_post( CFS()->get( 'third_copy' ) );
 		if( !empty( $third_copy ) ) : ?>
-			<div class="investor-p"><?php echo $third_copy; ?></div>
+			<div class="investor-p">
+				<?php echo $third_copy; ?>
+				<a class="navigation-button" href="<?php echo get_home_url(); ?>/contact">
+					<?php echo esc_html( CFS()->get( 'button_text' ) ); ?>
+				</a>
+			</div>
 		<?php endif; ?>
 
 		<?php get_template_part( 'template-parts/non-profit-carousel' ); ?>
