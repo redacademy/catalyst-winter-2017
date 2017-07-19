@@ -49,13 +49,13 @@
 	width: 100%;
 	max-width: 700px;
 	margin: 0 auto;
-	padding: 2rem 1rem 2rem;
+	padding: 2rem;
 	font-size: $font__mobile-size;
 	font-family: $font__secondary;
 	text-align: center;
 	@include media($desktop-width) {
 		font-size: $font__desktop-size;
-		padding: 3rem 1rem;
+		padding: 3rem 2rem;
 	}
 	@include media(1200px) {
 		max-width: 860px;
@@ -66,13 +66,12 @@
 	height: auto;
 	max-width: 650px;
 	margin: 0 auto;
-	padding: 1rem;
+	padding: 1rem 2rem;
 	font-family: $font__secondary;
 	font-size: $font__mobile-size;
 	line-height: $line-height-body;
 	text-align: center;
 	@include media($desktop-width) {
-		padding: 0.75rem auto;
 		font-size: $font__desktop-size;
 		line-height: $line-height-desktop;
 	}
