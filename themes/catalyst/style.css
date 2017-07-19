@@ -3315,14 +3315,14 @@ object {
       @media all and (min-width: 1200px) {
         .page-id-596 .partners-information-container .partners-information, .page-id-595 .partners-information-container .partners-information {
           width: 570px;
-          height: 520px;
+          height: 540px;
           border: 1px solid #4A4A4A;
           border-radius: 0 0 5px 5px; } }
     .page-id-596 .partners-information-container .navigation-button, .page-id-595 .partners-information-container .navigation-button {
       margin: 2rem auto 2rem; }
-      @media all and (min-width: 760px) {
+      @media all and (min-width: 1200px) {
         .page-id-596 .partners-information-container .navigation-button, .page-id-595 .partners-information-container .navigation-button {
-          margin: 3rem auto 3rem; } }
+          margin: 1.5rem auto; } }
     .page-id-596 .partners-information-container .small-header, .page-id-595 .partners-information-container .small-header {
       margin-top: 4rem;
       margin-bottom: 1.25rem;
@@ -3353,9 +3353,6 @@ object {
       @media all and (min-width: 1200px) {
         .page-id-596 .partners-information-container .partners-information p, .page-id-595 .partners-information-container .partners-information p {
           max-width: 860px; } }
-      @media all and (min-width: 1200px) {
-        .page-id-596 .partners-information-container .partners-information p, .page-id-595 .partners-information-container .partners-information p {
-          text-align: center; } }
     .page-id-596 .partners-information-container .partners-copy:nth-child(3), .page-id-596 .partners-information-container .investors-copy:nth-child(3), .page-id-595 .partners-information-container .partners-copy:nth-child(3), .page-id-595 .partners-information-container .investors-copy:nth-child(3) {
       margin-bottom: 1.5rem; }
       @media all and (min-width: 760px) {

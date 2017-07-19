@@ -81,7 +81,7 @@
 
             @include media( 1200px ) {
               width: 570px;
-              height: 520px;
+              height: 540px;
               border: 1px solid $color__text-main;
               border-radius: 0 0 5px 5px;
             }
@@ -89,8 +89,8 @@
         .navigation-button{
             margin: 2rem auto 2rem;
 
-            @include media($desktop-width) {
-                margin: 3rem auto 3rem;
+            @include media(1200px) {
+                margin: $base__space-unit auto;
             }
         }
         .small-header {
@@ -110,10 +110,6 @@
         .partners-information p {
             @include main-copy;
             text-align: $body-text-align;
-
-            @include media( 1200px ) {
-            text-align: center;
-          }
         }
 
         .partners-copy:nth-child(3), .investors-copy:nth-child(3) {
