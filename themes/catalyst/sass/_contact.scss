@@ -27,10 +27,13 @@
     }
     .intro-copy {
         @include intro-copy ;
-        padding-top: 0;
 
-        @include media( $desktop-width ) {
-            padding-top: 0;
+        a {
+            color: $color__menu-active;
+
+            &:hover {
+                color: $color__menu-hover;
+            }
         }
     }
     .renters-redirect {
@@ -39,7 +42,7 @@
         margin: 0 auto;
     }
     .wpcf7 {
-        padding: 3%;
+        padding: 0 3%;
         font-family: $font__secondary;
         form {
             margin: 0 auto 2rem;

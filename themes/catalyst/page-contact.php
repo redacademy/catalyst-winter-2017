@@ -12,10 +12,6 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
       <?php get_template_part( 'template-parts/hero-banner'); ?>
 
-      <div class="blue-background-header">
-			  <h2 class="subheader-lrg">we would like to hear from you</h2>
-		  </div>
-
 			<div class="renters-redirect">
 
 				<div class="intro-copy">
@@ -24,13 +20,12 @@ get_header(); ?>
 						<p><?php echo $intro_copy; ?></p>
 					<?php endif; ?>
 
-					<?php $renter_copy = esc_html( CFS()->get('contact_renters') ); ?>
+					<?php $renter_copy = wp_kses_post( CFS()->get('contact_renters') ); ?>
 					<?php if( !empty( $renter_copy ) ) : ?>
 						<p><?php echo $renter_copy; ?></p>
 					<?php endif; ?>
 				</div>
 
-				<a class="navigation-button" href="<?php echo get_home_url(); ?>/rent">Renters</a>
 			</div>
 
 			<?php while ( have_posts() ) : the_post(); ?>

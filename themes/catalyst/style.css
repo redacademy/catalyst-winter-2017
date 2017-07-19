@@ -2242,8 +2242,7 @@ object {
     .board-profiles-wrapper .profile-popout a,
     .advisors-profiles-wrapper .profile-popout a {
       color: #4A4A4A;
-      font-weight: 700;
-      text-decoration: none; }
+      font-weight: 700; }
       .staff-profiles-wrapper .profile-popout a:hover,
       .board-profiles-wrapper .profile-popout a:hover,
       .advisors-profiles-wrapper .profile-popout a:hover {
@@ -3575,8 +3574,7 @@ object {
     padding: 2rem 1rem 2rem;
     font-size: 1.2rem;
     font-family: asap, sans-serif;
-    text-align: center;
-    padding-top: 0; }
+    text-align: center; }
     @media all and (min-width: 760px) {
       .page-id-7 .intro-copy {
         font-size: 1.5rem;
@@ -3584,15 +3582,16 @@ object {
     @media all and (min-width: 1200px) {
       .page-id-7 .intro-copy {
         max-width: 860px; } }
-    @media all and (min-width: 760px) {
-      .page-id-7 .intro-copy {
-        padding-top: 0; } }
+    .page-id-7 .intro-copy a {
+      color: #935E32; }
+      .page-id-7 .intro-copy a:hover {
+        color: #00A4FF; }
   .page-id-7 .renters-redirect {
     padding: 0 1rem;
     max-width: 1200px;
     margin: 0 auto; }
   .page-id-7 .wpcf7 {
-    padding: 3%;
+    padding: 0 3%;
     font-family: asap, sans-serif; }
     .page-id-7 .wpcf7 form {
       margin: 0 auto 2rem;
