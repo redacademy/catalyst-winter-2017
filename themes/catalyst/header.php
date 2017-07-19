@@ -32,9 +32,9 @@
 							</div>
 
 							<div class="hamburger-menu">
-							<button class="hamburger">&#9776;</button>
+							<button class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></button>
 
-							<button class="cross"><div>&#735;</div></button>
+							<button class="cross"><i class="fa fa-times" aria-hidden="true"></i></button>
 							<div class="mobile-menu">
 								<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', ) ); ?>
 							</div>

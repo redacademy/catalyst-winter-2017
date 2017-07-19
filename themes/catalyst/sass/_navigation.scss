@@ -189,7 +189,7 @@
 			font-size: 30px;
 			line-height: 22px;
 			color: white;
-			padding: 15px;
+			padding: 10px 12px;
 			transition: opacity 0.2s ease;
 
 			@include media( $desktop-width ) {
@@ -241,12 +241,11 @@
 			border-radius: 0;
 			background: #333345;
 			box-shadow: none;
-			font-size: 66px;
+			font-size: 30px;
 			line-height: 20px;
 			color: white;
-			padding: 26px 17px;
+			padding: 10px 13px;
 			text-shadow: none;
-			height: 30px;
 			margin-right: 20px;
 			position: absolute;
 			right: 0;
