@@ -695,7 +695,8 @@ textarea {
     display: -ms-flexbox;
     display: flex;
     padding-left: 20px;
-    height: 100%; }
+    height: 85%;
+    overflow: hidden; }
   .container .header-text {
     height: 0;
     width: 0;
