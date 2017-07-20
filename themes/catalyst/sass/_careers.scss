@@ -51,6 +51,11 @@
         color: $color__text-main;
         text-transform: uppercase;
         margin: 2rem auto;
+
+        @include media( $desktop-width ) {
+            font-size: 1.7rem;
+            line-height: 2rem;
+        }
     }
     .role-container {
         font-family: $font__secondary;

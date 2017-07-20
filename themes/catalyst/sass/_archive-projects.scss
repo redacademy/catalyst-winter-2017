@@ -20,7 +20,11 @@
         text-align: center;
     }
     .project-post {
-        margin-bottom: 6rem;
+        margin-bottom: 4rem;
+
+        @include media( $desktop-width ) {
+            margin-bottom: 5rem;
+        }
     }
     .subheader-name {
         margin: 0;
