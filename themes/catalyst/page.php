@@ -6,7 +6,9 @@
  */
 
 get_header(); ?>
-	<div class="hero-image-banner"></div>
+	<div class="hero-image-banner image-credit-container">
+		<p class='image-credits'>Image: <?php echo CFS()->get('hero_image_credits'); ?></p>
+	</div>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 

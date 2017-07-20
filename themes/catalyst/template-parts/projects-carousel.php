@@ -19,7 +19,17 @@
         $id = get_the_id(); ?>
         <div class="other-proj-wrapper">
             <div class="image-wrapper">
-                <a href="<?php echo get_permalink() ?>"><img src='<?php echo esc_attr( CFS()->get('pBanner', $id) ); ?>' /></a>
+            <?php if (is_page_template('single-projects.php')) : ?>
+                <a class="image-credit-container" href="<?php echo get_permalink() ?>">
+                    <img src='<?php echo esc_attr( CFS()->get('pBanner', $id) ); ?>' />
+                </a>
+                <p class='image-credits'>Image: <?php echo CFS()->get('project_banner_image_credits'); ?></p>
+            <?php else : ?>
+                <a class="image-credit-container" href="<?php echo get_permalink() ?>">
+                    <img src='<?php echo esc_attr( CFS()->get('pBanner', $id) ); ?>' />
+                    <p class='image-credits'>Image: <?php echo CFS()->get('project_banner_image_credits'); ?></p>
+                </a>
+            <?php endif; ?>
             </div>
 
             <p class='project-name'><?php echo esc_html( CFS()->get('project_name', $id) ); ?></p>

@@ -40,8 +40,9 @@ get_header(); ?>
                 <?php endif; ?>
                 </h2>
             </div>
-            <div class="img-container">
+            <div class="img-container image-credit-container">
                 <img class='project-image' src='<?php echo esc_attr( CFS()->get('pBanner') ); ?>'>
+                <p class='image-credits'>Image: <?php echo CFS()->get('project_banner_image_credits'); ?></p>
             </div>
             <a href="<?php the_permalink(); ?>" class="navigation-button">Learn More</a>
         </div>

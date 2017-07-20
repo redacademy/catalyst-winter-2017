@@ -59,6 +59,7 @@
         @include media($desktop-width) {
             max-width: 900px;
             margin: 2rem auto 3rem auto;
+            display: inline;
         }
     }
     .project-image {

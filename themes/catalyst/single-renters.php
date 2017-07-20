@@ -8,8 +8,9 @@
  get_header(); ?>
 
 <section class="banner">
-    <div>
+    <div class='image-credit-container'>
         <img src="<?php echo CFS()->get('rent_logo'); ?>" alt="">
+        <p class='image-credits'>Image: <?php echo CFS()->get('renters_banner_image_credits'); ?></p>
     </div>
 </section>
 <section class="about">
