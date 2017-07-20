@@ -1099,14 +1099,14 @@ textarea {
 .home .fp-carousel {
   width: 100%; }
   .home .fp-carousel img {
-    height: 100vh;
+    height: 100%;
     max-width: none;
     min-width: 100vw;
     max-height: none; }
 
 .home .fp-img-container {
   width: 100%;
-  height: 100vh; }
+  height: 90vh; }
 
 .home .header-text {
   max-width: 900px;
@@ -1115,9 +1115,12 @@ textarea {
   line-height: 1;
   line-height: 1.2;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, 0%); }
+  @media all and (min-width: 760px) {
+    .home .header-text {
+      top: 45%; } }
   .home .header-text h1 {
     margin-bottom: 1rem;
     font-size: 2.5rem;
@@ -1266,18 +1269,24 @@ textarea {
   .home .projects .is-selected .right-quotation-mark {
     display: inline-block; }
   .home .projects .left-quotation-mark {
-    top: -6px;
-    left: -20px; }
+    top: -4px;
+    left: -17px; }
     @media all and (min-width: 760px) {
       .home .projects .left-quotation-mark {
-        left: -56px; } }
+        left: -40px; } }
+    @media all and (min-width: 1400px) {
+      .home .projects .left-quotation-mark {
+        left: -50px; } }
   .home .projects .right-quotation-mark {
     bottom: -6px;
-    right: -20px;
+    right: -17px;
     transform: rotate(180deg); }
     @media all and (min-width: 760px) {
       .home .projects .right-quotation-mark {
-        right: -50px; } }
+        right: -35px; } }
+    @media all and (min-width: 1400px) {
+      .home .projects .right-quotation-mark {
+        right: -40px; } }
   .home .projects .quote-text {
     margin-bottom: 2rem; }
   .home .projects .person {
@@ -4076,6 +4085,10 @@ object {
   color: #4A4A4A;
   text-transform: uppercase;
   margin: 2rem auto; }
+  @media all and (min-width: 760px) {
+    .page-id-196 .job-title {
+      font-size: 1.7rem;
+      line-height: 2rem; } }
 
 .page-id-196 .role-container {
   font-family: asap, sans-serif;
