@@ -733,7 +733,7 @@ textarea {
     visibility: hidden;
     height: 0;
     width: 100%; }
-    @media all and (min-width: 1290px) {
+    @media all and (min-width: 1200px) {
       .container .desktop-menu {
         visibility: visible;
         height: 100%; } }
@@ -783,10 +783,12 @@ textarea {
         justify-content: flex-start;
     -ms-flex-align: end;
         align-items: flex-end; }
-    @media all and (min-width: 1290px) {
+    @media all and (min-width: 1200px) {
       .container .hamburger-menu {
         display: none; } }
     .container .hamburger-menu .hamburger {
+      height: 52px;
+      width: 52px;
       margin-top: 5px;
       margin-right: 20px;
       position: relative;
@@ -797,7 +799,6 @@ textarea {
       font-size: 30px;
       line-height: 22px;
       color: white;
-      padding: 10px 12px;
       transition: opacity 0.2s ease; }
       @media all and (min-width: 760px) {
         .container .hamburger-menu .hamburger {
@@ -840,19 +841,20 @@ textarea {
       .container .hamburger-menu li:hover {
         background-color: #D9F1FF; }
     .container .hamburger-menu .cross {
+      height: 52px;
+      width: 52px;
       border: 1px solid #333345;
       border-radius: 0;
       background: #333345;
       box-shadow: none;
-      font-size: 30px;
+      font-size: 2.3rem;
       line-height: 20px;
       color: white;
-      padding: 10px 13px;
       text-shadow: none;
       margin-right: 20px;
       position: absolute;
       right: 0;
-      top: 15px;
+      top: 16px;
       opacity: 0;
       transition: opacity 0.3s ease; }
       .container .hamburger-menu .cross div {
