@@ -11,7 +11,7 @@
     <section>
         <?php while ( have_posts() ) : the_post(); ?>
 
-            <div class="project-image-banner">
+            <div class="project-image-banner image-credit-container">
                 <div class="header-text">
                     <?php $project_name = esc_html( CFS()->get( 'project_name' ) );
                     if ( $project_name ) :?>
@@ -28,6 +28,7 @@
                     <p class='project-status'>Status: <span class='p-stat'><?php echo $project_status; ?></span></p>
                     <?php endif; ?>
                 </div>
+                <p class="image-credits">Image: <?php echo CFS()->get('project_banner_image_credits'); ?></p>
             </div>
 
             <div class="blue-background-header">
@@ -85,8 +86,9 @@
 
             <?php $gallery_images = CFS()->get('gallery_images');
             foreach ($gallery_images as $image) : ?>
-                <div class="images">
+                <div class="images image-credit-container">
                     <?php echo '<img src="'.$image['image'].'"/>'; ?>
+                    <p class='image-credits'>Image: <?php echo esc_html( $image['project_images_credits']); ?></p>
                 </div>
             <?php endforeach; wp_reset_postdata(); ?>
         </div>

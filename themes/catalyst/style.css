@@ -525,6 +525,7 @@ table {
   height: auto;
   min-height: 45vh;
   min-width: 100%;
+  position: relative;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: column nowrap;
@@ -584,6 +585,16 @@ table {
   line-height: 0; }
   .infographic-img img {
     min-width: 768px; }
+
+.image-credit-container {
+  position: relative; }
+  .image-credit-container .image-credits {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 0.75rem;
+    margin: 0;
+    color: #fff; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -695,7 +706,8 @@ textarea {
     display: -ms-flexbox;
     display: flex;
     padding-left: 20px;
-    height: 100%; }
+    height: 85%;
+    overflow: hidden; }
   .container .header-text {
     height: 0;
     width: 0;
@@ -4372,7 +4384,8 @@ object {
   @media all and (min-width: 760px) {
     .page-id-441 .img-container {
       max-width: 900px;
-      margin: 2rem auto 3rem auto; } }
+      margin: 2rem auto 3rem auto;
+      display: inline; } }
 
 .page-id-441 .project-image {
   width: 100%;

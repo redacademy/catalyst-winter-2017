@@ -24,9 +24,10 @@ get_header(); ?>
                 <h2 class="subheader-name"><?php echo $project_name; ?></h2>
                 <?php endif; ?>
             </div>
-            <div class="img-container">
+            <div class="img-container image-credit-container">
                 <?php if(CFS()->get('renters_banner')) : ?>
                 <img class='project-image' src='<?php echo esc_attr( CFS()->get('renters_banner') ); ?>'>
+                <p class='image-credits'>Image: <?php echo CFS()->get('renters_banner_image_credits'); ?></p>
                 <?php else : ?>
                 <img class='project-image' src='<?php echo esc_attr( CFS()->get('rent_logo') ); ?>'>
                 <?php endif; ?>

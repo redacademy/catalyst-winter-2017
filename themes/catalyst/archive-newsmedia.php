@@ -13,9 +13,10 @@ get_header(); ?>
 
         <header class="header">
             <div class="hero-image-banner">
-			<div class="header-text">
-				<p class="entry-subtitle"><?php echo CFS()->get('bannertext'); ?></p>
+				<div class="header-text">
+					<p class="entry-subtitle"><?php echo CFS()->get('bannertext'); ?></p>
 				</div>
+				<p class='image-credits'>Image: <?php echo CFS()->get('hero_image_credits'); ?></p>
             </div>
         </header>
 

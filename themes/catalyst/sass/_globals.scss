@@ -2,7 +2,8 @@
 .project-image-banner {
 	height: auto;
 	min-height: 45vh;
-    min-width: 100%;
+	min-width: 100%;
+	position: relative;
     @include flex-column(nowrap, center, center);
     @include media($desktop-width) {
         min-height: 70vh;
@@ -62,5 +63,17 @@
 	line-height: 0;
 	img {
 		min-width: 768px;
+	}
+}
+
+.image-credit-container {
+	position: relative;
+	.image-credits {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		font-size: 0.75rem;
+		margin: 0;
+		color: #fff;
 	}
 }
