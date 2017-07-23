@@ -37,7 +37,7 @@
             <div class="proj-content">
                 <?php $description = esc_html( CFS()->get( 'description' ) );
                 if ( $description ) :?>
-                    <h3>Description: <p><?php echo $description; ?></p></h3>
+                    <p><?php echo $description; ?></p>
                 <?php endif; ?>
 
                 <?php $partners = wp_kses_post( CFS()->get( 'partners' ) );

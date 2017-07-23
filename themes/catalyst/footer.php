@@ -12,7 +12,7 @@
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="footer">
 					<div class="page-link">
-					<a href="<?php echo get_home_url(); ?>/careers">careers</a>
+					<a href="<?php echo get_home_url(); ?>/collaborate">collaborate</a>
 					<a href="<?php echo get_home_url(); ?>/news-media">news + media</a>
 					</div>
 
