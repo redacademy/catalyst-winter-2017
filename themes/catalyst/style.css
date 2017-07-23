@@ -544,7 +544,7 @@ table {
     text-align: center; }
 
 .hero-image-banner {
-  width: 100vw; }
+  width: 100%; }
 
 .formulas:last-child .fill {
   display: none; }
