@@ -587,8 +587,13 @@ table {
     min-width: 768px; }
 
 .image-credit-container {
-  position: relative; }
+  position: relative;
+  height: 100%;
+  width: 100%; }
   .image-credit-container .image-credits {
+    max-width: 60%;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -706,7 +711,7 @@ textarea {
     display: -ms-flexbox;
     display: flex;
     padding-left: 20px;
-    height: 85%;
+    height: 78px;
     overflow: hidden; }
   .container .header-text {
     height: 0;
@@ -1807,8 +1812,8 @@ object {
   left: 5px; }
   @media all and (min-width: 760px) {
     .page-id-21 .quotation-left2 {
-      top: 10px;
-      left: -20px; } }
+      top: 15px;
+      left: -40px; } }
 
 .page-id-21 .quotation-right,
 .page-id-21 .quotation-right2 {
@@ -1840,8 +1845,8 @@ object {
       right: -15px; } }
   @media all and (min-width: 760px) {
     .page-id-21 .quotation-right2 {
-      bottom: 8px;
-      right: -10px; } }
+      bottom: 10px;
+      right: -20px; } }
 
 .page-id-21 .robert {
   margin: 0 auto;
