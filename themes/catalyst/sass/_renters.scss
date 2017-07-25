@@ -160,7 +160,6 @@
         .contact-form {
             max-width: 860px;
             margin: 0 auto;
-            padding: 0 2rem;
         }
         input {
             width: 100%;
@@ -178,11 +177,21 @@
             text-transform: uppercase;
         }
         form {
+            display: flex;
+            flex-wrap: wrap;
+            .wpcf7-form-control-wrap {
+                margin: 0 auto;
+                .rc-anchor-normal .rc-anchor-checkbox-label {
+                    width: 100%;
+                }
+            }
             p {
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
                 align-items: center;
+                width: 100%;
+                margin: 0.5rem 0;
             }
             label {
                 width: 100%;
@@ -191,7 +200,6 @@
     }
     .page-copy {
         max-width: 650px;
-        padding: 0 2rem;
         margin: 2rem auto;
         text-align: $body-text-align;
         font-size: 1.2rem;

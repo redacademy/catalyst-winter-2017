@@ -3514,15 +3514,13 @@ object {
       font-size: 1.5rem; } }
 
 .page-id-483 .investor-list,
-.page-id-483 .investor-p,
-.page-id-483 .investor-p li {
+.page-id-483 .investor-p {
   padding: 0 2rem;
   max-width: 650px;
   margin: 0 auto; }
   @media all and (min-width: 1200px) {
     .page-id-483 .investor-list,
-    .page-id-483 .investor-p,
-    .page-id-483 .investor-p li {
+    .page-id-483 .investor-p {
       max-width: 860px; } }
 
 .page-id-483 .investor-p, .page-id-483 .investor-list {
@@ -3910,8 +3908,10 @@ object {
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
         margin: 0 auto; }
-      .page-id-7 .wpcf7 form p:nth-child(10) {
-        margin: 2rem auto; }
+      .page-id-7 .wpcf7 form .wpcf7-form-control-wrap {
+        margin: 0 auto; }
+      .page-id-7 .wpcf7 form p:nth-child(11) {
+        width: 100%; }
     .page-id-7 .wpcf7 input {
       width: 100%;
       height: 50px;
@@ -4825,8 +4825,7 @@ object {
 
 .single-renters .contact .contact-form {
   max-width: 860px;
-  margin: 0 auto;
-  padding: 0 2rem; }
+  margin: 0 auto; }
 
 .single-renters .contact input {
   width: 100%; }
@@ -4843,22 +4842,31 @@ object {
   margin: 0 auto 1.5rem;
   text-transform: uppercase; }
 
-.single-renters .contact form p {
+.single-renters .contact form {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center; }
-
-.single-renters .contact form label {
-  width: 100%; }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .single-renters .contact form .wpcf7-form-control-wrap {
+    margin: 0 auto; }
+    .single-renters .contact form .wpcf7-form-control-wrap .rc-anchor-normal .rc-anchor-checkbox-label {
+      width: 100%; }
+  .single-renters .contact form p {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    width: 100%;
+    margin: 0.5rem 0; }
+  .single-renters .contact form label {
+    width: 100%; }
 
 .single-renters .page-copy {
   max-width: 650px;
-  padding: 0 2rem;
   margin: 2rem auto;
   text-align: left;
   font-size: 1.2rem;
