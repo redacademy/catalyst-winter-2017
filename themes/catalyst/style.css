@@ -4736,6 +4736,8 @@ object {
     @media all and (min-width: 760px) {
       .single-renters .floorplan .floorplan-selection p {
         padding: 0.5rem 1rem; } }
+    .single-renters .floorplan .floorplan-selection p:hover {
+      cursor: pointer; }
   .single-renters .floorplan .floorplan-selection .selection .floorplan-img {
     display: none;
     width: 100%; }

@@ -54,6 +54,9 @@
                 @include media($desktop-width){
                     padding: 0.5rem 1rem;
                 }
+                &:hover {
+                    cursor: pointer;
+                }
             }
             .selection .floorplan-img {
                 display: none;
