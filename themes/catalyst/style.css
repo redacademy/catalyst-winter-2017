@@ -4720,6 +4720,12 @@ object {
   display: -ms-flexbox;
   display: flex; }
 
+.single-renters .floorplan .floorplan-img a {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+  text-align: center; }
+
 .single-renters .floorplan .floorplan-selection {
   width: 100%; }
   @media all and (min-width: 760px) {
