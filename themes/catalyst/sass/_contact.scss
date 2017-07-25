@@ -78,8 +78,11 @@
                 flex-basis: 100%;
                 margin: 0 auto;
             }
-            p:nth-child(10) {
-                margin: 2rem auto;
+            .wpcf7-form-control-wrap {
+                margin: 0 auto;
+            }
+            p:nth-child(11) {
+                width: 100%;       
             }
 
         }
