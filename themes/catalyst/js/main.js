@@ -320,7 +320,7 @@
     $('.selection p').each(function(i) {
         $(this).addClass('select'+(i+1));
     });
-    $('.floorplan-img-container img').each(function(i) {
+    $('.floorplan-img-container .floorplan-img').each(function(i) {
         $(this).addClass('select'+(i+1));
     });
 
@@ -328,13 +328,13 @@
     $('.selection p').on('click',function(){
         if (screen.width < 760){
             var $mobileImgToggle = $(this).next('.floorplan-img');
-            $('.selection img').css('display', 'none');
+            $('.selection .floorplan-img').css('display', 'none');
             $($mobileImgToggle).animate({height: 'toggle'});
         }
         else {
             var $homeSelect = $(this).attr('class');
-            $('.selection img').css('display', 'none');
-            $('.floorplan-img-container img').css('display', 'none');
+            $('.selection .floorplan-img').css('display', 'none');
+            $('.floorplan-img-container .floorplan-img').css('display', 'none');
             $('.floorplan-img-container .'+$homeSelect).animate({height: 'toggle'});
         }
     })

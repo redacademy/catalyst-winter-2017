@@ -4736,13 +4736,13 @@ object {
     @media all and (min-width: 760px) {
       .single-renters .floorplan .floorplan-selection p {
         padding: 0.5rem 1rem; } }
-  .single-renters .floorplan .floorplan-selection .selection img {
+  .single-renters .floorplan .floorplan-selection .selection .floorplan-img {
     display: none;
     width: 100%; }
-  .single-renters .floorplan .floorplan-selection .selection:first-child img {
+  .single-renters .floorplan .floorplan-selection .selection:first-child .floorplan-img {
     display: inline; }
     @media all and (min-width: 760px) {
-      .single-renters .floorplan .floorplan-selection .selection:first-child img {
+      .single-renters .floorplan .floorplan-selection .selection:first-child .floorplan-img {
         display: none; } }
 
 .single-renters .floorplan .floorplan-img-container {
@@ -4753,10 +4753,10 @@ object {
       width: 65%;
       min-height: 450px;
       margin-left: 1rem; } }
-  .single-renters .floorplan .floorplan-img-container img {
+  .single-renters .floorplan .floorplan-img-container .floorplan-img {
     display: none;
     width: 100%; }
-  .single-renters .floorplan .floorplan-img-container img:first-child {
+  .single-renters .floorplan .floorplan-img-container .floorplan-img:first-child {
     display: inline; }
 
 .single-renters .rent .rent-chart-container {
