@@ -3,6 +3,11 @@
 	<section class="staff-profile-preview profile-preview">
 		<img class="profile-image" src="<?php echo CFS()->get('profile_image'); ?>"/>
 
+		<?php $photoCredit = CFS()->get( 'photo_credit' );
+		if( !empty( $photoCredit ) ): ?>
+			<p class="photo-credit">Image: <?php echo $photoCredit; ?></p>
+		<?php endif; ?>
+
 		<h4 class="name"><?php echo esc_html( CFS()->get('name') ); ?></h4>
 		<p class="job-title"><?php echo esc_html( CFS()->get('job_title') ); ?></p>
 		<button class="staff-enter-button enter-button" type="button"><span>+</span></button>
@@ -16,6 +21,11 @@
 
 				<div class="left-column">
 					<img class="profile-image" src="<?php echo esc_attr( CFS()->get('profile_image') ); ?>"/>
+
+					<?php $photoCredit = CFS()->get( 'photo_credit' );
+					if( !empty( $photoCredit ) ): ?>
+						<p class="photo-credit">Image: <?php echo $photoCredit; ?></p>
+					<?php endif; ?>
 
 					<h4 class="name"><?php echo esc_html( CFS()->get('name') ); ?></h4>
 					<p class="job-title"><?php echo esc_html( CFS()->get('job_title') ); ?></p>
@@ -40,6 +50,11 @@
 			?>
 				<div class="center-column">
 					<img class="profile-image" src="<?php echo esc_url( CFS()->get('profile_image') ); ?>"/>
+
+					<?php $photoCredit = CFS()->get( 'photo_credit' );
+					if( !empty( $photoCredit ) ): ?>
+						<p class="photo-credit">Image: <?php echo $photoCredit; ?></p>
+					<?php endif; ?>
 
 					<h4 class="name"><?php echo esc_html( CFS()->get('name') ); ?></h4>
 					<p class="job-title"><?php echo esc_html( CFS()->get('job_title') ); ?></p>

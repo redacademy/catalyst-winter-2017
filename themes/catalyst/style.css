@@ -2207,6 +2207,20 @@ object {
         top: 27px;
         right: 0.3px; } }
 
+.photo-credit {
+  color: darkgray;
+  font-size: 0.75rem;
+  font-style: italic;
+  line-height: 0.75rem;
+  margin: 0 auto 0.25rem; }
+
+.profile-popout .photo-credit {
+  color: #4A4A4A;
+  font-size: 0.75rem;
+  font-style: italic;
+  line-height: 0.75rem;
+  margin: 0.5rem auto 0.25rem; }
+
 .name {
   margin: 0 auto;
   font-family: asap, sans-serif;
