@@ -4734,6 +4734,12 @@ object {
   display: -ms-flexbox;
   display: flex; }
 
+.single-renters .floorplan .floorplan-img a {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+  text-align: center; }
+
 .single-renters .floorplan .floorplan-selection {
   width: 100%; }
   @media all and (min-width: 760px) {
@@ -4750,6 +4756,8 @@ object {
     @media all and (min-width: 760px) {
       .single-renters .floorplan .floorplan-selection p {
         padding: 0.5rem 1rem; } }
+    .single-renters .floorplan .floorplan-selection p:hover {
+      cursor: pointer; }
   .single-renters .floorplan .floorplan-selection .selection .floorplan-img {
     display: none;
     width: 100%; }

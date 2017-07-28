@@ -326,17 +326,23 @@
 
     //display floorplans on click
     $('.selection p').on('click',function(){
-        if (screen.width < 760){
+        if ($(window).width() < 760){
             var $mobileImgToggle = $(this).next('.floorplan-img');
             $('.selection .floorplan-img').css('display', 'none');
-            $($mobileImgToggle).animate({height: 'toggle'});
+            $($mobileImgToggle).css('display', 'inline-block');
         }
         else {
             var $homeSelect = $(this).attr('class');
             $('.selection .floorplan-img').css('display', 'none');
             $('.floorplan-img-container .floorplan-img').css('display', 'none');
-            $('.floorplan-img-container .'+$homeSelect).animate({height: 'toggle'});
+            $('.floorplan-img-container .'+$homeSelect).css('display', 'inline-block');
         }
+    })
+
+    $(window).on('scroll', function() {
+        setTimeout(function() {
+            $(this).width() >= 760 && $('.selection .floorplan-img').animate('height', 'toggle').css('display', 'none');
+        }, 100);
     })
 
 })(jQuery);

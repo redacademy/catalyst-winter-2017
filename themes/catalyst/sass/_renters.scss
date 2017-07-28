@@ -37,6 +37,12 @@
         .floorplan-container {
             display: flex;
         }
+        .floorplan-img a {
+            display: block;
+            width: 100px;
+            margin: 0 auto;
+            text-align: center;
+        }
         .floorplan-selection {
             width: 100%;
             @include media ($desktop-width){
@@ -53,6 +59,9 @@
                 text-align: center;
                 @include media($desktop-width){
                     padding: 0.5rem 1rem;
+                }
+                &:hover {
+                    cursor: pointer;
                 }
             }
             .selection .floorplan-img {
