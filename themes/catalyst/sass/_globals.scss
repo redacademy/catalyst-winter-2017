@@ -24,6 +24,13 @@
 	}
 }
 
+.flickity-prev-next-button {
+	display: none;
+	@include media( $desktop-width ) {
+  	display: inline-block;
+	}
+}
+
 .blue-background-header {
 	height: auto;
 	width: 100%;

@@ -549,6 +549,12 @@ table {
 .formulas:last-child .fill {
   display: none; }
 
+.flickity-prev-next-button {
+  display: none; }
+  @media all and (min-width: 760px) {
+    .flickity-prev-next-button {
+      display: inline-block; } }
+
 .blue-background-header {
   height: auto;
   width: 100%;
@@ -3692,9 +3698,6 @@ object {
   @media all and (min-width: 760px) {
     .testimonials {
       margin-bottom: 4rem; } }
-
-.flickity-prev-next-button {
-  display: none; }
 
 .quotes-wrapper {
   margin: 2rem auto 0;
