@@ -11,8 +11,10 @@
     <?php
     $postid = get_the_ID();
     $posts = get_posts( array(
+        'numberposts' => -1,
         'post_type' => 'projects',
         'order' => 'ASC',
+        'post__not_in' => array($postid)
     ));
     foreach ( $posts as $post ) :
         $id = get_the_id(); ?>

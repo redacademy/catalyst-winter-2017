@@ -188,14 +188,14 @@
             }
         }
         .right-quotation-mark {
-            bottom: -6px;
+            bottom: -4px;
             right: -17px;
             transform: rotate(180deg);
             @include media ($desktop-width) {
-                right: -35px;
+                right: -40px;
             }
              @include media ( 1400px ) {
-                right: -40px;
+                right: -50px;
             }
         }
         .quote-text {

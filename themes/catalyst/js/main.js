@@ -172,108 +172,12 @@
         }
     });
 
-    // Load more posts when user clicks button on news & media page.
-
-    var $postsContainer = $( '.newsmedia-article' );
-    var $loadPostsButton = $( '#load-more-button' );
-    var renderedArticles = 5;
-    var apiLink = api_vars.ajax_url + 'news/?&_embed=true';
-
-    function formatDate( myDate ) {
-        var formattedDate = addLeadingZero( myDate.getDate() ) + ', ' + ( '0' + ( myDate.getMonth() + 1 ) ).slice( -2 ) + ', ' + myDate.getFullYear();
-        return formattedDate;
-    }
-
-    function addLeadingZero( date ) {
-        if ( date < 10 ) {
-            date = '0' + date;
-            return date;
-        } else {
-            return date;
-        }
-    }
-
-    function constructArticleContent( formattedDate, articleTitle, articleLink ) {
-
-        var articleContent = '<div class="article-content" >';
-            articleContent += '<p class="date" >' + formattedDate + '</p>';
-            articleContent += '<h3>' + articleTitle + '</h3>';
-            articleContent += '</div>';
-            articleContent += '<a class="cfs-hyperlink" href=' + articleLink + '><span class="text">Read More</span></a>';
-
-        return articleContent;
-    }
-
-    function constructArticleThumbnail( post ) {
-        if ( post.better_featured_image !== null ) {
-            var articleThumb = '<img src="' + post.better_featured_image.source_url + '" />';
-            var articleThumbContainer = '<div class="article-thumb">' + articleThumb + '</div>';
-        } else {
-            articleThumbContainer = '';
-        }
-
-        return articleThumbContainer;
-    }
-
-    function constructArticleElement( post, articleID, articleThumbContainer, articleContent ) {
-        var articleElement = post.better_featured_image
-                                ? '<article class="news" id="' + articleID + '">'
-                                : '<article class="news no-image" id="' + articleID + '">'
-
-        if ( articleThumbContainer ) {
-            articleElement += articleThumbContainer;
-        }
-
-            articleElement += articleContent;
-            articleElement += '</article>';
-
-            return articleElement;
-    }
-
-    $loadPostsButton.click(function( event ){
-        event.preventDefault();
-
-        $.get(apiLink, function( data ){
-
-            var newPosts = data.slice( ( data.length - renderedArticles ) - renderedArticles, ( data.length - renderedArticles ) );
-
-            if ( renderedArticles < data.length && renderedArticles < 20 ) {
-                $.each( newPosts, function( i, post )  {
-                    console.log(post);
-                    var myDate = new Date( post.date );
-                    var formattedDate = formatDate( myDate );
-                    var articleID = post.id;
-                    var articleTitle = post.title.rendered;
-                    var articleLink = post.link;
-
-                    var constructedArticleElement =
-                        constructArticleElement(
-                            post,
-                            articleID,
-                            constructArticleThumbnail( post ),
-                            constructArticleContent( formattedDate, articleTitle, articleLink )
-                        );
-
-                    $postsContainer.append( constructedArticleElement );
-                    renderedArticles += 5;
-                });
-            }
-        });
-    });
-
     //send user to thank you page on form submission
     document.addEventListener( 'wpcf7mailsent', function() {
         location = 'http://google.com/';
     }, false );
 
     //flickity frontpage
-    $('.member-carousel').flickity({
-        contain: true,
-        wrapAround: true,
-        imagesLoaded: true,
-        pageDots: false,
-    });
-
     $('.fp-carousel').flickity({
         imagesLoaded: true,
         pageDots: false,
@@ -293,7 +197,7 @@
         wrapAround: true,
         imagesLoaded: true,
         pageDots: false,
-        prevNextButtons: false,
+        prevNextButtons: true,
         autoPlay: 4000,
     });
     //flickity ourstory template part
@@ -341,7 +245,6 @@
 
     $(window).on('resize', function() {
         setTimeout(function() {
-            console.log('resizing');
             $(this).width() >= 760 && $('.selection .floorplan-img').animate('height', 'toggle').css('display', 'none');
         }, 500);
     })

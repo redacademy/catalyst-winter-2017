@@ -1301,15 +1301,15 @@ textarea {
       .home .projects .left-quotation-mark {
         left: -50px; } }
   .home .projects .right-quotation-mark {
-    bottom: -6px;
+    bottom: -4px;
     right: -17px;
     transform: rotate(180deg); }
     @media all and (min-width: 760px) {
       .home .projects .right-quotation-mark {
-        right: -35px; } }
+        right: -40px; } }
     @media all and (min-width: 1400px) {
       .home .projects .right-quotation-mark {
-        right: -40px; } }
+        right: -50px; } }
   .home .projects .quote-text {
     margin-bottom: 2rem; }
   .home .projects .person {

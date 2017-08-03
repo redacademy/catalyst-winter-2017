@@ -28,11 +28,14 @@
                     <p class='project-status'>Status: <span class='p-stat'><?php echo $project_status; ?></span></p>
                     <?php endif; ?>
                 </div>
-                <p class="image-credits">Image: <?php echo CFS()->get('project_banner_image_credits'); ?></p>
+                <p class="image-credits">Image: <?php echo esc_html( CFS()->get('project_banner_image_credits') ); ?></p>
             </div>
 
             <div class="blue-background-header">
-                <h2 class='subheader-lrg'>Project details</h2>
+                <?php $subheading1 = esc_html( CFS()->get( 'subheading1' ) );
+                if ( !empty( $subheading1 ) ) : ?>
+                    <h2 class='subheader-lrg'><?php echo $subheading1 ; ?></h2>
+                <?php endif; ?>
             </div>
 
             <div class="proj-content">
@@ -79,7 +82,10 @@
     <section class='arch-design'>
         <div>
             <div class="blue-background-header">
-                <h2 class='subheader-lrg'>Architectural design</h2>
+                <?php $subheading2 = esc_html( CFS()->get( 'subheading2' ) );
+                if ( !empty( $subheading2 ) ) : ?>
+                    <h2 class='subheader-lrg'><?php echo $subheading2 ; ?></h2>
+                <?php endif; ?>
             </div>
         </div>
         <div class="img-carousel">
@@ -112,9 +118,12 @@
     </section>
     <section>
         <div class="blue-background-header">
-            <h2 class='subheader-lrg'>Other Projects</h2>
+            <?php $subheading3 = esc_html( CFS()->get( 'subheading3' ) );
+            if ( !empty( $subheading3 ) ) : ?>
+                <h2 class='subheader-lrg'><?php echo $subheading3 ; ?></h2>
+            <?php endif; ?>
         </div>
         <?php get_template_part( 'template-parts/projects-carousel', 'projects carousel' ); ?>
     </section>
 </div>
- <?php get_footer(); ?>
+<?php get_footer(); ?>
