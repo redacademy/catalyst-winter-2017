@@ -329,7 +329,7 @@
         if ($(window).width() < 760){
             var $mobileImgToggle = $(this).next('.floorplan-img');
             $('.selection .floorplan-img').css('display', 'none');
-            $($mobileImgToggle).css('display', 'inline-block');
+            $($mobileImgToggle).css('display', 'inline-block').animate('height', 'toggle');
         }
         else {
             var $homeSelect = $(this).attr('class');
@@ -339,10 +339,11 @@
         }
     })
 
-    $(window).on('scroll', function() {
+    $(window).on('resize', function() {
         setTimeout(function() {
+            console.log('resizing');
             $(this).width() >= 760 && $('.selection .floorplan-img').animate('height', 'toggle').css('display', 'none');
-        }, 100);
+        }, 500);
     })
 
 })(jQuery);
