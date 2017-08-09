@@ -4285,6 +4285,7 @@ object {
     .page-id-195 .img-container {
       width: 65vw;
       max-width: 900px;
+      max-height: 600px;
       margin: 2rem auto 3rem auto; } }
 
 .page-id-195 .project-image {
