@@ -53,8 +53,13 @@
         }
     }
     .img-container {
-        margin: 2rem 2rem 3rem;
+        height: auto;
+        width: 90vw;
+        max-width: 600px;
+        margin: 2rem auto 3rem;
+        overflow: hidden;
         @include media($desktop-width) {
+            width: 65vw;
             max-width: 900px;
             margin: 2rem auto 3rem auto;
         }

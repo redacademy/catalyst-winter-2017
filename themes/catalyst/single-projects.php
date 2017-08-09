@@ -31,13 +31,6 @@
                 <p class="image-credits">Image: <?php echo esc_html( CFS()->get('project_banner_image_credits') ); ?></p>
             </div>
 
-            <div class="blue-background-header">
-                <?php $subheading1 = esc_html( CFS()->get( 'subheading1' ) );
-                if ( !empty( $subheading1 ) ) : ?>
-                    <h2 class='subheader-lrg'><?php echo $subheading1 ; ?></h2>
-                <?php endif; ?>
-            </div>
-
             <div class="proj-content">
                 <?php $description = esc_html( CFS()->get( 'description' ) );
                 if ( $description ) :?>
@@ -77,17 +70,17 @@
                 if ( $cost ) :?>
                     <h3>Total Project Cost: <p><?php echo $cost; ?></p></h3>
                 <?php endif; ?>
+
             </div>
     </section>
     <section class='arch-design'>
-        <div>
+        <?php $subheading1 = esc_html( CFS()->get( 'subheading1' ) );
+        if ( !empty( $subheading1 ) ) : ?>
             <div class="blue-background-header">
-                <?php $subheading2 = esc_html( CFS()->get( 'subheading2' ) );
-                if ( !empty( $subheading2 ) ) : ?>
-                    <h2 class='subheader-lrg'><?php echo $subheading2 ; ?></h2>
-                <?php endif; ?>
+                <h2 class='subheader-lrg'><?php echo $subheading1 ; ?></h2>
             </div>
-        </div>
+        <?php endif; ?>
+
         <div class="img-carousel">
 
             <?php $gallery_images = CFS()->get('gallery_images');
@@ -117,12 +110,14 @@
         <?php endwhile; wp_reset_postdata(); ?>
     </section>
     <section>
+
+        <?php $subheading2 = esc_html( CFS()->get( 'subheading2' ) );
+        if ( !empty( $subheading2 ) ) : ?>
         <div class="blue-background-header">
-            <?php $subheading3 = esc_html( CFS()->get( 'subheading3' ) );
-            if ( !empty( $subheading3 ) ) : ?>
-                <h2 class='subheader-lrg'><?php echo $subheading3 ; ?></h2>
-            <?php endif; ?>
+            <h2 class='subheader-lrg'><?php echo $subheading2 ; ?></h2>
         </div>
+        <?php endif; ?>
+
         <?php get_template_part( 'template-parts/projects-carousel', 'projects carousel' ); ?>
     </section>
 </div>

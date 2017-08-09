@@ -12,6 +12,7 @@ get_header(); ?>
 
 <div class="project-content">
     <?php $posts = get_posts( array(
+        'numberposts' => -1,
         'post_type' => 'projects',
         'order' => 'ASC',
     ));
