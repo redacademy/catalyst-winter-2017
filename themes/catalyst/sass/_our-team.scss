@@ -130,7 +130,7 @@
     @include flex-column(nowrap, space-between, center);
     @include media($desktop-width) {
         width: 80%;
-        margin: 0 auto 5rem;
+        margin: 0 auto 4rem;
         @include flex-row(wrap, center, flex-start);
     }
     .profile-popout {
