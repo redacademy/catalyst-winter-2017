@@ -178,6 +178,63 @@ function board_cpt() {
 }
 add_action( 'init', 'board_cpt', 0 );
 
+// Register Board Member Custom Post Type
+
+function committee_cpt() {
+
+	$labels = array(
+		'name'                  => 'Committee Members',
+		'singular_name'         => 'Committee Member',
+		'menu_name'             => 'Committee Members',
+		'name_admin_bar'        => 'Committee Members',
+		'archives'              => 'Committee Member Archives',
+		'attributes'            => 'Committee Member Attributes',
+		'parent_item_colon'     => 'Parent Item:',
+		'all_items'             => 'All Committee Members',
+		'add_new_item'          => 'Add New Item',
+		'add_new'               => 'Add New Committee Member',
+		'new_item'              => 'New Committee Member',
+		'edit_item'             => 'Edit Committee Member',
+		'update_item'           => 'Update Committee Member',
+		'view_item'             => 'View Committee Member',
+		'view_items'            => 'View Committee Members',
+		'search_items'          => 'Search Committee Member',
+		'not_found'             => 'Not found',
+		'not_found_in_trash'    => 'Not found in Trash',
+		'featured_image'        => 'Featured Image',
+		'set_featured_image'    => 'Set featured image',
+		'remove_featured_image' => 'Remove featured image',
+		'use_featured_image'    => 'Use as featured image',
+		'insert_into_item'      => 'Insert into item',
+		'uploaded_to_this_item' => 'Uploaded to this item',
+		'items_list'            => 'Committee members list',
+		'items_list_navigation' => 'Committee members list navigation',
+		'filter_items_list'     => 'Filter committee members list',
+	);
+	$args = array(
+		'label'                 => 'Committee Members',
+		'description'           => 'Committee members list',
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'revisions' ),
+		'taxonomies'            => array( 'category', 'post_tag' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'post',
+	);
+	register_post_type( 'committee', $args );
+
+}
+add_action( 'init', 'committee_cpt', 0 );
+
 // Register Advisors Custom Post Type
 
 function advisors_cpt() {

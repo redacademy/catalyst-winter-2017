@@ -58,7 +58,6 @@
     span {
         position: relative;
         bottom: 3px;
-        left: 0.5px;
         font-weight: 300;
     }
 }
@@ -125,6 +124,7 @@
 
 .staff-profiles-wrapper,
 .board-profiles-wrapper,
+.committee-profiles-wrapper,
 .advisors-profiles-wrapper {
     margin-bottom: 2rem;
     @include flex-column(nowrap, space-between, center);
@@ -286,7 +286,7 @@
             width: 950px;
         }
     }
-    .board-profiles-header {
+    .board-profiles-header, .committee-profiles-header {
         height: auto;
         width: 100%;
         margin: 2rem auto 1rem;

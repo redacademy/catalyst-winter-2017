@@ -2163,7 +2163,6 @@ object {
 .enter-button span {
   position: relative;
   bottom: 3px;
-  left: 0.5px;
   font-weight: 300; }
 
 .exit-button {
@@ -2248,6 +2247,7 @@ object {
 
 .staff-profiles-wrapper,
 .board-profiles-wrapper,
+.committee-profiles-wrapper,
 .advisors-profiles-wrapper {
   margin-bottom: 2rem;
   display: -ms-flexbox;
@@ -2261,6 +2261,7 @@ object {
   @media all and (min-width: 760px) {
     .staff-profiles-wrapper,
     .board-profiles-wrapper,
+    .committee-profiles-wrapper,
     .advisors-profiles-wrapper {
       width: 80%;
       margin: 0 auto 5rem;
@@ -2274,6 +2275,7 @@ object {
           align-items: flex-start; } }
   .staff-profiles-wrapper .profile-popout,
   .board-profiles-wrapper .profile-popout,
+  .committee-profiles-wrapper .profile-popout,
   .advisors-profiles-wrapper .profile-popout {
     height: 0;
     width: 0;
@@ -2286,16 +2288,20 @@ object {
     display: none; }
     .staff-profiles-wrapper .profile-popout a,
     .board-profiles-wrapper .profile-popout a,
+    .committee-profiles-wrapper .profile-popout a,
     .advisors-profiles-wrapper .profile-popout a {
       color: #4A4A4A;
       font-weight: 700; }
       .staff-profiles-wrapper .profile-popout a:hover,
       .board-profiles-wrapper .profile-popout a:hover,
+      .committee-profiles-wrapper .profile-popout a:hover,
       .advisors-profiles-wrapper .profile-popout a:hover {
         color: #935E32; }
     .staff-profiles-wrapper .profile-popout .left-quotation, .staff-profiles-wrapper .profile-popout .right-quotation,
     .board-profiles-wrapper .profile-popout .left-quotation,
     .board-profiles-wrapper .profile-popout .right-quotation,
+    .committee-profiles-wrapper .profile-popout .left-quotation,
+    .committee-profiles-wrapper .profile-popout .right-quotation,
     .advisors-profiles-wrapper .profile-popout .left-quotation,
     .advisors-profiles-wrapper .profile-popout .right-quotation {
       height: 30px;
@@ -2306,21 +2312,25 @@ object {
       z-index: 1; }
     .staff-profiles-wrapper .profile-popout .left-quotation,
     .board-profiles-wrapper .profile-popout .left-quotation,
+    .committee-profiles-wrapper .profile-popout .left-quotation,
     .advisors-profiles-wrapper .profile-popout .left-quotation {
       top: 0px;
       left: -20px; }
       @media all and (min-width: 760px) {
         .staff-profiles-wrapper .profile-popout .left-quotation,
         .board-profiles-wrapper .profile-popout .left-quotation,
+        .committee-profiles-wrapper .profile-popout .left-quotation,
         .advisors-profiles-wrapper .profile-popout .left-quotation {
           left: -25px; } }
       @media all and (min-width: 1000px) {
         .staff-profiles-wrapper .profile-popout .left-quotation,
         .board-profiles-wrapper .profile-popout .left-quotation,
+        .committee-profiles-wrapper .profile-popout .left-quotation,
         .advisors-profiles-wrapper .profile-popout .left-quotation {
           left: -45px; } }
     .staff-profiles-wrapper .profile-popout .right-quotation,
     .board-profiles-wrapper .profile-popout .right-quotation,
+    .committee-profiles-wrapper .profile-popout .right-quotation,
     .advisors-profiles-wrapper .profile-popout .right-quotation {
       bottom: 20px;
       right: -16px;
@@ -2328,20 +2338,24 @@ object {
       @media all and (min-width: 760px) {
         .staff-profiles-wrapper .profile-popout .right-quotation,
         .board-profiles-wrapper .profile-popout .right-quotation,
+        .committee-profiles-wrapper .profile-popout .right-quotation,
         .advisors-profiles-wrapper .profile-popout .right-quotation {
           bottom: 35px; } }
       @media all and (min-width: 1100px) {
         .staff-profiles-wrapper .profile-popout .right-quotation,
         .board-profiles-wrapper .profile-popout .right-quotation,
+        .committee-profiles-wrapper .profile-popout .right-quotation,
         .advisors-profiles-wrapper .profile-popout .right-quotation {
           right: -23px; } }
     .staff-profiles-wrapper .profile-popout .quote-container,
     .board-profiles-wrapper .profile-popout .quote-container,
+    .committee-profiles-wrapper .profile-popout .quote-container,
     .advisors-profiles-wrapper .profile-popout .quote-container {
       position: relative;
       max-width: 90%; }
     .staff-profiles-wrapper .profile-popout .quote,
     .board-profiles-wrapper .profile-popout .quote,
+    .committee-profiles-wrapper .profile-popout .quote,
     .advisors-profiles-wrapper .profile-popout .quote {
       max-width: 345px;
       margin-bottom: 1.5rem;
@@ -2355,12 +2369,14 @@ object {
       @media all and (min-width: 760px) {
         .staff-profiles-wrapper .profile-popout .quote,
         .board-profiles-wrapper .profile-popout .quote,
+        .committee-profiles-wrapper .profile-popout .quote,
         .advisors-profiles-wrapper .profile-popout .quote {
           max-width: 260px;
           margin-bottom: 2.5rem;
           text-align: left; } }
     .staff-profiles-wrapper .profile-popout .center-column,
     .board-profiles-wrapper .profile-popout .center-column,
+    .committee-profiles-wrapper .profile-popout .center-column,
     .advisors-profiles-wrapper .profile-popout .center-column {
       display: -ms-flexbox;
       display: flex;
@@ -2373,11 +2389,13 @@ object {
       margin: 0 auto; }
       .staff-profiles-wrapper .profile-popout .center-column img,
       .board-profiles-wrapper .profile-popout .center-column img,
+      .committee-profiles-wrapper .profile-popout .center-column img,
       .advisors-profiles-wrapper .profile-popout .center-column img {
         width: 290px;
         border-radius: 50%; }
     .staff-profiles-wrapper .profile-popout .left-column,
     .board-profiles-wrapper .profile-popout .left-column,
+    .committee-profiles-wrapper .profile-popout .left-column,
     .advisors-profiles-wrapper .profile-popout .left-column {
       width: 100%;
       float: none;
@@ -2393,22 +2411,26 @@ object {
       @media all and (min-width: 760px) {
         .staff-profiles-wrapper .profile-popout .left-column,
         .board-profiles-wrapper .profile-popout .left-column,
+        .committee-profiles-wrapper .profile-popout .left-column,
         .advisors-profiles-wrapper .profile-popout .left-column {
           width: 40%;
           margin-right: 10%;
           float: left; } }
       .staff-profiles-wrapper .profile-popout .left-column img,
       .board-profiles-wrapper .profile-popout .left-column img,
+      .committee-profiles-wrapper .profile-popout .left-column img,
       .advisors-profiles-wrapper .profile-popout .left-column img {
         width: 225px;
         border-radius: 50%; }
         @media all and (min-width: 760px) {
           .staff-profiles-wrapper .profile-popout .left-column img,
           .board-profiles-wrapper .profile-popout .left-column img,
+          .committee-profiles-wrapper .profile-popout .left-column img,
           .advisors-profiles-wrapper .profile-popout .left-column img {
             width: 95%; } }
     .staff-profiles-wrapper .profile-popout h3,
     .board-profiles-wrapper .profile-popout h3,
+    .committee-profiles-wrapper .profile-popout h3,
     .advisors-profiles-wrapper .profile-popout h3 {
       width: 100%;
       margin: 1.5rem auto;
@@ -2422,34 +2444,40 @@ object {
       @media all and (min-width: 760px) {
         .staff-profiles-wrapper .profile-popout h3,
         .board-profiles-wrapper .profile-popout h3,
+        .committee-profiles-wrapper .profile-popout h3,
         .advisors-profiles-wrapper .profile-popout h3 {
           width: 50%;
           font-size: 2rem;
           line-height: 2.5rem; } }
     .staff-profiles-wrapper .profile-popout article,
     .board-profiles-wrapper .profile-popout article,
+    .committee-profiles-wrapper .profile-popout article,
     .advisors-profiles-wrapper .profile-popout article {
       font-size: 1.2rem;
       line-height: 1.5rem;
       display: inline; }
       .staff-profiles-wrapper .profile-popout article ul,
       .board-profiles-wrapper .profile-popout article ul,
+      .committee-profiles-wrapper .profile-popout article ul,
       .advisors-profiles-wrapper .profile-popout article ul {
         margin: 0;
         padding: 0;
         list-style: none; }
         .staff-profiles-wrapper .profile-popout article ul li::before,
         .board-profiles-wrapper .profile-popout article ul li::before,
+        .committee-profiles-wrapper .profile-popout article ul li::before,
         .advisors-profiles-wrapper .profile-popout article ul li::before {
           content: "-";
           margin-right: 0.5rem;
           display: inline; }
   .staff-profiles-wrapper .translucent,
   .board-profiles-wrapper .translucent,
+  .committee-profiles-wrapper .translucent,
   .advisors-profiles-wrapper .translucent {
     opacity: 0.5; }
   .staff-profiles-wrapper .show-popout,
   .board-profiles-wrapper .show-popout,
+  .committee-profiles-wrapper .show-popout,
   .advisors-profiles-wrapper .show-popout {
     height: 100%;
     width: 100%;
@@ -2466,11 +2494,16 @@ object {
     @media all and (min-width: 760px) {
       .staff-profiles-wrapper .show-popout,
       .board-profiles-wrapper .show-popout,
+      .committee-profiles-wrapper .show-popout,
       .advisors-profiles-wrapper .show-popout {
         width: 950px; } }
-  .staff-profiles-wrapper .board-profiles-header,
+  .staff-profiles-wrapper .board-profiles-header, .staff-profiles-wrapper .committee-profiles-header,
   .board-profiles-wrapper .board-profiles-header,
-  .advisors-profiles-wrapper .board-profiles-header {
+  .board-profiles-wrapper .committee-profiles-header,
+  .committee-profiles-wrapper .board-profiles-header,
+  .committee-profiles-wrapper .committee-profiles-header,
+  .advisors-profiles-wrapper .board-profiles-header,
+  .advisors-profiles-wrapper .committee-profiles-header {
     height: auto;
     width: 100%;
     margin: 2rem auto 1rem;
@@ -2483,18 +2516,24 @@ object {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center; }
-    .staff-profiles-wrapper .board-profiles-header .small-header,
+    .staff-profiles-wrapper .board-profiles-header .small-header, .staff-profiles-wrapper .committee-profiles-header .small-header,
     .board-profiles-wrapper .board-profiles-header .small-header,
-    .advisors-profiles-wrapper .board-profiles-header .small-header {
+    .board-profiles-wrapper .committee-profiles-header .small-header,
+    .committee-profiles-wrapper .board-profiles-header .small-header,
+    .committee-profiles-wrapper .committee-profiles-header .small-header,
+    .advisors-profiles-wrapper .board-profiles-header .small-header,
+    .advisors-profiles-wrapper .committee-profiles-header .small-header {
       height: auto;
       width: auto;
       margin: 0 0 2rem; }
   .staff-profiles-wrapper .navigation-button-container,
   .board-profiles-wrapper .navigation-button-container,
+  .committee-profiles-wrapper .navigation-button-container,
   .advisors-profiles-wrapper .navigation-button-container {
     width: 100%; }
     .staff-profiles-wrapper .navigation-button-container .navigation-button,
     .board-profiles-wrapper .navigation-button-container .navigation-button,
+    .committee-profiles-wrapper .navigation-button-container .navigation-button,
     .advisors-profiles-wrapper .navigation-button-container .navigation-button {
       height: 70px;
       width: 275px;
@@ -2513,17 +2552,20 @@ object {
           align-items: center; }
       .staff-profiles-wrapper .navigation-button-container .navigation-button:hover,
       .board-profiles-wrapper .navigation-button-container .navigation-button:hover,
+      .committee-profiles-wrapper .navigation-button-container .navigation-button:hover,
       .advisors-profiles-wrapper .navigation-button-container .navigation-button:hover {
         border: 2px solid #D9F1FF;
         box-shadow: 0px 2px 5px #323232; }
       .staff-profiles-wrapper .navigation-button-container .navigation-button:active,
       .board-profiles-wrapper .navigation-button-container .navigation-button:active,
+      .committee-profiles-wrapper .navigation-button-container .navigation-button:active,
       .advisors-profiles-wrapper .navigation-button-container .navigation-button:active {
         background: #D9F1FF;
         border: 2px solid white;
         cursor: pointer; }
   .staff-profiles-wrapper .profile-preview,
   .board-profiles-wrapper .profile-preview,
+  .committee-profiles-wrapper .profile-preview,
   .advisors-profiles-wrapper .profile-preview {
     width: 100%;
     margin: 1rem 3rem;
@@ -2532,20 +2574,24 @@ object {
     @media all and (min-width: 760px) {
       .staff-profiles-wrapper .profile-preview,
       .board-profiles-wrapper .profile-preview,
+      .committee-profiles-wrapper .profile-preview,
       .advisors-profiles-wrapper .profile-preview {
         width: 24%; } }
     .staff-profiles-wrapper .profile-preview .profile-image,
     .board-profiles-wrapper .profile-preview .profile-image,
+    .committee-profiles-wrapper .profile-preview .profile-image,
     .advisors-profiles-wrapper .profile-preview .profile-image {
       width: 190px;
       border-radius: 50%; }
       @media all and (min-width: 760px) {
         .staff-profiles-wrapper .profile-preview .profile-image,
         .board-profiles-wrapper .profile-preview .profile-image,
+        .committee-profiles-wrapper .profile-preview .profile-image,
         .advisors-profiles-wrapper .profile-preview .profile-image {
           width: 95%; }
           .staff-profiles-wrapper .profile-preview .profile-image:hover,
           .board-profiles-wrapper .profile-preview .profile-image:hover,
+          .committee-profiles-wrapper .profile-preview .profile-image:hover,
           .advisors-profiles-wrapper .profile-preview .profile-image:hover {
             box-shadow: 0 2px 8px #4990E2; } }
 

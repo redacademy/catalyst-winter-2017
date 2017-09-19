@@ -27,6 +27,7 @@
 
     var $staffEnterButtons = $( '.staff-enter-button' );
     var $boardEnterButtons = $( '.board-enter-button' );
+    var $committeeEnterButtons = $( '.committee-enter-buttons' );
     var $staffExitButton = $( '.staff-exit-button' );
     var $boardExitButton = $( '.board-exit-button' );
 
@@ -35,12 +36,15 @@
 
     var $staffProfilePreviews = $( '.staff-profile-preview' );
     var $boardProfilePreviews = $( '.board-profile-preview' );
+    var $committeeProfilePreviews = $( '.committee-profile-preview' );
 
     var $staffProfileImages = $( '.staff-profile-preview > .profile-image' );
     var $boardProfileImages = $( '.board-profile-preview > .profile-image' );
+    var $committeeProfileImages = $( '.committee-profile-preview > .profile-image' );
 
     var $staffProfilePopouts = $( '.staff-profile-popout' );
     var $boardProfilePopouts = $( '.board-profile-popout' );
+    var $commiteeProfilePopouts = $( '.committee-profile-popout' );
 
     var $staffProfilesWrapper = $( '.staff-profiles-wrapper' );
     var $staffProfilesHeader = $( '.staff-profiles-wrapper > .small-header:nth-child(1)' );
@@ -48,6 +52,8 @@
 
     var $boardProfilesWrapper = $( '.board-profiles-wrapper' );
     var $boardProfilesHeader = $( '.board-profiles-header' );
+
+    var $committeeProfilesHeader = $( '.committee-profiles-header' );
 
     var $advisorsProfilesWrapper = $( '.advisors-profiles-wrapper' );
     var $introCopy = $( '.intro-copy' );
@@ -110,6 +116,32 @@
         });
     }
 
+    function showCommitteePopout( $targetArray ) {
+        $targetArray.on( 'click', function() {
+            var targetIndex = jQuery.inArray( this, $targetArray );
+            var thisPopout = $commiteeProfilePopouts[targetIndex];
+            thisPopout = $( thisPopout );
+
+            // Grey-out the rest of the page content.
+
+            $staffProfilesWrapper.hide();
+            $boardProfilesWrapper.hide();
+            $advisorsProfilesWrapper.animate( {opacity: 0.25}, 130 );
+            $introCopy.animate( {opacity: 0.25}, 130 );
+
+            // Clear the active profiles section of inactive profiles and show only the active profile popout.
+
+            $committeeProfilesHeader.hide();
+            $committeeProfilePreviews.hide();
+            $commiteeProfilePopouts.hide();
+            thisPopout.show().addClass( 'show-popout' );
+            scrollToPopout( thisPopout, $boardProfilesHeader );
+            $staffExitButton.show(130);
+
+            hideStaffPopout( thisPopout );
+        });
+    }
+
     // FUnction to hide staff profile popouts.
 
     function hideStaffPopout( $thisPopout ) {
@@ -119,8 +151,10 @@
             $staffProfilesWrapper.css( 'margin-top', '0' );
             $staffProfilePreviews.show();
             $boardProfilePreviews.show();
+            $committeeProfilePreviews.show();
             $staffProfilesHeader.show();
             $boardProfilesHeader.show();
+            $committeeProfilesHeader.show();
             $boardProfilesWrapper.show();
             $staffProfilesWrapper.show();
             $advisorsProfilesWrapper.css( 'opacity', '1' );
@@ -150,10 +184,12 @@
 
     if ( $( window ).width() < 760 ) {
         showStaffPopout( $staffEnterButtons );
-        showBoardPopout( $boardEnterButtons )
+        showBoardPopout( $boardEnterButtons );
+        showCommitteePopout( $committeeEnterButtons );
     } else {
         showStaffPopout( $staffProfileImages );
         showBoardPopout( $boardProfileImages );
+        showCommitteePopout( $committeeProfileImages )
     }
 
     // On window resize, set the appropriate open popout function and kill the one that is not being used.
@@ -162,13 +198,17 @@
         if ( $( window ).width() < 760 ) {
             $staffProfileImages.off( 'click' );
             $boardProfileImages.off( 'click' );
+            $committeeProfileImages.off( 'click' );
             showStaffPopout( $staffEnterButtons );
             showBoardPopout( $boardEnterButtons );
+            showCommitteePopout( $committeeEnterButtons );
         } else {
             $staffEnterButtons.off('click');
             $boardEnterButtons.off( 'click' );
+            $committeeEnterButtons.off( 'click' );
             showStaffPopout( $staffProfileImages );
             showBoardPopout( $boardProfileImages );
+            showCommitteePopout ( $committeeProfileImages );
         }
     });
 

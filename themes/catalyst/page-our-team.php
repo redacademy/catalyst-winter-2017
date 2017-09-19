@@ -38,7 +38,7 @@ get_header(); ?>
             <div class="board-profiles-wrapper">
                 <div class="board-profiles-header">
                     <h3 class="small-header">Board</h3>
-                    <button class="board-exit-button exit-button" type="button"><span>&#735;</span></button>
+                    <button class="staff-exit-button exit-button" type="button"><span>&#735;</span></button>
                 </div>
 
                 <?php
@@ -48,6 +48,22 @@ get_header(); ?>
 
                 <?php foreach ( $board_profiles as $post ) : setup_postdata( $post ); ?>
                     <?php get_template_part( 'template-parts/content', 'board' ); ?>
+                <?php endforeach; wp_reset_postdata(); ?>
+            </div>
+
+            <div class="committee-profiles-wrapper">
+                <div class="committee-profiles-header">
+                    <h3 class="small-header">Committee Members</h3>
+                    <button class="staff-exit-button exit-button" type="button"><span>&#735;</span></button>
+                </div>
+
+                <?php
+                    $args = array( 'post_type' => 'committee', 'order' => 'ASC', 'numberposts' => -1 );
+                    $committee_profiles = get_posts( $args ); // returns an array of posts
+                ?>
+
+                <?php foreach ( $committee_profiles as $post ) : setup_postdata( $post ); ?>
+                    <?php get_template_part( 'template-parts/content', 'committee' ); ?>
                 <?php endforeach; wp_reset_postdata(); ?>
             </div>
 
