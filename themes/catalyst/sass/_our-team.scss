@@ -110,7 +110,6 @@
 }
 
 .job-title {
-    font-family: 'quattrocento';
     max-width: 235px;
     margin: 0.25rem auto 1.5rem;
     font-size: 1.1rem;
@@ -130,7 +129,7 @@
     @include flex-column(nowrap, space-between, center);
     @include media($desktop-width) {
         width: 80%;
-        margin: 0 auto 4rem;
+        margin: 0 auto 3rem;
         @include flex-row(wrap, center, flex-start);
     }
     .profile-popout {
@@ -163,7 +162,7 @@
 
         .left-quotation {
             top: 0px;
-            left: -20px;
+            left: -35px;
 
             @include media( $desktop-width ) {
                 left: -25px;
@@ -174,7 +173,7 @@
         }
         .right-quotation {
             bottom: 20px;
-            right: -16px;
+            right: -35px;
             transform: rotate(180deg);
             @include media($desktop-width) {
                 bottom: 35px;

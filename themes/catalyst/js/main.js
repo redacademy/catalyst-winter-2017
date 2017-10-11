@@ -53,6 +53,7 @@
     var $boardProfilesWrapper = $( '.board-profiles-wrapper' );
     var $boardProfilesHeader = $( '.board-profiles-header' );
 
+    var $committeeProfilesWrapper = $( '.committee-profiles-wrapper' );
     var $committeeProfilesHeader = $( '.committee-profiles-header' );
 
     var $advisorsProfilesWrapper = $( '.advisors-profiles-wrapper' );
@@ -68,8 +69,9 @@
             var thisPopout = $staffProfilePopouts[targetIndex];
             thisPopout = $( thisPopout );
 
-            // Grey-out the rest of the page content.
+            // Grey-out/hide the rest of the page content.
 
+            $committeeProfilesWrapper.hide();
             $boardProfilesWrapper.hide();
             $advisorsProfilesWrapper.animate({opacity: 0.25}, 130);
             $introCopy.animate({opacity: 0.25}, 130);
@@ -97,8 +99,9 @@
             var thisPopout = $boardProfilePopouts[targetIndex];
             thisPopout = $( thisPopout );
 
-            // Grey-out the rest of the page content.
+            // Grey-out/hide the rest of the page content.
 
+            $committeeProfilesWrapper.hide();
             $staffProfilesWrapper.hide();
             $advisorsProfilesWrapper.animate( {opacity: 0.25}, 130 );
             $introCopy.animate( {opacity: 0.25}, 130 );
@@ -122,7 +125,7 @@
             var thisPopout = $commiteeProfilePopouts[targetIndex];
             thisPopout = $( thisPopout );
 
-            // Grey-out the rest of the page content.
+            // Grey-out/hide the rest of the page content.
 
             $staffProfilesWrapper.hide();
             $boardProfilesWrapper.hide();
@@ -157,6 +160,7 @@
             $committeeProfilesHeader.show();
             $boardProfilesWrapper.show();
             $staffProfilesWrapper.show();
+            $committeeProfilesWrapper.show();
             $advisorsProfilesWrapper.css( 'opacity', '1' );
             $introCopy.css( 'opacity', '1' );
 

@@ -53,8 +53,7 @@ get_header(); ?>
 
             <div class="committee-profiles-wrapper">
                 <div class="committee-profiles-header">
-                    <h3 class="small-header">Committee Members</h3>
-                    <button class="staff-exit-button exit-button" type="button"><span>&#735;</span></button>
+                    <h3 class="small-header">Committee Members & Advisors</h3>
                 </div>
 
                 <?php
