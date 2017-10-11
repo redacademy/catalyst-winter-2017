@@ -27,7 +27,7 @@
 
 					<div class="sns-icon">
 						<a href="https://twitter.com/catalyst_cds"><div class="twitter"></div></a>
-						<a href="https://www.linkedin.com"><div class="linkedin"></div></a>
+						<a href="https://www.linkedin.com/company/9479987/"><div class="linkedin"></div></a>
 
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
