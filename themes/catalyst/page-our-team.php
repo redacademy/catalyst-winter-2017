@@ -51,20 +51,24 @@ get_header(); ?>
                 <?php endforeach; wp_reset_postdata(); ?>
             </div>
 
+            <?php
+                $args = array( 'post_type' => 'committee', 'order' => 'ASC', 'numberposts' => -1 );
+                $committee_profiles = get_posts( $args ); // returns an array of posts
+            ?>
+
+            <?php if( sizeof( $committee_profiles ) > 0 ): ?>
+
             <div class="committee-profiles-wrapper">
                 <div class="committee-profiles-header">
                     <h3 class="small-header">Committee Members & Advisors</h3>
                 </div>
 
-                <?php
-                    $args = array( 'post_type' => 'committee', 'order' => 'ASC', 'numberposts' => -1 );
-                    $committee_profiles = get_posts( $args ); // returns an array of posts
-                ?>
-
                 <?php foreach ( $committee_profiles as $post ) : setup_postdata( $post ); ?>
                     <?php get_template_part( 'template-parts/content', 'committee' ); ?>
                 <?php endforeach; wp_reset_postdata(); ?>
             </div>
+
+            <?php endif; ?>
 
             <div class="advisors-profiles-wrapper">
                 <h3 class="small-header">Advisors</h3>
