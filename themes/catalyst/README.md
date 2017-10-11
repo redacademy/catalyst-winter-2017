@@ -4,7 +4,7 @@ A custom WordPress theme developed for Catalyst Community Development Corporatio
 
 ## Technologies Used
 
-* Wordpress as a CMS
+* Wordpress
 * PHP
 * HTML
 * SCSS/SASS
