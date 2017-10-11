@@ -2,8 +2,6 @@
 
 A custom WordPress theme developed for Catalyst Community Development Corporation, forked from Underscores.
 
-![Theme screenshot](/relative/path/to/img.jpg?raw=true "Optional Title")
-
 ## Technologies Used
 
 * Wordpress as a CMS
