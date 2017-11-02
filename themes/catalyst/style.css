@@ -929,7 +929,7 @@ textarea {
       .footer .page-link {
         font-size: 0.85rem;
         height: auto;
-        width: 20%;
+        width: 25%;
         margin: auto 0;
         padding-top: 0.5rem;
         padding-bottom: 0.75rem;
@@ -960,7 +960,7 @@ textarea {
     @media all and (min-width: 760px) {
       .footer .company-info {
         padding-top: 0.85rem;
-        width: 55%; } }
+        width: 50%; } }
     .footer .company-info span {
       font-style: italic; }
     .footer .company-info p {
