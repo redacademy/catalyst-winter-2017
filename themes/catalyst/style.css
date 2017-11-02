@@ -452,6 +452,28 @@ table {
       font-size: 2.25rem;
       line-height: 3.4rem; } }
 
+.intro-copy {
+  height: auto;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-size: 1.2rem;
+  font-family: asap, sans-serif;
+  text-align: center; }
+  @media all and (min-width: 760px) {
+    .intro-copy {
+      font-size: 1.5rem;
+      padding: 3rem 2rem; } }
+  @media all and (min-width: 1200px) {
+    .intro-copy {
+      max-width: 860px; } }
+
+a {
+  color: #935E32; }
+  a:hover {
+    color: #00A4FF; }
+
 .left-align {
   text-align: left; }
 
@@ -3787,26 +3809,6 @@ object {
         font-size: 1rem; } }
   .page-id-7 .blue-background-header {
     margin-top: 1.5rem; }
-  .page-id-7 .intro-copy {
-    height: auto;
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 2rem;
-    font-size: 1.2rem;
-    font-family: asap, sans-serif;
-    text-align: center; }
-    @media all and (min-width: 760px) {
-      .page-id-7 .intro-copy {
-        font-size: 1.5rem;
-        padding: 3rem 2rem; } }
-    @media all and (min-width: 1200px) {
-      .page-id-7 .intro-copy {
-        max-width: 860px; } }
-    .page-id-7 .intro-copy a {
-      color: #935E32; }
-      .page-id-7 .intro-copy a:hover {
-        color: #00A4FF; }
   .page-id-7 .renters-redirect {
     padding: 0 1rem;
     max-width: 1200px;

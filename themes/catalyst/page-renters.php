@@ -8,7 +8,14 @@
 
 get_header(); ?>
 
-   <?php get_template_part( 'template-parts/hero-banner'); ?>
+<?php get_template_part( 'template-parts/hero-banner'); ?>
+
+<?php $renters_intro = wp_kses_post( CFS()->get('renters_intro_copy') );
+if( !empty( $renters_intro ) ) : ?>
+    <div class="intro-copy">
+        <p><?php echo $renters_intro; ?></p>
+    </div>
+<?php endif; ?>
 
 <div class="renter-content">
     <?php $posts = get_posts( array(

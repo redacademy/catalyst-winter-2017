@@ -59,6 +59,18 @@
 	}
 }
 
+.intro-copy {
+		@include intro-copy ;
+}
+
+a {
+	color: $color__menu-active;
+
+	&:hover {
+			color: $color__menu-hover;
+	}
+}
+
 .left-align {
 	text-align: left;
 }

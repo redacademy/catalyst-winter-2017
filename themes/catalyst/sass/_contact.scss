@@ -25,17 +25,6 @@
     .blue-background-header {
         margin-top: 1.5rem;
     }
-    .intro-copy {
-        @include intro-copy ;
-
-        a {
-            color: $color__menu-active;
-
-            &:hover {
-                color: $color__menu-hover;
-            }
-        }
-    }
     .renters-redirect {
         padding: 0 1rem;
         max-width: 1200px;
@@ -82,7 +71,7 @@
                 margin: 0 auto;
             }
             p:nth-child(11) {
-                width: 100%;       
+                width: 100%;
             }
 
         }
