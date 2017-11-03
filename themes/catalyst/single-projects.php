@@ -71,13 +71,18 @@
                     <h3>Total Project Cost: <p><?php echo $cost; ?></p></h3>
                 <?php endif; ?>
 
+                <?php $beginning_date = esc_html( CFS()->get( 'beginning_date' ) );
+                if ( $beginning_date ) :?>
+                    <h3>Rental Applications Begin: <p><?php echo $beginning_date; ?></p></h3>
+                <?php endif; ?>
+
             </div>
     </section>
     <section class='arch-design'>
         <?php $subheading1 = esc_html( CFS()->get( 'subheading1' ) );
         if ( !empty( $subheading1 ) ) : ?>
             <div class="blue-background-header">
-                <h2 class='subheader-lrg'><?php echo $subheading1 ; ?></h2>
+                <h2 class='subheader-lrg'><?php echo $subheading1; ?></h2>
             </div>
         <?php endif; ?>
 
