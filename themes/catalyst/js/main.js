@@ -229,12 +229,14 @@
         autoPlay: 7500,
         draggable: false,
     });
+
     //flickity single projects
     $('.img-carousel').flickity({
         contain: true,
         wrapAround: true,
         imagesLoaded: true,
         pageDots: false,
+        adaptiveHeight: true
     });
     $('.quote-carousel').flickity({
         contain: true,
@@ -243,19 +245,16 @@
         pageDots: false,
         prevNextButtons: true,
         autoPlay: 4000,
+        adaptiveHeight: true
     });
-    //flickity ourstory template part
-    $('.formula-carousel').flickity({
-        imagesLoaded: true,
-        pageDots: false,
-        watchCSS: true
-    });
+
     //flickity projects template part
     $('.other-post-gallery').flickity({
         contain: true,
         wrapAround: true,
         imagesLoaded: true,
         pageDots: false,
+        adaptiveHeight: true
     });
 
     //rent chart height

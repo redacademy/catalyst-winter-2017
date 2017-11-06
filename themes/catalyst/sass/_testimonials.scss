@@ -5,11 +5,17 @@
         margin-bottom: 4rem;
     }
 }
+
+.quote-carousel {
+    .flickity-prev-next-button {
+        top: 120px;
+    }
+}
+
 .quotes-wrapper {
     margin: 2rem auto 0;
     width: 85%;
-    display: none;
-
+    opacity: 0;
 
     @include media( $desktop-width ) {
         width: 100%;
@@ -17,7 +23,7 @@
     }
 }
 .is-selected .quotes-wrapper {
-    display: block;
+    opacity: 1;
 }
 .quote, .person, .line {
     text-align: center;

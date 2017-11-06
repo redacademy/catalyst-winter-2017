@@ -81,6 +81,17 @@
             max-width: 860px;
         }
     }
+
+    /* Styles for main flickity image carousel */
+
+    /* Setting fixed top position on the navigation buttons
+       to prevent them from jumping around when the carousel
+       dynamically resizes in response to changes in content
+       height from cell to cell */
+
+    .flickity-prev-next-button {
+        top: 460px;
+    }
     .projects {
         padding-bottom: 1rem;
         text-align: center;
@@ -117,17 +128,6 @@
             @include media( $desktop-width ) {
                 max-width: 450px;
             }
-        }
-        .quotes-wrapper {
-            margin: 3rem auto 0;
-            width: 100%;
-            display: none;
-            @include media( $desktop-width ) {
-                margin: 5rem auto 0;
-            }
-        }
-        .is-selected .quotes-wrapper {
-            display: block;
         }
         .quote {
             max-width: 340px;
