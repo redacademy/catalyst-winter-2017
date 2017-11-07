@@ -60,7 +60,7 @@ get_header(); ?>
 
             <div class="committee-profiles-wrapper">
                 <div class="committee-profiles-header">
-                    <h3 class="small-header">Committee Members & Advisors</h3>
+                    <h3 class="small-header">Committee Members & Past Board Members</h3>
                 </div>
 
                 <?php foreach ( $committee_profiles as $post ) : setup_postdata( $post ); ?>
