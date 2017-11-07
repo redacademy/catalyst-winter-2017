@@ -56,7 +56,7 @@ get_header(); ?>
                 $committee_profiles = get_posts( $args ); // returns an array of posts
             ?>
 
-            <?php if( sizeof( $committee_profiles ) > 0 ): ?>
+            <?php if( CFS() -> get( 'activate_committee' ) == true ) : ?>
 
             <div class="committee-profiles-wrapper">
                 <div class="committee-profiles-header">
