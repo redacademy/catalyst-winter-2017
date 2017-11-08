@@ -96,42 +96,54 @@
 
             </div>
     </section>
-    <section class='arch-design'>
-        <?php $subheading1 = esc_html( CFS()->get( 'subheading1' ) );
-        if ( !empty( $subheading1 ) ) : ?>
-            <div class="blue-background-header">
-                <h2 class='subheader-lrg'><?php echo $subheading1; ?></h2>
-            </div>
-        <?php endif; ?>
 
-        <div class="img-carousel">
+    <?php $activate_carousel = CFS() -> get( 'activate_project_carousel' );
+    if( $activate_carousel === 1 ) : ?>
 
-            <?php $gallery_images = CFS()->get('gallery_images');
-            foreach ($gallery_images as $image) : ?>
-                <div class="images image-credit-container">
-                    <?php echo '<img src="'.$image['image'].'"/>'; ?>
-                    <p class='image-credits'>Image: <?php echo esc_html( $image['project_images_credits']); ?></p>
+        <section class='arch-design'>
+            <?php $subheading1 = esc_html( CFS()->get( 'subheading1' ) );
+            if ( !empty( $subheading1 ) ) : ?>
+                <div class="blue-background-header">
+                    <h2 class='subheader-lrg'><?php echo $subheading1; ?></h2>
+                </div>
+            <?php endif; ?>
+
+                <div class="img-carousel">
+
+                    <?php $gallery_images = CFS()->get('gallery_images');
+                    foreach ($gallery_images as $image) : ?>
+                        <div class="images image-credit-container">
+                            <?php echo '<img src="'.$image['image'].'"/>'; ?>
+                            <p class='image-credits'>Image: <?php echo esc_html( $image['project_images_credits']); ?></p>
+                        </div>
+                    <?php endforeach; wp_reset_postdata(); ?>
+                </div>
+
+            <a href="<?php echo get_home_url(); ?>/collaborate" class="navigation-button">Collaborate with us</a>
+        </section>
+    <?php endif; ?>
+
+    <?php $activate_quotes_carousel = CFS() -> get( 'activate_quotes_carousel' );
+    if( $activate_quotes_carousel === 1 ) : ?>
+        <section class="quote-carousel">
+            <?php $quotes_gallery = CFS()->get('quotes_gallery');
+            foreach ($quotes_gallery as $quotes) : ?>
+                <div class="quotes">
+                    <div class="q-text-container">
+                        <div class="left-quotation-mark"></div>
+                        <?php echo '<p class="quote-text"> '.$quotes['quotes'].'</p>'; ?>
+                        <div class="right-quotation-mark"></div>
+                    </div>
+                    <?php echo '<p class="person"> '.$quotes['person'].'</p>';
+                    echo '<p class="line"> '.$quotes['line1'].'</p>';
+                    echo '<p class="line"> '.$quotes['line2'].'</p>'; ?>
                 </div>
             <?php endforeach; wp_reset_postdata(); ?>
-        </div>
-            <div class="quote-carousel">
-                <?php $quotes_gallery = CFS()->get('quotes_gallery');
-                foreach ($quotes_gallery as $quotes) : ?>
-                    <div class="quotes">
-                        <div class="q-text-container">
-                            <div class="left-quotation-mark"></div>
-                            <?php echo '<p class="quote-text"> '.$quotes['quotes'].'</p>'; ?>
-                            <div class="right-quotation-mark"></div>
-                        </div>
-                        <?php echo '<p class="person"> '.$quotes['person'].'</p>';
-                        echo '<p class="line"> '.$quotes['line1'].'</p>';
-                        echo '<p class="line"> '.$quotes['line2'].'</p>'; ?>
-                    </div>
-                    <?php endforeach; wp_reset_postdata(); ?>
-            </div>
-        <a href="<?php echo get_home_url(); ?>/collaborate" class="navigation-button">Collaborate with us</a>
-        <?php endwhile; wp_reset_postdata(); ?>
-    </section>
+        </section>
+    <?php endif; ?>
+
+    <?php endwhile; wp_reset_postdata(); ?>
+
     <section>
 
         <?php $subheading2 = esc_html( CFS()->get( 'subheading2' ) );
