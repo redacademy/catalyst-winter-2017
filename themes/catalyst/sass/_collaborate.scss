@@ -1,4 +1,4 @@
-.page-id-18 {
+.page-id-596, .page-id-595 {
     height: 100%;
     width: 100%;
     @include media($desktop-width) {
@@ -66,19 +66,35 @@
     .partners-information-container {
         margin: 0 auto;
         display: flex;
-        flex-flow: column nowrap;
-        justify-content: flex-start;
+        flex-flow: row wrap;
+        justify-content: space-around;
         align-items: center;
+
+        @include media( $desktop-width ) {
+          margin-bottom: 4rem;
+        }
+
         .partners-information {
             height: auto;
             width: 100%;
             margin: 0 0 $base__space-unit;
+
+            @include media( 1200px ) {
+                width: 570px;
+                height: 540px;
+                border: 1.2px solid #b9b9b9;
+                border-radius: 0 0 5px 5px;
+                box-shadow: 2px 2px 8px #F1F1F1;
+            }
+        }
+        .investors-information {
+            box-shadow: -2px 2px 10px #F1F1F1;
         }
         .navigation-button{
             margin: 2rem auto 2rem;
 
-            @include media($desktop-width) {
-                margin: 3rem auto 3rem;
+            @include media(1200px) {
+                margin: $base__space-unit auto;
             }
         }
         .small-header {

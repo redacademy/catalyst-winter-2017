@@ -30,6 +30,8 @@
     var $committeeEnterButtons = $( '.committee-enter-button' );
     var $staffExitButton = $( '.staff-exit-button' );
 
+    $staffExitButton.hide();
+
     var $staffProfilePreviews = $( '.staff-profile-preview' );
     var $boardProfilePreviews = $( '.board-profile-preview' );
     var $committeeProfilePreviews = $( '.committee-profile-preview' );

@@ -57,9 +57,9 @@
 
     span {
         position: relative;
-        bottom: 2px;
+        bottom: 1px;
         left: 0.25px;
-        font-weight: 300;
+        background: url( '../images/icon/plus.svg' ) no-repeat center 47%;
     }
 }
 
@@ -70,23 +70,19 @@
 }
 
 .staff-exit-button {
-    display: none;
     position: absolute;
     top: 23%;
     right: 5%;
     @include exit-popout-button(#FFF);
 
     span {
-        font-size: 4rem;
         position: relative;
-        top: 28.5px;
-        left: 0.3px;
-        @include media($desktop-width) {
-            font-size: 5.5rem;
-            top: 40px;
-            left: 0;
-            right: 0.3px;
-        }
+        z-index: 100000;
+        height: 30px;
+        width: 30px;
+        display: inline-block;
+        background: url( '../images/icon/plus.svg' ) no-repeat center 47%;
+        font-size: 6rem;
     }
 }
 .photo-credit {

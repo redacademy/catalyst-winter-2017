@@ -14,22 +14,26 @@ get_header(); ?>
 <?php get_template_part( 'template-parts/hero-banner'); ?>
 
 		<section class="main-copy-container">
-			<div class="blue-background-header">
-				<h2 class="subheader-lrg">Non-Profit Partners &amp; Investors</h2>
-			</div>
 
-			<?php $mainCopy1 = CFS()->get( 'main_copy1' );
-			if( !empty( $mainCopy1 ) ) : ?>
-				<div class="main-copy-text">
-						<?php echo $mainCopy1; ?>
+			<?php $infographic = CFS() -> get( 'infographic_img' );
+			if( !empty( $infographic ) ) : ?>
+				<div class="blue-background-header">
+					<h2 class="subheader-lrg">Non-Profit Partners &amp; Investors</h2>
 				</div>
-			<?php endif; ?>
 
-			<div class="infographic-container">
-				<div class="infographic-img">
-					<img src="<?php echo CFS()->get('infographic_img'); ?>" alt="">
+				<?php $mainCopy1 = CFS()->get( 'main_copy1' );
+				if( !empty( $mainCopy1 ) ) : ?>
+					<div class="main-copy-text">
+							<?php echo $mainCopy1; ?>
+					</div>
+				<?php endif; ?>
+
+				<div class="infographic-container">
+					<div class="infographic-img">
+						<img src="<?php echo CFS()->get('infographic_img'); ?>" alt="">
+					</div>
 				</div>
-			</div>
+				<?php endif; ?>
 		</section>
 
 		<div class="partners-information-container">
