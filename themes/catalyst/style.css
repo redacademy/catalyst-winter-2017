@@ -485,7 +485,8 @@ a {
   width: 100%;
   line-height: 0; }
   .infographic-img img {
-    min-width: 768px; }
+    min-width: 768px;
+    width: 100%; }
 
 .image-credit-container {
   position: relative;

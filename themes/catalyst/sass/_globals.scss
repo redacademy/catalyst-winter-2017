@@ -80,10 +80,11 @@ a {
 .infographic-img {
 	overflow-y: hidden;
 	overflow-x: scroll;
-    width: 100%;
+  width: 100%;
 	line-height: 0;
 	img {
 		min-width: 768px;
+		width: 100%;
 	}
 }
 
