@@ -397,6 +397,8 @@ table {
   min-height: 45vh;
   min-width: 100%;
   position: relative;
+  background-clip: content-box;
+  background-origin: content-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: column nowrap;
@@ -4361,51 +4363,51 @@ object {
   @media all and (min-width: 760px) {
     .single-projects {
       line-height: 1.5rem; } }
-  .single-projects h3,
-  .single-projects p {
-    color: #4A4A4A; }
-  .single-projects .project-image-banner .header-text {
-    width: 90%;
-    font-size: 1.25rem;
-    font-family: asap, sans-serif;
-    font-weight: 700;
-    margin: 1.5rem auto;
-    line-height: 1.75rem;
-    letter-spacing: 2px;
-    margin: 0 auto;
-    text-shadow: 1px 2px 5px #323232; }
-    @media all and (min-width: 760px) {
-      .single-projects .project-image-banner .header-text {
-        font-size: 1.5rem;
-        line-height: 2.5rem; } }
-  .single-projects .project-image-banner p {
-    color: #fff;
-    margin: 0;
-    text-shadow: -2px 2px 5px #000; }
-  .single-projects .project-image-banner .project-name {
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
-    line-height: 2.75rem;
-    font-weight: 400;
-    text-shadow: 1px 2px 5px #323232;
-    padding: 0 1rem; }
-    @media all and (min-width: 760px) {
-      .single-projects .project-image-banner .project-name {
-        margin-bottom: 2rem;
-        font-size: 3.85rem;
-        line-height: 4.25rem; } }
-  .single-projects .project-image-banner .project-location,
-  .single-projects .project-image-banner .project-status {
-    font-family: asap, sans-serif;
-    font-weight: 600;
-    font-size: 1.3rem;
-    margin-bottom: 0.3rem;
-    letter-spacing: 1px;
-    padding: 0 1rem; }
-    @media all and (min-width: 760px) {
-      .single-projects .project-image-banner .project-location,
-      .single-projects .project-image-banner .project-status {
-        font-size: 1.6rem; } }
+  .single-projects .project-image-banner {
+    background-clip: content-box;
+    background-origin: content-box; }
+    .single-projects .project-image-banner .header-text {
+      color: #FFF;
+      width: 90%;
+      font-size: 1.25rem;
+      font-family: asap, sans-serif;
+      font-weight: 700;
+      margin: 1.5rem auto;
+      line-height: 1.75rem;
+      letter-spacing: 2px;
+      margin: 0 auto;
+      text-shadow: 1px 2px 5px #323232; }
+      @media all and (min-width: 760px) {
+        .single-projects .project-image-banner .header-text {
+          font-size: 1.5rem;
+          line-height: 2.5rem; } }
+    .single-projects .project-image-banner p {
+      margin: 0;
+      text-shadow: -2px 2px 5px #000; }
+    .single-projects .project-image-banner .project-name {
+      margin-bottom: 1rem;
+      font-size: 2.5rem;
+      line-height: 2.75rem;
+      font-weight: 400;
+      text-shadow: 1px 2px 5px #323232;
+      padding: 0 1rem; }
+      @media all and (min-width: 760px) {
+        .single-projects .project-image-banner .project-name {
+          margin-bottom: 2rem;
+          font-size: 3.85rem;
+          line-height: 4.25rem; } }
+    .single-projects .project-image-banner .project-location,
+    .single-projects .project-image-banner .project-status {
+      font-family: asap, sans-serif;
+      font-weight: 600;
+      font-size: 1.3rem;
+      margin-bottom: 0.3rem;
+      letter-spacing: 1px;
+      padding: 0 1rem; }
+      @media all and (min-width: 760px) {
+        .single-projects .project-image-banner .project-location,
+        .single-projects .project-image-banner .project-status {
+          font-size: 1.6rem; } }
   .single-projects .blue-background-header {
     margin-top: 1.5rem; }
   .single-projects .proj-content {
@@ -4421,14 +4423,22 @@ object {
         padding: 0 2rem;
         font-size: 1.5rem;
         line-height: 2rem; } }
+    .single-projects .proj-content .proj-row {
+      height: auto;
+      width: 100%;
+      display: block; }
+      .single-projects .proj-content .proj-row h3 {
+        margin-right: 0.5rem; }
+      .single-projects .proj-content .proj-row p {
+        display: inline; }
     .single-projects .proj-content h3 {
+      display: inline-block;
       margin-bottom: 0.5rem;
       font-weight: 700; }
       .single-projects .proj-content h3 span {
         font-size: 1.2rem;
         font-weight: 400; }
       .single-projects .proj-content h3 p {
-        display: inline;
         font-size: 1.2rem;
         font-weight: 400; }
         @media all and (min-width: 760px) {

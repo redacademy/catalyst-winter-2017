@@ -4,6 +4,8 @@
 	min-height: 45vh;
 	min-width: 100%;
 	position: relative;
+	background-clip: content-box;
+  background-origin: content-box;
     @include flex-column(nowrap, center, center);
     @include media($desktop-width) {
         min-height: 70vh;

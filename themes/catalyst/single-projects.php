@@ -15,47 +15,59 @@
                 <div class="header-text">
                     <?php $project_name = esc_html( CFS()->get( 'project_name' ) );
                     if ( $project_name ) :?>
-                    <p class='project-name'><?php echo $project_name; ?></p>
+                    <h1 class='project-name'><?php echo $project_name; ?></h1>
                     <?php endif; ?>
 
                     <?php $project_location = esc_html( CFS()->get( 'project_location' ) );
                     if ( $project_location ) :?>
                     <p class='project-location'>Location: <?php echo $project_location; ?></p>
                     <?php endif; ?>
-
-                    <?php $project_status = esc_html( CFS()->get( 'project_status' ) );
-                    if ( $project_status ) :?>
-                    <p class='project-status'>Status: <span class='p-stat'><?php echo $project_status; ?></span></p>
-                    <?php endif; ?>
                 </div>
                 <p class="image-credits">Image: <?php echo esc_html( CFS()->get('project_banner_image_credits') ); ?></p>
             </div>
 
             <div class="proj-content">
-                <?php $description = esc_html( CFS()->get( 'description' ) );
+                <?php $description = wp_kses_post( CFS()->get( 'description' ) );
                 if ( $description ) :?>
                     <p><?php echo $description; ?></p>
                 <?php endif; ?>
 
+                <?php $project_status = esc_html( CFS()->get( 'project_status' ) );
+                if ( $project_status ) :?>
+                <div class="proj-row">
+                    <h3 class='project-status'>Status:</h3>
+                    <p class='p-stat'><?php echo $project_status; ?></p>
+                </div>
+                <?php endif; ?>
+
                 <?php $partners = wp_kses_post( CFS()->get( 'partners' ) );
                 if ( $partners ) :?>
-                    <h3>Partners: <?php echo $partners; ?></h3>
+                <div class="proj-row">
+                    <h3>Partners:</h3>
+                    <?php echo $partners; ?>
+                </div>
                 <?php endif; ?>
 
                 <?php $client = esc_html( CFS()->get( 'project_client' ) );
                 if ( $client ) :?>
-                    <h3>Client: <p><?php echo $client; ?></p></h3>
+                <div class="proj-row"></div>
+                    <h3>Client:</h3>
+                    <p><?php echo $client; ?></p>
                 <?php endif; ?>
 
                 <?php $cRole = CFS()->get( 'catalyst_role' );
                 foreach ( $cRole as $key => $label ) :
                     if ( !($label === 'none') ) : ?>
-                        <h3>Catalyst Role: <p><?php echo $label; ?></p></h3>
+                    <div class="proj-row">
+                        <h3>Catalyst Role:</h3>
+                        <p><?php echo $label; ?></p>
+                    </div>
                     <?php endif;
                 endforeach; wp_reset_postdata(); ?>
 
                 <?php $affordability = wp_kses_post( CFS()->get( 'affordability' ) );
-                if ( $affordability ) :?>
+                if ( !empty($affordability) ) :?>
+                <div class="proj-row"></div>
                     <h3>Affordability: </h3>
                     <?php echo $affordability; ?>
                 <?php endif; ?>
@@ -68,12 +80,18 @@
 
                 <?php $cost = esc_html( CFS()->get( 'cost' ) );
                 if ( $cost ) :?>
-                    <h3>Total Project Cost: <p><?php echo $cost; ?></p></h3>
+                <div class="proj-row">
+                    <h3>Total Project Cost:</h3>
+                    <p><?php echo $cost; ?></p>
+                </div>
                 <?php endif; ?>
 
                 <?php $beginning_date = esc_html( CFS()->get( 'beginning_date' ) );
                 if ( $beginning_date ) :?>
-                    <h3>Rental Applications Begin: <p><?php echo $beginning_date; ?></p></h3>
+                    <div class="proj-row">
+                        <h3>Rental Applications Begin:</h3>
+                        <p><?php echo $beginning_date; ?></p>
+                    </div>
                 <?php endif; ?>
 
             </div>

@@ -4,16 +4,14 @@
     @include media( $desktop-width ) {
         line-height: $line-height-body;
     }
-    h3,
-    p {
-        color: $color__text-main;
-    }
     .project-image-banner {
+        background-clip: content-box;
+        background-origin: content-box;
         .header-text {
+            color: #FFF;
             @include banner-text;
         }
         p {
-            color: #fff;
             margin: 0;
             text-shadow: -2px 2px 5px #000;
         }
@@ -50,7 +48,21 @@
             font-size: $font__desktop-size;
             line-height: $line-height-desktop;
         }
+        .proj-row {
+            height: auto;
+            width: 100%;
+            display: block;
+
+            h3 {
+                margin-right: 0.5rem;
+            }
+
+            p {
+                display: inline;
+            }
+        }
         h3 {
+            display: inline-block;
             margin-bottom: 0.5rem;
             font-weight: $font__bold;
             span {
@@ -58,7 +70,6 @@
                 font-weight: $font__normal;
             }
             p {
-                display: inline;
                 font-size: $font__mobile-size;
                 font-weight: $font__normal;
 
