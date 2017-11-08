@@ -218,7 +218,6 @@
 	padding: 0;
 	background: $background;
 	box-shadow: none;
-	@include flex-column(nowrap, center, center);
 	&:hover {
 		cursor: pointer;
 		color: $color__menu-hover;

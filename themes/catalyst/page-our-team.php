@@ -38,7 +38,6 @@ get_header(); ?>
             <div class="board-profiles-wrapper">
                 <div class="board-profiles-header">
                     <h3 class="small-header">Board</h3>
-                    <button class="staff-exit-button exit-button" type="button"><span>&#735;</span></button>
                 </div>
 
                 <?php

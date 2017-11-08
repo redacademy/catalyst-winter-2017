@@ -27,12 +27,8 @@
 
     var $staffEnterButtons = $( '.staff-enter-button' );
     var $boardEnterButtons = $( '.board-enter-button' );
-    var $committeeEnterButtons = $( '.committee-enter-buttons' );
+    var $committeeEnterButtons = $( '.committee-enter-button' );
     var $staffExitButton = $( '.staff-exit-button' );
-    var $boardExitButton = $( '.board-exit-button' );
-
-    $staffExitButton.hide();
-    $boardExitButton.hide();
 
     var $staffProfilePreviews = $( '.staff-profile-preview' );
     var $boardProfilePreviews = $( '.board-profile-preview' );
@@ -48,7 +44,7 @@
 
     var $staffProfilesWrapper = $( '.staff-profiles-wrapper' );
     var $staffProfilesHeader = $( '.staff-profiles-wrapper > .small-header:nth-child(1)' );
-    var $catalystTeamHeader = $( '.our-team-header' );
+    var $catalystTeamHeader = $( '.blue-background-header' );
 
     var $boardProfilesWrapper = $( '.board-profiles-wrapper' );
     var $boardProfilesHeader = $( '.board-profiles-header' );
@@ -84,8 +80,8 @@
             $staffProfilesWrapper.css( 'margin-top', '-0.75rem' );
 
             thisPopout.show().addClass( 'show-popout' );
-            scrollToPopout( thisPopout, $catalystTeamHeader );
-            $staffExitButton.show(130);
+            scrollToPopout( $catalystTeamHeader );
+            $staffExitButton.show(80);
 
             hideStaffPopout( thisPopout );
         });
@@ -112,8 +108,8 @@
             $boardProfilePreviews.hide();
             $boardProfilePopouts.hide();
             thisPopout.show().addClass( 'show-popout' );
-            scrollToPopout( thisPopout, $boardProfilesHeader );
-            $staffExitButton.show(130);
+            scrollToPopout( $catalystTeamHeader );
+            $staffExitButton.show(80);
 
             hideStaffPopout( thisPopout );
         });
@@ -138,8 +134,8 @@
             $committeeProfilePreviews.hide();
             $commiteeProfilePopouts.hide();
             thisPopout.show().addClass( 'show-popout' );
-            scrollToPopout( thisPopout, $boardProfilesHeader );
-            $staffExitButton.show(130);
+            scrollToPopout( $catalystTeamHeader );
+            $staffExitButton.show(80);
 
             hideStaffPopout( thisPopout );
         });
@@ -150,7 +146,7 @@
     function hideStaffPopout( $thisPopout ) {
         $staffExitButton.click(function () {
             $staffExitButton.hide();
-            $thisPopout.removeClass( 'show-popout' ).addClass( 'translucent' );
+            $thisPopout.removeClass( 'show-popout' );
             $staffProfilesWrapper.css( 'margin-top', '0' );
             $staffProfilePreviews.show();
             $boardProfilePreviews.show();
@@ -170,9 +166,9 @@
 
     // Scroll to opened popout when it is opened
 
-    function scrollToPopout( $thisPopout, $sectionHeader ) {
+    function scrollToPopout( $sectionHeader ) {
         $( 'html, body' ).animate({
-            scrollTop: ( $thisPopout.offset().top - ( $sectionHeader.height() * 2 ) )
+            scrollTop: ( $sectionHeader.offset().top )
         }, 50);
     }
 

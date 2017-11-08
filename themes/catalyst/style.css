@@ -2043,7 +2043,8 @@ object {
 
 .enter-button span {
   position: relative;
-  bottom: 3px;
+  bottom: 2px;
+  left: 0.25px;
   font-weight: 300; }
 
 .exit-button {
@@ -2052,7 +2053,7 @@ object {
   position: absolute; }
 
 .staff-exit-button {
-  display: inline-block;
+  display: none;
   position: absolute;
   top: 23%;
   right: 5%;
@@ -2064,15 +2065,7 @@ object {
   border-radius: 100%;
   padding: 0;
   background: #FFF;
-  box-shadow: none;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: column nowrap;
-      flex-flow: column nowrap;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center; }
+  box-shadow: none; }
   .staff-exit-button:hover {
     cursor: pointer;
     color: #00A4FF;
@@ -2086,11 +2079,13 @@ object {
   .staff-exit-button span {
     font-size: 4rem;
     position: relative;
-    top: 20.5px; }
+    top: 28.5px;
+    left: 0.3px; }
     @media all and (min-width: 760px) {
       .staff-exit-button span {
         font-size: 5.5rem;
-        top: 27px;
+        top: 40px;
+        left: 0;
         right: 0.3px; } }
 
 .photo-credit {
@@ -2124,6 +2119,9 @@ object {
   font-style: italic;
   letter-spacing: 1.25px;
   z-index: 2; }
+
+.committee-profiles-wrapper .job-title {
+  margin: 0.5rem auto; }
 
 .staff-profiles-wrapper,
 .board-profiles-wrapper,
@@ -2350,11 +2348,6 @@ object {
           content: "-";
           margin-right: 0.5rem;
           display: inline; }
-  .staff-profiles-wrapper .translucent,
-  .board-profiles-wrapper .translucent,
-  .committee-profiles-wrapper .translucent,
-  .advisors-profiles-wrapper .translucent {
-    opacity: 0.5; }
   .staff-profiles-wrapper .show-popout,
   .board-profiles-wrapper .show-popout,
   .committee-profiles-wrapper .show-popout,
@@ -2456,7 +2449,8 @@ object {
       .board-profiles-wrapper .profile-preview,
       .committee-profiles-wrapper .profile-preview,
       .advisors-profiles-wrapper .profile-preview {
-        width: 24%; } }
+        width: 30%;
+        max-width: 270px; } }
     .staff-profiles-wrapper .profile-preview .profile-image,
     .board-profiles-wrapper .profile-preview .profile-image,
     .committee-profiles-wrapper .profile-preview .profile-image,
