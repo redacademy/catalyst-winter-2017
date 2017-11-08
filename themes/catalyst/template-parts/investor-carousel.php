@@ -13,8 +13,6 @@
         'order' => 'ASC',
     )); ?>
 
-<?php if( count( $posts ) > 2 ) : ?>
-
 <div class="testimonials">
   <div class="blue-background-header">
     <h2 class="subheader-lrg">Testimonials</h2>
@@ -52,4 +50,3 @@
       <?php endforeach; wp_reset_postdata();?>
   </div>
 </div>
-<?php endif; ?>

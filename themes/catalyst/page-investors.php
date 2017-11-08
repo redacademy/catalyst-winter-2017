@@ -38,7 +38,11 @@ get_header(); ?>
 			get_template_part( 'template-parts/content', 'sponsors');
 		endif; ?>
 
-		<?php get_template_part( 'template-parts/investor-carousel' ); ?>
+		<?php $activate_carousel = CFS()->get('activate_testimonials');
+		if ($activate_carousel === 1) :
+			get_template_part( 'template-parts/investor-carousel' );
+		endif; ?>
+
 	</main><!-- #main -->
 </div><!-- #primary -->
 
