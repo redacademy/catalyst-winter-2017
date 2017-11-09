@@ -3034,8 +3034,9 @@ object {
           border: 1.2px solid #b9b9b9;
           border-radius: 0 0 5px 5px;
           box-shadow: 2px 2px 8px #F1F1F1; } }
-    .page-id-596 .partners-information-container .investors-information, .page-id-595 .partners-information-container .investors-information {
-      box-shadow: -2px 2px 10px #F1F1F1; }
+    @media all and (min-width: 1200px) {
+      .page-id-596 .partners-information-container .investors-information, .page-id-595 .partners-information-container .investors-information {
+        box-shadow: -2px 2px 10px #F1F1F1; } }
     .page-id-596 .partners-information-container .navigation-button, .page-id-595 .partners-information-container .navigation-button {
       margin: 2rem auto 2rem; }
       @media all and (min-width: 1200px) {
