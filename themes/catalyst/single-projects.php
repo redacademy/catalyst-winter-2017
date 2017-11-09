@@ -50,9 +50,10 @@
 
                 <?php $client = esc_html( CFS()->get( 'project_client' ) );
                 if ( $client ) :?>
-                <div class="proj-row"></div>
+                <div class="proj-row">
                     <h3>Client:</h3>
                     <p><?php echo $client; ?></p>
+                </div>
                 <?php endif; ?>
 
                 <?php $cRole = CFS()->get( 'catalyst_role' );
