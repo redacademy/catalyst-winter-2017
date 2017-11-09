@@ -14,7 +14,8 @@ get_header(); ?>
     <?php $posts = get_posts( array(
         'numberposts' => -1,
         'post_type' => 'projects',
-        'order' => 'ASC',
+        'orderby' => 'date',
+        'order' => 'DSC',
     ));
     foreach ( $posts as $post ) :?>
         <div class="project-post">

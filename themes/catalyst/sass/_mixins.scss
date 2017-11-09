@@ -196,8 +196,8 @@
 	@include flex-column(nowrap, center, center);
 	&:hover {
 		cursor: pointer;
-		color: $color__menu-hover;
-		border-color: $color__menu-hover;
+		// color: $color__menu-hover;
+		// border-color: $color__menu-hover;
 	}
 	&:focus {
 		outline: none;
@@ -220,8 +220,8 @@
 	box-shadow: none;
 	&:hover {
 		cursor: pointer;
-		color: $color__menu-hover;
-		border-color: $color__menu-hover;
+		// color: $color__menu-hover;
+		// border-color: $color__menu-hover;
 	}
 	&:focus {
 		outline: none;

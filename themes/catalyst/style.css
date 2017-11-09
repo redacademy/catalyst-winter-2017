@@ -2019,9 +2019,7 @@ object {
   font-weight: 400; }
   .enter-button:hover,
   .exit-button:hover {
-    cursor: pointer;
-    color: #00A4FF;
-    border-color: #00A4FF; }
+    cursor: pointer; }
   .enter-button:focus,
   .exit-button:focus {
     outline: none; }
@@ -2030,13 +2028,6 @@ object {
     .exit-button {
       height: 45px;
       width: 45px; } }
-  .enter-button span,
-  .exit-button span {
-    font-size: 2.5rem; }
-    @media all and (min-width: 760px) {
-      .enter-button span,
-      .exit-button span {
-        font-size: 3.05rem; } }
 
 @media all and (min-width: 760px) {
   .enter-button {
@@ -2044,12 +2035,11 @@ object {
 
 .enter-button span {
   position: relative;
-  bottom: 1px;
-  left: 0.25px;
-  background: url("../images/icon/plus.svg") no-repeat center 47%; }
+  height: 20px;
+  width: 20px;
+  background: url("../../images/icon/plus.svg") no-repeat 49% 50%; }
 
 .exit-button {
-  font-weight: 400;
   background: white;
   position: absolute; }
 
@@ -2067,27 +2057,22 @@ object {
   background: #FFF;
   box-shadow: none; }
   .staff-exit-button:hover {
-    cursor: pointer;
-    color: #00A4FF;
-    border-color: #00A4FF; }
+    cursor: pointer; }
   .staff-exit-button:focus {
     outline: none; }
   @media all and (min-width: 760px) {
     .staff-exit-button {
       height: 45px;
       width: 45px; } }
-  .staff-exit-button:hover {
-    color: #4A4A4A;
-    border-color: #4A4A4A; }
   .staff-exit-button span {
     position: relative;
     bottom: 0.5px;
     right: 0.2px;
     z-index: 100000;
-    height: 15px;
-    width: 15px;
+    height: 17px;
+    width: 17px;
     display: inline-block;
-    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDkwIDQ5MCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDkwIDQ5MDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBvbHlnb24gcG9pbnRzPSIzODYuODEzLDAgMjQ1LDE0MS44MTIgMTAzLjE4OCwwIDAsMTAzLjE4OCAxNDEuODEzLDI0NSAwLDM4Ni44MTIgMTAzLjE4Nyw0ODkuOTk5IDI0NSwzNDguMTg3IDM4Ni44MTMsNDkwIA0KCTQ5MCwzODYuODEyIDM0OC4xODcsMjQ0Ljk5OSA0OTAsMTAzLjE4NyAiLz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K") no-repeat center 47%;
+    background: url("../../images/icon/cross.svg") no-repeat 49% 50%;
     font-size: 6rem; }
     @media all and (min-width: 760px) {
       .staff-exit-button span {
@@ -2117,7 +2102,7 @@ object {
 
 .job-title {
   max-width: 235px;
-  margin: 0.25rem auto 1.5rem;
+  margin: 0.25rem auto 1rem;
   font-size: 1.1rem;
   line-height: 1.4rem;
   text-align: center;

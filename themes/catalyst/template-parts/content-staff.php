@@ -10,7 +10,7 @@
 
 		<h4 class="name"><?php echo esc_html( CFS()->get('name') ); ?></h4>
 		<p class="job-title"><?php echo esc_html( CFS()->get('job_title') ); ?></p>
-		<button class="staff-enter-button enter-button" type="button"><span>+</span></button>
+		<button class="staff-enter-button enter-button" type="button"><span></span></button>
 	</section>
 
 	<section class="staff-profile-popout profile-popout">
