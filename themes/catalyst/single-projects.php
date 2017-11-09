@@ -20,7 +20,7 @@
 
                     <?php $project_location = esc_html( CFS()->get( 'project_location' ) );
                     if ( $project_location ) :?>
-                    <p class='project-location'>Location: <?php echo $project_location; ?></p>
+                    <p class='project-location'><?php echo $project_location; ?></p>
                     <?php endif; ?>
                 </div>
                 <p class="image-credits">Image: <?php echo esc_html( CFS()->get('project_banner_image_credits') ); ?></p>
