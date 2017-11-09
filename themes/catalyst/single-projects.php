@@ -74,7 +74,7 @@
 
                 <?php $financing_grants = wp_kses_post( CFS()->get( 'financing_grants' ) );
                 if ( $financing_grants ) :?>
-                    <h3>Financing/Grants: </h3>
+                    <h3>Financial Information: </h3>
                     <?php echo $financing_grants; ?>
                 <?php endif; ?>
 
