@@ -22,11 +22,10 @@ get_header(); ?>
 	<div class="job-post">
 		<h3 class='job-title'><?php echo esc_html(CFS()->get( 'job_title' ) ); ?> </h3>
 		<div class="role-container">
-			<p class="role">role:</p>
 			<?php echo CFS()->get( 'role' ); ?>
 		</div>
 		<div class="resp-container">
-			<p class="responsibilities">responsibilities:</p>
+			<p class="responsibilities">Responsibilities</p>
 			<?php echo CFS()->get( 'responsibilities' ); ?>
 		</div>
 		<a class='navigation-button' href="<?php echo get_home_url(); ?>/contact">Contact us</a>

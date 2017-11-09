@@ -2101,13 +2101,11 @@ object {
   z-index: 2; }
 
 .job-title {
-  max-width: 235px;
   margin: 0.25rem auto 1rem;
   font-size: 1.1rem;
   line-height: 1.4rem;
   text-align: center;
   font-weight: 600;
-  font-style: italic;
   letter-spacing: 1.25px;
   z-index: 2; }
 
@@ -3794,7 +3792,6 @@ object {
     margin-top: 0; }
 
 .page-id-196 .responsibilities {
-  text-transform: uppercase;
   font-weight: 700; }
 
 .page-id-196 .role, .page-id-196 .responsibilities {
