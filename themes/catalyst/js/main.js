@@ -226,6 +226,7 @@
         prevNextButtons: false,
         autoPlay: 7500,
         draggable: false,
+        wrapAround: true
     });
 
     //flickity single projects

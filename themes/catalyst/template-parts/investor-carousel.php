@@ -22,10 +22,6 @@
       <?php foreach ( $posts as $post ) :
           $id = get_the_id(); ?>
           <div class="other-proj-wrapper">
-              <div class="image-wrapper">
-                  <img src='<?php echo esc_attr( CFS()->get('partner_image', $id) ); ?>' />
-              </div>
-
               <div class="quotes-wrapper">
                   <?php $quote = CFS()->get('quote', $id); ?>
 
