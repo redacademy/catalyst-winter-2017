@@ -16,6 +16,16 @@
 		<p class="job-title"><?php echo $currentTitle; ?></p>
 	<?php endif; ?>
 
+	<?php $currentCompany = esc_html(CFS()->get( 'current_company' ));
+	if( !empty( $currentCompany ) ): ?>
+		<p class="job-title"><?php echo $currentCompany; ?></p>
+	<?php endif; ?>
+
+	<?php $role = esc_html(CFS()->get( 'role' ));
+	if( !empty( $role ) ): ?>
+		<p class="job-title"><?php echo $role; ?></p>
+	<?php endif; ?>
+
 	<button class="committee-enter-button enter-button" type="button"><span>+</span></button>
 </section>
 
