@@ -32,6 +32,15 @@
                     <p><?php echo $description; ?></p>
                 <?php endif; ?>
 
+                <?php $impact_stories = wp_kses_post( CFS()->get( 'impact_stories' ) );
+                $impact_heading = wp_kses_post( CFS()->get( 'impact_heading' ) );
+                if( !empty( $impact_stories ) ) : ?>
+                    <div class="project-row">
+                        <h3><?php echo $impact_heading; ?></h3>
+                        <?php echo $impact_stories; ?>
+                    </div>
+                <?php endif; ?>
+
                 <?php $project_status = esc_html( CFS()->get( 'project_status' ) );
                 if ( $project_status ) :?>
                 <div class="proj-row">
