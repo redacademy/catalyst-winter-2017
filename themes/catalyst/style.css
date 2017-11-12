@@ -1997,6 +1997,33 @@ object {
       .blue-background-header h2 {
         font-size: 2rem; } }
 
+.navigation-button-container {
+  width: 100%;
+  margin: 0 auto; }
+  .navigation-button-container .navigation-button {
+    height: 70px;
+    width: 275px;
+    margin: 3rem auto;
+    border: 2px solid #323232;
+    font-size: 1.35rem;
+    color: #323232;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    .navigation-button-container .navigation-button:hover {
+      border: 2px solid #D9F1FF;
+      box-shadow: 0px 2px 5px #323232; }
+    .navigation-button-container .navigation-button:active {
+      background: #D9F1FF;
+      border: 2px solid white;
+      cursor: pointer; }
+
 .enter-button,
 .exit-button {
   height: 35px;
@@ -2388,43 +2415,6 @@ object {
       height: auto;
       width: auto;
       margin: 0 0 2rem; }
-  .staff-profiles-wrapper .navigation-button-container,
-  .board-profiles-wrapper .navigation-button-container,
-  .committee-profiles-wrapper .navigation-button-container,
-  .advisors-profiles-wrapper .navigation-button-container {
-    width: 100%; }
-    .staff-profiles-wrapper .navigation-button-container .navigation-button,
-    .board-profiles-wrapper .navigation-button-container .navigation-button,
-    .committee-profiles-wrapper .navigation-button-container .navigation-button,
-    .advisors-profiles-wrapper .navigation-button-container .navigation-button {
-      height: 70px;
-      width: 275px;
-      margin: 3rem auto;
-      border: 2px solid #323232;
-      font-size: 1.35rem;
-      color: #323232;
-      font-weight: 700;
-      text-transform: uppercase;
-      text-decoration: none;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: center;
-          justify-content: center;
-      -ms-flex-align: center;
-          align-items: center; }
-      .staff-profiles-wrapper .navigation-button-container .navigation-button:hover,
-      .board-profiles-wrapper .navigation-button-container .navigation-button:hover,
-      .committee-profiles-wrapper .navigation-button-container .navigation-button:hover,
-      .advisors-profiles-wrapper .navigation-button-container .navigation-button:hover {
-        border: 2px solid #D9F1FF;
-        box-shadow: 0px 2px 5px #323232; }
-      .staff-profiles-wrapper .navigation-button-container .navigation-button:active,
-      .board-profiles-wrapper .navigation-button-container .navigation-button:active,
-      .committee-profiles-wrapper .navigation-button-container .navigation-button:active,
-      .advisors-profiles-wrapper .navigation-button-container .navigation-button:active {
-        background: #D9F1FF;
-        border: 2px solid white;
-        cursor: pointer; }
   .staff-profiles-wrapper .profile-preview,
   .board-profiles-wrapper .profile-preview,
   .committee-profiles-wrapper .profile-preview,
@@ -2515,9 +2505,32 @@ object {
       margin: 0 auto; }
     .advisors-profiles-wrapper .profile-preview:nth-child(4) .job-title {
       width: 265px; }
+
+.img-container {
+  height: auto;
+  width: 90vw;
+  max-width: 600px;
+  margin: 2rem auto 3rem;
+  overflow: hidden; }
   @media all and (min-width: 760px) {
-    .advisors-profiles-wrapper .navigation-button-container {
-      margin: 3rem auto 1rem; } }
+    .img-container {
+      width: 65vw;
+      max-width: 900px;
+      max-height: 600px;
+      margin: 2rem auto 3rem auto; } }
+  .img-container img {
+    width: 100%;
+    max-width: 1000px; }
+  .img-container .image-caption {
+    max-width: 60%;
+    padding-left: .5rem;
+    padding-bottom: .5rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: .75rem;
+    margin: 0;
+    color: #fff; }
 
 .preview-container {
   margin-bottom: 2rem;

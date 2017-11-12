@@ -36,6 +36,15 @@
     }
 }
 // Buttons
+.navigation-button-container {
+    width: 100%;
+    margin: 0 auto;
+
+    .navigation-button {
+        @include navigation-button;
+    }
+}
+
 .enter-button,
 .exit-button {
     @include popout-button();
@@ -294,12 +303,6 @@
         }
     }
     // Profile preview styles
-    .navigation-button-container {
-        width: 100%;
-        .navigation-button {
-            @include navigation-button;
-        }
-    }
 
     .profile-preview {
         width: 100%;
@@ -366,7 +369,7 @@
         margin: 1.25rem auto;
         position: relative;
         @include flex-column(nowrap, center, center);
-            @include media(900px) {
+        @include media(900px) {
             width: 30%;
         }
         @include media(1350px) {
@@ -380,9 +383,35 @@
             width: 265px;
         }
     }
-    .navigation-button-container {
-        @include media($desktop-width) {
-            margin: 3rem auto 1rem;
-        }
+}
+
+.img-container {
+    height: auto;
+    width: 90vw;
+    max-width: 600px;
+    margin: 2rem auto 3rem;
+    overflow: hidden;
+    @include media($desktop-width) {
+        width: 65vw;
+        max-width: 900px;
+        max-height: 600px;
+        margin: 2rem auto 3rem auto;
+    }
+
+    img {
+        width: 100%;
+        max-width: 1000px;
+    }
+    .image-caption {
+        max-width: 60%;
+        padding-left: .5rem;
+        padding-bottom: .5rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: .75rem;
+        margin: 0;
+        color: #fff;
     }
 }
+
