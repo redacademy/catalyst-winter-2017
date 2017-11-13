@@ -1739,10 +1739,12 @@ object {
   text-align: center; }
   @media all and (min-width: 760px) {
     .page-id-21 .robert {
-      margin: 2rem auto;
+      margin: 1.5rem auto;
       font-size: 30px; } }
   .page-id-21 .robert h4, .page-id-21 .robert p {
     font-family: roboto_slab, serif; }
+  .page-id-21 .robert p {
+    margin: 0.5rem auto; }
 
 .page-id-21 h4 {
   font-size: 20px;

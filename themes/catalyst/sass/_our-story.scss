@@ -191,12 +191,16 @@
         margin: 0 auto;
         text-align: center;
         @include media($desktop-width) {
-            margin: 2rem auto;
+            margin: $base__space-unit auto;
             font-size: 30px;
         }
 
         h4, p {
             font-family: $font__main;
+        }
+
+        p {
+            margin: 0.5rem auto;
         }
     }
     h4 {
