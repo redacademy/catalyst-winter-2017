@@ -67,4 +67,109 @@
     .navigation-button {
         @include navigation-button;
     }
+
+    // Testimonial carousel styles
+
+    .quote-carousel {
+        padding: 2rem 0;
+    }
+    .quotes {
+        text-align: center;
+        margin: 0 1rem;
+        width: 85%;
+        font-style: italic;
+        p {
+            height: auto;
+        }
+    }
+    .q-text-container {
+        max-width: 400px;
+        margin: 0 auto;
+        position: relative;
+
+        @include media( $desktop-width ) {
+            max-width: 540px;
+        }
+        @include media( 900px ) {
+            max-width: 720px;
+        }
+    }
+    .quote-text {
+        line-height: $line-height-body;
+
+        @include media( $desktop-width ) {
+            line-height: $line-height-desktop;
+        }
+    }
+    .person, .line {
+        line-height: $line-height-body;
+    }
+
+    .left-quotation-mark,
+    .right-quotation-mark {
+        height: 36px;
+        width: 50px;
+        margin: 0;
+        background: url('../../images/icon/quotation.svg') center no-repeat;
+        background-size: 275%;
+        position: absolute;
+        z-index: -1;
+        display: none;
+        @include media($desktop-width) {
+            height: 50px;
+            width: 75px;
+        }
+    }
+    .is-selected .left-quotation-mark,
+    .is-selected .right-quotation-mark {
+        display: inline-block;
+    }
+    .other-proj-wrapper .left-quotation-mark,
+    .other-proj-wrapper .right-quotation-mark {
+        display: none;
+    }
+    .left-quotation-mark {
+        top: -7px;
+        left: -20px;
+        @include media($desktop-width) {
+           left: -56px;
+        }
+    }
+    .right-quotation-mark {
+        bottom: -7px;
+        right: -20px;
+        transform: rotate(180deg);
+        @include media($desktop-width) {
+            right: -50px;
+        }
+        @include media( 1070px ) {
+            bottom: -14px;
+        }
+    }
+    .quote-text {
+        margin-bottom: 2rem;
+        margin-top: 4rem;
+        font-family: $font__secondary;
+        font-weight: $font__bold;
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        @include media ($desktop-width) {
+            font-size: 2rem;
+            line-height: 2.75rem;
+        }
+    }
+    .person {
+        font-weight: $font__bold;
+        font-size: 1.5rem;
+        margin: 0;
+        color: $color__text-main;
+        font-style: normal;
+    }
+    .line {
+        font-weight: $font__normal;
+        font-style: italic;
+        font-size: 1.3rem;
+        margin: 0.5rem auto;
+        color: $color__text-main;
+    }
 }

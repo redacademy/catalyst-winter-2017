@@ -3252,6 +3252,105 @@ object {
     border: 2px solid white;
     cursor: pointer; }
 
+.page-id-483 .quote-carousel {
+  padding: 2rem 0; }
+
+.page-id-483 .quotes {
+  text-align: center;
+  margin: 0 1rem;
+  width: 85%;
+  font-style: italic; }
+  .page-id-483 .quotes p {
+    height: auto; }
+
+.page-id-483 .q-text-container {
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative; }
+  @media all and (min-width: 760px) {
+    .page-id-483 .q-text-container {
+      max-width: 540px; } }
+  @media all and (min-width: 900px) {
+    .page-id-483 .q-text-container {
+      max-width: 720px; } }
+
+.page-id-483 .quote-text {
+  line-height: 1.5rem; }
+  @media all and (min-width: 760px) {
+    .page-id-483 .quote-text {
+      line-height: 2rem; } }
+
+.page-id-483 .person, .page-id-483 .line {
+  line-height: 1.5rem; }
+
+.page-id-483 .left-quotation-mark,
+.page-id-483 .right-quotation-mark {
+  height: 36px;
+  width: 50px;
+  margin: 0;
+  background: url("../../images/icon/quotation.svg") center no-repeat;
+  background-size: 275%;
+  position: absolute;
+  z-index: -1;
+  display: none; }
+  @media all and (min-width: 760px) {
+    .page-id-483 .left-quotation-mark,
+    .page-id-483 .right-quotation-mark {
+      height: 50px;
+      width: 75px; } }
+
+.page-id-483 .is-selected .left-quotation-mark,
+.page-id-483 .is-selected .right-quotation-mark {
+  display: inline-block; }
+
+.page-id-483 .other-proj-wrapper .left-quotation-mark,
+.page-id-483 .other-proj-wrapper .right-quotation-mark {
+  display: none; }
+
+.page-id-483 .left-quotation-mark {
+  top: -7px;
+  left: -20px; }
+  @media all and (min-width: 760px) {
+    .page-id-483 .left-quotation-mark {
+      left: -56px; } }
+
+.page-id-483 .right-quotation-mark {
+  bottom: -7px;
+  right: -20px;
+  transform: rotate(180deg); }
+  @media all and (min-width: 760px) {
+    .page-id-483 .right-quotation-mark {
+      right: -50px; } }
+  @media all and (min-width: 1070px) {
+    .page-id-483 .right-quotation-mark {
+      bottom: -14px; } }
+
+.page-id-483 .quote-text {
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+  font-family: asap, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2.2rem; }
+  @media all and (min-width: 760px) {
+    .page-id-483 .quote-text {
+      font-size: 2rem;
+      line-height: 2.75rem; } }
+
+.page-id-483 .person {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 0;
+  color: #4A4A4A;
+  font-style: normal; }
+
+.page-id-483 .line {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.3rem;
+  margin: 0.5rem auto;
+  color: #4A4A4A; }
+
 .page-id-486 .hero-image-banner {
   margin-bottom: 2rem; }
   @media all and (min-width: 760px) {
@@ -3361,6 +3460,105 @@ object {
     border: 2px solid white;
     cursor: pointer; }
 
+.page-id-486 .quote-carousel {
+  padding: 2rem 0; }
+
+.page-id-486 .quotes {
+  text-align: center;
+  margin: 0 1rem;
+  width: 85%;
+  font-style: italic; }
+  .page-id-486 .quotes p {
+    height: auto; }
+
+.page-id-486 .q-text-container {
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative; }
+  @media all and (min-width: 760px) {
+    .page-id-486 .q-text-container {
+      max-width: 540px; } }
+  @media all and (min-width: 900px) {
+    .page-id-486 .q-text-container {
+      max-width: 720px; } }
+
+.page-id-486 .quote-text {
+  line-height: 1.5rem; }
+  @media all and (min-width: 760px) {
+    .page-id-486 .quote-text {
+      line-height: 2rem; } }
+
+.page-id-486 .person, .page-id-486 .line {
+  line-height: 1.5rem; }
+
+.page-id-486 .left-quotation-mark,
+.page-id-486 .right-quotation-mark {
+  height: 36px;
+  width: 50px;
+  margin: 0;
+  background: url("../../images/icon/quotation.svg") center no-repeat;
+  background-size: 275%;
+  position: absolute;
+  z-index: -1;
+  display: none; }
+  @media all and (min-width: 760px) {
+    .page-id-486 .left-quotation-mark,
+    .page-id-486 .right-quotation-mark {
+      height: 50px;
+      width: 75px; } }
+
+.page-id-486 .is-selected .left-quotation-mark,
+.page-id-486 .is-selected .right-quotation-mark {
+  display: inline-block; }
+
+.page-id-486 .other-proj-wrapper .left-quotation-mark,
+.page-id-486 .other-proj-wrapper .right-quotation-mark {
+  display: none; }
+
+.page-id-486 .left-quotation-mark {
+  top: -7px;
+  left: -20px; }
+  @media all and (min-width: 760px) {
+    .page-id-486 .left-quotation-mark {
+      left: -56px; } }
+
+.page-id-486 .right-quotation-mark {
+  bottom: -7px;
+  right: -20px;
+  transform: rotate(180deg); }
+  @media all and (min-width: 760px) {
+    .page-id-486 .right-quotation-mark {
+      right: -50px; } }
+  @media all and (min-width: 1070px) {
+    .page-id-486 .right-quotation-mark {
+      bottom: -14px; } }
+
+.page-id-486 .quote-text {
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+  font-family: asap, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2.2rem; }
+  @media all and (min-width: 760px) {
+    .page-id-486 .quote-text {
+      font-size: 2rem;
+      line-height: 2.75rem; } }
+
+.page-id-486 .person {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 0;
+  color: #4A4A4A;
+  font-style: normal; }
+
+.page-id-486 .line {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.3rem;
+  margin: 0.5rem auto;
+  color: #4A4A4A; }
+
 .testimonials {
   margin-bottom: 3rem; }
   @media all and (min-width: 760px) {
@@ -3368,7 +3566,7 @@ object {
       margin-bottom: 4rem; } }
 
 .quote-carousel .flickity-prev-next-button {
-  top: 120px; }
+  top: 220px; }
 
 .quotes-wrapper {
   margin: 2rem auto 0;

@@ -39,9 +39,23 @@ get_header(); ?>
 		endif; ?>
 
 		<?php $activate_carousel = CFS()->get('activate_testimonials');
-		if ($activate_carousel === 1) :
-			get_template_part( 'template-parts/investor-carousel' );
-		endif; ?>
+		if ($activate_carousel === 1) : ?>
+			<section class="quote-carousel">
+					<?php $quotes_gallery = CFS()->get('quotes_gallery');
+					foreach ($quotes_gallery as $quote) : ?>
+							<div class="quotes">
+									<div class="q-text-container">
+											<div class="left-quotation-mark"></div>
+											<?php echo '<p class="quote-text"> '.$quote['quote_text'].'</p>'; ?>
+											<div class="right-quotation-mark"></div>
+									</div>
+									<?php echo '<p class="person"> '.$quote['name'].'</p>';
+									echo '<p class="line"> '.$quote['role'].'</p>';
+									echo '<p class="line"> '.$quote['organization'].'</p>'; ?>
+							</div>
+					<?php endforeach; wp_reset_postdata(); ?>
+			</section>
+		<?php	endif; ?>
 
 	</main><!-- #main -->
 </div><!-- #primary -->
