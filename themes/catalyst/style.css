@@ -1202,8 +1202,7 @@ textarea {
       color: #4A4A4A;
       font-style: normal; }
     .home .projects .person, .home .projects .line {
-      font-size: 1.5rem;
-      margin: 0; }
+      font-size: 1.5rem; }
     .home .projects .line {
       font-size: 1.3rem;
       font-style: italic;
@@ -1217,8 +1216,7 @@ textarea {
           width: 50%; } }
       .home .projects .other-proj-wrapper .project-location,
       .home .projects .other-proj-wrapper .project-status,
-      .home .projects .other-proj-wrapper .person,
-      .home .projects .other-proj-wrapper .line {
+      .home .projects .other-proj-wrapper .person {
         margin: 0 auto; }
     .home .projects .image-wrapper {
       height: 300px;
@@ -3656,6 +3654,7 @@ object {
   margin: 0; }
 
 .line {
+  margin: 0.5rem auto;
   font-style: italic; }
 
 .other-proj-wrapper {
@@ -3667,8 +3666,7 @@ object {
       width: 50%; } }
   .other-proj-wrapper .project-location,
   .other-proj-wrapper .project-status,
-  .other-proj-wrapper .person,
-  .other-proj-wrapper .line {
+  .other-proj-wrapper .person {
     margin: 0 auto; }
 
 .image-wrapper {
@@ -4498,7 +4496,6 @@ object {
     font-weight: 400;
     font-style: italic;
     font-size: 1.3rem;
-    margin: 0;
     color: #4A4A4A; }
   .single-projects .navigation-button {
     height: 70px;

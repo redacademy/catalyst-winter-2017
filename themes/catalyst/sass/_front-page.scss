@@ -209,7 +209,6 @@
         }
         .person, .line {
             font-size: $font__desktop-size;
-            margin: 0;
         }
         .line {
             font-size: 1.3rem;
@@ -225,8 +224,7 @@
             }
             .project-location,
             .project-status,
-            .person,
-            .line {
+            .person {
                 margin: 0 auto;
             }
         }

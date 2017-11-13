@@ -1,3 +1,5 @@
+// Generic styles applied to all quotes carousels
+
 .testimonials {
     margin-bottom: 3rem;
 
@@ -104,6 +106,7 @@
     margin: 0;
 }
 .line {
+    margin: 0.5rem auto;
     font-style: italic;
 }
 .other-proj-wrapper {
@@ -115,8 +118,7 @@
     }
     .project-location,
     .project-status,
-    .person,
-    .line {
+    .person {
         margin: 0 auto;
     }
 }
