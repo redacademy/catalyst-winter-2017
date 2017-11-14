@@ -214,6 +214,106 @@
         }
     });
 
+    // Load more posts when user clicks button on news & media page.
+
+    var $postsContainer = $( '.newsmedia-article' );
+    var $loadPostsButton = $( '#load-more-button' );
+    var renderedArticles = 5;
+    var apiLink = api_vars.ajax_url + 'news/?&_embed=true';
+    var $loadingGif = $('.loading-indicator');
+
+    function formatDate( myDate ) {
+        var formattedDate = addLeadingZero( myDate.getDate() ) + '.' + ( '0' + ( myDate.getMonth() + 1 ) ).slice( -2 ) + ', ' + myDate.getFullYear();
+        return formattedDate;
+    }
+
+    function addLeadingZero( date ) {
+        if ( date < 10 ) {
+            date = '0' + date;
+            return date;
+        } else {
+            return date;
+        }
+    }
+
+    function constructArticleContent( formattedDate, articleTitle, articleLink ) {
+        if( articleTitle.length >= 55 ) {
+            articleTitle = articleTitle.substr(0, 55).split(' ');
+            articleTitle.pop();
+            articleTitle = articleTitle.join(' ');
+            articleTitle += '[...]';
+        }
+
+        var articleContent = '<div class="article-content" >';
+            articleContent += '<p class="date" >' + formattedDate + '</p>';
+            articleContent += '<h3>' + articleTitle + '</h3>';
+            articleContent += '</div>';
+            articleContent += '<a class="cfs-hyperlink" href=' + articleLink + '><span class="text">Read More</span></a>';
+
+        return articleContent;
+    }
+
+    function constructArticleThumbnail( post ) {
+        if ( post.better_featured_image !== null ) {
+            var articleThumb = '<img src="' + post.better_featured_image.source_url + '" />';
+            var articleThumbContainer = '<div class="article-thumb">' + articleThumb + '</div>';
+        } else {
+            articleThumbContainer = '';
+        }
+
+        return articleThumbContainer;
+    }
+
+    function constructArticleElement( post, articleID, articleThumbContainer, articleContent ) {
+        var articleElement = post.better_featured_image
+                                ? '<article class="news" id="' + articleID + '">'
+                                : '<article class="news no-image" id="' + articleID + '">'
+
+        if ( articleThumbContainer ) {
+            articleElement += articleThumbContainer;
+        }
+
+            articleElement += articleContent;
+            articleElement += '</article>';
+
+            return articleElement;
+    }
+
+    $loadPostsButton.click(function( event ){
+        event.preventDefault();
+
+        $loadingGif.show();
+
+        if( renderedArticles < 20 ) {
+            $.get(apiLink, function( data ){
+                var newPosts = data.slice( renderedArticles, ( renderedArticles + 6 ) );
+
+                if( renderedArticles < data.length ) {
+                    $.each( newPosts, function( i, post )  {
+                        var myDate = new Date( post.date );
+                        var formattedDate = formatDate( myDate );
+                        var articleID = post.id;
+                        var articleTitle = post.title.rendered;
+                        var articleLink = post.link;
+
+                        var constructedArticleElement =
+                            constructArticleElement(
+                                post,
+                                articleID,
+                                constructArticleThumbnail( post ),
+                                constructArticleContent( formattedDate, articleTitle, articleLink )
+                            );
+
+                        $loadingGif.hide();
+                        $postsContainer.append( constructedArticleElement );
+                        renderedArticles += 5;
+                    });
+                } else { $loadingGif.hide(); }
+            });
+        } else { $loadingGif.hide(); }
+    });
+
+
     //send user to thank you page on form submission
     document.addEventListener( 'wpcf7mailsent', function() {
         location = 'http://google.com/';

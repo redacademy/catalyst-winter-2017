@@ -1,7 +1,4 @@
 .page-id-19 {
-    #load-more-button {
-        display: none;
-    }
     margin: 0 auto;
     .entry-content {
         p {
@@ -25,6 +22,16 @@
     .navigation-button {
         @include navigation-button();
         display: block;
+        position: relative;
+    }
+    .loading-indicator {
+        height: 25px;
+        width: 40px;
+        padding-left: 15px;
+        position: absolute;
+        top: 19px;
+        right: 30px;
+        display: none;
     }
     .blue-background-header {
         margin-top: 1.5rem;
@@ -38,13 +45,24 @@
             display: flex;
             justify-content: space-around;
             width: 100%;
+            .article-container {
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: flex-start;
+            }
             .newsmedia-article {
-                width: 70%;
-                height: 100%;
+                width: 100%;
+                height: auto;
             }
             .widget-area {
                 width: 40%;
             }
+        }
+        .article-container {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+            align-items: center;
         }
     }
     .widget-title {
@@ -64,14 +82,9 @@
             background-color: $color__brand-blue;
             padding-bottom: 20px;
             margin: 10px 0;
-        }
-
-        .news.no-image {
-            width: 98%;
-
-            .article-content {
-                height: auto;
-            }
+            margin: 0 0 5px;
+            border: 6px solid #FFF;
+            border-top: 0;
         }
         .article-thumb {
             height: 200px;
@@ -83,18 +96,32 @@
                 object-fit: cover;
             }
         }
+        .missing-thumb-wrapper {
+            height: 190px;
+            width: 95%;
+            margin: 10px auto 0;
+            background: #F7FCFF;
+            display: flex;
+        }
+        .missing-thumb {
+            height: 200px;
+            width: 90%;
+            margin: 0 auto;
+        }
         @include media(400px) {
-            @include flex-row(wrap, space-around);
+            @include flex-row(wrap, flex-start);
+            align-content: flex-start;
             .news {
                 height: auto;
                 width: 48%;
-                display: block;
+                display: flex;
+                flex-flow: column nowrap;
             }
         }
         .article-content {
             padding: 5px 15px;
             margin-bottom: 10px;
-            height: 130px;
+            height: 120px;
             overflow: hidden;
             p {
                 margin: 0;
