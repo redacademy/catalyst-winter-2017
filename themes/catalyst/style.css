@@ -3290,8 +3290,17 @@ object {
     border: 2px solid white;
     cursor: pointer; }
 
+.page-id-483 .testimonials {
+  margin-bottom: 2rem; }
+  @media all and (min-width: 760px) {
+    .page-id-483 .testimonials {
+      margin-bottom: 3rem; } }
+
+.page-id-483 .testimonials .blue-background-header {
+  margin: 0 auto; }
+
 .page-id-483 .quote-carousel {
-  padding: 2rem 0; }
+  padding: 1rem 0 0; }
 
 .page-id-483 .quotes {
   text-align: center;
@@ -3305,7 +3314,7 @@ object {
   max-width: 400px;
   margin: 0 auto;
   position: relative; }
-  @media all and (min-width: 760px) {
+  @media all and (min-width: 600px) {
     .page-id-483 .q-text-container {
       max-width: 540px; } }
   @media all and (min-width: 900px) {
@@ -3498,8 +3507,17 @@ object {
     border: 2px solid white;
     cursor: pointer; }
 
+.page-id-486 .testimonials {
+  margin-bottom: 2rem; }
+  @media all and (min-width: 760px) {
+    .page-id-486 .testimonials {
+      margin-bottom: 3rem; } }
+
+.page-id-486 .testimonials .blue-background-header {
+  margin: 0 auto; }
+
 .page-id-486 .quote-carousel {
-  padding: 2rem 0; }
+  padding: 1rem 0 0; }
 
 .page-id-486 .quotes {
   text-align: center;
@@ -3513,7 +3531,7 @@ object {
   max-width: 400px;
   margin: 0 auto;
   position: relative; }
-  @media all and (min-width: 760px) {
+  @media all and (min-width: 600px) {
     .page-id-486 .q-text-container {
       max-width: 540px; } }
   @media all and (min-width: 900px) {
@@ -3596,12 +3614,6 @@ object {
   font-size: 1.3rem;
   margin: 0.5rem auto;
   color: #4A4A4A; }
-
-.testimonials {
-  margin-bottom: 3rem; }
-  @media all and (min-width: 760px) {
-    .testimonials {
-      margin-bottom: 4rem; } }
 
 .quote-carousel .flickity-prev-next-button {
   top: 220px; }
@@ -4465,7 +4477,7 @@ object {
     max-width: 400px;
     margin: 0 auto;
     position: relative; }
-    @media all and (min-width: 760px) {
+    @media all and (min-width: 600px) {
       .single-projects .q-text-container {
         max-width: 540px; } }
     @media all and (min-width: 900px) {
@@ -4517,7 +4529,6 @@ object {
         bottom: -14px; } }
   .single-projects .quote-text {
     margin-bottom: 2rem;
-    margin-top: 4rem;
     font-family: asap, sans-serif;
     font-weight: 700;
     font-size: 1.5rem;
@@ -4560,8 +4571,6 @@ object {
       background: #D9F1FF;
       border: 2px solid white;
       cursor: pointer; }
-  .single-projects .arch-design {
-    margin-bottom: 5rem; }
   .single-projects .other-post-gallery {
     margin: 2rem 0 3rem; }
   .single-projects .other-proj-wrapper {

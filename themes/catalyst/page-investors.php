@@ -17,6 +17,7 @@ get_header(); ?>
 		<div class="blue-background-header">
 			<h2 class="subheader-lrg"><?php echo esc_html(CFS()->get( 'second_title' ) ); ?></h2>
 		</div>
+
 		<div class="investor-list"><?php echo wp_kses_post( CFS()->get( 'second_copy' ) ); ?></div>
 
 		<div class="blue-background-header">
@@ -40,7 +41,12 @@ get_header(); ?>
 
 		<?php $activate_carousel = CFS()->get('activate_testimonials');
 		if ($activate_carousel === 1) : ?>
-			<section class="quote-carousel">
+			<section class="testimonials">
+				<div class="blue-background-header">
+					<h2 class="subheader-lrg">Testimonials</h2>
+				</div>
+
+				<div class="quote-carousel">
 					<?php $quotes_gallery = CFS()->get('quotes_gallery');
 					foreach ($quotes_gallery as $quote) : ?>
 							<div class="quotes">
@@ -54,6 +60,7 @@ get_header(); ?>
 									echo '<p class="line"> '.$quote['organization'].'</p>'; ?>
 							</div>
 					<?php endforeach; wp_reset_postdata(); ?>
+				</div>
 			</section>
 		<?php	endif; ?>
 

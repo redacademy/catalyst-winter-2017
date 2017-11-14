@@ -1,19 +1,11 @@
 // Generic styles applied to all quotes carousels
 
-.testimonials {
-    margin-bottom: 3rem;
-
-    @include media( $desktop-width ) {
-        margin-bottom: 4rem;
-    }
-}
 
 .quote-carousel {
     .flickity-prev-next-button {
         top: 220px;
     }
 }
-
 .quotes-wrapper {
     margin: 2rem auto 0;
     width: 85%;

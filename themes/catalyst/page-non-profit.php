@@ -35,7 +35,12 @@ get_header(); ?>
 
 		<?php $activate_carousel = CFS()->get('activate_testimonials');
 		if ($activate_carousel === 1) : ?>
-			<section class="quote-carousel">
+			<section class="testimonials">
+				<div class="blue-background-header">
+					<h2 class="subheader-lrg">Testimonials</h2>
+				</div>
+
+				<div class="quote-carousel">
 					<?php $quotes_gallery = CFS()->get('quotes_gallery');
 					foreach ($quotes_gallery as $quote) : ?>
 							<div class="quotes">
@@ -49,6 +54,7 @@ get_header(); ?>
 									echo '<p class="line"> '.$quote['organization'].'</p>'; ?>
 							</div>
 					<?php endforeach; wp_reset_postdata(); ?>
+				</div>
 			</section>
 		<?php endif; ?>
 	</main><!-- #main -->

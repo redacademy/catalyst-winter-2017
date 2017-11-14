@@ -70,8 +70,19 @@
 
     // Testimonial carousel styles
 
+    .testimonials {
+        margin-bottom: 2rem;
+
+        @include media( $desktop-width ) {
+            margin-bottom: 3rem;
+        }
+    }
+    .testimonials .blue-background-header {
+        margin: 0 auto;
+    }
+
     .quote-carousel {
-        padding: 2rem 0;
+        padding: 1rem 0 0;
     }
     .quotes {
         text-align: center;
@@ -87,7 +98,7 @@
         margin: 0 auto;
         position: relative;
 
-        @include media( $desktop-width ) {
+        @include media( 600px ) {
             max-width: 540px;
         }
         @include media( 900px ) {

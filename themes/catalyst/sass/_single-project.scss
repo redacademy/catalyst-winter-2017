@@ -134,7 +134,7 @@
         margin: 0 auto;
         position: relative;
 
-        @include media( $desktop-width ) {
+        @include media( 600px ) {
             max-width: 540px;
         }
         @include media( 900px ) {
@@ -195,7 +195,6 @@
     }
     .quote-text {
         margin-bottom: 2rem;
-        margin-top: 4rem;
         font-family: $font__secondary;
         font-weight: $font__bold;
         font-size: 1.5rem;
@@ -220,9 +219,6 @@
     }
     .navigation-button {
         @include navigation-button();
-    }
-    .arch-design {
-        margin-bottom: 5rem;
     }
     .other-post-gallery {
         margin: 2rem 0 3rem;
