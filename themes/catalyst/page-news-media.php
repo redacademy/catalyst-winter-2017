@@ -37,7 +37,7 @@ get_header(); ?>
                                     echo "<div class='article-thumb'>".$img."</div>";
                                 } else {; ?>
                                     <div class="missing-thumb-wrapper">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/full-logo.svg" class='missing-thumb'></img>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/full-logo.svg" class='missing-thumb' />
                                     </div>
                                 <?php }; ?>
 
@@ -53,7 +53,7 @@ get_header(); ?>
                     <?php endforeach; ?>
                 </section>
                 <button id="load-more-button" class="navigation-button">
-                    load more <img src="<?php echo get_template_directory_uri(); ?>/images/graphics/ajax-loader.gif" class="loading-indicator"></img>
+                    load more <img src="<?php echo get_template_directory_uri(); ?>/images/graphics/ajax-loader.gif" class="loading-indicator" />
                 </button>
 
                 <div class="video"><?php echo CFS()->get( 'video' ); ?></div>
