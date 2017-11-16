@@ -21,7 +21,7 @@ get_header(); ?>
 				</div>
 				<?php endif; ?>
 
-        <p class='mission-copy'><?php echo esc_html( CFS()->get( 'our_mission' ) ); ?></p>
+        <p class='mission-copy'><?php echo wp_kses_post( CFS()->get( 'our_mission' ) ); ?></p>
 
 			</section>
 
