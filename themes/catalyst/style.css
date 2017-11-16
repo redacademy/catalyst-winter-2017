@@ -1599,18 +1599,18 @@ object {
     text-decoration: none;
     color: #323232; }
 
-.page-id-21 .mission-copy {
+.page-id-21 .wysiwyg-copy {
   max-width: 650px;
   padding: 0 2rem;
   margin: 2rem auto;
   text-align: left;
   font-family: asap, sans-serif; }
   @media all and (min-width: 760px) {
-    .page-id-21 .mission-copy {
+    .page-id-21 .wysiwyg-copy {
       margin: 2.5rem auto;
       line-height: 2rem; } }
   @media all and (min-width: 1200px) {
-    .page-id-21 .mission-copy {
+    .page-id-21 .wysiwyg-copy {
       max-width: 860px; } }
 
 .page-id-21 .mission-quote,
@@ -1763,63 +1763,6 @@ object {
   margin: 0; }
   .page-id-21 .rent .rent-title {
     margin: 0; }
-
-.page-id-21 .mission-text {
-  font-size: 16px;
-  font-family: asap, sans-serif;
-  width: 80%;
-  margin: 20px auto; }
-  @media all and (min-width: 760px) {
-    .page-id-21 .mission-text {
-      width: 96%;
-      margin-bottom: 0; } }
-
-.page-id-21 .mission-content {
-  text-align: center;
-  margin-bottom: 3rem;
-  margin-top: 3rem; }
-  .page-id-21 .mission-content .arrow {
-    margin-bottom: 10px; }
-  @media all and (min-width: 760px) {
-    .page-id-21 .mission-content {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: center;
-          justify-content: center;
-      width: 100%;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
-      .page-id-21 .mission-content .arrow {
-        margin-top: 50px;
-        height: 50px;
-        transform: rotate(0deg); } }
-  .page-id-21 .mission-content .mission-image {
-    width: 100%;
-    margin: 0 auto;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: column nowrap;
-        flex-flow: column nowrap;
-    -ms-flex-pack: start;
-        justify-content: flex-start;
-    -ms-flex-align: center;
-        align-items: center; }
-    @media all and (min-width: 760px) {
-      .page-id-21 .mission-content .mission-image {
-        width: 25%; } }
-    .page-id-21 .mission-content .mission-image img {
-      width: 100%;
-      height: 180px; }
-    .page-id-21 .mission-content .mission-image h5 {
-      font-family: asap, sans-serif;
-      font-weight: 700;
-      font-size: 20px;
-      text-transform: uppercase;
-      width: 100%;
-      margin-top: 5px; }
-  .page-id-21 .mission-content p {
-    margin: 0 auto;
-    font-size: 1.2rem; }
 
 .page-id-21 .formula-p {
   font-family: asap, sans-serif;

@@ -21,12 +21,13 @@ get_header(); ?>
 				</div>
 				<?php endif; ?>
 
-        <p class='mission-copy'><?php echo wp_kses_post( CFS()->get( 'our_mission' ) ); ?></p>
+				<div class="wysiwyg-copy">
+        	<p><?php echo CFS()->get( 'our_mission' ); ?></p>
+				</div>
 
 			</section>
 
 			<section class="formula">
-
 				<div class="blue-background-header">
 					<h2 class='subheader-lrg'><?php echo esc_html( CFS()->get( 'subheading2' ) ); ?></h2>
 				</div>
@@ -72,6 +73,20 @@ get_header(); ?>
 				</div>
 				<?php endif; ?>
 			</section>
+
+			<?php $acknowledgments = wp_kses_post( CFS()->get( 'acknowledgments' ) );
+			$acknowledgments_heading = esc_html( CFS()->get( 'acknowledgments_heading' ) );
+			if( !empty( $acknowledgments ) ) : ?>
+				<section>
+					<div class="blue-background-header">
+						<h2 class='subheader-lrg'><?php echo $acknowledgments_heading; ?></h2>
+					</div>
+
+					<div class="wysiwyg-copy">
+						<?php echo $acknowledgments; ?>
+					</div>
+				</section>
+			<?php endif; ?>
 
 			<section class="end-content">
 				<div class="end-content-quote">
