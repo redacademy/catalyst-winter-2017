@@ -32,15 +32,6 @@
                     <p><?php echo $description; ?></p>
                 <?php endif; ?>
 
-                <?php $impact_stories = wp_kses_post( CFS()->get( 'impact_stories' ) );
-                $impact_heading = wp_kses_post( CFS()->get( 'impact_heading' ) );
-                if( !empty( $impact_stories ) ) : ?>
-                    <div class="project-row">
-                        <h3><?php echo $impact_heading; ?></h3>
-                        <?php echo $impact_stories; ?>
-                    </div>
-                <?php endif; ?>
-
                 <?php $project_status = esc_html( CFS()->get( 'project_status' ) );
                 if ( $project_status ) :?>
                 <div class="proj-row">
@@ -77,15 +68,18 @@
 
                 <?php $affordability = wp_kses_post( CFS()->get( 'affordability' ) );
                 if ( !empty($affordability) ) :?>
-                <div class="proj-row"></div>
-                    <h3>Affordability: </h3>
-                    <?php echo $affordability; ?>
+                    <div class="proj-row">
+                        <h3>Affordability: </h3>
+                        <?php echo $affordability; ?>
+                    </div>
                 <?php endif; ?>
 
                 <?php $financing_grants = wp_kses_post( CFS()->get( 'financing_grants' ) );
                 if ( $financing_grants ) :?>
-                    <h3>Financial Information: </h3>
-                    <?php echo $financing_grants; ?>
+                    <div class="proj-row">
+                        <h3>Financial Information: </h3>
+                        <?php echo $financing_grants; ?>
+                    </div>
                 <?php endif; ?>
 
                 <?php $cost = esc_html( CFS()->get( 'cost' ) );
@@ -104,6 +98,14 @@
                     </div>
                 <?php endif; ?>
 
+                <?php $impact_stories = wp_kses_post( CFS()->get( 'impact_stories' ) );
+                $impact_heading = wp_kses_post( CFS()->get( 'impact_heading' ) );
+                if( !empty( $impact_stories ) ) : ?>
+                    <div class="project-row">
+                        <h3><?php echo $impact_heading; ?></h3>
+                        <?php echo $impact_stories; ?>
+                    </div>
+                <?php endif; ?>
             </div>
     </section>
 

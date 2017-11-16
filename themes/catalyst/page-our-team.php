@@ -91,6 +91,9 @@ get_header(); ?>
                         <?php get_template_part( 'template-parts/content', 'advisors' ); ?>
                     <?php endforeach; wp_reset_postdata(); ?>
                 </div>
+                <?php $activate_founding_supporter = CFS()->get( 'activate_founding_supporter' );
+
+                if( !empty( $activate_founding_supporter ) ) : ?>
 
                 <section class="founding-supporter-section">
                     <?php
@@ -109,6 +112,8 @@ get_header(); ?>
                         <p class="image-caption"><?php echo $caption; ?></p>
                     </div>
                 </section>
+
+                <?php endif; ?>
 
                 <div class="navigation-button-container">
                     <a class="navigation-button" href="<?php echo get_home_url(); ?>/projects">View Projects</a>
