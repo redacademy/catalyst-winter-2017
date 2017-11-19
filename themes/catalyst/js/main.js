@@ -218,7 +218,7 @@
 
     var $postsContainer = $( '.newsmedia-article' );
     var $loadPostsButton = $( '#load-more-button' );
-    var renderedArticles = 5;
+    var renderedArticles = 6;
     var apiLink = api_vars.ajax_url + 'news/?&_embed=true';
     var $loadingGif = $('.loading-indicator');
 
@@ -290,7 +290,7 @@
 
         if( renderedArticles < 20 ) {
             $.get(apiLink, function( data ){
-                var newPosts = data.slice( renderedArticles, ( renderedArticles + 6 ) );
+                var newPosts = data.slice( renderedArticles, ( renderedArticles + 4 ) );
 
                 if( renderedArticles < data.length ) {
                     $.each( newPosts, function( i, post )  {
@@ -310,8 +310,9 @@
 
                         $loadingGif.hide();
                         $postsContainer.append( constructedArticleElement );
-                        renderedArticles += 5;
                     });
+
+                    renderedArticles += 4;
                 } else { $loadingGif.hide(); }
             });
         } else { $loadingGif.hide(); }
@@ -320,7 +321,7 @@
 
     //send user to thank you page on form submission
     document.addEventListener( 'wpcf7mailsent', function() {
-        location = 'http://google.com/';
+        location = 'http://catalystcommdev.org/';
     }, false );
 
     //flickity frontpage

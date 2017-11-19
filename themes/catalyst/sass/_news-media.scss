@@ -79,6 +79,7 @@
             }
         }
         .news {
+            min-height: 400px;
             background-color: $color__brand-blue;
             padding-bottom: 20px;
             margin: 10px 0;
@@ -112,7 +113,6 @@
             @include flex-row(wrap, flex-start);
             align-content: flex-start;
             .news {
-                height: auto;
                 width: 48%;
                 display: flex;
                 flex-flow: column nowrap;
@@ -146,8 +146,10 @@
             font-weight: $font__light;
         }
         .cfs-hyperlink {
-            color: $color__text-main;
-            font-weight: $font__bold;
+            min-height: 35px;
+            width: 100%;
+            color: #4a4a4a;
+            font-weight: 700;
             text-decoration: none;
             text-transform: uppercase;
             padding: 5px 15px;

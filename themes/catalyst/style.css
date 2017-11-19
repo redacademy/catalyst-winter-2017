@@ -2746,6 +2746,7 @@ object {
         .page-id-19 .newsmedia-article h3 {
           line-height: 1.7rem; } }
     .page-id-19 .newsmedia-article .news {
+      min-height: 400px;
       background-color: #D9F1FF;
       padding-bottom: 20px;
       margin: 10px 0;
@@ -2784,7 +2785,6 @@ object {
         -ms-flex-line-pack: start;
             align-content: flex-start; }
         .page-id-19 .newsmedia-article .news {
-          height: auto;
           width: 48%;
           display: -ms-flexbox;
           display: flex;
@@ -2811,7 +2811,9 @@ object {
       font-size: 12px;
       font-weight: 300; }
     .page-id-19 .newsmedia-article .cfs-hyperlink {
-      color: #4A4A4A;
+      min-height: 35px;
+      width: 100%;
+      color: #4a4a4a;
       font-weight: 700;
       text-decoration: none;
       text-transform: uppercase;
