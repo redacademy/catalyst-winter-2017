@@ -57,7 +57,7 @@ get_header(); ?>
                     $committee_profiles = get_posts( $args ); // returns an array of posts
                 ?>
 
-                <?php if( CFS() -> get( 'activate_committee' ) == true ) : ?>
+                <?php if( CFS() -> get( 'activate_committee' ) === 1 ) : ?>
 
                 <div class="committee-profiles-wrapper">
                     <div class="committee-profiles-header">
@@ -93,7 +93,7 @@ get_header(); ?>
                 </div>
                 <?php $activate_founding_supporter = CFS()->get( 'activate_founding_supporter' );
 
-                if( !empty( $activate_founding_supporter ) ) : ?>
+                if( $activate_founding_supporter === 1 ) : ?>
 
                 <section class="founding-supporter-section">
                     <?php
@@ -108,8 +108,13 @@ get_header(); ?>
 
                     <div class="img-container image-credit-container">
                         <img src="<?php echo $supporter_image; ?>">
-                        <p class="image-credits">Image: <?php echo $photo_credit; ?></p>
-                        <p class="image-caption"><?php echo $caption; ?></p>
+                        <?php if( !empty( $photo_credit ) ) : ?>
+                            <p class="image-credits">Image: <?php echo $photo_credit; ?></p>
+                        <?php endif; ?>
+
+                        <?php if( !empty( $caption ) ) : ?>
+                            <p class="image-caption"><?php echo $caption; ?></p>
+                        <?php endif; ?>
                     </div>
                 </section>
 
