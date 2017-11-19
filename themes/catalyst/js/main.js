@@ -290,8 +290,6 @@
 
         if( renderedArticles < 20 ) {
             $.get(apiLink, function( data ){
-                console.log('AJAX URL = ', api_vars.ajax_url)
-                console.log('POSTS LENGTH = ', data.length);
                 var newPosts = data.slice( renderedArticles, ( renderedArticles + 4 ) );
 
                 if( renderedArticles < data.length ) {
