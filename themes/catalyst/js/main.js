@@ -219,7 +219,7 @@
     var $postsContainer = $( '.newsmedia-article' );
     var $loadPostsButton = $( '#load-more-button' );
     var renderedArticles = 6;
-    var apiLink = api_vars.ajax_url + 'news/?&_embed=true';
+    var apiLink = api_vars.ajax_url + 'news?per_page=100';
     var $loadingGif = $('.loading-indicator');
 
     function formatDate( myDate ) {
@@ -290,6 +290,8 @@
 
         if( renderedArticles < 20 ) {
             $.get(apiLink, function( data ){
+                console.log('AJAX URL = ', api_vars.ajax_url)
+                console.log('POSTS LENGTH = ', data.length);
                 var newPosts = data.slice( renderedArticles, ( renderedArticles + 4 ) );
 
                 if( renderedArticles < data.length ) {
