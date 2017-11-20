@@ -2130,7 +2130,7 @@ object {
     .committee-profiles-wrapper .profile-popout .left-quotation,
     .advisors-profiles-wrapper .profile-popout .left-quotation {
       top: 0px;
-      left: -35px; }
+      left: -15px; }
       @media all and (min-width: 760px) {
         .staff-profiles-wrapper .profile-popout .left-quotation,
         .board-profiles-wrapper .profile-popout .left-quotation,
@@ -2148,7 +2148,7 @@ object {
     .committee-profiles-wrapper .profile-popout .right-quotation,
     .advisors-profiles-wrapper .profile-popout .right-quotation {
       bottom: 20px;
-      right: -35px;
+      right: -15px;
       transform: rotate(180deg); }
       @media all and (min-width: 760px) {
         .staff-profiles-wrapper .profile-popout .right-quotation,

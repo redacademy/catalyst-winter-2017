@@ -143,7 +143,7 @@
 
         .left-quotation {
             top: 0px;
-            left: -35px;
+            left: -15px;
 
             @include media( $desktop-width ) {
                 left: -25px;
@@ -154,7 +154,7 @@
         }
         .right-quotation {
             bottom: 20px;
-            right: -35px;
+            right: -15px;
             transform: rotate(180deg);
             @include media($desktop-width) {
                 bottom: 35px;
