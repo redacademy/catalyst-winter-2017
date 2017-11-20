@@ -26,7 +26,7 @@
 		<p class="job-title"><?php echo $role; ?></p>
 	<?php endif; ?>
 
-	<button class="committee-enter-button enter-button" type="button"><span>+</span></button>
+	<button class="committee-enter-button enter-button" type="button"></button>
 </section>
 
 <section class="committee-profile-popout profile-popout">

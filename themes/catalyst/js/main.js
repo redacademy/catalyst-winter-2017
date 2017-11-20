@@ -332,7 +332,7 @@
         autoPlay: 7500,
         draggable: false,
         wrapAround: true,
-        lazyLoad: true
+        lazyLoad: true,
     });
 
     //flickity single projects
@@ -341,7 +341,7 @@
         wrapAround: true,
         imagesLoaded: true,
         pageDots: false,
-        adaptiveHeight: true
+        adaptiveHeight: true,
     });
     $('.quote-carousel').flickity({
         contain: true,

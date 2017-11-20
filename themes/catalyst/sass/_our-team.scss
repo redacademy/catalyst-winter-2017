@@ -52,45 +52,50 @@
 }
 
 .enter-button {
+    background: url( '../../images/icon/plus.svg' ) no-repeat 49% 50%;
+    background-size: 80%;
     @include media($desktop-width) {
         display: none;
     }
 
-    span {
-        position: relative;
-        height: 20px;
-        width: 20px;
-        background: url( '../../images/icon/plus.svg' ) no-repeat 49% 50%;
-    }
+    // span {
+    //     position: relative;
+    //     height: 20px;
+    //     width: 20px;
+    //     background: url( '../../images/icon/plus.svg' ) no-repeat 49% 50%;
+    // }
 }
 
-.exit-button {
-    background: white;
-    position: absolute;
-}
+// .exit-button {
+//     background: white;
+//     position: absolute;
+//     background: url('../../images/icon/cross.svg') no-repeat 49% 50%;
+//     background-size: 80%;
+// }
 
 .staff-exit-button {
     position: absolute;
     top: 23%;
     right: 5%;
-    @include exit-popout-button(#FFF);
+    @include exit-popout-button();
+    background: url('../../images/icon/cross.svg') no-repeat 49% 50%, #FFF;
+    background-size: 55%;
 
-    span {
-        position: relative;
-        bottom: 0.5px;
-        right: 0.2px;
-        z-index: 100000;
-        height: 17px;
-        width: 17px;
-        display: inline-block;
-        background: url('../../images/icon/cross.svg') no-repeat 49% 50%;
-        font-size: 6rem;
+    // span {
+    //     position: relative;
+    //     bottom: 0.5px;
+    //     right: 0.2px;
+    //     z-index: 100000;
+    //     height: 17px;
+    //     width: 17px;
+    //     display: inline-block;
+    //     font-size: 6rem;
 
-        @include media( $desktop-width ) {
-            height: 20px;
-            width: 20px;
-        }
-    }
+    //     @include media( $desktop-width ) {
+    //         height: 20px;
+    //         width: 20px;
+    //     }
+    // }
 }
 
 .photo-credit {

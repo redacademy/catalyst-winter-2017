@@ -1999,19 +1999,12 @@ object {
       height: 45px;
       width: 45px; } }
 
-@media all and (min-width: 760px) {
-  .enter-button {
-    display: none; } }
-
-.enter-button span {
-  position: relative;
-  height: 20px;
-  width: 20px;
-  background: url("../../images/icon/plus.svg") no-repeat 49% 50%; }
-
-.exit-button {
-  background: white;
-  position: absolute; }
+.enter-button {
+  background: url("../../images/icon/plus.svg") no-repeat 49% 50%;
+  background-size: 80%; }
+  @media all and (min-width: 760px) {
+    .enter-button {
+      display: none; } }
 
 .staff-exit-button {
   position: absolute;
@@ -2024,8 +2017,10 @@ object {
   border: 3px solid #323232;
   border-radius: 100%;
   padding: 0;
-  background: #FFF;
-  box-shadow: none; }
+  background: none;
+  box-shadow: none;
+  background: url("../../images/icon/cross.svg") no-repeat 49% 50%, #FFF;
+  background-size: 55%; }
   .staff-exit-button:hover {
     cursor: pointer; }
   .staff-exit-button:focus {
@@ -2034,20 +2029,6 @@ object {
     .staff-exit-button {
       height: 45px;
       width: 45px; } }
-  .staff-exit-button span {
-    position: relative;
-    bottom: 0.5px;
-    right: 0.2px;
-    z-index: 100000;
-    height: 17px;
-    width: 17px;
-    display: inline-block;
-    background: url("../../images/icon/cross.svg") no-repeat 49% 50%;
-    font-size: 6rem; }
-    @media all and (min-width: 760px) {
-      .staff-exit-button span {
-        height: 20px;
-        width: 20px; } }
 
 .photo-credit {
   color: darkgray;
