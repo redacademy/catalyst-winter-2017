@@ -41,7 +41,7 @@
             margin: 10px auto 0;
             padding: 0 20px;
         }
-        @include media($desktop-width) {
+        @include media(860px) {
             display: flex;
             justify-content: space-around;
             width: 100%;
@@ -79,13 +79,19 @@
             }
         }
         .news {
-            min-height: 400px;
+            width: 90%;
+            min-height: 380px;
             background-color: $color__brand-blue;
             padding-bottom: 20px;
-            margin: 10px 0;
-            margin: 0 0 5px;
+            margin: 0 auto 5px;
             border: 6px solid #FFF;
             border-top: 0;
+            display: flex;
+            flex-flow: column nowrap;
+
+            @include media(500px) {
+                width: 48%;
+            }
         }
         .article-thumb {
             height: 200px;
@@ -109,20 +115,19 @@
             width: 90%;
             margin: 0 auto;
         }
-        @include media(400px) {
+        @include media(500px) {
             @include flex-row(wrap, flex-start);
             align-content: flex-start;
-            .news {
-                width: 48%;
-                display: flex;
-                flex-flow: column nowrap;
-            }
         }
         .article-content {
             padding: 5px 15px;
             margin-bottom: 10px;
-            height: 120px;
+            height: 80px;
             overflow: hidden;
+
+            @include media($desktop-width) {
+                height: 120px;
+            }
             p {
                 margin: 0;
                 line-height: 1.5rem;

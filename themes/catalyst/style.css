@@ -2687,7 +2687,7 @@ object {
   .page-id-19 .newsmedia-content .widget-area {
     margin: 10px auto 0;
     padding: 0 20px; }
-  @media all and (min-width: 760px) {
+  @media all and (min-width: 860px) {
     .page-id-19 .newsmedia-content {
       display: -ms-flexbox;
       display: flex;
@@ -2727,13 +2727,20 @@ object {
         .page-id-19 .newsmedia-article h3 {
           line-height: 1.7rem; } }
     .page-id-19 .newsmedia-article .news {
-      min-height: 400px;
+      width: 90%;
+      min-height: 380px;
       background-color: #D9F1FF;
       padding-bottom: 20px;
-      margin: 10px 0;
-      margin: 0 0 5px;
+      margin: 0 auto 5px;
       border: 6px solid #FFF;
-      border-top: 0; }
+      border-top: 0;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap; }
+      @media all and (min-width: 500px) {
+        .page-id-19 .newsmedia-article .news {
+          width: 48%; } }
     .page-id-19 .newsmedia-article .article-thumb {
       height: 200px;
       width: 100%;
@@ -2753,7 +2760,7 @@ object {
       height: 200px;
       width: 90%;
       margin: 0 auto; }
-    @media all and (min-width: 400px) {
+    @media all and (min-width: 500px) {
       .page-id-19 .newsmedia-article {
         display: -ms-flexbox;
         display: flex;
@@ -2764,18 +2771,15 @@ object {
         -ms-flex-align: center;
             align-items: center;
         -ms-flex-line-pack: start;
-            align-content: flex-start; }
-        .page-id-19 .newsmedia-article .news {
-          width: 48%;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-flow: column nowrap;
-              flex-flow: column nowrap; } }
+            align-content: flex-start; } }
     .page-id-19 .newsmedia-article .article-content {
       padding: 5px 15px;
       margin-bottom: 10px;
-      height: 120px;
+      height: 80px;
       overflow: hidden; }
+      @media all and (min-width: 760px) {
+        .page-id-19 .newsmedia-article .article-content {
+          height: 120px; } }
       .page-id-19 .newsmedia-article .article-content p {
         margin: 0;
         line-height: 1.5rem; }
