@@ -80,6 +80,8 @@
 	}
 }
 
+// Carousels
+
 @mixin ourStory-carousel {
 	.formula-carousel {
 		width: 100%;
@@ -230,6 +232,18 @@
 		height: 45px;
 		width: 45px;
 	}
+}
+
+// Loading indicator
+
+@mixin loading-indicator() {
+	height: 25px;
+	width: 40px;
+	padding-left: 15px;
+	position: absolute;
+	top: 19px;
+	right: 30px;
+	display: none;
 }
 
 // Media Queries

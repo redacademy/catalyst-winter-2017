@@ -41,3 +41,20 @@ textarea {
 	padding-left: 3px;
 	width: 100%;
 }
+
+div.wpcf7-response-output {
+	margin: 2rem auto;
+	font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+div.wpcf7 .ajax-loader {
+		padding: 0;
+		height: 25px;
+		width: 25px;
+		background: url( '../../images/graphics/ajax-loader.gif' ) no-repeat 49% 50%;
+		background-size: 100%;
+		position: relative;
+		right: 50px;
+		bottom: 2px;
+}

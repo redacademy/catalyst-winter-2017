@@ -2,6 +2,17 @@
     text-align: center;
     height: 100%;
     width: 100%;
+
+    div.wpcf7 .ajax-loader {
+        padding: 0;
+        height: 25px;
+        width: 25px;
+        background: url( '../../images/graphics/ajax-loader.gif' ) no-repeat 49% 50%;
+        background-size: 100%;
+        position: relative;
+        right: 50px;
+    }
+
     @include media($desktop-width) {
         font-size: $font__desktop-size;
         line-height: $line-height-desktop;
@@ -30,6 +41,7 @@
         max-width: 1200px;
         margin: 0 auto;
     }
+
     .wpcf7 {
         padding: 0 3%;
         font-family: $font__secondary;

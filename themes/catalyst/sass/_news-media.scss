@@ -1,12 +1,6 @@
 .page-id-19 {
     margin: 0 auto;
-    .entry-content {
-        p {
-            font-weight: $font__light;
-            height: 48git px;
-            overflow: hidden;
-        }
-    }
+
     .header-text {
         @include header-text;
     }
@@ -25,13 +19,7 @@
         position: relative;
     }
     .loading-indicator {
-        height: 25px;
-        width: 40px;
-        padding-left: 15px;
-        position: absolute;
-        top: 19px;
-        right: 30px;
-        display: none;
+        @include loading-indicator;
     }
     .blue-background-header {
         margin-top: 1.5rem;
