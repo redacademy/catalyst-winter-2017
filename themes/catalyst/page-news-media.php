@@ -8,7 +8,7 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area">
+<div id="primary" class="content-area" data-root="<?php echo get_template_directory_uri(); ?>">
     <main id="main" class="site-main" role="main">
         <?php get_template_part( 'template-parts/hero-banner'); ?>
 
