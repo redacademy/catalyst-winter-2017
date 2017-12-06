@@ -72,7 +72,7 @@
     color: darkgray;
     font-size: 0.6rem;
     font-style: italic;
-    line-height: 0.75rem;
+    line-height: 0.6rem;
     margin: 0 auto 0.25rem;
 }
 
@@ -89,17 +89,13 @@
 }
 
 .job-title {
-    margin: 0.25rem auto 1rem;
+    margin: 0 auto;
     font-size: 1.1rem;
-    line-height: 1.4rem;
+    line-height: 1.5rem;
     text-align: center;
     font-weight: $font__semibold;
     letter-spacing: 1.25px;
     z-index: 2;
-}
-
-.committee-profiles-wrapper .job-title {
-    margin: 0.5rem auto;
 }
 
 .staff-profiles-wrapper,

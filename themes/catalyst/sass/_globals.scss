@@ -93,11 +93,11 @@ a {
 	height: 100%;
 	width: 100%;
 	.image-credits {
-		max-width: 60%;
-		padding-right: 0.5rem;
-		padding-bottom: 0.5rem;
+		background: rgba(0, 0, 0, 0.35);
+		max-width: 80%;
+		padding: 0.5rem;
 		position: absolute;
-		bottom: 0;
+		bottom: 12px;
 		right: 0;
 		font-size: 0.75rem;
 		margin: 0;
