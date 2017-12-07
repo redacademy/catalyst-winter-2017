@@ -1,19 +1,18 @@
 .hero-image-banner,
 .project-image-banner {
-	height: auto;
-	min-height: 45vh;
+	height: 45vh;
 	min-width: 100%;
 	position: relative;
 	background-clip: content-box;
   background-origin: content-box;
-    @include flex-column(nowrap, center, center);
-    @include media($desktop-width) {
-        min-height: 70vh;
-    }
-    .header-text {
-        width: 100%;
-        text-align: center;
-    }
+  @include flex-column(nowrap, center, center);
+	@include media($desktop-width) {
+			height: 70vh;
+	}
+	.header-text {
+			width: 100%;
+			text-align: center;
+	}
 }
 
 .hero-image-banner {
@@ -90,8 +89,6 @@ a {
 
 .image-credit-container {
 	position: relative;
-	height: 100%;
-	width: 100%;
 	.image-credits {
 		background: rgba(0, 0, 0, 0.35);
 		max-width: 80%;

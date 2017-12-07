@@ -396,8 +396,7 @@ table {
 
 .hero-image-banner,
 .project-image-banner {
-  height: auto;
-  min-height: 45vh;
+  height: 45vh;
   min-width: 100%;
   position: relative;
   background-clip: content-box;
@@ -413,7 +412,7 @@ table {
   @media all and (min-width: 760px) {
     .hero-image-banner,
     .project-image-banner {
-      min-height: 70vh; } }
+      height: 70vh; } }
   .hero-image-banner .header-text,
   .project-image-banner .header-text {
     width: 100%;
@@ -492,9 +491,7 @@ a {
     width: 100%; }
 
 .image-credit-container {
-  position: relative;
-  height: 100%;
-  width: 100%; }
+  position: relative; }
   .image-credit-container .image-credits {
     background: rgba(0, 0, 0, 0.35);
     max-width: 80%;
