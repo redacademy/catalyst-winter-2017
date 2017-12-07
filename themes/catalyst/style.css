@@ -2417,8 +2417,6 @@ object {
     color: #4A4A4A; }
   .advisors-profiles-wrapper .profile-preview {
     width: 100%;
-    margin: 1.25rem auto;
-    position: relative;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: column nowrap;
@@ -2428,9 +2426,6 @@ object {
     -ms-flex-align: center;
         align-items: center; }
     @media all and (min-width: 900px) {
-      .advisors-profiles-wrapper .profile-preview {
-        width: 30%; } }
-    @media all and (min-width: 1350px) {
       .advisors-profiles-wrapper .profile-preview {
         width: 20%; } }
     .advisors-profiles-wrapper .profile-preview .job-title {
