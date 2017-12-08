@@ -257,6 +257,10 @@
         @include media ($desktop-width) {
             height: 500px;
         }
+        .image-credit-container {
+            height: 100%;
+            width: 100%;
+        }
         img {
             width: auto;
             height: 100%;

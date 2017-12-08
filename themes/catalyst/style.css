@@ -4536,6 +4536,9 @@ object {
     @media all and (min-width: 760px) {
       .single-projects .image-wrapper {
         height: 500px; } }
+    .single-projects .image-wrapper .image-credit-container {
+      height: 100%;
+      width: 100%; }
     .single-projects .image-wrapper img {
       width: auto;
       height: 100%;
