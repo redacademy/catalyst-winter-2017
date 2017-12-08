@@ -1241,14 +1241,13 @@ div.wpcf7 .ajax-loader {
         .home .projects .image-wrapper {
           height: 500px; } }
       .home .projects .image-wrapper a {
-        height: 300px; }
+        height: 300px;
+        width: 100%; }
         @media all and (min-width: 760px) {
           .home .projects .image-wrapper a {
             height: 500px; } }
       .home .projects .image-wrapper img {
-        width: auto;
         height: 100%;
-        max-width: none;
         min-width: 100%; }
     .home .projects .is-selected {
       opacity: 1; }
