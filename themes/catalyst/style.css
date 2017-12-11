@@ -4395,10 +4395,9 @@ object {
         width: 50%;
         height: 500px; } }
     .single-projects .images img {
-      width: auto;
-      height: 100%;
-      max-width: none;
-      min-width: 100%; }
+      width: 100%;
+      min-height: 100%;
+      max-height: none; }
   .single-projects .quote-carousel {
     padding: 2rem 0; }
   .single-projects .quotes {

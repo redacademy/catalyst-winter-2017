@@ -112,10 +112,9 @@
             height: 500px;
         }
         img {
-            width: auto;
-            height: 100%;
-            max-width: none;
-            min-width: 100%;
+            width: 100%;
+            min-height: 100%;
+            max-height: none;
         }
     }
     .quote-carousel {
