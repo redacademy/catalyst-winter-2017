@@ -2177,8 +2177,15 @@ object {
     .board-profiles-wrapper .profile-popout .quote-container,
     .committee-profiles-wrapper .profile-popout .quote-container,
     .advisors-profiles-wrapper .profile-popout .quote-container {
+      margin-top: 1.5rem;
       position: relative;
       max-width: 90%; }
+      @media all and (min-width: 760px) {
+        .staff-profiles-wrapper .profile-popout .quote-container,
+        .board-profiles-wrapper .profile-popout .quote-container,
+        .committee-profiles-wrapper .profile-popout .quote-container,
+        .advisors-profiles-wrapper .profile-popout .quote-container {
+          margin-top: 2.5rem; } }
     .staff-profiles-wrapper .profile-popout .quote,
     .board-profiles-wrapper .profile-popout .quote,
     .committee-profiles-wrapper .profile-popout .quote,

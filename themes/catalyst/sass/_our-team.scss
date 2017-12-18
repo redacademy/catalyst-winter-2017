@@ -160,8 +160,13 @@
             }
         }
         .quote-container {
+            margin-top: $base__space-unit;
             position: relative;
             max-width: 90%;
+
+            @include media($desktop-width) {
+                margin-top: 2.5rem;
+            }
         }
         .quote {
             max-width: 345px;
